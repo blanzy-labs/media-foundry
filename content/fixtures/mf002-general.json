@@ -1,0 +1,15 @@
+{
+  "id": "general",
+  "template": "scrappy_diorama",
+  "seed": 22023,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {
+    "headline": "THIS ROBOT RUNS ON JSON.",
+    "body": "Change the data. The same crooked workshop builds a different story.",
+    "emphasis": "NO SaaS. JUST SCREWS."
+  },
+  "visual": {"kind": "terminal", "primary": "4d8b83", "secondary": "a8d68f", "label": "TERMINAL 404"},
+  "outro": {"text": "(s)Crap²y Games"},
+  "audio": {"enabled": true}
+}

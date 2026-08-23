@@ -17,6 +17,7 @@ def add_check(state, key, passed, detail):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("media")
+    parser.add_argument("--slice", default="MF-001")
     parser.add_argument("--ffprobe-json", required=True)
     parser.add_argument("--result-json", required=True)
     args = parser.parse_args()
@@ -70,7 +71,7 @@ def main():
         decode_detail = "full decode succeeded" if decode_ok else (decoded.stderr.strip()[-500:] or "decode failed")
     add_check(validation, "decode", decode_ok, decode_detail)
     passed = all(item["status"] == "PASS" for item in validation.values())
-    result = {"slice":"MF-001", "render":"PASS" if file_ok else "FAIL", "validation":validation, "result":"PASS" if passed else "FAIL"}
+    result = {"slice":args.slice, "render":"PASS" if file_ok else "FAIL", "validation":validation, "result":"PASS" if passed else "FAIL"}
     if file_ok:
         result["artifact"] = {"path":str(media), "bytes":media.stat().st_size, "sha256":hashlib.sha256(media.read_bytes()).hexdigest()}
     result_path.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")

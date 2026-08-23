@@ -1,0 +1,15 @@
+{
+  "id": "turd-burglar",
+  "template": "scrappy_diorama",
+  "seed": 22022,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {
+    "headline": "WE'RE MAKING A STEALTH GAME...",
+    "body": "...about a dung beetle that steals turds.",
+    "emphasis": "TURD BURGLAR"
+  },
+  "visual": {"kind": "beetle", "primary": "6f8954", "secondary": "be8a4a", "label": "CASE FILE 07B"},
+  "outro": {"text": "(s)Crap²y Games"},
+  "audio": {"enabled": true}
+}

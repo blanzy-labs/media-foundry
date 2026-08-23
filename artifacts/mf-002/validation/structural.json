@@ -1,0 +1,51 @@
+{
+  "slice": "MF-002",
+  "type": "structural_contract",
+  "checks": {
+    "grammar_readable": {
+      "status": "PASS",
+      "detail": "scrappy-diorama-v1"
+    },
+    "typography_roles": {
+      "status": "PASS",
+      "detail": "BODY,EMPHASIS,HEADLINE,INTRO,LABEL,OUTRO"
+    },
+    "surface_vocabulary": {
+      "status": "PASS",
+      "detail": "bolts,cable,crate,lamp,metal_plate,painted_wood,paper_note,scratched_backing,tape"
+    },
+    "motion_grammar": {
+      "status": "PASS",
+      "detail": "EMPHASIS,ENTER,EXIT,SETTLE"
+    },
+    "audio_grammar": {
+      "status": "PASS",
+      "detail": "EMPHASIS,INTRO_HIT,OUTRO_STING,TEXT_POP,TRANSITION"
+    },
+    "mobile_safe_area": {
+      "status": "PASS",
+      "detail": "{\"bottom\": 912, \"left\": 28, \"right\": 512, \"top\": 48}"
+    },
+    "canonical_document": {
+      "status": "PASS",
+      "detail": "/home/blanzy/projects/media-foundry/reports/mf-002/visual-grammar.md"
+    },
+    "font_assets": {
+      "status": "PASS",
+      "detail": "Lato Heavy and Regular, OFL-1.1"
+    },
+    "fixture_contracts": {
+      "status": "PASS",
+      "detail": "fact,turd-burglar,general"
+    },
+    "fixture_distinction": {
+      "status": "PASS",
+      "detail": "distinct visual kinds and explicit seeds"
+    },
+    "required_layers": {
+      "status": "PASS",
+      "detail": "workshop,sign,media,paper,tape,props"
+    }
+  },
+  "result": "PASS"
+}

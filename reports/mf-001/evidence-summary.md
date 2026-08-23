@@ -20,9 +20,9 @@ MF-001 establishes `DATA -> TEMPLATE -> DETERMINISTIC RENDERER -> MEDIA PROCESSO
 - H.264: `libx264` available
 - AAC: native `aac` encoder available
 - Fonts: system inventory recorded; renderer uses Godot's bundled fallback font
-- Blender: not installed; optional/future and not used by MF-001
+- Blender: 5.2.0 LTS is READY in the latest MF-001 regression run; it remains optional and unused by the render
 
-The detailed machine-readable inventory is `artifacts/mf-001/doctor.json`. No packages were installed and no workstation settings were changed.
+The detailed machine-readable inventory is `artifacts/mf-001/doctor.json`. No packages were installed during the original MF-001 implementation. Blender was installed later, before the MF-002 regression run.
 
 ## Commands executed
 
@@ -72,4 +72,4 @@ Machine-readable details are in `reports/mf-001/result.json` and `artifacts/mf-0
 
 The project is an independent Git repository on branch `main`. Source, scripts, configuration, compact logs, frames, and the 1.7 MB reference MP4 are retained; rebuildable raw frames and WAV audio are ignored.
 
-Blender readiness is known but unavailable and does not affect this slice. The current Godot capture path requires a display-backed render session because this Godot headless driver does not expose viewport pixels. Visual grammar is intentionally primitive and remains subject to human review and MF-002 refinement. No publishing or social-account access occurred.
+Blender readiness is known and does not affect this slice. The current Godot capture path requires a display-backed render session because this Godot headless driver does not expose viewport pixels. Visual grammar is intentionally primitive and remains subject to human review and MF-002 refinement. No publishing or social-account access occurred.

@@ -1,0 +1,74 @@
+{
+  "id": "scrappy-diorama-v1",
+  "version": 1,
+  "identity": ["handmade", "imperfect", "tactile", "dirty", "game-like", "humorous"],
+  "canvas": {
+    "internal_width": 540,
+    "internal_height": 960,
+    "output_width": 1080,
+    "output_height": 1920,
+    "fps": 30,
+    "duration_seconds": 15,
+    "safe_area": {"left": 28, "right": 512, "top": 48, "bottom": 912}
+  },
+  "typography": {
+    "heavy_font": "res://fonts/Lato-Heavy.ttf",
+    "regular_font": "res://fonts/Lato-Regular.ttf",
+    "roles": {
+      "INTRO": {"size": 38, "surface": "painted_wood"},
+      "HEADLINE": {"size": 39, "surface": "paper_note"},
+      "BODY": {"size": 23, "surface": "paper_note"},
+      "EMPHASIS": {"size": 21, "surface": "taped_label"},
+      "LABEL": {"size": 15, "surface": "metal_plate"},
+      "OUTRO": {"size": 42, "surface": "painted_wood"}
+    }
+  },
+  "palette": {
+    "workshop_dark": "17110e",
+    "workshop_mid": "2a1c16",
+    "wood": "9c5231",
+    "wood_light": "d48645",
+    "paper": "e9d8a0",
+    "paper_ink": "2a1d17",
+    "metal": "65706a",
+    "rust": "a34b31",
+    "tape": "d4b863",
+    "lamp": "f1b84b",
+    "cream": "f4df9d",
+    "grime": "241710"
+  },
+  "surfaces": {
+    "vocabulary": ["painted_wood", "paper_note", "metal_plate", "tape", "bolts", "crate", "cable", "lamp", "scratched_backing"],
+    "border_width": 6,
+    "shadow_offset": [8, 10],
+    "wear_marks": 14
+  },
+  "imperfection": {
+    "seed": 22002,
+    "sign_rotation_degrees": -2.0,
+    "headline_rotation_degrees": 1.1,
+    "label_offset": [5, -3],
+    "maximum_rotation_degrees": 2.5
+  },
+  "motion": {
+    "ENTER": {"seconds": 0.65, "character": "fast_drop"},
+    "SETTLE": {"seconds": 0.35, "overshoot": 1.70158},
+    "EMPHASIS": {"seconds": 0.28, "scale": 1.08},
+    "EXIT": {"seconds": 0.32, "character": "decisive"},
+    "camera_push": 0.003,
+    "cable_sway_degrees": 2.0,
+    "intro_end_seconds": 2.0,
+    "main_start_seconds": 4.0,
+    "outro_start_seconds": 12.8
+  },
+  "audio": {
+    "sample_rate": 48000,
+    "events": [
+      {"name": "INTRO_HIT", "time": 0.22, "frequency": 88, "duration": 0.34, "gain": 0.18},
+      {"name": "TEXT_POP", "time": 2.12, "frequency": 520, "duration": 0.12, "gain": 0.09},
+      {"name": "TRANSITION", "time": 3.82, "frequency": 180, "duration": 0.28, "gain": 0.08},
+      {"name": "EMPHASIS", "time": 8.0, "frequency": 340, "duration": 0.16, "gain": 0.07},
+      {"name": "OUTRO_STING", "time": 12.92, "frequency": 260, "duration": 0.46, "gain": 0.12}
+    ]
+  }
+}
