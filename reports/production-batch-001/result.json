@@ -1,0 +1,37 @@
+{
+  "batch": "production-batch-001",
+  "grammar": "scrappy-diorama-v1",
+  "renderer": "godot/mf002.gd",
+  "content_contract": "PASS",
+  "videos": {
+    "books": {
+      "result": "PASS",
+      "bytes": 2317925,
+      "sha256": "f14bbb02cc8f879030d9d7767ec2f02d95db8cbda7d66c6c1bfc7ad57eee4c82",
+      "godot_render_ms": 11217,
+      "total_production_ms": 25517
+    },
+    "mythadis": {
+      "result": "PASS",
+      "bytes": 2462806,
+      "sha256": "1f5e1e47d251898dfd0daf2ed29685d909a639ded1d8314c943f16c2c7acb47c",
+      "godot_render_ms": 11418,
+      "total_production_ms": 25533
+    },
+    "venus": {
+      "result": "PASS",
+      "bytes": 2557720,
+      "sha256": "e9f47a505ee2546f4aa4f3635623556a4f4156e9e972ad409919ea7465a38950",
+      "godot_render_ms": 11117,
+      "total_production_ms": 25327
+    }
+  },
+  "visual_evidence": {
+    "frames": 9,
+    "contact_sheet": "PASS"
+  },
+  "renderer_changes": "reusable data-driven prop_board primitives and fixture-controlled outro tagline",
+  "external_assets": [],
+  "technical_result": "PASS",
+  "human_review": "PENDING"
+}

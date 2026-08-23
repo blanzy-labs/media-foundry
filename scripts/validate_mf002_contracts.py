@@ -66,7 +66,7 @@ def main():
             assert fixture["outro"].get("text") == "(s)Crap²y Games"
             assert all(fixture["content"].get(key, "").strip() for key in ("headline", "body", "emphasis"))
             assert all(len(fixture["content"][key]) <= limit for key, limit in (("headline", 44), ("body", 90), ("emphasis", 28)))
-            assert fixture["visual"].get("kind") in {"radial_creature", "beetle", "terminal"}
+            assert fixture["visual"].get("kind") in {"radial_creature", "beetle", "terminal", "prop_board"}
             assert fixture["audio"].get("enabled") is True
             fixtures.append(fixture)
         except (OSError, json.JSONDecodeError, AssertionError, KeyError) as error:

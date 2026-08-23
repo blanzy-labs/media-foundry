@@ -1,0 +1,28 @@
+{
+  "id": "books",
+  "template": "scrappy_diorama",
+  "seed": 23101,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {
+    "headline": "THE STRANGEST AI CONVERSATIONS...",
+    "body": "Aren't happening in labs. They're happening in fiction.",
+    "emphasis": "R.C. BLANZY • SCI-FI"
+  },
+  "visual": {
+    "kind": "prop_board",
+    "primary": "8f4b37",
+    "secondary": "e2b85f",
+    "label": "AUTHOR ARCHIVE",
+    "props": [
+      {"type": "glow", "x": 72, "y": -15, "radius": 74, "color": "e7a94d", "alpha": 0.14, "phase": 0.2},
+      {"type": "book", "x": -102, "y": 0, "width": 58, "height": 142, "rotation": -7, "color": "914732", "accent": "e0b45d"},
+      {"type": "book", "x": -36, "y": -6, "width": 62, "height": 154, "rotation": 3, "color": "4f7568", "accent": "d5c079"},
+      {"type": "book", "x": 31, "y": 4, "width": 60, "height": 136, "rotation": -2, "color": "6d547d", "accent": "d9a86a"},
+      {"type": "note", "x": 112, "y": -12, "width": 84, "height": 70, "rotation": 4, "color": "ead69a", "label": "AI?", "font_size": 22},
+      {"type": "star", "x": 128, "y": 69, "radius": 13, "color": "f1bd54", "phase": 0.7}
+    ]
+  },
+  "outro": {"text": "(s)Crap²y Games", "tagline": "R.C. BLANZY • SCIENCE FICTION"},
+  "audio": {"enabled": true}
+}

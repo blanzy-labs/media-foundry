@@ -22,6 +22,7 @@ Run end-to-end acceptance and controlled negative tests:
 ./scripts/mf-001-failure-tests.sh
 ./scripts/mf-002-acceptance.sh
 ./scripts/mf-002-failure-tests.sh
+./scripts/production-batch-001-acceptance.sh
 ```
 
-Validated candidate media lives under `artifacts/mf-001/` and `artifacts/mf-002/`. MF-002 passed technical acceptance and its three-video visual review on 2026-08-23. Publication always requires separate human approval.
+Validated candidate media lives under `artifacts/mf-001/`, `artifacts/mf-002/`, and `artifacts/production-batch-001/`. MF-002 passed technical acceptance and its three-video visual review on 2026-08-23. Publication always requires separate human approval.

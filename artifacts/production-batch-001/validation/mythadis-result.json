@@ -1,0 +1,56 @@
+{
+  "slice": "PRODUCTION-BATCH-001",
+  "render": "PASS",
+  "validation": {
+    "file": {
+      "status": "PASS",
+      "detail": "/home/blanzy/projects/media-foundry/artifacts/production-batch-001/mythadis.mp4"
+    },
+    "container": {
+      "status": "PASS",
+      "detail": "mov,mp4,m4a,3gp,3g2,mj2"
+    },
+    "video_stream": {
+      "status": "PASS",
+      "detail": "h264"
+    },
+    "audio_stream": {
+      "status": "PASS",
+      "detail": "aac"
+    },
+    "resolution": {
+      "status": "PASS",
+      "detail": "1080x1920"
+    },
+    "orientation": {
+      "status": "PASS",
+      "detail": "vertical"
+    },
+    "duration": {
+      "status": "PASS",
+      "detail": "15.000 seconds"
+    },
+    "frame_rate": {
+      "status": "PASS",
+      "detail": "30.000 fps"
+    },
+    "video_codec": {
+      "status": "PASS",
+      "detail": "h264"
+    },
+    "audio_codec": {
+      "status": "PASS",
+      "detail": "aac"
+    },
+    "decode": {
+      "status": "PASS",
+      "detail": "full decode succeeded"
+    }
+  },
+  "result": "PASS",
+  "artifact": {
+    "path": "/home/blanzy/projects/media-foundry/artifacts/production-batch-001/mythadis.mp4",
+    "bytes": 2462806,
+    "sha256": "1f5e1e47d251898dfd0daf2ed29685d909a639ded1d8314c943f16c2c7acb47c"
+  }
+}

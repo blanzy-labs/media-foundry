@@ -1,0 +1,28 @@
+{
+  "id": "mythadis",
+  "template": "scrappy_diorama",
+  "seed": 23102,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {
+    "headline": "WHAT'S HAPPENING TO DUBLIN'S WATER?",
+    "body": "AI can plan the investigation, find the data, run the work and explain it.",
+    "emphasis": "THAT'S MYTHADIS."
+  },
+  "visual": {
+    "kind": "prop_board",
+    "primary": "ba7a45",
+    "secondary": "d8c37e",
+    "label": "FIELD BOARD",
+    "props": [
+      {"type": "line", "x": -92, "y": -45, "to_x": 0, "to_y": 47, "width": 5, "color": "a14d35", "accent": "d8c37e"},
+      {"type": "line", "x": 0, "y": 47, "to_x": 101, "to_y": -39, "width": 5, "color": "a14d35", "accent": "d8c37e"},
+      {"type": "note", "x": -102, "y": -52, "width": 104, "height": 68, "rotation": -4, "color": "dfc879", "label": "QUESTION", "font_size": 14},
+      {"type": "note", "x": 0, "y": 55, "width": 94, "height": 64, "rotation": 3, "color": "c98755", "label": "PLAN", "font_size": 16},
+      {"type": "note", "x": 104, "y": -47, "width": 112, "height": 70, "rotation": 2, "color": "87a176", "label": "EVIDENCE", "font_size": 14},
+      {"type": "droplet", "x": 0, "y": -42, "radius": 30, "color": "5c8c83", "accent": "d9e6c7", "phase": 0.4}
+    ]
+  },
+  "outro": {"text": "(s)Crap²y Games", "tagline": "MYTHADIS • COORDINATE INTELLIGENCE"},
+  "audio": {"enabled": true}
+}

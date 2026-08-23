@@ -1,0 +1,36 @@
+{
+  "id": "venus",
+  "template": "scrappy_diorama",
+  "seed": 23103,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {
+    "headline": "A DAY ON VENUS IS LONGER THAN A YEAR.",
+    "body": "DAY: ~243 EARTH DAYS. YEAR: ~225.",
+    "emphasis": "VENUS IS BAD AT CALENDARS."
+  },
+  "visual": {
+    "kind": "prop_board",
+    "primary": "ce794c",
+    "secondary": "f0bd65",
+    "label": "OBSERVATORY",
+    "props": [
+      {"type": "star", "x": -142, "y": -77, "radius": 9, "color": "f3dc8e", "phase": 0.1},
+      {"type": "star", "x": 15, "y": -96, "radius": 7, "color": "f3dc8e", "phase": 0.8},
+      {"type": "star", "x": 144, "y": 83, "radius": 10, "color": "f3dc8e", "phase": 1.4},
+      {"type": "planet", "x": -69, "y": -15, "radius": 70, "color": "c8754d", "accent": "edb35d", "phase": 0.5},
+      {"type": "counter", "x": 104, "y": -49, "width": 112, "height": 62, "color": "34433b", "accent": "d7c87c", "label": "DAY", "value": "~243"},
+      {"type": "counter", "x": 104, "y": 32, "width": 112, "height": 62, "color": "493c38", "accent": "d7c87c", "label": "YEAR", "value": "~225"},
+      {"type": "telescope", "x": -92, "y": 78, "color": "728078", "accent": "c8954d"}
+    ]
+  },
+  "outro": {"text": "(s)Crap²y Games", "tagline": "A RIDICULOUS LITTLE PLANETARIUM"},
+  "audio": {"enabled": true},
+  "sources": [
+    {
+      "title": "Venus: Facts — NASA Science",
+      "url": "https://science.nasa.gov/venus/venus-facts/",
+      "supports": "A Venus sidereal day is about 243 Earth days; its year is about 225 Earth days."
+    }
+  ]
+}

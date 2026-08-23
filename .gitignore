@@ -17,6 +17,7 @@ artifacts/mf-001/*.part.mp4
 reports/mf-001/failure-tests/
 artifacts/mf-002/work/
 reports/mf-002/failure-tests/
+artifacts/production-batch-001/work/
 *.secret
 .env
 .env.*

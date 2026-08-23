@@ -1,0 +1,35 @@
+{
+  "batch": "production-batch-001",
+  "type": "content_contract",
+  "checks": {
+    "grammar": {
+      "status": "PASS",
+      "detail": "scrappy-diorama-v1"
+    },
+    "fixture_contracts": {
+      "status": "PASS",
+      "detail": "books,mythadis,venus"
+    },
+    "subject_set": {
+      "status": "PASS",
+      "detail": "books,mythadis,venus"
+    },
+    "shared_renderer_contract": {
+      "status": "PASS",
+      "detail": "scrappy_diorama/prop_board"
+    },
+    "explicit_seeds": {
+      "status": "PASS",
+      "detail": "unique deterministic fixture seeds"
+    },
+    "venus_source": {
+      "status": "PASS",
+      "detail": "NASA Science"
+    },
+    "no_bespoke_renderers": {
+      "status": "PASS",
+      "detail": "one existing scene and renderer"
+    }
+  },
+  "result": "PASS"
+}

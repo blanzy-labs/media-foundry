@@ -1,0 +1,61 @@
+MEDIA FOUNDRY WORKSTATION
+=========================
+
+Operating system
+[INFO] Ubuntu 26.04 LTS
+  7.0.0-30-generic
+
+Architecture
+[INFO] x86_64
+
+Git
+[PASS] git version 2.53.0
+  /usr/bin/git
+
+Python
+[PASS] Python 3.14.4
+  /usr/bin/python3
+
+Godot
+[PASS] 4.7.2.stable.official.ed1daf0bf
+  /home/blanzy/.local/bin/godot
+
+FFmpeg
+[PASS] ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers
+  /usr/bin/ffmpeg
+
+FFprobe
+[PASS] ffprobe version 8.0.1-3ubuntu2 Copyright (c) 2007-2025 the FFmpeg developers
+  /usr/bin/ffprobe
+
+GitHub CLI
+[READY] gh version 2.46.0 (2025-12-13 Ubuntu 2.46.0-4)
+  authenticated
+
+Godot automation
+[PASS] headless
+  smoke marker observed
+
+Video encoding (H.264)
+[PASS] libx264
+
+Audio encoding (AAC)
+[PASS] aac
+
+Blender (optional)
+[READY] Blender 5.2.0 LTS
+  CLI background mode available
+
+Graphics/display
+[INFO] 08:00.0 VGA compatible controller: NVIDIA Corporation GB205 [GeForce RTX 5070] (rev a1)
+  DISPLAY=:0; WAYLAND_DISPLAY=wayland-0; session=wayland
+
+Rendering fonts
+[INFO] C059,D050000L,DejaVu Sans,DejaVu Sans Mono,DejaVu Serif,Droid Sans Fallback,FontAwesome,Hack
+  Godot bundled fallback font used by MF-001
+
+Codec inventory
+[INFO] 133 video / 84 audio encoders
+  FFmpeg encoder inventory
+
+MF WORKSTATION RESULT: PASS

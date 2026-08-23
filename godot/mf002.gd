@@ -139,7 +139,7 @@ func _draw_content_stage(t: float) -> void:
 	_center_text(str(fixture.content.headline), Vector2(0, -63), _role_size("HEADLINE"), _color("paper_ink"), 388, heavy_font)
 	_center_text(str(fixture.content.body), Vector2(0, 44), _role_size("BODY"), Color("4b372b"), 378, regular_font)
 	draw_set_transform(Vector2.ZERO, 0.0)
-	_draw_tape(Vector2(94, 566 + stage_y), 0.14)
+	_draw_tape(Vector2(35, 561 + stage_y), 0.14)
 	_draw_tape(Vector2(410, 786 + stage_y), -0.11)
 	# Emphasis label punches once, then keeps a tiny physical idle wobble.
 	var punch_phase: float = clamp(abs(t - 8.0) / float(grammar.motion.EMPHASIS.seconds), 0.0, 1.0)
@@ -155,7 +155,8 @@ func _draw_outro(t: float) -> void:
 	draw_set_transform(center, deg_to_rad(1.4))
 	_draw_rough_panel(Vector2(458, 292), Color("294637"), Color("111d17"), 5)
 	_center_text(str(fixture.outro.text), Vector2(0, -24), _role_size("OUTRO"), _color("cream"), 410, heavy_font)
-	_center_text("HELD TOGETHER WITH TESTS & TAPE", Vector2(0, 73), _role_size("LABEL"), Color("bcd3a6"), 400, heavy_font)
+	var outro_tagline := str(fixture.outro.get("tagline", "HELD TOGETHER WITH TESTS & TAPE"))
+	_center_text(outro_tagline, Vector2(0, 73), _role_size("LABEL"), Color("bcd3a6"), 400, heavy_font)
 	draw_set_transform(Vector2.ZERO, 0.0)
 	# A loose bolt spins into place beside the sign.
 	draw_set_transform(Vector2(462, 632), t * 4.0)
@@ -170,6 +171,8 @@ func _draw_visual(kind: String, center: Vector2, t: float) -> void:
 	var primary := Color(str(fixture.visual.primary))
 	var secondary := Color(str(fixture.visual.secondary))
 	match kind:
+		"prop_board":
+			_draw_prop_board(center, t)
 		"radial_creature":
 			for arm in range(8):
 				var angle := TAU * float(arm) / 8.0 + sin(t * 1.8 + arm) * 0.11
@@ -209,6 +212,90 @@ func _draw_visual(kind: String, center: Vector2, t: float) -> void:
 			draw_circle(center + Vector2(18, -127), 9, _color("rust"))
 		_:
 			draw_circle(center, 90, primary)
+
+func _draw_prop_board(center: Vector2, t: float) -> void:
+	for prop_value in fixture.visual.get("props", []):
+		var prop: Dictionary = prop_value
+		var prop_center := center + Vector2(float(prop.get("x", 0)), float(prop.get("y", 0)))
+		var primary := Color(str(prop.get("color", fixture.visual.primary)))
+		var accent := Color(str(prop.get("accent", fixture.visual.secondary)))
+		match str(prop.get("type", "")):
+			"glow":
+				var pulse := 1.0 + sin(t * 2.2 + float(prop.get("phase", 0))) * 0.05
+				draw_circle(prop_center, float(prop.get("radius", 42)) * pulse, Color(primary, float(prop.get("alpha", 0.12))))
+			"book":
+				var size := Vector2(float(prop.get("width", 58)), float(prop.get("height", 112)))
+				var rotation := deg_to_rad(float(prop.get("rotation", 0)))
+				var points := _rotated_rect_points(prop_center, size, rotation)
+				draw_colored_polygon(points, primary)
+				draw_polyline(_closed(points), Color("241710"), 5, true)
+				var spine_a := prop_center + Vector2(-size.x * 0.31, -size.y * 0.39).rotated(rotation)
+				var spine_b := prop_center + Vector2(-size.x * 0.31, size.y * 0.39).rotated(rotation)
+				draw_line(spine_a, spine_b, accent, 6)
+				for page in range(3):
+					var offset := Vector2(4, -18 + page * 18).rotated(rotation)
+					draw_line(prop_center + offset, prop_center + offset + Vector2(size.x * 0.29, 0).rotated(rotation), Color(accent, 0.58), 2)
+			"note":
+				var size := Vector2(float(prop.get("width", 92)), float(prop.get("height", 64)))
+				var rotation := deg_to_rad(float(prop.get("rotation", 0)))
+				var points := _rotated_rect_points(prop_center, size, rotation)
+				draw_colored_polygon(points, primary)
+				draw_polyline(_closed(points), Color("3c291d"), 4, true)
+				_center_text(str(prop.get("label", "NOTE")), prop_center + Vector2(0, 6), int(prop.get("font_size", 15)), Color("2a1d17"), size.x - 12, heavy_font)
+			"line":
+				var target := center + Vector2(float(prop.get("to_x", 0)), float(prop.get("to_y", 0)))
+				draw_line(prop_center, target, primary, float(prop.get("width", 5)), true)
+				draw_circle(prop_center, 5, accent)
+				draw_circle(target, 5, accent)
+			"droplet":
+				var radius := float(prop.get("radius", 30))
+				var bob := sin(t * 2.4 + float(prop.get("phase", 0))) * 3.0
+				var drop_center := prop_center + Vector2(0, bob)
+				draw_circle(drop_center + Vector2(0, 9), radius * 0.72, primary)
+				draw_colored_polygon(PackedVector2Array([drop_center + Vector2(0, -radius), drop_center + Vector2(-radius * 0.66, 12), drop_center + Vector2(radius * 0.66, 12)]), primary)
+				draw_circle(drop_center + Vector2(-8, 2), 4, Color(accent, 0.82))
+			"planet":
+				var radius := float(prop.get("radius", 58))
+				var wobble := sin(t * 0.9 + float(prop.get("phase", 0))) * 2.0
+				draw_circle(prop_center + Vector2(0, wobble), radius, primary)
+				draw_arc(prop_center + Vector2(0, wobble), radius * 0.72, -1.1, 2.1, 28, accent, 6)
+				for band in range(3):
+					draw_arc(prop_center + Vector2(0, wobble), radius * (0.42 + band * 0.17), 0.2, 2.9, 22, Color(accent, 0.36), 3)
+			"star":
+				var radius := float(prop.get("radius", 10)) * (1.0 + sin(t * 3.0 + float(prop.get("phase", 0))) * 0.12)
+				var points := PackedVector2Array()
+				for point in range(10):
+					var angle := -PI / 2.0 + TAU * float(point) / 10.0
+					var point_radius := radius if point % 2 == 0 else radius * 0.42
+					points.append(prop_center + Vector2(cos(angle), sin(angle)) * point_radius)
+				draw_colored_polygon(points, primary)
+			"counter":
+				var size := Vector2(float(prop.get("width", 102)), float(prop.get("height", 56)))
+				draw_rect(Rect2(prop_center - size / 2.0, size), primary, true)
+				draw_rect(Rect2(prop_center - size / 2.0, size), accent, false, 4)
+				_center_text(str(prop.get("label", "VALUE")), prop_center + Vector2(0, -7), 12, accent, size.x - 8, heavy_font)
+				_center_text(str(prop.get("value", "0")), prop_center + Vector2(0, 15), 19, Color("f4df9d"), size.x - 8, heavy_font)
+			"telescope":
+				var sway := sin(t * 0.8) * 0.025
+				var direction := Vector2(1, -0.55).rotated(sway)
+				draw_line(prop_center - direction * 44, prop_center + direction * 44, primary, 24, true)
+				draw_line(prop_center + direction * 37, prop_center + direction * 55, accent, 31, true)
+				draw_line(prop_center + Vector2(0, 8), prop_center + Vector2(-32, 70), accent, 7)
+				draw_line(prop_center + Vector2(0, 8), prop_center + Vector2(38, 70), accent, 7)
+				draw_circle(prop_center + Vector2(0, 8), 8, Color("241710"))
+
+func _rotated_rect_points(center: Vector2, size: Vector2, rotation: float) -> PackedVector2Array:
+	return PackedVector2Array([
+		center + Vector2(-size.x / 2.0, -size.y / 2.0).rotated(rotation),
+		center + Vector2(size.x / 2.0, -size.y / 2.0).rotated(rotation),
+		center + Vector2(size.x / 2.0, size.y / 2.0).rotated(rotation),
+		center + Vector2(-size.x / 2.0, size.y / 2.0).rotated(rotation)
+	])
+
+func _closed(points: PackedVector2Array) -> PackedVector2Array:
+	var closed := points.duplicate()
+	closed.append(points[0])
+	return closed
 
 func _draw_filled_ellipse(center: Vector2, radii: Vector2, color: Color) -> void:
 	var points := PackedVector2Array()
