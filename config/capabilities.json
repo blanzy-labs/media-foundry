@@ -1,0 +1,8 @@
+{
+  "capabilities": {
+    "godot": { "role": "composition", "required": true },
+    "ffmpeg": { "role": "media_processing", "required": true },
+    "ffprobe": { "role": "media_validation", "required": true },
+    "blender": { "role": "asset_authoring", "required": false }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "slice": "MF-001",
+  "suite": "fail-closed",
+  "result": "PASS",
+  "passed": 5,
+  "failed": 0
+}

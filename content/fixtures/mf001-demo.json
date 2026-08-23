@@ -1,0 +1,23 @@
+{
+  "id": "mf001-demo",
+  "template": "did_you_know",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_seconds": 15
+  },
+  "intro": {
+    "text": "WHAT YOU DIDN'T KNOW..."
+  },
+  "content": {
+    "headline": "THIS IS MEDIA FOUNDRY.",
+    "body": "This entire video was rendered from structured content."
+  },
+  "outro": {
+    "text": "(s)Crap²y Games"
+  },
+  "audio": {
+    "enabled": true
+  }
+}
