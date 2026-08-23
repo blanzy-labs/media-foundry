@@ -1,0 +1,182 @@
+{
+  "slice": "MF-005R3",
+  "gates": {
+    "technical": "PASS",
+    "editorial": "PENDING_HUMAN",
+    "release": "BLOCKED_VOICE_ASSET"
+  },
+  "regression": "PASS",
+  "creative_contract": "PASS",
+  "candidates": {
+    "candidate-a": {
+      "label": "Conservative",
+      "description": "Lower music, three key SFX, and a slightly more relaxed intro/punchline cadence.",
+      "gates": {
+        "technical": "PASS",
+        "editorial": "PENDING_HUMAN",
+        "release": "BLOCKED_VOICE_ASSET"
+      },
+      "voice": {
+        "character": [
+          "mischievous",
+          "dry",
+          "playful",
+          "slightly_absurd"
+        ],
+        "energy": "medium",
+        "delivery": "conversational",
+        "provider": "local_ffmpeg_flite",
+        "voice": "slt",
+        "asset_class": "test_only",
+        "release_eligible": false,
+        "limitation": "Existing deterministic regression voice; not approved as the Turd Burglar production voice."
+      },
+      "music": {
+        "gain_db": -5,
+        "narration_duck_db": -7,
+        "attack_ms": 110,
+        "release_ms": 280,
+        "fade_in": 0.9,
+        "fade_out": 1.4
+      },
+      "sfx": [
+        "intro_hit",
+        "emphasis",
+        "transition"
+      ],
+      "beat_durations": {
+        "intro": 1.2,
+        "setup": 3.5,
+        "gameplay": 1.5,
+        "dung_beetle": 2.2,
+        "punchline": 2.8,
+        "reveal": 2.8,
+        "outro": 1.0
+      },
+      "beat_count": 7,
+      "duration": 15,
+      "comedic_pause_seconds": 1.255,
+      "fade_measurement": {
+        "fade_in_seconds": 0.9,
+        "fade_out_seconds": 1.4,
+        "sampled_non_silent_points": 60345,
+        "envelope_mean_absolute_error": 0.005152,
+        "first_100ms_gain_ratio": 0.254925,
+        "last_100ms_gain_ratio": 0.036538,
+        "result": "PASS"
+      },
+      "audio": {
+        "integrated_lufs": -16.14,
+        "true_peak_db": -1.5,
+        "music_gain_db": -5.0,
+        "duck_db": -7.0,
+        "attack_ms": 110.0,
+        "release_ms": 280.0
+      },
+      "metrics": {
+        "render": {
+          "elapsed_seconds": 11.81,
+          "peak_kib": 208064
+        },
+        "mix": {
+          "elapsed_seconds": 1.04,
+          "peak_kib": 232760
+        },
+        "validation": {
+          "elapsed_seconds": 1.520421
+        },
+        "file_bytes": 1512214
+      },
+      "sha256": "6449d7e94b294f47787c93029d1c62cff2558895b688887be72224261225ea31"
+    },
+    "candidate-b": {
+      "label": "Balanced",
+      "description": "Tighter hook, longer gameplay hold, moderate music, and four purposeful SFX.",
+      "gates": {
+        "technical": "PASS",
+        "editorial": "PENDING_HUMAN",
+        "release": "BLOCKED_VOICE_ASSET"
+      },
+      "voice": {
+        "character": [
+          "mischievous",
+          "dry",
+          "playful",
+          "slightly_absurd"
+        ],
+        "energy": "medium",
+        "delivery": "conversational",
+        "provider": "local_ffmpeg_flite",
+        "voice": "slt",
+        "asset_class": "test_only",
+        "release_eligible": false,
+        "limitation": "Existing deterministic regression voice; not approved as the Turd Burglar production voice."
+      },
+      "music": {
+        "gain_db": -3.5,
+        "narration_duck_db": -8,
+        "attack_ms": 90,
+        "release_ms": 240,
+        "fade_in": 0.75,
+        "fade_out": 1.2
+      },
+      "sfx": [
+        "intro_hit",
+        "transition",
+        "emphasis",
+        "transition"
+      ],
+      "beat_durations": {
+        "intro": 1.0,
+        "setup": 3.5,
+        "gameplay": 1.8,
+        "dung_beetle": 2.2,
+        "punchline": 2.7,
+        "reveal": 2.8,
+        "outro": 1.0
+      },
+      "beat_count": 7,
+      "duration": 15,
+      "comedic_pause_seconds": 0.605,
+      "fade_measurement": {
+        "fade_in_seconds": 0.75,
+        "fade_out_seconds": 1.2,
+        "sampled_non_silent_points": 53902,
+        "envelope_mean_absolute_error": 0.007297,
+        "first_100ms_gain_ratio": 0.306046,
+        "last_100ms_gain_ratio": 0.042628,
+        "result": "PASS"
+      },
+      "audio": {
+        "integrated_lufs": -15.68,
+        "true_peak_db": -1.5,
+        "music_gain_db": -3.5,
+        "duck_db": -8.0,
+        "attack_ms": 90.0,
+        "release_ms": 240.0
+      },
+      "metrics": {
+        "render": {
+          "elapsed_seconds": 12.11,
+          "peak_kib": 207656
+        },
+        "mix": {
+          "elapsed_seconds": 1.06,
+          "peak_kib": 232308
+        },
+        "validation": {
+          "elapsed_seconds": 1.406219
+        },
+        "file_bytes": 1541415
+      },
+      "sha256": "197d7687195883364d0ecbf300e6a48bcbce86dcf73bdc9577924827dc1c0c2e"
+    }
+  },
+  "candidate_count": 2,
+  "human_selection": null,
+  "golden_production_baseline": null,
+  "visual_renderer_changes": 0,
+  "subject_specific_renderer_logic": 0,
+  "failure_tests": "PASS",
+  "limitation": "No approved production voice asset or higher-quality local voice provider is available; both candidates explicitly use the non-release-eligible Flite regression voice."
+}

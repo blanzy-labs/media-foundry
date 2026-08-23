@@ -1,0 +1,53 @@
+{
+  "id": "mf005r4-turd-burglar",
+  "template": "scrappy_diorama",
+  "seed": 24012,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {"headline": "WE'RE MAKING A STEALTH GAME...", "body": "ABOUT A DUNG BEETLE...", "emphasis": "THAT STEALS TURDS."},
+  "visual": {"kind": "beetle", "primary": "6f8954", "secondary": "be8a4a", "label": "CASE FILE 07B"},
+  "visual_strategy": {"preference": "generated_scene", "source_priority": ["godot_procedural", "godot_project_asset", "blender_asset", "authentic_source_media", "external_static_media"], "static_media_policy": {"primary_storytelling": false, "authenticity_required_for_use": true}},
+  "generated_scene": {
+    "start": 1.0,
+    "end": 13.9,
+    "motion_intensity": 1.0,
+    "components": [
+      {"id": "wall", "type": "dirty_wall"}, {"id": "lamp", "type": "hanging_lamp"}, {"id": "pipes", "type": "pipe"}, {"id": "toilet", "type": "toilet"},
+      {"id": "character", "type": "primitive_character"}, {"id": "turd", "type": "turd_prop"}, {"id": "sack", "type": "sack"}, {"id": "punch_sign", "type": "physical_sign"}, {"id": "title", "type": "physical_title"}, {"id": "dust", "type": "dust"}
+    ],
+    "events": [
+      {"id": "camera_push", "type": "camera_push", "time": 1.0},
+      {"id": "setup_sign", "type": "physical_sign", "time": 1.15},
+      {"id": "character_enters", "type": "character_enters", "time": 2.0},
+      {"id": "toilet_reveal", "type": "small_reveal", "time": 3.35},
+      {"id": "protagonist_sign", "type": "physical_sign", "time": 3.65},
+      {"id": "turd_highlight", "type": "turd_highlight", "time": 5.45},
+      {"id": "character_approaches", "type": "character_approaches", "time": 6.05},
+      {"id": "turd_grab", "type": "turd_grab", "time": 8.2},
+      {"id": "grab_impact", "type": "impact_bump", "time": 8.23},
+      {"id": "punch_sign", "type": "physical_sign", "time": 8.48},
+      {"id": "character_exits", "type": "settle", "time": 9.9},
+      {"id": "title_reveal", "type": "physical_title", "time": 10.65},
+      {"id": "title_settle", "type": "settle", "time": 11.2}
+    ]
+  },
+  "music": {"source": "media/audio/music/waiting-for-the-shift.mp3", "required": true, "continuous": true, "loop": false, "selected_offset": 0.0, "normalization_lufs": -24, "gain_db": -4.5, "narration_duck_db": -8, "attack_ms": 100, "release_ms": 260, "fade_in": 1.3, "fade_out": 1.8, "provenance": {"type": "user_supplied_generated", "asset_class": "approved", "release_eligible": true, "source_filename": "Waiting_for_the_Shift.mp3", "supplied_by": "user", "retrieval_date": "2026-08-23", "selection_basis": "Newest MP3 supplied after MF-005R3; inferred as the R4 task asset.", "usage": "Approved for MF-005R4 production evaluation.", "license": "No broader license terms supplied; do not redistribute independently.", "sha256": "69cfdc1792c94af1c600fdd868bec87412f6fbdc9477aa94592548faccb2398e"}},
+  "creative_contract": {"objective": "promote_game", "subject": {"name": "Turd Burglar", "type": "game"}, "required_messages": ["this_is_a_game", "stealth_game", "dung_beetle_protagonist", "steals_turds", "product_name"], "required_spoken": {"product_name": "Turd Burglar"}, "required_visual": {"product_name": "TURD BURGLAR", "generated_character": true, "generated_turd": true}, "tone": ["funny", "mischievous", "scrappy", "irreverent"], "quality": {"target": "publishable"}},
+  "voice_contract": {"status": "BLOCKED_PRODUCTION_VOICE", "required": true, "test_voice_allowed": false, "release_eligible": false, "audition_text": ["About a dung beetle...", "That steals turds.", "It's called Turd Burglar."], "target": ["conversational", "mischievous", "dry", "playful", "human_feeling"], "available_provider": null},
+  "final_mix": {"integrated_lufs": -16, "true_peak_db": -1.5, "content_duck_db": -3},
+  "sfx_event_map": {"intro": "camera_push", "punchline": "grab_impact", "reveal": "title_reveal"},
+  "outro": {"text": "(s)Crap²y Games", "tagline": "SCRAPPY BY DESIGN"},
+  "audio": {"enabled": true},
+  "narration_sync_policy": "semantic_beat",
+  "production_media_required": false,
+  "narration_required_beats": [],
+  "beats": [
+    {"id": "intro", "type": "intro", "text": "WHAT YOU DIDN'T KNOW...", "duration": 1.0, "transition": "scrappy_pop", "audio_cue": "intro_hit", "narration": null},
+    {"id": "setup", "type": "statement", "text": "WE'RE MAKING A STEALTH GAME...", "duration": 2.5, "transition": "cut", "narration": null},
+    {"id": "protagonist", "type": "statement", "text": "ABOUT A DUNG BEETLE...", "duration": 2.3, "transition": "cut", "narration": null},
+    {"id": "theft", "type": "statement", "text": "THE PERFECT SCORE...", "duration": 2.4, "transition": "cut", "narration": null},
+    {"id": "punchline", "type": "emphasis", "text": "THAT STEALS TURDS.", "duration": 2.4, "transition": "cut", "audio_cue": "emphasis", "narration": null},
+    {"id": "reveal", "type": "reveal", "text": "TURD BURGLAR", "duration": 3.3, "transition": "cut", "audio_cue": "outro_sting", "narration": null},
+    {"id": "outro", "type": "outro", "text": "(s)Crap²y Games", "duration": 1.1, "transition": "scrappy_pop", "narration": null}
+  ]
+}

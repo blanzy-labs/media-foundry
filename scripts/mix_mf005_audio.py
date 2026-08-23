@@ -5,6 +5,8 @@ import argparse
 import json
 import math
 import struct
+import subprocess
+import tempfile
 import wave
 from pathlib import Path
 
@@ -24,6 +26,12 @@ def rms_db(samples):
     return 20.0 * math.log10(max(rms, 1e-6))
 
 
+def write_pcm(path, samples, rate=48000):
+    with wave.open(str(path), "wb") as wav:
+        wav.setnchannels(1); wav.setsampwidth(2); wav.setframerate(rate)
+        wav.writeframes(b"".join(struct.pack("<h", round(value * 32767)) for value in samples))
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--base", required=True)
@@ -32,6 +40,9 @@ def main():
     parser.add_argument("--report", required=True)
     parser.add_argument("--duck-db", type=float, default=-6.0)
     parser.add_argument("--music-manifest")
+    parser.add_argument("--slice", default=None)
+    parser.add_argument("--final-lufs", type=float)
+    parser.add_argument("--final-true-peak", type=float, default=-1.5)
     args = parser.parse_args()
     manifest = json.loads(Path(args.manifest).read_text())
     base = read_pcm(Path(args.base))
@@ -91,12 +102,24 @@ def main():
         if abs(value) > 1.0:
             clipped += 1
         mixed.append(max(-1.0, min(1.0, value)))
-    output = Path(args.output)
-    output.parent.mkdir(parents=True, exist_ok=True)
-    with wave.open(str(output), "wb") as wav:
-        wav.setnchannels(1); wav.setsampwidth(2); wav.setframerate(rate)
-        wav.writeframes(b"".join(struct.pack("<h", round(value * 32767)) for value in mixed))
-    report = {"slice": "MF-005R1" if args.music_manifest else "MF-005", "result": "PASS" if clipped == 0 else "FAIL", "priority": ["narration", "content_cues", "ambient_music"], "base_audio": str(Path(args.base)), "duck_db": args.duck_db, "content_duck_db": args.duck_db, "attack_release_seconds": 0.03, "music": music_state, "ducking_windows": [{"beat": item["beat"], "start": item["start"], "end": item["end"], "music_gain_db": music_state.get("narration_duck_db")} for item in evidence] if music_state["status"] == "PASS" else [], "clipped_samples": clipped, "segments": evidence, "final_peak": round(max(abs(value) for value in mixed), 6), "final_rms_dbfs": round(rms_db(mixed), 3)}
+    output = Path(args.output); output.parent.mkdir(parents=True, exist_ok=True)
+    pre_normalization_peak = max(abs(value) for value in mixed)
+    normalization = {"enabled": False}
+    if args.final_lufs is None:
+        write_pcm(output, mixed)
+    else:
+        if not -24 <= args.final_lufs <= -12 or not -3 <= args.final_true_peak <= -1:
+            raise ValueError("AUDIO_NORMALIZATION_FAILED: final loudness target is outside supported limits")
+        with tempfile.TemporaryDirectory(prefix="mf005-mix-") as directory:
+            raw = Path(directory) / "pre-normalized.wav"; write_pcm(raw, mixed)
+            command = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", str(raw), "-af", f"loudnorm=I={args.final_lufs}:TP={args.final_true_peak}:LRA=7", "-ar", "48000", "-ac", "1", "-c:a", "pcm_s16le", str(output)]
+            process = subprocess.run(command, capture_output=True, text=True)
+            if process.returncode != 0:
+                raise ValueError(f"AUDIO_NORMALIZATION_FAILED: {process.stderr[-300:]}")
+        mixed = read_pcm(output)
+        normalization = {"enabled": True, "integrated_lufs_target": args.final_lufs, "true_peak_db_target": args.final_true_peak, "implementation": "ffmpeg_loudnorm_single_pass"}
+    final_peak = max(abs(value) for value in mixed)
+    report = {"slice": args.slice or ("MF-005R1" if args.music_manifest else "MF-005"), "result": "PASS" if clipped == 0 and final_peak < 1.0 else "FAIL", "priority": ["narration", "content_cues", "ambient_music"], "base_audio": str(Path(args.base)), "duck_db": args.duck_db, "content_duck_db": args.duck_db, "attack_release_seconds": 0.03, "music": music_state, "ducking_windows": [{"beat": item["beat"], "start": item["start"], "end": item["end"], "music_gain_db": music_state.get("narration_duck_db")} for item in evidence] if music_state["status"] == "PASS" else [], "clipped_samples": clipped, "segments": evidence, "normalization": normalization, "pre_normalization_peak": round(pre_normalization_peak, 6), "final_peak": round(final_peak, 6), "final_rms_dbfs": round(rms_db(mixed), 3)}
     report_path = Path(args.report); report_path.parent.mkdir(parents=True, exist_ok=True); report_path.write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps(report, indent=2))
     return 0 if clipped == 0 else 1

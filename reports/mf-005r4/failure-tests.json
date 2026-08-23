@@ -1,0 +1,50 @@
+{
+  "slice": "MF-005R4",
+  "count": 7,
+  "cases": {
+    "static_media_primary": {
+      "result": "PASS",
+      "observed": [
+        "STATIC_MEDIA_PRIMARY_FAILED: generated production silently uses static media"
+      ]
+    },
+    "new_music_missing": {
+      "result": "PASS",
+      "observed": [
+        "NEW_MUSIC_ASSET_MISSING"
+      ]
+    },
+    "test_voice_release_candidate": {
+      "result": "PASS",
+      "observed": [
+        "TEST_VOICE_PROHIBITED: release candidate permits regression voice",
+        "PRODUCT_NAME_SPOKEN_FAILED"
+      ]
+    },
+    "product_name_not_displayed": {
+      "result": "PASS",
+      "observed": [
+        "PRODUCT_NAME_DISPLAY_FAILED"
+      ]
+    },
+    "product_name_not_spoken": {
+      "result": "PASS",
+      "observed": [
+        "PRODUCT_NAME_SPOKEN_FAILED"
+      ]
+    },
+    "required_scene_event_absent": {
+      "result": "PASS",
+      "observed": [
+        "GENERATED_SCENE_EVENT_FAILED"
+      ]
+    },
+    "hard_music_cut": {
+      "result": "PASS",
+      "observed": [
+        "HARD_MUSIC_CUT_FAILED"
+      ]
+    }
+  },
+  "result": "PASS"
+}

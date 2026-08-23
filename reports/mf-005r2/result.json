@@ -1,0 +1,85 @@
+{
+  "slice": "MF-005R2",
+  "baseline": {
+    "mf001": "PASS",
+    "mf002": "PASS",
+    "mf002r1": "PASS",
+    "mf003": "PASS",
+    "mf004": "PASS",
+    "mf005": "PASS",
+    "mf005r1": "PASS",
+    "mf_pilot_001": "PASS"
+  },
+  "supplied_music": {
+    "filename": "Clockwork_Heist.mp3",
+    "sha256": "c4057268ace62ac75ac5635577b35a9bc61ff47aa12da0464bd973b7c08eb1ae",
+    "provenance": "user_supplied_generated",
+    "analysis": {
+      "source": "/home/blanzy/projects/media-foundry/media/audio/music/clockwork-heist.mp3",
+      "readable": true,
+      "sha256": "c4057268ace62ac75ac5635577b35a9bc61ff47aa12da0464bd973b7c08eb1ae",
+      "bytes": 3728839,
+      "codec": "mp3",
+      "container": "mp3",
+      "duration_seconds": 155.115042,
+      "sample_rate": 44100,
+      "channels": 2,
+      "channel_layout": "stereo",
+      "bit_rate": 192000,
+      "integrated_lufs": -11.8,
+      "true_peak_dbfs": 0.4,
+      "result": "PASS"
+    }
+  },
+  "editorial_contract": "PASS",
+  "spoken_product_name": "PASS",
+  "spoken_visual_alignment": "PASS",
+  "continuous_music": "PASS",
+  "ducking_from_narration": "PASS",
+  "fade_in": "PASS",
+  "fade_out": "PASS",
+  "existing_sfx": "PASS",
+  "authentic_game_media": "PASS",
+  "final_loudness": {
+    "integrated_lufs": -16.39,
+    "true_peak_db": -1.5,
+    "loudness_range": 3.7
+  },
+  "full_decode": "PASS",
+  "failure_tests": "PASS",
+  "visual_renderer_changes": 0,
+  "subject_specific_audio_engine_code": 0,
+  "metrics": {
+    "source_music_duration_seconds": 155.115042,
+    "source_format": "mp3/mp3",
+    "selected_source_offset_seconds": 0.0,
+    "loop_count": 0,
+    "normalized_music_generation_seconds": 0.617121,
+    "narration_preflight": {
+      "elapsed_seconds": 0.82,
+      "peak_kib": 81624
+    },
+    "music_preparation": {
+      "elapsed_seconds": 0.66,
+      "peak_kib": 98676
+    },
+    "audio_mix": {
+      "elapsed_seconds": 1.02,
+      "peak_kib": 231932
+    },
+    "godot_render": {
+      "elapsed_seconds": 11.81,
+      "peak_kib": 207208
+    },
+    "ffmpeg_finalization": {
+      "elapsed_seconds": 10.46,
+      "peak_kib": 501536
+    },
+    "validation": {
+      "elapsed_seconds": 2.028011
+    },
+    "final_mp4_bytes": 1519905
+  },
+  "technical_result": "PASS",
+  "human_review": "PENDING"
+}

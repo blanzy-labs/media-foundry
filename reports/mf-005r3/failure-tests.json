@@ -1,0 +1,91 @@
+{
+  "slice": "MF-005R3",
+  "count": 6,
+  "cases": {
+    "spoken_product_name_missing": {
+      "result": "PASS",
+      "observed": {
+        "slice": "MF-005R3",
+        "fixture": "mf005r3-turd-burglar-candidate-b",
+        "checks": {
+          "creative_contract": "PASS",
+          "spoken_product_name": "FAIL",
+          "visual_product_name": "PASS",
+          "voice_profile": "PASS",
+          "voice_classification": "PASS",
+          "production_media_music": "PASS"
+        },
+        "voice": {
+          "provider": "local_ffmpeg_flite",
+          "voice": "slt",
+          "asset_class": "test_only",
+          "release_eligible": false,
+          "limitation": "Existing deterministic regression voice; not approved as the Turd Burglar production voice."
+        },
+        "gates": {
+          "technical": "FAIL",
+          "editorial": "PENDING_HUMAN",
+          "release": "BLOCKED_VOICE_ASSET"
+        },
+        "errors": [
+          "EDITORIAL_REQUIREMENT_FAILED: required_spoken: product_name"
+        ],
+        "result": "FAIL"
+      }
+    },
+    "test_only_voice_not_release_eligible": {
+      "result": "PASS",
+      "observed": {
+        "slice": "MF-005R3",
+        "fixture": "mf005r3-turd-burglar-candidate-b",
+        "checks": {
+          "creative_contract": "PASS",
+          "spoken_product_name": "PASS",
+          "visual_product_name": "PASS",
+          "voice_profile": "PASS",
+          "voice_classification": "PASS",
+          "production_media_music": "PASS"
+        },
+        "voice": {
+          "provider": "local_ffmpeg_flite",
+          "voice": "slt",
+          "asset_class": "test_only",
+          "release_eligible": false,
+          "limitation": "Existing deterministic regression voice; not approved as the Turd Burglar production voice."
+        },
+        "gates": {
+          "technical": "PASS",
+          "editorial": "PENDING_HUMAN",
+          "release": "BLOCKED_VOICE_ASSET"
+        },
+        "errors": [],
+        "result": "PASS"
+      }
+    },
+    "fade_missing": {
+      "result": "PASS",
+      "observed_errors": [
+        "MUSIC_FADE_ENVELOPE_FAILED: measured stem envelope does not match required fades"
+      ]
+    },
+    "final_loudness_outside_range": {
+      "result": "PASS",
+      "observed_errors": [
+        "FINAL_LOUDNESS_FAILED: loudness, true peak, or clipping is outside v1 limits"
+      ]
+    },
+    "music_masks_narration": {
+      "result": "PASS",
+      "observed_errors": [
+        "MUSIC_MASKING_FAILED: bed/ducking configuration exceeds production guardrails"
+      ]
+    },
+    "outro_text_outside_readable_range": {
+      "result": "PASS",
+      "observed_errors": [
+        "OUTRO_READABILITY_FAILED: simplified outro is outside readable range"
+      ]
+    }
+  },
+  "result": "PASS"
+}

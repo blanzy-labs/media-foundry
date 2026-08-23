@@ -1,0 +1,6 @@
+{
+  "id": "candidate-a", "label": "Dry", "description": "Natural track opening, restrained stage motion, longer musical emergence and resolution.",
+  "music": {"selected_offset": 0.0, "gain_db": -4.5, "fade_in": 1.3, "fade_out": 1.8},
+  "motion_intensity": 0.85,
+  "event_times": {}
+}

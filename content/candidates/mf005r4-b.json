@@ -1,0 +1,6 @@
+{
+  "id": "candidate-b", "label": "Mischievous", "description": "More energetic 45-second music section, stronger motion, earlier grab/reaction/title cadence.",
+  "music": {"selected_offset": 45.0, "gain_db": -3.5, "fade_in": 1.1, "fade_out": 1.6},
+  "motion_intensity": 1.15,
+  "event_times": {"turd_grab": 8.1, "grab_impact": 8.13, "punch_sign": 8.38, "character_exits": 9.75, "title_reveal": 10.5, "title_settle": 11.05}
+}

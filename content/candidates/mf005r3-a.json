@@ -1,0 +1,8 @@
+{
+  "id": "candidate-a",
+  "label": "Conservative",
+  "description": "Lower music, three key SFX, and a slightly more relaxed intro/punchline cadence.",
+  "music": {"gain_db": -5, "narration_duck_db": -7, "attack_ms": 110, "release_ms": 280, "fade_in": 0.9, "fade_out": 1.4},
+  "beat_durations": {"intro": 1.2, "setup": 3.5, "gameplay": 1.5, "dung_beetle": 2.2, "punchline": 2.8, "reveal": 2.8, "outro": 1.0},
+  "audio_cues": {"intro": "intro_hit", "setup": null, "gameplay": null, "dung_beetle": null, "punchline": "emphasis", "reveal": "transition", "outro": null}
+}

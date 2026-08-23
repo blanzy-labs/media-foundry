@@ -1,0 +1,52 @@
+{
+  "slice": "MF-005R2",
+  "cases": {
+    "missing_supplied_music": {
+      "result": "PASS",
+      "expected": "MUSIC_SOURCE_MISSING",
+      "observed": "MUSIC_SOURCE_MISSING: required music source does not exist"
+    },
+    "corrupt_music_source": {
+      "result": "PASS",
+      "expected": "MUSIC_AUDIO_FAILED",
+      "observed": "MUSIC_AUDIO_FAILED: music source has no readable audio stream"
+    },
+    "unsupported_audio_stream": {
+      "result": "PASS",
+      "expected": "MUSIC_AUDIO_FAILED",
+      "observed": "MUSIC_AUDIO_FAILED: music source has no readable audio stream"
+    },
+    "invalid_selected_offset": {
+      "result": "PASS",
+      "expected": "MUSIC_OFFSET_FAILED",
+      "observed": "MUSIC_OFFSET_FAILED: continuous, loop, or selected source offset is invalid"
+    },
+    "invalid_loop_duration": {
+      "result": "PASS",
+      "expected": "MUSIC_DURATION_FAILED",
+      "observed": "MUSIC_DURATION_FAILED: selected music region is short and must enable deterministic looping"
+    },
+    "invalid_fade_configuration": {
+      "result": "PASS",
+      "expected": "MUSIC_DUCKING_CONFIG_FAILED",
+      "observed": "MUSIC_DUCKING_CONFIG_FAILED: gain, ducking, fade, attack, or release is outside supported limits"
+    },
+    "required_narration_missing_product_name": {
+      "result": "PASS",
+      "expected": "EDITORIAL_REQUIREMENT_FAILED",
+      "observed": [
+        "EDITORIAL_REQUIREMENT_FAILED: required_spoken: product_name"
+      ]
+    },
+    "ducking_window_outside_bounds": {
+      "result": "PASS",
+      "expected": "outside video bounds",
+      "observed": [
+        "ducking windows differ from narration timing",
+        "ducking window is outside video bounds"
+      ]
+    }
+  },
+  "count": 8,
+  "result": "PASS"
+}

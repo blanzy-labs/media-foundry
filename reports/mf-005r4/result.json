@@ -1,0 +1,195 @@
+{
+  "slice": "MF-005R4",
+  "baseline": "PASS",
+  "visual_audio_technical": "PASS",
+  "gates": {
+    "technical": "FAIL",
+    "editorial": "PENDING_HUMAN",
+    "release": "BLOCKED_PRODUCTION_VOICE"
+  },
+  "defect_classification": "VOICE",
+  "new_music": "Waiting_for_the_Shift.mp3",
+  "music_hash": "69cfdc1792c94af1c600fdd868bec87412f6fbdc9477aa94592548faccb2398e",
+  "voice_auditions": 0,
+  "selected_voice": null,
+  "candidate_count": 2,
+  "candidates": {
+    "candidate-a": {
+      "label": "Dry",
+      "description": "Natural track opening, restrained stage motion, longer musical emergence and resolution.",
+      "music": {
+        "offset": 0.0,
+        "gain_db": -4.5,
+        "fade_in": 1.3,
+        "fade_out": 1.8
+      },
+      "audio": {
+        "integrated_lufs": -15.75,
+        "true_peak_db": -1.25,
+        "loudness_range": 1.7
+      },
+      "fade_measurement": {
+        "fade_in_seconds": 1.3,
+        "fade_out_seconds": 1.8,
+        "sampled_non_silent_points": 102551,
+        "envelope_mean_absolute_error": 0.003373,
+        "first_100ms_gain_ratio": 0.176119,
+        "last_100ms_gain_ratio": 0.033761,
+        "result": "PASS"
+      },
+      "sfx": [
+        {
+          "beat": "intro",
+          "cue": "intro_hit",
+          "physical_event": "camera_push",
+          "start": 0.1,
+          "measurement_seconds": 0.2,
+          "rms_dbfs": -22.493,
+          "result": "PASS"
+        },
+        {
+          "beat": "punchline",
+          "cue": "emphasis",
+          "physical_event": "grab_impact",
+          "start": 8.32,
+          "measurement_seconds": 0.2,
+          "rms_dbfs": -33.783,
+          "result": "PASS"
+        },
+        {
+          "beat": "reveal",
+          "cue": "outro_sting",
+          "physical_event": "title_reveal",
+          "start": 10.72,
+          "measurement_seconds": 0.2,
+          "rms_dbfs": -25.027,
+          "result": "PASS"
+        }
+      ],
+      "motion_intensity": 0.85,
+      "scene_events": 13,
+      "camera_events": 5,
+      "continuous_scene_seconds": 12.9,
+      "gates": {
+        "visual_audio_technical": "PASS",
+        "technical": "FAIL",
+        "editorial": "PENDING_HUMAN",
+        "release": "BLOCKED_PRODUCTION_VOICE"
+      },
+      "metrics": {
+        "render": {
+          "elapsed_seconds": 11.11,
+          "peak_kib": 201772
+        },
+        "mix": {
+          "elapsed_seconds": 0.93,
+          "peak_kib": 215220
+        },
+        "validation": {
+          "elapsed_seconds": 1.106177
+        },
+        "bytes": 1627089
+      },
+      "sha256": "5918f59a2fe9b56e36beb6dc1dd8b2bdc7fc63ab50cb7a28eb07d1fa741a88c0"
+    },
+    "candidate-b": {
+      "label": "Mischievous",
+      "description": "More energetic 45-second music section, stronger motion, earlier grab/reaction/title cadence.",
+      "music": {
+        "offset": 45.0,
+        "gain_db": -3.5,
+        "fade_in": 1.1,
+        "fade_out": 1.6
+      },
+      "audio": {
+        "integrated_lufs": -16.36,
+        "true_peak_db": -1.44,
+        "loudness_range": 2.6
+      },
+      "fade_measurement": {
+        "fade_in_seconds": 1.1,
+        "fade_out_seconds": 1.6,
+        "sampled_non_silent_points": 110147,
+        "envelope_mean_absolute_error": 0.00836,
+        "first_100ms_gain_ratio": 0.20882,
+        "last_100ms_gain_ratio": 0.037031,
+        "result": "PASS"
+      },
+      "sfx": [
+        {
+          "beat": "intro",
+          "cue": "intro_hit",
+          "physical_event": "camera_push",
+          "start": 0.1,
+          "measurement_seconds": 0.2,
+          "rms_dbfs": -22.493,
+          "result": "PASS"
+        },
+        {
+          "beat": "punchline",
+          "cue": "emphasis",
+          "physical_event": "grab_impact",
+          "start": 8.32,
+          "measurement_seconds": 0.2,
+          "rms_dbfs": -33.783,
+          "result": "PASS"
+        },
+        {
+          "beat": "reveal",
+          "cue": "outro_sting",
+          "physical_event": "title_reveal",
+          "start": 10.72,
+          "measurement_seconds": 0.2,
+          "rms_dbfs": -25.027,
+          "result": "PASS"
+        }
+      ],
+      "motion_intensity": 1.15,
+      "scene_events": 13,
+      "camera_events": 5,
+      "continuous_scene_seconds": 12.9,
+      "gates": {
+        "visual_audio_technical": "PASS",
+        "technical": "FAIL",
+        "editorial": "PENDING_HUMAN",
+        "release": "BLOCKED_PRODUCTION_VOICE"
+      },
+      "metrics": {
+        "render": {
+          "elapsed_seconds": 11.01,
+          "peak_kib": 203020
+        },
+        "mix": {
+          "elapsed_seconds": 0.92,
+          "peak_kib": 215420
+        },
+        "validation": {
+          "elapsed_seconds": 1.197423
+        },
+        "bytes": 1680318
+      },
+      "sha256": "277458c4bb7f772e69c407c0e2dbb333e61cfdfc449f17cee39cde73afadbf55"
+    }
+  },
+  "selected_candidate": null,
+  "golden_production_baseline_v2": null,
+  "renderer_changes": {
+    "files": [
+      "godot/mf002.gd",
+      "godot/scrappy_world_stage.gd"
+    ],
+    "reusable_capabilities": [
+      "generated_scene strategy",
+      "persistent world stage",
+      "primitive character and prop",
+      "physical signs/title",
+      "camera push/reveal/bump/settle",
+      "ambient lamp/dust/parallax",
+      "event evidence"
+    ],
+    "subject_specific_branches": 0
+  },
+  "failure_tests": "PASS",
+  "candidate_valid": false,
+  "blocker": "Mandatory spoken product name cannot be produced without an approved production voice. Flite is prohibited and absent from R4 outputs."
+}

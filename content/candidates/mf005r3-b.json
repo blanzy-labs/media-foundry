@@ -1,0 +1,9 @@
+{
+  "id": "candidate-b",
+  "label": "Balanced",
+  "description": "Tighter hook, longer gameplay hold, moderate music, and four purposeful SFX.",
+  "music": {"gain_db": -3.5, "narration_duck_db": -8, "attack_ms": 90, "release_ms": 240, "fade_in": 0.75, "fade_out": 1.2},
+  "transitions": {"punchline": "cut"},
+  "beat_durations": {"intro": 1.0, "setup": 3.5, "gameplay": 1.8, "dung_beetle": 2.2, "punchline": 2.7, "reveal": 2.8, "outro": 1.0},
+  "audio_cues": {"intro": "intro_hit", "setup": null, "gameplay": "transition", "dung_beetle": null, "punchline": "emphasis", "reveal": "transition", "outro": null}
+}

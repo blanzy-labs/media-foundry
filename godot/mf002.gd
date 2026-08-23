@@ -5,6 +5,7 @@ const H := 960.0
 const FPS := 30.0
 const ScrappyMediaSlotScript = preload("res://scrappy_media_slot.gd")
 const BeatTimelineScript = preload("res://beat_timeline.gd")
+const ScrappyWorldStageScript = preload("res://scrappy_world_stage.gd")
 
 var fixture: Dictionary
 var grammar: Dictionary
@@ -32,6 +33,8 @@ var media_frame_count := 0
 var media_loaded_frame := -1
 var media_video_textures: Array[ImageTexture] = []
 var media_slot_engine: RefCounted = ScrappyMediaSlotScript.new()
+var generated_scene_active := false
+var generated_stage: Node2D
 
 func _ready() -> void:
 	fixture_path = _argument_value("--fixture")
@@ -69,11 +72,20 @@ func _ready() -> void:
 		return
 	if not _prepare_layouts():
 		return
+	generated_scene_active = fixture.get("visual_strategy", {}).get("preference") == "generated_scene"
+	if generated_scene_active:
+		generated_stage = ScrappyWorldStageScript.new()
+		add_child(generated_stage)
+		var scene_result: Dictionary = generated_stage.configure(fixture, timeline, layouts, heavy_font, regular_font)
+		if scene_result.get("result") != "PASS":
+			_fail(str(scene_result.get("error", "GENERATED_SCENE_CONFIG_FAILED")))
+			return
 	RenderingServer.set_default_clear_color(_color("workshop_dark"))
 	print("MF002_RENDER_START id=%s grammar=%s seed=%d frames=%d" % [fixture.id, grammar.id, int(fixture.seed), total_frames])
 	print("MF004_TIMELINE_READY mode=%s beats=%d duration=%.3f" % [timeline.mode, timeline.beats.size(), video_duration])
 	print("MF002_STRUCTURAL safe_area=PASS layers=workshop,sign,media,paper,tape,props layout=PASS")
 	if validate_layout_only:
+		_write_layout_report("PASS", "")
 		_write_timeline_report()
 		print("MF002_LAYOUT_ONLY_COMPLETE id=%s" % fixture.id)
 		set_process(false)
@@ -84,14 +96,20 @@ func _process(_delta: float) -> void:
 		return
 	frame_index += 1
 	if frame_index >= total_frames:
+		_write_layout_report("PASS", "")
 		_write_timeline_report()
 		print("MF002_RENDER_COMPLETE id=%s frames=%d" % [fixture.id, total_frames])
 		get_tree().quit(0)
 		return
 	var t := float(frame_index) / FPS
-	position = Vector2(sin(t * 0.73) * 1.2, cos(t * 0.51) * 0.8)
-	var push: float = 1.0 + float(grammar.motion.camera_push) * (t / video_duration)
-	scale = Vector2.ONE * push
+	if generated_scene_active:
+		position = Vector2.ZERO
+		scale = Vector2.ONE
+		generated_stage.set_story_time(t)
+	else:
+		position = Vector2(sin(t * 0.73) * 1.2, cos(t * 0.51) * 0.8)
+		var push: float = 1.0 + float(grammar.motion.camera_push) * (t / video_duration)
+		scale = Vector2.ONE * push
 	if timeline.mode == "legacy":
 		_log_timeline_stage(frame_index)
 	queue_redraw()
@@ -113,7 +131,10 @@ func _draw() -> void:
 	var t := float(frame_index) / FPS
 	_draw_workshop(t)
 	if timeline.mode == "beats":
-		_draw_active_beat(t)
+		if generated_scene_active:
+			_draw_generated_timeline_boundary(t)
+		else:
+			_draw_active_beat(t)
 	elif t < float(grammar.motion.intro_end_seconds):
 		_draw_intro(t)
 	elif t < float(grammar.motion.outro_start_seconds):
@@ -125,12 +146,26 @@ func _draw_active_beat(t: float) -> void:
 	var beat: Dictionary = beat_timeline_engine.active_at(t, timeline)
 	if beat.is_empty():
 		return
+	_record_active_beat(beat)
+	_draw_beat_card(t, beat)
+
+func _draw_generated_timeline_boundary(t: float) -> void:
+	var beat: Dictionary = beat_timeline_engine.active_at(t, timeline)
+	if beat.is_empty():
+		return
+	_record_active_beat(beat)
+	if str(beat.type) in ["intro", "outro"]:
+		_draw_beat_card(t, beat)
+
+func _record_active_beat(beat: Dictionary) -> void:
 	var beat_id := str(beat.id)
 	if not executed_beats.has(beat_id):
 		executed_beats[beat_id] = {"first_frame": frame_index, "last_frame": frame_index}
 		print("MF004_BEAT_ACTIVE id=%s type=%s frame=%d start=%.3f end=%.3f" % [beat_id, str(beat.type), frame_index, float(beat.start), float(beat.end)])
 	else:
 		executed_beats[beat_id].last_frame = frame_index
+
+func _draw_beat_card(t: float, beat: Dictionary) -> void:
 	var lifecycle: Dictionary = beat_timeline_engine.lifecycle(t, beat, grammar)
 	var transition := str(beat.get("transition", "cut"))
 	var enter: float = _smoothstep(float(lifecycle.enter))
@@ -803,6 +838,8 @@ func _write_layout_report(status: String, reason: String, failure: Dictionary = 
 		if item.has("container_rect"):
 			serialized_layouts[key].container_rect = _rect_dictionary(item.container_rect)
 	var report := {"slice": "MF-002R1", "fixture": str(fixture.get("id", "unknown")), "result": status, "layout": serialized_layouts, "media": media_state, "overlap_checks": "PASS" if status == "PASS" else "FAIL", "reason": reason}
+	if generated_scene_active and generated_stage != null:
+		report.generated_scene = generated_stage.validation_report()
 	if not failure.is_empty():
 		report.failure = failure
 	var file := FileAccess.open(layout_report_path, FileAccess.WRITE)
