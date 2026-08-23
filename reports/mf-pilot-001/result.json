@@ -1,0 +1,92 @@
+{
+  "slice": "MF-PILOT-001",
+  "baseline": {
+    "mf001": "PASS",
+    "mf002": "PASS",
+    "mf002r1": "PASS",
+    "mf003": "PASS"
+  },
+  "assets": {
+    "books": {
+      "source": "media/images/books-dark-signal.png",
+      "sha256": "4546678c906bb0a6065c25a5d61da76a5bd89bfcd02e3fa13b2a0aebb0ce7af5",
+      "dimensions": "1920x2571"
+    },
+    "turd-burglar": {
+      "source": "media/screenshots/turd-burglar-gameplay.png",
+      "sha256": "c88faab6a331679b62c344b08a7e84f067965d38e5601e4e1a30c1c744967abe",
+      "dimensions": "1672x941"
+    },
+    "mythadis": {
+      "source": "media/screenshots/mythadis-social-card.png",
+      "sha256": "5a05967c156a0e11945554dc10d33e02310882d4219e7dfbe3132e75595c7fb1",
+      "dimensions": "1200x630"
+    }
+  },
+  "videos": {
+    "books": {
+      "render": "PASS",
+      "media": "PASS",
+      "layout": "PASS",
+      "output": "PASS",
+      "sha256": "de0f8a1bc357b61d587fae70715bd808764c007f9b422b5506bebf7373bd5f8b"
+    },
+    "turd-burglar": {
+      "render": "PASS",
+      "media": "PASS",
+      "layout": "PASS",
+      "output": "PASS",
+      "sha256": "e644a4cd7c80f105d45e27ff5791e9f8b491dcc618395726133188e0ff4e5ff2"
+    },
+    "mythadis": {
+      "render": "PASS",
+      "media": "PASS",
+      "layout": "PASS",
+      "output": "PASS",
+      "sha256": "99c6576f7417b2069e61dc70b9e5cca2e1f13ba6fa5f8cc7b9ce46d667dd305b"
+    }
+  },
+  "production_effort": {
+    "books": {
+      "content_fixtures_created": 1,
+      "source_assets_added": 1,
+      "renderer_files_changed": 0,
+      "configuration_files_changed": 0,
+      "render_seconds": 15.41,
+      "finalization_seconds": 15.3,
+      "validation_seconds": 0.651610478,
+      "peak_godot_kib": 204380,
+      "failed_render_attempts": 0,
+      "failures": []
+    },
+    "turd-burglar": {
+      "content_fixtures_created": 1,
+      "source_assets_added": 1,
+      "renderer_files_changed": 0,
+      "configuration_files_changed": 0,
+      "render_seconds": 21.21,
+      "finalization_seconds": 15.0,
+      "validation_seconds": 0.644444079,
+      "peak_godot_kib": 204004,
+      "failed_render_attempts": 0,
+      "failures": []
+    },
+    "mythadis": {
+      "content_fixtures_created": 1,
+      "source_assets_added": 1,
+      "renderer_files_changed": 0,
+      "configuration_files_changed": 0,
+      "render_seconds": 15.21,
+      "finalization_seconds": 14.18,
+      "validation_seconds": 0.640487261,
+      "peak_godot_kib": 198704,
+      "failed_render_attempts": 0,
+      "failures": []
+    }
+  },
+  "renderer_changes": [],
+  "text_layout": "PASS",
+  "contact_sheet": "PASS",
+  "technical_result": "PASS",
+  "human_result": "PENDING"
+}

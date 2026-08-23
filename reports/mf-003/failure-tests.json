@@ -1,0 +1,38 @@
+{
+  "slice": "MF-003",
+  "tests": {
+    "missing-image": {
+      "result": "PASS",
+      "expected": "MEDIA_ASSET_FAILED"
+    },
+    "corrupt-image": {
+      "result": "PASS",
+      "expected": "MEDIA_ASSET_FAILED"
+    },
+    "unsupported-format": {
+      "result": "PASS",
+      "expected": "MEDIA_ASSET_FAILED"
+    },
+    "missing-video": {
+      "result": "PASS",
+      "expected": "MEDIA_ASSET_FAILED"
+    },
+    "no-video-stream": {
+      "result": "PASS",
+      "expected": "MEDIA_ASSET_FAILED"
+    },
+    "invalid-start": {
+      "result": "PASS",
+      "expected": "MEDIA_ASSET_FAILED"
+    },
+    "clip-beyond-duration": {
+      "result": "PASS",
+      "expected": "MEDIA_ASSET_FAILED"
+    },
+    "malformed-media": {
+      "result": "PASS",
+      "expected": "MEDIA_ASSET_FAILED"
+    }
+  },
+  "result": "PASS"
+}

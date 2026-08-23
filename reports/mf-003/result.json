@@ -1,0 +1,38 @@
+{
+  "slice": "MF-003",
+  "baseline": {
+    "mf001": "PASS",
+    "mf002": "PASS",
+    "mf002r1": "PASS"
+  },
+  "fixtures": {
+    "image-fixture": {
+      "media_input": "PASS",
+      "media_slot": "PASS",
+      "output": "PASS",
+      "sha256": "1daedaf7ed52de990fdb787d4399e3da994a6d9096701ae808bbfada0ca375b7"
+    },
+    "screenshot-fixture": {
+      "media_input": "PASS",
+      "media_slot": "PASS",
+      "output": "PASS",
+      "sha256": "bf9067fb5fc1b7a756e0549f8e4bc62802afe94c3310665a8bd6dc9cecd3bc3d"
+    },
+    "video-fixture": {
+      "media_input": "PASS",
+      "media_slot": "PASS",
+      "output": "PASS",
+      "sha256": "65e03a6a0e153df462bf18ac818e1e4d6066378c6d820b676441f621509bde30"
+    }
+  },
+  "fit_modes": {
+    "contain": "PASS",
+    "cover": "PASS"
+  },
+  "video_timing": "PASS",
+  "failure_tests": "PASS",
+  "no_media_compatibility": "PASS",
+  "contact_sheet": "PASS",
+  "technical_result": "PASS",
+  "human_review": "PENDING"
+}

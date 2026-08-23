@@ -1,0 +1,11 @@
+{
+  "id": "stress-normal",
+  "template": "scrappy_diorama",
+  "seed": 22102,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {"headline": "OCTOPUSES HAVE THREE HEARTS.", "body": "Two pump blood to the gills. One handles the rest.", "emphasis": "SHOW-OFF."},
+  "visual": {"kind": "radial_creature", "primary": "b55d47", "secondary": "e7a05d", "label": "NORMAL TEST"},
+  "outro": {"text": "(s)Crap²y Games"},
+  "audio": {"enabled": true}
+}

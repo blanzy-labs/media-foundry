@@ -1,0 +1,64 @@
+{
+  "slice": "MF-002R1",
+  "layout": {
+    "intro": "PASS",
+    "headline": "PASS",
+    "body": "PASS",
+    "emphasis": "PASS",
+    "labels": "PASS",
+    "outro": "PASS",
+    "overlap_checks": "PASS"
+  },
+  "stress_tests": {
+    "short": "PASS",
+    "normal": "PASS",
+    "long": "PASS",
+    "overflow": "EXPECTED_FAIL"
+  },
+  "failure_tests": "PASS",
+  "regressions": {
+    "fact": {
+      "result": "PASS",
+      "path": "/home/blanzy/projects/media-foundry/artifacts/mf-002r1/regression/fact.mp4",
+      "bytes": 2263253,
+      "sha256": "9a729263139d664542e97af633438b21dda24f6f8541ed1adb0bc42ef5054c4f"
+    },
+    "turd-burglar": {
+      "result": "PASS",
+      "path": "/home/blanzy/projects/media-foundry/artifacts/mf-002r1/regression/turd-burglar.mp4",
+      "bytes": 2268788,
+      "sha256": "328c8da5b144527fd86bee992b57dae0543af7cf8731b7d0682c79196889e083"
+    },
+    "general": {
+      "result": "PASS",
+      "path": "/home/blanzy/projects/media-foundry/artifacts/mf-002r1/regression/general.mp4",
+      "bytes": 2340070,
+      "sha256": "b062cc0e41a58b00750228dfb119e82e63c1c3cc3fb95ca9324bdac017aee298"
+    },
+    "books": {
+      "result": "PASS",
+      "path": "/home/blanzy/projects/media-foundry/artifacts/mf-002r1/regression/books.mp4",
+      "bytes": 2322856,
+      "sha256": "8e6a49b779a4c9f55d804c9d84c3776cb77a187b52ddd143c630d28badc4f3d9"
+    },
+    "mythadis": {
+      "result": "PASS",
+      "path": "/home/blanzy/projects/media-foundry/artifacts/mf-002r1/regression/mythadis.mp4",
+      "bytes": 2522582,
+      "sha256": "136e93e0512a3d359471619b269c60156ee3d1a628f819d70415e75658ddadf9"
+    },
+    "venus": {
+      "result": "PASS",
+      "path": "/home/blanzy/projects/media-foundry/artifacts/mf-002r1/regression/venus.mp4",
+      "bytes": 2561444,
+      "sha256": "79047b76186c475f7ff382b0b7a051140d0e34dff81865d055277329043fa25a"
+    }
+  },
+  "venus": {
+    "before_sha256": "32274c95f3feffd7a5832b8a054631c19d16d84e46a68b5edd4899b2739116b3",
+    "after_sha256": "df9dd5578b17591c8984e7325fe1fa9715bd290242567dd3f13111c967710711",
+    "layout": "PASS"
+  },
+  "technical_result": "PASS",
+  "human_review": "PENDING"
+}

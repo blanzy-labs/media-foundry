@@ -1,0 +1,17 @@
+{
+  "id": "video-fixture",
+  "template": "scrappy_diorama",
+  "seed": 23033,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {"headline": "THE MONITOR PLAYS A REAL CLIP.", "body": "FFmpeg selects five seconds beginning two seconds into the source.", "emphasis": "TIMED. MUTED. TESTED."},
+  "visual": {"kind": "terminal", "primary": "4d8b83", "secondary": "a8d68f", "label": "CLIP MONITOR"},
+  "media": {
+    "type": "video", "source": "media/video/mf003-clip.mp4", "start_seconds": 2.0, "duration_seconds": 5.0,
+    "fit": "cover", "anchor": "center", "motion": "none", "muted": true,
+    "caption": "MP4 • 2s OFFSET • 5s CLIP", "required": true,
+    "provenance": {"type": "generated", "description": "deterministic eight-second local MP4 capability fixture"}
+  },
+  "outro": {"text": "(s)Crap²y Games"},
+  "audio": {"enabled": true}
+}

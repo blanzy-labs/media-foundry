@@ -1,0 +1,20 @@
+{
+  "id": "mf005r1-turd-burglar", "template": "scrappy_diorama", "seed": 24012,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {"headline": "WE'RE MAKING A STEALTH GAME...", "body": "ABOUT A DUNG BEETLE...", "emphasis": "THAT STEALS TURDS."},
+  "visual": {"kind": "beetle", "primary": "6f8954", "secondary": "be8a4a", "label": "CASE FILE 07B"},
+  "media": {"type": "screenshot", "source": "media/screenshots/turd-burglar-gameplay.png", "fit": "contain", "anchor": "center", "motion": "slow_push", "caption": "TURD BURGLAR • GAMEPLAY", "required": true, "provenance": {"type": "project_asset", "description": "Approved Turd Burglar gameplay production asset."}},
+  "music": {"source": "media/audio/music/scrappy-ambient-loop.wav", "required": true, "loop": true, "gain_db": -22, "narration_duck_db": -8, "attack_ms": 60, "release_ms": 180, "fade_in": 0.35, "fade_out": 0.6, "provenance": {"type": "project_owned_deterministic_fixture", "description": "Procedural four-second lo-fi pluck loop created for MF-005R1; no third-party composition or samples.", "created_date": "2026-08-23", "sha256": "3c682cee29a33d74fffddca218aa2ecb154510827914bb2e6fb62f57f8b69039"}},
+  "outro": {"text": "(s)Crap²y Games", "tagline": "TURD BURGLAR • STEALTH, SORT OF"}, "audio": {"enabled": true},
+  "narration_sync_policy": "semantic_beat", "production_media_required": true, "narration_required_beats": ["setup", "dung_beetle", "punchline"],
+  "beats": [
+    {"id": "intro", "type": "intro", "text": "WHAT YOU DIDN'T KNOW...", "duration": 1.2, "transition": "scrappy_pop", "audio_cue": "intro_hit", "narration": null},
+    {"id": "setup", "type": "statement", "text": "WE'RE MAKING A STEALTH GAME...", "duration": 3.5, "transition": "slide", "audio_cue": "text_pop", "narration": {"source": "media/audio/narration/mf005/turd-setup.wav", "text": "We are making a stealth game.", "semantic_target": "text", "lead_in": 0.15, "tail_out": 0.15, "provenance": {"source": "deterministic_fixture", "engine": "FFmpeg Flite", "voice": "slt"}}},
+    {"id": "gameplay", "type": "media", "media_ref": "default", "duration": 2.1, "transition": "scrappy_pop", "audio_cue": "transition", "narration": null},
+    {"id": "dung_beetle", "type": "statement", "text": "ABOUT A DUNG BEETLE...", "duration": 2.3, "transition": "cut", "audio_cue": "text_pop", "narration": {"source": "media/audio/narration/mf005/turd-media.wav", "text": "About a dung beetle.", "semantic_target": "text", "lead_in": 0.15, "tail_out": 0.15, "pause_after": 0.35, "provenance": {"source": "deterministic_fixture", "engine": "FFmpeg Flite", "voice": "slt"}}},
+    {"id": "punchline", "type": "emphasis", "text": "THAT STEALS TURDS.", "duration": 2.8, "transition": "scrappy_pop", "audio_cue": "emphasis", "narration": {"source": "media/audio/narration/mf005/turd-punchline.wav", "text": "That steals turds.", "semantic_target": "text", "lead_in": 0.15, "tail_out": 0.15, "provenance": {"source": "deterministic_fixture", "engine": "FFmpeg Flite", "voice": "slt"}}},
+    {"id": "reveal", "type": "reveal", "text": "TURD BURGLAR", "duration": 2.0, "transition": "slide", "audio_cue": "transition", "narration": null},
+    {"id": "outro", "type": "outro", "text": "(s)Crap²y Games", "duration": 1.1, "transition": "scrappy_pop", "audio_cue": "outro_sting", "narration": null}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "screenshot-fixture",
+  "template": "scrappy_diorama",
+  "seed": 23032,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {"headline": "WIDE FOOTAGE FITS VERTICAL VIDEO.", "body": "Cover fills the screen while a top anchor protects the important action.", "emphasis": "STILL SCRAPPY."},
+  "visual": {"kind": "terminal", "primary": "4d8b83", "secondary": "a8d68f", "label": "CAPTURE MONITOR"},
+  "media": {
+    "type": "screenshot", "source": "media/screenshots/mf003-wide.png", "fit": "cover", "anchor": "top",
+    "motion": "gentle_pan", "caption": "16:9 CAPTURE • COVER", "required": true,
+    "provenance": {"type": "generated", "description": "deterministic wide screenshot capability fixture"}
+  },
+  "outro": {"text": "(s)Crap²y Games"},
+  "audio": {"enabled": true}
+}

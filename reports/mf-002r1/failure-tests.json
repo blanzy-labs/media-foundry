@@ -1,0 +1,22 @@
+{
+  "slice": "MF-002R1",
+  "result": "PASS",
+  "tests": {
+    "oversized_headline": {
+      "result": "PASS",
+      "expected": "HEADLINE_LAYOUT_FAILED"
+    },
+    "malformed_layout_configuration": {
+      "result": "PASS",
+      "expected": "HEADLINE_LAYOUT_FAILED"
+    },
+    "missing_safe_area": {
+      "result": "PASS",
+      "expected": "CONFIG_LAYOUT_FAILED"
+    },
+    "minimum_font_size_exhaustion": {
+      "result": "PASS",
+      "expected": "HEADLINE_LAYOUT_FAILED"
+    }
+  }
+}

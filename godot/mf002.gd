@@ -2,22 +2,46 @@ extends Node2D
 
 const W := 540.0
 const H := 960.0
-const TOTAL_FRAMES := 450
 const FPS := 30.0
+const ScrappyMediaSlotScript = preload("res://scrappy_media_slot.gd")
+const BeatTimelineScript = preload("res://beat_timeline.gd")
 
 var fixture: Dictionary
 var grammar: Dictionary
 var frame_index := -1
+var total_frames := 450
+var video_duration := 15.0
 var heavy_font: Font
 var regular_font: Font
 var fixture_path := ""
 var grammar_path := ""
 var output_dir := ""
+var layout_report_path := ""
+var layout_debug := false
+var validate_layout_only := false
+var timeline_report_path := ""
+var timeline: Dictionary = {"mode": "legacy", "duration": 15.0, "beats": []}
+var executed_beats := {}
+var beat_timeline_engine: RefCounted = BeatTimelineScript.new()
+var layouts: Dictionary = {}
+var media_spec: Dictionary = {}
+var media_state: Dictionary = {"status": "NOT_PRESENT"}
+var media_texture: ImageTexture
+var media_frames_dir := ""
+var media_frame_count := 0
+var media_loaded_frame := -1
+var media_video_textures: Array[ImageTexture] = []
+var media_slot_engine: RefCounted = ScrappyMediaSlotScript.new()
 
 func _ready() -> void:
 	fixture_path = _argument_value("--fixture")
 	grammar_path = _argument_value("--grammar")
 	output_dir = _argument_value("--output-dir")
+	layout_report_path = _argument_value("--layout-report")
+	timeline_report_path = _argument_value("--timeline-report")
+	layout_debug = _has_argument("--debug-layout")
+	validate_layout_only = _has_argument("--validate-layout-only")
+	media_frames_dir = _argument_value("--media-frames-dir")
 	if fixture_path.is_empty() or grammar_path.is_empty() or output_dir.is_empty():
 		_fail("MF002_RENDER_ERROR missing fixture, grammar, or output directory")
 		return
@@ -26,29 +50,50 @@ func _ready() -> void:
 	if fixture.is_empty() or grammar.is_empty() or not _valid_contract():
 		_fail("MF002_RENDER_ERROR invalid contract")
 		return
+	timeline = beat_timeline_engine.build(fixture, grammar)
+	if timeline.get("status", "PASS") != "PASS":
+		_fail("MF004_TIMELINE_ERROR " + str(timeline.get("reason", "invalid timeline")))
+		return
+	video_duration = float(timeline.duration)
+	total_frames = int(round(video_duration * FPS))
 	heavy_font = load(str(grammar.typography.heavy_font)) as Font
 	regular_font = load(str(grammar.typography.regular_font)) as Font
 	if heavy_font == null or regular_font == null:
 		_fail("MF002_RENDER_ERROR font assets unavailable")
 		return
 	DirAccess.make_dir_recursive_absolute(output_dir)
+	if layout_report_path.is_empty():
+		layout_report_path = output_dir.path_join("layout-validation.json")
+	DirAccess.make_dir_recursive_absolute(layout_report_path.get_base_dir())
+	if not _prepare_media():
+		return
+	if not _prepare_layouts():
+		return
 	RenderingServer.set_default_clear_color(_color("workshop_dark"))
-	print("MF002_RENDER_START id=%s grammar=%s seed=%d frames=%d" % [fixture.id, grammar.id, int(fixture.seed), TOTAL_FRAMES])
-	print("MF002_STRUCTURAL safe_area=PASS layers=workshop,sign,media,paper,tape,props")
+	print("MF002_RENDER_START id=%s grammar=%s seed=%d frames=%d" % [fixture.id, grammar.id, int(fixture.seed), total_frames])
+	print("MF004_TIMELINE_READY mode=%s beats=%d duration=%.3f" % [timeline.mode, timeline.beats.size(), video_duration])
+	print("MF002_STRUCTURAL safe_area=PASS layers=workshop,sign,media,paper,tape,props layout=PASS")
+	if validate_layout_only:
+		_write_timeline_report()
+		print("MF002_LAYOUT_ONLY_COMPLETE id=%s" % fixture.id)
+		set_process(false)
+		get_tree().quit(0)
 
 func _process(_delta: float) -> void:
 	if fixture.is_empty() or grammar.is_empty():
 		return
 	frame_index += 1
-	if frame_index >= TOTAL_FRAMES:
-		print("MF002_RENDER_COMPLETE id=%s frames=%d" % [fixture.id, TOTAL_FRAMES])
+	if frame_index >= total_frames:
+		_write_timeline_report()
+		print("MF002_RENDER_COMPLETE id=%s frames=%d" % [fixture.id, total_frames])
 		get_tree().quit(0)
 		return
 	var t := float(frame_index) / FPS
 	position = Vector2(sin(t * 0.73) * 1.2, cos(t * 0.51) * 0.8)
-	var push: float = 1.0 + float(grammar.motion.camera_push) * (t / 15.0)
+	var push: float = 1.0 + float(grammar.motion.camera_push) * (t / video_duration)
 	scale = Vector2.ONE * push
-	_log_timeline_stage(frame_index)
+	if timeline.mode == "legacy":
+		_log_timeline_stage(frame_index)
 	queue_redraw()
 	await RenderingServer.frame_post_draw
 	_capture_frame()
@@ -67,12 +112,63 @@ func _draw() -> void:
 		return
 	var t := float(frame_index) / FPS
 	_draw_workshop(t)
-	if t < float(grammar.motion.intro_end_seconds):
+	if timeline.mode == "beats":
+		_draw_active_beat(t)
+	elif t < float(grammar.motion.intro_end_seconds):
 		_draw_intro(t)
 	elif t < float(grammar.motion.outro_start_seconds):
 		_draw_content_stage(t)
 	else:
 		_draw_outro(t)
+
+func _draw_active_beat(t: float) -> void:
+	var beat: Dictionary = beat_timeline_engine.active_at(t, timeline)
+	if beat.is_empty():
+		return
+	var beat_id := str(beat.id)
+	if not executed_beats.has(beat_id):
+		executed_beats[beat_id] = {"first_frame": frame_index, "last_frame": frame_index}
+		print("MF004_BEAT_ACTIVE id=%s type=%s frame=%d start=%.3f end=%.3f" % [beat_id, str(beat.type), frame_index, float(beat.start), float(beat.end)])
+	else:
+		executed_beats[beat_id].last_frame = frame_index
+	var lifecycle: Dictionary = beat_timeline_engine.lifecycle(t, beat, grammar)
+	var transition := str(beat.get("transition", "cut"))
+	var enter: float = _smoothstep(float(lifecycle.enter))
+	var active: float = _smoothstep(float(lifecycle.active))
+	var offset := Vector2.ZERO
+	var beat_scale := 1.0
+	if transition == "slide":
+		offset.x = (1.0 - enter) * 580.0 - float(lifecycle.exit) * 580.0
+	elif transition == "scrappy_pop":
+		beat_scale = (0.72 + 0.28 * _ease_out_back(enter)) * (0.86 + 0.14 * active)
+	draw_set_transform(Vector2(W / 2.0, H / 2.0) + offset, 0.0, Vector2.ONE * beat_scale)
+	match str(beat.type):
+		"intro":
+			_draw_rough_panel(Vector2(470, 272), _color("wood"), Color("462319"), int(beat.index) + 1)
+			_draw_fitted_text("beat_%d" % int(beat.index), _color("cream"))
+			_draw_fitted_text("intro_label", Color("2b1b13"))
+		"statement":
+			_draw_rough_panel(Vector2(438, 252), _color("paper"), Color("493223"), int(beat.index) + 1)
+			_draw_fitted_text("beat_%d" % int(beat.index), _color("paper_ink"))
+		"emphasis":
+			_draw_rough_panel(Vector2(430, 100), _color("tape"), Color("5a4024"), int(beat.index) + 1)
+			_draw_fitted_text("beat_%d" % int(beat.index), Color("3a291c"))
+		"reveal":
+			_draw_rough_panel(Vector2(458, 292), Color("294637"), Color("111d17"), int(beat.index) + 1)
+			_draw_fitted_text("beat_%d" % int(beat.index), _color("cream"))
+		"media":
+			_draw_rough_panel(Vector2(430, 382), _color("metal"), Color("222522"), int(beat.index) + 1)
+			draw_rect(Rect2(-188, -148, 376, 268), Color("241b17"), true)
+			draw_rect(Rect2(-188, -148, 376, 268), _color("rust"), false, 6)
+			if media_state.status == "PASS":
+				_draw_media_slot(t, float(lifecycle.progress))
+			else:
+				_draw_visual(str(fixture.visual.kind), Vector2(0, -12), t)
+		"outro":
+			_draw_rough_panel(Vector2(458, 292), Color("294637"), Color("111d17"), int(beat.index) + 1)
+			_draw_fitted_text("beat_%d" % int(beat.index), _color("cream"))
+			_draw_fitted_text("outro_label", Color("bcd3a6"))
+	draw_set_transform(Vector2.ZERO, 0.0)
 
 func _draw_workshop(t: float) -> void:
 	draw_rect(Rect2(0, 0, W, H), _color("workshop_dark"))
@@ -109,8 +205,8 @@ func _draw_intro(t: float) -> void:
 	var center: Vector2 = Vector2(W / 2.0 + impact, lerp(-250.0, 395.0, enter))
 	draw_set_transform(center, deg_to_rad(float(grammar.imperfection.sign_rotation_degrees)))
 	_draw_rough_panel(Vector2(470, 272), _color("wood"), Color("462319"), 1)
-	_center_text(str(fixture.intro.text), Vector2(0, -30), _role_size("INTRO"), _color("cream"), 410, heavy_font)
-	_center_text("A BADLY MAINTAINED KNOWLEDGE MACHINE", Vector2(0, 72), _role_size("LABEL"), Color("2b1b13"), 400, heavy_font)
+	_draw_fitted_text("intro", _color("cream"))
+	_draw_fitted_text("intro_label", Color("2b1b13"))
 	draw_set_transform(Vector2.ZERO, 0.0)
 	_draw_metal_label(Vector2(58, 560), str(fixture.visual.label), -0.025)
 	# Deterministic impact dust: fixed positions, animation only changes radius.
@@ -130,14 +226,17 @@ func _draw_content_stage(t: float) -> void:
 	_draw_rough_panel(Vector2(430, 382), _color("metal"), Color("222522"), 2)
 	draw_rect(Rect2(-188, -148, 376, 268), Color("241b17"), true)
 	draw_rect(Rect2(-188, -148, 376, 268), _color("rust"), false, 6)
-	_draw_visual(str(fixture.visual.kind), Vector2(0, -12), t)
+	if media_state.status == "PASS":
+		_draw_media_slot(t)
+	else:
+		_draw_visual(str(fixture.visual.kind), Vector2(0, -12), t)
 	draw_set_transform(Vector2.ZERO, 0.0)
 	_draw_metal_label(Vector2(62, 145 + stage_y), str(fixture.visual.label), 0.02)
 	# Crooked paper note carries the content, physically attached by tape.
 	draw_set_transform(Vector2(270, 684 + stage_y), deg_to_rad(float(grammar.imperfection.headline_rotation_degrees)))
 	_draw_rough_panel(Vector2(438, 252), _color("paper"), Color("493223"), 3)
-	_center_text(str(fixture.content.headline), Vector2(0, -63), _role_size("HEADLINE"), _color("paper_ink"), 388, heavy_font)
-	_center_text(str(fixture.content.body), Vector2(0, 44), _role_size("BODY"), Color("4b372b"), 378, regular_font)
+	_draw_fitted_text("headline", _color("paper_ink"))
+	_draw_fitted_text("body", Color("4b372b"))
 	draw_set_transform(Vector2.ZERO, 0.0)
 	_draw_tape(Vector2(35, 561 + stage_y), 0.14)
 	_draw_tape(Vector2(410, 786 + stage_y), -0.11)
@@ -146,7 +245,7 @@ func _draw_content_stage(t: float) -> void:
 	var punch: float = lerp(float(grammar.motion.EMPHASIS.scale), 1.0, _smoothstep(punch_phase))
 	draw_set_transform(Vector2(270, 838 + stage_y), -0.025 + sin(t * 2.4) * 0.008, Vector2.ONE * punch)
 	_draw_rough_panel(Vector2(330, 68), _color("tape"), Color("5a4024"), 4)
-	_center_text(str(fixture.content.emphasis), Vector2(0, 8), _role_size("EMPHASIS"), Color("3a291c"), 300, heavy_font)
+	_draw_fitted_text("emphasis", Color("3a291c"))
 	draw_set_transform(Vector2.ZERO, 0.0)
 
 func _draw_outro(t: float) -> void:
@@ -154,9 +253,8 @@ func _draw_outro(t: float) -> void:
 	var center := Vector2(270, lerp(1080.0, 455.0, enter))
 	draw_set_transform(center, deg_to_rad(1.4))
 	_draw_rough_panel(Vector2(458, 292), Color("294637"), Color("111d17"), 5)
-	_center_text(str(fixture.outro.text), Vector2(0, -24), _role_size("OUTRO"), _color("cream"), 410, heavy_font)
-	var outro_tagline := str(fixture.outro.get("tagline", "HELD TOGETHER WITH TESTS & TAPE"))
-	_center_text(outro_tagline, Vector2(0, 73), _role_size("LABEL"), Color("bcd3a6"), 400, heavy_font)
+	_draw_fitted_text("outro", _color("cream"))
+	_draw_fitted_text("outro_label", Color("bcd3a6"))
 	draw_set_transform(Vector2.ZERO, 0.0)
 	# A loose bolt spins into place beside the sign.
 	draw_set_transform(Vector2(462, 632), t * 4.0)
@@ -214,8 +312,9 @@ func _draw_visual(kind: String, center: Vector2, t: float) -> void:
 			draw_circle(center, 90, primary)
 
 func _draw_prop_board(center: Vector2, t: float) -> void:
-	for prop_value in fixture.visual.get("props", []):
-		var prop: Dictionary = prop_value
+	var props: Array = fixture.visual.get("props", [])
+	for prop_index in range(props.size()):
+		var prop: Dictionary = props[prop_index]
 		var prop_center := center + Vector2(float(prop.get("x", 0)), float(prop.get("y", 0)))
 		var primary := Color(str(prop.get("color", fixture.visual.primary)))
 		var accent := Color(str(prop.get("accent", fixture.visual.secondary)))
@@ -241,7 +340,7 @@ func _draw_prop_board(center: Vector2, t: float) -> void:
 				var points := _rotated_rect_points(prop_center, size, rotation)
 				draw_colored_polygon(points, primary)
 				draw_polyline(_closed(points), Color("3c291d"), 4, true)
-				_center_text(str(prop.get("label", "NOTE")), prop_center + Vector2(0, 6), int(prop.get("font_size", 15)), Color("2a1d17"), size.x - 12, heavy_font)
+				_draw_fitted_text("prop_%d_label" % prop_index, Color("2a1d17"))
 			"line":
 				var target := center + Vector2(float(prop.get("to_x", 0)), float(prop.get("to_y", 0)))
 				draw_line(prop_center, target, primary, float(prop.get("width", 5)), true)
@@ -273,8 +372,8 @@ func _draw_prop_board(center: Vector2, t: float) -> void:
 				var size := Vector2(float(prop.get("width", 102)), float(prop.get("height", 56)))
 				draw_rect(Rect2(prop_center - size / 2.0, size), primary, true)
 				draw_rect(Rect2(prop_center - size / 2.0, size), accent, false, 4)
-				_center_text(str(prop.get("label", "VALUE")), prop_center + Vector2(0, -7), 12, accent, size.x - 8, heavy_font)
-				_center_text(str(prop.get("value", "0")), prop_center + Vector2(0, 15), 19, Color("f4df9d"), size.x - 8, heavy_font)
+				_draw_fitted_text("prop_%d_label" % prop_index, accent)
+				_draw_fitted_text("prop_%d_value" % prop_index, Color("f4df9d"))
 			"telescope":
 				var sway := sin(t * 0.8) * 0.025
 				var direction := Vector2(1, -0.55).rotated(sway)
@@ -334,36 +433,381 @@ func _draw_tape(center: Vector2, rotation: float) -> void:
 		draw_line(Vector2(-32 + cut * 15, -10), Vector2(-27 + cut * 15, 10), Color(0.40, 0.31, 0.15, 0.22), 2)
 	draw_set_transform(Vector2.ZERO, 0.0)
 
-func _draw_metal_label(top_left: Vector2, text: String, rotation: float) -> void:
+func _draw_metal_label(top_left: Vector2, _text: String, rotation: float) -> void:
 	draw_set_transform(top_left + Vector2(105, 27), rotation)
 	draw_rect(Rect2(-105, -27, 210, 54), _color("metal"), true)
 	draw_rect(Rect2(-105, -27, 210, 54), Color("262b28"), false, 4)
 	draw_circle(Vector2(-88, 0), 5, Color("242622"))
 	draw_circle(Vector2(88, 0), 5, Color("242622"))
-	_center_text(text, Vector2(0, 6), _role_size("LABEL"), Color("f0dda5"), 170, heavy_font)
+	# All fixture-driven metal labels share this authoritative local safe area.
+	_draw_fitted_text("visual_label", Color("f0dda5"))
 	draw_set_transform(Vector2.ZERO, 0.0)
 
-func _center_text(value: String, center: Vector2, size: int, color: Color, max_width: float, selected_font: Font) -> void:
-	var words := value.split(" ")
+func _prepare_media() -> bool:
+	var configured = fixture.get("media", null)
+	if configured == null:
+		media_state = {"status": "NOT_PRESENT", "fallback": "fixture_visual"}
+		return true
+	if typeof(configured) != TYPE_DICTIONARY:
+		return _media_failure("malformed media configuration", {"expected": "object or null"})
+	if not configured.has("type") and timeline.mode == "beats":
+		var referenced := ""
+		for beat in timeline.beats:
+			if str(beat.type) == "media":
+				var media_ref := str(beat.get("media_ref", "default"))
+				if not referenced.is_empty() and referenced != media_ref:
+					return _media_failure("one active named media asset per timeline is currently supported", {"first": referenced, "next": media_ref})
+				referenced = media_ref
+		if referenced.is_empty() or not configured.has(referenced) or typeof(configured[referenced]) != TYPE_DICTIONARY:
+			return _media_failure("named media reference is unavailable", {"media_ref": referenced})
+		configured = configured[referenced]
+	media_spec = configured
+	var media_type := str(media_spec.get("type", ""))
+	var fit := str(media_spec.get("fit", ""))
+	var anchor := str(media_spec.get("anchor", ""))
+	var motion := str(media_spec.get("motion", "none"))
+	var required = media_spec.get("required", null)
+	if media_type not in ["image", "screenshot", "video"] or not grammar.media_slot.fit_modes.has(fit) or not grammar.media_slot.anchors.has(anchor):
+		return _media_failure("unsupported media type, fit, or anchor", {"type": media_type, "fit": fit, "anchor": anchor})
+	if required == null or typeof(required) != TYPE_BOOL or typeof(media_spec.get("provenance", null)) != TYPE_DICTIONARY:
+		return _media_failure("malformed required or provenance metadata", {})
+	if media_type == "video" and motion != "none":
+		return _media_failure("video motion must be none", {"motion": motion})
+	if media_type != "video" and not grammar.media_slot.image_motion.has(motion):
+		return _media_failure("unsupported image motion", {"motion": motion})
+	var source := _resolve_media_source(str(media_spec.get("source", "")))
+	if source.is_empty() or not FileAccess.file_exists(source):
+		if required == false:
+			media_state = {"status": "OPTIONAL_FALLBACK", "fallback": "fixture_visual", "source": source}
+			print("MF003_MEDIA_OPTIONAL_FALLBACK source=%s" % source)
+			return true
+		return _media_failure("file not found", {"source": source})
+	if media_type in ["image", "screenshot"]:
+		var image := Image.new()
+		var error := image.load(source)
+		if error != OK or image.get_width() <= 0 or image.get_height() <= 0:
+			return _media_failure("image is unreadable or has invalid dimensions", {"source": source, "error": error})
+		if image.get_width() > int(grammar.media_slot.maximum_source_width) or image.get_height() > int(grammar.media_slot.maximum_source_height):
+			return _media_failure("image dimensions exceed template limit", {"width": image.get_width(), "height": image.get_height()})
+		media_texture = ImageTexture.create_from_image(image)
+		media_state = {"status": "PASS", "type": media_type, "source": source, "width": image.get_width(), "height": image.get_height(), "fit": fit, "anchor": anchor, "motion": motion, "safe_rect": grammar.media_slot.safe_rect}
+	else:
+		if media_spec.get("muted") != true:
+			return _media_failure("MF-003 video inputs must be muted", {})
+		if media_frames_dir.is_empty() or not DirAccess.dir_exists_absolute(media_frames_dir):
+			return _media_failure("normalized video frames are unavailable", {"frames_dir": media_frames_dir})
+		var directory := DirAccess.open(media_frames_dir)
+		for filename in directory.get_files():
+			if filename.begins_with("frame_") and filename.ends_with(".png"):
+				media_frame_count += 1
+		if media_frame_count <= 0 or not _preload_video_frames():
+			return _media_failure("normalized video has no readable frames", {"frames_dir": media_frames_dir})
+		media_state = {"status": "PASS", "type": media_type, "source": source, "width": media_texture.get_width(), "height": media_texture.get_height(), "fit": fit, "anchor": anchor, "motion": "none", "normalized_frames": media_frame_count, "safe_rect": grammar.media_slot.safe_rect}
+	media_state.geometry_samples = _media_geometry_samples()
+	media_state.timeline = {"enter_seconds": float(grammar.motion.intro_end_seconds), "exit_seconds": float(grammar.motion.outro_start_seconds)}
+	if timeline.mode == "beats":
+		for beat in timeline.beats:
+			if str(beat.type) == "media":
+				media_state.timeline = {"enter_seconds": float(beat.start), "exit_seconds": float(beat.end), "beat_id": str(beat.id)}
+				break
+	print("MF003_MEDIA_READY type=%s source=%s dimensions=%dx%d fit=%s anchor=%s" % [media_type, source, int(media_state.width), int(media_state.height), fit, anchor])
+	return true
+
+func _resolve_media_source(source: String) -> String:
+	if source.is_empty():
+		return ""
+	if source.is_absolute_path():
+		return source.simplify_path()
+	var project_root := fixture_path.get_base_dir().get_base_dir().get_base_dir()
+	return project_root.path_join(source).simplify_path()
+
+func _media_caption() -> String:
+	if not media_spec.is_empty() and not str(media_spec.get("caption", "")).strip_edges().is_empty():
+		return str(media_spec.caption)
+	return str(fixture.visual.label)
+
+func _load_video_frame(index: int) -> bool:
+	if index == media_loaded_frame and media_texture != null:
+		return true
+	if index < 0 or index >= media_video_textures.size():
+		return false
+	media_texture = media_video_textures[index]
+	media_loaded_frame = index
+	return true
+
+func _preload_video_frames() -> bool:
+	for index in range(media_frame_count):
+		var path := media_frames_dir.path_join("frame_%06d.png" % index)
+		var image := Image.new()
+		if image.load(path) != OK or image.get_width() <= 0 or image.get_height() <= 0:
+			return false
+		media_video_textures.append(ImageTexture.create_from_image(image))
+	return _load_video_frame(0)
+
+func _media_geometry_samples() -> Array:
+	var safe := _rect_from_config(grammar.media_slot.safe_rect)
+	var samples := []
+	for progress in [0.0, 0.5, 1.0]:
+		var geometry: Dictionary = media_slot_engine.geometry(Vector2(float(media_state.width), float(media_state.height)), safe, str(media_spec.fit), str(media_spec.anchor), str(media_spec.get("motion", "none")), progress, float(grammar.media_slot.slow_push_amount), float(grammar.media_slot.gentle_pan_amount))
+		samples.append({"progress": progress, "destination_rect": _rect_dictionary(geometry.destination), "source_rect": _rect_dictionary(geometry.source)})
+	return samples
+
+func _draw_media_slot(t: float, beat_progress: float = -1.0) -> void:
+	if str(media_state.type) == "video":
+		var elapsed: float = float(media_spec.duration_seconds) * beat_progress if beat_progress >= 0.0 else maxf(0.0, t - float(grammar.motion.intro_end_seconds))
+		var requested_frames: int = maxi(1, int(round(float(media_spec.duration_seconds) * float(grammar.media_slot.video_frame_rate))))
+		var index: int = media_slot_engine.frame_index(elapsed, int(grammar.media_slot.video_frame_rate), media_frame_count, requested_frames)
+		if not _load_video_frame(index):
+			_fail("MEDIA_ASSET_FAILED source=%s reason: normalized frame %d is unreadable" % [str(media_state.source), index])
+			return
+	var safe: Rect2 = _rect_from_config(grammar.media_slot.safe_rect)
+	draw_rect(safe, Color(str(grammar.media_slot.background)), true)
+	var progress: float = beat_progress if beat_progress >= 0.0 else clampf((t - float(grammar.motion.intro_end_seconds)) / (float(grammar.motion.outro_start_seconds) - float(grammar.motion.intro_end_seconds)), 0.0, 1.0)
+	var geometry: Dictionary = media_slot_engine.geometry(Vector2(media_texture.get_width(), media_texture.get_height()), safe, str(media_spec.fit), str(media_spec.anchor), str(media_spec.get("motion", "none")), progress, float(grammar.media_slot.slow_push_amount), float(grammar.media_slot.gentle_pan_amount))
+	draw_texture_rect_region(media_texture, geometry.destination, geometry.source)
+	# A restrained inner shadow, scratches, and glare keep the slot in the physical grammar.
+	draw_rect(safe, Color(0.02, 0.015, 0.01, 0.65), false, float(grammar.media_slot.inner_shadow_width))
+	for scratch in range(7):
+		var y := safe.position.y + 18.0 + float((scratch * 37 + int(fixture.seed)) % int(safe.size.y - 30.0))
+		var x := safe.position.x + 12.0 + float((scratch * 53 + int(fixture.seed / 5)) % int(safe.size.x - 80.0))
+		draw_line(Vector2(x, y), Vector2(x + 35 + scratch * 4, y - 2 + scratch % 3), Color(0.95, 0.9, 0.72, 0.12), 1.5)
+	draw_colored_polygon(PackedVector2Array([safe.position + Vector2(12, 8), safe.position + Vector2(92, 8), safe.position + Vector2(42, safe.size.y - 8), safe.position + Vector2(12, safe.size.y - 8)]), Color(1, 1, 1, 0.035))
+
+func _media_failure(reason: String, detail: Dictionary) -> bool:
+	media_state = {"status": "FAIL", "reason": reason, "detail": detail, "source": str(media_spec.get("source", ""))}
+	_write_layout_report("FAIL", reason, {"code": "MEDIA_ASSET_FAILED", "fixture": str(fixture.get("id", "unknown")), "role": "MEDIA", "safe_area": "MEDIA_SAFE_RECT", "reason": reason, "detail": detail})
+	printerr("MEDIA_ASSET_FAILED source=%s reason: %s detail=%s" % [media_state.source, reason, JSON.stringify(detail)])
+	get_tree().quit(1)
+	return false
+
+func _prepare_layouts() -> bool:
+	var typography = grammar.get("typography", {})
+	var roles = typography.get("roles", {}) if typeof(typography) == TYPE_DICTIONARY else {}
+	var safe_areas = typography.get("safe_areas", {}) if typeof(typography) == TYPE_DICTIONARY else {}
+	var required_areas := ["INTRO_SAFE_AREA", "HEADLINE_SAFE_AREA", "BODY_SAFE_AREA", "EMPHASIS_SAFE_AREA", "OUTRO_SAFE_AREA", "INTRO_LABEL_SAFE_AREA", "LABEL_SAFE_AREA", "OUTRO_LABEL_SAFE_AREA"]
+	for area_name in required_areas:
+		if not safe_areas.has(area_name):
+			return _layout_failure("CONFIG", area_name, "missing safe-area definition", {})
+	var instances := [
+		{"key": "intro_label", "area": "INTRO_LABEL_SAFE_AREA", "text": "A BADLY MAINTAINED KNOWLEDGE MACHINE"},
+		{"key": "visual_label", "area": "LABEL_SAFE_AREA", "text": _media_caption()},
+		{"key": "outro_label", "area": "OUTRO_LABEL_SAFE_AREA", "text": str(fixture.outro.get("tagline", "HELD TOGETHER WITH TESTS & TAPE"))}
+	]
+	if timeline.mode == "legacy":
+		instances.append_array([
+			{"key": "intro", "area": "INTRO_SAFE_AREA", "text": str(fixture.intro.text)},
+			{"key": "headline", "area": "HEADLINE_SAFE_AREA", "text": str(fixture.content.headline)},
+			{"key": "body", "area": "BODY_SAFE_AREA", "text": str(fixture.content.body)},
+			{"key": "emphasis", "area": "EMPHASIS_SAFE_AREA", "text": str(fixture.content.emphasis)},
+			{"key": "outro", "area": "OUTRO_SAFE_AREA", "text": str(fixture.outro.text)}
+		])
+	else:
+		var beat_areas := {"intro": "INTRO_SAFE_AREA", "statement": "HEADLINE_SAFE_AREA", "emphasis": "EMPHASIS_SAFE_AREA", "reveal": "OUTRO_SAFE_AREA", "outro": "OUTRO_SAFE_AREA"}
+		for beat in timeline.beats:
+			if beat_areas.has(str(beat.type)):
+				instances.append({"key": "beat_%d" % int(beat.index), "area": beat_areas[str(beat.type)], "text": str(beat.text)})
+	for instance in instances:
+		var area_name: String = instance.area
+		var area: Dictionary = safe_areas[area_name]
+		var role := str(area.get("role", ""))
+		if not roles.has(role):
+			return _layout_failure(role if not role.is_empty() else "CONFIG", area_name, "missing typography role", {})
+		var safe_rect := _rect_from_config(area)
+		if safe_rect.size.x <= 0.0 or safe_rect.size.y <= 0.0:
+			return _layout_failure(role, area_name, "malformed safe-area dimensions", {"safe_area": _rect_dictionary(safe_rect)})
+		var fitted := _fit_text(str(instance.text), role, area_name, safe_rect)
+		if fitted.is_empty():
+			return false
+		layouts[instance.key] = fitted
+	if not _prepare_prop_layouts(roles):
+		return false
+	if not _validate_configured_collisions(safe_areas):
+		return false
+	_write_layout_report("PASS", "")
+	print("MF002_LAYOUT fixture=%s intro=PASS headline=PASS body=PASS emphasis=PASS labels=PASS outro=PASS overlap_checks=PASS" % fixture.id)
+	return true
+
+func _prepare_prop_layouts(roles: Dictionary) -> bool:
+	var templates = grammar.typography.get("derived_safe_areas", {})
+	var props: Array = fixture.visual.get("props", [])
+	for index in range(props.size()):
+		var prop: Dictionary = props[index]
+		var kind := str(prop.get("type", ""))
+		if kind not in ["note", "counter"]:
+			continue
+		var width := float(prop.get("width", 0))
+		var height := float(prop.get("height", 0))
+		var center := Vector2(float(prop.get("x", 0)), float(prop.get("y", 0)))
+		var container_rect := Rect2(center - Vector2(width, height) / 2.0, Vector2(width, height))
+		if width <= 0.0 or height <= 0.0:
+			return _layout_failure("LABEL", "PROP_%d" % index, "malformed decorative text container", {"container": _rect_dictionary(container_rect)})
+		if kind == "note":
+			var area_name := "PROP_NOTE_LABEL_SAFE_AREA"
+			if not templates.has(area_name):
+				return _layout_failure("CONFIG", area_name, "missing derived safe-area definition", {})
+			var rule: Dictionary = templates[area_name]
+			if not roles.has(str(rule.get("role", ""))):
+				return _layout_failure("CONFIG", area_name, "derived safe area references missing role", {})
+			var safe_rect := container_rect.grow(-float(rule.get("inset_x", 0)))
+			# Respect a distinct vertical inset without embedding fixture coordinates.
+			safe_rect.position.y = container_rect.position.y + float(rule.get("inset_y", 0))
+			safe_rect.size.y = container_rect.size.y - 2.0 * float(rule.get("inset_y", 0))
+			var fitted := _fit_text(str(prop.get("label", "")), str(rule.role), area_name, safe_rect)
+			if fitted.is_empty():
+				return false
+			fitted.container_rect = container_rect
+			layouts["prop_%d_label" % index] = fitted
+		else:
+			for field in ["label", "value"]:
+				var area_name := "PROP_COUNTER_%s_SAFE_AREA" % str(field).to_upper()
+				if not templates.has(area_name):
+					return _layout_failure("CONFIG", area_name, "missing derived safe-area definition", {})
+				var rule: Dictionary = templates[area_name]
+				if not roles.has(str(rule.get("role", ""))):
+					return _layout_failure("CONFIG", area_name, "derived safe area references missing role", {})
+				var inset_x := float(rule.get("inset_x", 0))
+				var safe_rect := Rect2(container_rect.position.x + inset_x, container_rect.position.y, container_rect.size.x - inset_x * 2.0, 0)
+				if field == "label":
+					safe_rect.position.y += float(rule.get("top_inset", 0))
+					safe_rect.size.y = float(rule.get("height", 0))
+				else:
+					safe_rect.position.y += float(rule.get("top_offset", 0))
+					safe_rect.size.y = container_rect.size.y - float(rule.get("top_offset", 0)) - float(rule.get("bottom_inset", 0))
+				var fitted := _fit_text(str(prop.get(field, "")), str(rule.role), area_name, safe_rect)
+				if fitted.is_empty():
+					return false
+				fitted.container_rect = container_rect
+				layouts["prop_%d_%s" % [index, field]] = fitted
+	return true
+
+func _fit_text(value: String, role: String, area_name: String, safe_rect: Rect2) -> Dictionary:
+	var constraints: Dictionary = grammar.typography.roles[role]
+	var preferred := int(constraints.get("preferred_font_size", 0))
+	var minimum := int(constraints.get("min_font_size", 0))
+	var max_lines := int(constraints.get("max_lines", 0))
+	var preferred_spacing := float(constraints.get("line_spacing", 0.0))
+	var minimum_spacing := float(constraints.get("min_line_spacing", 0.0))
+	if preferred <= 0 or minimum <= 0 or minimum > preferred or max_lines <= 0 or minimum_spacing <= 0.0 or preferred_spacing < minimum_spacing:
+		_layout_failure(role, area_name, "malformed typography constraints", {"minimum_font_size": minimum, "preferred_font_size": preferred})
+		return {}
+	if constraints.get("wrap") != true or constraints.get("fit_mode") != "shrink_to_fit":
+		_layout_failure(role, area_name, "unsupported wrapping or fit mode", {})
+		return {}
+	if constraints.get("horizontal_alignment") != "center" or constraints.get("vertical_alignment") != "center":
+		_layout_failure(role, area_name, "unsupported text alignment", {})
+		return {}
+	var selected_font := regular_font if role == "BODY" else heavy_font
+	var max_iterations := int(grammar.typography.get("max_fit_iterations", 32))
+	var iterations := 0
+	for spacing in [preferred_spacing, minimum_spacing]:
+		for font_size in range(preferred, minimum - 1, -1):
+			iterations += 1
+			if iterations > max_iterations:
+				_layout_failure(role, area_name, "maximum fitting iterations exceeded", {"iterations": iterations})
+				return {}
+			var lines := _wrap_lines(value, selected_font, font_size, safe_rect.size.x)
+			if lines.is_empty() or lines.size() > max_lines:
+				continue
+			var font_height := selected_font.get_height(font_size)
+			var line_advance: float = float(font_size) * float(spacing)
+			var rendered_height: float = float(font_height) + float(lines.size() - 1) * line_advance
+			var rendered_width := 0.0
+			for line in lines:
+				rendered_width = max(rendered_width, selected_font.get_string_size(line, HORIZONTAL_ALIGNMENT_LEFT, -1, font_size).x)
+			if rendered_width <= safe_rect.size.x + 0.01 and rendered_height <= safe_rect.size.y + 0.01:
+				var rendered_rect := Rect2(safe_rect.get_center() - Vector2(rendered_width, rendered_height) / 2.0, Vector2(rendered_width, rendered_height))
+				return {
+					"status": "PASS", "role": role, "safe_area_name": area_name, "text": value,
+					"font_size": font_size, "minimum_font_size": minimum, "line_spacing": spacing,
+					"lines": lines, "line_count": lines.size(), "line_advance": line_advance,
+					"font_ascent": selected_font.get_ascent(font_size), "font_height": font_height,
+					"safe_rect": safe_rect, "rendered_rect": rendered_rect, "iterations": iterations
+				}
+	_layout_failure(role, area_name, "content exceeds safe area at minimum readable font size", {
+		"safe_area": _rect_dictionary(safe_rect), "minimum_font_size": minimum, "preferred_font_size": preferred,
+		"max_lines": max_lines, "text_length": value.length(), "iterations": iterations
+	})
+	return {}
+
+func _wrap_lines(value: String, selected_font: Font, font_size: int, max_width: float) -> Array[String]:
+	var words := value.strip_edges().split(" ", false)
 	var lines: Array[String] = []
 	var line := ""
 	for word in words:
+		if selected_font.get_string_size(word, HORIZONTAL_ALIGNMENT_LEFT, -1, font_size).x > max_width:
+			return []
 		var candidate := word if line.is_empty() else line + " " + word
-		if selected_font.get_string_size(candidate, HORIZONTAL_ALIGNMENT_LEFT, -1, size).x > max_width and not line.is_empty():
+		if selected_font.get_string_size(candidate, HORIZONTAL_ALIGNMENT_LEFT, -1, font_size).x > max_width and not line.is_empty():
 			lines.append(line)
 			line = word
 		else:
 			line = candidate
 	if not line.is_empty():
 		lines.append(line)
-	var line_height := float(size) * 1.12
-	var start_y := center.y - (float(lines.size() - 1) * line_height / 2.0)
-	for index in range(lines.size()):
-		var width := selected_font.get_string_size(lines[index], HORIZONTAL_ALIGNMENT_LEFT, -1, size).x
-		draw_string(selected_font, Vector2(center.x - width / 2.0, start_y + index * line_height), lines[index], HORIZONTAL_ALIGNMENT_LEFT, -1, size, color)
+	return lines
 
-func _role_size(role: String) -> int:
-	return int(grammar.typography.roles[role].size)
+func _draw_fitted_text(key: String, color: Color) -> void:
+	var layout: Dictionary = layouts[key]
+	var selected_font := regular_font if layout.role == "BODY" else heavy_font
+	var rendered_rect: Rect2 = layout.rendered_rect
+	var baseline := rendered_rect.position.y + float(layout.font_ascent)
+	for index in range(layout.lines.size()):
+		var line: String = layout.lines[index]
+		var width := selected_font.get_string_size(line, HORIZONTAL_ALIGNMENT_LEFT, -1, int(layout.font_size)).x
+		draw_string(selected_font, Vector2(rendered_rect.get_center().x - width / 2.0, baseline + float(index) * float(layout.line_advance)), line, HORIZONTAL_ALIGNMENT_LEFT, -1, int(layout.font_size), color)
+	if layout_debug:
+		draw_rect(layout.safe_rect, Color(0.1, 0.95, 0.35, 0.9), false, 2.0)
+		draw_rect(layout.rendered_rect, Color(0.95, 0.2, 0.2, 0.9), false, 1.0)
+
+func _validate_configured_collisions(safe_areas: Dictionary) -> bool:
+	for pair in grammar.typography.get("collision_checks", []):
+		if typeof(pair) != TYPE_ARRAY or pair.size() != 2 or not safe_areas.has(pair[0]) or not safe_areas.has(pair[1]):
+			return _layout_failure("CONFIG", "collision_checks", "malformed collision check", {"pair": pair})
+		var first: Dictionary = safe_areas[pair[0]]
+		var second: Dictionary = safe_areas[pair[1]]
+		var first_rect := _stage_rect(first)
+		var second_rect := _stage_rect(second)
+		if first_rect.intersects(second_rect):
+			return _layout_failure("COLLISION", "%s/%s" % [pair[0], pair[1]], "major layout regions overlap", {"first": _rect_dictionary(first_rect), "second": _rect_dictionary(second_rect)})
+	return true
+
+func _stage_rect(area: Dictionary) -> Rect2:
+	var rect := _rect_from_config(area)
+	var origin = area.get("stage_origin", [0, 0])
+	return Rect2(rect.position + Vector2(float(origin[0]), float(origin[1])), rect.size)
+
+func _rect_from_config(area: Dictionary) -> Rect2:
+	return Rect2(float(area.get("x", 0)), float(area.get("y", 0)), float(area.get("width", 0)), float(area.get("height", 0)))
+
+func _rect_dictionary(rect: Rect2) -> Dictionary:
+	return {"x": rect.position.x, "y": rect.position.y, "width": rect.size.x, "height": rect.size.y}
+
+func _layout_failure(role: String, safe_area_name: String, reason: String, detail: Dictionary) -> bool:
+	var code := "%s_LAYOUT_FAILED" % role.to_upper()
+	var failure := {"code": code, "fixture": str(fixture.get("id", "unknown")), "role": role, "safe_area": safe_area_name, "reason": reason, "detail": detail}
+	_write_layout_report("FAIL", reason, failure)
+	printerr("%s fixture=%s safe_area=%s reason: %s detail=%s" % [code, failure.fixture, safe_area_name, reason, JSON.stringify(detail)])
+	get_tree().quit(1)
+	return false
+
+func _write_layout_report(status: String, reason: String, failure: Dictionary = {}) -> void:
+	var serialized_layouts := {}
+	for key in layouts:
+		var item: Dictionary = layouts[key]
+		serialized_layouts[key] = {
+			"status": item.status, "role": item.role, "safe_area": item.safe_area_name,
+			"font_size": item.font_size, "minimum_font_size": item.minimum_font_size,
+			"line_spacing": item.line_spacing, "line_count": item.line_count,
+			"safe_rect": _rect_dictionary(item.safe_rect), "rendered_rect": _rect_dictionary(item.rendered_rect)
+		}
+		if item.has("container_rect"):
+			serialized_layouts[key].container_rect = _rect_dictionary(item.container_rect)
+	var report := {"slice": "MF-002R1", "fixture": str(fixture.get("id", "unknown")), "result": status, "layout": serialized_layouts, "media": media_state, "overlap_checks": "PASS" if status == "PASS" else "FAIL", "reason": reason}
+	if not failure.is_empty():
+		report.failure = failure
+	var file := FileAccess.open(layout_report_path, FileAccess.WRITE)
+	if file != null:
+		file.store_string(JSON.stringify(report, "  ") + "\n")
 
 func _color(name: String) -> Color:
 	return Color(str(grammar.palette[name]))
@@ -381,7 +825,27 @@ func _valid_contract() -> bool:
 	if fixture.template != "scrappy_diorama" or grammar.get("id") != "scrappy-diorama-v1":
 		return false
 	var format: Dictionary = fixture.format
-	return format.get("width") == 1080 and format.get("height") == 1920 and format.get("fps") == 30 and format.get("duration_seconds") == 15
+	var duration := float(format.get("duration_seconds", 0))
+	var valid_duration := duration == 15.0 if not fixture.has("beats") else duration >= 10.0 and duration <= 20.0
+	return format.get("width") == 1080 and format.get("height") == 1920 and format.get("fps") == 30 and valid_duration
+
+func _write_timeline_report() -> void:
+	if timeline_report_path.is_empty():
+		return
+	DirAccess.make_dir_recursive_absolute(timeline_report_path.get_base_dir())
+	var evidence := []
+	for beat in timeline.get("beats", []):
+		var execution: Dictionary = executed_beats.get(str(beat.id), {})
+		evidence.append({
+			"id": str(beat.id), "type": str(beat.type), "start": float(beat.start), "end": float(beat.end),
+			"first_frame": int(execution.get("first_frame", round(float(beat.start) * FPS))),
+			"last_frame": int(execution.get("last_frame", round(float(beat.end) * FPS) - 1)),
+			"status": "PASS" if validate_layout_only or not execution.is_empty() else "FAIL"
+		})
+	var report := {"slice": "MF-004", "fixture": str(fixture.get("id", "unknown")), "mode": timeline.mode, "duration": video_duration, "total_frames": total_frames, "beats": evidence, "result": "PASS"}
+	var file := FileAccess.open(timeline_report_path, FileAccess.WRITE)
+	if file != null:
+		file.store_string(JSON.stringify(report, "  ") + "\n")
 
 func _log_timeline_stage(frame: int) -> void:
 	match frame:
@@ -398,6 +862,9 @@ func _argument_value(key: String) -> String:
 		if args[index] == key:
 			return ProjectSettings.globalize_path(args[index + 1])
 	return ""
+
+func _has_argument(key: String) -> bool:
+	return key in OS.get_cmdline_user_args()
 
 func _smoothstep(value: float) -> float:
 	return value * value * (3.0 - 2.0 * value)

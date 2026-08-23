@@ -1,0 +1,67 @@
+{
+  "slice": "MF-004",
+  "baseline": {
+    "mf001": "PASS",
+    "mf002": "PASS",
+    "mf002r1": "PASS",
+    "mf003": "PASS",
+    "mf_pilot_001": "PASS"
+  },
+  "fixtures": {
+    "turd-burglar": {
+      "beats": 7,
+      "duration_seconds": 15,
+      "timeline": "PASS",
+      "render": "PASS",
+      "validation": "PASS",
+      "evidence_frames": 7,
+      "sha256": "40d3aae2a681d2803e375154d998bd25ce0d37bc045b626f96af20eac619af22",
+      "metrics": {
+        "timeline_preflight_seconds": 6.7e-05,
+        "godot_render_seconds": 12.41,
+        "peak_godot_kib": 205324,
+        "ffmpeg_finalization_seconds": 10.67,
+        "validation_seconds": 0.5
+      }
+    },
+    "books": {
+      "beats": 7,
+      "duration_seconds": 15,
+      "timeline": "PASS",
+      "render": "PASS",
+      "validation": "PASS",
+      "evidence_frames": 7,
+      "sha256": "dee751b8330ad49bc49847df6f0a9ddbc9ea5e4a10a0874a42845b663fc224c3",
+      "metrics": {
+        "timeline_preflight_seconds": 6.9e-05,
+        "godot_render_seconds": 11.41,
+        "peak_godot_kib": 207476,
+        "ffmpeg_finalization_seconds": 10.04,
+        "validation_seconds": 0.49
+      }
+    },
+    "venus": {
+      "beats": 7,
+      "duration_seconds": 15,
+      "timeline": "PASS",
+      "render": "PASS",
+      "validation": "PASS",
+      "evidence_frames": 7,
+      "sha256": "ef5c8d38114bd95bf313c47fef857521126afaf7edfb2c2f8ac020e496d73347",
+      "metrics": {
+        "timeline_preflight_seconds": 7.1e-05,
+        "godot_render_seconds": 11.01,
+        "peak_godot_kib": 205852,
+        "ffmpeg_finalization_seconds": 10.96,
+        "validation_seconds": 0.5
+      }
+    }
+  },
+  "shared_renderer": "PASS",
+  "subject_specific_renderer_code": 0,
+  "compatibility": "PASS",
+  "failure_tests": "PASS",
+  "contact_sheet": "PASS",
+  "technical_result": "PASS",
+  "human_review": "PENDING"
+}

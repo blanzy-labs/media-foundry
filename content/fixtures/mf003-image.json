@@ -1,0 +1,16 @@
+{
+  "id": "image-fixture",
+  "template": "scrappy_diorama",
+  "seed": 23031,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {"headline": "ONE SLOT. ANY SQUARE IMAGE.", "body": "Contain keeps every edge visible inside the battered display.", "emphasis": "NO CUSTOM SCENE."},
+  "visual": {"kind": "terminal", "primary": "4d8b83", "secondary": "a8d68f", "label": "MEDIA ARCHIVE"},
+  "media": {
+    "type": "image", "source": "media/images/mf003-still.png", "fit": "contain", "anchor": "center",
+    "motion": "slow_push", "caption": "SQUARE SOURCE • CONTAIN", "required": true,
+    "provenance": {"type": "generated", "description": "deterministic local MF-003 capability fixture"}
+  },
+  "outro": {"text": "(s)Crap²y Games"},
+  "audio": {"enabled": true}
+}

@@ -15,13 +15,40 @@
     "heavy_font": "res://fonts/Lato-Heavy.ttf",
     "regular_font": "res://fonts/Lato-Regular.ttf",
     "roles": {
-      "INTRO": {"size": 38, "surface": "painted_wood"},
-      "HEADLINE": {"size": 39, "surface": "paper_note"},
-      "BODY": {"size": 23, "surface": "paper_note"},
-      "EMPHASIS": {"size": 21, "surface": "taped_label"},
-      "LABEL": {"size": 15, "surface": "metal_plate"},
-      "OUTRO": {"size": 42, "surface": "painted_wood"}
-    }
+      "INTRO": {"preferred_font_size": 38, "min_font_size": 28, "max_lines": 3, "line_spacing": 1.08, "min_line_spacing": 1.0, "wrap": true, "fit_mode": "shrink_to_fit", "horizontal_alignment": "center", "vertical_alignment": "center", "surface": "painted_wood"},
+      "HEADLINE": {"preferred_font_size": 39, "min_font_size": 27, "max_lines": 4, "line_spacing": 1.08, "min_line_spacing": 0.98, "wrap": true, "fit_mode": "shrink_to_fit", "horizontal_alignment": "center", "vertical_alignment": "center", "surface": "paper_note"},
+      "BODY": {"preferred_font_size": 23, "min_font_size": 18, "max_lines": 4, "line_spacing": 1.12, "min_line_spacing": 1.0, "wrap": true, "fit_mode": "shrink_to_fit", "horizontal_alignment": "center", "vertical_alignment": "center", "surface": "paper_note"},
+      "EMPHASIS": {"preferred_font_size": 21, "min_font_size": 17, "max_lines": 2, "line_spacing": 1.02, "min_line_spacing": 0.96, "wrap": true, "fit_mode": "shrink_to_fit", "horizontal_alignment": "center", "vertical_alignment": "center", "surface": "taped_label"},
+      "LABEL": {"preferred_font_size": 15, "min_font_size": 12, "max_lines": 2, "line_spacing": 1.02, "min_line_spacing": 0.96, "wrap": true, "fit_mode": "shrink_to_fit", "horizontal_alignment": "center", "vertical_alignment": "center", "surface": "metal_plate"},
+      "OUTRO": {"preferred_font_size": 42, "min_font_size": 30, "max_lines": 3, "line_spacing": 1.06, "min_line_spacing": 0.98, "wrap": true, "fit_mode": "shrink_to_fit", "horizontal_alignment": "center", "vertical_alignment": "center", "surface": "painted_wood"}
+    },
+    "safe_areas": {
+      "INTRO_SAFE_AREA": {"role": "INTRO", "x": -205, "y": -100, "width": 410, "height": 100, "panel": "intro_sign"},
+      "INTRO_LABEL_SAFE_AREA": {"role": "LABEL", "x": -200, "y": 35, "width": 400, "height": 55, "panel": "intro_sign"},
+      "HEADLINE_SAFE_AREA": {"role": "HEADLINE", "x": -194, "y": -106, "width": 388, "height": 101, "panel": "content_note", "stage_origin": [270, 684]},
+      "BODY_SAFE_AREA": {"role": "BODY", "x": -189, "y": 5, "width": 378, "height": 100, "panel": "content_note", "stage_origin": [270, 684]},
+      "EMPHASIS_SAFE_AREA": {"role": "EMPHASIS", "x": -150, "y": -22, "width": 300, "height": 44, "panel": "emphasis_tape", "stage_origin": [270, 838]},
+      "LABEL_SAFE_AREA": {"role": "LABEL", "x": -85, "y": -16, "width": 170, "height": 32, "panel": "metal_label"},
+      "OUTRO_SAFE_AREA": {"role": "OUTRO", "x": -205, "y": -105, "width": 410, "height": 120, "panel": "outro_sign"},
+      "OUTRO_LABEL_SAFE_AREA": {"role": "LABEL", "x": -200, "y": 45, "width": 400, "height": 55, "panel": "outro_sign"}
+    },
+    "collision_checks": [
+      ["HEADLINE_SAFE_AREA", "BODY_SAFE_AREA"],
+      ["BODY_SAFE_AREA", "EMPHASIS_SAFE_AREA"]
+    ],
+    "panels": {
+      "intro_sign": {"x": -235, "y": -136, "width": 470, "height": 272},
+      "content_note": {"x": -219, "y": -126, "width": 438, "height": 252},
+      "emphasis_tape": {"x": -165, "y": -34, "width": 330, "height": 68},
+      "metal_label": {"x": -105, "y": -27, "width": 210, "height": 54},
+      "outro_sign": {"x": -229, "y": -146, "width": 458, "height": 292}
+    },
+    "derived_safe_areas": {
+      "PROP_NOTE_LABEL_SAFE_AREA": {"role": "LABEL", "container": "note", "inset_x": 6, "inset_y": 6},
+      "PROP_COUNTER_LABEL_SAFE_AREA": {"role": "LABEL", "container": "counter", "inset_x": 4, "top_inset": 4, "height": 22},
+      "PROP_COUNTER_VALUE_SAFE_AREA": {"role": "EMPHASIS", "container": "counter", "inset_x": 4, "top_offset": 29, "bottom_inset": 3}
+    },
+    "max_fit_iterations": 32
   },
   "palette": {
     "workshop_dark": "17110e",
@@ -43,6 +70,22 @@
     "shadow_offset": [8, 10],
     "wear_marks": 14
   },
+  "media_slot": {
+    "safe_rect": {"x": -180, "y": -140, "width": 360, "height": 252},
+    "panel_rect": {"x": -188, "y": -148, "width": 376, "height": 268},
+    "stage_origin": [270, 337],
+    "collision_checks": ["HEADLINE_SAFE_AREA", "BODY_SAFE_AREA", "EMPHASIS_SAFE_AREA"],
+    "fit_modes": ["contain", "cover"],
+    "anchors": ["center", "top", "bottom", "left", "right"],
+    "image_motion": ["none", "slow_push", "gentle_pan"],
+    "slow_push_amount": 0.025,
+    "gentle_pan_amount": 0.08,
+    "video_frame_rate": 30,
+    "background": "241b17",
+    "inner_shadow_width": 7,
+    "maximum_source_width": 8192,
+    "maximum_source_height": 8192
+  },
   "imperfection": {
     "seed": 22002,
     "sign_rotation_degrees": -2.0,
@@ -60,6 +103,13 @@
     "intro_end_seconds": 2.0,
     "main_start_seconds": 4.0,
     "outro_start_seconds": 12.8
+  },
+  "beats": {
+    "types": ["intro", "statement", "media", "emphasis", "reveal", "outro"],
+    "transitions": ["cut", "scrappy_pop", "slide"],
+    "timing_model": "sequential_durations",
+    "duration_seconds": {"minimum": 10, "maximum": 20, "default": 15},
+    "audio_cues": ["intro_hit", "text_pop", "transition", "emphasis", "outro_sting"]
   },
   "audio": {
     "sample_rate": 48000,

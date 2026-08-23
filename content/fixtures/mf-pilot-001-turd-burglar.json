@@ -1,0 +1,28 @@
+{
+  "id": "pilot-turd-burglar",
+  "template": "scrappy_diorama",
+  "seed": 24012,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {
+    "headline": "WE'RE MAKING A STEALTH GAME...",
+    "body": "...about a thief with one very specific target.",
+    "emphasis": "HE STEALS TURDS."
+  },
+  "visual": {"kind": "beetle", "primary": "6f8954", "secondary": "be8a4a", "label": "CASE FILE 07B"},
+  "media": {
+    "type": "screenshot",
+    "source": "media/screenshots/turd-burglar-gameplay.png",
+    "fit": "contain",
+    "anchor": "center",
+    "motion": "slow_push",
+    "caption": "TURD BURGLAR • GAMEPLAY",
+    "required": true,
+    "provenance": {
+      "type": "project_asset",
+      "description": "Local Turd Burglar gameplay promotional screenshot; source SHA-256 c88faab6a331679b62c344b08a7e84f067965d38e5601e4e1a30c1c744967abe"
+    }
+  },
+  "outro": {"text": "(s)Crap²y Games", "tagline": "TURD BURGLAR • STEALTH, SORT OF"},
+  "audio": {"enabled": true}
+}

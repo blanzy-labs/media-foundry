@@ -1,0 +1,28 @@
+{
+  "id": "pilot-mythadis",
+  "template": "scrappy_diorama",
+  "seed": 24013,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {
+    "headline": "ASK A RESEARCH QUESTION.",
+    "body": "Let the system coordinate the investigation, evidence and explanation.",
+    "emphasis": "COORDINATE INTELLIGENCE."
+  },
+  "visual": {"kind": "prop_board", "primary": "ba7a45", "secondary": "d8c37e", "label": "FIELD BOARD", "props": []},
+  "media": {
+    "type": "screenshot",
+    "source": "media/screenshots/mythadis-social-card.png",
+    "fit": "contain",
+    "anchor": "center",
+    "motion": "gentle_pan",
+    "caption": "MYTHADIS • PUBLIC RECORD",
+    "required": true,
+    "provenance": {
+      "type": "project_asset",
+      "description": "Approved Mythadis social card from the local mythadis-site project; source SHA-256 5a05967c156a0e11945554dc10d33e02310882d4219e7dfbe3132e75595c7fb1"
+    }
+  },
+  "outro": {"text": "(s)Crap²y Games", "tagline": "MYTHADIS • COORDINATE INTELLIGENCE"},
+  "audio": {"enabled": true}
+}

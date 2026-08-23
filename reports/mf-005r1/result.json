@@ -1,0 +1,91 @@
+{
+  "slice": "MF-005R1",
+  "baseline": {
+    "mf001": "PASS",
+    "mf002": "PASS",
+    "mf002r1": "PASS",
+    "mf003": "PASS",
+    "mf004": "PASS",
+    "mf005": "PASS",
+    "mf_pilot_001": "PASS"
+  },
+  "golden_defect_reproduced": "PASS",
+  "fixtures": {
+    "turd-burglar": {
+      "semantic_sync": "PASS",
+      "narrated_beats": 3,
+      "continuous_music": "PASS",
+      "ducking": "PASS",
+      "sfx": "PASS",
+      "production_media": "PASS",
+      "render": "PASS",
+      "validation": "PASS",
+      "sha256": "024d98724731591da918234582edb2aa1f5a973bbfb9c1122c480bb2a4c43539",
+      "final_bytes": 1584750,
+      "metrics": {
+        "narration_preflight_seconds": 0.62,
+        "music_preparation_seconds": 0.162588,
+        "audio_mix_seconds": 0.62,
+        "godot_render_seconds": 12.21,
+        "peak_godot_kib": 204240,
+        "ffmpeg_finalization_seconds": 10.6,
+        "validation_seconds": 0.844785
+      }
+    },
+    "books": {
+      "semantic_sync": "PASS",
+      "narrated_beats": 3,
+      "continuous_music": "PASS",
+      "ducking": "PASS",
+      "sfx": "PASS",
+      "production_media": "PASS",
+      "render": "PASS",
+      "validation": "PASS",
+      "sha256": "eb0bfd1fe83be1b2bd287a14592551cc943d2688d8a86c4653627729af642008",
+      "final_bytes": 1689270,
+      "metrics": {
+        "narration_preflight_seconds": 0.71,
+        "music_preparation_seconds": 0.162941,
+        "audio_mix_seconds": 0.68,
+        "godot_render_seconds": 11.51,
+        "peak_godot_kib": 208192,
+        "ffmpeg_finalization_seconds": 9.86,
+        "validation_seconds": 0.844975
+      }
+    },
+    "venus": {
+      "semantic_sync": "PASS",
+      "narrated_beats": 2,
+      "continuous_music": "PASS",
+      "ducking": "PASS",
+      "sfx": "PASS",
+      "production_media": "PASS",
+      "render": "PASS",
+      "validation": "PASS",
+      "sha256": "ed85f7184fac9baa2a5b9929cb2e0253bd575a4ca0ea31b7de285ab6fa8fd3d5",
+      "final_bytes": 2113051,
+      "metrics": {
+        "narration_preflight_seconds": 0.58,
+        "music_preparation_seconds": 0.161705,
+        "audio_mix_seconds": 0.67,
+        "godot_render_seconds": 11.11,
+        "peak_godot_kib": 205424,
+        "ffmpeg_finalization_seconds": 10.8,
+        "validation_seconds": 0.857179
+      }
+    }
+  },
+  "beat_authority": "PASS",
+  "cross_beat_narration": "PROHIBITED",
+  "intentional_pause": "PASS",
+  "ambient_music": "PASS",
+  "music_loop_fade": "PASS",
+  "narration_ducking": "PASS",
+  "existing_sfx": "PASS",
+  "production_asset_safety": "PASS",
+  "no_music_compatibility": "PASS",
+  "failure_tests": "PASS",
+  "subject_specific_timing_code": 0,
+  "technical_result": "PASS",
+  "human_review": "PENDING"
+}

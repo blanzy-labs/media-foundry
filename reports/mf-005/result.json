@@ -1,0 +1,91 @@
+{
+  "slice": "MF-005",
+  "baseline": {
+    "mf001": "PASS",
+    "mf002": "PASS",
+    "mf002r1": "PASS",
+    "mf003": "PASS",
+    "mf004": "PASS",
+    "mf_pilot_001": "PASS"
+  },
+  "fixtures": {
+    "turd-burglar": {
+      "narrated_beats": 3,
+      "narration_preflight": "PASS",
+      "timeline": "PASS",
+      "render": "PASS",
+      "final_audio": "PASS",
+      "validation": "PASS",
+      "sha256": "b19767555250948c1ccef1dccf89a875a0e7b394d7c47b94579b2ecd6190a7e4",
+      "final_bytes": 1650353,
+      "metrics": {
+        "generation_seconds": 0.0,
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "normalization_seconds": 0.216716,
+        "narration_preflight_seconds": 0.62,
+        "godot_render_seconds": 12.41,
+        "peak_godot_kib": 204108,
+        "mix_seconds": 0.54,
+        "ffmpeg_finalization_seconds": 10.61,
+        "validation_seconds": 0.796253
+      }
+    },
+    "books": {
+      "narrated_beats": 3,
+      "narration_preflight": "PASS",
+      "timeline": "PASS",
+      "render": "PASS",
+      "final_audio": "PASS",
+      "validation": "PASS",
+      "sha256": "a3c23a60e94e98597371cbb4fee95dea6d4323338f2916cf661e2b0213704cbf",
+      "final_bytes": 1651965,
+      "metrics": {
+        "generation_seconds": 0.0,
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "normalization_seconds": 0.28222,
+        "narration_preflight_seconds": 0.7,
+        "godot_render_seconds": 11.31,
+        "peak_godot_kib": 208904,
+        "mix_seconds": 0.57,
+        "ffmpeg_finalization_seconds": 10.09,
+        "validation_seconds": 0.818822
+      }
+    },
+    "venus": {
+      "narrated_beats": 2,
+      "narration_preflight": "PASS",
+      "timeline": "PASS",
+      "render": "PASS",
+      "final_audio": "PASS",
+      "validation": "PASS",
+      "sha256": "e05661003ca4e9e621ac95774a36fb9e8b4ea0173beae456bfd3814f769d18ef",
+      "final_bytes": 2114361,
+      "metrics": {
+        "generation_seconds": 0.0,
+        "cache_hits": 0,
+        "cache_misses": 0,
+        "normalization_seconds": 0.254118,
+        "narration_preflight_seconds": 0.58,
+        "godot_render_seconds": 11.11,
+        "peak_godot_kib": 205340,
+        "mix_seconds": 0.58,
+        "ffmpeg_finalization_seconds": 10.63,
+        "validation_seconds": 0.803852
+      }
+    }
+  },
+  "deterministic_fixture_audio": "PASS",
+  "provider_boundary": "PASS",
+  "normalization": "PASS",
+  "ducking": "PASS",
+  "existing_cues": "PASS",
+  "non_narrated_compatibility": "PASS",
+  "failure_tests": "PASS",
+  "shared_renderer": "PASS",
+  "subject_specific_audio_code": 0,
+  "corrected_venus_asset": "PASS",
+  "technical_result": "PASS",
+  "human_review": "PENDING"
+}

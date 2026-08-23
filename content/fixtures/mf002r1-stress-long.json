@@ -1,0 +1,11 @@
+{
+  "id": "stress-long",
+  "template": "scrappy_diorama",
+  "seed": 22103,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {"headline": "A DAY ON VENUS IS LONGER THAN AN ENTIRE YEAR ON VENUS.", "body": "The headline must adapt while the panel stays put.", "emphasis": "LONG, STILL LEGIBLE."},
+  "visual": {"kind": "radial_creature", "primary": "b55d47", "secondary": "e7a05d", "label": "LONG TEST"},
+  "outro": {"text": "(s)Crap²y Games"},
+  "audio": {"enabled": true}
+}

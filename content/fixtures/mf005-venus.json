@@ -1,0 +1,26 @@
+{
+  "id": "mf005-venus",
+  "template": "scrappy_diorama",
+  "seed": 23103,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {"headline": "A DAY ON VENUS...", "body": "DAY: ~243. YEAR: ~225 EARTH DAYS.", "emphasis": "IS LONGER THAN A YEAR."},
+  "visual": {"kind": "prop_board", "primary": "ce794c", "secondary": "f0bd65", "label": "OBSERVATORY", "props": [{"type": "planet", "x": 0, "y": 0, "radius": 70, "color": "c8754d", "accent": "edb35d", "phase": 0.5}]},
+  "media": {
+    "type": "image", "source": "media/images/venus-magellan-pia00271.jpg", "fit": "contain", "anchor": "center", "motion": "gentle_pan", "caption": "VENUS • MAGELLAN RADAR", "required": true,
+    "provenance": {"type": "authoritative_scientific_image", "source_url": "https://science.nasa.gov/image-detail/amf-pia00271/", "download_url": "https://images-assets.nasa.gov/image/PIA00271/PIA00271~large.jpg", "source_organization": "NASA / Jet Propulsion Laboratory", "title": "Venus – Computer Simulated Global View of the Northern Hemisphere", "description": "Global view of Venus' northern hemisphere produced from NASA Magellan radar observations.", "retrieval_date": "2026-08-23", "usage_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/", "credit": "NASA/JPL", "catalog_id": "PIA00271", "sha256": "5026461ab9ab2223e2bd1894853feff899b761169359f38aa61301251f383d14"}
+  },
+  "outro": {"text": "(s)Crap²y Games", "tagline": "A RIDICULOUS LITTLE PLANETARIUM"},
+  "audio": {"enabled": true},
+  "narration_required_beats": ["venus", "year"],
+  "beats": [
+    {"id": "intro", "type": "intro", "text": "WHAT YOU DIDN'T KNOW...", "duration": 1.2, "transition": "scrappy_pop", "audio_cue": "intro_hit", "narration": null},
+    {"id": "setup", "type": "statement", "text": "A DAY ON VENUS...", "duration": 1.5, "transition": "slide", "audio_cue": "text_pop", "narration": null},
+    {"id": "fact", "type": "emphasis", "text": "IS LONGER THAN A YEAR.", "duration": 1.3, "transition": "scrappy_pop", "audio_cue": "emphasis", "narration": null},
+    {"id": "venus", "type": "media", "media_ref": "default", "duration": 4.2, "transition": "cut", "audio_cue": "transition", "narration": {"source": "media/audio/narration/mf005/venus-day.wav", "text": "A day on Venus lasts about two hundred forty three Earth days.", "lead_in": 0.15, "tail_out": 0.15, "provenance": {"source": "deterministic_fixture", "engine": "FFmpeg Flite", "voice": "slt", "generated_date": "2026-08-23"}}},
+    {"id": "day", "type": "statement", "text": "DAY: ~243 EARTH DAYS", "duration": 1.5, "transition": "slide", "audio_cue": "text_pop", "narration": null},
+    {"id": "year", "type": "statement", "text": "YEAR: ~225 EARTH DAYS", "duration": 4.3, "transition": "cut", "audio_cue": "text_pop", "narration": {"source": "media/audio/narration/mf005/venus-year.wav", "text": "But a Venus year is only about two hundred twenty five Earth days.", "lead_in": 0.15, "tail_out": 0.15, "provenance": {"source": "deterministic_fixture", "engine": "FFmpeg Flite", "voice": "slt", "generated_date": "2026-08-23"}}},
+    {"id": "outro", "type": "outro", "text": "(s)Crap²y Games", "duration": 1.0, "transition": "scrappy_pop", "audio_cue": "outro_sting", "narration": null}
+  ],
+  "sources": [{"title": "Venus: Facts — NASA Science", "url": "https://science.nasa.gov/venus/venus-facts/", "supports": "A Venus sidereal day is about 243 Earth days; its year is about 225 Earth days."}]
+}

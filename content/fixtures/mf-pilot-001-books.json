@@ -1,0 +1,28 @@
+{
+  "id": "pilot-books",
+  "template": "scrappy_diorama",
+  "seed": 24011,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {
+    "headline": "THE STRANGEST AI CONVERSATIONS...",
+    "body": "Aren't happening in labs. They're happening in fiction.",
+    "emphasis": "R.C. BLANZY • SCI-FI"
+  },
+  "visual": {"kind": "prop_board", "primary": "8f4b37", "secondary": "e2b85f", "label": "AUTHOR ARCHIVE", "props": []},
+  "media": {
+    "type": "image",
+    "source": "media/images/books-dark-signal.png",
+    "fit": "contain",
+    "anchor": "center",
+    "motion": "slow_push",
+    "caption": "DARK SIGNAL • BOOK TWO",
+    "required": true,
+    "provenance": {
+      "type": "project_asset",
+      "description": "Dark Signal cover supplied locally for the Second Presence trilogy; source SHA-256 4546678c906bb0a6065c25a5d61da76a5bd89bfcd02e3fa13b2a0aebb0ce7af5"
+    }
+  },
+  "outro": {"text": "(s)Crap²y Games", "tagline": "R.C. BLANZY • SCIENCE FICTION"},
+  "audio": {"enabled": true}
+}

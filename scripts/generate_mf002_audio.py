@@ -18,8 +18,18 @@ def main():
     grammar = json.loads(Path(args.grammar).read_text(encoding="utf-8"))
     fixture = json.loads(Path(args.fixture).read_text(encoding="utf-8"))
     rate = int(grammar["audio"]["sample_rate"])
-    duration = float(grammar["canvas"]["duration_seconds"])
+    duration = float(fixture.get("format", {}).get("duration_seconds", grammar["canvas"]["duration_seconds"]))
     events = grammar["audio"]["events"]
+    if fixture.get("beats"):
+        vocabulary = {event["name"].lower(): event for event in events}
+        events, cursor = [], 0.0
+        for beat in fixture["beats"]:
+            cue = beat.get("audio_cue")
+            if cue:
+                event = dict(vocabulary[cue])
+                event["time"] = cursor + min(0.12, float(beat["duration"]) * 0.1)
+                events.append(event)
+            cursor += float(beat["duration"])
     seed = int(fixture["seed"])
     samples = []
     noise = seed & 0x7FFFFFFF

@@ -1,0 +1,42 @@
+{
+  "slice": "MF-005",
+  "tests": {
+    "missing_narration_file": {
+      "result": "PASS",
+      "error": "NARRATION_MISSING_FAILED: narration source for beat setup does not exist"
+    },
+    "unreadable_audio": {
+      "result": "PASS",
+      "error": "NARRATION_AUDIO_FAILED: /tmp/mf005-failures-5fbun056/unreadable.wav has no readable audio stream"
+    },
+    "narration_longer_than_beat": {
+      "result": "PASS",
+      "error": "NARRATION_DURATION_FAILED: beat setup narration 4.000s exceeds 2.200s semantic speech window"
+    },
+    "invalid_audio_format": {
+      "result": "PASS",
+      "error": "NARRATION_FORMAT_FAILED: unsupported narration extension for beat setup"
+    },
+    "missing_provider": {
+      "result": "PASS",
+      "error": "NARRATION_PROVIDER_FAILED: required local_ffmpeg_flite provider is unavailable"
+    },
+    "invalid_voice": {
+      "result": "PASS",
+      "error": "NARRATION_VOICE_FAILED: unsupported voice 'unknown'"
+    },
+    "malformed_narration": {
+      "result": "PASS",
+      "error": "NARRATION_CONFIG_FAILED: beat setup narration is malformed"
+    },
+    "nonexistent_beat_reference": {
+      "result": "PASS",
+      "error": "NARRATION_BEAT_FAILED: required narration references a nonexistent beat"
+    },
+    "cache_corruption": {
+      "result": "PASS",
+      "error": "NARRATION_CACHE_FAILED: cache hash or request key mismatch"
+    }
+  },
+  "result": "PASS"
+}

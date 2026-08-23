@@ -1,0 +1,24 @@
+{
+  "id": "mf004-books",
+  "template": "scrappy_diorama",
+  "seed": 24011,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {"headline": "THE STRANGEST AI CONVERSATIONS...", "body": "They're happening in fiction.", "emphasis": "AREN'T HAPPENING IN LABS."},
+  "visual": {"kind": "prop_board", "primary": "8f4b37", "secondary": "e2b85f", "label": "AUTHOR ARCHIVE", "props": []},
+  "media": {
+    "type": "image", "source": "media/images/books-dark-signal.png", "fit": "contain", "anchor": "center", "motion": "slow_push", "caption": "DARK SIGNAL • BOOK TWO", "required": true,
+    "provenance": {"type": "project_asset", "description": "Existing local Dark Signal cover asset."}
+  },
+  "outro": {"text": "(s)Crap²y Games", "tagline": "R.C. BLANZY • SCIENCE FICTION"},
+  "audio": {"enabled": true},
+  "beats": [
+    {"id": "intro", "type": "intro", "text": "WHAT YOU DIDN'T KNOW...", "duration": 1.5, "transition": "cut", "audio_cue": "intro_hit"},
+    {"id": "question", "type": "statement", "text": "SOME OF THE STRANGEST CONVERSATIONS WITH AI...", "duration": 2.5, "transition": "slide", "audio_cue": "text_pop"},
+    {"id": "contrast", "type": "emphasis", "text": "AREN'T HAPPENING IN LABS.", "duration": 1.5, "transition": "scrappy_pop", "audio_cue": "emphasis"},
+    {"id": "answer", "type": "statement", "text": "THEY'RE HAPPENING IN FICTION.", "duration": 2.0, "transition": "cut", "audio_cue": "text_pop"},
+    {"id": "cover", "type": "media", "media_ref": "default", "duration": 3.0, "transition": "slide", "audio_cue": "transition"},
+    {"id": "author", "type": "reveal", "text": "R.C. BLANZY", "duration": 2.0, "transition": "scrappy_pop", "audio_cue": "text_pop"},
+    {"id": "outro", "type": "outro", "text": "(s)Crap²y Games", "duration": 2.5, "transition": "cut", "audio_cue": "outro_sting"}
+  ]
+}

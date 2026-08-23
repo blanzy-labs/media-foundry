@@ -1,0 +1,11 @@
+{
+  "id": "stress-overflow",
+  "template": "scrappy_diorama",
+  "seed": 22104,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {"headline": "THIS DELIBERATELY EXCESSIVE HEADLINE CONTAINS FAR MORE WORDS THAN ANY READABLE MOBILE PANEL CAN SAFELY HOLD WITHOUT OVERFLOW CLIPPING COLLISION TRUNCATION OR AN UNACCEPTABLY TINY FONT SIZE", "body": "This fixture must be rejected before rendering.", "emphasis": "EXPECTED FAILURE."},
+  "visual": {"kind": "radial_creature", "primary": "b55d47", "secondary": "e7a05d", "label": "FAIL TEST"},
+  "outro": {"text": "(s)Crap²y Games"},
+  "audio": {"enabled": true}
+}

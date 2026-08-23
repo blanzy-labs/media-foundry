@@ -1,0 +1,56 @@
+{
+  "slice": "MF-004",
+  "tests": {
+    "unknown_beat_type": {
+      "result": "PASS",
+      "preflight_exit": 1,
+      "error": "UNKNOWN_BEAT_TYPE: unsupported beat type 'mystery'"
+    },
+    "zero_duration": {
+      "result": "PASS",
+      "preflight_exit": 1,
+      "error": "BEAT_DURATION_INVALID: beat 1 duration must be positive"
+    },
+    "negative_duration": {
+      "result": "PASS",
+      "preflight_exit": 1,
+      "error": "BEAT_DURATION_INVALID: beat 1 duration must be positive"
+    },
+    "total_too_long": {
+      "result": "PASS",
+      "preflight_exit": 1,
+      "error": "TOTAL_DURATION_INVALID: beat duration total 16s does not equal configured duration 15s"
+    },
+    "total_too_short": {
+      "result": "PASS",
+      "preflight_exit": 1,
+      "error": "TOTAL_DURATION_INVALID: beat duration total 14.5s does not equal configured duration 15s"
+    },
+    "invalid_media_ref": {
+      "result": "PASS",
+      "preflight_exit": 1,
+      "error": "MEDIA_REFERENCE_INVALID: media gameplay references unknown asset 'missing'"
+    },
+    "invalid_audio_cue": {
+      "result": "PASS",
+      "preflight_exit": 1,
+      "error": "AUDIO_CUE_INVALID: beat setup references unknown audio cue 'kaboom'"
+    },
+    "impossible_text_density": {
+      "result": "PASS",
+      "preflight_exit": 1,
+      "error": "TEXT_DENSITY_INVALID: statement setup has too much text for its duration"
+    },
+    "malformed_timeline": {
+      "result": "PASS",
+      "preflight_exit": 1,
+      "error": "MALFORMED_TIMELINE: beats must be a non-empty array"
+    },
+    "explicit_timing_rejected": {
+      "result": "PASS",
+      "preflight_exit": 1,
+      "error": "EXPLICIT_TIMING_UNSUPPORTED: explicit timing is unsupported; overlaps and gaps are impossible in sequential mode"
+    }
+  },
+  "result": "PASS"
+}

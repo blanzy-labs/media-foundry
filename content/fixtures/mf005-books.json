@@ -1,0 +1,25 @@
+{
+  "id": "mf005-books",
+  "template": "scrappy_diorama",
+  "seed": 24011,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 15},
+  "intro": {"text": "WHAT YOU DIDN'T KNOW..."},
+  "content": {"headline": "THE STRANGEST AI CONVERSATIONS...", "body": "They're happening in fiction.", "emphasis": "AREN'T HAPPENING IN LABS."},
+  "visual": {"kind": "prop_board", "primary": "8f4b37", "secondary": "e2b85f", "label": "AUTHOR ARCHIVE", "props": []},
+  "media": {
+    "type": "image", "source": "media/images/books-dark-signal.png", "fit": "contain", "anchor": "center", "motion": "slow_push", "caption": "DARK SIGNAL • BOOK TWO", "required": true,
+    "provenance": {"type": "project_asset", "description": "Existing local Dark Signal cover asset."}
+  },
+  "outro": {"text": "(s)Crap²y Games", "tagline": "R.C. BLANZY • SCIENCE FICTION"},
+  "audio": {"enabled": true},
+  "narration_required_beats": ["question", "answer", "cover"],
+  "beats": [
+    {"id": "intro", "type": "intro", "text": "WHAT YOU DIDN'T KNOW...", "duration": 1.5, "transition": "cut", "audio_cue": "intro_hit", "narration": null},
+    {"id": "question", "type": "statement", "text": "SOME OF THE STRANGEST CONVERSATIONS WITH AI...", "duration": 4.1, "transition": "slide", "audio_cue": "text_pop", "narration": {"source": "media/audio/narration/mf005/books-question.wav", "text": "Some strange A I conversations are not happening in labs.", "lead_in": 0.15, "tail_out": 0.15, "provenance": {"source": "deterministic_fixture", "engine": "FFmpeg Flite", "voice": "slt", "generated_date": "2026-08-23"}}},
+    {"id": "contrast", "type": "emphasis", "text": "AREN'T HAPPENING IN LABS.", "duration": 1.5, "transition": "scrappy_pop", "audio_cue": "emphasis", "narration": null},
+    {"id": "answer", "type": "statement", "text": "THEY'RE HAPPENING IN FICTION.", "duration": 2.3, "transition": "cut", "audio_cue": "text_pop", "narration": {"source": "media/audio/narration/mf005/books-answer.wav", "text": "They are happening in fiction.", "lead_in": 0.15, "tail_out": 0.15, "provenance": {"source": "deterministic_fixture", "engine": "FFmpeg Flite", "voice": "slt", "generated_date": "2026-08-23"}}},
+    {"id": "cover", "type": "media", "media_ref": "default", "duration": 2.8, "transition": "slide", "audio_cue": "transition", "narration": {"source": "media/audio/narration/mf005/books-media.wav", "text": "Dark Signal by R C Blanzy.", "lead_in": 0.15, "tail_out": 0.15, "provenance": {"source": "deterministic_fixture", "engine": "FFmpeg Flite", "voice": "slt", "generated_date": "2026-08-23"}}},
+    {"id": "author", "type": "reveal", "text": "R.C. BLANZY", "duration": 1.3, "transition": "scrappy_pop", "audio_cue": "text_pop", "narration": null},
+    {"id": "outro", "type": "outro", "text": "(s)Crap²y Games", "duration": 1.5, "transition": "cut", "audio_cue": "outro_sting", "narration": null}
+  ]
+}

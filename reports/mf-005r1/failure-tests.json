@@ -1,0 +1,42 @@
+{
+  "slice": "MF-005R1",
+  "tests": {
+    "narration_crosses_beat": {
+      "result": "PASS",
+      "error": "NARRATION_BEAT_SYNC_FAILED: beat setup narration 4.000s exceeds 2.230s semantic speech window"
+    },
+    "narration_starts_before_beat": {
+      "result": "PASS",
+      "error": "NARRATION_BEAT_SYNC_FAILED: beat setup padding cannot be negative"
+    },
+    "narration_ends_after_beat": {
+      "result": "PASS",
+      "error": "NARRATION_BEAT_SYNC_FAILED: beat punchline narration 4.000s exceeds 1.530s semantic speech window"
+    },
+    "narrated_text_not_active": {
+      "result": "PASS",
+      "error": "NARRATION_TEXT_SYNC_FAILED: beat gameplay narration requires active visible text"
+    },
+    "required_media_not_active": {
+      "result": "PASS",
+      "error": "NARRATION_MEDIA_SYNC_FAILED: beat setup narration requires its media state to be active"
+    },
+    "missing_production_media": {
+      "result": "PASS",
+      "error": "PRODUCTION_MEDIA_MISSING: approved production media is missing or resolves to a capability-test asset"
+    },
+    "missing_music_source": {
+      "result": "PASS",
+      "error": "MUSIC_SOURCE_MISSING: required music source does not exist"
+    },
+    "invalid_music_audio": {
+      "result": "PASS",
+      "error": "MUSIC_AUDIO_FAILED: music source has no readable audio stream"
+    },
+    "invalid_ducking_config": {
+      "result": "PASS",
+      "error": "MUSIC_DUCKING_CONFIG_FAILED: gain, ducking, fade, attack, or release is outside supported limits"
+    }
+  },
+  "result": "PASS"
+}
