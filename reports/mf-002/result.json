@@ -29,5 +29,8 @@
     "sha256": "fce59a3804df0be000643655a27f891928eb99ef5b0bc2c5b3591deabc00bf87"
   },
   "technical_result": "PASS",
-  "human_review": "PENDING"
+  "human_review": "PASS",
+  "human_reviewed_at": "2026-08-23",
+  "human_review_scope": "fact, turd-burglar, and general videos",
+  "result": "PASS"
 }

@@ -2,7 +2,7 @@
 
 ## Assessment
 
-**TECHNICAL PASS / HUMAN REVIEW PENDING.** One canonical grammar and one shared renderer produced three independently valid, distinct 15-second videos. The aesthetic acceptance gate deliberately remains open for human judgment.
+**PASS.** One canonical grammar and one shared renderer produced three independently valid, distinct 15-second videos. On 2026-08-23, the human reviewer confirmed that all three videos passed visual inspection, closing the MF-002 aesthetic acceptance gate.
 
 ## Preserved baseline
 
@@ -61,7 +61,7 @@ The fact fixture was rendered and finalized a second time. Its second MP4 had th
 
 The retained frames show a shared workshop environment, crooked wood and paper surfaces, coarse wear, tape, bolts, crates, cable/lamp movement, high-contrast Lato typography, shared intro/outro signs, and three different primitive illustrations. Critical text remains within the declared safe area and is readable in the contact sheet. The fixtures are recognizably related without separate handcrafted scenes.
 
-These observations are implementation review, not aesthetic approval. The human reviewer must still decide whether the family is scrappy enough, interesting in the first second, non-corporate, and actually suitable to post.
+These observations were followed by human review of all three videos. The reviewer accepted the visual family on 2026-08-23.
 
 ## Retained evidence
 
@@ -79,4 +79,4 @@ These observations are implementation review, not aesthetic approval. The human 
 
 Godot frame capture still requires a display-backed worker; Blender is not part of production rendering. Illustrations are intentionally primitive and the prop vocabulary deliberately small. Fine-grained automatic text-bound analysis is not implemented; contract length limits, deterministic layouts, safe-area geometry, and extracted-frame review provide the current guardrail. No external AI-video system, SaaS, research, publishing, or social-account access was used.
 
-**Do not begin MF-003 until the human visual gate is explicitly accepted or MF-002 is refined.**
+The MF-002 human visual gate is accepted. This acceptance does not authorize publication; publishing remains a separate explicit human decision.

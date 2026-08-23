@@ -24,4 +24,4 @@ Run end-to-end acceptance and controlled negative tests:
 ./scripts/mf-002-failure-tests.sh
 ```
 
-Validated candidate media lives under `artifacts/mf-001/` and `artifacts/mf-002/`. MF-002 technical PASS is not aesthetic approval: review its three videos and contact sheet before proceeding. Publication always requires human approval.
+Validated candidate media lives under `artifacts/mf-001/` and `artifacts/mf-002/`. MF-002 passed technical acceptance and its three-video visual review on 2026-08-23. Publication always requires separate human approval.
