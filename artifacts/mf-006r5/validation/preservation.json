@@ -1,0 +1,41 @@
+{
+  "slice": "MF-006R5",
+  "entries": [
+    {
+      "slice": "MF-006",
+      "path": "artifacts/mf-006/book-promo.mp4",
+      "expected_sha256": "2ccd1eb2e342e997c2f1b7dd8a7957ca715ae59598f87100929abe818fccfdcc",
+      "actual_sha256": "2ccd1eb2e342e997c2f1b7dd8a7957ca715ae59598f87100929abe818fccfdcc",
+      "result": "PASS"
+    },
+    {
+      "slice": "MF-006R1",
+      "path": "artifacts/mf-006r1/candidate-a.mp4",
+      "expected_sha256": "5560f699d2340e451a246ce7aba24b7b20aabae8e8dc3d894da1f84197746eff",
+      "actual_sha256": "5560f699d2340e451a246ce7aba24b7b20aabae8e8dc3d894da1f84197746eff",
+      "result": "PASS"
+    },
+    {
+      "slice": "MF-006R2",
+      "path": "artifacts/mf-006r2/candidate-a.mp4",
+      "expected_sha256": "4246e0221228a1502331c620addb105d4974b23a20db2214f9e87292fae1b125",
+      "actual_sha256": "4246e0221228a1502331c620addb105d4974b23a20db2214f9e87292fae1b125",
+      "result": "PASS"
+    },
+    {
+      "slice": "MF-006R3",
+      "path": "artifacts/mf-006r3/candidate-a.mp4",
+      "expected_sha256": "0fc1a90b662693fda9f70c7cc445fd95316caba8221426be9f57b1c668474ba3",
+      "actual_sha256": "0fc1a90b662693fda9f70c7cc445fd95316caba8221426be9f57b1c668474ba3",
+      "result": "PASS"
+    },
+    {
+      "slice": "MF-006R4",
+      "path": "artifacts/mf-006r4/candidate-a.mp4",
+      "expected_sha256": "3d2eb28237d657e150f89df9b8a97d764af5654eedd686de53970386da59ad71",
+      "actual_sha256": "3d2eb28237d657e150f89df9b8a97d764af5654eedd686de53970386da59ad71",
+      "result": "PASS"
+    }
+  ],
+  "result": "PASS"
+}

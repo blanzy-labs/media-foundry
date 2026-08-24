@@ -1,0 +1,152 @@
+{
+  "slice": "MF-006R4",
+  "checks": {
+    "baseline_preservation": "PASS",
+    "extended_runtime": "PASS",
+    "causal_opening": "PASS",
+    "path_following": "PASS",
+    "single_persistent_window": "PASS",
+    "rejected_elements_absent": "PASS",
+    "text_inside_window": "PASS",
+    "emitter_hierarchy": "PASS",
+    "extended_activity_order": "PASS",
+    "living_record_activity": "PASS",
+    "earned_cta_hold": "PASS",
+    "noticeable_background_cells": "PASS",
+    "clean_depth": "PASS",
+    "timeline": "PASS",
+    "music_fades": "PASS",
+    "meaningful_sfx": "PASS",
+    "loudness_peak": "PASS",
+    "full_decode": "PASS"
+  },
+  "preservation": [
+    {
+      "slice": "MF-006",
+      "path": "artifacts/mf-006/book-promo.mp4",
+      "expected_sha256": "2ccd1eb2e342e997c2f1b7dd8a7957ca715ae59598f87100929abe818fccfdcc",
+      "actual_sha256": "2ccd1eb2e342e997c2f1b7dd8a7957ca715ae59598f87100929abe818fccfdcc",
+      "result": "PASS"
+    },
+    {
+      "slice": "MF-006R1",
+      "path": "artifacts/mf-006r1/candidate-a.mp4",
+      "expected_sha256": "5560f699d2340e451a246ce7aba24b7b20aabae8e8dc3d894da1f84197746eff",
+      "actual_sha256": "5560f699d2340e451a246ce7aba24b7b20aabae8e8dc3d894da1f84197746eff",
+      "result": "PASS"
+    },
+    {
+      "slice": "MF-006R2",
+      "path": "artifacts/mf-006r2/candidate-a.mp4",
+      "expected_sha256": "4246e0221228a1502331c620addb105d4974b23a20db2214f9e87292fae1b125",
+      "actual_sha256": "4246e0221228a1502331c620addb105d4974b23a20db2214f9e87292fae1b125",
+      "result": "PASS"
+    },
+    {
+      "slice": "MF-006R3",
+      "path": "artifacts/mf-006r3/candidate-a.mp4",
+      "expected_sha256": "0fc1a90b662693fda9f70c7cc445fd95316caba8221426be9f57b1c668474ba3",
+      "actual_sha256": "0fc1a90b662693fda9f70c7cc445fd95316caba8221426be9f57b1c668474ba3",
+      "result": "PASS"
+    }
+  ],
+  "duration_seconds": 28.0,
+  "added_seconds": 9.7,
+  "fade_measurement": {
+    "fade_in_seconds": 1.4,
+    "fade_out_seconds": 2.2,
+    "sampled_non_silent_points": 118593,
+    "envelope_mean_absolute_error": 0.002808,
+    "first_100ms_gain_ratio": 0.163615,
+    "last_100ms_gain_ratio": 0.025579,
+    "result": "PASS"
+  },
+  "audio": {
+    "integrated_lufs": -16.75,
+    "true_peak_db": -1.73,
+    "loudness_range": 4.3
+  },
+  "sfx": [
+    {
+      "id": "circuit_draw",
+      "event": "path_draw_start",
+      "time": 0.05,
+      "rms_dbfs": -38.634,
+      "result": "PASS"
+    },
+    {
+      "id": "energy_flow",
+      "event": "energy_flow",
+      "time": 0.75,
+      "rms_dbfs": -37.116,
+      "result": "PASS"
+    },
+    {
+      "id": "overload",
+      "event": "overload",
+      "time": 2.0,
+      "rms_dbfs": -32.233,
+      "result": "PASS"
+    },
+    {
+      "id": "spark",
+      "event": "spark_burst",
+      "time": 2.3,
+      "rms_dbfs": -27.507,
+      "result": "PASS"
+    },
+    {
+      "id": "screen_initialize",
+      "event": "screen_initialize",
+      "time": 2.5,
+      "rms_dbfs": -29.595,
+      "result": "PASS"
+    },
+    {
+      "id": "refresh_1",
+      "event": "screen_refresh_1",
+      "time": 9.9,
+      "rms_dbfs": -40.495,
+      "result": "PASS"
+    },
+    {
+      "id": "refresh_2",
+      "event": "screen_refresh_2",
+      "time": 14.1,
+      "rms_dbfs": -40.513,
+      "result": "PASS"
+    },
+    {
+      "id": "collapse",
+      "event": "screen_collapse",
+      "time": 19.1,
+      "rms_dbfs": -30.245,
+      "result": "PASS"
+    },
+    {
+      "id": "return",
+      "event": "return_energy",
+      "time": 20.7,
+      "rms_dbfs": -38.275,
+      "result": "PASS"
+    },
+    {
+      "id": "cta_energy",
+      "event": "cta_energy",
+      "time": 22.5,
+      "rms_dbfs": -34.653,
+      "result": "PASS"
+    }
+  ],
+  "blockers": [
+    "BLOCKED_PRODUCTION_VOICE"
+  ],
+  "errors": [],
+  "gates": {
+    "visual_audio_technical": "PASS",
+    "production_voice": "BLOCKED",
+    "human_editorial": "PENDING_HUMAN",
+    "release": "RELEASE_ELIGIBLE_NO"
+  },
+  "result": "PASS_WITH_BLOCKER"
+}

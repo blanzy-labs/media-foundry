@@ -1,0 +1,212 @@
+{
+  "slice": "MF-006R5",
+  "selected_book": {
+    "title": "Unknown Process",
+    "canonical_author": "Robert C. Blanzy",
+    "display_author": "R.C. Blanzy",
+    "series": "The Second Presence",
+    "book_number": 1
+  },
+  "preserved_baseline": "MF-006R4",
+  "center_concept": "single persistent projected live-investigation window",
+  "primary_window_count": 1,
+  "live_investigations": 3,
+  "query_events": 3,
+  "confirmation_events": 3,
+  "overload_duration_seconds": 0.8,
+  "overload_added_emphasis_seconds": 0.5,
+  "green_cell_emphasis": 0.31,
+  "cta_system_lock": true,
+  "visual_audio_technical": "PASS",
+  "production_voice": "BLOCKED_PRODUCTION_VOICE",
+  "human_editorial": "PENDING_HUMAN",
+  "release_eligible": false,
+  "blockers": [
+    "BLOCKED_PRODUCTION_VOICE",
+    "HUMAN_EDITORIAL_REVIEW",
+    "HUMAN_RELEASE_REVIEW"
+  ],
+  "duration_seconds": 28.0,
+  "renderer_architecture_changes": 0,
+  "sfx_count": 12,
+  "failure_tests": "PASS",
+  "technical_validation": {
+    "slice": "MF-006R5",
+    "checks": {
+      "baseline_preservation": "PASS",
+      "runtime": "PASS",
+      "causal_opening": "PASS",
+      "path_following": "PASS",
+      "single_persistent_window": "PASS",
+      "rejected_elements_absent": "PASS",
+      "text_inside_window": "PASS",
+      "emitter_hierarchy": "PASS",
+      "investigation_event_order": "PASS",
+      "live_investigation": "PASS",
+      "overload_refinement": "PASS",
+      "color_cell_emphasis": "PASS",
+      "clean_depth": "PASS",
+      "cta_system_integration": "PASS",
+      "timeline": "PASS",
+      "music_fades": "PASS",
+      "discovery_sfx": "PASS",
+      "loudness_peak": "PASS",
+      "full_decode": "PASS"
+    },
+    "preservation": [
+      {
+        "slice": "MF-006",
+        "path": "artifacts/mf-006/book-promo.mp4",
+        "expected_sha256": "2ccd1eb2e342e997c2f1b7dd8a7957ca715ae59598f87100929abe818fccfdcc",
+        "actual_sha256": "2ccd1eb2e342e997c2f1b7dd8a7957ca715ae59598f87100929abe818fccfdcc",
+        "result": "PASS"
+      },
+      {
+        "slice": "MF-006R1",
+        "path": "artifacts/mf-006r1/candidate-a.mp4",
+        "expected_sha256": "5560f699d2340e451a246ce7aba24b7b20aabae8e8dc3d894da1f84197746eff",
+        "actual_sha256": "5560f699d2340e451a246ce7aba24b7b20aabae8e8dc3d894da1f84197746eff",
+        "result": "PASS"
+      },
+      {
+        "slice": "MF-006R2",
+        "path": "artifacts/mf-006r2/candidate-a.mp4",
+        "expected_sha256": "4246e0221228a1502331c620addb105d4974b23a20db2214f9e87292fae1b125",
+        "actual_sha256": "4246e0221228a1502331c620addb105d4974b23a20db2214f9e87292fae1b125",
+        "result": "PASS"
+      },
+      {
+        "slice": "MF-006R3",
+        "path": "artifacts/mf-006r3/candidate-a.mp4",
+        "expected_sha256": "0fc1a90b662693fda9f70c7cc445fd95316caba8221426be9f57b1c668474ba3",
+        "actual_sha256": "0fc1a90b662693fda9f70c7cc445fd95316caba8221426be9f57b1c668474ba3",
+        "result": "PASS"
+      },
+      {
+        "slice": "MF-006R4",
+        "path": "artifacts/mf-006r4/candidate-a.mp4",
+        "expected_sha256": "3d2eb28237d657e150f89df9b8a97d764af5654eedd686de53970386da59ad71",
+        "actual_sha256": "3d2eb28237d657e150f89df9b8a97d764af5654eedd686de53970386da59ad71",
+        "result": "PASS"
+      }
+    ],
+    "duration_seconds": 28.0,
+    "fade_measurement": {
+      "fade_in_seconds": 1.4,
+      "fade_out_seconds": 2.2,
+      "sampled_non_silent_points": 118593,
+      "envelope_mean_absolute_error": 0.002808,
+      "first_100ms_gain_ratio": 0.163615,
+      "last_100ms_gain_ratio": 0.025579,
+      "result": "PASS"
+    },
+    "audio": {
+      "integrated_lufs": -16.7,
+      "true_peak_db": -1.88,
+      "loudness_range": 4.3
+    },
+    "sfx": [
+      {
+        "id": "circuit_draw",
+        "event": "path_draw_start",
+        "time": 0.05,
+        "rms_dbfs": -38.634,
+        "result": "PASS"
+      },
+      {
+        "id": "energy_flow",
+        "event": "energy_flow",
+        "time": 0.75,
+        "rms_dbfs": -37.116,
+        "result": "PASS"
+      },
+      {
+        "id": "overload",
+        "event": "overload",
+        "time": 1.9,
+        "rms_dbfs": -32.2,
+        "result": "PASS"
+      },
+      {
+        "id": "spark",
+        "event": "spark_burst",
+        "time": 2.7,
+        "rms_dbfs": -27.555,
+        "result": "PASS"
+      },
+      {
+        "id": "screen_initialize",
+        "event": "screen_initialize",
+        "time": 2.9,
+        "rms_dbfs": -29.599,
+        "result": "PASS"
+      },
+      {
+        "id": "lock_1",
+        "event": "record_lock_1",
+        "time": 8.65,
+        "rms_dbfs": -41.859,
+        "result": "PASS"
+      },
+      {
+        "id": "lock_2",
+        "event": "record_lock_2",
+        "time": 13.0,
+        "rms_dbfs": -41.835,
+        "result": "PASS"
+      },
+      {
+        "id": "lock_3",
+        "event": "record_lock_3",
+        "time": 17.3,
+        "rms_dbfs": -41.841,
+        "result": "PASS"
+      },
+      {
+        "id": "collapse",
+        "event": "screen_collapse",
+        "time": 19.1,
+        "rms_dbfs": -30.237,
+        "result": "PASS"
+      },
+      {
+        "id": "return",
+        "event": "return_energy",
+        "time": 20.7,
+        "rms_dbfs": -38.275,
+        "result": "PASS"
+      },
+      {
+        "id": "cta_energy",
+        "event": "cta_energy",
+        "time": 22.4,
+        "rms_dbfs": -35.676,
+        "result": "PASS"
+      },
+      {
+        "id": "cta_lock",
+        "event": "cta_lock",
+        "time": 23.65,
+        "rms_dbfs": -40.516,
+        "result": "PASS"
+      }
+    ],
+    "blockers": [
+      "BLOCKED_PRODUCTION_VOICE"
+    ],
+    "errors": [],
+    "gates": {
+      "visual_audio_technical": "PASS",
+      "production_voice": "BLOCKED",
+      "human_editorial": "PENDING_HUMAN",
+      "release": "RELEASE_ELIGIBLE_NO"
+    },
+    "result": "PASS_WITH_BLOCKER"
+  },
+  "artifact": {
+    "path": "/home/blanzy/projects/media-foundry/artifacts/mf-006r5/candidate-a.mp4",
+    "bytes": 4983380,
+    "sha256": "a936792251d0356ab6eaa4670fc4586512e3ab23790d4868f0adc423dfe12c82"
+  },
+  "result": "PASS_WITH_BLOCKER"
+}

@@ -1,0 +1,92 @@
+{
+  "slice": "MF-006",
+  "duration": 18.3,
+  "sample_rate": 48000,
+  "channels": 1,
+  "event_count": 10,
+  "events": [
+    {
+      "id": "circuit_draw",
+      "event": "path_draw_start",
+      "time": 0.05,
+      "type": "circuit_draw",
+      "duration": 0.55,
+      "gain": 0.035
+    },
+    {
+      "id": "energy_flow",
+      "event": "energy_flow",
+      "time": 0.6,
+      "type": "energy_flow",
+      "duration": 1.1,
+      "gain": 0.04
+    },
+    {
+      "id": "overload",
+      "event": "overload",
+      "time": 1.55,
+      "type": "central_overload",
+      "duration": 0.3,
+      "gain": 0.07
+    },
+    {
+      "id": "spark",
+      "event": "spark_burst",
+      "time": 1.8,
+      "type": "spark_burst",
+      "duration": 0.48,
+      "gain": 0.11
+    },
+    {
+      "id": "screen_initialize",
+      "event": "screen_initialize",
+      "time": 1.95,
+      "type": "projection_emission",
+      "duration": 0.8,
+      "gain": 0.06
+    },
+    {
+      "id": "refresh_1",
+      "event": "screen_refresh_1",
+      "time": 6.3,
+      "type": "projection_shift",
+      "duration": 0.42,
+      "gain": 0.035
+    },
+    {
+      "id": "refresh_2",
+      "event": "screen_refresh_2",
+      "time": 8.8,
+      "type": "projection_shift",
+      "duration": 0.42,
+      "gain": 0.035
+    },
+    {
+      "id": "collapse",
+      "event": "screen_collapse",
+      "time": 11.6,
+      "type": "projection_collapse",
+      "duration": 1.0,
+      "gain": 0.055
+    },
+    {
+      "id": "return",
+      "event": "return_energy",
+      "time": 13.0,
+      "type": "energy_flow",
+      "duration": 1.1,
+      "gain": 0.035
+    },
+    {
+      "id": "cta_energy",
+      "event": "cta_energy",
+      "time": 15.0,
+      "type": "cta_energy",
+      "duration": 0.8,
+      "gain": 0.045
+    }
+  ],
+  "pre_clamp_peak": 0.158884,
+  "clipped_samples": 0,
+  "result": "PASS"
+}

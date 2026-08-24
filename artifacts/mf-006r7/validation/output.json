@@ -1,0 +1,56 @@
+{
+  "slice": "MF-006R7",
+  "render": "PASS",
+  "validation": {
+    "file": {
+      "status": "PASS",
+      "detail": "/home/blanzy/projects/media-foundry/artifacts/mf-006r7/candidate-a.mp4"
+    },
+    "container": {
+      "status": "PASS",
+      "detail": "mov,mp4,m4a,3gp,3g2,mj2"
+    },
+    "video_stream": {
+      "status": "PASS",
+      "detail": "h264"
+    },
+    "audio_stream": {
+      "status": "PASS",
+      "detail": "aac"
+    },
+    "resolution": {
+      "status": "PASS",
+      "detail": "1080x1920"
+    },
+    "orientation": {
+      "status": "PASS",
+      "detail": "vertical"
+    },
+    "duration": {
+      "status": "PASS",
+      "detail": "28.000 seconds"
+    },
+    "frame_rate": {
+      "status": "PASS",
+      "detail": "30.000 fps"
+    },
+    "video_codec": {
+      "status": "PASS",
+      "detail": "h264"
+    },
+    "audio_codec": {
+      "status": "PASS",
+      "detail": "aac"
+    },
+    "decode": {
+      "status": "PASS",
+      "detail": "full decode succeeded"
+    }
+  },
+  "result": "PASS",
+  "artifact": {
+    "path": "/home/blanzy/projects/media-foundry/artifacts/mf-006r7/candidate-a.mp4",
+    "bytes": 5152468,
+    "sha256": "0a8a2e2ae923ddc98a7411b9b0c449ce6b71b1dbb8d04e74aa6f6ac05c85f063"
+  }
+}

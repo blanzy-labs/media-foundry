@@ -1,0 +1,18 @@
+{
+  "slice": "MF-006R7",
+  "checks": {
+    "metadata": "PASS",
+    "copy": "PASS",
+    "strategy": "PASS",
+    "timing": "PASS",
+    "single_window": "PASS",
+    "destination": "PASS",
+    "music": "PASS",
+    "voice": "BLOCKED_PRODUCTION_VOICE"
+  },
+  "blockers": [
+    "BLOCKED_PRODUCTION_VOICE"
+  ],
+  "errors": [],
+  "result": "PASS_WITH_BLOCKER"
+}

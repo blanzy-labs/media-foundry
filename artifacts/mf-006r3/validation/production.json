@@ -1,0 +1,117 @@
+{
+  "slice": "MF-006R3",
+  "checks": {
+    "causal_opening": "PASS",
+    "path_following": "PASS",
+    "single_persistent_window": "PASS",
+    "rejected_elements_absent": "PASS",
+    "text_inside_window": "PASS",
+    "emitter_hierarchy": "PASS",
+    "typed_refresh_timeline": "PASS",
+    "noticeable_background_cells": "PASS",
+    "clean_depth": "PASS",
+    "world_integrated_cta": "PASS",
+    "timeline": "PASS",
+    "music_fades": "PASS",
+    "meaningful_sfx": "PASS",
+    "loudness_peak": "PASS",
+    "full_decode": "PASS"
+  },
+  "fade_measurement": {
+    "fade_in_seconds": 1.2,
+    "fade_out_seconds": 1.8,
+    "sampled_non_silent_points": 93395,
+    "envelope_mean_absolute_error": 0.003918,
+    "first_100ms_gain_ratio": 0.190911,
+    "last_100ms_gain_ratio": 0.029409,
+    "result": "PASS"
+  },
+  "audio": {
+    "integrated_lufs": -16.36,
+    "true_peak_db": -1.88,
+    "loudness_range": 4.0
+  },
+  "sfx": [
+    {
+      "id": "circuit_draw",
+      "event": "path_draw_start",
+      "time": 0.05,
+      "rms_dbfs": -38.634,
+      "result": "PASS"
+    },
+    {
+      "id": "energy_flow",
+      "event": "energy_flow",
+      "time": 0.6,
+      "rms_dbfs": -37.116,
+      "result": "PASS"
+    },
+    {
+      "id": "overload",
+      "event": "overload",
+      "time": 1.55,
+      "rms_dbfs": -32.248,
+      "result": "PASS"
+    },
+    {
+      "id": "spark",
+      "event": "spark_burst",
+      "time": 1.8,
+      "rms_dbfs": -26.913,
+      "result": "PASS"
+    },
+    {
+      "id": "screen_initialize",
+      "event": "screen_initialize",
+      "time": 1.95,
+      "rms_dbfs": -29.338,
+      "result": "PASS"
+    },
+    {
+      "id": "refresh_1",
+      "event": "screen_refresh_1",
+      "time": 6.3,
+      "rms_dbfs": -40.504,
+      "result": "PASS"
+    },
+    {
+      "id": "refresh_2",
+      "event": "screen_refresh_2",
+      "time": 8.8,
+      "rms_dbfs": -40.483,
+      "result": "PASS"
+    },
+    {
+      "id": "collapse",
+      "event": "screen_collapse",
+      "time": 11.6,
+      "rms_dbfs": -30.23,
+      "result": "PASS"
+    },
+    {
+      "id": "return",
+      "event": "return_energy",
+      "time": 13.0,
+      "rms_dbfs": -38.275,
+      "result": "PASS"
+    },
+    {
+      "id": "cta_energy",
+      "event": "cta_energy",
+      "time": 15.0,
+      "rms_dbfs": -34.653,
+      "result": "PASS"
+    }
+  ],
+  "blockers": [
+    "BLOCKED_PRODUCTION_VOICE"
+  ],
+  "errors": [],
+  "gates": {
+    "visual_audio_technical": "PASS",
+    "production_voice": "BLOCKED",
+    "human_editorial": "PENDING_HUMAN",
+    "release": "RELEASE_ELIGIBLE_NO"
+  },
+  "result": "PASS_WITH_BLOCKER"
+}

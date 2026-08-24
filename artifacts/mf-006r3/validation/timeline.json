@@ -1,0 +1,12 @@
+{
+  "slice": "MF-004",
+  "fixture": "mf006r3-unknown-process",
+  "checks": {
+    "preflight": "PASS",
+    "safe_text_layout": "PASS",
+    "beat_order_and_bounds": "PASS",
+    "one_active_beat": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

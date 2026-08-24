@@ -1,0 +1,55 @@
+{
+  "slice": "MF-006R7",
+  "case_count": 12,
+  "cases": [
+    {
+      "case": "branch_missing",
+      "result": "PASS"
+    },
+    {
+      "case": "branch_too_thick",
+      "result": "PASS"
+    },
+    {
+      "case": "too_many_packets",
+      "result": "PASS"
+    },
+    {
+      "case": "constant_motion",
+      "result": "PASS"
+    },
+    {
+      "case": "wrong_direction",
+      "result": "PASS"
+    },
+    {
+      "case": "cell_missing",
+      "result": "PASS"
+    },
+    {
+      "case": "cell_too_bright",
+      "result": "PASS"
+    },
+    {
+      "case": "negative_space_lost",
+      "result": "PASS"
+    },
+    {
+      "case": "second_focal_point",
+      "result": "PASS"
+    },
+    {
+      "case": "overload_response_missing",
+      "result": "PASS"
+    },
+    {
+      "case": "cta_response_missing",
+      "result": "PASS"
+    },
+    {
+      "case": "camera_changed",
+      "result": "PASS"
+    }
+  ],
+  "result": "PASS"
+}

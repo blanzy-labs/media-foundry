@@ -9,6 +9,11 @@ const ScrappyWorldStageScript = preload("res://scrappy_world_stage.gd")
 const LofiBookStageScript = preload("res://lofi_book_stage.gd")
 const CausalBookStageScript = preload("res://causal_book_stage.gd")
 const ProjectedCodexStageScript = preload("res://projected_codex_stage.gd")
+const ProjectedDataWindowStageScript = preload("res://projected_data_window_stage.gd")
+const ExtendedDataWindowStageScript = preload("res://extended_data_window_stage.gd")
+const LiveInvestigationStageScript = preload("res://live_investigation_stage.gd")
+const FinalPolishStageScript = preload("res://final_polish_stage.gd")
+const LowerRightPolishStageScript = preload("res://lower_right_polish_stage.gd")
 
 var fixture: Dictionary
 var grammar: Dictionary
@@ -76,9 +81,19 @@ func _ready() -> void:
 	if not _prepare_layouts():
 		return
 	var visual_preference := str(fixture.get("visual_strategy", {}).get("preference", ""))
-	generated_scene_active = visual_preference in ["generated_scene", "godot_generated_scene", "godot_generated_book_refinement", "godot_projected_codex_refinement"]
+	generated_scene_active = visual_preference in ["generated_scene", "godot_generated_scene", "godot_generated_book_refinement", "godot_projected_codex_refinement", "godot_projected_data_window_refinement", "godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement"]
 	if generated_scene_active:
-		if visual_preference == "godot_projected_codex_refinement":
+		if visual_preference == "godot_lower_right_polish_refinement":
+			generated_stage = LowerRightPolishStageScript.new()
+		elif visual_preference == "godot_final_polish_refinement":
+			generated_stage = FinalPolishStageScript.new()
+		elif visual_preference == "godot_live_investigation_refinement":
+			generated_stage = LiveInvestigationStageScript.new()
+		elif visual_preference == "godot_extended_data_window_refinement":
+			generated_stage = ExtendedDataWindowStageScript.new()
+		elif visual_preference == "godot_projected_data_window_refinement":
+			generated_stage = ProjectedDataWindowStageScript.new()
+		elif visual_preference == "godot_projected_codex_refinement":
 			generated_stage = ProjectedCodexStageScript.new()
 		elif visual_preference == "godot_generated_book_refinement":
 			generated_stage = CausalBookStageScript.new()
@@ -874,7 +889,8 @@ func _valid_contract() -> bool:
 		return false
 	var format: Dictionary = fixture.format
 	var duration := float(format.get("duration_seconds", 0))
-	var valid_duration := duration == 15.0 if not fixture.has("beats") else duration >= 10.0 and duration <= 20.0
+	var extended := str(fixture.get("visual_strategy", {}).get("preference", "")) in ["godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement"]
+	var valid_duration := duration == 15.0 if not fixture.has("beats") else duration >= 10.0 and duration <= (30.0 if extended else 20.0)
 	return format.get("width") == 1080 and format.get("height") == 1920 and format.get("fps") == 30 and valid_duration
 
 func _write_timeline_report() -> void:

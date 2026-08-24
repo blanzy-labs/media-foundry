@@ -1,0 +1,97 @@
+{
+  "slice": "MF-006R3",
+  "case_count": 15,
+  "cases": [
+    {
+      "case": "packets_leave_paths",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "flow_before_draw",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "two_windows",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "split_pages_return",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "wavy_line_returns",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "yellow_circle_returns",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "text_outside_screen",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "typing_disabled",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "new_screen_per_beat",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "refresh_after_next_beat",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "background_too_subtle",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "background_too_bright",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "center_cable_returns",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "node_competes",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "cta_overlay",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    }
+  ],
+  "result": "PASS"
+}

@@ -1,0 +1,133 @@
+{
+  "slice": "MF-006R6",
+  "case_count": 21,
+  "cases": [
+    {
+      "case": "two_windows",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "split_returns",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "wavy_returns",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "yellow_returns",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "text_unsafe",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "simon_motion_missing",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "simon_lock_missing",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "bridge_travel_missing",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "bridge_pulses_excess",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "bio_scan_missing",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "architecture_changed",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "overload_pulses_missing",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "cell_breathing_excess",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "green_weak",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "projection_too_unstable",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "text_jitter",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "record_holds_missing",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "multiple_surfaces",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "cta_packets_missing",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "cta_hold_short",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "center_cable_returns",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    }
+  ],
+  "result": "PASS"
+}

@@ -1,0 +1,127 @@
+{
+  "slice": "MF-006R5",
+  "case_count": 20,
+  "cases": [
+    {
+      "case": "packets_leave_paths",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "two_windows",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "split_pages_return",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "wavy_line_returns",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "yellow_circle_returns",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "text_outside_screen",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "query_missing",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "confirm_missing",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "discovery_disabled",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "beat_animation_missing",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "query_after_typing",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "overload_too_short",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "overload_packets_missing",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "environment_reaction_missing",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "green_too_weak",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "green_phone_visibility_missing",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "center_cable_returns",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "node_competes",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "cta_plain_card",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "cta_lock_missing",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    }
+  ],
+  "result": "PASS"
+}

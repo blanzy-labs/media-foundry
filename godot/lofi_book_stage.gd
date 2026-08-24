@@ -16,8 +16,8 @@ var author := ""
 var website := ""
 var page_phrases: Array = []
 
-const COMPONENT_TYPES := ["electronic_chamber", "circuit_crawler", "electrical_burst", "electronic_platform", "book_generation_cradle", "projection_emitter", "generated_book", "projected_codex", "page", "projection_plane", "data_dissolve", "projection_collapse", "lofi_light", "powered_cells", "website_reveal"]
-const EVENT_TYPES := ["circuit_start", "path_draw_start", "paths_drawn", "energy_flow", "circuit_convergence", "central_node_charge", "overload", "spark_burst", "title_form", "title_stabilized", "projection_emission", "codex_unfold", "projection_beat", "projection_transition", "book_materialized", "camera_push", "book_open", "page_turn", "page_reaction", "book_close", "projection_collapse", "energy_reclaimed", "data_dissolve", "return_energy", "camera_pull_back", "cta_energy", "cta_reveal", "website_reveal", "settle"]
+const COMPONENT_TYPES := ["electronic_chamber", "circuit_crawler", "electrical_burst", "electronic_platform", "book_generation_cradle", "projection_emitter", "generated_book", "projected_codex", "projected_data_window", "page", "projection_plane", "record_channel", "data_dissolve", "projection_collapse", "screen_collapse", "lofi_light", "powered_cells", "website_reveal"]
+const EVENT_TYPES := ["circuit_start", "path_draw_start", "paths_drawn", "energy_flow", "circuit_convergence", "central_node_charge", "overload", "overload_pulse", "overload_peak", "spark_burst", "title_form", "title_stabilized", "projection_emission", "codex_unfold", "screen_initialize", "record_query", "record_typing", "record_activity", "record_confirm", "record_lock", "record_hold", "record_reset", "screen_refresh", "projection_beat", "projection_transition", "book_materialized", "camera_push", "book_open", "page_turn", "page_reaction", "book_close", "projection_collapse", "screen_collapse", "energy_reclaimed", "data_dissolve", "return_energy", "camera_pull_back", "cta_energy", "cta_typing", "cta_lock", "cta_reveal", "website_reveal", "settle"]
 const CAMERA_EVENT_TYPES := ["camera_push", "camera_pull_back", "settle", "spark_burst"]
 
 func configure(source_fixture: Dictionary, source_timeline: Dictionary, _source_layouts: Dictionary, source_heavy: Font, source_regular: Font) -> Dictionary:
@@ -32,7 +32,8 @@ func configure(source_fixture: Dictionary, source_timeline: Dictionary, _source_
 	var website_value = fixture.get("cta", {}).get("website")
 	website = str(website_value) if typeof(website_value) == TYPE_STRING else ""
 	page_phrases = fixture.get("page_phrases", [])
-	if title.is_empty() or author.is_empty() or page_phrases.size() < 2 or page_phrases.size() > 3 or duration < 17.0 or duration > 20.0:
+	var extended := str(fixture.get("visual_strategy", {}).get("preference", "")) in ["godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement"]
+	if title.is_empty() or author.is_empty() or page_phrases.size() < 2 or page_phrases.size() > 3 or duration < 17.0 or duration > (30.0 if extended else 20.0):
 		return {"result": "FAIL", "error": "MF006_SCENE_CONFIG_FAILED: title, author, page phrases, or duration invalid"}
 	var scene: Dictionary = fixture.get("generated_scene", {})
 	for item in scene.get("components", []):
@@ -110,6 +111,8 @@ func _draw_chamber() -> void:
 			if (row + column) % 4 == 0: draw_line(Vector2(x + 14, y + 15), Vector2(x + 78, y + 12), Color(0.32, 0.4, 0.42, 0.25), 2)
 	# Hanging cables and dirty glass depth layer.
 	for cable in range(5):
+		if str(fixture.get("visual_strategy", {}).get("preference", "")) in ["godot_projected_data_window_refinement", "godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement"] and cable == 2:
+			continue
 		var anchor_x := -240.0 + cable * 118.0
 		var sway := sin(current_time * (0.55 + cable * 0.07) + cable) * 10.0
 		var points := PackedVector2Array([Vector2(anchor_x, -540), Vector2(anchor_x + sway, -390), Vector2(anchor_x - 18 + sway, -250), Vector2(anchor_x + 8, -155)])

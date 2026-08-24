@@ -1,0 +1,111 @@
+{
+  "slice": "MF-004",
+  "fixture": "mf006r3-unknown-process",
+  "mode": "beats",
+  "result": "PASS",
+  "duration": 18.3,
+  "number_of_beats": 9,
+  "sequential_no_gaps": true,
+  "beats": [
+    {
+      "id": "circuits",
+      "type": "intro",
+      "text": "UNKNOWN PROCESS",
+      "duration": 1.8,
+      "transition": "cut",
+      "narration": null,
+      "index": 0,
+      "start": 0.0,
+      "end": 1.8
+    },
+    {
+      "id": "formation",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 1.4,
+      "transition": "cut",
+      "narration": null,
+      "index": 1,
+      "start": 1.8,
+      "end": 3.2
+    },
+    {
+      "id": "opening",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 1.0,
+      "transition": "cut",
+      "narration": null,
+      "index": 2,
+      "start": 3.2,
+      "end": 4.2
+    },
+    {
+      "id": "page_1",
+      "type": "statement",
+      "text": "SIMON IS BEING HUNTED",
+      "duration": 2.3,
+      "transition": "cut",
+      "narration": null,
+      "index": 3,
+      "start": 4.2,
+      "end": 6.5
+    },
+    {
+      "id": "page_2",
+      "type": "emphasis",
+      "text": "TWO IMPOSSIBLE TARGETS",
+      "duration": 2.5,
+      "transition": "cut",
+      "narration": null,
+      "index": 4,
+      "start": 6.5,
+      "end": 9.0
+    },
+    {
+      "id": "page_3",
+      "type": "statement",
+      "text": "KILL-SWITCH IN HIS BIOMETRICS",
+      "duration": 2.5,
+      "transition": "cut",
+      "narration": null,
+      "index": 5,
+      "start": 9.0,
+      "end": 11.5
+    },
+    {
+      "id": "close",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 1.1,
+      "transition": "cut",
+      "narration": null,
+      "index": 6,
+      "start": 11.5,
+      "end": 12.6
+    },
+    {
+      "id": "dissolve",
+      "type": "statement",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 2.4,
+      "transition": "cut",
+      "narration": null,
+      "index": 7,
+      "start": 12.6,
+      "end": 15.0
+    },
+    {
+      "id": "cta",
+      "type": "outro",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 3.3,
+      "transition": "cut",
+      "narration": null,
+      "index": 8,
+      "start": 15.0,
+      "end": 18.3
+    }
+  ],
+  "preflight_seconds": 5.4e-05
+}

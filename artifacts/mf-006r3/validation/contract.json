@@ -1,0 +1,26 @@
+{
+  "slice": "MF-006R3",
+  "approved_source": {
+    "url": "https://rcblanzy.com/books/unknown-process",
+    "organization": "Robert C. Blanzy",
+    "retrieval_date": "2026-08-24",
+    "title": "Unknown Process",
+    "author": "Robert C. Blanzy",
+    "series": "The Second Presence",
+    "book_number": 1,
+    "synopsis_sha256": "8c386a08624f61eb3bd92a522c76b9635f60fb7413fcd19d5a2e12a7285fc78b"
+  },
+  "checks": {
+    "metadata": "PASS",
+    "approved_copy": "PASS",
+    "single_data_window": "PASS",
+    "destination": "PASS",
+    "music": "PASS",
+    "voice": "BLOCKED_PRODUCTION_VOICE"
+  },
+  "blockers": [
+    "BLOCKED_PRODUCTION_VOICE"
+  ],
+  "errors": [],
+  "result": "PASS_WITH_BLOCKER"
+}
