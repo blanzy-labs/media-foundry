@@ -6,6 +6,9 @@ const FPS := 30.0
 const ScrappyMediaSlotScript = preload("res://scrappy_media_slot.gd")
 const BeatTimelineScript = preload("res://beat_timeline.gd")
 const ScrappyWorldStageScript = preload("res://scrappy_world_stage.gd")
+const LofiBookStageScript = preload("res://lofi_book_stage.gd")
+const CausalBookStageScript = preload("res://causal_book_stage.gd")
+const ProjectedCodexStageScript = preload("res://projected_codex_stage.gd")
 
 var fixture: Dictionary
 var grammar: Dictionary
@@ -72,9 +75,17 @@ func _ready() -> void:
 		return
 	if not _prepare_layouts():
 		return
-	generated_scene_active = fixture.get("visual_strategy", {}).get("preference") == "generated_scene"
+	var visual_preference := str(fixture.get("visual_strategy", {}).get("preference", ""))
+	generated_scene_active = visual_preference in ["generated_scene", "godot_generated_scene", "godot_generated_book_refinement", "godot_projected_codex_refinement"]
 	if generated_scene_active:
-		generated_stage = ScrappyWorldStageScript.new()
+		if visual_preference == "godot_projected_codex_refinement":
+			generated_stage = ProjectedCodexStageScript.new()
+		elif visual_preference == "godot_generated_book_refinement":
+			generated_stage = CausalBookStageScript.new()
+		elif visual_preference == "godot_generated_scene":
+			generated_stage = LofiBookStageScript.new()
+		else:
+			generated_stage = ScrappyWorldStageScript.new()
 		add_child(generated_stage)
 		var scene_result: Dictionary = generated_stage.configure(fixture, timeline, layouts, heavy_font, regular_font)
 		if scene_result.get("result") != "PASS":

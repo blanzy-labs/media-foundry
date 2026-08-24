@@ -1,0 +1,122 @@
+{
+  "id": "mf006-dark-signal",
+  "template": "scrappy_diorama",
+  "seed": 26006,
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": 19.8},
+  "subject": {
+    "type": "book",
+    "title": "Dark Signal",
+    "author": "R.C. Blanzy",
+    "series": "The Second Presence Trilogy",
+    "book_number": 2,
+    "metadata_provenance": [
+      {"source": "content/fixtures/mf-pilot-001-books.json", "supports": "Dark Signal title, Book Two, R.C. Blanzy promotional identity"},
+      {"source": "reports/mf-pilot-001/asset-inventory.md", "supports": "Dark Signal is Book Two of The Second Presence Trilogy; cover inspected as reference only"},
+      {"source": "content/fixtures/production-batch-001-books.json", "supports": "Approved promotional copy and R.C. Blanzy science-fiction identity"}
+    ]
+  },
+  "approved_copy": {
+    "description": "The strangest AI conversations aren't happening in labs. They're happening in fiction.",
+    "source": "content/fixtures/production-batch-001-books.json",
+    "invented_plot_details": false
+  },
+  "visual_strategy": {"preference": "godot_generated_scene", "fallback": "fail", "static_book_cover_allowed": false},
+  "visual": {"kind": "generated_book_world", "primary": "0b1d24", "secondary": "39b8c9", "label": "SIGNAL CHAMBER", "props": []},
+  "intro": {"text": "DARK SIGNAL"},
+  "content": {"headline": "DARK SIGNAL", "body": "THE SECOND PRESENCE • BOOK TWO", "emphasis": "R.C. BLANZY"},
+  "outro": {"text": "CONTINUE THE ADVENTURE", "tagline": "R.C. BLANZY"},
+  "page_phrases": ["STRANGEST AI CONVERSATIONS", "NOT HAPPENING IN LABS", "HAPPENING IN FICTION"],
+  "cta": {"text": "Continue the adventure", "website": null, "status": "BLOCKED_APPROVED_WEBSITE", "reason": "No approved concise book website exists in the repository or accessible local author materials."},
+  "voice_contract": {
+    "status": "BLOCKED_PRODUCTION_VOICE",
+    "available_provider": null,
+    "test_voice_allowed": false,
+    "release_eligible": false,
+    "narration_text": "The strangest AI conversations aren't happening in labs. They're happening in fiction. Continue the adventure.",
+    "approved_copy_only": true,
+    "required_final_line": "Continue the adventure."
+  },
+  "audio": {"enabled": true},
+  "music": {
+    "source": "media/audio/music/waiting-for-the-shift.mp3",
+    "required": true,
+    "continuous": true,
+    "loop": false,
+    "selected_offset": 0.0,
+    "normalization_lufs": -24,
+    "gain_db": -4.0,
+    "narration_duck_db": -8.0,
+    "attack_ms": 110,
+    "release_ms": 280,
+    "fade_in": 1.2,
+    "fade_out": 1.8,
+    "provenance": {
+      "type": "user_supplied",
+      "asset_class": "approved",
+      "release_eligible": true,
+      "source_filename": "Waiting_for_the_Shift.mp3",
+      "supplied_by": "user",
+      "retrieval_date": "2026-08-24",
+      "usage": "Authorized by the user for MF-006 and editable to meet the production specification.",
+      "license": "No broader redistribution terms supplied; retain only as a project production source.",
+      "sha256": "69cfdc1792c94af1c600fdd868bec87412f6fbdc9477aa94592548faccb2398e"
+    }
+  },
+  "generated_scene": {
+    "components": [
+      {"id": "chamber", "type": "electronic_chamber"},
+      {"id": "circuits", "type": "circuit_crawler"},
+      {"id": "burst", "type": "electrical_burst"},
+      {"id": "platform", "type": "electronic_platform"},
+      {"id": "book", "type": "generated_book"},
+      {"id": "page_1", "type": "page"},
+      {"id": "page_2", "type": "page"},
+      {"id": "page_3", "type": "page"},
+      {"id": "dissolve", "type": "data_dissolve"},
+      {"id": "lights", "type": "lofi_light"}
+    ],
+    "events": [
+      {"id": "circuit_start", "type": "circuit_start", "time": 0.0},
+      {"id": "circuit_convergence", "type": "circuit_convergence", "time": 1.35},
+      {"id": "spark_burst", "type": "spark_burst", "time": 1.75},
+      {"id": "title_form", "type": "title_form", "time": 1.9},
+      {"id": "book_materialized", "type": "book_materialized", "time": 3.0},
+      {"id": "camera_push", "type": "camera_push", "time": 3.2},
+      {"id": "book_open", "type": "book_open", "time": 3.7},
+      {"id": "page_turn_1", "type": "page_turn", "time": 4.65},
+      {"id": "page_reaction_1", "type": "page_reaction", "time": 5.15},
+      {"id": "page_turn_2", "type": "page_turn", "time": 7.1},
+      {"id": "page_reaction_2", "type": "page_reaction", "time": 7.65},
+      {"id": "page_turn_3", "type": "page_turn", "time": 9.6},
+      {"id": "page_reaction_3", "type": "page_reaction", "time": 10.15},
+      {"id": "final_page_settle", "type": "settle", "time": 11.6},
+      {"id": "book_close", "type": "book_close", "time": 12.1},
+      {"id": "data_dissolve", "type": "data_dissolve", "time": 13.4},
+      {"id": "camera_pull_back", "type": "camera_pull_back", "time": 14.4},
+      {"id": "cta_reveal", "type": "cta_reveal", "time": 16.4},
+      {"id": "cta_settle", "type": "settle", "time": 17.1}
+    ]
+  },
+  "sfx": [
+    {"id": "circuit_motion", "event": "circuit_start", "time": 0.1, "type": "electronic_motion", "gain": 0.045},
+    {"id": "spark", "event": "spark_burst", "time": 1.75, "type": "spark_burst", "gain": 0.13},
+    {"id": "formation", "event": "book_materialized", "time": 3.0, "type": "book_formation", "gain": 0.08},
+    {"id": "open", "event": "book_open", "time": 3.7, "type": "book_open", "gain": 0.075},
+    {"id": "page_1", "event": "page_turn_1", "time": 4.65, "type": "page_flip", "gain": 0.055},
+    {"id": "page_2", "event": "page_turn_2", "time": 7.1, "type": "page_flip", "gain": 0.055},
+    {"id": "page_3", "event": "page_turn_3", "time": 9.6, "type": "page_flip", "gain": 0.055},
+    {"id": "close", "event": "book_close", "time": 12.1, "type": "book_close", "gain": 0.075},
+    {"id": "dissolve", "event": "data_dissolve", "time": 13.4, "type": "data_dissolve", "gain": 0.06}
+  ],
+  "beats": [
+    {"id": "circuits", "type": "intro", "text": "DARK SIGNAL", "duration": 1.8, "transition": "cut", "narration": null},
+    {"id": "formation", "type": "reveal", "text": "DARK SIGNAL", "duration": 1.6, "transition": "cut", "narration": null},
+    {"id": "opening", "type": "reveal", "text": "DARK SIGNAL", "duration": 1.2, "transition": "cut", "narration": null},
+    {"id": "page_1", "type": "statement", "text": "STRANGEST AI CONVERSATIONS", "duration": 2.4, "transition": "cut", "narration": null},
+    {"id": "page_2", "type": "emphasis", "text": "NOT HAPPENING IN LABS", "duration": 2.5, "transition": "cut", "narration": null},
+    {"id": "page_3", "type": "statement", "text": "HAPPENING IN FICTION", "duration": 2.5, "transition": "cut", "narration": null},
+    {"id": "close", "type": "reveal", "text": "DARK SIGNAL", "duration": 1.2, "transition": "cut", "narration": null},
+    {"id": "dissolve", "type": "statement", "text": "CONTINUE THE ADVENTURE", "duration": 2.2, "transition": "cut", "narration": null},
+    {"id": "cta", "type": "outro", "text": "CONTINUE THE ADVENTURE", "duration": 4.4, "transition": "cut", "narration": null}
+  ]
+}

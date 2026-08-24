@@ -1,0 +1,84 @@
+{
+  "slice": "MF-006",
+  "duration": 19.8,
+  "sample_rate": 48000,
+  "channels": 1,
+  "event_count": 9,
+  "events": [
+    {
+      "id": "circuit_motion",
+      "event": "circuit_start",
+      "time": 0.1,
+      "type": "electronic_motion",
+      "duration": 1.45,
+      "gain": 0.045
+    },
+    {
+      "id": "spark",
+      "event": "spark_burst",
+      "time": 1.75,
+      "type": "spark_burst",
+      "duration": 0.48,
+      "gain": 0.13
+    },
+    {
+      "id": "formation",
+      "event": "book_materialized",
+      "time": 3.0,
+      "type": "book_formation",
+      "duration": 0.55,
+      "gain": 0.08
+    },
+    {
+      "id": "open",
+      "event": "book_open",
+      "time": 3.7,
+      "type": "book_open",
+      "duration": 0.42,
+      "gain": 0.075
+    },
+    {
+      "id": "page_1",
+      "event": "page_turn_1",
+      "time": 4.65,
+      "type": "page_flip",
+      "duration": 0.28,
+      "gain": 0.055
+    },
+    {
+      "id": "page_2",
+      "event": "page_turn_2",
+      "time": 7.1,
+      "type": "page_flip",
+      "duration": 0.28,
+      "gain": 0.055
+    },
+    {
+      "id": "page_3",
+      "event": "page_turn_3",
+      "time": 9.6,
+      "type": "page_flip",
+      "duration": 0.28,
+      "gain": 0.055
+    },
+    {
+      "id": "close",
+      "event": "book_close",
+      "time": 12.1,
+      "type": "book_close",
+      "duration": 0.48,
+      "gain": 0.075
+    },
+    {
+      "id": "dissolve",
+      "event": "data_dissolve",
+      "time": 13.4,
+      "type": "data_dissolve",
+      "duration": 1.15,
+      "gain": 0.06
+    }
+  ],
+  "pre_clamp_peak": 0.18164,
+  "clipped_samples": 0,
+  "result": "PASS"
+}

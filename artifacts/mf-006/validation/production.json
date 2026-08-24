@@ -1,0 +1,108 @@
+{
+  "slice": "MF-006",
+  "checks": {
+    "generated_scene": "PASS",
+    "generated_book": "PASS",
+    "events": "PASS",
+    "continuous_motion": "PASS",
+    "low_resolution": "PASS",
+    "camera": "PASS",
+    "timeline": "PASS",
+    "music_fades": "PASS",
+    "physical_sfx": "PASS",
+    "loudness_peak": "PASS",
+    "full_decode": "PASS"
+  },
+  "fade_measurement": {
+    "fade_in_seconds": 1.2,
+    "fade_out_seconds": 1.8,
+    "sampled_non_silent_points": 99517,
+    "envelope_mean_absolute_error": 0.003829,
+    "first_100ms_gain_ratio": 0.190911,
+    "last_100ms_gain_ratio": 0.03184,
+    "result": "PASS"
+  },
+  "audio": {
+    "integrated_lufs": -16.17,
+    "true_peak_db": -1.43,
+    "loudness_range": 3.0
+  },
+  "sfx": [
+    {
+      "id": "circuit_motion",
+      "event": "circuit_start",
+      "time": 0.1,
+      "rms_dbfs": -34.29,
+      "result": "PASS"
+    },
+    {
+      "id": "spark",
+      "event": "spark_burst",
+      "time": 1.75,
+      "rms_dbfs": -27.705,
+      "result": "PASS"
+    },
+    {
+      "id": "formation",
+      "event": "book_materialized",
+      "time": 3.0,
+      "rms_dbfs": -29.016,
+      "result": "PASS"
+    },
+    {
+      "id": "open",
+      "event": "book_open",
+      "time": 3.7,
+      "rms_dbfs": -34.33,
+      "result": "PASS"
+    },
+    {
+      "id": "page_1",
+      "event": "page_turn_1",
+      "time": 4.65,
+      "rms_dbfs": -41.147,
+      "result": "PASS"
+    },
+    {
+      "id": "page_2",
+      "event": "page_turn_2",
+      "time": 7.1,
+      "rms_dbfs": -41.232,
+      "result": "PASS"
+    },
+    {
+      "id": "page_3",
+      "event": "page_turn_3",
+      "time": 9.6,
+      "rms_dbfs": -41.178,
+      "result": "PASS"
+    },
+    {
+      "id": "close",
+      "event": "book_close",
+      "time": 12.1,
+      "rms_dbfs": -33.759,
+      "result": "PASS"
+    },
+    {
+      "id": "dissolve",
+      "event": "data_dissolve",
+      "time": 13.4,
+      "rms_dbfs": -35.274,
+      "result": "PASS"
+    }
+  ],
+  "blockers": [
+    "BLOCKED_APPROVED_WEBSITE",
+    "BLOCKED_PRODUCTION_VOICE"
+  ],
+  "errors": [],
+  "gates": {
+    "visual_audio_technical": "PASS",
+    "technical": "FAIL",
+    "editorial": "BLOCKED_APPROVED_INPUTS",
+    "release": "RELEASE_ELIGIBLE_NO"
+  },
+  "candidate_valid": false,
+  "result": "PASS_WITH_BLOCKERS"
+}

@@ -1,0 +1,172 @@
+{
+  "slice": "MF-006R1",
+  "selected_book": {
+    "title": "Unknown Process",
+    "canonical_author": "Robert C. Blanzy",
+    "display_author": "R.C. Blanzy",
+    "series": "The Second Presence",
+    "book_number": 1
+  },
+  "subject_switch": "PASS",
+  "approved_source": {
+    "url": "https://rcblanzy.com/books/unknown-process",
+    "organization": "Robert C. Blanzy",
+    "retrieval_date": "2026-08-24",
+    "title": "Unknown Process",
+    "author": "Robert C. Blanzy",
+    "series": "The Second Presence",
+    "book_number": 1,
+    "synopsis_sha256": "8c386a08624f61eb3bd92a522c76b9635f60fb7413fcd19d5a2e12a7285fc78b"
+  },
+  "visual_audio_technical": "PASS",
+  "production_voice": "BLOCKED_PRODUCTION_VOICE",
+  "human_editorial": "PENDING_HUMAN",
+  "release_eligible": false,
+  "blockers": [
+    "BLOCKED_PRODUCTION_VOICE",
+    "HUMAN_EDITORIAL_REVIEW",
+    "HUMAN_RELEASE_REVIEW"
+  ],
+  "duration_seconds": 18.3,
+  "internal_resolution": "540x960",
+  "output_resolution": "1080x1920",
+  "static_book_cover_used": false,
+  "renderer_implementation_files_changed": 3,
+  "renderer_architecture_changes": 0,
+  "sfx_count": 12,
+  "failure_tests": "PASS",
+  "technical_validation": {
+    "slice": "MF-006R1",
+    "checks": {
+      "causal_order": "PASS",
+      "path_following": "PASS",
+      "central_buildup_burst": "PASS",
+      "physical_book": "PASS",
+      "purposeful_cradle": "PASS",
+      "closing_mirrors_opening": "PASS",
+      "integrated_cta": "PASS",
+      "timeline": "PASS",
+      "music_fades": "PASS",
+      "causal_sfx": "PASS",
+      "loudness_peak": "PASS",
+      "full_decode": "PASS"
+    },
+    "fade_measurement": {
+      "fade_in_seconds": 1.2,
+      "fade_out_seconds": 1.8,
+      "sampled_non_silent_points": 93395,
+      "envelope_mean_absolute_error": 0.003918,
+      "first_100ms_gain_ratio": 0.190911,
+      "last_100ms_gain_ratio": 0.029409,
+      "result": "PASS"
+    },
+    "audio": {
+      "integrated_lufs": -16.31,
+      "true_peak_db": -1.38,
+      "loudness_range": 3.9
+    },
+    "sfx": [
+      {
+        "id": "circuit_draw",
+        "event": "path_draw_start",
+        "time": 0.05,
+        "rms_dbfs": -38.634,
+        "result": "PASS"
+      },
+      {
+        "id": "energy_flow",
+        "event": "energy_flow",
+        "time": 0.6,
+        "rms_dbfs": -37.116,
+        "result": "PASS"
+      },
+      {
+        "id": "overload",
+        "event": "overload",
+        "time": 1.55,
+        "rms_dbfs": -32.188,
+        "result": "PASS"
+      },
+      {
+        "id": "spark",
+        "event": "spark_burst",
+        "time": 1.8,
+        "rms_dbfs": -27.753,
+        "result": "PASS"
+      },
+      {
+        "id": "formation",
+        "event": "book_materialized",
+        "time": 2.7,
+        "rms_dbfs": -28.91,
+        "result": "PASS"
+      },
+      {
+        "id": "open",
+        "event": "book_open",
+        "time": 3.25,
+        "rms_dbfs": -34.084,
+        "result": "PASS"
+      },
+      {
+        "id": "page_1",
+        "event": "page_turn_1",
+        "time": 4.0,
+        "rms_dbfs": -41.518,
+        "result": "PASS"
+      },
+      {
+        "id": "page_2",
+        "event": "page_turn_2",
+        "time": 6.5,
+        "rms_dbfs": -41.514,
+        "result": "PASS"
+      },
+      {
+        "id": "page_3",
+        "event": "page_turn_3",
+        "time": 9.0,
+        "rms_dbfs": -41.493,
+        "result": "PASS"
+      },
+      {
+        "id": "close",
+        "event": "book_close",
+        "time": 11.5,
+        "rms_dbfs": -33.604,
+        "result": "PASS"
+      },
+      {
+        "id": "dissolve",
+        "event": "data_dissolve",
+        "time": 12.4,
+        "rms_dbfs": -35.655,
+        "result": "PASS"
+      },
+      {
+        "id": "cta_energy",
+        "event": "cta_energy",
+        "time": 15.0,
+        "rms_dbfs": -34.653,
+        "result": "PASS"
+      }
+    ],
+    "blockers": [
+      "BLOCKED_PRODUCTION_VOICE"
+    ],
+    "errors": [],
+    "gates": {
+      "visual_audio_technical": "PASS",
+      "production_voice": "BLOCKED",
+      "human_editorial": "PENDING_HUMAN",
+      "release": "RELEASE_ELIGIBLE_NO"
+    },
+    "result": "PASS_WITH_BLOCKER"
+  },
+  "artifact": {
+    "path": "/home/blanzy/projects/media-foundry/artifacts/mf-006r1/candidate-a.mp4",
+    "bytes": 2589986,
+    "sha256": "5560f699d2340e451a246ce7aba24b7b20aabae8e8dc3d894da1f84197746eff"
+  },
+  "result": "PASS_WITH_BLOCKER"
+}

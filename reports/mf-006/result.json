@@ -1,0 +1,158 @@
+{
+  "slice": "MF-006",
+  "selected_book": {
+    "title": "Dark Signal",
+    "author": "R.C. Blanzy",
+    "series": "The Second Presence Trilogy",
+    "book_number": 2
+  },
+  "visual_audio_technical": "PASS",
+  "gates": {
+    "visual_audio_technical": "PASS",
+    "technical": "FAIL",
+    "editorial": "BLOCKED_APPROVED_INPUTS",
+    "release": "RELEASE_ELIGIBLE_NO"
+  },
+  "candidate_valid": false,
+  "release_eligible": false,
+  "blockers": [
+    "BLOCKED_APPROVED_WEBSITE",
+    "BLOCKED_PRODUCTION_VOICE"
+  ],
+  "duration_seconds": 19.8,
+  "internal_resolution": "540x960",
+  "output_resolution": "1080x1920",
+  "upscale": "nearest-neighbor",
+  "static_book_cover_used": false,
+  "voice_auditions": 0,
+  "website": null,
+  "music": {
+    "source": "Waiting_for_the_Shift.mp3",
+    "sha256": "69cfdc1792c94af1c600fdd868bec87412f6fbdc9477aa94592548faccb2398e",
+    "offset": 0.0,
+    "fade_in": 1.2,
+    "fade_out": 1.8,
+    "gain_db": -4.0
+  },
+  "sfx_count": 9,
+  "failure_tests": "PASS",
+  "technical_validation": {
+    "slice": "MF-006",
+    "checks": {
+      "generated_scene": "PASS",
+      "generated_book": "PASS",
+      "events": "PASS",
+      "continuous_motion": "PASS",
+      "low_resolution": "PASS",
+      "camera": "PASS",
+      "timeline": "PASS",
+      "music_fades": "PASS",
+      "physical_sfx": "PASS",
+      "loudness_peak": "PASS",
+      "full_decode": "PASS"
+    },
+    "fade_measurement": {
+      "fade_in_seconds": 1.2,
+      "fade_out_seconds": 1.8,
+      "sampled_non_silent_points": 99517,
+      "envelope_mean_absolute_error": 0.003829,
+      "first_100ms_gain_ratio": 0.190911,
+      "last_100ms_gain_ratio": 0.03184,
+      "result": "PASS"
+    },
+    "audio": {
+      "integrated_lufs": -16.17,
+      "true_peak_db": -1.43,
+      "loudness_range": 3.0
+    },
+    "sfx": [
+      {
+        "id": "circuit_motion",
+        "event": "circuit_start",
+        "time": 0.1,
+        "rms_dbfs": -34.29,
+        "result": "PASS"
+      },
+      {
+        "id": "spark",
+        "event": "spark_burst",
+        "time": 1.75,
+        "rms_dbfs": -27.705,
+        "result": "PASS"
+      },
+      {
+        "id": "formation",
+        "event": "book_materialized",
+        "time": 3.0,
+        "rms_dbfs": -29.016,
+        "result": "PASS"
+      },
+      {
+        "id": "open",
+        "event": "book_open",
+        "time": 3.7,
+        "rms_dbfs": -34.33,
+        "result": "PASS"
+      },
+      {
+        "id": "page_1",
+        "event": "page_turn_1",
+        "time": 4.65,
+        "rms_dbfs": -41.147,
+        "result": "PASS"
+      },
+      {
+        "id": "page_2",
+        "event": "page_turn_2",
+        "time": 7.1,
+        "rms_dbfs": -41.232,
+        "result": "PASS"
+      },
+      {
+        "id": "page_3",
+        "event": "page_turn_3",
+        "time": 9.6,
+        "rms_dbfs": -41.178,
+        "result": "PASS"
+      },
+      {
+        "id": "close",
+        "event": "book_close",
+        "time": 12.1,
+        "rms_dbfs": -33.759,
+        "result": "PASS"
+      },
+      {
+        "id": "dissolve",
+        "event": "data_dissolve",
+        "time": 13.4,
+        "rms_dbfs": -35.274,
+        "result": "PASS"
+      }
+    ],
+    "blockers": [
+      "BLOCKED_APPROVED_WEBSITE",
+      "BLOCKED_PRODUCTION_VOICE"
+    ],
+    "errors": [],
+    "gates": {
+      "visual_audio_technical": "PASS",
+      "technical": "FAIL",
+      "editorial": "BLOCKED_APPROVED_INPUTS",
+      "release": "RELEASE_ELIGIBLE_NO"
+    },
+    "candidate_valid": false,
+    "result": "PASS_WITH_BLOCKERS"
+  },
+  "artifact": {
+    "path": "/home/blanzy/projects/media-foundry/artifacts/mf-006/book-promo.mp4",
+    "bytes": 3050327,
+    "sha256": "2ccd1eb2e342e997c2f1b7dd8a7957ca715ae59598f87100929abe818fccfdcc"
+  },
+  "remaining_defects": [
+    "APPROVED_WEBSITE",
+    "PRODUCTION_VOICE",
+    "HUMAN_EDITORIAL_REVIEW",
+    "HUMAN_RELEASE_REVIEW"
+  ]
+}

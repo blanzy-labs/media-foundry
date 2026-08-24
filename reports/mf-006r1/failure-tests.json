@@ -1,0 +1,61 @@
+{
+  "slice": "MF-006R1",
+  "case_count": 9,
+  "cases": [
+    {
+      "case": "packets_leave_paths",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "paths_miss_node",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "flow_before_draw",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "burst_before_buildup",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "ambiguous_platform_returns",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "book_loses_spine",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "static_cover_inserted",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "website_not_integrated",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    },
+    {
+      "case": "return_path_changed",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "result": "PASS"
+    }
+  ],
+  "result": "PASS"
+}

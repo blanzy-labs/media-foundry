@@ -1,0 +1,178 @@
+{
+  "slice": "MF-006R1",
+  "continuous_scene": {
+    "duration": 18.3,
+    "end": 18.3,
+    "start": 0.0
+  },
+  "circuit_system": {
+    "all_paths_terminate_at_central_node": true,
+    "burst": 1.8,
+    "central_node_charge": 1.2,
+    "energy_flow_start": 0.6,
+    "overload": 1.55,
+    "packets_follow_defined_paths": true,
+    "path_count": 6,
+    "paths_draw_complete": 0.55,
+    "paths_draw_start": 0.0,
+    "return_energy_uses_same_paths": true
+  },
+  "events": [
+    {
+      "id": "path_draw_start",
+      "observed_frame": 548,
+      "time": 0.0,
+      "type": "path_draw_start"
+    },
+    {
+      "id": "paths_drawn",
+      "observed_frame": 548,
+      "time": 0.55,
+      "type": "paths_drawn"
+    },
+    {
+      "id": "energy_flow",
+      "observed_frame": 548,
+      "time": 0.6,
+      "type": "energy_flow"
+    },
+    {
+      "id": "central_node_charge",
+      "observed_frame": 548,
+      "time": 1.2,
+      "type": "central_node_charge"
+    },
+    {
+      "id": "overload",
+      "observed_frame": 548,
+      "time": 1.55,
+      "type": "overload"
+    },
+    {
+      "id": "spark_burst",
+      "observed_frame": 548,
+      "time": 1.8,
+      "type": "spark_burst"
+    },
+    {
+      "id": "title_form",
+      "observed_frame": 548,
+      "time": 1.9,
+      "type": "title_form"
+    },
+    {
+      "id": "book_materialized",
+      "observed_frame": 548,
+      "time": 2.7,
+      "type": "book_materialized"
+    },
+    {
+      "id": "camera_push",
+      "observed_frame": 548,
+      "time": 2.75,
+      "type": "camera_push"
+    },
+    {
+      "id": "book_open",
+      "observed_frame": 548,
+      "time": 3.25,
+      "type": "book_open"
+    },
+    {
+      "id": "page_turn_1",
+      "observed_frame": 548,
+      "time": 4.0,
+      "type": "page_turn"
+    },
+    {
+      "id": "page_reaction_1",
+      "observed_frame": 548,
+      "time": 4.45,
+      "type": "page_reaction"
+    },
+    {
+      "id": "page_turn_2",
+      "observed_frame": 548,
+      "time": 6.5,
+      "type": "page_turn"
+    },
+    {
+      "id": "page_reaction_2",
+      "observed_frame": 548,
+      "time": 7.0,
+      "type": "page_reaction"
+    },
+    {
+      "id": "page_turn_3",
+      "observed_frame": 548,
+      "time": 9.0,
+      "type": "page_turn"
+    },
+    {
+      "id": "page_reaction_3",
+      "observed_frame": 548,
+      "time": 9.5,
+      "type": "page_reaction"
+    },
+    {
+      "id": "final_page_settle",
+      "observed_frame": 548,
+      "time": 11.0,
+      "type": "settle"
+    },
+    {
+      "id": "book_close",
+      "observed_frame": 548,
+      "time": 11.5,
+      "type": "book_close"
+    },
+    {
+      "id": "data_dissolve",
+      "observed_frame": 548,
+      "time": 12.4,
+      "type": "data_dissolve"
+    },
+    {
+      "id": "return_energy",
+      "observed_frame": 548,
+      "time": 13.0,
+      "type": "return_energy"
+    },
+    {
+      "id": "camera_pull_back",
+      "observed_frame": 548,
+      "time": 13.7,
+      "type": "camera_pull_back"
+    },
+    {
+      "id": "cta_energy",
+      "observed_frame": 548,
+      "time": 15.0,
+      "type": "cta_energy"
+    },
+    {
+      "id": "website_reveal",
+      "observed_frame": 548,
+      "time": 15.5,
+      "type": "website_reveal"
+    },
+    {
+      "id": "cta_reveal",
+      "observed_frame": 548,
+      "time": 15.5,
+      "type": "cta_reveal"
+    },
+    {
+      "id": "cta_settle",
+      "observed_frame": 548,
+      "time": 16.1,
+      "type": "settle"
+    }
+  ],
+  "page_treatments": [
+    "hunted/reticle",
+    "dual-target/data-bridge",
+    "biometric/kill-switch"
+  ],
+  "result": "PASS"
+}

@@ -1,0 +1,17 @@
+{
+  "slice": "MF-006",
+  "gates": {
+    "mf-001": "PASS",
+    "mf-002": "PASS",
+    "mf-002r1": "PASS",
+    "mf-003": "PASS",
+    "mf-004": "PASS",
+    "mf-005": "PASS",
+    "mf-005r1": "PASS",
+    "mf-005r2": "PASS",
+    "mf-005r3": "PASS",
+    "mf-pilot-001": "PASS",
+    "mf-005r4_visual_audio": "PASS"
+  },
+  "result": "PASS"
+}

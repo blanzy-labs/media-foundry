@@ -1,0 +1,108 @@
+{
+  "slice": "MF-006",
+  "duration": 18.3,
+  "sample_rate": 48000,
+  "channels": 1,
+  "event_count": 12,
+  "events": [
+    {
+      "id": "circuit_draw",
+      "event": "path_draw_start",
+      "time": 0.05,
+      "type": "circuit_draw",
+      "duration": 0.55,
+      "gain": 0.035
+    },
+    {
+      "id": "energy_flow",
+      "event": "energy_flow",
+      "time": 0.6,
+      "type": "energy_flow",
+      "duration": 1.1,
+      "gain": 0.04
+    },
+    {
+      "id": "overload",
+      "event": "overload",
+      "time": 1.55,
+      "type": "central_overload",
+      "duration": 0.3,
+      "gain": 0.07
+    },
+    {
+      "id": "spark",
+      "event": "spark_burst",
+      "time": 1.8,
+      "type": "spark_burst",
+      "duration": 0.48,
+      "gain": 0.12
+    },
+    {
+      "id": "formation",
+      "event": "book_materialized",
+      "time": 2.7,
+      "type": "book_formation",
+      "duration": 0.55,
+      "gain": 0.075
+    },
+    {
+      "id": "open",
+      "event": "book_open",
+      "time": 3.25,
+      "type": "book_open",
+      "duration": 0.42,
+      "gain": 0.07
+    },
+    {
+      "id": "page_1",
+      "event": "page_turn_1",
+      "time": 4.0,
+      "type": "page_flip",
+      "duration": 0.28,
+      "gain": 0.05
+    },
+    {
+      "id": "page_2",
+      "event": "page_turn_2",
+      "time": 6.5,
+      "type": "page_flip",
+      "duration": 0.28,
+      "gain": 0.05
+    },
+    {
+      "id": "page_3",
+      "event": "page_turn_3",
+      "time": 9.0,
+      "type": "page_flip",
+      "duration": 0.28,
+      "gain": 0.05
+    },
+    {
+      "id": "close",
+      "event": "book_close",
+      "time": 11.5,
+      "type": "book_close",
+      "duration": 0.48,
+      "gain": 0.07
+    },
+    {
+      "id": "dissolve",
+      "event": "data_dissolve",
+      "time": 12.4,
+      "type": "data_dissolve",
+      "duration": 1.15,
+      "gain": 0.055
+    },
+    {
+      "id": "cta_energy",
+      "event": "cta_energy",
+      "time": 15.0,
+      "type": "cta_energy",
+      "duration": 0.8,
+      "gain": 0.045
+    }
+  ],
+  "pre_clamp_peak": 0.171515,
+  "clipped_samples": 0,
+  "result": "PASS"
+}

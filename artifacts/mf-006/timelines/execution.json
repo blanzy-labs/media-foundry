@@ -1,0 +1,91 @@
+{
+  "beats": [
+    {
+      "end": 1.8,
+      "first_frame": 0,
+      "id": "circuits",
+      "last_frame": 53,
+      "start": 0.0,
+      "status": "PASS",
+      "type": "intro"
+    },
+    {
+      "end": 3.4,
+      "first_frame": 54,
+      "id": "formation",
+      "last_frame": 101,
+      "start": 1.8,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 4.6,
+      "first_frame": 102,
+      "id": "opening",
+      "last_frame": 137,
+      "start": 3.4,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 7.0,
+      "first_frame": 138,
+      "id": "page_1",
+      "last_frame": 209,
+      "start": 4.6,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 9.5,
+      "first_frame": 210,
+      "id": "page_2",
+      "last_frame": 284,
+      "start": 7.0,
+      "status": "PASS",
+      "type": "emphasis"
+    },
+    {
+      "end": 12.0,
+      "first_frame": 285,
+      "id": "page_3",
+      "last_frame": 359,
+      "start": 9.5,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 13.2,
+      "first_frame": 360,
+      "id": "close",
+      "last_frame": 395,
+      "start": 12.0,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 15.4,
+      "first_frame": 396,
+      "id": "dissolve",
+      "last_frame": 461,
+      "start": 13.2,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 19.8,
+      "first_frame": 462,
+      "id": "cta",
+      "last_frame": 593,
+      "start": 15.4,
+      "status": "PASS",
+      "type": "outro"
+    }
+  ],
+  "duration": 19.8,
+  "fixture": "mf006-dark-signal",
+  "mode": "beats",
+  "result": "PASS",
+  "slice": "MF-004",
+  "total_frames": 594
+}

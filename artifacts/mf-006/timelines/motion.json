@@ -1,0 +1,170 @@
+{
+  "slice": "MF-006",
+  "continuous_scene": {
+    "duration": 19.8,
+    "end": 19.8,
+    "start": 0.0
+  },
+  "components": [
+    "book",
+    "burst",
+    "chamber",
+    "circuits",
+    "dissolve",
+    "lights",
+    "page_1",
+    "page_2",
+    "page_3",
+    "platform"
+  ],
+  "events": [
+    {
+      "id": "circuit_start",
+      "observed_frame": 593,
+      "time": 0.0,
+      "type": "circuit_start"
+    },
+    {
+      "id": "circuit_convergence",
+      "observed_frame": 593,
+      "time": 1.35,
+      "type": "circuit_convergence"
+    },
+    {
+      "id": "spark_burst",
+      "observed_frame": 593,
+      "time": 1.75,
+      "type": "spark_burst"
+    },
+    {
+      "id": "title_form",
+      "observed_frame": 593,
+      "time": 1.9,
+      "type": "title_form"
+    },
+    {
+      "id": "book_materialized",
+      "observed_frame": 593,
+      "time": 3.0,
+      "type": "book_materialized"
+    },
+    {
+      "id": "camera_push",
+      "observed_frame": 593,
+      "time": 3.2,
+      "type": "camera_push"
+    },
+    {
+      "id": "book_open",
+      "observed_frame": 593,
+      "time": 3.7,
+      "type": "book_open"
+    },
+    {
+      "id": "page_turn_1",
+      "observed_frame": 593,
+      "time": 4.65,
+      "type": "page_turn"
+    },
+    {
+      "id": "page_reaction_1",
+      "observed_frame": 593,
+      "time": 5.15,
+      "type": "page_reaction"
+    },
+    {
+      "id": "page_turn_2",
+      "observed_frame": 593,
+      "time": 7.1,
+      "type": "page_turn"
+    },
+    {
+      "id": "page_reaction_2",
+      "observed_frame": 593,
+      "time": 7.65,
+      "type": "page_reaction"
+    },
+    {
+      "id": "page_turn_3",
+      "observed_frame": 593,
+      "time": 9.6,
+      "type": "page_turn"
+    },
+    {
+      "id": "page_reaction_3",
+      "observed_frame": 593,
+      "time": 10.15,
+      "type": "page_reaction"
+    },
+    {
+      "id": "final_page_settle",
+      "observed_frame": 593,
+      "time": 11.6,
+      "type": "settle"
+    },
+    {
+      "id": "book_close",
+      "observed_frame": 593,
+      "time": 12.1,
+      "type": "book_close"
+    },
+    {
+      "id": "data_dissolve",
+      "observed_frame": 593,
+      "time": 13.4,
+      "type": "data_dissolve"
+    },
+    {
+      "id": "camera_pull_back",
+      "observed_frame": 593,
+      "time": 14.4,
+      "type": "camera_pull_back"
+    },
+    {
+      "id": "cta_reveal",
+      "observed_frame": 593,
+      "time": 16.4,
+      "type": "cta_reveal"
+    },
+    {
+      "id": "cta_settle",
+      "observed_frame": 593,
+      "time": 17.1,
+      "type": "settle"
+    }
+  ],
+  "camera_events": [
+    {
+      "id": "spark_burst",
+      "observed_frame": 593,
+      "time": 1.75,
+      "type": "spark_burst"
+    },
+    {
+      "id": "camera_push",
+      "observed_frame": 593,
+      "time": 3.2,
+      "type": "camera_push"
+    },
+    {
+      "id": "final_page_settle",
+      "observed_frame": 593,
+      "time": 11.6,
+      "type": "settle"
+    },
+    {
+      "id": "camera_pull_back",
+      "observed_frame": 593,
+      "time": 14.4,
+      "type": "camera_pull_back"
+    },
+    {
+      "id": "cta_settle",
+      "observed_frame": 593,
+      "time": 17.1,
+      "type": "settle"
+    }
+  ],
+  "text_hidden_motion_events": 13,
+  "result": "PASS"
+}

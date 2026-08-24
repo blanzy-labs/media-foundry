@@ -1,0 +1,129 @@
+{
+  "slice": "MF-006R2",
+  "checks": {
+    "causal_opening": "PASS",
+    "path_following": "PASS",
+    "projected_codex": "PASS",
+    "purposeful_emitter": "PASS",
+    "distinct_projection_beats": "PASS",
+    "restrained_background_cells": "PASS",
+    "scene_depth": "PASS",
+    "world_integrated_cta": "PASS",
+    "timeline": "PASS",
+    "music_fades": "PASS",
+    "projection_sfx": "PASS",
+    "loudness_peak": "PASS",
+    "full_decode": "PASS"
+  },
+  "fade_measurement": {
+    "fade_in_seconds": 1.2,
+    "fade_out_seconds": 1.8,
+    "sampled_non_silent_points": 93395,
+    "envelope_mean_absolute_error": 0.003918,
+    "first_100ms_gain_ratio": 0.190911,
+    "last_100ms_gain_ratio": 0.029409,
+    "result": "PASS"
+  },
+  "audio": {
+    "integrated_lufs": -16.26,
+    "true_peak_db": -1.13,
+    "loudness_range": 4.1
+  },
+  "sfx": [
+    {
+      "id": "circuit_draw",
+      "event": "path_draw_start",
+      "time": 0.05,
+      "rms_dbfs": -38.634,
+      "result": "PASS"
+    },
+    {
+      "id": "energy_flow",
+      "event": "energy_flow",
+      "time": 0.6,
+      "rms_dbfs": -37.116,
+      "result": "PASS"
+    },
+    {
+      "id": "overload",
+      "event": "overload",
+      "time": 1.55,
+      "rms_dbfs": -32.203,
+      "result": "PASS"
+    },
+    {
+      "id": "spark",
+      "event": "spark_burst",
+      "time": 1.8,
+      "rms_dbfs": -26.575,
+      "result": "PASS"
+    },
+    {
+      "id": "projection",
+      "event": "projection_emission",
+      "time": 1.95,
+      "rms_dbfs": -29.279,
+      "result": "PASS"
+    },
+    {
+      "id": "unfold",
+      "event": "codex_unfold",
+      "time": 3.15,
+      "rms_dbfs": -32.284,
+      "result": "PASS"
+    },
+    {
+      "id": "beat_1",
+      "event": "projection_beat_1",
+      "time": 4.0,
+      "rms_dbfs": -39.333,
+      "result": "PASS"
+    },
+    {
+      "id": "beat_2",
+      "event": "projection_beat_2",
+      "time": 6.5,
+      "rms_dbfs": -39.33,
+      "result": "PASS"
+    },
+    {
+      "id": "beat_3",
+      "event": "projection_beat_3",
+      "time": 9.0,
+      "rms_dbfs": -39.339,
+      "result": "PASS"
+    },
+    {
+      "id": "collapse",
+      "event": "projection_collapse",
+      "time": 11.6,
+      "rms_dbfs": -30.23,
+      "result": "PASS"
+    },
+    {
+      "id": "return",
+      "event": "return_energy",
+      "time": 13.0,
+      "rms_dbfs": -38.275,
+      "result": "PASS"
+    },
+    {
+      "id": "cta_energy",
+      "event": "cta_energy",
+      "time": 15.0,
+      "rms_dbfs": -34.653,
+      "result": "PASS"
+    }
+  ],
+  "blockers": [
+    "BLOCKED_PRODUCTION_VOICE"
+  ],
+  "errors": [],
+  "gates": {
+    "visual_audio_technical": "PASS",
+    "production_voice": "BLOCKED",
+    "human_editorial": "PENDING_HUMAN",
+    "release": "RELEASE_ELIGIBLE_NO"
+  },
+  "result": "PASS_WITH_BLOCKER"
+}

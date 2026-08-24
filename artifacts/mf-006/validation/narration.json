@@ -1,0 +1,13 @@
+{
+  "slice": "MF-006",
+  "segments": [],
+  "blockers": [
+    "BLOCKED_PRODUCTION_VOICE"
+  ],
+  "errors": [],
+  "checks": {
+    "beat_fit": "PASS",
+    "final_line": "BLOCKED_PRODUCTION_VOICE"
+  },
+  "result": "PASS_WITH_BLOCKER"
+}

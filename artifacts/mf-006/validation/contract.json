@@ -1,0 +1,18 @@
+{
+  "slice": "MF-006",
+  "fixture": "mf006-dark-signal",
+  "checks": {
+    "approved_metadata": "PASS",
+    "generated_strategy": "PASS",
+    "music": "PASS",
+    "voice": "BLOCKED_PRODUCTION_VOICE",
+    "website": "BLOCKED_APPROVED_WEBSITE"
+  },
+  "blockers": [
+    "BLOCKED_APPROVED_WEBSITE",
+    "BLOCKED_PRODUCTION_VOICE"
+  ],
+  "errors": [],
+  "candidate_valid": false,
+  "result": "PASS_WITH_BLOCKERS"
+}

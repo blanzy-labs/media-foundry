@@ -1,0 +1,111 @@
+{
+  "slice": "MF-004",
+  "fixture": "mf006-dark-signal",
+  "mode": "beats",
+  "result": "PASS",
+  "duration": 19.8,
+  "number_of_beats": 9,
+  "sequential_no_gaps": true,
+  "beats": [
+    {
+      "id": "circuits",
+      "type": "intro",
+      "text": "DARK SIGNAL",
+      "duration": 1.8,
+      "transition": "cut",
+      "narration": null,
+      "index": 0,
+      "start": 0.0,
+      "end": 1.8
+    },
+    {
+      "id": "formation",
+      "type": "reveal",
+      "text": "DARK SIGNAL",
+      "duration": 1.6,
+      "transition": "cut",
+      "narration": null,
+      "index": 1,
+      "start": 1.8,
+      "end": 3.4
+    },
+    {
+      "id": "opening",
+      "type": "reveal",
+      "text": "DARK SIGNAL",
+      "duration": 1.2,
+      "transition": "cut",
+      "narration": null,
+      "index": 2,
+      "start": 3.4,
+      "end": 4.6
+    },
+    {
+      "id": "page_1",
+      "type": "statement",
+      "text": "STRANGEST AI CONVERSATIONS",
+      "duration": 2.4,
+      "transition": "cut",
+      "narration": null,
+      "index": 3,
+      "start": 4.6,
+      "end": 7.0
+    },
+    {
+      "id": "page_2",
+      "type": "emphasis",
+      "text": "NOT HAPPENING IN LABS",
+      "duration": 2.5,
+      "transition": "cut",
+      "narration": null,
+      "index": 4,
+      "start": 7.0,
+      "end": 9.5
+    },
+    {
+      "id": "page_3",
+      "type": "statement",
+      "text": "HAPPENING IN FICTION",
+      "duration": 2.5,
+      "transition": "cut",
+      "narration": null,
+      "index": 5,
+      "start": 9.5,
+      "end": 12.0
+    },
+    {
+      "id": "close",
+      "type": "reveal",
+      "text": "DARK SIGNAL",
+      "duration": 1.2,
+      "transition": "cut",
+      "narration": null,
+      "index": 6,
+      "start": 12.0,
+      "end": 13.2
+    },
+    {
+      "id": "dissolve",
+      "type": "statement",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 2.2,
+      "transition": "cut",
+      "narration": null,
+      "index": 7,
+      "start": 13.2,
+      "end": 15.4
+    },
+    {
+      "id": "cta",
+      "type": "outro",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 4.4,
+      "transition": "cut",
+      "narration": null,
+      "index": 8,
+      "start": 15.4,
+      "end": 19.8
+    }
+  ],
+  "preflight_seconds": 5.1e-05
+}

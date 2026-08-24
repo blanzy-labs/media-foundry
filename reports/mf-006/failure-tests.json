@@ -1,0 +1,58 @@
+{
+  "slice": "MF-006",
+  "count": 8,
+  "cases": {
+    "static_book_cover": {
+      "result": "PASS",
+      "observed": [
+        "STATIC_BOOK_COVER_PROHIBITED",
+        "STATIC_BOOK_COVER_PROHIBITED"
+      ]
+    },
+    "title_absent": {
+      "result": "PASS",
+      "observed": [
+        "APPROVED_BOOK_METADATA_FAILED"
+      ]
+    },
+    "author_absent": {
+      "result": "PASS",
+      "observed": [
+        "APPROVED_BOOK_METADATA_FAILED"
+      ]
+    },
+    "website_absent": {
+      "result": "PASS",
+      "observed": [
+        "BLOCKED_APPROVED_WEBSITE",
+        "BLOCKED_PRODUCTION_VOICE"
+      ]
+    },
+    "test_voice": {
+      "result": "PASS",
+      "observed": [
+        "TEST_ONLY_VOICE_PROHIBITED",
+        "FINAL_VOICE_LINE_MISSING"
+      ]
+    },
+    "required_event_absent": {
+      "result": "PASS",
+      "observed": [
+        "REQUIRED_GENERATED_EVENT_MISSING"
+      ]
+    },
+    "hard_music_cut": {
+      "result": "PASS",
+      "observed": [
+        "MUSIC_FADE_CONTRACT_FAILED"
+      ]
+    },
+    "page_narration_overrun": {
+      "result": "PASS",
+      "observed": [
+        "PAGE_NARRATION_EXCEEDS_BEAT"
+      ]
+    }
+  },
+  "result": "PASS"
+}

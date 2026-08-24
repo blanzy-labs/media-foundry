@@ -1,0 +1,652 @@
+{
+  "fixture": "mf006r1-unknown-process",
+  "generated_scene": {
+    "book_support": {
+      "clamps": 4,
+      "coil": true,
+      "contacts": 6,
+      "id": "cradle",
+      "legacy_ambiguous_platform_removed": true,
+      "purpose": "book-generation cradle"
+    },
+    "camera_events": [
+      {
+        "id": "spark_burst",
+        "observed_frame": 548,
+        "time": 1.8,
+        "type": "spark_burst"
+      },
+      {
+        "id": "camera_push",
+        "observed_frame": 548,
+        "time": 2.75,
+        "type": "camera_push"
+      },
+      {
+        "id": "final_page_settle",
+        "observed_frame": 548,
+        "time": 11.0,
+        "type": "settle"
+      },
+      {
+        "id": "camera_pull_back",
+        "observed_frame": 548,
+        "time": 13.7,
+        "type": "camera_pull_back"
+      },
+      {
+        "id": "cta_settle",
+        "observed_frame": 548,
+        "time": 16.1,
+        "type": "settle"
+      }
+    ],
+    "circuit_system": {
+      "all_paths_terminate_at_central_node": true,
+      "burst": 1.8,
+      "central_node_charge": 1.2,
+      "energy_flow_start": 0.6,
+      "overload": 1.55,
+      "packets_follow_defined_paths": true,
+      "path_count": 6,
+      "paths_draw_complete": 0.55,
+      "paths_draw_start": 0.0,
+      "return_energy_uses_same_paths": true
+    },
+    "components": [
+      "chamber",
+      "circuits",
+      "burst",
+      "cradle",
+      "book",
+      "page_1",
+      "page_2",
+      "page_3",
+      "dissolve",
+      "lights",
+      "website"
+    ],
+    "configured_events": [
+      {
+        "id": "path_draw_start",
+        "time": 0.0,
+        "type": "path_draw_start"
+      },
+      {
+        "id": "paths_drawn",
+        "time": 0.55,
+        "type": "paths_drawn"
+      },
+      {
+        "id": "energy_flow",
+        "time": 0.6,
+        "type": "energy_flow"
+      },
+      {
+        "id": "central_node_charge",
+        "time": 1.2,
+        "type": "central_node_charge"
+      },
+      {
+        "id": "overload",
+        "time": 1.55,
+        "type": "overload"
+      },
+      {
+        "id": "spark_burst",
+        "time": 1.8,
+        "type": "spark_burst"
+      },
+      {
+        "id": "title_form",
+        "time": 1.9,
+        "type": "title_form"
+      },
+      {
+        "id": "book_materialized",
+        "time": 2.7,
+        "type": "book_materialized"
+      },
+      {
+        "id": "camera_push",
+        "time": 2.75,
+        "type": "camera_push"
+      },
+      {
+        "id": "book_open",
+        "time": 3.25,
+        "type": "book_open"
+      },
+      {
+        "id": "page_turn_1",
+        "time": 4.0,
+        "type": "page_turn"
+      },
+      {
+        "id": "page_reaction_1",
+        "time": 4.45,
+        "type": "page_reaction"
+      },
+      {
+        "id": "page_turn_2",
+        "time": 6.5,
+        "type": "page_turn"
+      },
+      {
+        "id": "page_reaction_2",
+        "time": 7.0,
+        "type": "page_reaction"
+      },
+      {
+        "id": "page_turn_3",
+        "time": 9.0,
+        "type": "page_turn"
+      },
+      {
+        "id": "page_reaction_3",
+        "time": 9.5,
+        "type": "page_reaction"
+      },
+      {
+        "id": "final_page_settle",
+        "time": 11.0,
+        "type": "settle"
+      },
+      {
+        "id": "book_close",
+        "time": 11.5,
+        "type": "book_close"
+      },
+      {
+        "id": "data_dissolve",
+        "time": 12.4,
+        "type": "data_dissolve"
+      },
+      {
+        "id": "return_energy",
+        "time": 13.0,
+        "type": "return_energy"
+      },
+      {
+        "id": "camera_pull_back",
+        "time": 13.7,
+        "type": "camera_pull_back"
+      },
+      {
+        "id": "cta_energy",
+        "time": 15.0,
+        "type": "cta_energy"
+      },
+      {
+        "id": "website_reveal",
+        "time": 15.5,
+        "type": "website_reveal"
+      },
+      {
+        "id": "cta_reveal",
+        "time": 15.5,
+        "type": "cta_reveal"
+      },
+      {
+        "id": "cta_settle",
+        "time": 16.1,
+        "type": "settle"
+      }
+    ],
+    "continuous_scene": {
+      "duration": 18.3,
+      "end": 18.3,
+      "start": 0.0
+    },
+    "cta": {
+      "canonical_url": "https://rcblanzy.com/books/unknown-process",
+      "display_url": "rcblanzy.com/books/unknown-process",
+      "safe_rect": {
+        "height": 260,
+        "width": 452,
+        "x": 44,
+        "y": 330
+      },
+      "text": "Continue the adventure",
+      "website": "https://rcblanzy.com/books/unknown-process",
+      "world_integrated": true
+    },
+    "external_static_media_primary": false,
+    "generated_book": {
+      "author": "R.C. Blanzy",
+      "back_cover": true,
+      "front_cover": true,
+      "independent_pages": 3,
+      "page_block": true,
+      "spine": true,
+      "title": "Unknown Process"
+    },
+    "internal_resolution": {
+      "height": 960,
+      "width": 540
+    },
+    "observed_events": [
+      {
+        "id": "path_draw_start",
+        "observed_frame": 548,
+        "time": 0.0,
+        "type": "path_draw_start"
+      },
+      {
+        "id": "paths_drawn",
+        "observed_frame": 548,
+        "time": 0.55,
+        "type": "paths_drawn"
+      },
+      {
+        "id": "energy_flow",
+        "observed_frame": 548,
+        "time": 0.6,
+        "type": "energy_flow"
+      },
+      {
+        "id": "central_node_charge",
+        "observed_frame": 548,
+        "time": 1.2,
+        "type": "central_node_charge"
+      },
+      {
+        "id": "overload",
+        "observed_frame": 548,
+        "time": 1.55,
+        "type": "overload"
+      },
+      {
+        "id": "spark_burst",
+        "observed_frame": 548,
+        "time": 1.8,
+        "type": "spark_burst"
+      },
+      {
+        "id": "title_form",
+        "observed_frame": 548,
+        "time": 1.9,
+        "type": "title_form"
+      },
+      {
+        "id": "book_materialized",
+        "observed_frame": 548,
+        "time": 2.7,
+        "type": "book_materialized"
+      },
+      {
+        "id": "camera_push",
+        "observed_frame": 548,
+        "time": 2.75,
+        "type": "camera_push"
+      },
+      {
+        "id": "book_open",
+        "observed_frame": 548,
+        "time": 3.25,
+        "type": "book_open"
+      },
+      {
+        "id": "page_turn_1",
+        "observed_frame": 548,
+        "time": 4.0,
+        "type": "page_turn"
+      },
+      {
+        "id": "page_reaction_1",
+        "observed_frame": 548,
+        "time": 4.45,
+        "type": "page_reaction"
+      },
+      {
+        "id": "page_turn_2",
+        "observed_frame": 548,
+        "time": 6.5,
+        "type": "page_turn"
+      },
+      {
+        "id": "page_reaction_2",
+        "observed_frame": 548,
+        "time": 7.0,
+        "type": "page_reaction"
+      },
+      {
+        "id": "page_turn_3",
+        "observed_frame": 548,
+        "time": 9.0,
+        "type": "page_turn"
+      },
+      {
+        "id": "page_reaction_3",
+        "observed_frame": 548,
+        "time": 9.5,
+        "type": "page_reaction"
+      },
+      {
+        "id": "final_page_settle",
+        "observed_frame": 548,
+        "time": 11.0,
+        "type": "settle"
+      },
+      {
+        "id": "book_close",
+        "observed_frame": 548,
+        "time": 11.5,
+        "type": "book_close"
+      },
+      {
+        "id": "data_dissolve",
+        "observed_frame": 548,
+        "time": 12.4,
+        "type": "data_dissolve"
+      },
+      {
+        "id": "return_energy",
+        "observed_frame": 548,
+        "time": 13.0,
+        "type": "return_energy"
+      },
+      {
+        "id": "camera_pull_back",
+        "observed_frame": 548,
+        "time": 13.7,
+        "type": "camera_pull_back"
+      },
+      {
+        "id": "cta_energy",
+        "observed_frame": 548,
+        "time": 15.0,
+        "type": "cta_energy"
+      },
+      {
+        "id": "website_reveal",
+        "observed_frame": 548,
+        "time": 15.5,
+        "type": "website_reveal"
+      },
+      {
+        "id": "cta_reveal",
+        "observed_frame": 548,
+        "time": 15.5,
+        "type": "cta_reveal"
+      },
+      {
+        "id": "cta_settle",
+        "observed_frame": 548,
+        "time": 16.1,
+        "type": "settle"
+      }
+    ],
+    "page_treatments": [
+      "hunted/reticle",
+      "dual-target/data-bridge",
+      "biometric/kill-switch"
+    ],
+    "result": "PASS",
+    "static_book_cover_embedded": false,
+    "strategy": "godot_generated_book_refinement",
+    "text_hidden_motion_events": 16
+  },
+  "layout": {
+    "beat_0": {
+      "font_size": 38,
+      "line_count": 1,
+      "line_spacing": 1.08,
+      "minimum_font_size": 28,
+      "rendered_rect": {
+        "height": 47.0,
+        "width": 390.0,
+        "x": -195.0,
+        "y": -73.5
+      },
+      "role": "INTRO",
+      "safe_area": "INTRO_SAFE_AREA",
+      "safe_rect": {
+        "height": 100.0,
+        "width": 410.0,
+        "x": -205.0,
+        "y": -100.0
+      },
+      "status": "PASS"
+    },
+    "beat_1": {
+      "font_size": 42,
+      "line_count": 2,
+      "line_spacing": 1.06,
+      "minimum_font_size": 30,
+      "rendered_rect": {
+        "height": 95.5199966430664,
+        "width": 236.0,
+        "x": -118.0,
+        "y": -92.7599945068359
+      },
+      "role": "OUTRO",
+      "safe_area": "OUTRO_SAFE_AREA",
+      "safe_rect": {
+        "height": 120.0,
+        "width": 410.0,
+        "x": -205.0,
+        "y": -105.0
+      },
+      "status": "PASS"
+    },
+    "beat_2": {
+      "font_size": 42,
+      "line_count": 2,
+      "line_spacing": 1.06,
+      "minimum_font_size": 30,
+      "rendered_rect": {
+        "height": 95.5199966430664,
+        "width": 236.0,
+        "x": -118.0,
+        "y": -92.7599945068359
+      },
+      "role": "OUTRO",
+      "safe_area": "OUTRO_SAFE_AREA",
+      "safe_rect": {
+        "height": 120.0,
+        "width": 410.0,
+        "x": -205.0,
+        "y": -105.0
+      },
+      "status": "PASS"
+    },
+    "beat_3": {
+      "font_size": 39,
+      "line_count": 2,
+      "line_spacing": 1.08,
+      "minimum_font_size": 27,
+      "rendered_rect": {
+        "height": 90.120002746582,
+        "width": 303.0,
+        "x": -151.5,
+        "y": -100.559997558594
+      },
+      "role": "HEADLINE",
+      "safe_area": "HEADLINE_SAFE_AREA",
+      "safe_rect": {
+        "height": 101.0,
+        "width": 388.0,
+        "x": -194.0,
+        "y": -106.0
+      },
+      "status": "PASS"
+    },
+    "beat_4": {
+      "font_size": 21,
+      "line_count": 1,
+      "line_spacing": 1.02,
+      "minimum_font_size": 17,
+      "rendered_rect": {
+        "height": 26.0,
+        "width": 275.0,
+        "x": -137.5,
+        "y": -13.0
+      },
+      "role": "EMPHASIS",
+      "safe_area": "EMPHASIS_SAFE_AREA",
+      "safe_rect": {
+        "height": 44.0,
+        "width": 300.0,
+        "x": -150.0,
+        "y": -22.0
+      },
+      "status": "PASS"
+    },
+    "beat_5": {
+      "font_size": 39,
+      "line_count": 2,
+      "line_spacing": 1.08,
+      "minimum_font_size": 27,
+      "rendered_rect": {
+        "height": 90.120002746582,
+        "width": 369.0,
+        "x": -184.5,
+        "y": -100.559997558594
+      },
+      "role": "HEADLINE",
+      "safe_area": "HEADLINE_SAFE_AREA",
+      "safe_rect": {
+        "height": 101.0,
+        "width": 388.0,
+        "x": -194.0,
+        "y": -106.0
+      },
+      "status": "PASS"
+    },
+    "beat_6": {
+      "font_size": 42,
+      "line_count": 2,
+      "line_spacing": 1.06,
+      "minimum_font_size": 30,
+      "rendered_rect": {
+        "height": 95.5199966430664,
+        "width": 236.0,
+        "x": -118.0,
+        "y": -92.7599945068359
+      },
+      "role": "OUTRO",
+      "safe_area": "OUTRO_SAFE_AREA",
+      "safe_rect": {
+        "height": 120.0,
+        "width": 410.0,
+        "x": -205.0,
+        "y": -105.0
+      },
+      "status": "PASS"
+    },
+    "beat_7": {
+      "font_size": 39,
+      "line_count": 2,
+      "line_spacing": 1.08,
+      "minimum_font_size": 27,
+      "rendered_rect": {
+        "height": 90.120002746582,
+        "width": 288.0,
+        "x": -144.0,
+        "y": -100.559997558594
+      },
+      "role": "HEADLINE",
+      "safe_area": "HEADLINE_SAFE_AREA",
+      "safe_rect": {
+        "height": 101.0,
+        "width": 388.0,
+        "x": -194.0,
+        "y": -106.0
+      },
+      "status": "PASS"
+    },
+    "beat_8": {
+      "font_size": 42,
+      "line_count": 2,
+      "line_spacing": 1.06,
+      "minimum_font_size": 30,
+      "rendered_rect": {
+        "height": 95.5199966430664,
+        "width": 311.0,
+        "x": -155.5,
+        "y": -92.7599945068359
+      },
+      "role": "OUTRO",
+      "safe_area": "OUTRO_SAFE_AREA",
+      "safe_rect": {
+        "height": 120.0,
+        "width": 410.0,
+        "x": -205.0,
+        "y": -105.0
+      },
+      "status": "PASS"
+    },
+    "intro_label": {
+      "font_size": 15,
+      "line_count": 1,
+      "line_spacing": 1.02,
+      "minimum_font_size": 12,
+      "rendered_rect": {
+        "height": 19.0,
+        "width": 336.0,
+        "x": -168.0,
+        "y": 53.0
+      },
+      "role": "LABEL",
+      "safe_area": "INTRO_LABEL_SAFE_AREA",
+      "safe_rect": {
+        "height": 55.0,
+        "width": 400.0,
+        "x": -200.0,
+        "y": 35.0
+      },
+      "status": "PASS"
+    },
+    "outro_label": {
+      "font_size": 15,
+      "line_count": 1,
+      "line_spacing": 1.02,
+      "minimum_font_size": 12,
+      "rendered_rect": {
+        "height": 19.0,
+        "width": 89.0,
+        "x": -44.5,
+        "y": 63.0
+      },
+      "role": "LABEL",
+      "safe_area": "OUTRO_LABEL_SAFE_AREA",
+      "safe_rect": {
+        "height": 55.0,
+        "width": 400.0,
+        "x": -200.0,
+        "y": 45.0
+      },
+      "status": "PASS"
+    },
+    "visual_label": {
+      "font_size": 15,
+      "line_count": 1,
+      "line_spacing": 1.02,
+      "minimum_font_size": 12,
+      "rendered_rect": {
+        "height": 19.0,
+        "width": 154.0,
+        "x": -77.0,
+        "y": -9.5
+      },
+      "role": "LABEL",
+      "safe_area": "LABEL_SAFE_AREA",
+      "safe_rect": {
+        "height": 32.0,
+        "width": 170.0,
+        "x": -85.0,
+        "y": -16.0
+      },
+      "status": "PASS"
+    }
+  },
+  "media": {
+    "fallback": "fixture_visual",
+    "status": "NOT_PRESENT"
+  },
+  "overlap_checks": "PASS",
+  "reason": "",
+  "result": "PASS",
+  "slice": "MF-002R1"
+}

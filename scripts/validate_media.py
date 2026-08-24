@@ -20,6 +20,8 @@ def main():
     parser.add_argument("--slice", default="MF-001")
     parser.add_argument("--ffprobe-json", required=True)
     parser.add_argument("--result-json", required=True)
+    parser.add_argument("--duration-min", type=float, default=14.8)
+    parser.add_argument("--duration-max", type=float, default=15.2)
     args = parser.parse_args()
     media = Path(args.media)
     probe_path = Path(args.ffprobe_json)
@@ -54,7 +56,7 @@ def main():
     add_check(validation, "resolution", bool(video and video.get("width") == 1080 and video.get("height") == 1920), f"{video.get('width')}x{video.get('height')}" if video else "missing")
     add_check(validation, "orientation", bool(video and video.get("height", 0) > video.get("width", 0)), "vertical" if video and video.get("height", 0) > video.get("width", 0) else "not vertical")
     duration = float(probe.get("format", {}).get("duration", 0) or 0)
-    add_check(validation, "duration", 14.8 <= duration <= 15.2, f"{duration:.3f} seconds")
+    add_check(validation, "duration", args.duration_min <= duration <= args.duration_max, f"{duration:.3f} seconds")
     try:
         rate = float(Fraction(video.get("avg_frame_rate", "0/1"))) if video else 0.0
     except (ValueError, ZeroDivisionError):

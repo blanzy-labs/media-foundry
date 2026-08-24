@@ -1,0 +1,108 @@
+{
+  "slice": "MF-006",
+  "duration": 18.3,
+  "sample_rate": 48000,
+  "channels": 1,
+  "event_count": 12,
+  "events": [
+    {
+      "id": "circuit_draw",
+      "event": "path_draw_start",
+      "time": 0.05,
+      "type": "circuit_draw",
+      "duration": 0.55,
+      "gain": 0.035
+    },
+    {
+      "id": "energy_flow",
+      "event": "energy_flow",
+      "time": 0.6,
+      "type": "energy_flow",
+      "duration": 1.1,
+      "gain": 0.04
+    },
+    {
+      "id": "overload",
+      "event": "overload",
+      "time": 1.55,
+      "type": "central_overload",
+      "duration": 0.3,
+      "gain": 0.07
+    },
+    {
+      "id": "spark",
+      "event": "spark_burst",
+      "time": 1.8,
+      "type": "spark_burst",
+      "duration": 0.48,
+      "gain": 0.115
+    },
+    {
+      "id": "projection",
+      "event": "projection_emission",
+      "time": 1.95,
+      "type": "projection_emission",
+      "duration": 0.8,
+      "gain": 0.06
+    },
+    {
+      "id": "unfold",
+      "event": "codex_unfold",
+      "time": 3.15,
+      "type": "projection_emission",
+      "duration": 0.8,
+      "gain": 0.045
+    },
+    {
+      "id": "beat_1",
+      "event": "projection_beat_1",
+      "time": 4.0,
+      "type": "projection_shift",
+      "duration": 0.42,
+      "gain": 0.04
+    },
+    {
+      "id": "beat_2",
+      "event": "projection_beat_2",
+      "time": 6.5,
+      "type": "projection_shift",
+      "duration": 0.42,
+      "gain": 0.04
+    },
+    {
+      "id": "beat_3",
+      "event": "projection_beat_3",
+      "time": 9.0,
+      "type": "projection_shift",
+      "duration": 0.42,
+      "gain": 0.04
+    },
+    {
+      "id": "collapse",
+      "event": "projection_collapse",
+      "time": 11.6,
+      "type": "projection_collapse",
+      "duration": 1.0,
+      "gain": 0.055
+    },
+    {
+      "id": "return",
+      "event": "return_energy",
+      "time": 13.0,
+      "type": "energy_flow",
+      "duration": 1.1,
+      "gain": 0.035
+    },
+    {
+      "id": "cta_energy",
+      "event": "cta_energy",
+      "time": 15.0,
+      "type": "cta_energy",
+      "duration": 0.8,
+      "gain": 0.045
+    }
+  ],
+  "pre_clamp_peak": 0.166296,
+  "clipped_samples": 0,
+  "result": "PASS"
+}
