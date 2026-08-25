@@ -1,0 +1,258 @@
+{
+  "track_id": "abandoned_intake",
+  "qualified_id": "unknown-process:abandoned_intake",
+  "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+  "duration_seconds": 171.885667,
+  "analysis_method": "mf010_deterministic_energy_v1",
+  "sample_rate": 8000,
+  "one_second_windows": 171,
+  "track_metrics": {
+    "mean_rms_db": -14.902,
+    "minimum_rms_db": -48.388,
+    "maximum_rms_db": -7.947,
+    "peak_amplitude": 1.397152,
+    "mean_transient_score": 0.038677
+  },
+  "regions": [
+    {
+      "id": "ambient_a",
+      "usable_start": 5.0,
+      "usable_end": 37.0,
+      "preferred_entry": 6.0,
+      "preferred_exit": 29.0,
+      "mood_tags": [
+        "ambient",
+        "mystery",
+        "reflective"
+      ],
+      "use_cases": [
+        "ambient_teaser",
+        "excerpt"
+      ],
+      "narration_friendliness": "high",
+      "intensity": "rising",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "low",
+        "mean_rms_db": -16.485,
+        "energy_delta_db": 10.781,
+        "transient_score": 0.019696,
+        "notes": "Candidate lower-energy, comparatively sparse passage.",
+        "preview": "artifacts/mf-010/previews/abandoned_intake__ambient_a__preview.mp3",
+        "preview_sha256": "99c192d2964ea9862c0e5b3c2455aa4beee2e64e28890f9bf0f6a965f32d9886",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    },
+    {
+      "id": "investigation_a",
+      "usable_start": 123.0,
+      "usable_end": 161.0,
+      "preferred_entry": 130.0,
+      "preferred_exit": 156.0,
+      "mood_tags": [
+        "investigation",
+        "mystery",
+        "paranoia"
+      ],
+      "use_cases": [
+        "classification",
+        "direct_promo"
+      ],
+      "narration_friendliness": "medium",
+      "intensity": "medium",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "medium",
+        "mean_rms_db": -11.151,
+        "energy_delta_db": 1.655,
+        "transient_score": 0.050487,
+        "notes": "Candidate stable-energy passage with comparatively even density.",
+        "preview": "artifacts/mf-010/previews/abandoned_intake__investigation_a__preview.mp3",
+        "preview_sha256": "37841adcaa2791ea1a87da150988371bc13582c873626a64fa01ee3354988f5e",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    },
+    {
+      "id": "pursuit_a",
+      "usable_start": 111.0,
+      "usable_end": 151.0,
+      "preferred_entry": 116.0,
+      "preferred_exit": 149.0,
+      "mood_tags": [
+        "pursuit",
+        "tension",
+        "escalation"
+      ],
+      "use_cases": [
+        "tracking",
+        "direct_promo"
+      ],
+      "narration_friendliness": "medium",
+      "intensity": "rising",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "low",
+        "mean_rms_db": -15.888,
+        "energy_delta_db": 16.387,
+        "transient_score": 0.040623,
+        "notes": "Candidate higher-energy passage with sustained motion.",
+        "preview": "artifacts/mf-010/previews/abandoned_intake__pursuit_a__preview.mp3",
+        "preview_sha256": "9c232f650a00ff718d9a8d056d201e7ef170b59189dcfed44e6ec7a3e5a389b0",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    },
+    {
+      "id": "revelation_a",
+      "usable_start": 49.0,
+      "usable_end": 93.0,
+      "preferred_entry": 51.0,
+      "preferred_exit": 91.0,
+      "mood_tags": [
+        "revelation",
+        "discovery",
+        "ominous"
+      ],
+      "use_cases": [
+        "biometric_reveal",
+        "title_reveal"
+      ],
+      "narration_friendliness": "medium",
+      "intensity": "rising",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "low",
+        "mean_rms_db": -12.883,
+        "energy_delta_db": 3.907,
+        "transient_score": 0.051325,
+        "notes": "Candidate build/change passage selected from measured energy rise.",
+        "preview": "artifacts/mf-010/previews/abandoned_intake__revelation_a__preview.mp3",
+        "preview_sha256": "d1b65c8129cabca9e75e48de8c61ae6157bded0f6699228a5d6a2fe6e4791b31",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    },
+    {
+      "id": "resolution_a",
+      "usable_start": 103.0,
+      "usable_end": 137.0,
+      "preferred_entry": 104.0,
+      "preferred_exit": 133.0,
+      "mood_tags": [
+        "resolution",
+        "reflective"
+      ],
+      "use_cases": [
+        "cta",
+        "excerpt"
+      ],
+      "narration_friendliness": "high",
+      "intensity": "low",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "low",
+        "mean_rms_db": -16.415,
+        "energy_delta_db": 1.805,
+        "transient_score": 0.031588,
+        "notes": "Candidate late-song passage with room for a fade or CTA transition.",
+        "preview": "artifacts/mf-010/previews/abandoned_intake__resolution_a__preview.mp3",
+        "preview_sha256": "bff2dd7eab1222bde04ceb1521bda15b2d98f774b0b108fa0bb9ee26c57fd908",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    }
+  ],
+  "overlap_awareness": [
+    {
+      "a": "investigation_a",
+      "b": "pursuit_a",
+      "overlap_seconds": 28.0,
+      "smaller_region_overlap_ratio": 0.737,
+      "highly_overlapping": false
+    },
+    {
+      "a": "investigation_a",
+      "b": "resolution_a",
+      "overlap_seconds": 14.0,
+      "smaller_region_overlap_ratio": 0.412,
+      "highly_overlapping": false
+    },
+    {
+      "a": "pursuit_a",
+      "b": "resolution_a",
+      "overlap_seconds": 26.0,
+      "smaller_region_overlap_ratio": 0.765,
+      "highly_overlapping": false
+    }
+  ],
+  "waveform": "artifacts/mf-010/waveforms/abandoned_intake__waveform.png",
+  "advisory": true,
+  "human_listening_authoritative": true
+}

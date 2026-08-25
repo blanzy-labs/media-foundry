@@ -1,0 +1,21 @@
+{
+  "slice": "MF-010",
+  "technical_result": "PASS",
+  "human_acceptance": "APPROVED",
+  "tracks_analyzed": 4,
+  "regions_proposed": 20,
+  "pending_approval": 0,
+  "automatic_approvals": 0,
+  "production_eligible_tracks": 4,
+  "production_eligible_regions": 20,
+  "analysis_validation": "PASS",
+  "mf010_tests": {"passed": 10, "total": 10, "result": "PASS"},
+  "mf009_regression": {"passed": 7, "total": 7, "result": "PASS"},
+  "schema_validation": "PASS",
+  "idempotency": "PASS",
+  "source_immutability": "PASS",
+  "mf008b_rerun": false,
+  "post_approval_validation": "PASS",
+  "post_approval_preflight": "READY",
+  "catalog_sha256": "e738ed273be867eca34ea677f1b469a62b049947f3007822b7233b6219410f4b"
+}

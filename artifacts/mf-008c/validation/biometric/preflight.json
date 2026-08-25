@@ -1,0 +1,43 @@
+{
+  "slice": "MF-008C",
+  "fixture": "mf008c-biometric-revelation",
+  "mode": "directed",
+  "state": "READY",
+  "creative": {
+    "mechanism": "biometric_scan",
+    "events": [
+      "biometric_scan",
+      "deep_scan",
+      "hidden_region",
+      "kill_switch_reveal"
+    ],
+    "timing": {
+      "intro_seconds": 6.5,
+      "investigation_seconds": 13.0,
+      "result_hold_seconds": 1.8,
+      "cta_seconds": 6.7
+    },
+    "palette_profile": "revelation",
+    "camera_profile": "calm_to_push",
+    "node_profile": "stable_then_overload",
+    "projection_profile": "biometric",
+    "cta_profile": "revelation",
+    "audio_cue": "baseline_full"
+  },
+  "checks": {
+    "required_fields": "PASS",
+    "mechanism": "PASS",
+    "palette_profile": "PASS",
+    "camera_profile": "PASS",
+    "node_profile": "PASS",
+    "projection_profile": "PASS",
+    "cta_profile": "PASS",
+    "mechanism_events": "PASS",
+    "timing_bounds": "PASS",
+    "event_timing": "PASS",
+    "audio_cue_exists": "PASS",
+    "audio_cue_approved": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

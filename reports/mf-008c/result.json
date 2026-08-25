@@ -1,0 +1,60 @@
+{
+  "slice": "MF-008C",
+  "state": "COMPLETE",
+  "technical_result": "PASS",
+  "human_review": "PENDING_HUMAN",
+  "release_eligible": false,
+  "production_grammar_origin": {
+    "id": "unknown_process_recovered_record_v1",
+    "git_ref": "74ae32bd32f5480007ab01feaa77e83625a9a11f",
+    "compatibility": "PASS"
+  },
+  "renderer_files_changed": 2,
+  "renderer_changes_between_jobs": 0,
+  "supervised_outputs": [
+    {
+      "fixture": "mf008c-tracking-pursuit",
+      "mechanism": "tracking",
+      "state": "READY_FOR_REVIEW",
+      "path": "/home/blanzy/media-foundry-output/mf008c/supervised-proof-001/mf008c-tracking-pursuit/final.mp4",
+      "bytes": 6029416,
+      "sha256": "7e9357363ccdff021b879d7c7dd558a3d69e4d06bb7cccaa33b1272fe4dd8eb3"
+    },
+    {
+      "fixture": "mf008c-classification-mystery",
+      "mechanism": "classification_link",
+      "state": "READY_FOR_REVIEW",
+      "path": "/home/blanzy/media-foundry-output/mf008c/supervised-proof-001/mf008c-classification-mystery/final.mp4",
+      "bytes": 5182577,
+      "sha256": "2b7893e8e007d79361b354d3dc26ab973c12d7461c36fd03127d3aff6ac282dd"
+    },
+    {
+      "fixture": "mf008c-biometric-revelation",
+      "mechanism": "biometric_scan",
+      "state": "READY_FOR_REVIEW",
+      "path": "/home/blanzy/media-foundry-output/mf008c/supervised-proof-001/mf008c-biometric-revelation/final.mp4",
+      "bytes": 5404899,
+      "sha256": "5255b1ec0159315f58b49b48f77d13afb74ff7ef18e242fd7ecb0e514789a62d"
+    }
+  ],
+  "mechanism_exclusivity": "PASS",
+  "cosmetic_profile_application": "PASS",
+  "renderer_source_identity": "PASS",
+  "baseline_regression": "PASS_WITH_EXISTING_VOICE_BLOCKER",
+  "invalid_profile_gate": "NEEDS_ENGINEERING",
+  "pending_audio_gate": "BLOCKED_APPROVAL",
+  "approved_audio_used_for_proof": "baseline_full",
+  "purpose_specific_audio": "PENDING_APPROVAL",
+  "published": 0,
+  "remaining_blockers": [
+    "HUMAN_CREATIVE_CONTROL_REVIEW",
+    "PURSUIT_CUE_APPROVAL",
+    "INVESTIGATION_CUE_APPROVAL",
+    "REVELATION_CUE_APPROVAL",
+    "FREEZE_REVIEWED_CONTROL_SURFACE_AS_NEW_GRAMMAR_REVISION",
+    "PRODUCTION_VOICE",
+    "HUMAN_RELEASE_REVIEW"
+  ],
+  "mf008b_rerun_readiness": "READY_AFTER_HUMAN_REVIEW_CUE_APPROVAL_AND_NEW_GRAMMAR_FREEZE",
+  "result": "PASS_WITH_HUMAN_AND_AUDIO_APPROVAL_GATES"
+}

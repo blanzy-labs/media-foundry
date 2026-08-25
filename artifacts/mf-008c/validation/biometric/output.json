@@ -1,0 +1,75 @@
+{
+  "slice": "MF-008C",
+  "fixture": "mf008c-biometric-revelation",
+  "mechanism": "biometric_scan",
+  "requested_profiles": {
+    "palette_profile": "revelation",
+    "camera_profile": "calm_to_push",
+    "node_profile": "stable_then_overload",
+    "projection_profile": "biometric",
+    "cta_profile": "revelation"
+  },
+  "mechanism_exclusivity": {
+    "biometric_scan": "PASS",
+    "classification_link": "NOT_RUN",
+    "tracking": "NOT_RUN"
+  },
+  "event_evidence": [
+    {
+      "id": "biometric_scan",
+      "observed": {
+        "id": "biometric_scan",
+        "observed_frame": 839,
+        "time": 7.713,
+        "type": "biometric_scan"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "deep_scan",
+      "observed": {
+        "id": "deep_scan",
+        "observed_frame": 839,
+        "time": 12.047,
+        "type": "deep_scan"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "hidden_region",
+      "observed": {
+        "id": "hidden_region",
+        "observed_frame": 839,
+        "time": 16.38,
+        "type": "hidden_region"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "kill_switch_reveal",
+      "observed": {
+        "id": "kill_switch_reveal",
+        "observed_frame": 839,
+        "time": 18.46,
+        "type": "kill_switch_reveal"
+      },
+      "status": "PASS"
+    }
+  ],
+  "checks": {
+    "creative_preflight": "PASS",
+    "layout": "PASS",
+    "creative_report": "PASS",
+    "mechanism_loaded": "PASS",
+    "mechanism_exclusivity": "PASS",
+    "unique_events": "PASS",
+    "profiles_loaded": "PASS",
+    "timing_loaded": "PASS",
+    "single_window": "PASS",
+    "campaign_identity": "PASS",
+    "timeline": "PASS",
+    "baseline_audio": "PASS",
+    "encoded_media": "PASS"
+  },
+  "result": "PASS"
+}

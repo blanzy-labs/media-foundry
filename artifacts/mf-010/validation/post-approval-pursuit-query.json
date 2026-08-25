@@ -1,0 +1,246 @@
+{
+  "operation": "query",
+  "project": "unknown-process",
+  "mood": "pursuit",
+  "use_case": "tracking",
+  "require_approved_regions": true,
+  "approved_tracks": [
+    {
+      "id": "abandoned_intake",
+      "qualified_id": "unknown-process:abandoned_intake",
+      "source": "media/audio/music/unknown-process/Abandoned_Intake.mp3",
+      "sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+      "approved_regions": [
+        {
+          "id": "pursuit_a",
+          "usable_start": 111.0,
+          "usable_end": 151.0,
+          "preferred_entry": 116.0,
+          "preferred_exit": 149.0,
+          "mood_tags": [
+            "pursuit",
+            "tension",
+            "escalation"
+          ],
+          "use_cases": [
+            "tracking",
+            "direct_promo"
+          ],
+          "narration_friendliness": "medium",
+          "intensity": "rising",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "low",
+            "mean_rms_db": -15.888,
+            "energy_delta_db": 16.387,
+            "transient_score": 0.040623,
+            "notes": "Candidate higher-energy passage with sustained motion.",
+            "preview": "artifacts/mf-010/previews/abandoned_intake__pursuit_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+            "approved_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+            "reviewed_at": "2026-08-25T16:09:03+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        }
+      ]
+    },
+    {
+      "id": "below_the_iron_floor",
+      "qualified_id": "unknown-process:below_the_iron_floor",
+      "source": "media/audio/music/unknown-process/Below_the_Iron_Floor.mp3",
+      "sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+      "approved_regions": [
+        {
+          "id": "pursuit_a",
+          "usable_start": 103.0,
+          "usable_end": 143.0,
+          "preferred_entry": 110.0,
+          "preferred_exit": 134.0,
+          "mood_tags": [
+            "pursuit",
+            "tension",
+            "escalation"
+          ],
+          "use_cases": [
+            "tracking",
+            "direct_promo"
+          ],
+          "narration_friendliness": "medium",
+          "intensity": "rising",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "medium",
+            "mean_rms_db": -11.061,
+            "energy_delta_db": 2.937,
+            "transient_score": 0.043282,
+            "notes": "Candidate higher-energy passage with sustained motion.",
+            "preview": "artifacts/mf-010/previews/below_the_iron_floor__pursuit_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+            "approved_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+            "reviewed_at": "2026-08-25T16:09:03+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        }
+      ]
+    },
+    {
+      "id": "cold_concrete_anatomy",
+      "qualified_id": "unknown-process:cold_concrete_anatomy",
+      "source": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+      "sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+      "approved_regions": [
+        {
+          "id": "pursuit_a",
+          "usable_start": 111.0,
+          "usable_end": 151.0,
+          "preferred_entry": 113.0,
+          "preferred_exit": 146.0,
+          "mood_tags": [
+            "pursuit",
+            "tension",
+            "escalation"
+          ],
+          "use_cases": [
+            "tracking",
+            "direct_promo"
+          ],
+          "narration_friendliness": "low",
+          "intensity": "rising",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "low",
+            "mean_rms_db": -13.886,
+            "energy_delta_db": 14.712,
+            "transient_score": 0.040915,
+            "notes": "Candidate higher-energy passage with sustained motion.",
+            "preview": "artifacts/mf-010/previews/cold_concrete_anatomy__pursuit_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+            "approved_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+            "reviewed_at": "2026-08-25T16:09:03+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        }
+      ]
+    },
+    {
+      "id": "concrete_and_chain",
+      "qualified_id": "unknown-process:concrete_and_chain",
+      "source": "media/audio/music/unknown-process/Concrete_and_Chain.mp3",
+      "sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+      "approved_regions": [
+        {
+          "id": "pursuit_a",
+          "usable_start": 19.0,
+          "usable_end": 59.0,
+          "preferred_entry": 21.0,
+          "preferred_exit": 58.0,
+          "mood_tags": [
+            "pursuit",
+            "tension",
+            "escalation"
+          ],
+          "use_cases": [
+            "tracking",
+            "direct_promo"
+          ],
+          "narration_friendliness": "medium",
+          "intensity": "rising",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "low",
+            "mean_rms_db": -14.267,
+            "energy_delta_db": 15.81,
+            "transient_score": 0.043429,
+            "notes": "Candidate higher-energy passage with sustained motion.",
+            "preview": "artifacts/mf-010/previews/concrete_and_chain__pursuit_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+            "approved_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+            "reviewed_at": "2026-08-25T16:09:04+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "track_id": "abandoned_intake",
+      "qualified_id": "unknown-process:abandoned_intake",
+      "region_id": "pursuit_a",
+      "usable_start": 111.0,
+      "usable_end": 151.0,
+      "preferred_entry": 116.0,
+      "preferred_exit": 149.0
+    },
+    {
+      "track_id": "below_the_iron_floor",
+      "qualified_id": "unknown-process:below_the_iron_floor",
+      "region_id": "pursuit_a",
+      "usable_start": 103.0,
+      "usable_end": 143.0,
+      "preferred_entry": 110.0,
+      "preferred_exit": 134.0
+    },
+    {
+      "track_id": "cold_concrete_anatomy",
+      "qualified_id": "unknown-process:cold_concrete_anatomy",
+      "region_id": "pursuit_a",
+      "usable_start": 111.0,
+      "usable_end": 151.0,
+      "preferred_entry": 113.0,
+      "preferred_exit": 146.0
+    },
+    {
+      "track_id": "concrete_and_chain",
+      "qualified_id": "unknown-process:concrete_and_chain",
+      "region_id": "pursuit_a",
+      "usable_start": 19.0,
+      "usable_end": 59.0,
+      "preferred_entry": 21.0,
+      "preferred_exit": 58.0
+    }
+  ],
+  "catalog_validation": "PASS",
+  "errors": [],
+  "result": "PASS"
+}

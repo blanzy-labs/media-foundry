@@ -29,3 +29,6 @@ artifacts/mf-007a/logs/
 .env.*
 __pycache__/
 *.pyc
+
+# Project music masters are local immutable inputs; catalog metadata is tracked.
+media/audio/music/*/

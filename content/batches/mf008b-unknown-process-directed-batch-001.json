@@ -1,0 +1,114 @@
+{
+  "batch": {
+    "id": "unknown-process-directed-batch-001",
+    "slice": "MF-008B",
+    "production_grammar": "unknown_process_recovered_record_v1",
+    "production_grammar_file": "config/production-grammars/unknown-process-recovered-record-v1.json",
+    "grammar_origin_git_ref": "74ae32bd32f5480007ab01feaa77e83625a9a11f",
+    "execution": "sequential",
+    "publish": false,
+    "require_human_release_approval": true,
+    "job_limit": 3,
+    "output_archive": "/home/blanzy/media-foundry-output/unknown-process-directed-batch-001"
+  },
+  "policy": {
+    "allow_renderer_changes": false,
+    "allow_runtime_architecture_changes": false,
+    "allow_visual_grammar_changes": false,
+    "unsupported_brief_state": "NEEDS_ENGINEERING",
+    "automatic_publication": false,
+    "automatic_editorial_approval": false
+  },
+  "approved_source": {
+    "id": "unknown-process-approved-synopsis-v1",
+    "title": "Unknown Process",
+    "author": "R.C. Blanzy",
+    "canonical_url": "https://rcblanzy.com/books/unknown-process",
+    "display_url": "rcblanzy.com/books/unknown-process",
+    "retrieval_date": "2026-08-24",
+    "basis": "User-approved synopsis supplied for MF-006R1"
+  },
+  "shared_identity": {
+    "world": "recovered-record circuit chamber",
+    "screen_family": "single projected recovered-record window",
+    "typography_family": "frozen Unknown Process grammar",
+    "circuit_language": "deterministic low-fi node-and-path system",
+    "cta": "CONTINUE THE ADVENTURE",
+    "display_url": "RCBLANZY.COM/BOOKS/UNKNOWN-PROCESS"
+  },
+  "audio_cue_map": "config/audio-cues/unknown-process-track-a.json",
+  "jobs": [
+    {
+      "id": "up-directed-video-001",
+      "title": "SIMON: TARGET ACQUIRED",
+      "hook": "SIMON HAS ALREADY BEEN FOUND.",
+      "story_basis": "Simon is framed, hunted, and stripped of his old life.",
+      "viewer_takeaway": "Simon has already been found.",
+      "emotional_arc": ["TENSION", "CAPTURE"],
+      "primary_investigation_mechanism": "tracking_lock",
+      "required_unique_events": ["target_search", "target_reacquire", "target_lock"],
+      "visible_phrases": ["SIMON IS FRAMED", "SIMON IS BEING HUNTED", "STRIPPED OF HIS OLD LIFE"],
+      "pacing": "fast escalating acquisition with little idle hold",
+      "camera": "tighter restrained push with a small lock impact",
+      "cosmetic_profile": {
+        "accent_emphasis": "red/orange warning",
+        "colored_cell_emphasis": "warm, with shared purple/green/blue retained",
+        "node_pulse_character": "faster",
+        "projection_behavior": "sharper acquisition flicker",
+        "cta_accent": "warning orange"
+      },
+      "audio": {"track_id": "unknown-process-track-a", "required_character": "pursuit/tension", "cue_id": null},
+      "avoid": ["leo_zeph_bridge", "biometric_scan", "static_information_card", "long_idle_hold"],
+      "target_runtime_seconds": {"minimum": 24, "maximum": 32},
+      "narration": null
+    },
+    {
+      "id": "up-directed-video-002",
+      "title": "LEO + ZEPH: UNCLASSIFIABLE",
+      "hook": "TWO SIGNALS. NO MATCH.",
+      "story_basis": "Leo is a bio-engineered living data bridge and Zeph is an evolving hunted AI kernel.",
+      "viewer_takeaway": "The machine cannot easily classify Leo and Zeph.",
+      "emotional_arc": ["CONFUSION", "CONNECTION"],
+      "primary_investigation_mechanism": "classification_bridge",
+      "required_unique_events": ["leo_resolve", "zeph_resolve", "bridge_attempt", "bridge_stable"],
+      "visible_phrases": ["LEO: A LIVING DATA BRIDGE", "ZEPH: AN EVOLVING AI KERNEL", "TWO IMPOSSIBLE TARGETS"],
+      "pacing": "slower investigative alternation and linkage resolution",
+      "camera": "wider composition with a small lateral shift",
+      "cosmetic_profile": {
+        "accent_emphasis": "purple/blue",
+        "projection_tint": "cool",
+        "colored_cell_emphasis": "green data indicators",
+        "node_pulse_character": "smooth and slow",
+        "cta_accent": "cool blue/purple"
+      },
+      "audio": {"track_id": "unknown-process-track-a", "required_character": "mysterious/investigative", "cue_id": null},
+      "avoid": ["heavy_red_alarm", "simon_crosshair", "biometric_scan", "video_001_pacing"],
+      "target_runtime_seconds": {"minimum": 24, "maximum": 32},
+      "narration": null
+    },
+    {
+      "id": "up-directed-video-003",
+      "title": "KILL-SWITCH: HIDDEN IN SIMON",
+      "hook": "BIOMETRIC RECORD: NORMAL",
+      "story_basis": "The kill-switch to a digital empire is locked within Simon's biometrics.",
+      "viewer_takeaway": "The weapon is hidden inside Simon himself.",
+      "emotional_arc": ["NORMAL", "REVELATION", "DREAD"],
+      "primary_investigation_mechanism": "biometric_hidden_reveal",
+      "required_unique_events": ["biometric_scan", "deep_scan", "hidden_region", "kill_switch_reveal"],
+      "visible_phrases": ["LOCKED IN SIMON'S BIOMETRICS", "THE KILL-SWITCH", "TO A DIGITAL EMPIRE"],
+      "pacing": "calm initial scan, accelerating discovery, weighted final settle",
+      "camera": "calm opening, subtle deep-scan push, stronger discovery reaction",
+      "cosmetic_profile": {
+        "accent_emphasis": "green to amber",
+        "projection_tint": "green data state shifting to warning amber",
+        "colored_cell_emphasis": "purple/blue background retained",
+        "node_pulse_character": "stronger only at final reveal",
+        "cta_accent": "green to amber"
+      },
+      "audio": {"track_id": "unknown-process-track-a", "required_character": "revelation/ominous", "cue_id": null},
+      "avoid": ["pursuit_crosshair", "leo_zeph_bridge", "giant_yellow_diagnostic", "generic_slide"],
+      "target_runtime_seconds": {"minimum": 24, "maximum": 32},
+      "narration": null
+    }
+  ]
+}

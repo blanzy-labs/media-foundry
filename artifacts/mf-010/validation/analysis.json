@@ -1,0 +1,37 @@
+{
+  "slice": "MF-010",
+  "type": "independent_cue_analysis_validation",
+  "project": "unknown-process",
+  "track_count": 4,
+  "region_count": 20,
+  "catalog_validation": "PASS",
+  "tracks": [
+    {
+      "track_id": "abandoned_intake",
+      "region_count": 5,
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "track_id": "below_the_iron_floor",
+      "region_count": 5,
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "track_id": "cold_concrete_anatomy",
+      "region_count": 5,
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "track_id": "concrete_and_chain",
+      "region_count": 5,
+      "errors": [],
+      "result": "PASS"
+    }
+  ],
+  "automatic_approvals": 0,
+  "errors": [],
+  "result": "PASS"
+}

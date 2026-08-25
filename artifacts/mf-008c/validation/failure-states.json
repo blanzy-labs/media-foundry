@@ -1,0 +1,18 @@
+{
+  "invalid_profile": {
+    "exit_code": 1,
+    "state": "NEEDS_ENGINEERING",
+    "result": "FAIL",
+    "errors": [
+      "CREATIVE_PROFILE_INVALID"
+    ]
+  },
+  "pending_audio": {
+    "exit_code": 2,
+    "state": "BLOCKED_APPROVAL",
+    "result": "FAIL",
+    "errors": [
+      "AUDIO_CUE_NOT_APPROVED"
+    ]
+  }
+}

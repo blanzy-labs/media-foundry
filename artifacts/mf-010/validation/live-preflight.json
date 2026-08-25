@@ -1,0 +1,27 @@
+{
+  "slice": "MF-009",
+  "type": "music_catalog_batch_preflight",
+  "project": "unknown-process",
+  "refresh": {
+    "result": "PASS",
+    "new": [],
+    "changed": [],
+    "missing": [],
+    "unreviewed": 4,
+    "approved": 0
+  },
+  "catalog_validation": "PASS",
+  "requests": [
+    "abandoned_intake@pursuit_a"
+  ],
+  "eligible": [],
+  "errors": [
+    {
+      "code": "MUSIC_TRACK_NOT_APPROVED",
+      "request": "abandoned_intake@pursuit_a",
+      "status": "UNREVIEWED"
+    }
+  ],
+  "state": "BLOCKED_APPROVAL",
+  "result": "FAIL"
+}

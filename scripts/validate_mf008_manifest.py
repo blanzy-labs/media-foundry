@@ -8,7 +8,7 @@ import subprocess
 from pathlib import Path
 
 
-JOB_STATES = ["PENDING", "PREFLIGHT", "READY", "GENERATING_CONTENT_PACKAGE", "RENDERING", "VALIDATING", "READY_FOR_REVIEW", "BLOCKED_CONTENT", "MISSING_ASSET", "FAILED_RENDER", "FAILED_VALIDATION", "NEEDS_ENGINEERING", "CANCELLED"]
+JOB_STATES = ["PENDING", "PREFLIGHT", "READY", "GENERATING_CONTENT_PACKAGE", "RENDERING", "VALIDATING", "READY_FOR_REVIEW", "BLOCKED_CONTENT", "BLOCKED_APPROVAL", "MISSING_ASSET", "FAILED_RENDER", "FAILED_VALIDATION", "NEEDS_ENGINEERING", "CANCELLED"]
 BATCH_STATES = ["PENDING", "RUNNING", "COMPLETE", "PARTIAL", "FAILED"]
 
 
@@ -76,7 +76,13 @@ def main():
         record("approved_content", source_ok and jobs_ok, "approved synopsis, phrase allowlist, CTA, and audio IDs")
         music_path = root / cue_map.get("source", "")
         music_hash = sha256(music_path) if music_path.is_file() else None
-        sections_ok = all(float(section.get("start", -1)) >= 0 and float(section.get("duration", 0)) == 28.0 for section in cue_map.get("sections", {}).values())
+        approved_sections = [section for section in cue_map.get("sections", {}).values() if section.get("approved", True)]
+        pending_sections = [section for section in cue_map.get("sections", {}).values() if not section.get("approved", True)]
+        sections_ok = (
+            bool(approved_sections)
+            and all(float(section.get("start", -1)) >= 0 and float(section.get("duration", 0)) == 28.0 for section in approved_sections)
+            and all(section.get("status") == "PENDING_APPROVAL" and section.get("start") is None for section in pending_sections)
+        )
         record("approved_audio", music_hash == cue_map.get("source_sha256") and sections_ok, music_hash or "MISSING")
         record("non_narrated", grammar.get("audio_grammar", {}).get("narration") == "PROHIBITED_UNTIL_EXPLICITLY_RELEASE_ELIGIBLE" and all("narration" not in job for job in jobs), "production narration prohibited")
         archive = Path(batch.get("output_archive", ""))

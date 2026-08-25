@@ -1,0 +1,65 @@
+{
+  "slice": "MF-008C",
+  "fixture": "mf008c-tracking-pursuit",
+  "mechanism": "tracking",
+  "requested_profiles": {
+    "palette_profile": "pursuit",
+    "camera_profile": "tight_pursuit",
+    "node_profile": "urgent",
+    "projection_profile": "warning_trace",
+    "cta_profile": "warning"
+  },
+  "mechanism_exclusivity": {
+    "biometric_scan": "NOT_RUN",
+    "classification_link": "NOT_RUN",
+    "tracking": "PASS"
+  },
+  "event_evidence": [
+    {
+      "id": "target_search",
+      "observed": {
+        "id": "target_search",
+        "observed_frame": 839,
+        "time": 6.632,
+        "type": "target_search"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "target_reacquire",
+      "observed": {
+        "id": "target_reacquire",
+        "observed_frame": 839,
+        "time": 11.032,
+        "type": "target_reacquire"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "target_lock",
+      "observed": {
+        "id": "target_lock",
+        "observed_frame": 839,
+        "time": 17.544,
+        "type": "target_lock"
+      },
+      "status": "PASS"
+    }
+  ],
+  "checks": {
+    "creative_preflight": "PASS",
+    "layout": "PASS",
+    "creative_report": "PASS",
+    "mechanism_loaded": "PASS",
+    "mechanism_exclusivity": "PASS",
+    "unique_events": "PASS",
+    "profiles_loaded": "PASS",
+    "timing_loaded": "PASS",
+    "single_window": "PASS",
+    "campaign_identity": "PASS",
+    "timeline": "PASS",
+    "baseline_audio": "PASS",
+    "encoded_media": "PASS"
+  },
+  "result": "PASS"
+}

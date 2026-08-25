@@ -1,0 +1,19 @@
+{
+  "slice": "MF-009",
+  "type": "music_catalog_batch_preflight",
+  "project": "unknown-process",
+  "refresh": {
+    "result": "PASS",
+    "new": [],
+    "changed": [],
+    "missing": [],
+    "unreviewed": 4,
+    "approved": 0
+  },
+  "catalog_validation": "PASS",
+  "requests": [],
+  "eligible": [],
+  "errors": [],
+  "state": "READY",
+  "result": "PASS"
+}

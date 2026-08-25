@@ -1,0 +1,75 @@
+{
+  "slice": "MF-008C",
+  "fixture": "mf008c-classification-mystery",
+  "mechanism": "classification_link",
+  "requested_profiles": {
+    "palette_profile": "mystery",
+    "camera_profile": "wide_investigation",
+    "node_profile": "analytical",
+    "projection_profile": "classification",
+    "cta_profile": "cool_signal"
+  },
+  "mechanism_exclusivity": {
+    "biometric_scan": "NOT_RUN",
+    "classification_link": "PASS",
+    "tracking": "NOT_RUN"
+  },
+  "event_evidence": [
+    {
+      "id": "leo_resolve",
+      "observed": {
+        "id": "leo_resolve",
+        "observed_frame": 839,
+        "time": 7.32,
+        "type": "leo_resolve"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "zeph_resolve",
+      "observed": {
+        "id": "zeph_resolve",
+        "observed_frame": 839,
+        "time": 11.32,
+        "type": "zeph_resolve"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "bridge_attempt",
+      "observed": {
+        "id": "bridge_attempt",
+        "observed_frame": 839,
+        "time": 15.32,
+        "type": "bridge_attempt"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "bridge_stable",
+      "observed": {
+        "id": "bridge_stable",
+        "observed_frame": 839,
+        "time": 17.24,
+        "type": "bridge_stable"
+      },
+      "status": "PASS"
+    }
+  ],
+  "checks": {
+    "creative_preflight": "PASS",
+    "layout": "PASS",
+    "creative_report": "PASS",
+    "mechanism_loaded": "PASS",
+    "mechanism_exclusivity": "PASS",
+    "unique_events": "PASS",
+    "profiles_loaded": "PASS",
+    "timing_loaded": "PASS",
+    "single_window": "PASS",
+    "campaign_identity": "PASS",
+    "timeline": "PASS",
+    "baseline_audio": "PASS",
+    "encoded_media": "PASS"
+  },
+  "result": "PASS"
+}

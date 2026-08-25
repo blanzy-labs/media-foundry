@@ -1,0 +1,103 @@
+{
+  "slice": "MF-010",
+  "type": "isolated_failure_and_workflow_tests",
+  "tests": {
+    "unapproved_cue_requested": {
+      "state": "BLOCKED_APPROVAL",
+      "errors": [
+        {
+          "code": "MUSIC_CUE_REGION_NOT_APPROVED",
+          "request": "test_track@pursuit_a"
+        }
+      ],
+      "result": "PASS"
+    },
+    "rejected_cue_requested": {
+      "review_status": "REJECTED",
+      "errors": [
+        {
+          "code": "MUSIC_CUE_REJECTED",
+          "request": "test_track@pursuit_a"
+        }
+      ],
+      "result": "PASS"
+    },
+    "human_edit_and_approval": {
+      "edit_status": "PENDING_APPROVAL",
+      "approval_status": "APPROVED",
+      "result": "PASS"
+    },
+    "selection_boundary_and_evidence": {
+      "selection_contract": "mf010_music_selection_v1",
+      "outside_errors": [
+        {
+          "code": "CUE_SUBSECTION_OUTSIDE_APPROVED_REGION"
+        }
+      ],
+      "result": "PASS"
+    },
+    "approved_region_query": {
+      "matches": [
+        {
+          "track_id": "test_track",
+          "qualified_id": "test-project:test_track",
+          "region_id": "pursuit_a",
+          "usable_start": 1.5,
+          "usable_end": 20.0,
+          "preferred_entry": 2.5,
+          "preferred_exit": 19.0
+        }
+      ],
+      "result": "PASS"
+    },
+    "invalid_bounds": {
+      "errors": [
+        {
+          "code": "CUE_REGION_BOUNDS_INVALID",
+          "qualified_id": "test-project:test_track",
+          "region": "pursuit_a"
+        }
+      ],
+      "result": "PASS"
+    },
+    "preferred_entry_outside": {
+      "errors": [
+        {
+          "code": "CUE_REGION_BOUNDS_INVALID",
+          "qualified_id": "test-project:test_track",
+          "region": "pursuit_a"
+        }
+      ],
+      "result": "PASS"
+    },
+    "region_references_missing_track": {
+      "errors": [
+        {
+          "code": "TRACK_NOT_FOUND"
+        }
+      ],
+      "result": "PASS"
+    },
+    "approved_region_missing_asset": {
+      "errors": [
+        {
+          "code": "MISSING_LOCAL_ASSET",
+          "qualified_id": "test-project:test_track",
+          "source": "media/audio/music/test-project/Test_Track.wav"
+        }
+      ],
+      "result": "PASS"
+    },
+    "source_change_revalidation": {
+      "refresh_changed": [
+        "test-project:changed"
+      ],
+      "track_status": "REVIEW_REQUIRED",
+      "region_status": "REVIEW_REQUIRED",
+      "result": "PASS"
+    }
+  },
+  "passed": 10,
+  "total": 10,
+  "result": "PASS"
+}

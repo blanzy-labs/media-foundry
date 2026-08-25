@@ -1,0 +1,35 @@
+{
+  "operation": "refresh",
+  "catalog": "/home/blanzy/projects/media-foundry/config/music/catalog.json",
+  "catalog_changed": true,
+  "discovered": 4,
+  "new": [
+    "unknown-process:abandoned_intake",
+    "unknown-process:below_the_iron_floor",
+    "unknown-process:cold_concrete_anatomy",
+    "unknown-process:concrete_and_chain"
+  ],
+  "changed": [],
+  "unchanged": [],
+  "missing": [],
+  "restored": [],
+  "ignored": [
+    {
+      "path": "media/audio/music/clockwork-heist.mp3",
+      "reason": "LEGACY_ROOT_FILE_OUTSIDE_PROJECT_NAMESPACE"
+    },
+    {
+      "path": "media/audio/music/scrappy-ambient-loop.wav",
+      "reason": "LEGACY_ROOT_FILE_OUTSIDE_PROJECT_NAMESPACE"
+    },
+    {
+      "path": "media/audio/music/waiting-for-the-shift.mp3",
+      "reason": "LEGACY_ROOT_FILE_OUTSIDE_PROJECT_NAMESPACE"
+    }
+  ],
+  "errors": [],
+  "unreviewed": 4,
+  "approved": 0,
+  "review_required": 0,
+  "result": "PASS"
+}

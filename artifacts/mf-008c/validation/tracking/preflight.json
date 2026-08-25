@@ -1,0 +1,42 @@
+{
+  "slice": "MF-008C",
+  "fixture": "mf008c-tracking-pursuit",
+  "mode": "directed",
+  "state": "READY",
+  "creative": {
+    "mechanism": "tracking",
+    "events": [
+      "target_search",
+      "target_reacquire",
+      "target_lock"
+    ],
+    "timing": {
+      "intro_seconds": 5.4,
+      "investigation_seconds": 13.2,
+      "result_hold_seconds": 1.4,
+      "cta_seconds": 8.0
+    },
+    "palette_profile": "pursuit",
+    "camera_profile": "tight_pursuit",
+    "node_profile": "urgent",
+    "projection_profile": "warning_trace",
+    "cta_profile": "warning",
+    "audio_cue": "baseline_full"
+  },
+  "checks": {
+    "required_fields": "PASS",
+    "mechanism": "PASS",
+    "palette_profile": "PASS",
+    "camera_profile": "PASS",
+    "node_profile": "PASS",
+    "projection_profile": "PASS",
+    "cta_profile": "PASS",
+    "mechanism_events": "PASS",
+    "timing_bounds": "PASS",
+    "event_timing": "PASS",
+    "audio_cue_exists": "PASS",
+    "audio_cue_approved": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

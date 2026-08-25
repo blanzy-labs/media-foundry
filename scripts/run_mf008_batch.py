@@ -14,7 +14,7 @@ import time
 from pathlib import Path
 
 
-TERMINAL_JOB_STATES = {"READY_FOR_REVIEW", "BLOCKED_CONTENT", "MISSING_ASSET", "FAILED_RENDER", "FAILED_VALIDATION", "NEEDS_ENGINEERING", "CANCELLED"}
+TERMINAL_JOB_STATES = {"READY_FOR_REVIEW", "BLOCKED_CONTENT", "BLOCKED_APPROVAL", "MISSING_ASSET", "FAILED_RENDER", "FAILED_VALIDATION", "NEEDS_ENGINEERING", "CANCELLED"}
 FAILURE_STATES = TERMINAL_JOB_STATES - {"READY_FOR_REVIEW"}
 
 
@@ -143,6 +143,8 @@ def per_job_preflight(root, manifest, cue_map, job, controlled_failure, controll
     if cue_id not in cue_map.get("sections", {}):
         raise JobFailure("FAILED_VALIDATION", "UNAPPROVED_AUDIO_CUE", True)
     cue = cue_map["sections"][cue_id]
+    if not cue.get("approved", True):
+        raise JobFailure("BLOCKED_APPROVAL", "AUDIO_CUE_NOT_APPROVED", False)
     if float(cue["duration"]) != 28.0 or float(cue["start"]) < 0:
         raise JobFailure("FAILED_VALIDATION", "INVALID_AUDIO_CUE_BOUNDS", True)
     local["resolved_audio_cue"] = cue

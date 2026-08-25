@@ -1,0 +1,211 @@
+{
+  "slice": "MF-008B",
+  "type": "directed_batch_capability_preflight",
+  "batch_id": "unknown-process-directed-batch-001",
+  "state": "FAILED",
+  "production_grammar_id": "unknown_process_recovered_record_v1",
+  "grammar_origin_git_ref": "74ae32bd32f5480007ab01feaa77e83625a9a11f",
+  "execution_git_ref": "b4aded0b4d2498c6964e096724ae9767ee760aa6",
+  "renderer_frozen_and_exact": true,
+  "renderer_changes": 0,
+  "creative_brief_checks": {
+    "exactly_three_briefs": "PASS",
+    "unique_mechanisms_declared": "PASS",
+    "unique_arcs_declared": "PASS",
+    "three_or_more_cosmetic_differences_declared": "PASS",
+    "concise_three_phrase_packages": "PASS",
+    "non_narrated": "PASS",
+    "bounded_runtime": "PASS",
+    "shared_campaign_identity": "PASS"
+  },
+  "capabilities": {
+    "select_one_investigation_mechanism": {
+      "supported": false,
+      "evidence": "_record_index advances through indices 0, 1, and 2; _draw_record_content hardcodes all three branches"
+    },
+    "job_specific_investigation_events": {
+      "supported": false,
+      "evidence": "frozen stage exposes record_typing/refresh events, not target_search, bridge_attempt, deep_scan, or their required peers"
+    },
+    "configurable_cosmetic_profile": {
+      "supported": false,
+      "evidence": "ACCENT_COLORS, screen/CTA colors, camera push magnitude, and projection behavior are literals in the frozen stage"
+    },
+    "configurable_node_pulse_character": {
+      "supported": false,
+      "evidence": "indicator periods, offsets, and durations are constants"
+    },
+    "approved_distinct_music_cues": {
+      "supported": false,
+      "evidence": "cue map contains only ['baseline_full']; no pursuit, investigation, or revelation cue IDs are approved"
+    },
+    "natural_runtime_variation": {
+      "supported": false,
+      "evidence": "frozen grammar runtime is 28.0 seconds and its timeline fixture is pinned"
+    }
+  },
+  "approved_audio_sections": {
+    "baseline_full": {
+      "start": 0.0,
+      "duration": 28.0,
+      "approval_basis": "Existing MF-006R9 approved production configuration"
+    }
+  },
+  "jobs": [
+    {
+      "job_id": "up-directed-video-001",
+      "state": "NEEDS_ENGINEERING",
+      "creative_brief": "PASS",
+      "render_attempted": false,
+      "technical_validation": "NOT_RUN_UNSUPPORTED_BRIEF",
+      "editorial": "NOT_READY",
+      "release": "NOT_READY",
+      "artifact": null,
+      "blockers": [
+        "select_one_investigation_mechanism",
+        "job_specific_investigation_events",
+        "configurable_cosmetic_profile",
+        "configurable_node_pulse_character",
+        "approved_distinct_music_cues",
+        "natural_runtime_variation"
+      ]
+    },
+    {
+      "job_id": "up-directed-video-002",
+      "state": "NEEDS_ENGINEERING",
+      "creative_brief": "PASS",
+      "render_attempted": false,
+      "technical_validation": "NOT_RUN_UNSUPPORTED_BRIEF",
+      "editorial": "NOT_READY",
+      "release": "NOT_READY",
+      "artifact": null,
+      "blockers": [
+        "select_one_investigation_mechanism",
+        "job_specific_investigation_events",
+        "configurable_cosmetic_profile",
+        "configurable_node_pulse_character",
+        "approved_distinct_music_cues",
+        "natural_runtime_variation"
+      ]
+    },
+    {
+      "job_id": "up-directed-video-003",
+      "state": "NEEDS_ENGINEERING",
+      "creative_brief": "PASS",
+      "render_attempted": false,
+      "technical_validation": "NOT_RUN_UNSUPPORTED_BRIEF",
+      "editorial": "NOT_READY",
+      "release": "NOT_READY",
+      "artifact": null,
+      "blockers": [
+        "select_one_investigation_mechanism",
+        "job_specific_investigation_events",
+        "configurable_cosmetic_profile",
+        "configurable_node_pulse_character",
+        "approved_distinct_music_cues",
+        "natural_runtime_variation"
+      ]
+    }
+  ],
+  "ready_for_review": 0,
+  "needs_engineering": 3,
+  "rendered": 0,
+  "published": 0,
+  "human_review": "BLOCKED_NO_CANDIDATES",
+  "artifacts": [],
+  "pinned_files": [
+    {
+      "path": "config/visual-grammar.json",
+      "expected_sha256": "2aac4b81d41d3b78ecd7892d879078d0c67fd6a641904f4bd62ba641ec074d5d",
+      "actual_sha256": "2aac4b81d41d3b78ecd7892d879078d0c67fd6a641904f4bd62ba641ec074d5d",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/mf002.tscn",
+      "expected_sha256": "f94e4ce708e2b68da235f70b2ba4ec44282c3564c0959440865de24c6d71fda2",
+      "actual_sha256": "f94e4ce708e2b68da235f70b2ba4ec44282c3564c0959440865de24c6d71fda2",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/mf002.gd",
+      "expected_sha256": "296d69385011454ad2aa1f0c15d8bb9043879178bf9c47513b50cdf4f63a4d76",
+      "actual_sha256": "296d69385011454ad2aa1f0c15d8bb9043879178bf9c47513b50cdf4f63a4d76",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/beat_timeline.gd",
+      "expected_sha256": "34494dcd3f3b40e865f51f62aa5649546ba1cd6367ec5aaeabf13ffa69d48d04",
+      "actual_sha256": "34494dcd3f3b40e865f51f62aa5649546ba1cd6367ec5aaeabf13ffa69d48d04",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/lofi_book_stage.gd",
+      "expected_sha256": "d1d0c42242a4a22755ceedd9daa96b6bb70a16ea399da0a327653e8e4696b86f",
+      "actual_sha256": "d1d0c42242a4a22755ceedd9daa96b6bb70a16ea399da0a327653e8e4696b86f",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/projected_data_window_stage.gd",
+      "expected_sha256": "6adae54cb26a23b3f813b9e31f842ff97f7ffcb1ae63132e98d4d1d5b99862e7",
+      "actual_sha256": "6adae54cb26a23b3f813b9e31f842ff97f7ffcb1ae63132e98d4d1d5b99862e7",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/integrated_lower_right_stage.gd",
+      "expected_sha256": "fc12ec5dbdc19d42ded123ff351f9692ec4dbf505f79ea2c67a7f7f2eff8141d",
+      "actual_sha256": "fc12ec5dbdc19d42ded123ff351f9692ec4dbf505f79ea2c67a7f7f2eff8141d",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/indicator_pulse_stage.gd",
+      "expected_sha256": "e6cadece92b2f5fae6365498b34ac357fc5b370f487e67fc3b486164198d05bd",
+      "actual_sha256": "e6cadece92b2f5fae6365498b34ac357fc5b370f487e67fc3b486164198d05bd",
+      "status": "PASS"
+    },
+    {
+      "path": "scripts/preflight_mf004.py",
+      "expected_sha256": "019984f257dcc1f55b6af4f54f6dcb1e1e264e0fa67b964fa50b140b1e1041a1",
+      "actual_sha256": "019984f257dcc1f55b6af4f54f6dcb1e1e264e0fa67b964fa50b140b1e1041a1",
+      "status": "PASS"
+    },
+    {
+      "path": "scripts/generate_mf006_sfx.py",
+      "expected_sha256": "6e0d84de474f0713b4b20e4852d4c0d609766d6e4af8aac910dd0909467df172",
+      "actual_sha256": "6e0d84de474f0713b4b20e4852d4c0d609766d6e4af8aac910dd0909467df172",
+      "status": "PASS"
+    },
+    {
+      "path": "scripts/prepare_mf005r1_music.py",
+      "expected_sha256": "4314cc8875c0c3c0eee82e091fd72c47b974ee2b1d2e5c9aae054da714f4512b",
+      "actual_sha256": "4314cc8875c0c3c0eee82e091fd72c47b974ee2b1d2e5c9aae054da714f4512b",
+      "status": "PASS"
+    },
+    {
+      "path": "scripts/mix_mf005_audio.py",
+      "expected_sha256": "b75fe5a7418a262ec0b8aa2087498796f7c365795f7dd9c2a6c8a8951cfd0536",
+      "actual_sha256": "b75fe5a7418a262ec0b8aa2087498796f7c365795f7dd9c2a6c8a8951cfd0536",
+      "status": "PASS"
+    },
+    {
+      "path": "scripts/validate_media.py",
+      "expected_sha256": "4993bebea9d71ceb673d7a208312282182daf154261708b080901fc13c83338e",
+      "actual_sha256": "4993bebea9d71ceb673d7a208312282182daf154261708b080901fc13c83338e",
+      "status": "PASS"
+    },
+    {
+      "path": "content/fixtures/mf006r9-unknown-process.json",
+      "expected_sha256": "24d764ed178b426f3480b33047c73c3ee2d49f7a80a630974c7daba1d1fea426",
+      "actual_sha256": "24d764ed178b426f3480b33047c73c3ee2d49f7a80a630974c7daba1d1fea426",
+      "status": "PASS"
+    }
+  ],
+  "blockers": [
+    "select_one_investigation_mechanism",
+    "job_specific_investigation_events",
+    "configurable_cosmetic_profile",
+    "configurable_node_pulse_character",
+    "approved_distinct_music_cues",
+    "natural_runtime_variation"
+  ],
+  "result": "NEEDS_ENGINEERING"
+}

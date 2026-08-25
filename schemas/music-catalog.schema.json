@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "music-catalog.schema.json",
+  "title": "Media Foundry Music Catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "music_root", "supported_extensions", "tracks"],
+  "properties": {
+    "version": {"const": 1},
+    "music_root": {"const": "media/audio/music"},
+    "supported_extensions": {
+      "type": "array",
+      "const": [".flac", ".m4a", ".mp3", ".ogg", ".wav"]
+    },
+    "updated_at": {"type": "string"},
+    "tracks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "qualified_id", "project", "source", "discovery", "technical", "integrity", "provenance", "approval", "editorial", "cue_regions", "history"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"},
+          "qualified_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*:[a-z0-9]+(?:_[a-z0-9]+)*$"},
+          "project": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+          "source": {"type": "string"},
+          "discovery": {
+            "type": "object",
+            "required": ["status", "first_discovered_at"],
+            "properties": {
+              "status": {"enum": ["PRESENT", "MISSING", "ERROR"]},
+              "first_discovered_at": {"type": "string"},
+              "last_change": {"enum": ["NEW", "UNCHANGED", "SOURCE_CHANGED", "RESTORED", "MISSING"]}
+            }
+          },
+          "technical": {
+            "type": "object",
+            "required": ["has_audio_stream", "duration_seconds", "codec", "container", "sample_rate", "channels", "bitrate"],
+            "properties": {
+              "has_audio_stream": {"const": true},
+              "duration_seconds": {"type": "number", "exclusiveMinimum": 0},
+              "codec": {"type": "string"},
+              "container": {"type": "string"},
+              "sample_rate": {"type": "integer", "minimum": 1},
+              "channels": {"type": "integer", "minimum": 1},
+              "bitrate": {"type": ["integer", "null"], "minimum": 1}
+            }
+          },
+          "integrity": {
+            "type": "object",
+            "required": ["sha256", "bytes"],
+            "properties": {
+              "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "bytes": {"type": "integer", "minimum": 1}
+            }
+          },
+          "provenance": {
+            "type": "object",
+            "required": ["source_type", "generator", "notes"],
+            "properties": {
+              "source_type": {"type": "string"},
+              "generator": {"type": "string"},
+              "notes": {"type": "string"}
+            }
+          },
+          "approval": {
+            "type": "object",
+            "required": ["status", "approved_sha256", "reviewed_at", "reviewer", "note"],
+            "properties": {
+              "status": {"enum": ["UNREVIEWED", "APPROVED", "REJECTED", "REVIEW_REQUIRED", "MISSING"]},
+              "approved_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+              "reviewed_at": {"type": ["string", "null"]},
+              "reviewer": {"type": ["string", "null"]},
+              "note": {"type": ["string", "null"]},
+              "previous_status": {"type": "string"}
+            }
+          },
+          "editorial": {
+            "type": "object",
+            "required": ["mood_tags", "preferred_uses", "notes", "release_eligible"],
+            "properties": {
+              "mood_tags": {"type": "array", "items": {"type": "string"}},
+              "preferred_uses": {"type": "array", "items": {"type": "string"}},
+              "notes": {"type": "string"},
+              "release_eligible": {"type": "boolean"}
+            }
+          },
+          "cue_regions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["id", "usable_start", "usable_end", "preferred_entry", "preferred_exit", "mood_tags", "use_cases", "narration_friendliness", "intensity", "analysis", "human", "approval", "notes"],
+              "properties": {
+                "id": {"type": "string", "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"},
+                "usable_start": {"type": "number", "minimum": 0},
+                "usable_end": {"type": "number", "exclusiveMinimum": 0},
+                "preferred_entry": {"type": ["number", "null"], "minimum": 0},
+                "preferred_exit": {"type": ["number", "null"], "minimum": 0},
+                "mood_tags": {"type": "array", "items": {"type": "string"}},
+                "use_cases": {"type": "array", "items": {"type": "string"}},
+                "narration_friendliness": {"enum": ["high", "medium", "low"]},
+                "intensity": {"enum": ["low", "medium", "high", "rising", "falling"]},
+                "analysis": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["method", "version", "confidence", "mean_rms_db", "energy_delta_db", "transient_score", "notes", "preview"],
+                  "properties": {
+                    "method": {"const": "mf010_deterministic_energy_v1"},
+                    "version": {"const": 1},
+                    "confidence": {"enum": ["low", "medium", "high"]},
+                    "mean_rms_db": {"type": "number"},
+                    "energy_delta_db": {"type": "number"},
+                    "transient_score": {"type": "number", "minimum": 0},
+                    "notes": {"type": "string"},
+                    "preview": {"type": "string"}
+                  }
+                },
+                "human": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["notes", "edited"],
+                  "properties": {
+                    "notes": {"type": ["string", "null"]},
+                    "edited": {"type": "boolean"}
+                  }
+                },
+                "approval": {
+                  "type": "object",
+                  "required": ["status", "proposed_sha256", "approved_sha256", "reviewed_at", "reviewer", "note"],
+                  "properties": {
+                    "status": {"enum": ["UNREVIEWED", "PENDING_APPROVAL", "APPROVED", "REJECTED", "REVIEW_REQUIRED"]},
+                    "proposed_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+                    "approved_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+                    "reviewed_at": {"type": ["string", "null"]},
+                    "reviewer": {"type": ["string", "null"]},
+                    "note": {"type": ["string", "null"]}
+                  }
+                },
+                "notes": {"type": "string"}
+              }
+            }
+          },
+          "history": {"type": "array", "items": {"type": "object"}}
+        }
+      }
+    }
+  }
+}

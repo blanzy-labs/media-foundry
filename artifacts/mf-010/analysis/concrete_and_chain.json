@@ -1,0 +1,251 @@
+{
+  "track_id": "concrete_and_chain",
+  "qualified_id": "unknown-process:concrete_and_chain",
+  "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+  "duration_seconds": 179.382792,
+  "analysis_method": "mf010_deterministic_energy_v1",
+  "sample_rate": 8000,
+  "one_second_windows": 179,
+  "track_metrics": {
+    "mean_rms_db": -15.396,
+    "minimum_rms_db": -42.459,
+    "maximum_rms_db": -7.274,
+    "peak_amplitude": 1.383968,
+    "mean_transient_score": 0.039837
+  },
+  "regions": [
+    {
+      "id": "ambient_a",
+      "usable_start": 5.0,
+      "usable_end": 37.0,
+      "preferred_entry": 5.0,
+      "preferred_exit": 36.0,
+      "mood_tags": [
+        "ambient",
+        "mystery",
+        "reflective"
+      ],
+      "use_cases": [
+        "ambient_teaser",
+        "excerpt"
+      ],
+      "narration_friendliness": "high",
+      "intensity": "rising",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "low",
+        "mean_rms_db": -22.3,
+        "energy_delta_db": 16.911,
+        "transient_score": 0.027746,
+        "notes": "Candidate lower-energy, comparatively sparse passage.",
+        "preview": "artifacts/mf-010/previews/concrete_and_chain__ambient_a__preview.mp3",
+        "preview_sha256": "8e0857f5bfd52b72dc6c179d9a66c79ca5dc7d117fc3b03c5086277d2a7dc96f",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    },
+    {
+      "id": "investigation_a",
+      "usable_start": 71.0,
+      "usable_end": 109.0,
+      "preferred_entry": 74.0,
+      "preferred_exit": 100.0,
+      "mood_tags": [
+        "investigation",
+        "mystery",
+        "paranoia"
+      ],
+      "use_cases": [
+        "classification",
+        "direct_promo"
+      ],
+      "narration_friendliness": "medium",
+      "intensity": "medium",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "medium",
+        "mean_rms_db": -11.27,
+        "energy_delta_db": 1.766,
+        "transient_score": 0.043802,
+        "notes": "Candidate stable-energy passage with comparatively even density.",
+        "preview": "artifacts/mf-010/previews/concrete_and_chain__investigation_a__preview.mp3",
+        "preview_sha256": "867c73651c573aa2534df71084c44486d083a0fc11b2b1e73c7b66b0ead34d1a",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    },
+    {
+      "id": "pursuit_a",
+      "usable_start": 19.0,
+      "usable_end": 59.0,
+      "preferred_entry": 21.0,
+      "preferred_exit": 58.0,
+      "mood_tags": [
+        "pursuit",
+        "tension",
+        "escalation"
+      ],
+      "use_cases": [
+        "tracking",
+        "direct_promo"
+      ],
+      "narration_friendliness": "medium",
+      "intensity": "rising",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "low",
+        "mean_rms_db": -14.267,
+        "energy_delta_db": 15.81,
+        "transient_score": 0.043429,
+        "notes": "Candidate higher-energy passage with sustained motion.",
+        "preview": "artifacts/mf-010/previews/concrete_and_chain__pursuit_a__preview.mp3",
+        "preview_sha256": "4f1eba4eb7e3ec9357dbaf0783d463245c0af7c493797979c312ef186a77e276",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    },
+    {
+      "id": "revelation_a",
+      "usable_start": 123.0,
+      "usable_end": 167.0,
+      "preferred_entry": 127.0,
+      "preferred_exit": 162.0,
+      "mood_tags": [
+        "revelation",
+        "discovery",
+        "ominous"
+      ],
+      "use_cases": [
+        "biometric_reveal",
+        "title_reveal"
+      ],
+      "narration_friendliness": "medium",
+      "intensity": "rising",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "low",
+        "mean_rms_db": -13.708,
+        "energy_delta_db": 5.972,
+        "transient_score": 0.040167,
+        "notes": "Candidate build/change passage selected from measured energy rise.",
+        "preview": "artifacts/mf-010/previews/concrete_and_chain__revelation_a__preview.mp3",
+        "preview_sha256": "046fadab08e01b28889c39950fb3b4fe75e6767c246e8a2b5bea07b32cfa5f73",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    },
+    {
+      "id": "resolution_a",
+      "usable_start": 115.0,
+      "usable_end": 149.0,
+      "preferred_entry": 119.0,
+      "preferred_exit": 140.0,
+      "mood_tags": [
+        "resolution",
+        "reflective"
+      ],
+      "use_cases": [
+        "cta",
+        "excerpt"
+      ],
+      "narration_friendliness": "medium",
+      "intensity": "falling",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "low",
+        "mean_rms_db": -14.668,
+        "energy_delta_db": -8.021,
+        "transient_score": 0.035886,
+        "notes": "Candidate late-song passage with room for a fade or CTA transition.",
+        "preview": "artifacts/mf-010/previews/concrete_and_chain__resolution_a__preview.mp3",
+        "preview_sha256": "3f5b3a272b609f9cfa66c65e5cc8bb86085bfef03c4dd544faa29fa844747d17",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    }
+  ],
+  "overlap_awareness": [
+    {
+      "a": "ambient_a",
+      "b": "pursuit_a",
+      "overlap_seconds": 18.0,
+      "smaller_region_overlap_ratio": 0.562,
+      "highly_overlapping": false
+    },
+    {
+      "a": "revelation_a",
+      "b": "resolution_a",
+      "overlap_seconds": 26.0,
+      "smaller_region_overlap_ratio": 0.765,
+      "highly_overlapping": false
+    }
+  ],
+  "waveform": "artifacts/mf-010/waveforms/concrete_and_chain__waveform.png",
+  "advisory": true,
+  "human_listening_authoritative": true
+}

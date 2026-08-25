@@ -1,0 +1,1342 @@
+{
+  "version": 1,
+  "music_root": "media/audio/music",
+  "supported_extensions": [
+    ".flac",
+    ".m4a",
+    ".mp3",
+    ".ogg",
+    ".wav"
+  ],
+  "updated_at": "2026-08-25T16:09:04+00:00",
+  "tracks": [
+    {
+      "id": "abandoned_intake",
+      "qualified_id": "unknown-process:abandoned_intake",
+      "project": "unknown-process",
+      "source": "media/audio/music/unknown-process/Abandoned_Intake.mp3",
+      "discovery": {
+        "status": "PRESENT",
+        "first_discovered_at": "2026-08-25T14:21:26+00:00",
+        "last_change": "NEW"
+      },
+      "technical": {
+        "has_audio_stream": true,
+        "duration_seconds": 171.885667,
+        "codec": "mp3",
+        "container": "mp3",
+        "sample_rate": 44100,
+        "channels": 2,
+        "bitrate": 192000
+      },
+      "integrity": {
+        "sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+        "bytes": 4131334
+      },
+      "provenance": {
+        "source_type": "user_supplied_generated",
+        "generator": "gemini",
+        "notes": ""
+      },
+      "approval": {
+        "status": "APPROVED",
+        "approved_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+        "reviewed_at": "2026-08-25T16:09:02+00:00",
+        "reviewer": "user",
+        "note": "Reviewed and approved by user for MF-010"
+      },
+      "editorial": {
+        "mood_tags": [],
+        "preferred_uses": [],
+        "notes": "",
+        "release_eligible": true
+      },
+      "cue_regions": [
+        {
+          "id": "ambient_a",
+          "usable_start": 5.0,
+          "usable_end": 37.0,
+          "preferred_entry": 6.0,
+          "preferred_exit": 29.0,
+          "mood_tags": [
+            "ambient",
+            "mystery",
+            "reflective"
+          ],
+          "use_cases": [
+            "ambient_teaser",
+            "excerpt"
+          ],
+          "narration_friendliness": "high",
+          "intensity": "rising",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "low",
+            "mean_rms_db": -16.485,
+            "energy_delta_db": 10.781,
+            "transient_score": 0.019696,
+            "notes": "Candidate lower-energy, comparatively sparse passage.",
+            "preview": "artifacts/mf-010/previews/abandoned_intake__ambient_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+            "approved_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+            "reviewed_at": "2026-08-25T16:09:02+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        },
+        {
+          "id": "investigation_a",
+          "usable_start": 123.0,
+          "usable_end": 161.0,
+          "preferred_entry": 130.0,
+          "preferred_exit": 156.0,
+          "mood_tags": [
+            "investigation",
+            "mystery",
+            "paranoia"
+          ],
+          "use_cases": [
+            "classification",
+            "direct_promo"
+          ],
+          "narration_friendliness": "medium",
+          "intensity": "medium",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "medium",
+            "mean_rms_db": -11.151,
+            "energy_delta_db": 1.655,
+            "transient_score": 0.050487,
+            "notes": "Candidate stable-energy passage with comparatively even density.",
+            "preview": "artifacts/mf-010/previews/abandoned_intake__investigation_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+            "approved_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+            "reviewed_at": "2026-08-25T16:09:03+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        },
+        {
+          "id": "pursuit_a",
+          "usable_start": 111.0,
+          "usable_end": 151.0,
+          "preferred_entry": 116.0,
+          "preferred_exit": 149.0,
+          "mood_tags": [
+            "pursuit",
+            "tension",
+            "escalation"
+          ],
+          "use_cases": [
+            "tracking",
+            "direct_promo"
+          ],
+          "narration_friendliness": "medium",
+          "intensity": "rising",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "low",
+            "mean_rms_db": -15.888,
+            "energy_delta_db": 16.387,
+            "transient_score": 0.040623,
+            "notes": "Candidate higher-energy passage with sustained motion.",
+            "preview": "artifacts/mf-010/previews/abandoned_intake__pursuit_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+            "approved_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+            "reviewed_at": "2026-08-25T16:09:03+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        },
+        {
+          "id": "resolution_a",
+          "usable_start": 103.0,
+          "usable_end": 137.0,
+          "preferred_entry": 104.0,
+          "preferred_exit": 133.0,
+          "mood_tags": [
+            "resolution",
+            "reflective"
+          ],
+          "use_cases": [
+            "cta",
+            "excerpt"
+          ],
+          "narration_friendliness": "high",
+          "intensity": "low",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "low",
+            "mean_rms_db": -16.415,
+            "energy_delta_db": 1.805,
+            "transient_score": 0.031588,
+            "notes": "Candidate late-song passage with room for a fade or CTA transition.",
+            "preview": "artifacts/mf-010/previews/abandoned_intake__resolution_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+            "approved_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+            "reviewed_at": "2026-08-25T16:09:03+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        },
+        {
+          "id": "revelation_a",
+          "usable_start": 49.0,
+          "usable_end": 93.0,
+          "preferred_entry": 51.0,
+          "preferred_exit": 91.0,
+          "mood_tags": [
+            "revelation",
+            "discovery",
+            "ominous"
+          ],
+          "use_cases": [
+            "biometric_reveal",
+            "title_reveal"
+          ],
+          "narration_friendliness": "medium",
+          "intensity": "rising",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "low",
+            "mean_rms_db": -12.883,
+            "energy_delta_db": 3.907,
+            "transient_score": 0.051325,
+            "notes": "Candidate build/change passage selected from measured energy rise.",
+            "preview": "artifacts/mf-010/previews/abandoned_intake__revelation_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+            "approved_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+            "reviewed_at": "2026-08-25T16:09:03+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        }
+      ],
+      "history": [
+        {
+          "event": "APPROVED",
+          "at": "2026-08-25T16:09:02+00:00",
+          "sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+          "previous_approval": {
+            "status": "UNREVIEWED",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:02+00:00",
+          "region_id": "ambient_a",
+          "sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:03+00:00",
+          "region_id": "investigation_a",
+          "sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:03+00:00",
+          "region_id": "pursuit_a",
+          "sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:03+00:00",
+          "region_id": "revelation_a",
+          "sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:03+00:00",
+          "region_id": "resolution_a",
+          "sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "below_the_iron_floor",
+      "qualified_id": "unknown-process:below_the_iron_floor",
+      "project": "unknown-process",
+      "source": "media/audio/music/unknown-process/Below_the_Iron_Floor.mp3",
+      "discovery": {
+        "status": "PRESENT",
+        "first_discovered_at": "2026-08-25T14:21:26+00:00",
+        "last_change": "NEW"
+      },
+      "technical": {
+        "has_audio_stream": true,
+        "duration_seconds": 179.252167,
+        "codec": "mp3",
+        "container": "mp3",
+        "sample_rate": 44100,
+        "channels": 2,
+        "bitrate": 192000
+      },
+      "integrity": {
+        "sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+        "bytes": 4308130
+      },
+      "provenance": {
+        "source_type": "user_supplied_generated",
+        "generator": "gemini",
+        "notes": ""
+      },
+      "approval": {
+        "status": "APPROVED",
+        "approved_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+        "reviewed_at": "2026-08-25T16:09:03+00:00",
+        "reviewer": "user",
+        "note": "Reviewed and approved by user for MF-010"
+      },
+      "editorial": {
+        "mood_tags": [],
+        "preferred_uses": [],
+        "notes": "",
+        "release_eligible": true
+      },
+      "cue_regions": [
+        {
+          "id": "ambient_a",
+          "usable_start": 5.0,
+          "usable_end": 37.0,
+          "preferred_entry": 9.0,
+          "preferred_exit": 31.0,
+          "mood_tags": [
+            "ambient",
+            "mystery",
+            "reflective"
+          ],
+          "use_cases": [
+            "ambient_teaser",
+            "excerpt"
+          ],
+          "narration_friendliness": "high",
+          "intensity": "rising",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "medium",
+            "mean_rms_db": -13.972,
+            "energy_delta_db": 8.384,
+            "transient_score": 0.031506,
+            "notes": "Candidate lower-energy, comparatively sparse passage.",
+            "preview": "artifacts/mf-010/previews/below_the_iron_floor__ambient_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+            "approved_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+            "reviewed_at": "2026-08-25T16:09:03+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        },
+        {
+          "id": "investigation_a",
+          "usable_start": 93.0,
+          "usable_end": 131.0,
+          "preferred_entry": 96.0,
+          "preferred_exit": 127.0,
+          "mood_tags": [
+            "investigation",
+            "mystery",
+            "paranoia"
+          ],
+          "use_cases": [
+            "classification",
+            "direct_promo"
+          ],
+          "narration_friendliness": "medium",
+          "intensity": "medium",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "medium",
+            "mean_rms_db": -11.853,
+            "energy_delta_db": 1.145,
+            "transient_score": 0.039736,
+            "notes": "Candidate stable-energy passage with comparatively even density.",
+            "preview": "artifacts/mf-010/previews/below_the_iron_floor__investigation_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+            "approved_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+            "reviewed_at": "2026-08-25T16:09:03+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        },
+        {
+          "id": "pursuit_a",
+          "usable_start": 103.0,
+          "usable_end": 143.0,
+          "preferred_entry": 110.0,
+          "preferred_exit": 134.0,
+          "mood_tags": [
+            "pursuit",
+            "tension",
+            "escalation"
+          ],
+          "use_cases": [
+            "tracking",
+            "direct_promo"
+          ],
+          "narration_friendliness": "medium",
+          "intensity": "rising",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "medium",
+            "mean_rms_db": -11.061,
+            "energy_delta_db": 2.937,
+            "transient_score": 0.043282,
+            "notes": "Candidate higher-energy passage with sustained motion.",
+            "preview": "artifacts/mf-010/previews/below_the_iron_floor__pursuit_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+            "approved_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+            "reviewed_at": "2026-08-25T16:09:03+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        },
+        {
+          "id": "resolution_a",
+          "usable_start": 139.0,
+          "usable_end": 173.0,
+          "preferred_entry": 146.0,
+          "preferred_exit": 166.0,
+          "mood_tags": [
+            "resolution",
+            "reflective"
+          ],
+          "use_cases": [
+            "cta",
+            "excerpt"
+          ],
+          "narration_friendliness": "low",
+          "intensity": "rising",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "medium",
+            "mean_rms_db": -11.851,
+            "energy_delta_db": 2.534,
+            "transient_score": 0.064208,
+            "notes": "Candidate late-song passage with room for a fade or CTA transition.",
+            "preview": "artifacts/mf-010/previews/below_the_iron_floor__resolution_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+            "approved_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+            "reviewed_at": "2026-08-25T16:09:03+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        },
+        {
+          "id": "revelation_a",
+          "usable_start": 67.0,
+          "usable_end": 111.0,
+          "preferred_entry": 71.0,
+          "preferred_exit": 110.0,
+          "mood_tags": [
+            "revelation",
+            "discovery",
+            "ominous"
+          ],
+          "use_cases": [
+            "biometric_reveal",
+            "title_reveal"
+          ],
+          "narration_friendliness": "medium",
+          "intensity": "rising",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "medium",
+            "mean_rms_db": -13.573,
+            "energy_delta_db": 5.571,
+            "transient_score": 0.047063,
+            "notes": "Candidate build/change passage selected from measured energy rise.",
+            "preview": "artifacts/mf-010/previews/below_the_iron_floor__revelation_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+            "approved_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+            "reviewed_at": "2026-08-25T16:09:03+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        }
+      ],
+      "history": [
+        {
+          "event": "APPROVED",
+          "at": "2026-08-25T16:09:03+00:00",
+          "sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+          "previous_approval": {
+            "status": "UNREVIEWED",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:03+00:00",
+          "region_id": "ambient_a",
+          "sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:03+00:00",
+          "region_id": "investigation_a",
+          "sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:03+00:00",
+          "region_id": "pursuit_a",
+          "sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:03+00:00",
+          "region_id": "revelation_a",
+          "sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:03+00:00",
+          "region_id": "resolution_a",
+          "sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "cold_concrete_anatomy",
+      "qualified_id": "unknown-process:cold_concrete_anatomy",
+      "project": "unknown-process",
+      "source": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+      "discovery": {
+        "status": "PRESENT",
+        "first_discovered_at": "2026-08-25T14:21:26+00:00",
+        "last_change": "NEW"
+      },
+      "technical": {
+        "has_audio_stream": true,
+        "duration_seconds": 180.897917,
+        "codec": "mp3",
+        "container": "mp3",
+        "sample_rate": 44100,
+        "channels": 2,
+        "bitrate": 192000
+      },
+      "integrity": {
+        "sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+        "bytes": 4347628
+      },
+      "provenance": {
+        "source_type": "user_supplied_generated",
+        "generator": "gemini",
+        "notes": ""
+      },
+      "approval": {
+        "status": "APPROVED",
+        "approved_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+        "reviewed_at": "2026-08-25T16:09:03+00:00",
+        "reviewer": "user",
+        "note": "Reviewed and approved by user for MF-010"
+      },
+      "editorial": {
+        "mood_tags": [],
+        "preferred_uses": [],
+        "notes": "",
+        "release_eligible": true
+      },
+      "cue_regions": [
+        {
+          "id": "ambient_a",
+          "usable_start": 143.0,
+          "usable_end": 175.0,
+          "preferred_entry": 146.0,
+          "preferred_exit": 166.0,
+          "mood_tags": [
+            "ambient",
+            "mystery",
+            "reflective"
+          ],
+          "use_cases": [
+            "ambient_teaser",
+            "excerpt"
+          ],
+          "narration_friendliness": "high",
+          "intensity": "falling",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "low",
+            "mean_rms_db": -28.69,
+            "energy_delta_db": -43.326,
+            "transient_score": 0.018026,
+            "notes": "Candidate lower-energy, comparatively sparse passage.",
+            "preview": "artifacts/mf-010/previews/cold_concrete_anatomy__ambient_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+            "approved_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+            "reviewed_at": "2026-08-25T16:09:03+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        },
+        {
+          "id": "investigation_a",
+          "usable_start": 71.0,
+          "usable_end": 109.0,
+          "preferred_entry": 73.0,
+          "preferred_exit": 106.0,
+          "mood_tags": [
+            "investigation",
+            "mystery",
+            "paranoia"
+          ],
+          "use_cases": [
+            "classification",
+            "direct_promo"
+          ],
+          "narration_friendliness": "medium",
+          "intensity": "medium",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "medium",
+            "mean_rms_db": -9.678,
+            "energy_delta_db": 0.075,
+            "transient_score": 0.035194,
+            "notes": "Candidate stable-energy passage with comparatively even density.",
+            "preview": "artifacts/mf-010/previews/cold_concrete_anatomy__investigation_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+            "approved_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+            "reviewed_at": "2026-08-25T16:09:03+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        },
+        {
+          "id": "pursuit_a",
+          "usable_start": 111.0,
+          "usable_end": 151.0,
+          "preferred_entry": 113.0,
+          "preferred_exit": 146.0,
+          "mood_tags": [
+            "pursuit",
+            "tension",
+            "escalation"
+          ],
+          "use_cases": [
+            "tracking",
+            "direct_promo"
+          ],
+          "narration_friendliness": "low",
+          "intensity": "rising",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "low",
+            "mean_rms_db": -13.886,
+            "energy_delta_db": 14.712,
+            "transient_score": 0.040915,
+            "notes": "Candidate higher-energy passage with sustained motion.",
+            "preview": "artifacts/mf-010/previews/cold_concrete_anatomy__pursuit_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+            "approved_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+            "reviewed_at": "2026-08-25T16:09:03+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        },
+        {
+          "id": "resolution_a",
+          "usable_start": 133.0,
+          "usable_end": 167.0,
+          "preferred_entry": 135.0,
+          "preferred_exit": 160.0,
+          "mood_tags": [
+            "resolution",
+            "reflective"
+          ],
+          "use_cases": [
+            "cta",
+            "excerpt"
+          ],
+          "narration_friendliness": "medium",
+          "intensity": "falling",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "low",
+            "mean_rms_db": -17.463,
+            "energy_delta_db": -17.261,
+            "transient_score": 0.030304,
+            "notes": "Candidate late-song passage with room for a fade or CTA transition.",
+            "preview": "artifacts/mf-010/previews/cold_concrete_anatomy__resolution_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+            "approved_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+            "reviewed_at": "2026-08-25T16:09:03+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        },
+        {
+          "id": "revelation_a",
+          "usable_start": 5.0,
+          "usable_end": 49.0,
+          "preferred_entry": 9.0,
+          "preferred_exit": 46.0,
+          "mood_tags": [
+            "revelation",
+            "discovery",
+            "ominous"
+          ],
+          "use_cases": [
+            "biometric_reveal",
+            "title_reveal"
+          ],
+          "narration_friendliness": "medium",
+          "intensity": "rising",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "low",
+            "mean_rms_db": -14.576,
+            "energy_delta_db": 12.48,
+            "transient_score": 0.023013,
+            "notes": "Candidate build/change passage selected from measured energy rise.",
+            "preview": "artifacts/mf-010/previews/cold_concrete_anatomy__revelation_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+            "approved_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+            "reviewed_at": "2026-08-25T16:09:03+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        }
+      ],
+      "history": [
+        {
+          "event": "APPROVED",
+          "at": "2026-08-25T16:09:03+00:00",
+          "sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+          "previous_approval": {
+            "status": "UNREVIEWED",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:03+00:00",
+          "region_id": "ambient_a",
+          "sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:03+00:00",
+          "region_id": "investigation_a",
+          "sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:03+00:00",
+          "region_id": "pursuit_a",
+          "sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:03+00:00",
+          "region_id": "revelation_a",
+          "sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:03+00:00",
+          "region_id": "resolution_a",
+          "sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "concrete_and_chain",
+      "qualified_id": "unknown-process:concrete_and_chain",
+      "project": "unknown-process",
+      "source": "media/audio/music/unknown-process/Concrete_and_Chain.mp3",
+      "discovery": {
+        "status": "PRESENT",
+        "first_discovered_at": "2026-08-25T14:21:26+00:00",
+        "last_change": "NEW"
+      },
+      "technical": {
+        "has_audio_stream": true,
+        "duration_seconds": 179.382792,
+        "codec": "mp3",
+        "container": "mp3",
+        "sample_rate": 44100,
+        "channels": 2,
+        "bitrate": 192000
+      },
+      "integrity": {
+        "sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+        "bytes": 4311265
+      },
+      "provenance": {
+        "source_type": "user_supplied_generated",
+        "generator": "gemini",
+        "notes": ""
+      },
+      "approval": {
+        "status": "APPROVED",
+        "approved_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+        "reviewed_at": "2026-08-25T16:09:04+00:00",
+        "reviewer": "user",
+        "note": "Reviewed and approved by user for MF-010"
+      },
+      "editorial": {
+        "mood_tags": [],
+        "preferred_uses": [],
+        "notes": "",
+        "release_eligible": true
+      },
+      "cue_regions": [
+        {
+          "id": "ambient_a",
+          "usable_start": 5.0,
+          "usable_end": 37.0,
+          "preferred_entry": 5.0,
+          "preferred_exit": 36.0,
+          "mood_tags": [
+            "ambient",
+            "mystery",
+            "reflective"
+          ],
+          "use_cases": [
+            "ambient_teaser",
+            "excerpt"
+          ],
+          "narration_friendliness": "high",
+          "intensity": "rising",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "low",
+            "mean_rms_db": -22.3,
+            "energy_delta_db": 16.911,
+            "transient_score": 0.027746,
+            "notes": "Candidate lower-energy, comparatively sparse passage.",
+            "preview": "artifacts/mf-010/previews/concrete_and_chain__ambient_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+            "approved_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+            "reviewed_at": "2026-08-25T16:09:04+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        },
+        {
+          "id": "investigation_a",
+          "usable_start": 71.0,
+          "usable_end": 109.0,
+          "preferred_entry": 74.0,
+          "preferred_exit": 100.0,
+          "mood_tags": [
+            "investigation",
+            "mystery",
+            "paranoia"
+          ],
+          "use_cases": [
+            "classification",
+            "direct_promo"
+          ],
+          "narration_friendliness": "medium",
+          "intensity": "medium",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "medium",
+            "mean_rms_db": -11.27,
+            "energy_delta_db": 1.766,
+            "transient_score": 0.043802,
+            "notes": "Candidate stable-energy passage with comparatively even density.",
+            "preview": "artifacts/mf-010/previews/concrete_and_chain__investigation_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+            "approved_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+            "reviewed_at": "2026-08-25T16:09:04+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        },
+        {
+          "id": "pursuit_a",
+          "usable_start": 19.0,
+          "usable_end": 59.0,
+          "preferred_entry": 21.0,
+          "preferred_exit": 58.0,
+          "mood_tags": [
+            "pursuit",
+            "tension",
+            "escalation"
+          ],
+          "use_cases": [
+            "tracking",
+            "direct_promo"
+          ],
+          "narration_friendliness": "medium",
+          "intensity": "rising",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "low",
+            "mean_rms_db": -14.267,
+            "energy_delta_db": 15.81,
+            "transient_score": 0.043429,
+            "notes": "Candidate higher-energy passage with sustained motion.",
+            "preview": "artifacts/mf-010/previews/concrete_and_chain__pursuit_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+            "approved_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+            "reviewed_at": "2026-08-25T16:09:04+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        },
+        {
+          "id": "resolution_a",
+          "usable_start": 115.0,
+          "usable_end": 149.0,
+          "preferred_entry": 119.0,
+          "preferred_exit": 140.0,
+          "mood_tags": [
+            "resolution",
+            "reflective"
+          ],
+          "use_cases": [
+            "cta",
+            "excerpt"
+          ],
+          "narration_friendliness": "medium",
+          "intensity": "falling",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "low",
+            "mean_rms_db": -14.668,
+            "energy_delta_db": -8.021,
+            "transient_score": 0.035886,
+            "notes": "Candidate late-song passage with room for a fade or CTA transition.",
+            "preview": "artifacts/mf-010/previews/concrete_and_chain__resolution_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+            "approved_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+            "reviewed_at": "2026-08-25T16:09:04+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        },
+        {
+          "id": "revelation_a",
+          "usable_start": 123.0,
+          "usable_end": 167.0,
+          "preferred_entry": 127.0,
+          "preferred_exit": 162.0,
+          "mood_tags": [
+            "revelation",
+            "discovery",
+            "ominous"
+          ],
+          "use_cases": [
+            "biometric_reveal",
+            "title_reveal"
+          ],
+          "narration_friendliness": "medium",
+          "intensity": "rising",
+          "analysis": {
+            "method": "mf010_deterministic_energy_v1",
+            "version": 1,
+            "confidence": "low",
+            "mean_rms_db": -13.708,
+            "energy_delta_db": 5.972,
+            "transient_score": 0.040167,
+            "notes": "Candidate build/change passage selected from measured energy rise.",
+            "preview": "artifacts/mf-010/previews/concrete_and_chain__revelation_a__preview.mp3"
+          },
+          "human": {
+            "notes": null,
+            "edited": false
+          },
+          "approval": {
+            "status": "APPROVED",
+            "proposed_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+            "approved_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+            "reviewed_at": "2026-08-25T16:09:04+00:00",
+            "reviewer": "user",
+            "note": "Reviewed and approved by user for MF-010"
+          },
+          "notes": "Automatic analysis is advisory; human listening is authoritative."
+        }
+      ],
+      "history": [
+        {
+          "event": "APPROVED",
+          "at": "2026-08-25T16:09:04+00:00",
+          "sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+          "previous_approval": {
+            "status": "UNREVIEWED",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:04+00:00",
+          "region_id": "ambient_a",
+          "sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:04+00:00",
+          "region_id": "investigation_a",
+          "sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:04+00:00",
+          "region_id": "pursuit_a",
+          "sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:04+00:00",
+          "region_id": "revelation_a",
+          "sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        },
+        {
+          "event": "CUE_APPROVED",
+          "at": "2026-08-25T16:09:04+00:00",
+          "region_id": "resolution_a",
+          "sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+          "previous_approval": {
+            "status": "PENDING_APPROVAL",
+            "proposed_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+            "approved_sha256": null,
+            "reviewed_at": null,
+            "reviewer": null,
+            "note": null
+          }
+        }
+      ]
+    }
+  ]
+}

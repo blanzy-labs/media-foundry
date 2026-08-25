@@ -1,0 +1,36 @@
+{
+  "slice": "MF-009",
+  "refreshes_executed": 4,
+  "source_files_written_by_refresh": 0,
+  "tracks": [
+    {
+      "qualified_id": "unknown-process:abandoned_intake",
+      "source": "media/audio/music/unknown-process/Abandoned_Intake.mp3",
+      "catalog_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+      "current_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+      "unchanged": true
+    },
+    {
+      "qualified_id": "unknown-process:below_the_iron_floor",
+      "source": "media/audio/music/unknown-process/Below_the_Iron_Floor.mp3",
+      "catalog_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+      "current_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+      "unchanged": true
+    },
+    {
+      "qualified_id": "unknown-process:cold_concrete_anatomy",
+      "source": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+      "catalog_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+      "current_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+      "unchanged": true
+    },
+    {
+      "qualified_id": "unknown-process:concrete_and_chain",
+      "source": "media/audio/music/unknown-process/Concrete_and_Chain.mp3",
+      "catalog_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+      "current_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+      "unchanged": true
+    }
+  ],
+  "result": "PASS"
+}

@@ -1,0 +1,385 @@
+{
+  "operation": "cue_list",
+  "project": "unknown-process",
+  "approved_only": false,
+  "regions": [
+    {
+      "track_id": "abandoned_intake",
+      "qualified_id": "unknown-process:abandoned_intake",
+      "region_id": "ambient_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 5.0,
+      "usable_end": 37.0,
+      "preferred_entry": 6.0,
+      "preferred_exit": 29.0,
+      "mood_tags": [
+        "ambient",
+        "mystery",
+        "reflective"
+      ],
+      "use_cases": [
+        "ambient_teaser",
+        "excerpt"
+      ]
+    },
+    {
+      "track_id": "abandoned_intake",
+      "qualified_id": "unknown-process:abandoned_intake",
+      "region_id": "investigation_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 123.0,
+      "usable_end": 161.0,
+      "preferred_entry": 130.0,
+      "preferred_exit": 156.0,
+      "mood_tags": [
+        "investigation",
+        "mystery",
+        "paranoia"
+      ],
+      "use_cases": [
+        "classification",
+        "direct_promo"
+      ]
+    },
+    {
+      "track_id": "abandoned_intake",
+      "qualified_id": "unknown-process:abandoned_intake",
+      "region_id": "pursuit_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 111.0,
+      "usable_end": 151.0,
+      "preferred_entry": 116.0,
+      "preferred_exit": 149.0,
+      "mood_tags": [
+        "pursuit",
+        "tension",
+        "escalation"
+      ],
+      "use_cases": [
+        "tracking",
+        "direct_promo"
+      ]
+    },
+    {
+      "track_id": "abandoned_intake",
+      "qualified_id": "unknown-process:abandoned_intake",
+      "region_id": "resolution_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 103.0,
+      "usable_end": 137.0,
+      "preferred_entry": 104.0,
+      "preferred_exit": 133.0,
+      "mood_tags": [
+        "resolution",
+        "reflective"
+      ],
+      "use_cases": [
+        "cta",
+        "excerpt"
+      ]
+    },
+    {
+      "track_id": "abandoned_intake",
+      "qualified_id": "unknown-process:abandoned_intake",
+      "region_id": "revelation_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 49.0,
+      "usable_end": 93.0,
+      "preferred_entry": 51.0,
+      "preferred_exit": 91.0,
+      "mood_tags": [
+        "revelation",
+        "discovery",
+        "ominous"
+      ],
+      "use_cases": [
+        "biometric_reveal",
+        "title_reveal"
+      ]
+    },
+    {
+      "track_id": "below_the_iron_floor",
+      "qualified_id": "unknown-process:below_the_iron_floor",
+      "region_id": "ambient_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 5.0,
+      "usable_end": 37.0,
+      "preferred_entry": 9.0,
+      "preferred_exit": 31.0,
+      "mood_tags": [
+        "ambient",
+        "mystery",
+        "reflective"
+      ],
+      "use_cases": [
+        "ambient_teaser",
+        "excerpt"
+      ]
+    },
+    {
+      "track_id": "below_the_iron_floor",
+      "qualified_id": "unknown-process:below_the_iron_floor",
+      "region_id": "investigation_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 93.0,
+      "usable_end": 131.0,
+      "preferred_entry": 96.0,
+      "preferred_exit": 127.0,
+      "mood_tags": [
+        "investigation",
+        "mystery",
+        "paranoia"
+      ],
+      "use_cases": [
+        "classification",
+        "direct_promo"
+      ]
+    },
+    {
+      "track_id": "below_the_iron_floor",
+      "qualified_id": "unknown-process:below_the_iron_floor",
+      "region_id": "pursuit_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 103.0,
+      "usable_end": 143.0,
+      "preferred_entry": 110.0,
+      "preferred_exit": 134.0,
+      "mood_tags": [
+        "pursuit",
+        "tension",
+        "escalation"
+      ],
+      "use_cases": [
+        "tracking",
+        "direct_promo"
+      ]
+    },
+    {
+      "track_id": "below_the_iron_floor",
+      "qualified_id": "unknown-process:below_the_iron_floor",
+      "region_id": "resolution_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 139.0,
+      "usable_end": 173.0,
+      "preferred_entry": 146.0,
+      "preferred_exit": 166.0,
+      "mood_tags": [
+        "resolution",
+        "reflective"
+      ],
+      "use_cases": [
+        "cta",
+        "excerpt"
+      ]
+    },
+    {
+      "track_id": "below_the_iron_floor",
+      "qualified_id": "unknown-process:below_the_iron_floor",
+      "region_id": "revelation_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 67.0,
+      "usable_end": 111.0,
+      "preferred_entry": 71.0,
+      "preferred_exit": 110.0,
+      "mood_tags": [
+        "revelation",
+        "discovery",
+        "ominous"
+      ],
+      "use_cases": [
+        "biometric_reveal",
+        "title_reveal"
+      ]
+    },
+    {
+      "track_id": "cold_concrete_anatomy",
+      "qualified_id": "unknown-process:cold_concrete_anatomy",
+      "region_id": "ambient_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 143.0,
+      "usable_end": 175.0,
+      "preferred_entry": 146.0,
+      "preferred_exit": 166.0,
+      "mood_tags": [
+        "ambient",
+        "mystery",
+        "reflective"
+      ],
+      "use_cases": [
+        "ambient_teaser",
+        "excerpt"
+      ]
+    },
+    {
+      "track_id": "cold_concrete_anatomy",
+      "qualified_id": "unknown-process:cold_concrete_anatomy",
+      "region_id": "investigation_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 71.0,
+      "usable_end": 109.0,
+      "preferred_entry": 73.0,
+      "preferred_exit": 106.0,
+      "mood_tags": [
+        "investigation",
+        "mystery",
+        "paranoia"
+      ],
+      "use_cases": [
+        "classification",
+        "direct_promo"
+      ]
+    },
+    {
+      "track_id": "cold_concrete_anatomy",
+      "qualified_id": "unknown-process:cold_concrete_anatomy",
+      "region_id": "pursuit_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 111.0,
+      "usable_end": 151.0,
+      "preferred_entry": 113.0,
+      "preferred_exit": 146.0,
+      "mood_tags": [
+        "pursuit",
+        "tension",
+        "escalation"
+      ],
+      "use_cases": [
+        "tracking",
+        "direct_promo"
+      ]
+    },
+    {
+      "track_id": "cold_concrete_anatomy",
+      "qualified_id": "unknown-process:cold_concrete_anatomy",
+      "region_id": "resolution_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 133.0,
+      "usable_end": 167.0,
+      "preferred_entry": 135.0,
+      "preferred_exit": 160.0,
+      "mood_tags": [
+        "resolution",
+        "reflective"
+      ],
+      "use_cases": [
+        "cta",
+        "excerpt"
+      ]
+    },
+    {
+      "track_id": "cold_concrete_anatomy",
+      "qualified_id": "unknown-process:cold_concrete_anatomy",
+      "region_id": "revelation_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 5.0,
+      "usable_end": 49.0,
+      "preferred_entry": 9.0,
+      "preferred_exit": 46.0,
+      "mood_tags": [
+        "revelation",
+        "discovery",
+        "ominous"
+      ],
+      "use_cases": [
+        "biometric_reveal",
+        "title_reveal"
+      ]
+    },
+    {
+      "track_id": "concrete_and_chain",
+      "qualified_id": "unknown-process:concrete_and_chain",
+      "region_id": "ambient_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 5.0,
+      "usable_end": 37.0,
+      "preferred_entry": 5.0,
+      "preferred_exit": 36.0,
+      "mood_tags": [
+        "ambient",
+        "mystery",
+        "reflective"
+      ],
+      "use_cases": [
+        "ambient_teaser",
+        "excerpt"
+      ]
+    },
+    {
+      "track_id": "concrete_and_chain",
+      "qualified_id": "unknown-process:concrete_and_chain",
+      "region_id": "investigation_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 71.0,
+      "usable_end": 109.0,
+      "preferred_entry": 74.0,
+      "preferred_exit": 100.0,
+      "mood_tags": [
+        "investigation",
+        "mystery",
+        "paranoia"
+      ],
+      "use_cases": [
+        "classification",
+        "direct_promo"
+      ]
+    },
+    {
+      "track_id": "concrete_and_chain",
+      "qualified_id": "unknown-process:concrete_and_chain",
+      "region_id": "pursuit_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 19.0,
+      "usable_end": 59.0,
+      "preferred_entry": 21.0,
+      "preferred_exit": 58.0,
+      "mood_tags": [
+        "pursuit",
+        "tension",
+        "escalation"
+      ],
+      "use_cases": [
+        "tracking",
+        "direct_promo"
+      ]
+    },
+    {
+      "track_id": "concrete_and_chain",
+      "qualified_id": "unknown-process:concrete_and_chain",
+      "region_id": "resolution_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 115.0,
+      "usable_end": 149.0,
+      "preferred_entry": 119.0,
+      "preferred_exit": 140.0,
+      "mood_tags": [
+        "resolution",
+        "reflective"
+      ],
+      "use_cases": [
+        "cta",
+        "excerpt"
+      ]
+    },
+    {
+      "track_id": "concrete_and_chain",
+      "qualified_id": "unknown-process:concrete_and_chain",
+      "region_id": "revelation_a",
+      "status": "PENDING_APPROVAL",
+      "usable_start": 123.0,
+      "usable_end": 167.0,
+      "preferred_entry": 127.0,
+      "preferred_exit": 162.0,
+      "mood_tags": [
+        "revelation",
+        "discovery",
+        "ominous"
+      ],
+      "use_cases": [
+        "biometric_reveal",
+        "title_reveal"
+      ]
+    }
+  ],
+  "count": 20,
+  "result": "PASS"
+}

@@ -1,0 +1,9 @@
+{
+  "operation": "query",
+  "project": "unknown-process",
+  "require_approved_regions": false,
+  "approved_tracks": [],
+  "catalog_validation": "PASS",
+  "errors": [],
+  "result": "PASS"
+}

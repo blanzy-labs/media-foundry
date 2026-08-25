@@ -1,0 +1,87 @@
+{
+  "slice": "MF-009",
+  "tests": {
+    "add_one_track": {
+      "first_new": [
+        "test-project:new_song"
+      ],
+      "second_unchanged": [
+        "test-project:new_song"
+      ],
+      "unsupported_ignored": true,
+      "byte_stable_second_refresh": true,
+      "result": "PASS"
+    },
+    "source_change": {
+      "approved_first": true,
+      "changed": [
+        "test-project:new_song"
+      ],
+      "approval": "REVIEW_REQUIRED",
+      "prior_review_in_history": true,
+      "human_metadata_preserved": true,
+      "result": "PASS"
+    },
+    "missing_approved_file": {
+      "catalog_status": "MISSING",
+      "refresh_missing": [
+        "test-project:missing"
+      ],
+      "validation_errors": [
+        {
+          "code": "MISSING_LOCAL_ASSET",
+          "qualified_id": "test-project:missing",
+          "source": "media/audio/music/test-project/Missing.wav"
+        }
+      ],
+      "result": "PASS"
+    },
+    "duplicate_normalized_id": {
+      "exit_code": 1,
+      "errors": [
+        {
+          "code": "TRACK_ID_COLLISION",
+          "project": "test-project",
+          "track_id": "same_name",
+          "paths": [
+            "media/audio/music/test-project/Same-Name.wav",
+            "media/audio/music/test-project/Same_Name.wav"
+          ]
+        }
+      ],
+      "result": "PASS"
+    },
+    "corrupt_audio": {
+      "exit_code": 1,
+      "errors": [
+        {
+          "code": "AUDIO_INSPECTION_FAILED",
+          "path": "media/audio/music/test-project/Corrupt.mp3",
+          "detail": "FFPROBE_FAILED: [mp3 @ 0x653819b3a300] Failed to find two consecutive MPEG audio frames.\n/home/blanzy/media-foundry-output/mf009-tests/run-mjz_9lzu/corrupt/media/audio/music/test-project/Corrupt.mp3: Invalid data found when processing input"
+        }
+      ],
+      "result": "PASS"
+    },
+    "cue_regions": {
+      "overlap_validation": "PASS",
+      "approved_query_count": 1,
+      "invalid_exit_code": 1,
+      "invalid_errors": [
+        {
+          "code": "CUE_REGION_BOUNDS_INVALID",
+          "qualified_id": "test-project:regions",
+          "region": "region_a"
+        }
+      ],
+      "result": "PASS"
+    },
+    "rejection": {
+      "status": "REJECTED",
+      "approved_tracks": [],
+      "result": "PASS"
+    }
+  },
+  "passed": 7,
+  "total": 7,
+  "result": "PASS"
+}

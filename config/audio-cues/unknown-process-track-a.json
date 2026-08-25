@@ -12,9 +12,32 @@
   },
   "sections": {
     "baseline_full": {
+      "status": "APPROVED",
+      "approved": true,
       "start": 0.0,
       "duration": 28.0,
       "approval_basis": "Existing MF-006R9 approved production configuration"
+    },
+    "pursuit": {
+      "status": "PENDING_APPROVAL",
+      "approved": false,
+      "start": null,
+      "duration": 28.0,
+      "approval_basis": null
+    },
+    "investigation": {
+      "status": "PENDING_APPROVAL",
+      "approved": false,
+      "start": null,
+      "duration": 28.0,
+      "approval_basis": null
+    },
+    "revelation": {
+      "status": "PENDING_APPROVAL",
+      "approved": false,
+      "start": null,
+      "duration": 28.0,
+      "approval_basis": null
     }
   }
 }

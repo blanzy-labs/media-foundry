@@ -1,0 +1,30 @@
+{
+  "operation": "validate",
+  "catalog": "/home/blanzy/projects/media-foundry/config/music/catalog.json",
+  "tracks": 4,
+  "production_eligible": [],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "TRACK_NOT_PRODUCTION_ELIGIBLE",
+      "qualified_id": "unknown-process:abandoned_intake",
+      "status": "UNREVIEWED"
+    },
+    {
+      "code": "TRACK_NOT_PRODUCTION_ELIGIBLE",
+      "qualified_id": "unknown-process:below_the_iron_floor",
+      "status": "UNREVIEWED"
+    },
+    {
+      "code": "TRACK_NOT_PRODUCTION_ELIGIBLE",
+      "qualified_id": "unknown-process:cold_concrete_anatomy",
+      "status": "UNREVIEWED"
+    },
+    {
+      "code": "TRACK_NOT_PRODUCTION_ELIGIBLE",
+      "qualified_id": "unknown-process:concrete_and_chain",
+      "status": "UNREVIEWED"
+    }
+  ],
+  "result": "PASS"
+}

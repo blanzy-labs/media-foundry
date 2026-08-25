@@ -1,0 +1,12 @@
+{
+  "operation": "query",
+  "project": "unknown-process",
+  "mood": "pursuit",
+  "use_case": "tracking",
+  "require_approved_regions": true,
+  "approved_tracks": [],
+  "matches": [],
+  "catalog_validation": "PASS",
+  "errors": [],
+  "result": "PASS"
+}

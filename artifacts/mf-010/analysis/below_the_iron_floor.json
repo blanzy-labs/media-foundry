@@ -1,0 +1,265 @@
+{
+  "track_id": "below_the_iron_floor",
+  "qualified_id": "unknown-process:below_the_iron_floor",
+  "source_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+  "duration_seconds": 179.252167,
+  "analysis_method": "mf010_deterministic_energy_v1",
+  "sample_rate": 8000,
+  "one_second_windows": 179,
+  "track_metrics": {
+    "mean_rms_db": -13.44,
+    "minimum_rms_db": -51.263,
+    "maximum_rms_db": -7.357,
+    "peak_amplitude": 1.416013,
+    "mean_transient_score": 0.047941
+  },
+  "regions": [
+    {
+      "id": "ambient_a",
+      "usable_start": 5.0,
+      "usable_end": 37.0,
+      "preferred_entry": 9.0,
+      "preferred_exit": 31.0,
+      "mood_tags": [
+        "ambient",
+        "mystery",
+        "reflective"
+      ],
+      "use_cases": [
+        "ambient_teaser",
+        "excerpt"
+      ],
+      "narration_friendliness": "high",
+      "intensity": "rising",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "medium",
+        "mean_rms_db": -13.972,
+        "energy_delta_db": 8.384,
+        "transient_score": 0.031506,
+        "notes": "Candidate lower-energy, comparatively sparse passage.",
+        "preview": "artifacts/mf-010/previews/below_the_iron_floor__ambient_a__preview.mp3",
+        "preview_sha256": "94163ddc4006a0f8930399cbb6162bbe2572d17d9bf708dbbcff590eda4ade70",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    },
+    {
+      "id": "investigation_a",
+      "usable_start": 93.0,
+      "usable_end": 131.0,
+      "preferred_entry": 96.0,
+      "preferred_exit": 127.0,
+      "mood_tags": [
+        "investigation",
+        "mystery",
+        "paranoia"
+      ],
+      "use_cases": [
+        "classification",
+        "direct_promo"
+      ],
+      "narration_friendliness": "medium",
+      "intensity": "medium",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "medium",
+        "mean_rms_db": -11.853,
+        "energy_delta_db": 1.145,
+        "transient_score": 0.039736,
+        "notes": "Candidate stable-energy passage with comparatively even density.",
+        "preview": "artifacts/mf-010/previews/below_the_iron_floor__investigation_a__preview.mp3",
+        "preview_sha256": "6fcd254d76078460dcdb1f2f6049b56a80369eb338d6b7e38377abf0e643ae80",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    },
+    {
+      "id": "pursuit_a",
+      "usable_start": 103.0,
+      "usable_end": 143.0,
+      "preferred_entry": 110.0,
+      "preferred_exit": 134.0,
+      "mood_tags": [
+        "pursuit",
+        "tension",
+        "escalation"
+      ],
+      "use_cases": [
+        "tracking",
+        "direct_promo"
+      ],
+      "narration_friendliness": "medium",
+      "intensity": "rising",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "medium",
+        "mean_rms_db": -11.061,
+        "energy_delta_db": 2.937,
+        "transient_score": 0.043282,
+        "notes": "Candidate higher-energy passage with sustained motion.",
+        "preview": "artifacts/mf-010/previews/below_the_iron_floor__pursuit_a__preview.mp3",
+        "preview_sha256": "e1c8be148c869a8b59361cd29052c66a368ab4bff2d4a9af7152ddc1fa87327f",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    },
+    {
+      "id": "revelation_a",
+      "usable_start": 67.0,
+      "usable_end": 111.0,
+      "preferred_entry": 71.0,
+      "preferred_exit": 110.0,
+      "mood_tags": [
+        "revelation",
+        "discovery",
+        "ominous"
+      ],
+      "use_cases": [
+        "biometric_reveal",
+        "title_reveal"
+      ],
+      "narration_friendliness": "medium",
+      "intensity": "rising",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "medium",
+        "mean_rms_db": -13.573,
+        "energy_delta_db": 5.571,
+        "transient_score": 0.047063,
+        "notes": "Candidate build/change passage selected from measured energy rise.",
+        "preview": "artifacts/mf-010/previews/below_the_iron_floor__revelation_a__preview.mp3",
+        "preview_sha256": "4a7e042e464a07b2cbcf9b1d7ba84dd9989d6f8e51c42551aaff11c28f0c825a",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    },
+    {
+      "id": "resolution_a",
+      "usable_start": 139.0,
+      "usable_end": 173.0,
+      "preferred_entry": 146.0,
+      "preferred_exit": 166.0,
+      "mood_tags": [
+        "resolution",
+        "reflective"
+      ],
+      "use_cases": [
+        "cta",
+        "excerpt"
+      ],
+      "narration_friendliness": "low",
+      "intensity": "rising",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "medium",
+        "mean_rms_db": -11.851,
+        "energy_delta_db": 2.534,
+        "transient_score": 0.064208,
+        "notes": "Candidate late-song passage with room for a fade or CTA transition.",
+        "preview": "artifacts/mf-010/previews/below_the_iron_floor__resolution_a__preview.mp3",
+        "preview_sha256": "592c25850a67085bada20aa57ff7d60ce0675bba411ee22f5b9aa1b08f4a764c",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    }
+  ],
+  "overlap_awareness": [
+    {
+      "a": "investigation_a",
+      "b": "pursuit_a",
+      "overlap_seconds": 28.0,
+      "smaller_region_overlap_ratio": 0.737,
+      "highly_overlapping": false
+    },
+    {
+      "a": "investigation_a",
+      "b": "revelation_a",
+      "overlap_seconds": 18.0,
+      "smaller_region_overlap_ratio": 0.474,
+      "highly_overlapping": false
+    },
+    {
+      "a": "pursuit_a",
+      "b": "revelation_a",
+      "overlap_seconds": 8.0,
+      "smaller_region_overlap_ratio": 0.2,
+      "highly_overlapping": false
+    },
+    {
+      "a": "pursuit_a",
+      "b": "resolution_a",
+      "overlap_seconds": 4.0,
+      "smaller_region_overlap_ratio": 0.118,
+      "highly_overlapping": false
+    }
+  ],
+  "waveform": "artifacts/mf-010/waveforms/below_the_iron_floor__waveform.png",
+  "advisory": true,
+  "human_listening_authoritative": true
+}

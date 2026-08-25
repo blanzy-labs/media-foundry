@@ -1,0 +1,42 @@
+{
+  "slice": "MF-010",
+  "project": "unknown-process",
+  "analysis_method": "mf010_deterministic_energy_v1",
+  "tracks": [
+    {
+      "track_id": "abandoned_intake",
+      "regions": 5,
+      "analysis": "artifacts/mf-010/analysis/abandoned_intake.json",
+      "waveform": "artifacts/mf-010/waveforms/abandoned_intake__waveform.png",
+      "result": "PASS"
+    },
+    {
+      "track_id": "below_the_iron_floor",
+      "regions": 5,
+      "analysis": "artifacts/mf-010/analysis/below_the_iron_floor.json",
+      "waveform": "artifacts/mf-010/waveforms/below_the_iron_floor__waveform.png",
+      "result": "PASS"
+    },
+    {
+      "track_id": "cold_concrete_anatomy",
+      "regions": 5,
+      "analysis": "artifacts/mf-010/analysis/cold_concrete_anatomy.json",
+      "waveform": "artifacts/mf-010/waveforms/cold_concrete_anatomy__waveform.png",
+      "result": "PASS"
+    },
+    {
+      "track_id": "concrete_and_chain",
+      "regions": 5,
+      "analysis": "artifacts/mf-010/analysis/concrete_and_chain.json",
+      "waveform": "artifacts/mf-010/waveforms/concrete_and_chain__waveform.png",
+      "result": "PASS"
+    }
+  ],
+  "track_count": 4,
+  "region_count": 20,
+  "catalog_changed": true,
+  "all_regions_pending_approval": true,
+  "source_immutability": "PASS",
+  "automatic_approvals": 0,
+  "result": "PASS"
+}

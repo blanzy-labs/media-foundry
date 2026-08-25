@@ -1,0 +1,258 @@
+{
+  "track_id": "cold_concrete_anatomy",
+  "qualified_id": "unknown-process:cold_concrete_anatomy",
+  "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+  "duration_seconds": 180.897917,
+  "analysis_method": "mf010_deterministic_energy_v1",
+  "sample_rate": 8000,
+  "one_second_windows": 180,
+  "track_metrics": {
+    "mean_rms_db": -17.854,
+    "minimum_rms_db": -120.0,
+    "maximum_rms_db": -7.521,
+    "peak_amplitude": 1.379719,
+    "mean_transient_score": 0.028116
+  },
+  "regions": [
+    {
+      "id": "ambient_a",
+      "usable_start": 143.0,
+      "usable_end": 175.0,
+      "preferred_entry": 146.0,
+      "preferred_exit": 166.0,
+      "mood_tags": [
+        "ambient",
+        "mystery",
+        "reflective"
+      ],
+      "use_cases": [
+        "ambient_teaser",
+        "excerpt"
+      ],
+      "narration_friendliness": "high",
+      "intensity": "falling",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "low",
+        "mean_rms_db": -28.69,
+        "energy_delta_db": -43.326,
+        "transient_score": 0.018026,
+        "notes": "Candidate lower-energy, comparatively sparse passage.",
+        "preview": "artifacts/mf-010/previews/cold_concrete_anatomy__ambient_a__preview.mp3",
+        "preview_sha256": "4b4e1c4307759c97d09f7da84f5252ff9fb79068719293bfc2fb34a9fb92d9c3",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    },
+    {
+      "id": "investigation_a",
+      "usable_start": 71.0,
+      "usable_end": 109.0,
+      "preferred_entry": 73.0,
+      "preferred_exit": 106.0,
+      "mood_tags": [
+        "investigation",
+        "mystery",
+        "paranoia"
+      ],
+      "use_cases": [
+        "classification",
+        "direct_promo"
+      ],
+      "narration_friendliness": "medium",
+      "intensity": "medium",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "medium",
+        "mean_rms_db": -9.678,
+        "energy_delta_db": 0.075,
+        "transient_score": 0.035194,
+        "notes": "Candidate stable-energy passage with comparatively even density.",
+        "preview": "artifacts/mf-010/previews/cold_concrete_anatomy__investigation_a__preview.mp3",
+        "preview_sha256": "c0b92ffe23a9a4f522574e2f04287e092e71bc1618485175b71a36789e2f37a9",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    },
+    {
+      "id": "pursuit_a",
+      "usable_start": 111.0,
+      "usable_end": 151.0,
+      "preferred_entry": 113.0,
+      "preferred_exit": 146.0,
+      "mood_tags": [
+        "pursuit",
+        "tension",
+        "escalation"
+      ],
+      "use_cases": [
+        "tracking",
+        "direct_promo"
+      ],
+      "narration_friendliness": "low",
+      "intensity": "rising",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "low",
+        "mean_rms_db": -13.886,
+        "energy_delta_db": 14.712,
+        "transient_score": 0.040915,
+        "notes": "Candidate higher-energy passage with sustained motion.",
+        "preview": "artifacts/mf-010/previews/cold_concrete_anatomy__pursuit_a__preview.mp3",
+        "preview_sha256": "62cb12944720181d93467bdff037414f478bfc75b2154fc7571cf4b573627235",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    },
+    {
+      "id": "revelation_a",
+      "usable_start": 5.0,
+      "usable_end": 49.0,
+      "preferred_entry": 9.0,
+      "preferred_exit": 46.0,
+      "mood_tags": [
+        "revelation",
+        "discovery",
+        "ominous"
+      ],
+      "use_cases": [
+        "biometric_reveal",
+        "title_reveal"
+      ],
+      "narration_friendliness": "medium",
+      "intensity": "rising",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "low",
+        "mean_rms_db": -14.576,
+        "energy_delta_db": 12.48,
+        "transient_score": 0.023013,
+        "notes": "Candidate build/change passage selected from measured energy rise.",
+        "preview": "artifacts/mf-010/previews/cold_concrete_anatomy__revelation_a__preview.mp3",
+        "preview_sha256": "50ac76a1607cc8b94ca79df00563c9f2f39a67d09b465ff20a070ea7b31deb66",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    },
+    {
+      "id": "resolution_a",
+      "usable_start": 133.0,
+      "usable_end": 167.0,
+      "preferred_entry": 135.0,
+      "preferred_exit": 160.0,
+      "mood_tags": [
+        "resolution",
+        "reflective"
+      ],
+      "use_cases": [
+        "cta",
+        "excerpt"
+      ],
+      "narration_friendliness": "medium",
+      "intensity": "falling",
+      "analysis": {
+        "method": "mf010_deterministic_energy_v1",
+        "version": 1,
+        "confidence": "low",
+        "mean_rms_db": -17.463,
+        "energy_delta_db": -17.261,
+        "transient_score": 0.030304,
+        "notes": "Candidate late-song passage with room for a fade or CTA transition.",
+        "preview": "artifacts/mf-010/previews/cold_concrete_anatomy__resolution_a__preview.mp3",
+        "preview_sha256": "87fd631a3fd4019f06152db393ad016e830fa8fbe37b166cb8fed8c389af128c",
+        "preview_duration_seconds": 15.0
+      },
+      "human": {
+        "notes": null,
+        "edited": false
+      },
+      "approval": {
+        "status": "PENDING_APPROVAL",
+        "proposed_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+        "approved_sha256": null,
+        "reviewed_at": null,
+        "reviewer": null,
+        "note": null
+      },
+      "notes": "Automatic analysis is advisory; human listening is authoritative."
+    }
+  ],
+  "overlap_awareness": [
+    {
+      "a": "ambient_a",
+      "b": "pursuit_a",
+      "overlap_seconds": 8.0,
+      "smaller_region_overlap_ratio": 0.25,
+      "highly_overlapping": false
+    },
+    {
+      "a": "ambient_a",
+      "b": "resolution_a",
+      "overlap_seconds": 24.0,
+      "smaller_region_overlap_ratio": 0.75,
+      "highly_overlapping": false
+    },
+    {
+      "a": "pursuit_a",
+      "b": "resolution_a",
+      "overlap_seconds": 18.0,
+      "smaller_region_overlap_ratio": 0.529,
+      "highly_overlapping": false
+    }
+  ],
+  "waveform": "artifacts/mf-010/waveforms/cold_concrete_anatomy__waveform.png",
+  "advisory": true,
+  "human_listening_authoritative": true
+}

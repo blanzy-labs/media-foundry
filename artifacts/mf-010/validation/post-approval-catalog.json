@@ -1,0 +1,14 @@
+{
+  "operation": "validate",
+  "catalog": "/home/blanzy/projects/media-foundry/config/music/catalog.json",
+  "tracks": 4,
+  "production_eligible": [
+    "unknown-process:abandoned_intake",
+    "unknown-process:below_the_iron_floor",
+    "unknown-process:cold_concrete_anatomy",
+    "unknown-process:concrete_and_chain"
+  ],
+  "errors": [],
+  "warnings": [],
+  "result": "PASS"
+}
