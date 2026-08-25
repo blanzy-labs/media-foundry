@@ -1,0 +1,16 @@
+{
+  "contract": "mf010_music_selection_v1",
+  "project": "unknown-process",
+  "track_id": "below_the_iron_floor",
+  "qualified_id": "unknown-process:below_the_iron_floor",
+  "track_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+  "region_id": "revelation_a",
+  "usable_start": 67.0,
+  "usable_end": 111.0,
+  "actual_start": 71.0,
+  "actual_end": 100.0,
+  "video_duration": 29.0,
+  "fade_in": 1.0,
+  "fade_out": 2.5,
+  "result": "PASS"
+}

@@ -1,0 +1,55 @@
+{
+  "job_id": "simon-pursuit",
+  "title": "Simon \u2014 Pursuit",
+  "state": "READY_FOR_REVIEW",
+  "technical": "PASS",
+  "editorial": "PENDING_HUMAN",
+  "release": "PENDING_HUMAN",
+  "runtime_seconds": 27.0,
+  "mechanism": "tracking",
+  "profiles": {
+    "palette_profile": "pursuit",
+    "camera_profile": "tight_pursuit",
+    "node_profile": "urgent",
+    "projection_profile": "warning_trace",
+    "cta_profile": "warning"
+  },
+  "music": {
+    "track_id": "concrete_and_chain",
+    "region_id": "pursuit_a",
+    "actual_start": 21.0,
+    "actual_end": 48.0,
+    "video_duration": 27.0,
+    "fade_in": 0.6,
+    "fade_out": 1.6,
+    "gain_db": -5.0,
+    "ducking": {
+      "narration_duck_db": -8.0,
+      "attack_ms": 90,
+      "release_ms": 240
+    },
+    "selection_reason": "Preferred entry aligns with the approved rising pursuit passage and leaves a controlled fade into CTA.",
+    "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91"
+  },
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf008b-r1/directed-batch-001/scheduled-run-002/simon-pursuit/final.mp4",
+    "bytes": 5867248,
+    "sha256": "6bdb807c62db0bb256b2c62c6447f8579a5719efdc190dd1df305c960af55df7"
+  },
+  "metrics": {
+    "selection_ms": 66,
+    "creative-preflight_ms": 51,
+    "timeline-preflight_ms": 52,
+    "music_ms": 1138,
+    "sfx_ms": 864,
+    "render_ms": 191956,
+    "mix_ms": 1541,
+    "encode_ms": 27423,
+    "media_validation_ms": 716,
+    "output_validation_ms": 50
+  },
+  "publish": false,
+  "result": "PASS",
+  "attempts": 1,
+  "attempt_errors": []
+}

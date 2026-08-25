@@ -1,0 +1,192 @@
+{
+  "video_id": "simon-pursuit",
+  "runtime_seconds": 27.0,
+  "narration": "NOT_PRESENT",
+  "music": {
+    "track_id": "concrete_and_chain",
+    "region_id": "pursuit_a",
+    "actual_start": 21.0,
+    "actual_end": 48.0,
+    "fade_in": 0.6,
+    "fade_out": 1.6,
+    "gain_db": -5.0,
+    "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91"
+  },
+  "candidate_a": {
+    "path": "/home/blanzy/media-foundry-output/mf008b-r2/music-only-ab-001/simon/simon-a-music-sfx.mp4",
+    "sha256": "6bdb807c62db0bb256b2c62c6447f8579a5719efdc190dd1df305c960af55df7",
+    "r1_sha256": "6bdb807c62db0bb256b2c62c6447f8579a5719efdc190dd1df305c960af55df7",
+    "probe": {
+      "duration": 27.0,
+      "frame_rate": "30/1",
+      "frame_count": 810,
+      "video_codec": "h264",
+      "audio_codec": "aac"
+    },
+    "video_stream_sha256": "686fa60cf68482934fcb1065b8ca69ce7ca26046d633485305481227e8fe208c",
+    "sfx_enabled": true,
+    "sfx_event_count": 13,
+    "sfx_events": [
+      {
+        "id": "circuit_draw",
+        "event": "path_draw_start",
+        "time": 0.05,
+        "type": "circuit_draw",
+        "duration": 0.55,
+        "gain": 0.035
+      },
+      {
+        "id": "energy_flow",
+        "event": "energy_flow",
+        "time": 0.75,
+        "type": "energy_flow",
+        "duration": 1.1,
+        "gain": 0.04
+      },
+      {
+        "id": "overload_rise",
+        "event": "overload",
+        "time": 1.9,
+        "type": "overload_rise",
+        "duration": 0.72,
+        "gain": 0.055
+      },
+      {
+        "id": "spark",
+        "event": "spark_burst",
+        "time": 2.7,
+        "type": "spark_burst",
+        "duration": 0.48,
+        "gain": 0.1
+      },
+      {
+        "id": "projection",
+        "event": "screen_initialize",
+        "time": 2.9,
+        "type": "projection_emission",
+        "duration": 0.8,
+        "gain": 0.055
+      },
+      {
+        "id": "simon_lock",
+        "event": "record_lock_1",
+        "time": 8.65,
+        "type": "target_lock",
+        "duration": 0.3,
+        "gain": 0.035
+      },
+      {
+        "id": "refresh_1",
+        "event": "record_reset_1",
+        "time": 9.7,
+        "type": "projection_refresh",
+        "duration": 0.38,
+        "gain": 0.038
+      },
+      {
+        "id": "bridge_lock",
+        "event": "record_lock_2",
+        "time": 13.0,
+        "type": "bridge_lock",
+        "duration": 0.46,
+        "gain": 0.03
+      },
+      {
+        "id": "refresh_2",
+        "event": "record_reset_2",
+        "time": 13.95,
+        "type": "projection_refresh",
+        "duration": 0.38,
+        "gain": 0.038
+      },
+      {
+        "id": "hidden_reveal",
+        "event": "record_lock_3",
+        "time": 17.3,
+        "type": "hidden_reveal",
+        "duration": 0.42,
+        "gain": 0.035
+      },
+      {
+        "id": "collapse",
+        "event": "screen_collapse",
+        "time": 19.1,
+        "type": "projection_collapse",
+        "duration": 1.0,
+        "gain": 0.05
+      },
+      {
+        "id": "return",
+        "event": "return_energy",
+        "time": 20.7,
+        "type": "energy_flow",
+        "duration": 1.1,
+        "gain": 0.03
+      },
+      {
+        "id": "cta_resolve",
+        "event": "cta_lock",
+        "time": 23.65,
+        "type": "cta_resolve",
+        "duration": 0.52,
+        "gain": 0.03
+      }
+    ],
+    "loudness": {
+      "integrated_lufs": -16.7,
+      "loudness_range_lu": 2.3,
+      "true_peak_dbfs": -1.2
+    }
+  },
+  "candidate_b": {
+    "path": "/home/blanzy/media-foundry-output/mf008b-r2/music-only-ab-001/simon/simon-b-music-only.mp4",
+    "sha256": "49c21b48f2cbb6ab64bfcb75d4442f6923668dcdc485385076d125630767e3d0",
+    "probe": {
+      "duration": 27.0,
+      "frame_rate": "30/1",
+      "frame_count": 810,
+      "video_codec": "h264",
+      "audio_codec": "aac"
+    },
+    "video_stream_sha256": "686fa60cf68482934fcb1065b8ca69ce7ca26046d633485305481227e8fe208c",
+    "sfx_enabled": false,
+    "sfx_event_count": 0,
+    "audio_sources": [
+      "/home/blanzy/media-foundry-output/mf008b-r1/directed-batch-001/scheduled-run-002/simon-pursuit/audio/music.wav"
+    ],
+    "ambient_replacement": false,
+    "new_audio_events": 0,
+    "mastering": {
+      "policy": "inherit_candidate_a_measured_loudnorm_parameters",
+      "candidate_a_measurement": {
+        "input_i": "-30.78",
+        "input_tp": "-7.08",
+        "input_lra": "2.50",
+        "input_thresh": "-41.42",
+        "output_i": "-16.76",
+        "output_tp": "-2.00",
+        "output_lra": "2.20",
+        "output_thresh": "-27.17",
+        "normalization_type": "dynamic",
+        "target_offset": "1.26"
+      }
+    },
+    "loudness": {
+      "integrated_lufs": -16.3,
+      "loudness_range_lu": 2.9,
+      "true_peak_dbfs": -1.8
+    }
+  },
+  "integrity": {
+    "candidate_a_byte_preserved": true,
+    "video_stream_byte_identical": true,
+    "duration_equal": true,
+    "frame_count_equal": true,
+    "representative_frame_equal": true,
+    "music_identity_equal": true,
+    "music_offsets_equal": true,
+    "music_fades_equal": true,
+    "only_source_layer_change": "SFX_DISABLED"
+  },
+  "result": "PASS"
+}

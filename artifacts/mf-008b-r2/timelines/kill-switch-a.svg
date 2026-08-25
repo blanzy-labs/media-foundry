@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="180" viewBox="0 0 1200 180">
+<rect width="100%" height="100%" fill="#071016"/>
+<text x="20" y="58" fill="#dcefe9" font-family="sans-serif" font-size="22">MUSIC</text>
+<rect x="130" y="38" width="1020" height="28" rx="5" fill="#43cdbb"/>
+<text x="20" y="128" fill="#dcefe9" font-family="sans-serif" font-size="22">SFX</text>
+<rect x="131.76" y="108" width="19.34" height="28" rx="3" fill="#e58d43"/>
+<rect x="156.38" y="108" width="38.69" height="28" rx="3" fill="#e58d43"/>
+<rect x="196.83" y="108" width="25.32" height="28" rx="3" fill="#e58d43"/>
+<rect x="224.97" y="108" width="16.88" height="28" rx="3" fill="#e58d43"/>
+<rect x="232.00" y="108" width="28.14" height="28" rx="3" fill="#e58d43"/>
+<rect x="434.24" y="108" width="10.55" height="28" rx="3" fill="#e58d43"/>
+<rect x="471.17" y="108" width="13.37" height="28" rx="3" fill="#e58d43"/>
+<rect x="587.24" y="108" width="16.18" height="28" rx="3" fill="#e58d43"/>
+<rect x="620.66" y="108" width="13.37" height="28" rx="3" fill="#e58d43"/>
+<rect x="738.48" y="108" width="14.77" height="28" rx="3" fill="#e58d43"/>
+<rect x="801.79" y="108" width="35.17" height="28" rx="3" fill="#e58d43"/>
+<rect x="858.07" y="108" width="38.69" height="28" rx="3" fill="#e58d43"/>
+<rect x="961.83" y="108" width="18.29" height="28" rx="3" fill="#e58d43"/>
+<text x="130" y="165" fill="#77958e" font-family="sans-serif" font-size="16">0s</text>
+<text x="1105" y="165" fill="#77958e" font-family="sans-serif" font-size="16">29s</text>
+</svg>

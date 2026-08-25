@@ -1,0 +1,116 @@
+{
+  "slice": "MF-008B-R2",
+  "type": "independent_ab_validation",
+  "archive": "/home/blanzy/media-foundry-output/mf008b-r2/music-only-ab-001",
+  "renderer_files": [
+    {
+      "path": "godot/mf002.tscn",
+      "expected_sha256": "f94e4ce708e2b68da235f70b2ba4ec44282c3564c0959440865de24c6d71fda2",
+      "actual_sha256": "f94e4ce708e2b68da235f70b2ba4ec44282c3564c0959440865de24c6d71fda2",
+      "result": "PASS"
+    },
+    {
+      "path": "godot/mf002.gd",
+      "expected_sha256": "296d69385011454ad2aa1f0c15d8bb9043879178bf9c47513b50cdf4f63a4d76",
+      "actual_sha256": "296d69385011454ad2aa1f0c15d8bb9043879178bf9c47513b50cdf4f63a4d76",
+      "result": "PASS"
+    },
+    {
+      "path": "godot/beat_timeline.gd",
+      "expected_sha256": "34494dcd3f3b40e865f51f62aa5649546ba1cd6367ec5aaeabf13ffa69d48d04",
+      "actual_sha256": "34494dcd3f3b40e865f51f62aa5649546ba1cd6367ec5aaeabf13ffa69d48d04",
+      "result": "PASS"
+    },
+    {
+      "path": "godot/lofi_book_stage.gd",
+      "expected_sha256": "0b2e1bf729c32c1cd6c52068def97cf71b04a266bef246093b0604a32f2dd950",
+      "actual_sha256": "0b2e1bf729c32c1cd6c52068def97cf71b04a266bef246093b0604a32f2dd950",
+      "result": "PASS"
+    },
+    {
+      "path": "godot/projected_data_window_stage.gd",
+      "expected_sha256": "6adae54cb26a23b3f813b9e31f842ff97f7ffcb1ae63132e98d4d1d5b99862e7",
+      "actual_sha256": "6adae54cb26a23b3f813b9e31f842ff97f7ffcb1ae63132e98d4d1d5b99862e7",
+      "result": "PASS"
+    },
+    {
+      "path": "godot/integrated_lower_right_stage.gd",
+      "expected_sha256": "fc12ec5dbdc19d42ded123ff351f9692ec4dbf505f79ea2c67a7f7f2eff8141d",
+      "actual_sha256": "fc12ec5dbdc19d42ded123ff351f9692ec4dbf505f79ea2c67a7f7f2eff8141d",
+      "result": "PASS"
+    },
+    {
+      "path": "godot/indicator_pulse_stage.gd",
+      "expected_sha256": "505e5b30000998786800356804832125abb656291a66a68d1a6f8449ed594051",
+      "actual_sha256": "505e5b30000998786800356804832125abb656291a66a68d1a6f8449ed594051",
+      "result": "PASS"
+    }
+  ],
+  "pairs": [
+    {
+      "video_id": "simon-pursuit",
+      "checks": {
+        "candidate_a_preserved": "PASS",
+        "candidate_b_hash": "PASS",
+        "full_decode": "PASS",
+        "video_stream_identity": "PASS",
+        "frame_and_runtime_identity": "PASS",
+        "decoded_frame_identity": "PASS",
+        "music_identity": "PASS",
+        "sfx_isolated": "PASS",
+        "music_only_source": "PASS",
+        "loudness_fairness": "PASS",
+        "comparison_evidence": "PASS"
+      },
+      "loudness_delta_lu": 0.4,
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "video_id": "leo-zeph-investigation",
+      "checks": {
+        "candidate_a_preserved": "PASS",
+        "candidate_b_hash": "PASS",
+        "full_decode": "PASS",
+        "video_stream_identity": "PASS",
+        "frame_and_runtime_identity": "PASS",
+        "decoded_frame_identity": "PASS",
+        "music_identity": "PASS",
+        "sfx_isolated": "PASS",
+        "music_only_source": "PASS",
+        "loudness_fairness": "PASS",
+        "comparison_evidence": "PASS"
+      },
+      "loudness_delta_lu": 0.6,
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "video_id": "kill-switch-revelation",
+      "checks": {
+        "candidate_a_preserved": "PASS",
+        "candidate_b_hash": "PASS",
+        "full_decode": "PASS",
+        "video_stream_identity": "PASS",
+        "frame_and_runtime_identity": "PASS",
+        "decoded_frame_identity": "PASS",
+        "music_identity": "PASS",
+        "sfx_isolated": "PASS",
+        "music_only_source": "PASS",
+        "loudness_fairness": "PASS",
+        "comparison_evidence": "PASS"
+      },
+      "loudness_delta_lu": 0.9,
+      "errors": [],
+      "result": "PASS"
+    }
+  ],
+  "checks": {
+    "three_pairs_six_outputs": "PASS",
+    "visual_changes_zero": "PASS",
+    "renderer_changes_zero": "PASS",
+    "no_publication": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

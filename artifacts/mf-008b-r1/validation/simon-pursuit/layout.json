@@ -1,0 +1,1302 @@
+{
+  "fixture": "mf008b-r1-simon-pursuit",
+  "generated_scene": {
+    "audio_visual_contract": {
+      "cta_resolve_cue": 1,
+      "event_specific_confirmations": 3,
+      "production_narration_alignment": "BLOCKED_PRODUCTION_VOICE",
+      "refresh_cues": 2
+    },
+    "background_cells": {
+      "accent_count": 12,
+      "accent_ratio": 0.222222222222222,
+      "breathing_count": 6,
+      "central_reading_area_dimmed": true,
+      "counts": {
+        "blue": 3,
+        "cyan": 3,
+        "green": 3,
+        "purple": 3
+      },
+      "cta_response": true,
+      "dark_majority": 42,
+      "deterministic_phase_offsets": true,
+      "event_reactive": true,
+      "extended_pulse": true,
+      "green_emphasis": 0.33,
+      "green_phone_visible": true,
+      "hierarchy_subordinate": true,
+      "noticeable_phone_brightness": true,
+      "overload_response": true,
+      "palette": [
+        "dark",
+        "current",
+        "purple",
+        "green",
+        "blue",
+        "cyan"
+      ],
+      "record_initialize_response": true,
+      "seeded_irregular_placement": true,
+      "total": 54,
+      "within_defined_limits": true
+    },
+    "book_support": {
+      "clamps": 4,
+      "coil": true,
+      "contacts": 6,
+      "id": "cradle",
+      "legacy_ambiguous_platform_removed": true,
+      "purpose": "book-generation cradle"
+    },
+    "camera_events": [
+      {
+        "id": "spark_burst",
+        "observed_frame": 809,
+        "time": 2.6,
+        "type": "spark_burst"
+      },
+      {
+        "id": "camera_push",
+        "observed_frame": 809,
+        "time": 2.964,
+        "type": "camera_push"
+      },
+      {
+        "id": "final_record_settle",
+        "observed_frame": 809,
+        "time": 17.6,
+        "type": "settle"
+      },
+      {
+        "id": "camera_pull_back",
+        "observed_frame": 809,
+        "time": 20.76,
+        "type": "camera_pull_back"
+      },
+      {
+        "id": "cta_settle",
+        "observed_frame": 809,
+        "time": 24.6,
+        "type": "settle"
+      }
+    ],
+    "circuit_system": {
+      "all_paths_terminate_at_central_node": true,
+      "burst": 2.6,
+      "central_node_charge": 1.404,
+      "energy_flow_start": 0.728,
+      "overload": 1.82,
+      "packets_follow_defined_paths": true,
+      "path_count": 7,
+      "paths_draw_complete": 0.676,
+      "paths_draw_start": 0.0,
+      "return_energy_uses_same_paths": true
+    },
+    "components": [
+      "chamber",
+      "circuits",
+      "burst",
+      "cradle",
+      "book",
+      "page_1",
+      "page_2",
+      "page_3",
+      "dissolve",
+      "lights",
+      "powered_cells",
+      "website"
+    ],
+    "configured_events": [
+      {
+        "id": "path_draw_start",
+        "time": 0.0,
+        "type": "path_draw_start"
+      },
+      {
+        "id": "paths_drawn",
+        "time": 0.676,
+        "type": "paths_drawn"
+      },
+      {
+        "id": "energy_flow",
+        "time": 0.728,
+        "type": "energy_flow"
+      },
+      {
+        "id": "central_node_charge",
+        "time": 1.404,
+        "type": "central_node_charge"
+      },
+      {
+        "id": "overload",
+        "time": 1.82,
+        "type": "overload"
+      },
+      {
+        "id": "overload_pulse_1",
+        "time": 2.028,
+        "type": "overload_pulse"
+      },
+      {
+        "id": "overload_pulse_2",
+        "time": 2.34,
+        "type": "overload_pulse"
+      },
+      {
+        "id": "overload_peak",
+        "time": 2.444,
+        "type": "overload_peak"
+      },
+      {
+        "id": "spark_burst",
+        "time": 2.6,
+        "type": "spark_burst"
+      },
+      {
+        "id": "title_form",
+        "time": 2.678,
+        "type": "title_form"
+      },
+      {
+        "id": "projection_emission",
+        "time": 2.782,
+        "type": "projection_emission"
+      },
+      {
+        "id": "screen_initialize",
+        "time": 2.782,
+        "type": "screen_initialize"
+      },
+      {
+        "id": "camera_push",
+        "time": 2.964,
+        "type": "camera_push"
+      },
+      {
+        "id": "title_stabilized",
+        "time": 3.328,
+        "type": "title_stabilized"
+      },
+      {
+        "id": "record_query_1",
+        "time": 5.2,
+        "type": "record_query"
+      },
+      {
+        "id": "record_typing_1",
+        "time": 5.737,
+        "type": "record_typing"
+      },
+      {
+        "id": "record_activity_1",
+        "time": 6.357,
+        "type": "record_activity"
+      },
+      {
+        "id": "target_search",
+        "time": 6.357,
+        "type": "target_search"
+      },
+      {
+        "id": "record_confirm_1",
+        "time": 7.928,
+        "type": "record_confirm"
+      },
+      {
+        "id": "record_lock_1",
+        "time": 8.341,
+        "type": "record_lock"
+      },
+      {
+        "id": "record_hold_1",
+        "time": 8.713,
+        "type": "record_hold"
+      },
+      {
+        "id": "record_reset_1",
+        "time": 9.044,
+        "type": "record_reset"
+      },
+      {
+        "id": "screen_refresh_1",
+        "time": 9.168,
+        "type": "screen_refresh"
+      },
+      {
+        "id": "record_query_2",
+        "time": 9.333,
+        "type": "record_query"
+      },
+      {
+        "id": "record_typing_2",
+        "time": 9.871,
+        "type": "record_typing"
+      },
+      {
+        "id": "record_activity_2",
+        "time": 10.491,
+        "type": "record_activity"
+      },
+      {
+        "id": "target_reacquire",
+        "time": 10.491,
+        "type": "target_reacquire"
+      },
+      {
+        "id": "record_confirm_2",
+        "time": 12.061,
+        "type": "record_confirm"
+      },
+      {
+        "id": "record_lock_2",
+        "time": 12.475,
+        "type": "record_lock"
+      },
+      {
+        "id": "record_hold_2",
+        "time": 12.847,
+        "type": "record_hold"
+      },
+      {
+        "id": "record_reset_2",
+        "time": 13.177,
+        "type": "record_reset"
+      },
+      {
+        "id": "screen_refresh_2",
+        "time": 13.301,
+        "type": "screen_refresh"
+      },
+      {
+        "id": "record_query_3",
+        "time": 13.467,
+        "type": "record_query"
+      },
+      {
+        "id": "record_typing_3",
+        "time": 14.004,
+        "type": "record_typing"
+      },
+      {
+        "id": "record_activity_3",
+        "time": 14.624,
+        "type": "record_activity"
+      },
+      {
+        "id": "record_confirm_3",
+        "time": 16.195,
+        "type": "record_confirm"
+      },
+      {
+        "id": "record_lock_3",
+        "time": 16.608,
+        "type": "record_lock"
+      },
+      {
+        "id": "target_lock",
+        "time": 16.608,
+        "type": "target_lock"
+      },
+      {
+        "id": "record_hold_3",
+        "time": 16.98,
+        "type": "record_hold"
+      },
+      {
+        "id": "final_record_settle",
+        "time": 17.6,
+        "type": "settle"
+      },
+      {
+        "id": "data_dissolve",
+        "time": 19.0,
+        "type": "data_dissolve"
+      },
+      {
+        "id": "screen_collapse",
+        "time": 19.0,
+        "type": "screen_collapse"
+      },
+      {
+        "id": "energy_reclaimed",
+        "time": 19.8,
+        "type": "energy_reclaimed"
+      },
+      {
+        "id": "return_energy",
+        "time": 20.28,
+        "type": "return_energy"
+      },
+      {
+        "id": "camera_pull_back",
+        "time": 20.76,
+        "type": "camera_pull_back"
+      },
+      {
+        "id": "cta_energy",
+        "time": 21.72,
+        "type": "cta_energy"
+      },
+      {
+        "id": "cta_typing",
+        "time": 22.44,
+        "type": "cta_typing"
+      },
+      {
+        "id": "cta_lock",
+        "time": 23.4,
+        "type": "cta_lock"
+      },
+      {
+        "id": "cta_reveal",
+        "time": 23.96,
+        "type": "cta_reveal"
+      },
+      {
+        "id": "website_reveal",
+        "time": 23.96,
+        "type": "website_reveal"
+      },
+      {
+        "id": "cta_settle",
+        "time": 24.6,
+        "type": "settle"
+      }
+    ],
+    "continuous_scene": {
+      "duration": 27.0,
+      "end": 27.0,
+      "start": 0.0
+    },
+    "creative_control": {
+      "camera_profile": "tight_pursuit",
+      "campaign_identity": "unknown_process_recovered_record",
+      "cta_profile": "warning",
+      "event_evidence": [
+        {
+          "id": "target_search",
+          "observed": {
+            "id": "target_search",
+            "observed_frame": 809,
+            "time": 6.357,
+            "type": "target_search"
+          },
+          "status": "PASS"
+        },
+        {
+          "id": "target_reacquire",
+          "observed": {
+            "id": "target_reacquire",
+            "observed_frame": 809,
+            "time": 10.491,
+            "type": "target_reacquire"
+          },
+          "status": "PASS"
+        },
+        {
+          "id": "target_lock",
+          "observed": {
+            "id": "target_lock",
+            "observed_frame": 809,
+            "time": 16.608,
+            "type": "target_lock"
+          },
+          "status": "PASS"
+        }
+      ],
+      "mechanism": "tracking",
+      "mechanism_exclusivity": {
+        "biometric_scan": "NOT_RUN",
+        "classification_link": "NOT_RUN",
+        "tracking": "PASS"
+      },
+      "mode": "directed",
+      "node_profile": "urgent",
+      "palette_profile": "pursuit",
+      "projection_profile": "warning_trace",
+      "result": "PASS",
+      "single_window_preserved": true,
+      "timing": {
+        "cta_seconds": 8.0,
+        "intro_seconds": 5.2,
+        "investigation_seconds": 12.4,
+        "result_hold_seconds": 1.4
+      }
+    },
+    "cta": {
+      "canonical_url": "https://rcblanzy.com/books/unknown-process",
+      "display_url": "rcblanzy.com/books/unknown-process",
+      "energy_packets_visible": true,
+      "final_hold": 2.49,
+      "final_resolved_signal": true,
+      "final_stable_time": 24.51,
+      "live_investigation_system": true,
+      "lock_event": 23.4,
+      "major_motion_stops_after": 24.6,
+      "packet_paths": 2,
+      "packets_follow_defined_paths": true,
+      "safe_rect": {
+        "height": 260,
+        "width": 452,
+        "x": 44,
+        "y": 330
+      },
+      "text": "Continue the adventure",
+      "text_then_url": true,
+      "typed_reveal": true,
+      "url_stabilizes": true,
+      "website": "https://rcblanzy.com/books/unknown-process",
+      "world_integrated": true
+    },
+    "depth_system": {
+      "center_foreground_cable": false,
+      "foreground_side_cables": true,
+      "layer_count": 4,
+      "light_falloff": true,
+      "particles": true,
+      "screen_perspective": "mild",
+      "wall_parallax": true
+    },
+    "extended_record_activity": {
+      "added_seconds": 8.7,
+      "baseline_duration": 18.3,
+      "cta_hold": 3.04,
+      "cta_typed": true,
+      "duration": 27.0,
+      "live_after_typing": true,
+      "micro_diagrams": 3,
+      "node_post_projection_intensity": 0.34,
+      "record_activity_events": 3,
+      "record_lock_events": 3,
+      "screen_scale_story": 1.06,
+      "single_window_preserved": true
+    },
+    "external_static_media_primary": false,
+    "final_motion_polish": {
+      "architectural_changes": 0,
+      "biometrics": {
+        "completion_illumination": true,
+        "hidden_segment_count": 1,
+        "scan_traversal": true
+      },
+      "legibility_gain_target_percent": 15,
+      "leo_zeph": {
+        "pulse_count": 3,
+        "stable_connection": true,
+        "traveling_bridge_signal": true
+      },
+      "new_visual_metaphors": 0,
+      "simon": {
+        "completion_state": true,
+        "moving_acquisition": true,
+        "subtle_hold_motion": true
+      }
+    },
+    "generated_book": null,
+    "indicator_pulse": {
+      "added_indicator_count": 0,
+      "all_synchronized": false,
+      "approved_indicator_count": 4,
+      "architectural_changes": 0,
+      "audio_unchanged": true,
+      "base_radius": 4.0,
+      "chase_animation": false,
+      "color_family": "yellow/orange",
+      "constant_blinking": false,
+      "custom_event_sequence": false,
+      "deterministic": true,
+      "irregular_timing": true,
+      "major_visual_redesign": 0,
+      "maximum_individual_duty_cycle": 0.109,
+      "maximum_simultaneous_pulses": 2,
+      "mean_individual_duty_cycle": 0.088,
+      "negative_space_unchanged": true,
+      "new_geometry": 0,
+      "new_sfx": 0,
+      "peak_overlay_alpha": 0.28,
+      "peak_radius": 5.2,
+      "periods_seconds": [
+        5.7,
+        7.9,
+        6.8,
+        9.1
+      ],
+      "phase_offsets_seconds": [
+        0.6,
+        2.8,
+        4.7,
+        1.9
+      ],
+      "positions_unchanged": true,
+      "pulse_durations_seconds": [
+        0.62,
+        0.65,
+        0.62,
+        0.65
+      ],
+      "pulse_shape": "sine-squared soft lift",
+      "removed_indicator_count": 0,
+      "resting_glow_inherited": true,
+      "shared_period": false,
+      "subordinate_to_cta": true,
+      "subordinate_to_node": true,
+      "subordinate_to_projection": true,
+      "timings_unchanged": true
+    },
+    "internal_resolution": {
+      "height": 960,
+      "width": 540
+    },
+    "live_investigation": {
+      "animated_investigations": 3,
+      "beat_behaviors": [
+        "target acquisition",
+        "linked-pair discovery",
+        "hidden biometric segment reveal"
+      ],
+      "confirm_events": 3,
+      "discovery_before_confirmation": true,
+      "faux_ui_clutter": false,
+      "query_events": 3,
+      "records": 3,
+      "same_window_all_records": true,
+      "single_window_preserved": true
+    },
+    "lower_right_integration": {
+      "added_network_path_count": 1,
+      "architectural_changes": 0,
+      "audio_unchanged": true,
+      "camera_unchanged": true,
+      "connects_directly_to_main_hub": true,
+      "custom_corner_event_animation": false,
+      "dedicated_packet_sequence": false,
+      "event_response": "shared system behavior",
+      "major_visual_redesign": 0,
+      "negative_space_ratio": 0.66,
+      "new_major_geometry": 0,
+      "new_sfx": 0,
+      "path_endpoint": {
+        "x": 0.0,
+        "y": 125.0
+      },
+      "path_point_count": 8,
+      "path_start_region": "lower-right edge",
+      "powered_cell_count": 0,
+      "r7_separate_branch_removed": true,
+      "r7_standalone_cell_removed": true,
+      "second_focal_point": false,
+      "subordinate_to_cta": true,
+      "subordinate_to_node": true,
+      "subordinate_to_projection": true,
+      "timings_unchanged": true,
+      "total_network_path_count": 7,
+      "uses_shared_circuit_collection": true,
+      "uses_shared_draw_logic": true,
+      "uses_shared_energy_logic": true
+    },
+    "node_overload_refinement": {
+      "added_emphasis": 0.48,
+      "baseline_duration": 0.3,
+      "brighter_node_pulse": true,
+      "capacity_acceleration": true,
+      "duration": 0.78,
+      "environment_reaction": true,
+      "extra_packet_cadence": true,
+      "peak_event": 2.444,
+      "r5_duration_preserved": true,
+      "r6_pulse_events": 2,
+      "tighter_energy_rings": true
+    },
+    "observed_events": [
+      {
+        "id": "path_draw_start",
+        "observed_frame": 809,
+        "time": 0.0,
+        "type": "path_draw_start"
+      },
+      {
+        "id": "paths_drawn",
+        "observed_frame": 809,
+        "time": 0.676,
+        "type": "paths_drawn"
+      },
+      {
+        "id": "energy_flow",
+        "observed_frame": 809,
+        "time": 0.728,
+        "type": "energy_flow"
+      },
+      {
+        "id": "central_node_charge",
+        "observed_frame": 809,
+        "time": 1.404,
+        "type": "central_node_charge"
+      },
+      {
+        "id": "overload",
+        "observed_frame": 809,
+        "time": 1.82,
+        "type": "overload"
+      },
+      {
+        "id": "overload_pulse_1",
+        "observed_frame": 809,
+        "time": 2.028,
+        "type": "overload_pulse"
+      },
+      {
+        "id": "overload_pulse_2",
+        "observed_frame": 809,
+        "time": 2.34,
+        "type": "overload_pulse"
+      },
+      {
+        "id": "overload_peak",
+        "observed_frame": 809,
+        "time": 2.444,
+        "type": "overload_peak"
+      },
+      {
+        "id": "spark_burst",
+        "observed_frame": 809,
+        "time": 2.6,
+        "type": "spark_burst"
+      },
+      {
+        "id": "title_form",
+        "observed_frame": 809,
+        "time": 2.678,
+        "type": "title_form"
+      },
+      {
+        "id": "projection_emission",
+        "observed_frame": 809,
+        "time": 2.782,
+        "type": "projection_emission"
+      },
+      {
+        "id": "screen_initialize",
+        "observed_frame": 809,
+        "time": 2.782,
+        "type": "screen_initialize"
+      },
+      {
+        "id": "camera_push",
+        "observed_frame": 809,
+        "time": 2.964,
+        "type": "camera_push"
+      },
+      {
+        "id": "title_stabilized",
+        "observed_frame": 809,
+        "time": 3.328,
+        "type": "title_stabilized"
+      },
+      {
+        "id": "record_query_1",
+        "observed_frame": 809,
+        "time": 5.2,
+        "type": "record_query"
+      },
+      {
+        "id": "record_typing_1",
+        "observed_frame": 809,
+        "time": 5.737,
+        "type": "record_typing"
+      },
+      {
+        "id": "record_activity_1",
+        "observed_frame": 809,
+        "time": 6.357,
+        "type": "record_activity"
+      },
+      {
+        "id": "target_search",
+        "observed_frame": 809,
+        "time": 6.357,
+        "type": "target_search"
+      },
+      {
+        "id": "record_confirm_1",
+        "observed_frame": 809,
+        "time": 7.928,
+        "type": "record_confirm"
+      },
+      {
+        "id": "record_lock_1",
+        "observed_frame": 809,
+        "time": 8.341,
+        "type": "record_lock"
+      },
+      {
+        "id": "record_hold_1",
+        "observed_frame": 809,
+        "time": 8.713,
+        "type": "record_hold"
+      },
+      {
+        "id": "record_reset_1",
+        "observed_frame": 809,
+        "time": 9.044,
+        "type": "record_reset"
+      },
+      {
+        "id": "screen_refresh_1",
+        "observed_frame": 809,
+        "time": 9.168,
+        "type": "screen_refresh"
+      },
+      {
+        "id": "record_query_2",
+        "observed_frame": 809,
+        "time": 9.333,
+        "type": "record_query"
+      },
+      {
+        "id": "record_typing_2",
+        "observed_frame": 809,
+        "time": 9.871,
+        "type": "record_typing"
+      },
+      {
+        "id": "record_activity_2",
+        "observed_frame": 809,
+        "time": 10.491,
+        "type": "record_activity"
+      },
+      {
+        "id": "target_reacquire",
+        "observed_frame": 809,
+        "time": 10.491,
+        "type": "target_reacquire"
+      },
+      {
+        "id": "record_confirm_2",
+        "observed_frame": 809,
+        "time": 12.061,
+        "type": "record_confirm"
+      },
+      {
+        "id": "record_lock_2",
+        "observed_frame": 809,
+        "time": 12.475,
+        "type": "record_lock"
+      },
+      {
+        "id": "record_hold_2",
+        "observed_frame": 809,
+        "time": 12.847,
+        "type": "record_hold"
+      },
+      {
+        "id": "record_reset_2",
+        "observed_frame": 809,
+        "time": 13.177,
+        "type": "record_reset"
+      },
+      {
+        "id": "screen_refresh_2",
+        "observed_frame": 809,
+        "time": 13.301,
+        "type": "screen_refresh"
+      },
+      {
+        "id": "record_query_3",
+        "observed_frame": 809,
+        "time": 13.467,
+        "type": "record_query"
+      },
+      {
+        "id": "record_typing_3",
+        "observed_frame": 809,
+        "time": 14.004,
+        "type": "record_typing"
+      },
+      {
+        "id": "record_activity_3",
+        "observed_frame": 809,
+        "time": 14.624,
+        "type": "record_activity"
+      },
+      {
+        "id": "record_confirm_3",
+        "observed_frame": 809,
+        "time": 16.195,
+        "type": "record_confirm"
+      },
+      {
+        "id": "record_lock_3",
+        "observed_frame": 809,
+        "time": 16.608,
+        "type": "record_lock"
+      },
+      {
+        "id": "target_lock",
+        "observed_frame": 809,
+        "time": 16.608,
+        "type": "target_lock"
+      },
+      {
+        "id": "record_hold_3",
+        "observed_frame": 809,
+        "time": 16.98,
+        "type": "record_hold"
+      },
+      {
+        "id": "final_record_settle",
+        "observed_frame": 809,
+        "time": 17.6,
+        "type": "settle"
+      },
+      {
+        "id": "data_dissolve",
+        "observed_frame": 809,
+        "time": 19.0,
+        "type": "data_dissolve"
+      },
+      {
+        "id": "screen_collapse",
+        "observed_frame": 809,
+        "time": 19.0,
+        "type": "screen_collapse"
+      },
+      {
+        "id": "energy_reclaimed",
+        "observed_frame": 809,
+        "time": 19.8,
+        "type": "energy_reclaimed"
+      },
+      {
+        "id": "return_energy",
+        "observed_frame": 809,
+        "time": 20.28,
+        "type": "return_energy"
+      },
+      {
+        "id": "camera_pull_back",
+        "observed_frame": 809,
+        "time": 20.76,
+        "type": "camera_pull_back"
+      },
+      {
+        "id": "cta_energy",
+        "observed_frame": 809,
+        "time": 21.72,
+        "type": "cta_energy"
+      },
+      {
+        "id": "cta_typing",
+        "observed_frame": 809,
+        "time": 22.44,
+        "type": "cta_typing"
+      },
+      {
+        "id": "cta_lock",
+        "observed_frame": 809,
+        "time": 23.4,
+        "type": "cta_lock"
+      },
+      {
+        "id": "cta_reveal",
+        "observed_frame": 809,
+        "time": 23.96,
+        "type": "cta_reveal"
+      },
+      {
+        "id": "website_reveal",
+        "observed_frame": 809,
+        "time": 23.96,
+        "type": "website_reveal"
+      },
+      {
+        "id": "cta_settle",
+        "observed_frame": 809,
+        "time": 24.6,
+        "type": "settle"
+      }
+    ],
+    "page_treatments": [
+      "hunted/reticle",
+      "dual-target/data-bridge",
+      "biometric/kill-switch"
+    ],
+    "projected_codex": null,
+    "projected_data_window": {
+      "book_metaphor": false,
+      "collapse_to_node": true,
+      "content_first": true,
+      "id": "recovered-record-window",
+      "large_diagnostic_graphic": false,
+      "left_aligned_story_text": true,
+      "origin": "central-node/emitter-region",
+      "persistent_instance": true,
+      "primary_window_count": 1,
+      "same_instance_all_beats": true,
+      "scanlines": true,
+      "screen_behavior": true,
+      "single_coherent_boundary": true,
+      "split_page_projection": false,
+      "typed_text": true,
+      "wavy_center_line": false,
+      "yellow_circular_graphic": false
+    },
+    "projection_emitter": {
+      "connected_to_circuits": true,
+      "id": "emitter",
+      "legacy_cradle_removed": true,
+      "projection_origin": "(0.0, 125.0)",
+      "purpose": "node-coupled recovered-record projection source",
+      "subordinate_to_window": true
+    },
+    "projection_layout": {
+      "all_story_text_inside_content": true,
+      "circuit_intensity_behind_window": "suppressed",
+      "content_bounds": {
+        "height": 239,
+        "width": 338,
+        "x": 99,
+        "y": 220
+      },
+      "node_outside_content": true,
+      "story_text_bounds": [
+        {
+          "height": 54,
+          "width": 270,
+          "x": 111,
+          "y": 295
+        },
+        {
+          "height": 54,
+          "width": 270,
+          "x": 111,
+          "y": 295
+        },
+        {
+          "height": 54,
+          "width": 304,
+          "x": 111,
+          "y": 295
+        }
+      ],
+      "window_bounds": {
+        "height": 350,
+        "width": 416,
+        "x": 72,
+        "y": 174
+      }
+    },
+    "projection_physicality": {
+      "brightness_variation_max": 0.035,
+      "edge_shimmer": true,
+      "reading_phase_stable": true,
+      "refresh_emphasis_only": true,
+      "scanline_drift": true,
+      "text_transform_jitter": 0
+    },
+    "record_transitions": {
+      "blank_interval_max": 0.15,
+      "completion_holds": 3,
+      "reset_events": 2,
+      "same_surface": true,
+      "supporting_data_decay": true
+    },
+    "result": "PASS",
+    "screen_timeline": {
+      "activity_1": 6.357,
+      "activity_2": 10.491,
+      "activity_3": 14.624,
+      "collapse": 19.0,
+      "confirm_1": 7.928,
+      "confirm_2": 12.061,
+      "confirm_3": 16.195,
+      "cta_energy": 21.72,
+      "cta_lock": 23.4,
+      "cta_typing": 22.44,
+      "hold_1": 8.713,
+      "hold_2": 12.847,
+      "hold_3": 16.98,
+      "initialize": 2.782,
+      "lock_1": 8.341,
+      "lock_2": 12.475,
+      "lock_3": 16.608,
+      "overload_peak": 2.444,
+      "query_1": 5.2,
+      "query_2": 9.333,
+      "query_3": 13.467,
+      "reclaimed": 19.8,
+      "refresh_1": 9.168,
+      "refresh_2": 13.301,
+      "reset_1": 9.044,
+      "reset_2": 13.177,
+      "typing_1": 5.737,
+      "typing_2": 9.871,
+      "typing_3": 14.004
+    },
+    "static_book_cover_embedded": false,
+    "strategy": "godot_indicator_pulse_refinement",
+    "text_hidden_motion_events": 36
+  },
+  "layout": {
+    "beat_0": {
+      "font_size": 38,
+      "line_count": 1,
+      "line_spacing": 1.08,
+      "minimum_font_size": 28,
+      "rendered_rect": {
+        "height": 47.0,
+        "width": 390.0,
+        "x": -195.0,
+        "y": -73.5
+      },
+      "role": "INTRO",
+      "safe_area": "INTRO_SAFE_AREA",
+      "safe_rect": {
+        "height": 100.0,
+        "width": 410.0,
+        "x": -205.0,
+        "y": -100.0
+      },
+      "status": "PASS"
+    },
+    "beat_1": {
+      "font_size": 42,
+      "line_count": 2,
+      "line_spacing": 1.06,
+      "minimum_font_size": 30,
+      "rendered_rect": {
+        "height": 95.5199966430664,
+        "width": 236.0,
+        "x": -118.0,
+        "y": -92.7599945068359
+      },
+      "role": "OUTRO",
+      "safe_area": "OUTRO_SAFE_AREA",
+      "safe_rect": {
+        "height": 120.0,
+        "width": 410.0,
+        "x": -205.0,
+        "y": -105.0
+      },
+      "status": "PASS"
+    },
+    "beat_2": {
+      "font_size": 42,
+      "line_count": 2,
+      "line_spacing": 1.06,
+      "minimum_font_size": 30,
+      "rendered_rect": {
+        "height": 95.5199966430664,
+        "width": 236.0,
+        "x": -118.0,
+        "y": -92.7599945068359
+      },
+      "role": "OUTRO",
+      "safe_area": "OUTRO_SAFE_AREA",
+      "safe_rect": {
+        "height": 120.0,
+        "width": 410.0,
+        "x": -205.0,
+        "y": -105.0
+      },
+      "status": "PASS"
+    },
+    "beat_3": {
+      "font_size": 39,
+      "line_count": 2,
+      "line_spacing": 1.08,
+      "minimum_font_size": 27,
+      "rendered_rect": {
+        "height": 90.120002746582,
+        "width": 278.0,
+        "x": -139.0,
+        "y": -100.559997558594
+      },
+      "role": "HEADLINE",
+      "safe_area": "HEADLINE_SAFE_AREA",
+      "safe_rect": {
+        "height": 101.0,
+        "width": 388.0,
+        "x": -194.0,
+        "y": -106.0
+      },
+      "status": "PASS"
+    },
+    "beat_4": {
+      "font_size": 21,
+      "line_count": 1,
+      "line_spacing": 1.02,
+      "minimum_font_size": 17,
+      "rendered_rect": {
+        "height": 26.0,
+        "width": 257.0,
+        "x": -128.5,
+        "y": -13.0
+      },
+      "role": "EMPHASIS",
+      "safe_area": "EMPHASIS_SAFE_AREA",
+      "safe_rect": {
+        "height": 44.0,
+        "width": 300.0,
+        "x": -150.0,
+        "y": -22.0
+      },
+      "status": "PASS"
+    },
+    "beat_5": {
+      "font_size": 39,
+      "line_count": 2,
+      "line_spacing": 1.08,
+      "minimum_font_size": 27,
+      "rendered_rect": {
+        "height": 90.120002746582,
+        "width": 259.0,
+        "x": -129.5,
+        "y": -100.559997558594
+      },
+      "role": "HEADLINE",
+      "safe_area": "HEADLINE_SAFE_AREA",
+      "safe_rect": {
+        "height": 101.0,
+        "width": 388.0,
+        "x": -194.0,
+        "y": -106.0
+      },
+      "status": "PASS"
+    },
+    "beat_6": {
+      "font_size": 42,
+      "line_count": 2,
+      "line_spacing": 1.06,
+      "minimum_font_size": 30,
+      "rendered_rect": {
+        "height": 95.5199966430664,
+        "width": 279.0,
+        "x": -139.5,
+        "y": -92.7599945068359
+      },
+      "role": "OUTRO",
+      "safe_area": "OUTRO_SAFE_AREA",
+      "safe_rect": {
+        "height": 120.0,
+        "width": 410.0,
+        "x": -205.0,
+        "y": -105.0
+      },
+      "status": "PASS"
+    },
+    "beat_7": {
+      "font_size": 39,
+      "line_count": 2,
+      "line_spacing": 1.08,
+      "minimum_font_size": 27,
+      "rendered_rect": {
+        "height": 90.120002746582,
+        "width": 288.0,
+        "x": -144.0,
+        "y": -100.559997558594
+      },
+      "role": "HEADLINE",
+      "safe_area": "HEADLINE_SAFE_AREA",
+      "safe_rect": {
+        "height": 101.0,
+        "width": 388.0,
+        "x": -194.0,
+        "y": -106.0
+      },
+      "status": "PASS"
+    },
+    "beat_8": {
+      "font_size": 42,
+      "line_count": 2,
+      "line_spacing": 1.06,
+      "minimum_font_size": 30,
+      "rendered_rect": {
+        "height": 95.5199966430664,
+        "width": 311.0,
+        "x": -155.5,
+        "y": -92.7599945068359
+      },
+      "role": "OUTRO",
+      "safe_area": "OUTRO_SAFE_AREA",
+      "safe_rect": {
+        "height": 120.0,
+        "width": 410.0,
+        "x": -205.0,
+        "y": -105.0
+      },
+      "status": "PASS"
+    },
+    "intro_label": {
+      "font_size": 15,
+      "line_count": 1,
+      "line_spacing": 1.02,
+      "minimum_font_size": 12,
+      "rendered_rect": {
+        "height": 19.0,
+        "width": 336.0,
+        "x": -168.0,
+        "y": 53.0
+      },
+      "role": "LABEL",
+      "safe_area": "INTRO_LABEL_SAFE_AREA",
+      "safe_rect": {
+        "height": 55.0,
+        "width": 400.0,
+        "x": -200.0,
+        "y": 35.0
+      },
+      "status": "PASS"
+    },
+    "outro_label": {
+      "font_size": 15,
+      "line_count": 1,
+      "line_spacing": 1.02,
+      "minimum_font_size": 12,
+      "rendered_rect": {
+        "height": 19.0,
+        "width": 89.0,
+        "x": -44.5,
+        "y": 63.0
+      },
+      "role": "LABEL",
+      "safe_area": "OUTRO_LABEL_SAFE_AREA",
+      "safe_rect": {
+        "height": 55.0,
+        "width": 400.0,
+        "x": -200.0,
+        "y": 45.0
+      },
+      "status": "PASS"
+    },
+    "visual_label": {
+      "font_size": 15,
+      "line_count": 1,
+      "line_spacing": 1.02,
+      "minimum_font_size": 12,
+      "rendered_rect": {
+        "height": 19.0,
+        "width": 150.0,
+        "x": -75.0,
+        "y": -9.5
+      },
+      "role": "LABEL",
+      "safe_area": "LABEL_SAFE_AREA",
+      "safe_rect": {
+        "height": 32.0,
+        "width": 170.0,
+        "x": -85.0,
+        "y": -16.0
+      },
+      "status": "PASS"
+    }
+  },
+  "media": {
+    "fallback": "fixture_visual",
+    "status": "NOT_PRESENT"
+  },
+  "overlap_checks": "PASS",
+  "reason": "",
+  "result": "PASS",
+  "slice": "MF-002R1"
+}

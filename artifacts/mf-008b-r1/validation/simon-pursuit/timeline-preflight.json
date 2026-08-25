@@ -1,0 +1,111 @@
+{
+  "slice": "MF-004",
+  "fixture": "mf008b-r1-simon-pursuit",
+  "mode": "beats",
+  "result": "PASS",
+  "duration": 27.0,
+  "number_of_beats": 9,
+  "sequential_no_gaps": true,
+  "beats": [
+    {
+      "id": "circuits",
+      "type": "intro",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.3,
+      "transition": "cut",
+      "narration": null,
+      "index": 0,
+      "start": 0.0,
+      "end": 2.3
+    },
+    {
+      "id": "formation",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.1,
+      "transition": "cut",
+      "narration": null,
+      "index": 1,
+      "start": 2.3,
+      "end": 4.4
+    },
+    {
+      "id": "opening",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 0.8,
+      "transition": "cut",
+      "narration": null,
+      "index": 2,
+      "start": 4.4,
+      "end": 5.2
+    },
+    {
+      "id": "page_1",
+      "type": "statement",
+      "text": "TARGET TRACE DETECTED",
+      "duration": 4.133,
+      "transition": "cut",
+      "narration": null,
+      "index": 3,
+      "start": 5.2,
+      "end": 9.333
+    },
+    {
+      "id": "page_2",
+      "type": "emphasis",
+      "text": "SIMON IS BEING HUNTED",
+      "duration": 4.133,
+      "transition": "cut",
+      "narration": null,
+      "index": 4,
+      "start": 9.333,
+      "end": 13.466
+    },
+    {
+      "id": "page_3",
+      "type": "statement",
+      "text": "TARGET LOCK CONFIRMED",
+      "duration": 4.133,
+      "transition": "cut",
+      "narration": null,
+      "index": 5,
+      "start": 13.466,
+      "end": 17.599
+    },
+    {
+      "id": "result_hold",
+      "type": "reveal",
+      "text": "TARGET LOCK CONFIRMED",
+      "duration": 1.4,
+      "transition": "cut",
+      "narration": null,
+      "index": 6,
+      "start": 17.599,
+      "end": 18.999
+    },
+    {
+      "id": "dissolve",
+      "type": "statement",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 2.0,
+      "transition": "cut",
+      "narration": null,
+      "index": 7,
+      "start": 18.999,
+      "end": 20.999
+    },
+    {
+      "id": "cta",
+      "type": "outro",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 6.001,
+      "transition": "cut",
+      "narration": null,
+      "index": 8,
+      "start": 20.999,
+      "end": 27.0
+    }
+  ],
+  "preflight_seconds": 5.5e-05
+}

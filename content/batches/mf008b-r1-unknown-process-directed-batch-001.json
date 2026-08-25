@@ -1,0 +1,120 @@
+{
+  "batch": {
+    "id": "unknown-process-directed-batch-r1-001",
+    "slice": "MF-008B-R1",
+    "production_grammar": "unknown_process_recovered_record_v2",
+    "production_grammar_file": "config/production-grammars/unknown-process-recovered-record-v2.json",
+    "source_git_ref": "8f4cbae5e1125ae8b95f894f3f45dbab6a730a25",
+    "execution": "sequential",
+    "publish": false,
+    "require_human_release_approval": true,
+    "job_limit": 3,
+    "output_archive": "/home/blanzy/media-foundry-output/mf008b-r1/directed-batch-001"
+  },
+  "policy": {
+    "allow_renderer_changes": false,
+    "allow_runtime_architecture_changes": false,
+    "allow_visual_grammar_changes": false,
+    "max_technical_retries": 1,
+    "continue_after_job_failure": true,
+    "unsupported_brief_state": "NEEDS_ENGINEERING",
+    "codex_boundary": "APPROVED_CONTROLS_AND_APPROVED_CUE_BOUNDS_ONLY",
+    "automatic_publication": false,
+    "automatic_editorial_approval": false
+  },
+  "approved_source": {
+    "id": "unknown-process-approved-synopsis-v1",
+    "title": "Unknown Process",
+    "author": "R.C. Blanzy",
+    "canonical_url": "https://rcblanzy.com/books/unknown-process",
+    "display_url": "rcblanzy.com/books/unknown-process",
+    "basis": "User-approved synopsis supplied for MF-006R1"
+  },
+  "shared_identity": {
+    "world": "recovered-record circuit chamber",
+    "screen_family": "single projected recovered-record window",
+    "typography_family": "frozen Unknown Process grammar",
+    "circuit_language": "deterministic low-fi node-and-path system",
+    "cta": "CONTINUE THE ADVENTURE",
+    "display_url": "RCBLANZY.COM/BOOKS/UNKNOWN-PROCESS"
+  },
+  "music_catalog": "config/music/catalog.json",
+  "state_models": {
+    "job": ["PENDING", "PREFLIGHT", "READY", "RENDERING", "VALIDATING", "READY_FOR_REVIEW", "BLOCKED_CONTENT", "BLOCKED_APPROVAL", "MISSING_ASSET", "FAILED_RENDER", "FAILED_VALIDATION", "NEEDS_ENGINEERING", "CANCELLED"],
+    "batch": ["PENDING", "RUNNING", "COMPLETE", "PARTIAL", "FAILED"]
+  },
+  "jobs": [
+    {
+      "id": "simon-pursuit",
+      "title": "Simon — Pursuit",
+      "objective": "Make Simon feel tracked, trapped, hunted, and increasingly unable to escape.",
+      "viewer_takeaway": "Simon has already been found.",
+      "fixture": "content/fixtures/mf008b-r1/simon-pursuit.json",
+      "phrases": ["TARGET TRACE DETECTED", "SIMON IS BEING HUNTED", "TARGET LOCK CONFIRMED"],
+      "creative": {
+        "mechanism": "tracking",
+        "events": ["target_search", "target_reacquire", "target_lock"],
+        "timing": {"intro_seconds": 5.2, "investigation_seconds": 12.4, "result_hold_seconds": 1.4, "cta_seconds": 8.0},
+        "palette_profile": "pursuit", "camera_profile": "tight_pursuit", "node_profile": "urgent",
+        "projection_profile": "warning_trace", "cta_profile": "warning", "audio_cue": "pursuit"
+      },
+      "music": {
+        "track_id": "concrete_and_chain", "region_id": "pursuit_a",
+        "actual_start": 21.0, "actual_end": 48.0, "video_duration": 27.0,
+        "fade_in": 0.6, "fade_out": 1.6, "gain_db": -5.0,
+        "ducking": {"narration_duck_db": -8.0, "attack_ms": 90, "release_ms": 240},
+        "selection_reason": "Preferred entry aligns with the approved rising pursuit passage and leaves a controlled fade into CTA."
+      },
+      "narration": null,
+      "renderer_changes_required": false
+    },
+    {
+      "id": "leo-zeph-investigation",
+      "title": "Leo + Zeph — Investigation",
+      "objective": "Make Leo and Zeph feel strange, difficult to classify, and mysteriously connected.",
+      "viewer_takeaway": "The machine cannot easily understand what Leo and Zeph are.",
+      "fixture": "content/fixtures/mf008b-r1/leo-zeph-investigation.json",
+      "phrases": ["LEO: A LIVING DATA BRIDGE", "ZEPH: AN EVOLVING AI KERNEL", "TWO IMPOSSIBLE TARGETS"],
+      "creative": {
+        "mechanism": "classification_link",
+        "events": ["leo_resolve", "zeph_resolve", "bridge_attempt", "bridge_stable"],
+        "timing": {"intro_seconds": 6.2, "investigation_seconds": 12.0, "result_hold_seconds": 2.0, "cta_seconds": 7.8},
+        "palette_profile": "mystery", "camera_profile": "wide_investigation", "node_profile": "analytical",
+        "projection_profile": "classification", "cta_profile": "cool_signal", "audio_cue": "investigation"
+      },
+      "music": {
+        "track_id": "cold_concrete_anatomy", "region_id": "investigation_a",
+        "actual_start": 73.0, "actual_end": 101.0, "video_duration": 28.0,
+        "fade_in": 1.2, "fade_out": 2.0, "gain_db": -5.5,
+        "ducking": {"narration_duck_db": -8.0, "attack_ms": 120, "release_ms": 300},
+        "selection_reason": "Approved medium-intensity investigation passage begins at its preferred entry and supports a cooler analytical pace."
+      },
+      "narration": null,
+      "renderer_changes_required": false
+    },
+    {
+      "id": "kill-switch-revelation",
+      "title": "Kill-Switch — Revelation",
+      "objective": "Move from apparent normality through discovery and unease into dread.",
+      "viewer_takeaway": "The hidden weapon is inside Simon himself.",
+      "fixture": "content/fixtures/mf008b-r1/kill-switch-revelation.json",
+      "phrases": ["BIOMETRIC RECORD: NORMAL", "HIDDEN REGION DETECTED", "KILL-SWITCH IN HIS BIOMETRICS"],
+      "creative": {
+        "mechanism": "biometric_scan",
+        "events": ["biometric_scan", "deep_scan", "hidden_region", "kill_switch_reveal"],
+        "timing": {"intro_seconds": 6.5, "investigation_seconds": 13.5, "result_hold_seconds": 2.0, "cta_seconds": 7.0},
+        "palette_profile": "revelation", "camera_profile": "calm_to_push", "node_profile": "stable_then_overload",
+        "projection_profile": "biometric", "cta_profile": "revelation", "audio_cue": "revelation"
+      },
+      "music": {
+        "track_id": "below_the_iron_floor", "region_id": "revelation_a",
+        "actual_start": 71.0, "actual_end": 100.0, "video_duration": 29.0,
+        "fade_in": 1.0, "fade_out": 2.5, "gain_db": -4.5,
+        "ducking": {"narration_duck_db": -8.0, "attack_ms": 110, "release_ms": 280},
+        "selection_reason": "Preferred entry opens an approved rising revelation passage with enough span for the deeper scan and dread-weighted CTA fade."
+      },
+      "narration": null,
+      "renderer_changes_required": false
+    }
+  ]
+}

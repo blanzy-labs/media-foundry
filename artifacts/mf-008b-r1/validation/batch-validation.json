@@ -1,0 +1,82 @@
+{
+  "slice": "MF-008B-R1",
+  "type": "independent_batch_validation",
+  "run_dir": "/home/blanzy/media-foundry-output/mf008b-r1/directed-batch-001/scheduled-run-002",
+  "jobs": [
+    {
+      "job_id": "simon-pursuit",
+      "mechanism": "tracking",
+      "profiles": {
+        "palette_profile": "pursuit",
+        "camera_profile": "tight_pursuit",
+        "node_profile": "urgent",
+        "projection_profile": "warning_trace",
+        "cta_profile": "warning"
+      },
+      "track_id": "concrete_and_chain",
+      "region_id": "pursuit_a",
+      "runtime_seconds": 27.0,
+      "media_probe": {
+        "video": true,
+        "audio": true,
+        "duration": 27.0
+      },
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "leo-zeph-investigation",
+      "mechanism": "classification_link",
+      "profiles": {
+        "palette_profile": "mystery",
+        "camera_profile": "wide_investigation",
+        "node_profile": "analytical",
+        "projection_profile": "classification",
+        "cta_profile": "cool_signal"
+      },
+      "track_id": "cold_concrete_anatomy",
+      "region_id": "investigation_a",
+      "runtime_seconds": 28.0,
+      "media_probe": {
+        "video": true,
+        "audio": true,
+        "duration": 28.0
+      },
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "kill-switch-revelation",
+      "mechanism": "biometric_scan",
+      "profiles": {
+        "palette_profile": "revelation",
+        "camera_profile": "calm_to_push",
+        "node_profile": "stable_then_overload",
+        "projection_profile": "biometric",
+        "cta_profile": "revelation"
+      },
+      "track_id": "below_the_iron_floor",
+      "region_id": "revelation_a",
+      "runtime_seconds": 29.0,
+      "media_probe": {
+        "video": true,
+        "audio": true,
+        "duration": 29.0
+      },
+      "errors": [],
+      "result": "PASS"
+    }
+  ],
+  "checks": {
+    "exact_three_ready": "PASS",
+    "mechanisms_distinct": "PASS",
+    "profiles_distinct": "PASS",
+    "music_distinct": "PASS",
+    "runtimes_flexible": "PASS",
+    "renderer_integrity": "PASS",
+    "contact_sheet": "PASS",
+    "no_publication": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

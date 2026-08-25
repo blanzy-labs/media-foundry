@@ -1,0 +1,604 @@
+{
+  "id": "mf008b-r1-simon-pursuit",
+  "template": "scrappy_diorama",
+  "seed": 26066,
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_seconds": 27.0
+  },
+  "subject": {
+    "type": "book",
+    "title": "Unknown Process",
+    "author": "R.C. Blanzy",
+    "canonical_author": "Robert C. Blanzy",
+    "series": "The Second Presence",
+    "book_number": 1,
+    "authoritative_url": "https://rcblanzy.com/books/unknown-process",
+    "retrieval_date": "2026-08-24",
+    "metadata_provenance": [
+      {
+        "source": "https://www.rcblanzy.com/books/unknown-process/",
+        "organization": "Robert C. Blanzy",
+        "retrieval_date": "2026-08-24",
+        "supports": "Title, author, series position, synopsis, and canonical destination"
+      }
+    ]
+  },
+  "approved_copy": {
+    "synopsis": "Framed, hunted, and stripped of his old life, Simon is forced on the run alongside two impossible targets: Leo, a bio-engineered boy acting as a living data bridge, and Zeph, a hunted AI kernel evolving at a terrifying speed. Pursued by the Syndicate\u2014a cabal of global elites using bleeding-edge technology to subjugate the planet\u2014Simon realizes he isn't just a protector. He carries the ultimate weapon. Locked within his own biometrics is the kill-switch to a digital empire. To survive, Simon must navigate a deadly maze of corporate black-ops and untethered artificial intelligence, or watch humanity be quietly enslaved by an unseen hand.",
+    "source": "user-approved copy and https://www.rcblanzy.com/books/unknown-process/",
+    "sole_narrative_basis": true,
+    "invented_plot_details": false
+  },
+  "visual_strategy": {
+    "preference": "godot_indicator_pulse_refinement",
+    "fallback": "fail",
+    "static_book_cover_allowed": false
+  },
+  "visual": {
+    "kind": "indicator_pulse_polish",
+    "primary": "071015",
+    "secondary": "39b8c9",
+    "label": "LIVE INVESTIGATION",
+    "props": []
+  },
+  "intro": {
+    "text": "UNKNOWN PROCESS"
+  },
+  "content": {
+    "headline": "UNKNOWN PROCESS",
+    "body": "THE SECOND PRESENCE \u2022 BOOK ONE",
+    "emphasis": "R.C. BLANZY"
+  },
+  "outro": {
+    "text": "CONTINUE THE ADVENTURE",
+    "tagline": "R.C. BLANZY"
+  },
+  "page_phrases": [
+    "TARGET TRACE DETECTED",
+    "SIMON IS BEING HUNTED",
+    "TARGET LOCK CONFIRMED"
+  ],
+  "cta": {
+    "text": "Continue the adventure",
+    "website": "https://rcblanzy.com/books/unknown-process",
+    "canonical_url": "https://rcblanzy.com/books/unknown-process",
+    "display_url": "rcblanzy.com/books/unknown-process",
+    "source": "https://www.rcblanzy.com/books/unknown-process/",
+    "status": "APPROVED"
+  },
+  "voice_contract": {
+    "status": "BLOCKED_PRODUCTION_VOICE",
+    "available_provider": null,
+    "test_voice_allowed": false,
+    "release_eligible": false,
+    "narration_text": "Framed and hunted, Simon runs with Leo, a living data bridge, and Zeph, an evolving AI kernel. Hidden in Simon's biometrics is the kill-switch to a digital empire. Continue the adventure.",
+    "approved_copy_only": true,
+    "required_final_line": "Continue the adventure."
+  },
+  "audio": {
+    "enabled": true
+  },
+  "music": {
+    "source": "media/audio/music/unknown-process/Concrete_and_Chain.mp3",
+    "required": true,
+    "continuous": true,
+    "loop": false,
+    "selected_offset": 21.0,
+    "normalization_lufs": -24,
+    "gain_db": -5.0,
+    "narration_duck_db": -8.0,
+    "attack_ms": 90,
+    "release_ms": 240,
+    "fade_in": 0.6,
+    "fade_out": 1.6,
+    "provenance": {
+      "type": "user_supplied_generated",
+      "asset_class": "approved_catalog_track",
+      "release_eligible": true,
+      "track_id": "concrete_and_chain",
+      "region_id": "pursuit_a",
+      "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+      "approval_reviewer": "user",
+      "usage": "MF-010 hash-bound human approval; local production master."
+    }
+  },
+  "generated_scene": {
+    "components": [
+      {
+        "id": "chamber",
+        "type": "electronic_chamber"
+      },
+      {
+        "id": "circuits",
+        "type": "circuit_crawler"
+      },
+      {
+        "id": "burst",
+        "type": "electrical_burst"
+      },
+      {
+        "id": "cradle",
+        "type": "projection_emitter"
+      },
+      {
+        "id": "book",
+        "type": "projected_data_window"
+      },
+      {
+        "id": "page_1",
+        "type": "record_channel"
+      },
+      {
+        "id": "page_2",
+        "type": "record_channel"
+      },
+      {
+        "id": "page_3",
+        "type": "record_channel"
+      },
+      {
+        "id": "dissolve",
+        "type": "screen_collapse"
+      },
+      {
+        "id": "lights",
+        "type": "lofi_light"
+      },
+      {
+        "id": "powered_cells",
+        "type": "powered_cells"
+      },
+      {
+        "id": "website",
+        "type": "website_reveal"
+      }
+    ],
+    "events": [
+      {
+        "id": "path_draw_start",
+        "type": "path_draw_start",
+        "time": 0
+      },
+      {
+        "id": "paths_drawn",
+        "type": "paths_drawn",
+        "time": 0.676
+      },
+      {
+        "id": "energy_flow",
+        "type": "energy_flow",
+        "time": 0.728
+      },
+      {
+        "id": "central_node_charge",
+        "type": "central_node_charge",
+        "time": 1.404
+      },
+      {
+        "id": "overload",
+        "type": "overload",
+        "time": 1.82
+      },
+      {
+        "id": "overload_pulse_1",
+        "type": "overload_pulse",
+        "time": 2.028
+      },
+      {
+        "id": "overload_pulse_2",
+        "type": "overload_pulse",
+        "time": 2.34
+      },
+      {
+        "id": "overload_peak",
+        "type": "overload_peak",
+        "time": 2.444
+      },
+      {
+        "id": "spark_burst",
+        "type": "spark_burst",
+        "time": 2.6
+      },
+      {
+        "id": "title_form",
+        "type": "title_form",
+        "time": 2.678
+      },
+      {
+        "id": "projection_emission",
+        "type": "projection_emission",
+        "time": 2.782
+      },
+      {
+        "id": "screen_initialize",
+        "type": "screen_initialize",
+        "time": 2.782
+      },
+      {
+        "id": "camera_push",
+        "type": "camera_push",
+        "time": 2.964
+      },
+      {
+        "id": "title_stabilized",
+        "type": "title_stabilized",
+        "time": 3.328
+      },
+      {
+        "id": "record_query_1",
+        "type": "record_query",
+        "time": 5.2
+      },
+      {
+        "id": "record_typing_1",
+        "type": "record_typing",
+        "time": 5.737
+      },
+      {
+        "id": "record_activity_1",
+        "type": "record_activity",
+        "time": 6.357
+      },
+      {
+        "id": "target_search",
+        "type": "target_search",
+        "time": 6.357
+      },
+      {
+        "id": "record_confirm_1",
+        "type": "record_confirm",
+        "time": 7.928
+      },
+      {
+        "id": "record_lock_1",
+        "type": "record_lock",
+        "time": 8.341
+      },
+      {
+        "id": "record_hold_1",
+        "type": "record_hold",
+        "time": 8.713
+      },
+      {
+        "id": "record_reset_1",
+        "type": "record_reset",
+        "time": 9.044
+      },
+      {
+        "id": "screen_refresh_1",
+        "type": "screen_refresh",
+        "time": 9.168
+      },
+      {
+        "id": "record_query_2",
+        "type": "record_query",
+        "time": 9.333
+      },
+      {
+        "id": "record_typing_2",
+        "type": "record_typing",
+        "time": 9.871
+      },
+      {
+        "id": "record_activity_2",
+        "type": "record_activity",
+        "time": 10.491
+      },
+      {
+        "id": "target_reacquire",
+        "type": "target_reacquire",
+        "time": 10.491
+      },
+      {
+        "id": "record_confirm_2",
+        "type": "record_confirm",
+        "time": 12.061
+      },
+      {
+        "id": "record_lock_2",
+        "type": "record_lock",
+        "time": 12.475
+      },
+      {
+        "id": "record_hold_2",
+        "type": "record_hold",
+        "time": 12.847
+      },
+      {
+        "id": "record_reset_2",
+        "type": "record_reset",
+        "time": 13.177
+      },
+      {
+        "id": "screen_refresh_2",
+        "type": "screen_refresh",
+        "time": 13.301
+      },
+      {
+        "id": "record_query_3",
+        "type": "record_query",
+        "time": 13.467
+      },
+      {
+        "id": "record_typing_3",
+        "type": "record_typing",
+        "time": 14.004
+      },
+      {
+        "id": "record_activity_3",
+        "type": "record_activity",
+        "time": 14.624
+      },
+      {
+        "id": "record_confirm_3",
+        "type": "record_confirm",
+        "time": 16.195
+      },
+      {
+        "id": "record_lock_3",
+        "type": "record_lock",
+        "time": 16.608
+      },
+      {
+        "id": "target_lock",
+        "type": "target_lock",
+        "time": 16.608
+      },
+      {
+        "id": "record_hold_3",
+        "type": "record_hold",
+        "time": 16.98
+      },
+      {
+        "id": "final_record_settle",
+        "type": "settle",
+        "time": 17.6
+      },
+      {
+        "id": "data_dissolve",
+        "type": "data_dissolve",
+        "time": 19.0
+      },
+      {
+        "id": "screen_collapse",
+        "type": "screen_collapse",
+        "time": 19.0
+      },
+      {
+        "id": "energy_reclaimed",
+        "type": "energy_reclaimed",
+        "time": 19.8
+      },
+      {
+        "id": "return_energy",
+        "type": "return_energy",
+        "time": 20.28
+      },
+      {
+        "id": "camera_pull_back",
+        "type": "camera_pull_back",
+        "time": 20.76
+      },
+      {
+        "id": "cta_energy",
+        "type": "cta_energy",
+        "time": 21.72
+      },
+      {
+        "id": "cta_typing",
+        "type": "cta_typing",
+        "time": 22.44
+      },
+      {
+        "id": "cta_lock",
+        "type": "cta_lock",
+        "time": 23.4
+      },
+      {
+        "id": "cta_reveal",
+        "type": "cta_reveal",
+        "time": 23.96
+      },
+      {
+        "id": "website_reveal",
+        "type": "website_reveal",
+        "time": 23.96
+      },
+      {
+        "id": "cta_settle",
+        "type": "settle",
+        "time": 24.6
+      }
+    ]
+  },
+  "sfx": [
+    {
+      "id": "circuit_draw",
+      "event": "path_draw_start",
+      "time": 0.05,
+      "type": "circuit_draw",
+      "gain": 0.035
+    },
+    {
+      "id": "energy_flow",
+      "event": "energy_flow",
+      "time": 0.75,
+      "type": "energy_flow",
+      "gain": 0.04
+    },
+    {
+      "id": "overload_rise",
+      "event": "overload",
+      "time": 1.9,
+      "type": "overload_rise",
+      "gain": 0.055
+    },
+    {
+      "id": "spark",
+      "event": "spark_burst",
+      "time": 2.7,
+      "type": "spark_burst",
+      "gain": 0.1
+    },
+    {
+      "id": "projection",
+      "event": "screen_initialize",
+      "time": 2.9,
+      "type": "projection_emission",
+      "gain": 0.055
+    },
+    {
+      "id": "simon_lock",
+      "event": "record_lock_1",
+      "time": 8.65,
+      "type": "target_lock",
+      "gain": 0.035
+    },
+    {
+      "id": "refresh_1",
+      "event": "record_reset_1",
+      "time": 9.7,
+      "type": "projection_refresh",
+      "gain": 0.038
+    },
+    {
+      "id": "bridge_lock",
+      "event": "record_lock_2",
+      "time": 13.0,
+      "type": "bridge_lock",
+      "gain": 0.03
+    },
+    {
+      "id": "refresh_2",
+      "event": "record_reset_2",
+      "time": 13.95,
+      "type": "projection_refresh",
+      "gain": 0.038
+    },
+    {
+      "id": "hidden_reveal",
+      "event": "record_lock_3",
+      "time": 17.3,
+      "type": "hidden_reveal",
+      "gain": 0.035
+    },
+    {
+      "id": "collapse",
+      "event": "screen_collapse",
+      "time": 19.1,
+      "type": "projection_collapse",
+      "gain": 0.05
+    },
+    {
+      "id": "return",
+      "event": "return_energy",
+      "time": 20.7,
+      "type": "energy_flow",
+      "gain": 0.03
+    },
+    {
+      "id": "cta_resolve",
+      "event": "cta_lock",
+      "time": 23.65,
+      "type": "cta_resolve",
+      "gain": 0.03
+    }
+  ],
+  "beats": [
+    {
+      "id": "circuits",
+      "type": "intro",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.3,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "formation",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.1,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "opening",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 0.8,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "page_1",
+      "type": "statement",
+      "text": "TARGET TRACE DETECTED",
+      "duration": 4.133,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "page_2",
+      "type": "emphasis",
+      "text": "SIMON IS BEING HUNTED",
+      "duration": 4.133,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "page_3",
+      "type": "statement",
+      "text": "TARGET LOCK CONFIRMED",
+      "duration": 4.133,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "result_hold",
+      "type": "reveal",
+      "text": "TARGET LOCK CONFIRMED",
+      "duration": 1.4,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "dissolve",
+      "type": "statement",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 2.0,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "cta",
+      "type": "outro",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 6.001,
+      "transition": "cut",
+      "narration": null
+    }
+  ],
+  "creative": {
+    "mechanism": "tracking",
+    "events": [
+      "target_search",
+      "target_reacquire",
+      "target_lock"
+    ],
+    "timing": {
+      "intro_seconds": 5.2,
+      "investigation_seconds": 12.4,
+      "result_hold_seconds": 1.4,
+      "cta_seconds": 8.0
+    },
+    "palette_profile": "pursuit",
+    "camera_profile": "tight_pursuit",
+    "node_profile": "urgent",
+    "projection_profile": "warning_trace",
+    "cta_profile": "warning",
+    "audio_cue": "pursuit"
+  }
+}

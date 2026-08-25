@@ -1,0 +1,43 @@
+{
+  "slice": "MF-008C",
+  "fixture": "mf008b-r1-leo-zeph-investigation",
+  "mode": "directed",
+  "state": "READY",
+  "creative": {
+    "mechanism": "classification_link",
+    "events": [
+      "leo_resolve",
+      "zeph_resolve",
+      "bridge_attempt",
+      "bridge_stable"
+    ],
+    "timing": {
+      "intro_seconds": 6.2,
+      "investigation_seconds": 12.0,
+      "result_hold_seconds": 2.0,
+      "cta_seconds": 7.8
+    },
+    "palette_profile": "mystery",
+    "camera_profile": "wide_investigation",
+    "node_profile": "analytical",
+    "projection_profile": "classification",
+    "cta_profile": "cool_signal",
+    "audio_cue": "investigation"
+  },
+  "checks": {
+    "required_fields": "PASS",
+    "mechanism": "PASS",
+    "palette_profile": "PASS",
+    "camera_profile": "PASS",
+    "node_profile": "PASS",
+    "projection_profile": "PASS",
+    "cta_profile": "PASS",
+    "mechanism_events": "PASS",
+    "timing_bounds": "PASS",
+    "event_timing": "PASS",
+    "audio_cue_exists": "PASS",
+    "audio_cue_approved": "PENDING_APPROVAL"
+  },
+  "errors": [],
+  "result": "PASS"
+}

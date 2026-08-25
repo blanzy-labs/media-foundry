@@ -1,0 +1,55 @@
+{
+  "job_id": "leo-zeph-investigation",
+  "title": "Leo + Zeph \u2014 Investigation",
+  "state": "READY_FOR_REVIEW",
+  "technical": "PASS",
+  "editorial": "PENDING_HUMAN",
+  "release": "PENDING_HUMAN",
+  "runtime_seconds": 28.0,
+  "mechanism": "classification_link",
+  "profiles": {
+    "palette_profile": "mystery",
+    "camera_profile": "wide_investigation",
+    "node_profile": "analytical",
+    "projection_profile": "classification",
+    "cta_profile": "cool_signal"
+  },
+  "music": {
+    "track_id": "cold_concrete_anatomy",
+    "region_id": "investigation_a",
+    "actual_start": 73.0,
+    "actual_end": 101.0,
+    "video_duration": 28.0,
+    "fade_in": 1.2,
+    "fade_out": 2.0,
+    "gain_db": -5.5,
+    "ducking": {
+      "narration_duck_db": -8.0,
+      "attack_ms": 120,
+      "release_ms": 300
+    },
+    "selection_reason": "Approved medium-intensity investigation passage begins at its preferred entry and supports a cooler analytical pace.",
+    "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf"
+  },
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf008b-r1/directed-batch-001/scheduled-run-002/leo-zeph-investigation/final.mp4",
+    "bytes": 5226729,
+    "sha256": "d07227c9b0f8936bb64a12e43d02036fca4076bf37476a7409d0959bda2400f9"
+  },
+  "metrics": {
+    "selection_ms": 58,
+    "creative-preflight_ms": 44,
+    "timeline-preflight_ms": 42,
+    "music_ms": 976,
+    "sfx_ms": 811,
+    "render_ms": 22067,
+    "mix_ms": 1542,
+    "encode_ms": 25252,
+    "media_validation_ms": 718,
+    "output_validation_ms": 50
+  },
+  "publish": false,
+  "result": "PASS",
+  "attempts": 1,
+  "attempt_errors": []
+}

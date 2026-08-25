@@ -1,0 +1,4 @@
+Gateway event loop: ok max=26ms p99=20ms util=0.006 cpu=0.018
+Agents: main (default), game-foundry, turd-burglar-builder, game-foundry-executor
+Heartbeat interval: 30m (main)
+Session store (main): /home/blanzy/.openclaw/agents/main/sessions/sessions.json (0 entries)

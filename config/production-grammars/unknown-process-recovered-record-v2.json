@@ -1,0 +1,52 @@
+{
+  "id": "unknown_process_recovered_record_v2",
+  "status": "FROZEN",
+  "source_git_ref": "8f4cbae5e1125ae8b95f894f3f45dbab6a730a25",
+  "review_basis": "MF-008C bounded creative-control proof and MF-010 user-approved music catalog",
+  "template_id": "scrappy_diorama",
+  "visual_strategy": "godot_indicator_pulse_refinement",
+  "visual_grammar_id": "scrappy-diorama-v1",
+  "runtime_seconds": {"minimum": 24.0, "maximum": 32.0},
+  "dimensions": {"width": 1080, "height": 1920, "fps": 30},
+  "creative_control_schema": "schemas/mf008c-creative-control.schema.json",
+  "music_catalog": "config/music/catalog.json",
+  "music_catalog_sha256_at_freeze": "e738ed273be867eca34ea677f1b469a62b049947f3007822b7233b6219410f4b",
+  "cta": {
+    "behavior": "machine_built_signal_then_url_hold",
+    "text": "Continue the adventure",
+    "display_url": "rcblanzy.com/books/unknown-process",
+    "canonical_url": "https://rcblanzy.com/books/unknown-process"
+  },
+  "audio_grammar": {
+    "mode": "approved_catalog_region_plus_generated_event_sfx",
+    "narration": "PROHIBITED_UNTIL_EXPLICITLY_RELEASE_ELIGIBLE",
+    "final_lufs_processing_target": -15.5,
+    "final_true_peak_processing_target_db": -2.0,
+    "selection_contract": "mf010_music_selection_v1"
+  },
+  "sfx_grammar": "mf006_deterministic_electronic_physical_v1",
+  "validation_version": "mf008b-r1-production-proof-v1",
+  "files": {
+    "config/visual-grammar.json": "2aac4b81d41d3b78ecd7892d879078d0c67fd6a641904f4bd62ba641ec074d5d",
+    "godot/mf002.tscn": "f94e4ce708e2b68da235f70b2ba4ec44282c3564c0959440865de24c6d71fda2",
+    "godot/mf002.gd": "296d69385011454ad2aa1f0c15d8bb9043879178bf9c47513b50cdf4f63a4d76",
+    "godot/beat_timeline.gd": "34494dcd3f3b40e865f51f62aa5649546ba1cd6367ec5aaeabf13ffa69d48d04",
+    "godot/lofi_book_stage.gd": "0b2e1bf729c32c1cd6c52068def97cf71b04a266bef246093b0604a32f2dd950",
+    "godot/projected_data_window_stage.gd": "6adae54cb26a23b3f813b9e31f842ff97f7ffcb1ae63132e98d4d1d5b99862e7",
+    "godot/integrated_lower_right_stage.gd": "fc12ec5dbdc19d42ded123ff351f9692ec4dbf505f79ea2c67a7f7f2eff8141d",
+    "godot/indicator_pulse_stage.gd": "505e5b30000998786800356804832125abb656291a66a68d1a6f8449ed594051",
+    "scripts/preflight_mf004.py": "019984f257dcc1f55b6af4f54f6dcb1e1e264e0fa67b964fa50b140b1e1041a1",
+    "scripts/generate_mf006_sfx.py": "6e0d84de474f0713b4b20e4852d4c0d609766d6e4af8aac910dd0909467df172",
+    "scripts/prepare_mf005r1_music.py": "4314cc8875c0c3c0eee82e091fd72c47b974ee2b1d2e5c9aae054da714f4512b",
+    "scripts/mix_mf005_audio.py": "b75fe5a7418a262ec0b8aa2087498796f7c365795f7dd9c2a6c8a8951cfd0536",
+    "scripts/validate_media.py": "4993bebea9d71ceb673d7a208312282182daf154261708b080901fc13c83338e",
+    "scripts/validate_mf008c_creative.py": "18744f8cfdfb84aaec8df2eb2db2191cfa54582e60b1d7f97f76d948b7c1969b",
+    "schemas/mf008c-creative-control.schema.json": "f9e99af7ece2cf9438a773479cab0976bd04648ccc5d90e4e5da0ed3a24a1784"
+  },
+  "policy": {
+    "allow_renderer_changes": false,
+    "allow_runtime_architecture_changes": false,
+    "allow_visual_grammar_changes": false,
+    "enforcement": "exact_sha256_or_shared_preflight_failure"
+  }
+}

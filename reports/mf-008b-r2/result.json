@@ -1,0 +1,18 @@
+{
+  "slice": "MF-008B-R2",
+  "technical_result": "PASS",
+  "human_decision": "PENDING",
+  "pairs": 3,
+  "outputs": 6,
+  "candidate_a_preserved": 3,
+  "candidate_b_music_only": 3,
+  "video_stream_identity": "PASS",
+  "music_identity": "PASS",
+  "sfx_absence": "PASS",
+  "loudness_fairness": "PASS",
+  "full_decode": "PASS",
+  "visual_changes": 0,
+  "renderer_changes": 0,
+  "published": 0,
+  "campaign_audio_recommendation": "PENDING_HUMAN_AB_REVIEW"
+}

@@ -1,0 +1,46 @@
+{
+  "slice": "MF-005R1",
+  "fixture": "mf008b-r1-simon-pursuit",
+  "status": "PASS",
+  "source": "media/audio/music/unknown-process/Concrete_and_Chain.mp3",
+  "audio_path": "/home/blanzy/media-foundry-output/mf008b-r1/directed-batch-001/scheduled-run-002/simon-pursuit/audio/music.wav",
+  "source_analysis": {
+    "duration": 179.382792,
+    "sample_rate": 44100,
+    "channels": 2,
+    "codec": "mp3",
+    "container": "mp3",
+    "bit_rate": 192000
+  },
+  "source_duration": 179.382792,
+  "selected_offset": 21.0,
+  "duration": 27.0,
+  "continuous": true,
+  "loop": false,
+  "loop_count": 0,
+  "normalization_lufs": -24.0,
+  "gain_db": -5.0,
+  "narration_duck_db": -8.0,
+  "attack_ms": 90.0,
+  "release_ms": 240.0,
+  "fade_in": 0.6,
+  "fade_out": 1.6,
+  "activity": {
+    "start": 0.0,
+    "end": 27.0
+  },
+  "provenance": {
+    "type": "user_supplied_generated",
+    "asset_class": "approved_catalog_track",
+    "release_eligible": true,
+    "track_id": "concrete_and_chain",
+    "region_id": "pursuit_a",
+    "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+    "approval_reviewer": "user",
+    "usage": "MF-010 hash-bound human approval; local production master."
+  },
+  "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+  "prepared_sha256": "16e356bfb9a6cba3197d6318bbba11ade435c48e06994322a5a67c494a8ce07f",
+  "preparation_seconds": 1.078516,
+  "result": "PASS"
+}

@@ -1,0 +1,55 @@
+{
+  "job_id": "kill-switch-revelation",
+  "title": "Kill-Switch \u2014 Revelation",
+  "state": "READY_FOR_REVIEW",
+  "technical": "PASS",
+  "editorial": "PENDING_HUMAN",
+  "release": "PENDING_HUMAN",
+  "runtime_seconds": 29.0,
+  "mechanism": "biometric_scan",
+  "profiles": {
+    "palette_profile": "revelation",
+    "camera_profile": "calm_to_push",
+    "node_profile": "stable_then_overload",
+    "projection_profile": "biometric",
+    "cta_profile": "revelation"
+  },
+  "music": {
+    "track_id": "below_the_iron_floor",
+    "region_id": "revelation_a",
+    "actual_start": 71.0,
+    "actual_end": 100.0,
+    "video_duration": 29.0,
+    "fade_in": 1.0,
+    "fade_out": 2.5,
+    "gain_db": -4.5,
+    "ducking": {
+      "narration_duck_db": -8.0,
+      "attack_ms": 110,
+      "release_ms": 280
+    },
+    "selection_reason": "Preferred entry opens an approved rising revelation passage with enough span for the deeper scan and dread-weighted CTA fade.",
+    "source_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568"
+  },
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf008b-r1/directed-batch-001/scheduled-run-002/kill-switch-revelation/final.mp4",
+    "bytes": 5657805,
+    "sha256": "937e3646a65c2387d73550f9dbd2493f109c820c96039234523ce37199af0fcc"
+  },
+  "metrics": {
+    "selection_ms": 58,
+    "creative-preflight_ms": 43,
+    "timeline-preflight_ms": 40,
+    "music_ms": 1058,
+    "sfx_ms": 855,
+    "render_ms": 23370,
+    "mix_ms": 1670,
+    "encode_ms": 26817,
+    "media_validation_ms": 756,
+    "output_validation_ms": 49
+  },
+  "publish": false,
+  "result": "PASS",
+  "attempts": 1,
+  "attempt_errors": []
+}
