@@ -11,7 +11,7 @@ func build(fixture: Dictionary, grammar: Dictionary) -> Dictionary:
 		return _failure("beats must be a non-empty array")
 	var configured_duration := float(fixture.format.get("duration_seconds", 0))
 	var limits: Dictionary = grammar.get("beats", {}).get("duration_seconds", {})
-	var extended := str(fixture.get("visual_strategy", {}).get("preference", "")) in ["godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement"]
+	var extended := str(fixture.get("visual_strategy", {}).get("preference", "")) in ["godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement", "godot_integrated_lower_right_refinement", "godot_indicator_pulse_refinement"]
 	var maximum := 30.0 if extended else float(limits.get("maximum", 20.0))
 	if configured_duration < float(limits.get("minimum", 10.0)) or configured_duration > maximum:
 		return _failure("configured duration must be between 10 and %d seconds" % int(maximum))

@@ -1,0 +1,152 @@
+{
+  "slice": "MF-008",
+  "type": "batch_manifest_preflight",
+  "batch_id": "unknown-process-batch-001",
+  "checks": {
+    "grammar_id": {
+      "status": "PASS",
+      "detail": "unknown_process_recovered_record_v1"
+    },
+    "git_ref": {
+      "status": "PASS",
+      "detail": "74ae32bd32f5480007ab01feaa77e83625a9a11f"
+    },
+    "pinned_files": {
+      "status": "PASS",
+      "detail": "14/14"
+    },
+    "renderer_frozen": {
+      "status": "PASS",
+      "detail": "renderer/runtime modifications prohibited"
+    },
+    "exact_job_count": {
+      "status": "PASS",
+      "detail": "up-video-001,up-video-002,up-video-003"
+    },
+    "sequential_execution": {
+      "status": "PASS",
+      "detail": "sequential"
+    },
+    "state_models": {
+      "status": "PASS",
+      "detail": "explicit job and batch states"
+    },
+    "retry_policy": {
+      "status": "PASS",
+      "detail": "one retry; continue after isolated failure"
+    },
+    "no_publication": {
+      "status": "PASS",
+      "detail": "publish=false; human gate required"
+    },
+    "approved_content": {
+      "status": "PASS",
+      "detail": "approved synopsis, phrase allowlist, CTA, and audio IDs"
+    },
+    "approved_audio": {
+      "status": "PASS",
+      "detail": "69cfdc1792c94af1c600fdd868bec87412f6fbdc9477aa94592548faccb2398e"
+    },
+    "non_narrated": {
+      "status": "PASS",
+      "detail": "production narration prohibited"
+    },
+    "external_archive": {
+      "status": "PASS",
+      "detail": "/home/blanzy/media-foundry-output/unknown-process-batch-001"
+    },
+    "dirty_worktree_policy": {
+      "status": "PASS",
+      "detail": "46 existing entries; pinned inputs exact"
+    }
+  },
+  "pinned_files": [
+    {
+      "path": "config/visual-grammar.json",
+      "expected_sha256": "2aac4b81d41d3b78ecd7892d879078d0c67fd6a641904f4bd62ba641ec074d5d",
+      "actual_sha256": "2aac4b81d41d3b78ecd7892d879078d0c67fd6a641904f4bd62ba641ec074d5d",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/mf002.tscn",
+      "expected_sha256": "f94e4ce708e2b68da235f70b2ba4ec44282c3564c0959440865de24c6d71fda2",
+      "actual_sha256": "f94e4ce708e2b68da235f70b2ba4ec44282c3564c0959440865de24c6d71fda2",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/mf002.gd",
+      "expected_sha256": "296d69385011454ad2aa1f0c15d8bb9043879178bf9c47513b50cdf4f63a4d76",
+      "actual_sha256": "296d69385011454ad2aa1f0c15d8bb9043879178bf9c47513b50cdf4f63a4d76",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/beat_timeline.gd",
+      "expected_sha256": "34494dcd3f3b40e865f51f62aa5649546ba1cd6367ec5aaeabf13ffa69d48d04",
+      "actual_sha256": "34494dcd3f3b40e865f51f62aa5649546ba1cd6367ec5aaeabf13ffa69d48d04",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/lofi_book_stage.gd",
+      "expected_sha256": "d1d0c42242a4a22755ceedd9daa96b6bb70a16ea399da0a327653e8e4696b86f",
+      "actual_sha256": "d1d0c42242a4a22755ceedd9daa96b6bb70a16ea399da0a327653e8e4696b86f",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/projected_data_window_stage.gd",
+      "expected_sha256": "6adae54cb26a23b3f813b9e31f842ff97f7ffcb1ae63132e98d4d1d5b99862e7",
+      "actual_sha256": "6adae54cb26a23b3f813b9e31f842ff97f7ffcb1ae63132e98d4d1d5b99862e7",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/integrated_lower_right_stage.gd",
+      "expected_sha256": "fc12ec5dbdc19d42ded123ff351f9692ec4dbf505f79ea2c67a7f7f2eff8141d",
+      "actual_sha256": "fc12ec5dbdc19d42ded123ff351f9692ec4dbf505f79ea2c67a7f7f2eff8141d",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/indicator_pulse_stage.gd",
+      "expected_sha256": "e6cadece92b2f5fae6365498b34ac357fc5b370f487e67fc3b486164198d05bd",
+      "actual_sha256": "e6cadece92b2f5fae6365498b34ac357fc5b370f487e67fc3b486164198d05bd",
+      "status": "PASS"
+    },
+    {
+      "path": "scripts/preflight_mf004.py",
+      "expected_sha256": "019984f257dcc1f55b6af4f54f6dcb1e1e264e0fa67b964fa50b140b1e1041a1",
+      "actual_sha256": "019984f257dcc1f55b6af4f54f6dcb1e1e264e0fa67b964fa50b140b1e1041a1",
+      "status": "PASS"
+    },
+    {
+      "path": "scripts/generate_mf006_sfx.py",
+      "expected_sha256": "6e0d84de474f0713b4b20e4852d4c0d609766d6e4af8aac910dd0909467df172",
+      "actual_sha256": "6e0d84de474f0713b4b20e4852d4c0d609766d6e4af8aac910dd0909467df172",
+      "status": "PASS"
+    },
+    {
+      "path": "scripts/prepare_mf005r1_music.py",
+      "expected_sha256": "4314cc8875c0c3c0eee82e091fd72c47b974ee2b1d2e5c9aae054da714f4512b",
+      "actual_sha256": "4314cc8875c0c3c0eee82e091fd72c47b974ee2b1d2e5c9aae054da714f4512b",
+      "status": "PASS"
+    },
+    {
+      "path": "scripts/mix_mf005_audio.py",
+      "expected_sha256": "b75fe5a7418a262ec0b8aa2087498796f7c365795f7dd9c2a6c8a8951cfd0536",
+      "actual_sha256": "b75fe5a7418a262ec0b8aa2087498796f7c365795f7dd9c2a6c8a8951cfd0536",
+      "status": "PASS"
+    },
+    {
+      "path": "scripts/validate_media.py",
+      "expected_sha256": "4993bebea9d71ceb673d7a208312282182daf154261708b080901fc13c83338e",
+      "actual_sha256": "4993bebea9d71ceb673d7a208312282182daf154261708b080901fc13c83338e",
+      "status": "PASS"
+    },
+    {
+      "path": "content/fixtures/mf006r9-unknown-process.json",
+      "expected_sha256": "24d764ed178b426f3480b33047c73c3ee2d49f7a80a630974c7daba1d1fea426",
+      "actual_sha256": "24d764ed178b426f3480b33047c73c3ee2d49f7a80a630974c7daba1d1fea426",
+      "status": "PASS"
+    }
+  ],
+  "dirty_worktree_entries": 46,
+  "errors": [],
+  "result": "PASS"
+}

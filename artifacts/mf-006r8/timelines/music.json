@@ -1,0 +1,47 @@
+{
+  "slice": "MF-005R1",
+  "fixture": "mf006r8-unknown-process",
+  "status": "PASS",
+  "source": "/home/blanzy/projects/media-foundry/media/audio/music/waiting-for-the-shift.mp3",
+  "audio_path": "/home/blanzy/projects/media-foundry/artifacts/mf-006r8/music/production.wav",
+  "source_analysis": {
+    "duration": 174.445667,
+    "sample_rate": 44100,
+    "channels": 2,
+    "codec": "mp3",
+    "container": "mp3",
+    "bit_rate": 192000
+  },
+  "source_duration": 174.445667,
+  "selected_offset": 0.0,
+  "duration": 28.0,
+  "continuous": true,
+  "loop": false,
+  "loop_count": 0,
+  "normalization_lufs": -24.0,
+  "gain_db": -4.0,
+  "narration_duck_db": -8.0,
+  "attack_ms": 110.0,
+  "release_ms": 280.0,
+  "fade_in": 1.4,
+  "fade_out": 2.2,
+  "activity": {
+    "start": 0.0,
+    "end": 28.0
+  },
+  "provenance": {
+    "type": "user_supplied",
+    "asset_class": "approved",
+    "release_eligible": true,
+    "source_filename": "Waiting_for_the_Shift.mp3",
+    "supplied_by": "user",
+    "retrieval_date": "2026-08-24",
+    "usage": "Authorized by the user for MF-006 and editable to meet the production specification.",
+    "license": "No broader redistribution terms supplied; retain only as a project production source.",
+    "sha256": "69cfdc1792c94af1c600fdd868bec87412f6fbdc9477aa94592548faccb2398e"
+  },
+  "source_sha256": "69cfdc1792c94af1c600fdd868bec87412f6fbdc9477aa94592548faccb2398e",
+  "prepared_sha256": "ea074f623825a83ce5f4ca8f60ff5ebc03329f91a135e91fff7065a1286ac4bf",
+  "preparation_seconds": 0.967087,
+  "result": "PASS"
+}

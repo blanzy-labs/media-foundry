@@ -32,7 +32,7 @@ func configure(source_fixture: Dictionary, source_timeline: Dictionary, _source_
 	var website_value = fixture.get("cta", {}).get("website")
 	website = str(website_value) if typeof(website_value) == TYPE_STRING else ""
 	page_phrases = fixture.get("page_phrases", [])
-	var extended := str(fixture.get("visual_strategy", {}).get("preference", "")) in ["godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement"]
+	var extended := str(fixture.get("visual_strategy", {}).get("preference", "")) in ["godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement", "godot_integrated_lower_right_refinement", "godot_indicator_pulse_refinement"]
 	if title.is_empty() or author.is_empty() or page_phrases.size() < 2 or page_phrases.size() > 3 or duration < 17.0 or duration > (30.0 if extended else 20.0):
 		return {"result": "FAIL", "error": "MF006_SCENE_CONFIG_FAILED: title, author, page phrases, or duration invalid"}
 	var scene: Dictionary = fixture.get("generated_scene", {})
@@ -111,7 +111,7 @@ func _draw_chamber() -> void:
 			if (row + column) % 4 == 0: draw_line(Vector2(x + 14, y + 15), Vector2(x + 78, y + 12), Color(0.32, 0.4, 0.42, 0.25), 2)
 	# Hanging cables and dirty glass depth layer.
 	for cable in range(5):
-		if str(fixture.get("visual_strategy", {}).get("preference", "")) in ["godot_projected_data_window_refinement", "godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement"] and cable == 2:
+		if str(fixture.get("visual_strategy", {}).get("preference", "")) in ["godot_projected_data_window_refinement", "godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement", "godot_integrated_lower_right_refinement", "godot_indicator_pulse_refinement"] and cable == 2:
 			continue
 		var anchor_x := -240.0 + cable * 118.0
 		var sway := sin(current_time * (0.55 + cable * 0.07) + cable) * 10.0

@@ -14,6 +14,8 @@ const ExtendedDataWindowStageScript = preload("res://extended_data_window_stage.
 const LiveInvestigationStageScript = preload("res://live_investigation_stage.gd")
 const FinalPolishStageScript = preload("res://final_polish_stage.gd")
 const LowerRightPolishStageScript = preload("res://lower_right_polish_stage.gd")
+const IntegratedLowerRightStageScript = preload("res://integrated_lower_right_stage.gd")
+const IndicatorPulseStageScript = preload("res://indicator_pulse_stage.gd")
 
 var fixture: Dictionary
 var grammar: Dictionary
@@ -81,9 +83,13 @@ func _ready() -> void:
 	if not _prepare_layouts():
 		return
 	var visual_preference := str(fixture.get("visual_strategy", {}).get("preference", ""))
-	generated_scene_active = visual_preference in ["generated_scene", "godot_generated_scene", "godot_generated_book_refinement", "godot_projected_codex_refinement", "godot_projected_data_window_refinement", "godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement"]
+	generated_scene_active = visual_preference in ["generated_scene", "godot_generated_scene", "godot_generated_book_refinement", "godot_projected_codex_refinement", "godot_projected_data_window_refinement", "godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement", "godot_integrated_lower_right_refinement", "godot_indicator_pulse_refinement"]
 	if generated_scene_active:
-		if visual_preference == "godot_lower_right_polish_refinement":
+		if visual_preference == "godot_indicator_pulse_refinement":
+			generated_stage = IndicatorPulseStageScript.new()
+		elif visual_preference == "godot_integrated_lower_right_refinement":
+			generated_stage = IntegratedLowerRightStageScript.new()
+		elif visual_preference == "godot_lower_right_polish_refinement":
 			generated_stage = LowerRightPolishStageScript.new()
 		elif visual_preference == "godot_final_polish_refinement":
 			generated_stage = FinalPolishStageScript.new()
@@ -889,7 +895,7 @@ func _valid_contract() -> bool:
 		return false
 	var format: Dictionary = fixture.format
 	var duration := float(format.get("duration_seconds", 0))
-	var extended := str(fixture.get("visual_strategy", {}).get("preference", "")) in ["godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement"]
+	var extended := str(fixture.get("visual_strategy", {}).get("preference", "")) in ["godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement", "godot_integrated_lower_right_refinement", "godot_indicator_pulse_refinement"]
 	var valid_duration := duration == 15.0 if not fixture.has("beats") else duration >= 10.0 and duration <= (30.0 if extended else 20.0)
 	return format.get("width") == 1080 and format.get("height") == 1920 and format.get("fps") == 30 and valid_duration
 

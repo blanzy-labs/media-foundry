@@ -1,0 +1,25 @@
+{
+  "slice": "MF-008",
+  "production_grammar_id": "unknown_process_recovered_record_v1",
+  "git_source_ref": "74ae32bd32f5480007ab01feaa77e83625a9a11f",
+  "batch_id": "unknown-process-batch-001",
+  "schedule_id": "55968f6f-1314-41a6-9e7e-ab9875aa0c63",
+  "scheduled_state": "COMPLETE",
+  "ready_for_review": 3,
+  "failed": 0,
+  "renderer_changes": 0,
+  "published": 0,
+  "supervised_dry_run": "PASS",
+  "controlled_partial_failure": "PASS",
+  "controlled_shared_failure": "PASS",
+  "needs_engineering_gate": "PASS",
+  "idempotency": "PASS",
+  "technical_result": "PASS",
+  "human_review": "PENDING_HUMAN",
+  "release_eligible": false,
+  "blockers": [
+    "HUMAN_EDITORIAL_REVIEW",
+    "HUMAN_RELEASE_REVIEW"
+  ],
+  "result": "PASS_WITH_HUMAN_GATE"
+}

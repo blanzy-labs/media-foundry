@@ -1,0 +1,114 @@
+{
+  "batch_id": "unknown-process-batch-001",
+  "run_id": "controlled-partial-failure-001",
+  "trigger_kind": "controlled-test",
+  "state": "PARTIAL",
+  "production_grammar_id": "unknown_process_recovered_record_v1",
+  "git_source_ref": "74ae32bd32f5480007ab01feaa77e83625a9a11f",
+  "started_at": "2026-08-25T09:20:31.951131+00:00",
+  "ended_at": "2026-08-25T09:20:33.612984+00:00",
+  "elapsed_ms": 1852,
+  "shared_preflight": "PASS",
+  "execution": "sequential",
+  "jobs": [
+    {
+      "job_id": "up-video-001",
+      "state": "READY_FOR_REVIEW",
+      "technical": "PASS",
+      "editorial": "PENDING_HUMAN",
+      "release": "PENDING_HUMAN",
+      "artifact": {
+        "path": "/home/blanzy/media-foundry-output/unknown-process-batch-001/controlled-partial-failure-001/up-video-001/final.mp4",
+        "bytes": 5171941,
+        "sha256": "552948ee3b0a2cc804e4ca24cc17ff2be28ea78da4fb8220db8e50c646a06ae1",
+        "render_timestamp": "2026-08-25T09:18:19.674859+00:00"
+      },
+      "production_grammar_id": "unknown_process_recovered_record_v1",
+      "git_source_ref": "74ae32bd32f5480007ab01feaa77e83625a9a11f",
+      "content_package_sha256": "6b972387b23e2bbed82f641831410e1f7a13666451a61a0208ddd7c8b98afc1d",
+      "metrics": {
+        "codex_ms": 0,
+        "render_ms": 0,
+        "finalization_ms": 0,
+        "validation_ms": 0,
+        "retry_ms": 0,
+        "idle_ms": 0,
+        "peak_render_memory_kib": 0,
+        "temporary_bytes_before_cleanup": 0,
+        "retained_bytes": 6275365
+      },
+      "controlled_test_reuse": "/home/blanzy/media-foundry-output/unknown-process-batch-001/supervised-dry-run-001/up-video-001",
+      "publish": false,
+      "result": "PASS",
+      "total_job_ms": 11
+    },
+    {
+      "job_id": "up-video-002",
+      "state": "FAILED_VALIDATION",
+      "technical": "FAIL",
+      "reason": "UNAPPROVED_AUDIO_CUE",
+      "attempts": 2,
+      "attempt_errors": [
+        {
+          "attempt": 1,
+          "state": "FAILED_VALIDATION",
+          "reason": "UNAPPROVED_AUDIO_CUE",
+          "retryable": true,
+          "elapsed_ms": 0
+        },
+        {
+          "attempt": 2,
+          "state": "FAILED_VALIDATION",
+          "reason": "UNAPPROVED_AUDIO_CUE",
+          "retryable": true,
+          "elapsed_ms": 0
+        }
+      ],
+      "editorial": "NOT_REACHED",
+      "release": "NOT_REACHED",
+      "publish": false,
+      "result": "FAIL",
+      "total_job_ms": 1
+    },
+    {
+      "job_id": "up-video-003",
+      "state": "READY_FOR_REVIEW",
+      "technical": "PASS",
+      "editorial": "PENDING_HUMAN",
+      "release": "PENDING_HUMAN",
+      "artifact": {
+        "path": "/home/blanzy/media-foundry-output/unknown-process-batch-001/controlled-partial-failure-001/up-video-003/final.mp4",
+        "bytes": 5158744,
+        "sha256": "58602d8fbb1c0eaa0faf660e09190a670bfca85360ec4570147495dd02a17c3d",
+        "render_timestamp": "2026-08-25T09:20:16.799458+00:00"
+      },
+      "production_grammar_id": "unknown_process_recovered_record_v1",
+      "git_source_ref": "74ae32bd32f5480007ab01feaa77e83625a9a11f",
+      "content_package_sha256": "be7548e805d90712215d39f8b27a72b97f6470a91e14e461e21051097ceb6806",
+      "metrics": {
+        "codex_ms": 0,
+        "render_ms": 0,
+        "finalization_ms": 0,
+        "validation_ms": 0,
+        "retry_ms": 0,
+        "idle_ms": 0,
+        "peak_render_memory_kib": 0,
+        "temporary_bytes_before_cleanup": 0,
+        "retained_bytes": 6280786
+      },
+      "controlled_test_reuse": "/home/blanzy/media-foundry-output/unknown-process-batch-001/supervised-dry-run-001/up-video-003",
+      "publish": false,
+      "result": "PASS",
+      "total_job_ms": 10
+    }
+  ],
+  "ready_for_review": 2,
+  "failed": 1,
+  "needs_engineering": 0,
+  "published": 0,
+  "renderer_changes": 0,
+  "human_review": "PENDING_HUMAN",
+  "batch_contact_sheet": "/home/blanzy/media-foundry-output/unknown-process-batch-001/controlled-partial-failure-001/batch-contact-sheet.png",
+  "archive_bytes": 12673598,
+  "result": "PASS_WITH_EXPECTED_FAILURE"
+}

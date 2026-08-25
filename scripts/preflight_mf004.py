@@ -37,7 +37,7 @@ def build(fixture, grammar, project_root):
         fail("beats must be a non-empty array", "MALFORMED_TIMELINE")
     duration = fixture.get("format", {}).get("duration_seconds")
     limits = grammar.get("beats", {}).get("duration_seconds", {"minimum": 10, "maximum": 20})
-    extended = fixture.get("visual_strategy", {}).get("preference") in {"godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement"}
+    extended = fixture.get("visual_strategy", {}).get("preference") in {"godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement", "godot_integrated_lower_right_refinement", "godot_indicator_pulse_refinement"}
     maximum = 30 if extended else limits["maximum"]
     if not isinstance(duration, (int, float)) or not limits["minimum"] <= duration <= maximum:
         fail(f"configured duration must be between 10 and {maximum:g} seconds", "DURATION_INVALID")

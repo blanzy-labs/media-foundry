@@ -1,0 +1,55 @@
+{
+  "slice": "MF-006R8",
+  "case_count": 12,
+  "cases": [
+    {
+      "case": "separate_branch_returns",
+      "result": "PASS"
+    },
+    {
+      "case": "hub_disconnected",
+      "result": "PASS"
+    },
+    {
+      "case": "not_shared_collection",
+      "result": "PASS"
+    },
+    {
+      "case": "not_shared_draw",
+      "result": "PASS"
+    },
+    {
+      "case": "dedicated_packets",
+      "result": "PASS"
+    },
+    {
+      "case": "corner_animation",
+      "result": "PASS"
+    },
+    {
+      "case": "standalone_cell_returns",
+      "result": "PASS"
+    },
+    {
+      "case": "negative_space_lost",
+      "result": "PASS"
+    },
+    {
+      "case": "second_focal_point",
+      "result": "PASS"
+    },
+    {
+      "case": "major_geometry_added",
+      "result": "PASS"
+    },
+    {
+      "case": "timing_changed",
+      "result": "PASS"
+    },
+    {
+      "case": "new_sfx_added",
+      "result": "PASS"
+    }
+  ],
+  "result": "PASS"
+}

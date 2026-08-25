@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["job_id", "status", "objective", "selected_phrases", "cta", "source_id", "renderer_changes_required", "requested_changes"],
+  "properties": {
+    "job_id": {"type": "string"},
+    "status": {"enum": ["APPROVED_AS_PROVIDED", "BLOCKED_CONTENT", "NEEDS_ENGINEERING"]},
+    "objective": {"type": "string"},
+    "selected_phrases": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "string"}},
+    "cta": {"type": "string"},
+    "source_id": {"type": "string"},
+    "renderer_changes_required": {"type": "boolean"},
+    "requested_changes": {"type": "array", "items": {"type": "string"}}
+  }
+}

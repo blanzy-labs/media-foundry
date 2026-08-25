@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+"""Prove MF-006R9 rejects indicator-pulse regressions."""
+import argparse,copy,json,subprocess,tempfile
+from pathlib import Path
+
+def main():
+ p=argparse.ArgumentParser()
+ for n in ('repo_root','fixture','layout','execution','music_stem','music_reference','sfx_audio','sfx_report','mix','media','contract','output'):p.add_argument('--'+n.replace('_','-'),required=True)
+ a=p.parse_args();base=json.loads(Path(a.layout).read_text());cases=[];m={'dot_removed':lambda d:d['generated_scene']['indicator_pulse'].update(approved_indicator_count=3),'dot_added':lambda d:d['generated_scene']['indicator_pulse'].update(added_indicator_count=1),'dot_moved':lambda d:d['generated_scene']['indicator_pulse'].update(positions_unchanged=False),'constant_blinking':lambda d:d['generated_scene']['indicator_pulse'].update(constant_blinking=True),'regular_timing':lambda d:d['generated_scene']['indicator_pulse'].update(irregular_timing=False),'shared_period':lambda d:d['generated_scene']['indicator_pulse'].update(shared_period=True),'synchronized':lambda d:d['generated_scene']['indicator_pulse'].update(all_synchronized=True),'high_duty_cycle':lambda d:d['generated_scene']['indicator_pulse'].update(maximum_individual_duty_cycle=.5),'chase_animation':lambda d:d['generated_scene']['indicator_pulse'].update(chase_animation=True),'too_bright':lambda d:d['generated_scene']['indicator_pulse'].update(peak_overlay_alpha=.9),'hierarchy_lost':lambda d:d['generated_scene']['indicator_pulse'].update(subordinate_to_cta=False),'new_sfx':lambda d:d['generated_scene']['indicator_pulse'].update(new_sfx=1)}
+ with tempfile.TemporaryDirectory(prefix='mf006r9-failure-') as td:
+  for name,mutate in m.items():
+   data=copy.deepcopy(base);mutate(data);layout=Path(td)/f'{name}.json';result=Path(td)/f'{name}-result.json';motion=Path(td)/f'{name}-motion.json';layout.write_text(json.dumps(data));cmd=['python3',str(Path(a.repo_root)/'scripts/validate_mf006r9_production.py'),'--project-root',a.repo_root,'--fixture',a.fixture,'--layout',str(layout),'--execution',a.execution,'--music-stem',a.music_stem,'--music-reference',a.music_reference,'--sfx-audio',a.sfx_audio,'--sfx-report',a.sfx_report,'--mix',a.mix,'--media',a.media,'--contract',a.contract,'--output',str(result),'--motion-timeline',str(motion)];run=subprocess.run(cmd,capture_output=True,text=True);rejected=run.returncode!=0 and json.loads(result.read_text()).get('result')=='FAIL';cases.append({'case':name,'result':'PASS' if rejected else 'FAIL'})
+ report={'slice':'MF-006R9','case_count':len(cases),'cases':cases,'result':'PASS' if all(x['result']=='PASS' for x in cases) else 'FAIL'};Path(a.output).write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2));return 0 if report['result']=='PASS' else 1
+if __name__=='__main__':raise SystemExit(main())

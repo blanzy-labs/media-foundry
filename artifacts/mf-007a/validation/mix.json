@@ -1,0 +1,33 @@
+{
+  "slice": "MF-007A",
+  "candidate": "B",
+  "music_enabled": false,
+  "music_sources": [],
+  "inputs": [
+    "deterministic_machine_ambience",
+    "deterministic_event_sfx",
+    "preserved_narration_manifest"
+  ],
+  "narration": {
+    "status": "BLOCKED_PRODUCTION_VOICE",
+    "segments": 0,
+    "preserved_identically_in_a_and_b": true
+  },
+  "ducking": {
+    "ambient_duck_db": -4.5,
+    "attack_ms": 120,
+    "release_ms": 320,
+    "applied_windows": [],
+    "reason": "no approved production narration segments"
+  },
+  "normalization": {
+    "processing_target_lufs": -15.6,
+    "measured_output": {
+      "integrated_lufs": -16.7,
+      "true_peak_db": -2.3,
+      "loudness_range": 3.0
+    }
+  },
+  "clipping": "PASS",
+  "result": "PASS_WITH_BLOCKER"
+}

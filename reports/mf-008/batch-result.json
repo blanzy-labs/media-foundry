@@ -1,0 +1,114 @@
+{
+  "batch_id": "unknown-process-batch-001",
+  "run_id": "scheduled-run-001",
+  "trigger_kind": "scheduled",
+  "state": "COMPLETE",
+  "production_grammar_id": "unknown_process_recovered_record_v1",
+  "git_source_ref": "74ae32bd32f5480007ab01feaa77e83625a9a11f",
+  "started_at": "2026-08-25T09:24:42.348835+00:00",
+  "ended_at": "2026-08-25T09:27:40.581749+00:00",
+  "elapsed_ms": 178491,
+  "shared_preflight": "PASS",
+  "execution": "sequential",
+  "jobs": [
+    {
+      "job_id": "up-video-001",
+      "state": "READY_FOR_REVIEW",
+      "technical": "PASS",
+      "editorial": "PENDING_HUMAN",
+      "release": "PENDING_HUMAN",
+      "artifact": {
+        "path": "/home/blanzy/media-foundry-output/unknown-process-batch-001/scheduled-run-001/up-video-001/final.mp4",
+        "bytes": 5171941,
+        "sha256": "552948ee3b0a2cc804e4ca24cc17ff2be28ea78da4fb8220db8e50c646a06ae1",
+        "render_timestamp": "2026-08-25T09:25:42.219408+00:00"
+      },
+      "production_grammar_id": "unknown_process_recovered_record_v1",
+      "git_source_ref": "74ae32bd32f5480007ab01feaa77e83625a9a11f",
+      "content_package_sha256": "6b972387b23e2bbed82f641831410e1f7a13666451a61a0208ddd7c8b98afc1d",
+      "metrics": {
+        "codex_ms": 7268,
+        "render_ms": 21920,
+        "finalization_ms": 27318,
+        "validation_ms": 1650,
+        "retry_ms": 0,
+        "idle_ms": 0,
+        "peak_render_memory_kib": 214164,
+        "temporary_bytes_before_cleanup": 61111522,
+        "retained_bytes": 14352506
+      },
+      "publish": false,
+      "result": "PASS",
+      "total_job_ms": 60021
+    },
+    {
+      "job_id": "up-video-002",
+      "state": "READY_FOR_REVIEW",
+      "technical": "PASS",
+      "editorial": "PENDING_HUMAN",
+      "release": "PENDING_HUMAN",
+      "artifact": {
+        "path": "/home/blanzy/media-foundry-output/unknown-process-batch-001/scheduled-run-001/up-video-002/final.mp4",
+        "bytes": 5200582,
+        "sha256": "44b783be2ece1d20dfee7fd15c1d8a3d84d3bb9c65b04695d3560104a3d75ef4",
+        "render_timestamp": "2026-08-25T09:26:40.553246+00:00"
+      },
+      "production_grammar_id": "unknown_process_recovered_record_v1",
+      "git_source_ref": "74ae32bd32f5480007ab01feaa77e83625a9a11f",
+      "content_package_sha256": "2be6b2a4354b5eef4d6fb7540465c6416fd13601967283174af7dc47c14b425e",
+      "metrics": {
+        "codex_ms": 5958,
+        "render_ms": 21819,
+        "finalization_ms": 27083,
+        "validation_ms": 1651,
+        "retry_ms": 0,
+        "idle_ms": 0,
+        "peak_render_memory_kib": 212288,
+        "temporary_bytes_before_cleanup": 61793286,
+        "retained_bytes": 14392363
+      },
+      "publish": false,
+      "result": "PASS",
+      "total_job_ms": 58333
+    },
+    {
+      "job_id": "up-video-003",
+      "state": "READY_FOR_REVIEW",
+      "technical": "PASS",
+      "editorial": "PENDING_HUMAN",
+      "release": "PENDING_HUMAN",
+      "artifact": {
+        "path": "/home/blanzy/media-foundry-output/unknown-process-batch-001/scheduled-run-001/up-video-003/final.mp4",
+        "bytes": 5158744,
+        "sha256": "58602d8fbb1c0eaa0faf660e09190a670bfca85360ec4570147495dd02a17c3d",
+        "render_timestamp": "2026-08-25T09:27:38.875084+00:00"
+      },
+      "production_grammar_id": "unknown_process_recovered_record_v1",
+      "git_source_ref": "74ae32bd32f5480007ab01feaa77e83625a9a11f",
+      "content_package_sha256": "be7548e805d90712215d39f8b27a72b97f6470a91e14e461e21051097ceb6806",
+      "metrics": {
+        "codex_ms": 6058,
+        "render_ms": 21721,
+        "finalization_ms": 27027,
+        "validation_ms": 1648,
+        "retry_ms": 0,
+        "idle_ms": 0,
+        "peak_render_memory_kib": 213724,
+        "temporary_bytes_before_cleanup": 60962186,
+        "retained_bytes": 14358031
+      },
+      "publish": false,
+      "result": "PASS",
+      "total_job_ms": 58317
+    }
+  ],
+  "ready_for_review": 3,
+  "failed": 0,
+  "needs_engineering": 0,
+  "published": 0,
+  "renderer_changes": 0,
+  "human_review": "PENDING_HUMAN",
+  "batch_contact_sheet": "/home/blanzy/media-foundry-output/unknown-process-batch-001/scheduled-run-001/batch-contact-sheet.png",
+  "archive_bytes": 43242722,
+  "result": "PASS"
+}

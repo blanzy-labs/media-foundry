@@ -1,0 +1,58 @@
+{
+  "slice": "MF-007A",
+  "checks": {
+    "frozen_visual_baseline": "PASS",
+    "candidate_a_unchanged": "PASS",
+    "identical_visual_stream": "PASS",
+    "audio_only_difference": "PASS",
+    "candidate_b_no_music": "PASS",
+    "continuous_ambient_tech": "PASS",
+    "event_sfx_timeline": "PASS",
+    "silent_indicator_and_wall_cells": "PASS",
+    "non_musical_no_beep_design": "PASS",
+    "wake_and_power_down": "PASS",
+    "loudness_match": "PASS",
+    "valid_streams_and_full_decode": "PASS"
+  },
+  "baseline": {
+    "path": "/home/blanzy/projects/media-foundry/artifacts/mf-006r9/candidate-a.mp4",
+    "sha256": "a87bc7eddc400adf87bad7e95f870b33708032a1630f45af9e9f61bb3721601a",
+    "video_stream_sha256": "8e56f953f89f362bdbe9627cca788fafed3a079536090c16dd1804e19e16a5b5"
+  },
+  "candidate_a": {
+    "path": "/home/blanzy/projects/media-foundry/artifacts/mf-007a/candidate-a-music.mp4",
+    "sha256": "a87bc7eddc400adf87bad7e95f870b33708032a1630f45af9e9f61bb3721601a",
+    "video_stream_sha256": "8e56f953f89f362bdbe9627cca788fafed3a079536090c16dd1804e19e16a5b5",
+    "loudness": {
+      "integrated_lufs": -16.67,
+      "true_peak_db": -1.91,
+      "loudness_range": 4.3
+    }
+  },
+  "candidate_b": {
+    "path": "/home/blanzy/projects/media-foundry/artifacts/mf-007a/candidate-b-ambient.mp4",
+    "sha256": "e3d9c569a43a8424b5b21ccee425313e93bf4aa3f3cd425db72783a4428def17",
+    "video_stream_sha256": "8e56f953f89f362bdbe9627cca788fafed3a079536090c16dd1804e19e16a5b5",
+    "loudness": {
+      "integrated_lufs": -16.7,
+      "true_peak_db": -2.3,
+      "loudness_range": 3.0
+    },
+    "music_enabled": false
+  },
+  "loudness_delta_lu": 0.03,
+  "mix_window_rms_dbfs": {
+    "opening": -22.715,
+    "active": -15.855,
+    "ending": -41.317
+  },
+  "errors": [],
+  "gates": {
+    "audio_visual_technical": "PASS",
+    "production_voice": "BLOCKED_PRODUCTION_VOICE",
+    "human_ab_review": "PENDING_HUMAN",
+    "winner": "NO_WINNER_PENDING_HUMAN",
+    "release": "RELEASE_ELIGIBLE_NO"
+  },
+  "result": "PASS_WITH_BLOCKER"
+}

@@ -10,6 +10,8 @@
 | MF-006R5 | Live investigation record | Query fragments, staged evidence discovery, confirmed results, stronger overload, intentional green-cell response, final-transmission CTA | Pending production voice and human release judgment |
 | MF-006R6 | Final motion/projection/audio polish | Clear motion endpoints, restrained projection physicality, deliberate record resets, visible CTA packets, event-specific SFX | Pending production voice and human editorial/release judgment |
 | MF-006R7 | Lower-right composition balance | One subordinate feeder branch, one powered cell, restrained event response, preserved negative space | Pending production voice and human editorial/release judgment |
+| MF-006R8 | Integrated lower-right infrastructure | Replaces the rejected corner feature with one ordinary network route that terminates at the shared hub; removes the standalone cell and local animation | Pending production voice and human editorial/release judgment |
+| MF-006R9 | Orange indicator pulse polish | Keeps the four approved emitter contacts and adds infrequent deterministic pulses with unequal timing and no chase behavior | Pending production voice and human editorial/release judgment |
 
 ## Preserved learning
 

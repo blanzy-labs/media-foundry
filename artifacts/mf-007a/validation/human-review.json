@@ -1,0 +1,16 @@
+{
+  "slice": "MF-007A",
+  "review_status": "PENDING_HUMAN",
+  "devices": {
+    "phone_speakers": "PENDING",
+    "headphones_or_earbuds": "PENDING",
+    "desktop_or_laptop_speakers": "PENDING"
+  },
+  "decision": "NO_WINNER_PENDING_HUMAN",
+  "allowed_decisions": [
+    "A \u2014 MUSIC",
+    "B \u2014 AMBIENT TECH",
+    "NO WINNER \u2014 REFINE"
+  ],
+  "release_eligible": false
+}

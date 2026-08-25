@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "storePath": "/home/blanzy/.openclaw/cron/jobs.json",
+  "storage": "sqlite",
+  "sqlitePath": "/home/blanzy/.openclaw/state/openclaw.sqlite",
+  "jobs": 1,
+  "nextWakeAtMs": null
+}

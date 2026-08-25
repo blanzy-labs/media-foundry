@@ -1,0 +1,6 @@
+{
+  "test": "duplicate completed batch ID",
+  "exit_code": 4,
+  "detail": "MF008_DUPLICATE_RUN_REFUSED run_id=scheduled-run-001",
+  "result": "PASS"
+}

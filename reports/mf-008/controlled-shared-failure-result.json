@@ -1,0 +1,70 @@
+{
+  "batch_id": "unknown-process-batch-001",
+  "run_id": "controlled-shared-failure-001",
+  "trigger_kind": "controlled-test",
+  "state": "FAILED",
+  "started_at": "2026-08-25T09:17:12.280435+00:00",
+  "jobs": [
+    {
+      "id": "up-video-001",
+      "state": "PENDING",
+      "attempts": 0,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T09:17:12.280435+00:00"
+        }
+      ]
+    },
+    {
+      "id": "up-video-002",
+      "state": "PENDING",
+      "attempts": 0,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T09:17:12.280435+00:00"
+        }
+      ]
+    },
+    {
+      "id": "up-video-003",
+      "state": "PENDING",
+      "attempts": 0,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T09:17:12.280435+00:00"
+        }
+      ]
+    }
+  ],
+  "ended_at": "2026-08-25T09:17:13.901157+00:00",
+  "shared_failure": {
+    "result": "FAIL",
+    "classification": "SHARED_INFRASTRUCTURE_FAILURE",
+    "tools": {
+      "godot": "/home/blanzy/.local/bin/godot",
+      "ffmpeg": "/usr/bin/ffmpeg",
+      "ffprobe": "/usr/bin/ffprobe",
+      "codex": "/home/blanzy/.nvm/versions/node/v24.19.0/bin/codex",
+      "openclaw": "/home/blanzy/.nvm/versions/node/v24.19.0/bin/openclaw"
+    },
+    "disk_free_bytes": 662404300800,
+    "output_archive_writable": true,
+    "codex_invocation_available": true,
+    "openclaw_context_valid": true,
+    "renderer_changes_allowed": false,
+    "manifest_validation_ms": 61,
+    "errors": [
+      "PINNED_PRODUCTION_GRAMMAR_PREFLIGHT_FAILED"
+    ]
+  },
+  "jobs_started": 0,
+  "ready_for_review": 0,
+  "failed": 0,
+  "needs_engineering": 0,
+  "published": 0,
+  "elapsed_ms": 1621,
+  "result": "FAIL"
+}

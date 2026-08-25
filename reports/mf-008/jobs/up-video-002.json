@@ -1,0 +1,30 @@
+{
+  "job_id": "up-video-002",
+  "state": "READY_FOR_REVIEW",
+  "technical": "PASS",
+  "editorial": "PENDING_HUMAN",
+  "release": "PENDING_HUMAN",
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/unknown-process-batch-001/scheduled-run-001/up-video-002/final.mp4",
+    "bytes": 5200582,
+    "sha256": "44b783be2ece1d20dfee7fd15c1d8a3d84d3bb9c65b04695d3560104a3d75ef4",
+    "render_timestamp": "2026-08-25T09:26:40.553246+00:00"
+  },
+  "production_grammar_id": "unknown_process_recovered_record_v1",
+  "git_source_ref": "74ae32bd32f5480007ab01feaa77e83625a9a11f",
+  "content_package_sha256": "2be6b2a4354b5eef4d6fb7540465c6416fd13601967283174af7dc47c14b425e",
+  "metrics": {
+    "codex_ms": 5958,
+    "render_ms": 21819,
+    "finalization_ms": 27083,
+    "validation_ms": 1651,
+    "retry_ms": 0,
+    "idle_ms": 0,
+    "peak_render_memory_kib": 212288,
+    "temporary_bytes_before_cleanup": 61793286,
+    "retained_bytes": 14392363
+  },
+  "publish": false,
+  "result": "PASS",
+  "total_job_ms": 58333
+}

@@ -1,0 +1,19 @@
+{
+  "slice": "MF-007A",
+  "visual_changes": 0,
+  "timeline_changes": 0,
+  "renderer_changes": 0,
+  "candidate_a_preserved": "PASS",
+  "candidate_b_no_music": "PASS",
+  "identical_video_stream": "PASS",
+  "event_sound_design": "PASS",
+  "loudness_match_delta_lu": 0.03,
+  "full_decode": "PASS",
+  "failure_tests": "PASS",
+  "production_voice": "BLOCKED_PRODUCTION_VOICE",
+  "human_ab_review": "PENDING_HUMAN",
+  "preferred_audio_direction": "NO_WINNER_PENDING_HUMAN",
+  "release_eligible": false,
+  "technical_result": "PASS",
+  "result": "PASS_WITH_BLOCKER"
+}

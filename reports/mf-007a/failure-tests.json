@@ -1,0 +1,63 @@
+{
+  "slice": "MF-007A",
+  "case_count": 8,
+  "cases": [
+    {
+      "case": "baseline_hash",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "validator_exit": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "video_stream_hash",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "validator_exit": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "music_enabled",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "validator_exit": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "music_source",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "validator_exit": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "missing_event",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "validator_exit": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "narration_hash",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "validator_exit": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "narration_state",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "validator_exit": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "loudness_target",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "validator_exit": 1,
+      "result": "PASS"
+    }
+  ],
+  "result": "PASS"
+}

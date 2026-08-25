@@ -1,0 +1,72 @@
+{
+  "id": "55968f6f-1314-41a6-9e7e-ab9875aa0c63",
+  "declarationKey": "mf008-unknown-process-batch-001-scheduled-001",
+  "displayName": "MF-008 Unknown Process Batch 001",
+  "name": "mf008-unknown-process-batch-001-scheduled-001",
+  "description": "One-time unattended three-video Media Foundry batch; publish=false",
+  "enabled": false,
+  "deleteAfterRun": false,
+  "createdAtMs": 1787649762683,
+  "updatedAtMs": 1787650060849,
+  "schedule": {
+    "kind": "at",
+    "at": "2026-08-25T09:24:42.284Z"
+  },
+  "sessionTarget": "isolated",
+  "wakeMode": "now",
+  "payload": {
+    "kind": "command",
+    "argv": [
+      "python3",
+      "/home/blanzy/projects/media-foundry/scripts/run_mf008_batch.py",
+      "--project-root",
+      "/home/blanzy/projects/media-foundry",
+      "--manifest",
+      "/home/blanzy/projects/media-foundry/content/batches/mf008-unknown-process-batch-001.json",
+      "--run-id",
+      "scheduled-run-001",
+      "--trigger-kind",
+      "scheduled"
+    ],
+    "cwd": "/home/blanzy/projects/media-foundry",
+    "env": {
+      "PATH": "/home/blanzy/.local/bin:/home/blanzy/.nvm/versions/node/v24.19.0/bin:/usr/local/bin:/usr/bin:/bin"
+    },
+    "noOutputTimeoutSeconds": 600,
+    "outputMaxBytes": 20000,
+    "timeoutSeconds": 1800
+  },
+  "delivery": {
+    "mode": "none",
+    "channel": "last"
+  },
+  "failureAlert": false,
+  "state": {
+    "lastRunAtMs": 1787649882287,
+    "lastRunStatus": "ok",
+    "lastStatus": "ok",
+    "lastDurationMs": 178562,
+    "lastDiagnostics": {
+      "summary": "{\n  \"batch_id\": \"unknown-process-batch-001\",\n  \"run_id\": \"scheduled-run-001\",\n  \"trigger_kind\": \"scheduled\",\n  \"state\": \"COMPLETE\",\n  \"production_grammar_id\": \"unknown_process_recovered_record_v1\",\n  \"git_source_ref\": \"74ae32bd32f5480007ab01feaa77e83625a9a11f\",\n  \"started_at\": \"2026-08-25T09:24:42.348835+00:00\",\n  \"ended_at\": \"2026-08-25T09:27:40.581749+00:00\",\n  \"elapsed_ms\": 178491,\n  \"shared_preflight\": \"PASS\",\n  \"execution\": \"sequential\",\n  \"jobs\": [\n    {\n      \"job_id\": \"up-video-001\",\n      \"state\": \"READY_FOR_REVIEW\",\n      \"technical\": \"PASS\",\n      \"editorial\": \"PENDING_HUMAN\",\n      \"release\": \"PENDING_HUMAN\",\n      \"artifact\": {\n        \"path\": \"/home/blanzy/media-foundry-output/unknown-process-batch-001/scheduled-run-001/up-video-001/final.mp4\",\n        \"bytes\": 5171941,\n        \"sha256\": \"552948ee3b0a2cc804e4ca24cc17ff2be28ea78da4fb8220db8e50c646a06ae1\",\n        \"render_timestamp\": \"2026-08-25T09:25:42.219408+00:00\"\n      },\n      \"production_grammar_id\": \"unknown_process_recovered_record_v1\",\n      \"git_source_ref\": \"74ae32bd32f5480007ab01feaa77e83625a9a11f\",\n      \"content_package_sha256\": \"6b972387b23e2bbed82f641831410e1f7a13666451a61a0208ddd7c8b98afc1d\",\n      \"metrics\": {\n        \"codex_ms\": 7268,\n        \"render_ms\": 21920,\n        \"finalization_ms\": 27318,\n        \"validation_ms\": 1650,\n        \"retry_ms\": 0,\n        \"idle_ms\": 0,\n        \"peak_render_memory_kib\": 214164,\n        \"temporary_bytes_before_cleanup\": 61111522,\n        \"retained_bytes\": 14352506\n      },\n      \"publish\": false,\n      \"result\": \"PASS\",\n      \"total_job_ms\": 60021\n    },\n    {\n      \"job_id\": \"up-video-002\",\n      \"state\": \"READY_FOR_REVIEW\",\n      \"technical\": \"PASS\",\n      \"editorial\": \"PENDING_HUMAN\",\n      \"release\": \"PENDING_HUMAN\",\n      \"artifact\": {\n        \"path\": \"/home/blanzy/media-foundry-output/unknown-process-batch-001/scheduled-run-001/up-video-002/final.mp4\",\n        \"bytes\": 5200582,\n        \"sha256\": \"44b783be2ece1d20dfee7fd15c1d8a3d84d3bb9c65b04695d…",
+      "entries": [
+        {
+          "ts": 1787650060849,
+          "source": "exec",
+          "severity": "info",
+          "message": "command ok: \"python3\" \"/home/blanzy/projects/media-foundry/scripts/run_mf008_batch.py\" \"--project-root\" \"/home/blanzy/projects/media-foundry\" \"--manifest\" \"/home/blanzy/projects/media-foundry/content/batches/mf008-unknown-process-batch-001.json\" \"--run-id\" \"scheduled-run-001\" \"--trigger-kind\" \"scheduled\"",
+          "exitCode": 0
+        }
+      ]
+    },
+    "lastDiagnosticSummary": "{\n  \"batch_id\": \"unknown-process-batch-001\",\n  \"run_id\": \"scheduled-run-001\",\n  \"trigger_kind\": \"scheduled\",\n  \"state\": \"COMPLETE\",\n  \"production_grammar_id\": \"unknown_process_recovered_record_v1\",\n  \"git_source_ref\": \"74ae32bd32f5480007ab01feaa77e83625a9a11f\",\n  \"started_at\": \"2026-08-25T09:24:42.348835+00:00\",\n  \"ended_at\": \"2026-08-25T09:27:40.581749+00:00\",\n  \"elapsed_ms\": 178491,\n  \"shared_preflight\": \"PASS\",\n  \"execution\": \"sequential\",\n  \"jobs\": [\n    {\n      \"job_id\": \"up-video-001\",\n      \"state\": \"READY_FOR_REVIEW\",\n      \"technical\": \"PASS\",\n      \"editorial\": \"PENDING_HUMAN\",\n      \"release\": \"PENDING_HUMAN\",\n      \"artifact\": {\n        \"path\": \"/home/blanzy/media-foundry-output/unknown-process-batch-001/scheduled-run-001/up-video-001/final.mp4\",\n        \"bytes\": 5171941,\n        \"sha256\": \"552948ee3b0a2cc804e4ca24cc17ff2be28ea78da4fb8220db8e50c646a06ae1\",\n        \"render_timestamp\": \"2026-08-25T09:25:42.219408+00:00\"\n      },\n      \"production_grammar_id\": \"unknown_process_recovered_record_v1\",\n      \"git_source_ref\": \"74ae32bd32f5480007ab01feaa77e83625a9a11f\",\n      \"content_package_sha256\": \"6b972387b23e2bbed82f641831410e1f7a13666451a61a0208ddd7c8b98afc1d\",\n      \"metrics\": {\n        \"codex_ms\": 7268,\n        \"render_ms\": 21920,\n        \"finalization_ms\": 27318,\n        \"validation_ms\": 1650,\n        \"retry_ms\": 0,\n        \"idle_ms\": 0,\n        \"peak_render_memory_kib\": 214164,\n        \"temporary_bytes_before_cleanup\": 61111522,\n        \"retained_bytes\": 14352506\n      },\n      \"publish\": false,\n      \"result\": \"PASS\",\n      \"total_job_ms\": 60021\n    },\n    {\n      \"job_id\": \"up-video-002\",\n      \"state\": \"READY_FOR_REVIEW\",\n      \"technical\": \"PASS\",\n      \"editorial\": \"PENDING_HUMAN\",\n      \"release\": \"PENDING_HUMAN\",\n      \"artifact\": {\n        \"path\": \"/home/blanzy/media-foundry-output/unknown-process-batch-001/scheduled-run-001/up-video-002/final.mp4\",\n        \"bytes\": 5200582,\n        \"sha256\": \"44b783be2ece1d20dfee7fd15c1d8a3d84d3bb9c65b04695d…",
+    "lastDeliveryStatus": "not-requested",
+    "lastFailureNotificationDeliveryStatus": "not-requested",
+    "consecutiveErrors": 0,
+    "consecutiveSkipped": 0
+  },
+  "lastRunAtMs": 1787649882287,
+  "lastRunStatus": "ok",
+  "lastDeliveryStatus": "not-requested",
+  "lastFailureNotificationDeliveryStatus": "not-requested",
+  "status": "disabled"
+}

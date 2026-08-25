@@ -1,0 +1,326 @@
+{
+  "slice": "MF-006R8",
+  "lower_right_integration": {
+    "added_network_path_count": 1,
+    "architectural_changes": 0,
+    "audio_unchanged": true,
+    "camera_unchanged": true,
+    "connects_directly_to_main_hub": true,
+    "custom_corner_event_animation": false,
+    "dedicated_packet_sequence": false,
+    "event_response": "shared system behavior",
+    "major_visual_redesign": 0,
+    "negative_space_ratio": 0.66,
+    "new_major_geometry": 0,
+    "new_sfx": 0,
+    "path_endpoint": {
+      "x": 0.0,
+      "y": 125.0
+    },
+    "path_point_count": 8,
+    "path_start_region": "lower-right edge",
+    "powered_cell_count": 0,
+    "r7_separate_branch_removed": true,
+    "r7_standalone_cell_removed": true,
+    "second_focal_point": false,
+    "subordinate_to_cta": true,
+    "subordinate_to_node": true,
+    "subordinate_to_projection": true,
+    "timings_unchanged": true,
+    "total_network_path_count": 7,
+    "uses_shared_circuit_collection": true,
+    "uses_shared_draw_logic": true,
+    "uses_shared_energy_logic": true
+  },
+  "events": [
+    {
+      "id": "path_draw_start",
+      "observed_frame": 839,
+      "time": 0.0,
+      "type": "path_draw_start"
+    },
+    {
+      "id": "paths_drawn",
+      "observed_frame": 839,
+      "time": 0.7,
+      "type": "paths_drawn"
+    },
+    {
+      "id": "energy_flow",
+      "observed_frame": 839,
+      "time": 0.75,
+      "type": "energy_flow"
+    },
+    {
+      "id": "central_node_charge",
+      "observed_frame": 839,
+      "time": 1.45,
+      "type": "central_node_charge"
+    },
+    {
+      "id": "overload",
+      "observed_frame": 839,
+      "time": 1.9,
+      "type": "overload"
+    },
+    {
+      "id": "overload_pulse_1",
+      "observed_frame": 839,
+      "time": 2.1,
+      "type": "overload_pulse"
+    },
+    {
+      "id": "overload_pulse_2",
+      "observed_frame": 839,
+      "time": 2.4,
+      "type": "overload_pulse"
+    },
+    {
+      "id": "overload_peak",
+      "observed_frame": 839,
+      "time": 2.55,
+      "type": "overload_peak"
+    },
+    {
+      "id": "spark_burst",
+      "observed_frame": 839,
+      "time": 2.7,
+      "type": "spark_burst"
+    },
+    {
+      "id": "title_form",
+      "observed_frame": 839,
+      "time": 2.78,
+      "type": "title_form"
+    },
+    {
+      "id": "projection_emission",
+      "observed_frame": 839,
+      "time": 2.9,
+      "type": "projection_emission"
+    },
+    {
+      "id": "screen_initialize",
+      "observed_frame": 839,
+      "time": 2.9,
+      "type": "screen_initialize"
+    },
+    {
+      "id": "camera_push",
+      "observed_frame": 839,
+      "time": 3.1,
+      "type": "camera_push"
+    },
+    {
+      "id": "title_stabilized",
+      "observed_frame": 839,
+      "time": 3.45,
+      "type": "title_stabilized"
+    },
+    {
+      "id": "record_query_1",
+      "observed_frame": 839,
+      "time": 6.2,
+      "type": "record_query"
+    },
+    {
+      "id": "record_typing_1",
+      "observed_frame": 839,
+      "time": 6.75,
+      "type": "record_typing"
+    },
+    {
+      "id": "record_activity_1",
+      "observed_frame": 839,
+      "time": 7.35,
+      "type": "record_activity"
+    },
+    {
+      "id": "record_confirm_1",
+      "observed_frame": 839,
+      "time": 8.4,
+      "type": "record_confirm"
+    },
+    {
+      "id": "record_lock_1",
+      "observed_frame": 839,
+      "time": 8.65,
+      "type": "record_lock"
+    },
+    {
+      "id": "record_hold_1",
+      "observed_frame": 839,
+      "time": 9.1,
+      "type": "record_hold"
+    },
+    {
+      "id": "record_reset_1",
+      "observed_frame": 839,
+      "time": 9.7,
+      "type": "record_reset"
+    },
+    {
+      "id": "screen_refresh_1",
+      "observed_frame": 839,
+      "time": 9.85,
+      "type": "screen_refresh"
+    },
+    {
+      "id": "record_query_2",
+      "observed_frame": 839,
+      "time": 10.0,
+      "type": "record_query"
+    },
+    {
+      "id": "record_typing_2",
+      "observed_frame": 839,
+      "time": 10.5,
+      "type": "record_typing"
+    },
+    {
+      "id": "record_activity_2",
+      "observed_frame": 839,
+      "time": 11.1,
+      "type": "record_activity"
+    },
+    {
+      "id": "record_confirm_2",
+      "observed_frame": 839,
+      "time": 12.7,
+      "type": "record_confirm"
+    },
+    {
+      "id": "record_lock_2",
+      "observed_frame": 839,
+      "time": 13.0,
+      "type": "record_lock"
+    },
+    {
+      "id": "record_hold_2",
+      "observed_frame": 839,
+      "time": 13.35,
+      "type": "record_hold"
+    },
+    {
+      "id": "record_reset_2",
+      "observed_frame": 839,
+      "time": 13.95,
+      "type": "record_reset"
+    },
+    {
+      "id": "screen_refresh_2",
+      "observed_frame": 839,
+      "time": 14.1,
+      "type": "screen_refresh"
+    },
+    {
+      "id": "record_query_3",
+      "observed_frame": 839,
+      "time": 14.25,
+      "type": "record_query"
+    },
+    {
+      "id": "record_typing_3",
+      "observed_frame": 839,
+      "time": 14.75,
+      "type": "record_typing"
+    },
+    {
+      "id": "record_activity_3",
+      "observed_frame": 839,
+      "time": 15.35,
+      "type": "record_activity"
+    },
+    {
+      "id": "record_confirm_3",
+      "observed_frame": 839,
+      "time": 17.0,
+      "type": "record_confirm"
+    },
+    {
+      "id": "record_lock_3",
+      "observed_frame": 839,
+      "time": 17.3,
+      "type": "record_lock"
+    },
+    {
+      "id": "record_hold_3",
+      "observed_frame": 839,
+      "time": 17.75,
+      "type": "record_hold"
+    },
+    {
+      "id": "final_record_settle",
+      "observed_frame": 839,
+      "time": 18.45,
+      "type": "settle"
+    },
+    {
+      "id": "screen_collapse",
+      "observed_frame": 839,
+      "time": 19.1,
+      "type": "screen_collapse"
+    },
+    {
+      "id": "data_dissolve",
+      "observed_frame": 839,
+      "time": 19.1,
+      "type": "data_dissolve"
+    },
+    {
+      "id": "energy_reclaimed",
+      "observed_frame": 839,
+      "time": 20.5,
+      "type": "energy_reclaimed"
+    },
+    {
+      "id": "return_energy",
+      "observed_frame": 839,
+      "time": 20.7,
+      "type": "return_energy"
+    },
+    {
+      "id": "camera_pull_back",
+      "observed_frame": 839,
+      "time": 21.2,
+      "type": "camera_pull_back"
+    },
+    {
+      "id": "cta_energy",
+      "observed_frame": 839,
+      "time": 22.4,
+      "type": "cta_energy"
+    },
+    {
+      "id": "cta_typing",
+      "observed_frame": 839,
+      "time": 22.9,
+      "type": "cta_typing"
+    },
+    {
+      "id": "cta_lock",
+      "observed_frame": 839,
+      "time": 23.65,
+      "type": "cta_lock"
+    },
+    {
+      "id": "website_reveal",
+      "observed_frame": 839,
+      "time": 24.0,
+      "type": "website_reveal"
+    },
+    {
+      "id": "cta_reveal",
+      "observed_frame": 839,
+      "time": 24.0,
+      "type": "cta_reveal"
+    },
+    {
+      "id": "cta_settle",
+      "observed_frame": 839,
+      "time": 24.5,
+      "type": "settle"
+    }
+  ],
+  "result": "PASS"
+}

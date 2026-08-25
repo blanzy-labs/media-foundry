@@ -51,7 +51,7 @@ func _draw_window_chamber() -> void:
 	var cta:=_smooth(_ramp(current_time,_time("cta_energy"),.6))
 	for index in accent_cells:
 		var row:int=int(index)/6; var column:int=int(index)%6; var x:=-320.0+column*108.0+(10.0 if row%2 else 0.0); var y:=-520.0+row*118.0
-		var central:=column in [2,3] and row in [2,3,4]; var extended:=str(fixture.get("visual_strategy",{}).get("preference","")) in ["godot_extended_data_window_refinement","godot_live_investigation_refinement","godot_final_polish_refinement","godot_lower_right_polish_refinement"]; var pulse:=(.21 if extended else .18)+.045*sin(current_time*(.38+float(int(index)%3)*.07)+int(index)*1.7)+overload*.055+cta*.025
+		var central:=column in [2,3] and row in [2,3,4]; var extended:=str(fixture.get("visual_strategy",{}).get("preference","")) in ["godot_extended_data_window_refinement","godot_live_investigation_refinement","godot_final_polish_refinement","godot_lower_right_polish_refinement","godot_integrated_lower_right_refinement","godot_indicator_pulse_refinement"]; var pulse:=(.21 if extended else .18)+.045*sin(current_time*(.38+float(int(index)%3)*.07)+int(index)*1.7)+overload*.055+cta*.025
 		if central: pulse*=.48
 		var color:Color=ACCENT_COLORS[int(accent_cells[index])]
 		draw_rect(Rect2(x+5,y+5,92,102),Color(color,pulse),true); draw_rect(Rect2(x+8,y+8,86,96),Color(color,pulse*.35),false,3)
@@ -89,7 +89,7 @@ func _draw_node_burst() -> void:
 func _draw_data_window() -> void:
 	var initialize:=_smooth(_ramp(current_time,_time("screen_initialize"),.55)); var collapse:=_smooth(_ramp(current_time,_time("screen_collapse"),_time("energy_reclaimed")-_time("screen_collapse"))); var alpha:=initialize*(1.0-collapse)
 	if alpha<=.01:return
-	var extended:=str(fixture.get("visual_strategy",{}).get("preference","")) in ["godot_extended_data_window_refinement","godot_live_investigation_refinement","godot_final_polish_refinement","godot_lower_right_polish_refinement"];var story_live:=extended and current_time>=_time("record_typing_1") and current_time<_time("screen_collapse");var hover:=sin(current_time*1.55)*3.0;draw_set_transform(Vector2(0,hover+(-8 if story_live else 0)),deg_to_rad(-.45),Vector2.ONE*(1.06 if story_live else 1.0))
+	var extended:=str(fixture.get("visual_strategy",{}).get("preference","")) in ["godot_extended_data_window_refinement","godot_live_investigation_refinement","godot_final_polish_refinement","godot_lower_right_polish_refinement","godot_integrated_lower_right_refinement","godot_indicator_pulse_refinement"];var story_live:=extended and current_time>=_time("record_typing_1") and current_time<_time("screen_collapse");var hover:=sin(current_time*1.55)*3.0;draw_set_transform(Vector2(0,hover+(-8 if story_live else 0)),deg_to_rad(-.45),Vector2.ONE*(1.06 if story_live else 1.0))
 	# The dark backing suppresses circuit/color pollution while retaining low-fi translucency.
 	draw_colored_polygon(screen_points,Color(.018,.095,.11,.84*alpha)); draw_polyline(PackedVector2Array([screen_points[0],screen_points[1],screen_points[2],screen_points[3],screen_points[0]]),Color(.34,1,.9,.82*alpha),5)
 	for corner in [Vector2(-190,-296),Vector2(193,-284),Vector2(185,22),Vector2(-197,10)]: draw_rect(Rect2(corner-Vector2(5,5),Vector2(10,10)),Color(.94,.62,.25,.85*alpha),true)

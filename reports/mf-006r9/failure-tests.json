@@ -1,0 +1,55 @@
+{
+  "slice": "MF-006R9",
+  "case_count": 12,
+  "cases": [
+    {
+      "case": "dot_removed",
+      "result": "PASS"
+    },
+    {
+      "case": "dot_added",
+      "result": "PASS"
+    },
+    {
+      "case": "dot_moved",
+      "result": "PASS"
+    },
+    {
+      "case": "constant_blinking",
+      "result": "PASS"
+    },
+    {
+      "case": "regular_timing",
+      "result": "PASS"
+    },
+    {
+      "case": "shared_period",
+      "result": "PASS"
+    },
+    {
+      "case": "synchronized",
+      "result": "PASS"
+    },
+    {
+      "case": "high_duty_cycle",
+      "result": "PASS"
+    },
+    {
+      "case": "chase_animation",
+      "result": "PASS"
+    },
+    {
+      "case": "too_bright",
+      "result": "PASS"
+    },
+    {
+      "case": "hierarchy_lost",
+      "result": "PASS"
+    },
+    {
+      "case": "new_sfx",
+      "result": "PASS"
+    }
+  ],
+  "result": "PASS"
+}

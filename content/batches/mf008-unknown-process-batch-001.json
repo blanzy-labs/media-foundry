@@ -1,0 +1,81 @@
+{
+  "batch": {
+    "id": "unknown-process-batch-001",
+    "production_grammar": "unknown_process_recovered_record_v1",
+    "production_grammar_file": "config/production-grammars/unknown-process-recovered-record-v1.json",
+    "execution": "sequential",
+    "publish": false,
+    "require_human_release_approval": true,
+    "job_limit": 3,
+    "source_git_ref": "74ae32bd32f5480007ab01feaa77e83625a9a11f",
+    "output_archive": "/home/blanzy/media-foundry-output/unknown-process-batch-001"
+  },
+  "policy": {
+    "allow_renderer_changes": false,
+    "allow_runtime_architecture_changes": false,
+    "max_technical_retries": 1,
+    "continue_after_job_failure": true,
+    "dirty_worktree": "ALLOW_ONLY_WITH_EXACT_PINNED_FILE_HASHES",
+    "codex_sandbox": "read-only",
+    "automatic_publication": false,
+    "automatic_editorial_approval": false
+  },
+  "state_models": {
+    "job": ["PENDING", "PREFLIGHT", "READY", "GENERATING_CONTENT_PACKAGE", "RENDERING", "VALIDATING", "READY_FOR_REVIEW", "BLOCKED_CONTENT", "MISSING_ASSET", "FAILED_RENDER", "FAILED_VALIDATION", "NEEDS_ENGINEERING", "CANCELLED"],
+    "batch": ["PENDING", "RUNNING", "COMPLETE", "PARTIAL", "FAILED"]
+  },
+  "approved_source": {
+    "id": "unknown-process-approved-synopsis-v1",
+    "title": "Unknown Process",
+    "author": "R.C. Blanzy",
+    "canonical_author": "Robert C. Blanzy",
+    "series": "The Second Presence",
+    "book_number": 1,
+    "synopsis": "Framed, hunted, and stripped of his old life, Simon is forced on the run alongside two impossible targets: Leo, a bio-engineered boy acting as a living data bridge, and Zeph, a hunted AI kernel evolving at a terrifying speed. Pursued by the Syndicate—a cabal of global elites using bleeding-edge technology to subjugate the planet—Simon realizes he isn't just a protector. He carries the ultimate weapon. Locked within his own biometrics is the kill-switch to a digital empire. To survive, Simon must navigate a deadly maze of corporate black-ops and untethered artificial intelligence, or watch humanity be quietly enslaved by an unseen hand.",
+    "source": "user-approved copy and https://www.rcblanzy.com/books/unknown-process/",
+    "canonical_url": "https://rcblanzy.com/books/unknown-process",
+    "display_url": "rcblanzy.com/books/unknown-process",
+    "retrieval_date": "2026-08-24"
+  },
+  "approved_phrase_allowlist": [
+    "SIMON IS FRAMED",
+    "SIMON IS BEING HUNTED",
+    "STRIPPED OF HIS OLD LIFE",
+    "LEO: A LIVING DATA BRIDGE",
+    "ZEPH: AN EVOLVING AI KERNEL",
+    "TWO IMPOSSIBLE TARGETS",
+    "LOCKED IN SIMON'S BIOMETRICS",
+    "THE KILL-SWITCH",
+    "TO A DIGITAL EMPIRE"
+  ],
+  "audio_cue_map": "config/audio-cues/unknown-process-track-a.json",
+  "jobs": [
+    {
+      "id": "up-video-001",
+      "objective": "Introduce Simon as framed and hunted.",
+      "source_id": "unknown-process-approved-synopsis-v1",
+      "approved_phrases": ["SIMON IS FRAMED", "SIMON IS BEING HUNTED", "STRIPPED OF HIS OLD LIFE"],
+      "audio": {"mode": "music", "track_id": "unknown-process-track-a", "cue_id": "baseline_full"},
+      "cta": "Continue the adventure",
+      "renderer_changes_required": false
+    },
+    {
+      "id": "up-video-002",
+      "objective": "Introduce Leo and Zeph as two extraordinary targets.",
+      "source_id": "unknown-process-approved-synopsis-v1",
+      "approved_phrases": ["LEO: A LIVING DATA BRIDGE", "ZEPH: AN EVOLVING AI KERNEL", "TWO IMPOSSIBLE TARGETS"],
+      "audio": {"mode": "music", "track_id": "unknown-process-track-a", "cue_id": "baseline_full"},
+      "cta": "Continue the adventure",
+      "renderer_changes_required": false
+    },
+    {
+      "id": "up-video-003",
+      "objective": "Reveal the kill-switch to a digital empire inside Simon's biometrics.",
+      "source_id": "unknown-process-approved-synopsis-v1",
+      "approved_phrases": ["LOCKED IN SIMON'S BIOMETRICS", "THE KILL-SWITCH", "TO A DIGITAL EMPIRE"],
+      "audio": {"mode": "music", "track_id": "unknown-process-track-a", "cue_id": "baseline_full"},
+      "cta": "Continue the adventure",
+      "renderer_changes_required": false
+    }
+  ]
+}

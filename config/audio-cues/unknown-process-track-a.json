@@ -1,0 +1,20 @@
+{
+  "track_id": "unknown-process-track-a",
+  "title": "Waiting for the Shift",
+  "source": "media/audio/music/waiting-for-the-shift.mp3",
+  "source_sha256": "69cfdc1792c94af1c600fdd868bec87412f6fbdc9477aa94592548faccb2398e",
+  "provenance": {
+    "type": "user_supplied",
+    "supplied_by": "user",
+    "retrieval_date": "2026-08-24",
+    "usage": "Authorized by the user for Unknown Process production and editable to meet the production specification.",
+    "license": "No broader redistribution terms supplied; retain only as a project production source."
+  },
+  "sections": {
+    "baseline_full": {
+      "start": 0.0,
+      "duration": 28.0,
+      "approval_basis": "Existing MF-006R9 approved production configuration"
+    }
+  }
+}

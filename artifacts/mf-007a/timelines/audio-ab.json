@@ -1,0 +1,222 @@
+{
+  "slice": "MF-007A",
+  "duration": 28.0,
+  "visual_timeline": "UNCHANGED_MF006R9",
+  "candidate_a": {
+    "music_enabled": true,
+    "video_stream_sha256": "8e56f953f89f362bdbe9627cca788fafed3a079536090c16dd1804e19e16a5b5"
+  },
+  "candidate_b": {
+    "music_enabled": false,
+    "video_stream_sha256": "8e56f953f89f362bdbe9627cca788fafed3a079536090c16dd1804e19e16a5b5",
+    "ambient": {
+      "start": 0.0,
+      "end": 28.0,
+      "layers": [
+        {
+          "id": "low_power_hum",
+          "type": "non_melodic_machine_resonance",
+          "start": 0.0,
+          "end": 28.0
+        },
+        {
+          "id": "electrical_interference",
+          "type": "deterministic_filtered_noise",
+          "start": 0.0,
+          "end": 28.0
+        },
+        {
+          "id": "distant_mechanical_activity",
+          "type": "aperiodic_equipment_texture",
+          "start": 0.0,
+          "end": 28.0
+        },
+        {
+          "id": "projection_tone",
+          "type": "low_level_electronic_field",
+          "start": 2.9,
+          "end": 19.1
+        }
+      ],
+      "wake_seconds": 1.55,
+      "power_down": [
+        26.3,
+        28.0
+      ]
+    },
+    "events": [
+      {
+        "id": "circuit_trace",
+        "visual_event": "path_draw_start",
+        "time": 0.05,
+        "duration": 0.7,
+        "family": "conductive_trace",
+        "gain": 0.22,
+        "pan": -0.42
+      },
+      {
+        "id": "energy_flow_out",
+        "visual_event": "energy_flow",
+        "time": 0.75,
+        "duration": 1.1,
+        "family": "moving_energy",
+        "gain": 0.21,
+        "pan": -0.18
+      },
+      {
+        "id": "node_charge",
+        "visual_event": "central_node_charge",
+        "time": 1.45,
+        "duration": 1.25,
+        "family": "power_build",
+        "gain": 0.26,
+        "pan": 0.0
+      },
+      {
+        "id": "node_overload",
+        "visual_event": "spark_burst",
+        "time": 2.7,
+        "duration": 0.42,
+        "family": "electrical_physical_impact",
+        "gain": 0.36,
+        "pan": 0.0
+      },
+      {
+        "id": "projection_start",
+        "visual_event": "screen_initialize",
+        "time": 2.9,
+        "duration": 0.85,
+        "family": "projection_ignition",
+        "gain": 0.22,
+        "pan": 0.08
+      },
+      {
+        "id": "simon_search",
+        "visual_event": "record_query_1",
+        "time": 6.2,
+        "duration": 2.45,
+        "family": "searching_trace",
+        "gain": 0.14,
+        "pan": -0.24
+      },
+      {
+        "id": "simon_lock",
+        "visual_event": "record_lock_1",
+        "time": 8.65,
+        "duration": 0.3,
+        "family": "restrained_confirmation",
+        "gain": 0.17,
+        "pan": 0.0
+      },
+      {
+        "id": "refresh_1",
+        "visual_event": "record_reset_1",
+        "time": 9.7,
+        "duration": 0.38,
+        "family": "record_refresh",
+        "gain": 0.13,
+        "pan": 0.0
+      },
+      {
+        "id": "bridge_search",
+        "visual_event": "record_query_2",
+        "time": 10.0,
+        "duration": 3.0,
+        "family": "dual_node_bridge",
+        "gain": 0.15,
+        "pan": 0.18
+      },
+      {
+        "id": "bridge_lock",
+        "visual_event": "record_lock_2",
+        "time": 13.0,
+        "duration": 0.46,
+        "family": "restrained_confirmation",
+        "gain": 0.16,
+        "pan": 0.0
+      },
+      {
+        "id": "refresh_2",
+        "visual_event": "record_reset_2",
+        "time": 13.95,
+        "duration": 0.38,
+        "family": "record_refresh",
+        "gain": 0.13,
+        "pan": 0.0
+      },
+      {
+        "id": "biometric_scan",
+        "visual_event": "record_query_3",
+        "time": 14.25,
+        "duration": 3.05,
+        "family": "active_scan",
+        "gain": 0.14,
+        "pan": 0.12
+      },
+      {
+        "id": "hidden_reveal",
+        "visual_event": "record_lock_3",
+        "time": 17.3,
+        "duration": 0.42,
+        "family": "low_confirmation",
+        "gain": 0.16,
+        "pan": 0.0
+      },
+      {
+        "id": "projection_collapse",
+        "visual_event": "screen_collapse",
+        "time": 19.1,
+        "duration": 1.0,
+        "family": "field_deconstruction",
+        "gain": 0.22,
+        "pan": 0.0
+      },
+      {
+        "id": "return_energy",
+        "visual_event": "return_energy",
+        "time": 20.7,
+        "duration": 1.2,
+        "family": "reverse_energy",
+        "gain": 0.18,
+        "pan": -0.18
+      },
+      {
+        "id": "cta_transmission",
+        "visual_event": "cta_energy",
+        "time": 22.4,
+        "duration": 1.25,
+        "family": "signal_reroute",
+        "gain": 0.18,
+        "pan": 0.16
+      },
+      {
+        "id": "cta_lock",
+        "visual_event": "cta_lock",
+        "time": 23.65,
+        "duration": 0.52,
+        "family": "final_signal_lock",
+        "gain": 0.19,
+        "pan": 0.0
+      },
+      {
+        "id": "machine_power_down",
+        "visual_event": "cta_settle",
+        "time": 26.3,
+        "duration": 1.7,
+        "family": "environmental_decay",
+        "gain": 0.1,
+        "pan": 0.0
+      }
+    ]
+  },
+  "narration": {
+    "slice": "MF-006R9",
+    "segments": [],
+    "voice_status": "BLOCKED_PRODUCTION_VOICE",
+    "blockers": [
+      "BLOCKED_PRODUCTION_VOICE"
+    ],
+    "result": "PASS_WITH_BLOCKER"
+  },
+  "result": "PASS"
+}

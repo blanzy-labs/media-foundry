@@ -1,0 +1,379 @@
+{
+  "slice": "MF-006R9",
+  "indicator_pulse": {
+    "added_indicator_count": 0,
+    "all_synchronized": false,
+    "approved_indicator_count": 4,
+    "architectural_changes": 0,
+    "audio_unchanged": true,
+    "base_radius": 4.0,
+    "chase_animation": false,
+    "color_family": "yellow/orange",
+    "constant_blinking": false,
+    "custom_event_sequence": false,
+    "deterministic": true,
+    "irregular_timing": true,
+    "major_visual_redesign": 0,
+    "maximum_individual_duty_cycle": 0.109,
+    "maximum_simultaneous_pulses": 2,
+    "mean_individual_duty_cycle": 0.088,
+    "negative_space_unchanged": true,
+    "new_geometry": 0,
+    "new_sfx": 0,
+    "peak_overlay_alpha": 0.28,
+    "peak_radius": 5.2,
+    "periods_seconds": [
+      5.7,
+      7.9,
+      6.8,
+      9.1
+    ],
+    "phase_offsets_seconds": [
+      0.6,
+      2.8,
+      4.7,
+      1.9
+    ],
+    "positions_unchanged": true,
+    "pulse_durations_seconds": [
+      0.62,
+      0.65,
+      0.62,
+      0.65
+    ],
+    "pulse_shape": "sine-squared soft lift",
+    "removed_indicator_count": 0,
+    "resting_glow_inherited": true,
+    "shared_period": false,
+    "subordinate_to_cta": true,
+    "subordinate_to_node": true,
+    "subordinate_to_projection": true,
+    "timings_unchanged": true
+  },
+  "encoded_pulse_evidence": {
+    "rest_time": 4.8,
+    "peak_time": 5.4,
+    "indicator_centers": [
+      [
+        429,
+        1473
+      ],
+      [
+        505,
+        1472
+      ],
+      [
+        581,
+        1472
+      ],
+      [
+        657,
+        1471
+      ]
+    ],
+    "tracking_radius_pixels": 8,
+    "sample_radius_pixels": 9,
+    "energy_ratios": [
+      1.1105,
+      1.0761,
+      1.0599,
+      1.0003
+    ],
+    "scheduled_pulse_mean_ratio": 1.0933,
+    "control_mean_ratio": 1.0301,
+    "minimum_pulse_ratio": 1.07,
+    "minimum_pulse_over_control": 0.02,
+    "result": "PASS"
+  },
+  "events": [
+    {
+      "id": "path_draw_start",
+      "observed_frame": 839,
+      "time": 0.0,
+      "type": "path_draw_start"
+    },
+    {
+      "id": "paths_drawn",
+      "observed_frame": 839,
+      "time": 0.7,
+      "type": "paths_drawn"
+    },
+    {
+      "id": "energy_flow",
+      "observed_frame": 839,
+      "time": 0.75,
+      "type": "energy_flow"
+    },
+    {
+      "id": "central_node_charge",
+      "observed_frame": 839,
+      "time": 1.45,
+      "type": "central_node_charge"
+    },
+    {
+      "id": "overload",
+      "observed_frame": 839,
+      "time": 1.9,
+      "type": "overload"
+    },
+    {
+      "id": "overload_pulse_1",
+      "observed_frame": 839,
+      "time": 2.1,
+      "type": "overload_pulse"
+    },
+    {
+      "id": "overload_pulse_2",
+      "observed_frame": 839,
+      "time": 2.4,
+      "type": "overload_pulse"
+    },
+    {
+      "id": "overload_peak",
+      "observed_frame": 839,
+      "time": 2.55,
+      "type": "overload_peak"
+    },
+    {
+      "id": "spark_burst",
+      "observed_frame": 839,
+      "time": 2.7,
+      "type": "spark_burst"
+    },
+    {
+      "id": "title_form",
+      "observed_frame": 839,
+      "time": 2.78,
+      "type": "title_form"
+    },
+    {
+      "id": "projection_emission",
+      "observed_frame": 839,
+      "time": 2.9,
+      "type": "projection_emission"
+    },
+    {
+      "id": "screen_initialize",
+      "observed_frame": 839,
+      "time": 2.9,
+      "type": "screen_initialize"
+    },
+    {
+      "id": "camera_push",
+      "observed_frame": 839,
+      "time": 3.1,
+      "type": "camera_push"
+    },
+    {
+      "id": "title_stabilized",
+      "observed_frame": 839,
+      "time": 3.45,
+      "type": "title_stabilized"
+    },
+    {
+      "id": "record_query_1",
+      "observed_frame": 839,
+      "time": 6.2,
+      "type": "record_query"
+    },
+    {
+      "id": "record_typing_1",
+      "observed_frame": 839,
+      "time": 6.75,
+      "type": "record_typing"
+    },
+    {
+      "id": "record_activity_1",
+      "observed_frame": 839,
+      "time": 7.35,
+      "type": "record_activity"
+    },
+    {
+      "id": "record_confirm_1",
+      "observed_frame": 839,
+      "time": 8.4,
+      "type": "record_confirm"
+    },
+    {
+      "id": "record_lock_1",
+      "observed_frame": 839,
+      "time": 8.65,
+      "type": "record_lock"
+    },
+    {
+      "id": "record_hold_1",
+      "observed_frame": 839,
+      "time": 9.1,
+      "type": "record_hold"
+    },
+    {
+      "id": "record_reset_1",
+      "observed_frame": 839,
+      "time": 9.7,
+      "type": "record_reset"
+    },
+    {
+      "id": "screen_refresh_1",
+      "observed_frame": 839,
+      "time": 9.85,
+      "type": "screen_refresh"
+    },
+    {
+      "id": "record_query_2",
+      "observed_frame": 839,
+      "time": 10.0,
+      "type": "record_query"
+    },
+    {
+      "id": "record_typing_2",
+      "observed_frame": 839,
+      "time": 10.5,
+      "type": "record_typing"
+    },
+    {
+      "id": "record_activity_2",
+      "observed_frame": 839,
+      "time": 11.1,
+      "type": "record_activity"
+    },
+    {
+      "id": "record_confirm_2",
+      "observed_frame": 839,
+      "time": 12.7,
+      "type": "record_confirm"
+    },
+    {
+      "id": "record_lock_2",
+      "observed_frame": 839,
+      "time": 13.0,
+      "type": "record_lock"
+    },
+    {
+      "id": "record_hold_2",
+      "observed_frame": 839,
+      "time": 13.35,
+      "type": "record_hold"
+    },
+    {
+      "id": "record_reset_2",
+      "observed_frame": 839,
+      "time": 13.95,
+      "type": "record_reset"
+    },
+    {
+      "id": "screen_refresh_2",
+      "observed_frame": 839,
+      "time": 14.1,
+      "type": "screen_refresh"
+    },
+    {
+      "id": "record_query_3",
+      "observed_frame": 839,
+      "time": 14.25,
+      "type": "record_query"
+    },
+    {
+      "id": "record_typing_3",
+      "observed_frame": 839,
+      "time": 14.75,
+      "type": "record_typing"
+    },
+    {
+      "id": "record_activity_3",
+      "observed_frame": 839,
+      "time": 15.35,
+      "type": "record_activity"
+    },
+    {
+      "id": "record_confirm_3",
+      "observed_frame": 839,
+      "time": 17.0,
+      "type": "record_confirm"
+    },
+    {
+      "id": "record_lock_3",
+      "observed_frame": 839,
+      "time": 17.3,
+      "type": "record_lock"
+    },
+    {
+      "id": "record_hold_3",
+      "observed_frame": 839,
+      "time": 17.75,
+      "type": "record_hold"
+    },
+    {
+      "id": "final_record_settle",
+      "observed_frame": 839,
+      "time": 18.45,
+      "type": "settle"
+    },
+    {
+      "id": "screen_collapse",
+      "observed_frame": 839,
+      "time": 19.1,
+      "type": "screen_collapse"
+    },
+    {
+      "id": "data_dissolve",
+      "observed_frame": 839,
+      "time": 19.1,
+      "type": "data_dissolve"
+    },
+    {
+      "id": "energy_reclaimed",
+      "observed_frame": 839,
+      "time": 20.5,
+      "type": "energy_reclaimed"
+    },
+    {
+      "id": "return_energy",
+      "observed_frame": 839,
+      "time": 20.7,
+      "type": "return_energy"
+    },
+    {
+      "id": "camera_pull_back",
+      "observed_frame": 839,
+      "time": 21.2,
+      "type": "camera_pull_back"
+    },
+    {
+      "id": "cta_energy",
+      "observed_frame": 839,
+      "time": 22.4,
+      "type": "cta_energy"
+    },
+    {
+      "id": "cta_typing",
+      "observed_frame": 839,
+      "time": 22.9,
+      "type": "cta_typing"
+    },
+    {
+      "id": "cta_lock",
+      "observed_frame": 839,
+      "time": 23.65,
+      "type": "cta_lock"
+    },
+    {
+      "id": "website_reveal",
+      "observed_frame": 839,
+      "time": 24.0,
+      "type": "website_reveal"
+    },
+    {
+      "id": "cta_reveal",
+      "observed_frame": 839,
+      "time": 24.0,
+      "type": "cta_reveal"
+    },
+    {
+      "id": "cta_settle",
+      "observed_frame": 839,
+      "time": 24.5,
+      "type": "settle"
+    }
+  ],
+  "result": "PASS"
+}

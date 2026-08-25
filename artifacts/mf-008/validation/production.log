@@ -1,0 +1,92 @@
+{
+  "slice": "MF-008",
+  "checks": {
+    "manifest_and_pins": {
+      "status": "PASS",
+      "detail": "14 pinned production inputs"
+    },
+    "supervised_dry_run": {
+      "status": "PASS",
+      "detail": "3/3 READY_FOR_REVIEW"
+    },
+    "scheduled_run": {
+      "status": "PASS",
+      "detail": "3/3 READY_FOR_REVIEW"
+    },
+    "deterministic_outputs": {
+      "status": "PASS",
+      "detail": "552948ee3b0a2cc804e4ca24cc17ff2be28ea78da4fb8220db8e50c646a06ae1,44b783be2ece1d20dfee7fd15c1d8a3d84d3bb9c65b04695d3560104a3d75ef4,58602d8fbb1c0eaa0faf660e09190a670bfca85360ec4570147495dd02a17c3d"
+    },
+    "sequential_state_order": {
+      "status": "PASS",
+      "detail": "each job preflight begins after prior READY_FOR_REVIEW"
+    },
+    "codex_worker_boundary": {
+      "status": "PASS",
+      "detail": "three schema-constrained read-only content packages"
+    },
+    "per_job_evidence": {
+      "status": "PASS",
+      "detail": "fixture, result, summary, contact sheet, validation, and logs"
+    },
+    "full_media_validation": {
+      "status": "PASS",
+      "detail": "three external MP4s fully decoded"
+    },
+    "controlled_partial_failure": {
+      "status": "PASS",
+      "detail": "Job 2 rejected invalid cue after one retry; Job 3 continued"
+    },
+    "controlled_shared_failure": {
+      "status": "PASS",
+      "detail": "invalid grammar; zero jobs started"
+    },
+    "needs_engineering_gate": {
+      "status": "PASS",
+      "detail": "renderer request stopped without retry or source changes"
+    },
+    "openclaw_one_time_schedule": {
+      "status": "PASS",
+      "detail": "start delta 0.003s; retained disabled after success"
+    },
+    "schedule_persistence_and_inspection": {
+      "status": "PASS",
+      "detail": "/home/blanzy/.openclaw/state/openclaw.sqlite"
+    },
+    "noninteractive_execution": {
+      "status": "PASS",
+      "detail": "OpenClaw command duration 178562 ms"
+    },
+    "idempotency": {
+      "status": "PASS",
+      "detail": "duplicate completed run refused"
+    },
+    "no_publication": {
+      "status": "PASS",
+      "detail": "published=0; OpenClaw delivery=none"
+    },
+    "external_output_archive": {
+      "status": "PASS",
+      "detail": "/home/blanzy/media-foundry-output/unknown-process-batch-001; repository MP4 count=0"
+    },
+    "production_resource_metrics": {
+      "status": "PASS",
+      "detail": "batch 178491 ms; 43242722 bytes"
+    },
+    "human_gate": {
+      "status": "PASS",
+      "detail": "editorial/release pending human"
+    }
+  },
+  "scheduled_artifact_hashes": [
+    "552948ee3b0a2cc804e4ca24cc17ff2be28ea78da4fb8220db8e50c646a06ae1",
+    "44b783be2ece1d20dfee7fd15c1d8a3d84d3bb9c65b04695d3560104a3d75ef4",
+    "58602d8fbb1c0eaa0faf660e09190a670bfca85360ec4570147495dd02a17c3d"
+  ],
+  "schedule_start_delta_seconds": 0.003,
+  "errors": [],
+  "technical_result": "PASS",
+  "human_review": "PENDING_HUMAN",
+  "release_eligible": false,
+  "result": "PASS_WITH_HUMAN_GATE"
+}

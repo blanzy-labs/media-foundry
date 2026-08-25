@@ -1,0 +1,91 @@
+{
+  "beats": [
+    {
+      "end": 2.3,
+      "first_frame": 0,
+      "id": "circuits",
+      "last_frame": 68,
+      "start": 0.0,
+      "status": "PASS",
+      "type": "intro"
+    },
+    {
+      "end": 4.4,
+      "first_frame": 69,
+      "id": "formation",
+      "last_frame": 131,
+      "start": 2.3,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 6.2,
+      "first_frame": 132,
+      "id": "opening",
+      "last_frame": 185,
+      "start": 4.4,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 10.2,
+      "first_frame": 186,
+      "id": "page_1",
+      "last_frame": 305,
+      "start": 6.2,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 14.4,
+      "first_frame": 306,
+      "id": "page_2",
+      "last_frame": 431,
+      "start": 10.2,
+      "status": "PASS",
+      "type": "emphasis"
+    },
+    {
+      "end": 18.7,
+      "first_frame": 432,
+      "id": "page_3",
+      "last_frame": 560,
+      "start": 14.4,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 20.5,
+      "first_frame": 561,
+      "id": "close",
+      "last_frame": 614,
+      "start": 18.7,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 23.0,
+      "first_frame": 615,
+      "id": "dissolve",
+      "last_frame": 689,
+      "start": 20.5,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 28.0,
+      "first_frame": 690,
+      "id": "cta",
+      "last_frame": 839,
+      "start": 23.0,
+      "status": "PASS",
+      "type": "outro"
+    }
+  ],
+  "duration": 28.0,
+  "fixture": "mf006r8-unknown-process",
+  "mode": "beats",
+  "result": "PASS",
+  "slice": "MF-004",
+  "total_frames": 840
+}

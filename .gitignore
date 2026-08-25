@@ -22,6 +22,8 @@ artifacts/mf-004/
 artifacts/mf-006r*/audio/
 artifacts/mf-006r*/logs/
 artifacts/mf-006r*/music/
+artifacts/mf-007a/audio/
+artifacts/mf-007a/logs/
 *.secret
 .env
 .env.*

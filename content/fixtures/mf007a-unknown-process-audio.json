@@ -1,0 +1,76 @@
+{
+  "id": "mf007a-unknown-process-audio",
+  "slice": "MF-007A",
+  "experiment": "music_vs_ambient_tech",
+  "duration_seconds": 28.0,
+  "sample_rate": 48000,
+  "seed": 27007,
+  "frozen_visual": {
+    "source": "artifacts/mf-006r9/candidate-a.mp4",
+    "sha256": "a87bc7eddc400adf87bad7e95f870b33708032a1630f45af9e9f61bb3721601a",
+    "video_stream_sha256": "8e56f953f89f362bdbe9627cca788fafed3a079536090c16dd1804e19e16a5b5",
+    "runtime_seconds": 28.0,
+    "frame_rate": 30.0,
+    "visual_validation": "PASS",
+    "visual_changes": 0,
+    "timeline_changes": 0
+  },
+  "narration": {
+    "source_manifest": "artifacts/mf-006r9/timelines/narration.json",
+    "source_manifest_sha256": "4a04164b8251d616badf6b8ba89b5d04dbfc7eac147863297e8cf8bba28e1ce3",
+    "preserve_exactly": true,
+    "status": "BLOCKED_PRODUCTION_VOICE",
+    "segment_count": 0,
+    "ambient_duck_db": -4.5,
+    "attack_ms": 120,
+    "release_ms": 320
+  },
+  "candidate_a": {
+    "label": "Unknown Process — Music Mix",
+    "source": "artifacts/mf-006r9/candidate-a.mp4",
+    "preserve_exactly": true,
+    "music_enabled": true,
+    "sfx_source_sha256": "48b9cb32a16b058a3a18fdc149fb3f3d38b6a3704c3b3406348262f20a460a8e",
+    "music_source_sha256": "ea074f623825a83ce5f4ca8f60ff5ebc03329f91a135e91fff7065a1286ac4bf"
+  },
+  "candidate_b": {
+    "label": "Unknown Process — Ambient Tech Mix",
+    "music_enabled": false,
+    "video_stream_mode": "copy",
+    "audio_sources": ["deterministic_machine_ambience", "deterministic_event_sfx", "preserved_narration"],
+    "music_sources": [],
+    "target_integrated_lufs": -16.7,
+    "normalization_processing_target_lufs": -15.6,
+    "target_true_peak_db": -2.0,
+    "ending_fade_start": 26.3,
+    "ending_fade_end": 28.0
+  },
+  "ambient_layers": [
+    {"id": "low_power_hum", "type": "non_melodic_machine_resonance", "start": 0.0, "end": 28.0},
+    {"id": "electrical_interference", "type": "deterministic_filtered_noise", "start": 0.0, "end": 28.0},
+    {"id": "distant_mechanical_activity", "type": "aperiodic_equipment_texture", "start": 0.0, "end": 28.0},
+    {"id": "projection_tone", "type": "low_level_electronic_field", "start": 2.9, "end": 19.1}
+  ],
+  "events": [
+    {"id": "circuit_trace", "visual_event": "path_draw_start", "time": 0.05, "duration": 0.70, "family": "conductive_trace"},
+    {"id": "energy_flow_out", "visual_event": "energy_flow", "time": 0.75, "duration": 1.10, "family": "moving_energy"},
+    {"id": "node_charge", "visual_event": "central_node_charge", "time": 1.45, "duration": 1.25, "family": "power_build"},
+    {"id": "node_overload", "visual_event": "spark_burst", "time": 2.70, "duration": 0.42, "family": "electrical_physical_impact"},
+    {"id": "projection_start", "visual_event": "screen_initialize", "time": 2.90, "duration": 0.85, "family": "projection_ignition"},
+    {"id": "simon_search", "visual_event": "record_query_1", "time": 6.20, "duration": 2.45, "family": "searching_trace"},
+    {"id": "simon_lock", "visual_event": "record_lock_1", "time": 8.65, "duration": 0.30, "family": "restrained_confirmation"},
+    {"id": "refresh_1", "visual_event": "record_reset_1", "time": 9.70, "duration": 0.38, "family": "record_refresh"},
+    {"id": "bridge_search", "visual_event": "record_query_2", "time": 10.00, "duration": 3.00, "family": "dual_node_bridge"},
+    {"id": "bridge_lock", "visual_event": "record_lock_2", "time": 13.00, "duration": 0.46, "family": "restrained_confirmation"},
+    {"id": "refresh_2", "visual_event": "record_reset_2", "time": 13.95, "duration": 0.38, "family": "record_refresh"},
+    {"id": "biometric_scan", "visual_event": "record_query_3", "time": 14.25, "duration": 3.05, "family": "active_scan"},
+    {"id": "hidden_reveal", "visual_event": "record_lock_3", "time": 17.30, "duration": 0.42, "family": "low_confirmation"},
+    {"id": "projection_collapse", "visual_event": "screen_collapse", "time": 19.10, "duration": 1.00, "family": "field_deconstruction"},
+    {"id": "return_energy", "visual_event": "return_energy", "time": 20.70, "duration": 1.20, "family": "reverse_energy"},
+    {"id": "cta_transmission", "visual_event": "cta_energy", "time": 22.40, "duration": 1.25, "family": "signal_reroute"},
+    {"id": "cta_lock", "visual_event": "cta_lock", "time": 23.65, "duration": 0.52, "family": "final_signal_lock"},
+    {"id": "machine_power_down", "visual_event": "cta_settle", "time": 26.30, "duration": 1.70, "family": "environmental_decay"}
+  ],
+  "silent_visuals": ["orange_indicator_pulses", "powered_wall_cells"],
+  "human_decision": ["A — MUSIC", "B — AMBIENT TECH", "NO WINNER — REFINE"]
+}

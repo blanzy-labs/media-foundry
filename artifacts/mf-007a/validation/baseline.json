@@ -1,0 +1,11 @@
+{
+  "slice": "MF-007A",
+  "source": "/home/blanzy/projects/media-foundry/artifacts/mf-006r9/candidate-a.mp4",
+  "sha256": "a87bc7eddc400adf87bad7e95f870b33708032a1630f45af9e9f61bb3721601a",
+  "video_stream_sha256": "8e56f953f89f362bdbe9627cca788fafed3a079536090c16dd1804e19e16a5b5",
+  "runtime_seconds": 28.0,
+  "frame_rate": 30.0,
+  "visual_validation": "PASS",
+  "visual_changes": 0,
+  "timeline_changes": 0
+}

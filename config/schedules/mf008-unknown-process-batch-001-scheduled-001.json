@@ -1,0 +1,61 @@
+{
+  "schedule_id": "55968f6f-1314-41a6-9e7e-ab9875aa0c63",
+  "declaration_key": "mf008-unknown-process-batch-001-scheduled-001",
+  "scheduler": "OpenClaw 2026.7.1-2",
+  "batch_id": "unknown-process-batch-001",
+  "kind": "at",
+  "scheduled_at_utc": "2026-08-25T09:24:42.284Z",
+  "scheduled_at_local": "2026-08-25T10:24:42.284+01:00",
+  "one_time": true,
+  "keep_after_run": true,
+  "delivery": "none",
+  "failure_alert": false,
+  "publish": false,
+  "command_argv": [
+    "python3",
+    "/home/blanzy/projects/media-foundry/scripts/run_mf008_batch.py",
+    "--project-root",
+    "/home/blanzy/projects/media-foundry",
+    "--manifest",
+    "/home/blanzy/projects/media-foundry/content/batches/mf008-unknown-process-batch-001.json",
+    "--run-id",
+    "scheduled-run-001",
+    "--trigger-kind",
+    "scheduled"
+  ],
+  "command_cwd": "/home/blanzy/projects/media-foundry",
+  "timeout_seconds": 1800,
+  "execution_files": {
+    "scripts/run_mf008_batch.py": "bb669c2e7655e95d31860fd84a7a2d175ba37e91f8a4026d75922dfe0941823d",
+    "scripts/validate_mf008_manifest.py": "780dfe52f1e996288ac1a24ad35af790cad823dc94468c99d6f2c570d6320be0",
+    "content/batches/mf008-unknown-process-batch-001.json": "c6c5b3f3145c83ac54b7d94d66b28607e4505fef1fbbb3e6eedb0fa052b9eeb3",
+    "schemas/mf008-content-package.schema.json": "cdfc9beeab6769c759c1a61ab869861cd1da65c5af7136ed5b09fcf77f37ec12",
+    "config/production-grammars/unknown-process-recovered-record-v1.json": "68075009dee285c005c664d2f53dddbf40fd8a46380de5f3a818c1e7435a7e03",
+    "config/audio-cues/unknown-process-track-a.json": "f1d960c7a20b81293ab0ebc9b23690b722b47517abbde2a8d8289731e82c2ff7"
+  },
+  "state": {
+    "status": "disabled_after_successful_one_time_run",
+    "last_run_status": "ok",
+    "last_run_at_utc": "2026-08-25T09:24:42.287Z",
+    "last_duration_ms": 178562,
+    "delivery_status": "not-requested"
+  },
+  "persistence": {
+    "gateway_service": "systemd user service; enabled and running",
+    "scheduler_storage": "sqlite",
+    "sqlite_path": "/home/blanzy/.openclaw/state/openclaw.sqlite",
+    "legacy_store_path": "/home/blanzy/.openclaw/cron/jobs.json",
+    "survives_gateway_restart": true,
+    "restart_test": "documented_not_destructively_executed"
+  },
+  "inspection": {
+    "schedule": "openclaw cron show 55968f6f-1314-41a6-9e7e-ab9875aa0c63 --json",
+    "run_history": "openclaw cron runs --id 55968f6f-1314-41a6-9e7e-ab9875aa0c63 --limit 5",
+    "scheduler": "openclaw cron status --json",
+    "batch": "python3 -m json.tool /home/blanzy/media-foundry-output/unknown-process-batch-001/scheduled-run-001/batch-state.json"
+  },
+  "disable_or_remove": {
+    "disable": "openclaw cron disable 55968f6f-1314-41a6-9e7e-ab9875aa0c63",
+    "remove": "openclaw cron rm 55968f6f-1314-41a6-9e7e-ab9875aa0c63"
+  }
+}
