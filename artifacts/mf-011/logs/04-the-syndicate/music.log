@@ -1,0 +1,46 @@
+{
+  "slice": "MF-005R1",
+  "fixture": "mf011-04-the-syndicate",
+  "status": "PASS",
+  "source": "media/audio/music/unknown-process/Below_the_Iron_Floor.mp3",
+  "audio_path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/04-the-syndicate/audio/music.wav",
+  "source_analysis": {
+    "duration": 179.252167,
+    "sample_rate": 44100,
+    "channels": 2,
+    "codec": "mp3",
+    "container": "mp3",
+    "bit_rate": 192000
+  },
+  "source_duration": 179.252167,
+  "selected_offset": 96.0,
+  "duration": 30.0,
+  "continuous": true,
+  "loop": false,
+  "loop_count": 0,
+  "normalization_lufs": -24.0,
+  "gain_db": -5.0,
+  "narration_duck_db": -8.0,
+  "attack_ms": 110.0,
+  "release_ms": 280.0,
+  "fade_in": 1.0,
+  "fade_out": 2.2,
+  "activity": {
+    "start": 0.0,
+    "end": 30.0
+  },
+  "provenance": {
+    "type": "user_supplied_generated",
+    "asset_class": "approved_catalog_track",
+    "release_eligible": true,
+    "track_id": "below_the_iron_floor",
+    "region_id": "investigation_a",
+    "source_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+    "approval_reviewer": "user",
+    "usage": "MF-010 hash-bound human approval; local production master."
+  },
+  "source_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+  "prepared_sha256": "e2ac257a8be5dcabb976ce9ed01e487fb294cc194708b7b10f881bf09fe835d7",
+  "preparation_seconds": 1.052001,
+  "result": "PASS"
+}

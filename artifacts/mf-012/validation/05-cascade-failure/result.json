@@ -1,0 +1,58 @@
+{
+  "demo_id": "05-cascade-failure",
+  "state": "READY_FOR_REVIEW",
+  "runtime_seconds": 13.0,
+  "frame_count": 390,
+  "dominant_activity": "cascade_failure",
+  "supporting_activities": [],
+  "opening_choreography": "warning_state_open",
+  "camera_choreography": "pull_back",
+  "spatial_behavior": [
+    "anomaly begins upper-left",
+    "failures cross chamber",
+    "one lower-right path survives"
+  ],
+  "text_behavior": [
+    "highlight",
+    "erase",
+    "reveal_hidden"
+  ],
+  "activity_sequence": [
+    {
+      "id": "anomaly",
+      "type": "anomaly_seed",
+      "target": "circuit_network",
+      "start": 0.8,
+      "duration": 2.0,
+      "intensity": 0.9,
+      "overlap": true
+    },
+    {
+      "id": "cascade",
+      "type": "cascade_failure",
+      "target": "survivor_path",
+      "start": 2.2,
+      "duration": 6.0,
+      "intensity": 1.0,
+      "overlap": true
+    }
+  ],
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf012/activity-vocabulary-v1/run-001/05-cascade-failure/demo.mp4",
+    "bytes": 3566409,
+    "sha256": "ff61d1accd96f9d4d1441ee04dbe47aac4dae4f4cc4e33636cb45c02bf771d3c"
+  },
+  "motion_evidence": "/home/blanzy/media-foundry-output/mf012/activity-vocabulary-v1/run-001/05-cascade-failure/motion-evidence/sequence.png",
+  "representative_frames": "/home/blanzy/media-foundry-output/mf012/activity-vocabulary-v1/run-001/05-cascade-failure/representative-frames",
+  "render_ms": 13017,
+  "render_ms_per_frame": 33.377,
+  "metrics": {
+    "config_validation_ms": 50,
+    "timeline_preflight_ms": 46,
+    "render_ms": 13017,
+    "encode_ms": 17034,
+    "media_validation_ms": 529,
+    "output_validation_ms": 49
+  },
+  "result": "PASS"
+}

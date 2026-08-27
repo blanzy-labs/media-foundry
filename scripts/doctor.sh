@@ -62,8 +62,17 @@ if command -v "$godot_bin" >/dev/null 2>&1; then
   else
     add_check godot_automation "Godot automation" true FAIL "" "headless smoke failed"
   fi
+  indicator_stage=$(timeout 30 "$godot_bin" --headless --path "$repo_root/godot" --script indicator_pulse_stage_headless.gd 2>&1 || true)
+  if [[ $indicator_stage == *INDICATOR_PULSE_STAGE_HEADLESS_OK* ]] \
+      && [[ $indicator_stage != *"doesn't inherit from SceneTree or MainLoop"* ]] \
+      && [[ $indicator_stage != *"Can't load the script"* ]]; then
+    add_check indicator_stage_component "Indicator stage runtime/harness separation" true PASS "Node2D + SceneTree harness" "headless load and subclass instantiation passed"
+  else
+    add_check indicator_stage_component "Indicator stage runtime/harness separation" true FAIL "" "headless indicator harness failed"
+  fi
 else
   add_check godot_automation "Godot automation" true FAIL "" "Godot unavailable"
+  add_check indicator_stage_component "Indicator stage runtime/harness separation" true FAIL "" "Godot unavailable"
 fi
 
 if command -v ffmpeg >/dev/null 2>&1 && ffmpeg -hide_banner -encoders 2>/dev/null | grep -q 'libx264'; then

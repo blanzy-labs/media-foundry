@@ -1,0 +1,91 @@
+{
+  "job_id": "07-digital-empire",
+  "title": "Digital Empire",
+  "state": "READY_FOR_REVIEW",
+  "technical": "PASS",
+  "editorial": "PENDING_HUMAN",
+  "release": "PENDING_HUMAN",
+  "runtime_seconds": 30.0,
+  "frame_count": 900,
+  "mechanism": "classification_link",
+  "profiles": {
+    "palette_profile": "revelation",
+    "camera_profile": "wide_investigation",
+    "node_profile": "stable_then_overload",
+    "projection_profile": "classification",
+    "cta_profile": "revelation"
+  },
+  "distinguishing_features": [
+    "network expansion",
+    "control consolidation",
+    "single interruption point",
+    "maximum campaign scale"
+  ],
+  "music": {
+    "query": {
+      "mood": [
+        "ominous",
+        "escalation",
+        "revelation"
+      ],
+      "use_case": [
+        "title_reveal"
+      ]
+    },
+    "track_id": "concrete_and_chain",
+    "region_id": "revelation_a",
+    "actual_start": 127.0,
+    "actual_end": 157.0,
+    "video_duration": 30.0,
+    "fade_in": 1.2,
+    "fade_out": 2.8,
+    "gain_db": -5.0,
+    "ducking": {
+      "narration_duck_db": -8.0,
+      "attack_ms": 120,
+      "release_ms": 320
+    },
+    "selection_reason": "The long escalating region supports network growth and the single-point interruption reveal.",
+    "track_title": "Concrete and Chain",
+    "cue_tags": [
+      "revelation",
+      "discovery",
+      "ominous"
+    ],
+    "usable_start": 123.0,
+    "usable_end": 167.0,
+    "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91"
+  },
+  "audio_policy": {
+    "presentation": "music_only",
+    "sfx_count": 0,
+    "ambient_machine_audio": false,
+    "narration": "off"
+  },
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/07-digital-empire/final.mp4",
+    "bytes": 5756056,
+    "sha256": "1b1bb0166c8c62cf97f08f85406ba466092f392c0d7e4b580a7c92eb7d0a054f"
+  },
+  "evidence": {
+    "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/07-digital-empire/contact-sheet.png",
+    "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/07-digital-empire/motion-evidence/sequence.png",
+    "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/07-digital-empire/representative-frames"
+  },
+  "metrics": {
+    "selection_ms": 58,
+    "creative-preflight_ms": 43,
+    "timeline-preflight_ms": 44,
+    "music_ms": 1090,
+    "silence_ms": 53,
+    "render_ms": 23983,
+    "mix_ms": 1740,
+    "encode_ms": 28467,
+    "media_validation_ms": 817,
+    "output_validation_ms": 64
+  },
+  "publish": false,
+  "result": "PASS",
+  "attempts": 1,
+  "attempt_errors": []
+}

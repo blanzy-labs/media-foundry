@@ -1,0 +1,53 @@
+{
+  "slice": "MF-011",
+  "type": "job_output_validation",
+  "job_id": "03-zeph-evolving-too-fast",
+  "mechanism": "classification_link",
+  "mechanism_exclusivity": {
+    "biometric_scan": "NOT_RUN",
+    "classification_link": "PASS",
+    "tracking": "NOT_RUN"
+  },
+  "profiles": {
+    "palette_profile": "mystery",
+    "camera_profile": "calm_to_push",
+    "node_profile": "urgent",
+    "projection_profile": "classification",
+    "cta_profile": "cool_signal"
+  },
+  "music_selection": {
+    "contract": "mf010_music_selection_v1",
+    "project": "unknown-process",
+    "track_id": "abandoned_intake",
+    "qualified_id": "unknown-process:abandoned_intake",
+    "track_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+    "region_id": "revelation_a",
+    "usable_start": 49.0,
+    "usable_end": 93.0,
+    "actual_start": 52.0,
+    "actual_end": 78.0,
+    "video_duration": 26.0,
+    "fade_in": 0.8,
+    "fade_out": 1.8,
+    "result": "PASS"
+  },
+  "checks": {
+    "mechanism_loaded": "PASS",
+    "mechanism_exclusivity": "PASS",
+    "unique_events": "PASS",
+    "profiles_loaded": "PASS",
+    "timing_loaded": "PASS",
+    "campaign_identity": "PASS",
+    "timeline": "PASS",
+    "music_selection": "PASS",
+    "music_source": "PASS",
+    "music_offsets": "PASS",
+    "music_mix": "PASS",
+    "sfx_disabled": "PASS",
+    "ambient_disabled": "PASS",
+    "narration_off": "PASS",
+    "encoded_media": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

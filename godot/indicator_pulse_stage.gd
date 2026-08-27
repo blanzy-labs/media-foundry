@@ -6,6 +6,10 @@ const INDICATOR_X:Array[float]=[-54.0,-18.0,18.0,54.0]
 const INDICATOR_PERIODS:Array[float]=[5.7,7.9,6.8,9.1]
 const INDICATOR_OFFSETS:Array[float]=[0.6,2.8,4.7,1.9]
 const INDICATOR_DURATIONS:Array[float]=[0.62,0.65,0.62,0.65]
+const MICRO_CHANNELS := ["indicator_dots","background_tiles","floating_ring_dot"]
+const MICRO_COLORS := {"amber":Color("ed9c48"),"purple":Color("7746b4"),"green":Color("3ebd76"),"blue":Color("3478bd")}
+const MICRO_RING_BEHAVIORS := ["slow_drift","slow_hover","gentle_arc","pause_and_drift"]
+const MICRO_TILE_BEHAVIORS := ["tile_idle","tile_wake","tile_color_shift","tile_bright_pulse","tile_dim","tile_recover"]
 
 const MECHANISMS := ["tracking","classification_link","biometric_scan"]
 const PALETTES := ["baseline","pursuit","mystery","revelation"]
@@ -21,6 +25,9 @@ const MECHANISM_EVENTS := {
 
 var creative:Dictionary={}
 var directed:=false
+var micro_variation:Dictionary={}
+var micro_enabled:=false
+var micro_channels:Array=[]
 
 func configure(source_fixture:Dictionary,source_timeline:Dictionary,source_layouts:Dictionary,source_heavy:Font,source_regular:Font)->Dictionary:
 	var result:=super.configure(source_fixture,source_timeline,source_layouts,source_heavy,source_regular)
@@ -35,7 +42,89 @@ func configure(source_fixture:Dictionary,source_timeline:Dictionary,source_layou
 	for id in configured_events:
 		if _time(str(id))>duration:return {"result":"FAIL","error":"CREATIVE_EVENT_MISSING: "+str(id)}
 	directed=true
+	micro_variation=source_fixture.get("micro_variation",{})
+	if micro_variation.is_empty():return {"result":"PASS"}
+	var micro_result:=_configure_micro_variation()
+	if micro_result.get("result")!="PASS":return micro_result
+	micro_enabled=true
 	return {"result":"PASS"}
+
+func _configure_micro_variation()->Dictionary:
+	if int(micro_variation.get("version",0))!=1:return {"result":"FAIL","error":"MICRO_VARIATION_VERSION_INVALID"}
+	var seed_value=micro_variation.get("seed")
+	if typeof(seed_value) not in [TYPE_INT,TYPE_FLOAT] or float(seed_value)<1 or float(seed_value)!=floor(float(seed_value)):
+		return {"result":"FAIL","error":"MICRO_VARIATION_SEED_REQUIRED"}
+	micro_channels=micro_variation.get("channels",[])
+	if micro_channels.size()<1 or micro_channels.size()>3:return {"result":"FAIL","error":"MICRO_VARIATION_BUDGET_EXCEEDED"}
+	for channel in micro_channels:
+		if str(channel) not in MICRO_CHANNELS:return {"result":"FAIL","error":"UNKNOWN_MICRO_VARIATION_TYPE"}
+	var budget:Dictionary=micro_variation.get("motion_budget",{})
+	if int(budget.get("major_motion_elements",-1))>1 or int(budget.get("minor_simultaneous_accents",-1))>3:
+		return {"result":"FAIL","error":"MICRO_VARIATION_BUDGET_EXCEEDED"}
+	if "indicator_dots" in micro_channels:
+		var indicator:Dictionary=micro_variation.get("indicator_dots",{})
+		if str(indicator.get("mode","")) not in ["stable_indicators","reactive_colored_indicators"]:
+			return {"result":"FAIL","error":"UNKNOWN_MICRO_VARIATION_TYPE"}
+		for color in indicator.get("colors",[]):
+			if str(color) not in MICRO_COLORS:return {"result":"FAIL","error":"UNSUPPORTED_INDICATOR_COLOR"}
+		for flash in indicator.get("flashes",[]):
+			if int(flash.get("dot",-1))<0 or int(flash.get("dot",-1))>3 or not _micro_event_valid(flash):
+				return {"result":"FAIL","error":"MICRO_VARIATION_TIMING_INVALID"}
+	if "background_tiles" in micro_channels:
+		var tiles:Dictionary=micro_variation.get("background_tiles",{})
+		var indices:Array=tiles.get("active_indices",[])
+		if indices.size()<3 or indices.size()>8:return {"result":"FAIL","error":"MICRO_VARIATION_TILE_DENSITY_EXCEEDED"}
+		for event in tiles.get("events",[]):
+			if not _array_has_int(indices,int(event.get("tile_index",-1))) or str(event.get("behavior","")) not in MICRO_TILE_BEHAVIORS or str(event.get("color","")) not in MICRO_COLORS or not _micro_event_valid(event):
+				return {"result":"FAIL","error":"MICRO_VARIATION_TILE_CONFIG_INVALID"}
+	if "floating_ring_dot" in micro_channels:
+		var ring_result:=_validate_ring_config(micro_variation.get("floating_ring_dot",{}))
+		if ring_result.get("result")!="PASS":return ring_result
+	if _maximum_minor_accents()>3:return {"result":"FAIL","error":"MICRO_VARIATION_BUDGET_EXCEEDED"}
+	return {"result":"PASS"}
+
+func _micro_event_valid(event:Dictionary)->bool:
+	var start:=float(event.get("start",-1));var span:=float(event.get("duration",0));var intensity:=float(event.get("intensity",0))
+	return start>=0 and span>=.1 and start+span<=duration and intensity>0 and intensity<=.3
+
+func _array_has_int(values:Array,target:int)->bool:
+	for value in values:
+		if int(value)==target:return true
+	return false
+
+func _rect_from_config(value:Dictionary)->Rect2:
+	return Rect2(float(value.get("x",0)),float(value.get("y",0)),float(value.get("width",0)),float(value.get("height",0)))
+
+func _validate_ring_config(ring:Dictionary)->Dictionary:
+	if str(ring.get("behavior","")) not in MICRO_RING_BEHAVIORS:return {"result":"FAIL","error":"UNKNOWN_MICRO_VARIATION_TYPE"}
+	var radius:=float(ring.get("radius",0));var safe_zone:=_rect_from_config(ring.get("safe_zone",{}));var path:Array=ring.get("path",[])
+	if radius<4 or radius>14 or path.size()<2 or float(ring.get("active_start",-1))<0 or float(ring.get("active_end",0))>duration:
+		return {"result":"FAIL","error":"MICRO_VARIATION_RING_CONFIG_INVALID"}
+	for entry in path:
+		var point:=Vector2(float(entry.get("x",0)),float(entry.get("y",0)));var bounds:=Rect2(point-Vector2.ONE*radius,Vector2.ONE*radius*2)
+		if not safe_zone.encloses(bounds):return {"result":"FAIL","error":"MICRO_VARIATION_SAFE_ZONE_VIOLATION"}
+		for protected in ring.get("protected_zones",[]):
+			if bounds.intersects(_rect_from_config(protected)):return {"result":"FAIL","error":"MICRO_VARIATION_SAFE_ZONE_VIOLATION"}
+	return {"result":"PASS"}
+
+func _event_active(event:Dictionary,time:float)->bool:
+	return time>=float(event.start) and time<float(event.start)+float(event.duration)
+
+func _maximum_minor_accents()->int:
+	var maximum:=0
+	for frame in range(int(round(duration*30.0))):
+		var time:=float(frame)/30.0;var active:=0
+		if "indicator_dots" in micro_channels:
+			var indicator:Dictionary=micro_variation.indicator_dots
+			if str(indicator.mode)=="stable_indicators":active+=2
+			else:
+				for flash in indicator.get("flashes",[]):
+					if _event_active(flash,time):active+=1
+		if "background_tiles" in micro_channels:
+			for event in micro_variation.background_tiles.get("events",[]):
+				if _event_active(event,time):active+=1
+		maximum=maxi(maximum,active)
+	return maximum
 
 func set_story_time(value:float)->void:
 	super.set_story_time(value)
@@ -57,6 +146,9 @@ func validation_report()->Dictionary:
 		for candidate in MECHANISMS:exclusivity[candidate]="PASS" if candidate==mechanism and all_observed else "NOT_RUN"
 		report.creative_control={"mode":"directed","mechanism":mechanism,"palette_profile":str(creative.palette_profile),"camera_profile":str(creative.camera_profile),"node_profile":str(creative.node_profile),"projection_profile":str(creative.projection_profile),"cta_profile":str(creative.cta_profile),"timing":creative.get("timing",{}),"event_evidence":evidence,"mechanism_exclusivity":exclusivity,"single_window_preserved":true,"campaign_identity":"unknown_process_recovered_record","result":"PASS" if all_observed else "FAIL"}
 	else:report.creative_control={"mode":"baseline_compatibility","mechanisms":MECHANISMS,"result":"PASS"}
+	if micro_enabled:
+		report.micro_variation={"version":1,"enabled":true,"seed":int(micro_variation.seed),"channels":micro_channels,"channel_count":micro_channels.size(),"motion_budget":{"major_motion_elements":1 if "floating_ring_dot" in micro_channels else 0,"maximum_minor_simultaneous":_maximum_minor_accents(),"major_limit":1,"minor_limit":3},"indicator_dots":micro_variation.get("indicator_dots",null),"background_tiles":micro_variation.get("background_tiles",null),"floating_ring_dot":micro_variation.get("floating_ring_dot",null),"safe_zone_result":"PASS","deterministic":true,"text_priority":1,"accent_priority":5,"large_crossing_lines":0,"new_central_web_geometry":0,"subject_specific_branches":0,"result":"PASS"}
+	else:report.micro_variation={"enabled":false,"mode":"legacy_default","result":"PASS"}
 	return report
 
 func _draw_window_chamber()->void:
@@ -69,6 +161,12 @@ func _draw_window_chamber()->void:
 		if central:continue
 		var x:=-320.0+column*108.0+(10.0 if row%2 else 0.0);var y:=-520.0+row*118.0;var emphasis:=.035+.025*(.5+.5*sin(current_time*.6+int(cell)))
 		draw_rect(Rect2(x+9,y+9,84,94),Color(tint,emphasis),true)
+	if micro_enabled and "background_tiles" in micro_channels:
+		for event in micro_variation.background_tiles.get("events",[]):
+			if not _event_active(event,current_time):continue
+			var index:=int(event.tile_index);var row:=int(index/6);var column:=index%6;var x:=-320.0+column*108.0+(10.0 if row%2 else 0.0);var y:=-520.0+row*118.0
+			var age:=(current_time-float(event.start))/float(event.duration);var envelope:=_smooth(minf(age*3.5,(1.0-age)*3.5));var color:Color=MICRO_COLORS[str(event.color)]
+			draw_rect(Rect2(x+9,y+9,84,94),Color(color,float(event.intensity)*envelope),true)
 
 func _draw_window_circuits()->void:
 	super._draw_window_circuits()
@@ -125,6 +223,7 @@ func _draw_window_return_cta()->void:
 	if website>0:_draw_centered_text(str(fixture.cta.display_url).to_upper(),Vector2(0,27),22,Color(color,website),heavy_font,470);_draw_centered_text(author.to_upper(),Vector2(0,70),16,Color(.3,.78,.78,website),regular_font,430)
 
 func _indicator_pulse(index:int)->float:
+	if micro_enabled and "indicator_dots" in micro_channels and str(micro_variation.indicator_dots.mode)=="reactive_colored_indicators":return 0.0
 	var multiplier:=1.0
 	if directed:
 		var profile:=str(creative.node_profile);multiplier=1.55 if profile=="urgent" else .68 if profile=="analytical" else .85+clampf((current_time-_time("record_query_1"))/maxf(.1,_time("record_lock_3")-_time("record_query_1")),0,1)*.9
@@ -151,3 +250,17 @@ func _draw_data_emitter()->void:
 		var pulse:=_indicator_pulse(index)
 		if pulse>.001:
 			draw_circle(Vector2(INDICATOR_X[index],243),4.0+1.2*pulse,Color(1.0,.68,.28,.28*pulse))
+	if not micro_enabled or "indicator_dots" not in micro_channels or str(micro_variation.indicator_dots.mode)!="reactive_colored_indicators":return
+	var colors:Array=micro_variation.indicator_dots.get("colors",[])
+	for flash in micro_variation.indicator_dots.get("flashes",[]):
+		if not _event_active(flash,current_time):continue
+		var age:=(current_time-float(flash.start))/float(flash.duration);var pulse:=pow(sin(age*PI),2.0);var dot:=int(flash.dot);var color:Color=MICRO_COLORS[str(colors[dot])]
+		draw_circle(Vector2(INDICATOR_X[dot],243),4.0+1.0*pulse,Color(color,float(flash.intensity)*pulse))
+
+func _draw_window_foreground()->void:
+	super._draw_window_foreground()
+	if not micro_enabled or "floating_ring_dot" not in micro_channels:return
+	var ring:Dictionary=micro_variation.floating_ring_dot;var start:=float(ring.active_start);var finish:=float(ring.active_end)
+	if current_time<start or current_time>=finish:return
+	var path:Array=ring.path;var progress:=_smooth(clampf((current_time-start)/maxf(.1,finish-start),0,1));var scaled:=progress*float(path.size()-1);var segment:=mini(path.size()-2,int(floor(scaled)));var local:=_smooth(scaled-float(segment));var from:Dictionary=path[segment];var toward:Dictionary=path[segment+1];var point:=Vector2(float(from.x),float(from.y)).lerp(Vector2(float(toward.x),float(toward.y)),local);var radius:=float(ring.radius);var fade:=_smooth(_ramp(current_time,start,.7))*(1.0-_smooth(_ramp(current_time,finish-.7,.7)));var color:Color=MICRO_COLORS[str(ring.color)]
+	draw_arc(point,radius,0,TAU,20,Color(color,.38*fade),2);draw_circle(point,3.0,Color(color,.62*fade))

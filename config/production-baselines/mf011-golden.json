@@ -1,0 +1,18 @@
+{
+  "id": "mf011-golden-production-baseline",
+  "campaign_id": "unknown-process-mf-011-v1",
+  "campaign_run": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002",
+  "campaign_manifest": "config/campaigns/unknown-process-mf-011-v1.json",
+  "campaign_manifest_sha256": "b5797155ebd3ee1e558bd7cf2ddbb7b00420f75ea93c8b6e225dfb7e97a9d011",
+  "grammar_id": "unknown_process_recovered_record_v2",
+  "grammar_sha256": "a5020243b8687681a25ff9bd8e5d99b7aa2a523c489bec12bc0e19f720c11314",
+  "renderer_source_hash": "80fe5c5824ea90fb67c2995f37233b714fa9acdbf74b209f691c83a81a6a89f9",
+  "style_config_sha256": "2aac4b81d41d3b78ecd7892d879078d0c67fd6a641904f4bd62ba641ec074d5d",
+  "legacy_activity_controls": ["tracking", "classification_link", "biometric_scan"],
+  "representative_outputs": [
+    {"job_id":"01-simon-target-acquired","sha256":"8be5218ce0581973bb0cfea0a10ff080a898321461bcec12a33be125294e071f"},
+    {"job_id":"02-leo-living-data-bridge","sha256":"f7803a01e1ecf1ec3ea05eabc620d7a0c2880503cf3a36a681d7ad5a6a5ff958"},
+    {"job_id":"06-the-kill-switch","sha256":"d32001b8af27faecf01d478aa101ee3c858cdbb07cc5a680defa46d10f5d71d8"}
+  ],
+  "compatibility_requirement": "MF-011 fixtures remain renderable through the unchanged godot_indicator_pulse_refinement selection path."
+}

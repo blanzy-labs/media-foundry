@@ -1,0 +1,46 @@
+{
+  "slice": "MF-005R1",
+  "fixture": "mf011-06-the-kill-switch",
+  "status": "PASS",
+  "source": "media/audio/music/unknown-process/Below_the_Iron_Floor.mp3",
+  "audio_path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/06-the-kill-switch/audio/music.wav",
+  "source_analysis": {
+    "duration": 179.252167,
+    "sample_rate": 44100,
+    "channels": 2,
+    "codec": "mp3",
+    "container": "mp3",
+    "bit_rate": 192000
+  },
+  "source_duration": 179.252167,
+  "selected_offset": 71.0,
+  "duration": 29.0,
+  "continuous": true,
+  "loop": false,
+  "loop_count": 0,
+  "normalization_lufs": -24.0,
+  "gain_db": -4.5,
+  "narration_duck_db": -8.0,
+  "attack_ms": 110.0,
+  "release_ms": 280.0,
+  "fade_in": 1.0,
+  "fade_out": 2.5,
+  "activity": {
+    "start": 0.0,
+    "end": 29.0
+  },
+  "provenance": {
+    "type": "user_supplied_generated",
+    "asset_class": "approved_catalog_track",
+    "release_eligible": true,
+    "track_id": "below_the_iron_floor",
+    "region_id": "revelation_a",
+    "source_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+    "approval_reviewer": "user",
+    "usage": "MF-010 hash-bound human approval; local production master."
+  },
+  "source_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+  "prepared_sha256": "72ed92f9c09cf927ac3b3a9e5ad34c9fa41c276885a7e26e96a94785f2e9ed15",
+  "preparation_seconds": 0.991275,
+  "result": "PASS"
+}

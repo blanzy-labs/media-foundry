@@ -1,0 +1,91 @@
+{
+  "beats": [
+    {
+      "end": 2.3,
+      "first_frame": 0,
+      "id": "circuits",
+      "last_frame": 68,
+      "start": 0.0,
+      "status": "PASS",
+      "type": "intro"
+    },
+    {
+      "end": 4.4,
+      "first_frame": 69,
+      "id": "formation",
+      "last_frame": 131,
+      "start": 2.3,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 7.0,
+      "first_frame": 132,
+      "id": "opening",
+      "last_frame": 209,
+      "start": 4.4,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 11.667,
+      "first_frame": 210,
+      "id": "page_1",
+      "last_frame": 350,
+      "start": 7.0,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 16.334,
+      "first_frame": 351,
+      "id": "page_2",
+      "last_frame": 490,
+      "start": 11.667,
+      "status": "PASS",
+      "type": "emphasis"
+    },
+    {
+      "end": 21.001,
+      "first_frame": 491,
+      "id": "page_3",
+      "last_frame": 630,
+      "start": 16.334,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 24.001,
+      "first_frame": 631,
+      "id": "result_hold",
+      "last_frame": 720,
+      "start": 21.001,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 26.001,
+      "first_frame": 721,
+      "id": "dissolve",
+      "last_frame": 780,
+      "start": 24.001,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 30.0,
+      "first_frame": 781,
+      "id": "cta",
+      "last_frame": 899,
+      "start": 26.001,
+      "status": "PASS",
+      "type": "outro"
+    }
+  ],
+  "duration": 30.0,
+  "fixture": "mf011-07-digital-empire",
+  "mode": "beats",
+  "result": "PASS",
+  "slice": "MF-004",
+  "total_frames": 900
+}

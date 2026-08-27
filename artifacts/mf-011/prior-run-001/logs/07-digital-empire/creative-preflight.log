@@ -1,0 +1,43 @@
+{
+  "slice": "MF-008C",
+  "fixture": "mf011-07-digital-empire",
+  "mode": "directed",
+  "state": "READY",
+  "creative": {
+    "mechanism": "classification_link",
+    "events": [
+      "leo_resolve",
+      "zeph_resolve",
+      "bridge_attempt",
+      "bridge_stable"
+    ],
+    "timing": {
+      "intro_seconds": 7.0,
+      "investigation_seconds": 14.0,
+      "result_hold_seconds": 3.0,
+      "cta_seconds": 8.0
+    },
+    "palette_profile": "revelation",
+    "camera_profile": "wide_investigation",
+    "node_profile": "stable_then_overload",
+    "projection_profile": "classification",
+    "cta_profile": "revelation",
+    "audio_cue": "revelation"
+  },
+  "checks": {
+    "required_fields": "PASS",
+    "mechanism": "PASS",
+    "palette_profile": "PASS",
+    "camera_profile": "PASS",
+    "node_profile": "PASS",
+    "projection_profile": "PASS",
+    "cta_profile": "PASS",
+    "mechanism_events": "PASS",
+    "timing_bounds": "PASS",
+    "event_timing": "PASS",
+    "audio_cue_exists": "PASS",
+    "audio_cue_approved": "PENDING_APPROVAL"
+  },
+  "errors": [],
+  "result": "PASS"
+}

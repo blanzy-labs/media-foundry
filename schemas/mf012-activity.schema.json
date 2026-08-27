@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mf012-activity.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "demo", "dominant_activity", "supporting_activities", "opening_choreography", "camera_choreography", "targets", "spatial_behavior", "text_behavior", "sequence"],
+  "properties": {
+    "version": {"const": 1},
+    "demo": {"type": "boolean"},
+    "dominant_activity": {"enum": ["pursuit", "reconstruction", "connection", "override", "cascade_failure"]},
+    "supporting_activities": {"type": "array", "maxItems": 2, "uniqueItems": true, "items": {"enum": ["pursuit", "reconstruction", "connection", "override", "cascade_failure"]}},
+    "opening_choreography": {"type": "string"},
+    "camera_choreography": {"type": "string"},
+    "targets": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "spatial_behavior": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "text_behavior": {"type": "array", "minItems": 1, "items": {"enum": ["type_on", "resolve", "erase", "rewrite", "scramble", "lock", "replace", "highlight", "reveal_hidden"]}},
+    "sequence": {
+      "type": "array", "minItems": 1, "maxItems": 10,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "type", "target", "start", "duration", "intensity"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1}, "type": {"type": "string"}, "target": {"type": "string"},
+          "start": {"type": "number", "minimum": 0}, "duration": {"type": "number", "exclusiveMinimum": 0},
+          "intensity": {"type": "number", "minimum": 0.1, "maximum": 1}, "repeat": {"type": "integer", "minimum": 1, "maximum": 4},
+          "origin": {"type": "string"}, "destination": {"type": "string"}, "overlap": {"type": "boolean"}
+        }
+      }
+    }
+  }
+}

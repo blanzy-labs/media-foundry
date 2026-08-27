@@ -1,0 +1,106 @@
+{
+  "slice": "MF-012",
+  "type": "activity_output_validation",
+  "fixture": "mf012-03-signal-bridge",
+  "activity": {
+    "all_observed": true,
+    "camera_choreography": "follow_packet",
+    "deterministic": true,
+    "dominant_activity": "connection",
+    "event_evidence": [
+      {
+        "duration": 2.4,
+        "id": "attempt",
+        "observed": {
+          "observed_frame": 359,
+          "time": 0.7,
+          "type": "connection_attempt"
+        },
+        "start": 0.7,
+        "status": "PASS",
+        "type": "connection_attempt"
+      },
+      {
+        "duration": 3.0,
+        "id": "travel",
+        "observed": {
+          "observed_frame": 359,
+          "time": 1.5,
+          "type": "signal_travel"
+        },
+        "start": 1.5,
+        "status": "PASS",
+        "type": "signal_travel"
+      },
+      {
+        "duration": 2.0,
+        "id": "form",
+        "observed": {
+          "observed_frame": 359,
+          "time": 4.1,
+          "type": "bridge_form"
+        },
+        "start": 4.1,
+        "status": "PASS",
+        "type": "bridge_form"
+      },
+      {
+        "duration": 2.2,
+        "id": "stabilize",
+        "observed": {
+          "observed_frame": 359,
+          "time": 5.6,
+          "type": "bridge_stabilize"
+        },
+        "start": 5.6,
+        "status": "PASS",
+        "type": "bridge_stabilize"
+      }
+    ],
+    "opening_choreography": "follow_energy_packet",
+    "primitive_count": 18,
+    "primitives": [
+      "target_acquire",
+      "target_move",
+      "target_escape",
+      "target_reacquire",
+      "tracker_converge",
+      "target_lock",
+      "fragment_spawn",
+      "fragment_drift",
+      "fragment_align",
+      "record_reconstruct",
+      "connection_attempt",
+      "signal_travel",
+      "bridge_form",
+      "bridge_stabilize",
+      "path_override",
+      "network_reroute",
+      "anomaly_seed",
+      "cascade_failure"
+    ],
+    "result": "PASS",
+    "seed": 26066,
+    "subject_agnostic": true,
+    "supporting_activities": [],
+    "targets": [
+      "node_a",
+      "node_b",
+      "wall_cells"
+    ],
+    "version": 1
+  },
+  "checks": {
+    "config": "PASS",
+    "renderer_strategy": "PASS",
+    "dominant_activity": "PASS",
+    "supporting_activities": "PASS",
+    "opening": "PASS",
+    "camera": "PASS",
+    "all_events_observed": "PASS",
+    "deterministic_seed": "PASS",
+    "encoded_media": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

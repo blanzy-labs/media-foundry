@@ -1,0 +1,72 @@
+{
+  "slice": "MF-012R1",
+  "type": "ab_output_validation",
+  "source_video": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/06-the-kill-switch/final.mp4",
+  "refined_video": "/home/blanzy/media-foundry-output/mf012r1/guardrailed-micro-variation/run-001/video-02/refined/video-micro-variation.mp4",
+  "source_sha256": "d32001b8af27faecf01d478aa101ee3c858cdbb07cc5a680defa46d10f5d71d8",
+  "refined_sha256": "6cec1371761738b0c579054418dde2666105485afdc34c1cf067ed1103071403",
+  "source_probe": {
+    "width": 1080,
+    "height": 1920,
+    "frames": 870,
+    "duration": 29.0,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "sample_rate": 48000,
+    "channels": 1
+  },
+  "refined_probe": {
+    "width": 1080,
+    "height": 1920,
+    "frames": 870,
+    "duration": 29.0,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "sample_rate": 48000,
+    "channels": 1
+  },
+  "audio": {
+    "source_packet_sha256": "5e62f93da2e63d73e7d888a547662aad8826ee98ad2b7e27fbb503c03d39a8d6",
+    "refined_packet_sha256": "5e62f93da2e63d73e7d888a547662aad8826ee98ad2b7e27fbb503c03d39a8d6",
+    "source_decoded_sha256": "dbe3a3facdc64a6b25ad863500dba88644c71dbea99fa12391c19fa7cc2d8c7f",
+    "refined_decoded_sha256": "dbe3a3facdc64a6b25ad863500dba88644c71dbea99fa12391c19fa7cc2d8c7f"
+  },
+  "music_selection": {
+    "contract": "mf010_music_selection_v1",
+    "project": "unknown-process",
+    "track_id": "below_the_iron_floor",
+    "qualified_id": "unknown-process:below_the_iron_floor",
+    "track_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+    "region_id": "revelation_a",
+    "usable_start": 67.0,
+    "usable_end": 111.0,
+    "actual_start": 71.0,
+    "actual_end": 100.0,
+    "video_duration": 29.0,
+    "fade_in": 1.0,
+    "fade_out": 2.5,
+    "result": "PASS"
+  },
+  "checks": {
+    "config": "PASS",
+    "runtime": "PASS",
+    "frame_count": "PASS",
+    "media_shape": "PASS",
+    "audio_stream_format": "PASS",
+    "audio_packet_identity": "PASS",
+    "audio_decode_identity": "PASS",
+    "text_equivalence": "PASS",
+    "music_config_equivalence": "PASS",
+    "cue_identity": "PASS",
+    "gain_identity": "PASS",
+    "music_only": "PASS",
+    "safe_zone": "PASS",
+    "motion_budget": "PASS",
+    "deterministic_seed": "PASS",
+    "no_noisy_geometry": "PASS",
+    "subject_agnostic": "PASS",
+    "media_validation": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

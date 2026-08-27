@@ -1,0 +1,91 @@
+{
+  "job_id": "03-zeph-evolving-too-fast",
+  "title": "Zeph: Evolving Too Fast",
+  "state": "READY_FOR_REVIEW",
+  "technical": "PASS",
+  "editorial": "PENDING_HUMAN",
+  "release": "PENDING_HUMAN",
+  "runtime_seconds": 26.0,
+  "frame_count": 780,
+  "mechanism": "classification_link",
+  "profiles": {
+    "palette_profile": "mystery",
+    "camera_profile": "calm_to_push",
+    "node_profile": "urgent",
+    "projection_profile": "classification",
+    "cta_profile": "cool_signal"
+  },
+  "distinguishing_features": [
+    "AI signature mutation",
+    "classification retries",
+    "cool unstable palette",
+    "irregular node emphasis"
+  ],
+  "music": {
+    "query": {
+      "mood": [
+        "mystery",
+        "ominous",
+        "escalation"
+      ],
+      "use_case": [
+        "title_reveal"
+      ]
+    },
+    "track_id": "abandoned_intake",
+    "region_id": "revelation_a",
+    "actual_start": 52.0,
+    "actual_end": 78.0,
+    "video_duration": 26.0,
+    "fade_in": 0.8,
+    "fade_out": 1.8,
+    "gain_db": -5.5,
+    "ducking": {
+      "narration_duck_db": -8.0,
+      "attack_ms": 100,
+      "release_ms": 260
+    },
+    "selection_reason": "The rising ominous passage reinforces repeated signature mutation without overpowering it.",
+    "track_title": "Abandoned Intake",
+    "cue_tags": [
+      "revelation",
+      "discovery",
+      "ominous"
+    ],
+    "usable_start": 49.0,
+    "usable_end": 93.0,
+    "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee"
+  },
+  "audio_policy": {
+    "presentation": "music_only",
+    "sfx_count": 0,
+    "ambient_machine_audio": false,
+    "narration": "off"
+  },
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/03-zeph-evolving-too-fast/final.mp4",
+    "bytes": 5114882,
+    "sha256": "4136731d7ba74dc8dc6f72260ad772c2ce12f2669863f9c067af3210ec6ef407"
+  },
+  "evidence": {
+    "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/03-zeph-evolving-too-fast/contact-sheet.png",
+    "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/03-zeph-evolving-too-fast/motion-evidence/sequence.png",
+    "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/03-zeph-evolving-too-fast/representative-frames"
+  },
+  "metrics": {
+    "selection_ms": 59,
+    "creative-preflight_ms": 48,
+    "timeline-preflight_ms": 46,
+    "music_ms": 969,
+    "silence_ms": 52,
+    "render_ms": 21295,
+    "mix_ms": 1578,
+    "encode_ms": 24998,
+    "media_validation_ms": 758,
+    "output_validation_ms": 55
+  },
+  "publish": false,
+  "result": "PASS",
+  "attempts": 1,
+  "attempt_errors": []
+}

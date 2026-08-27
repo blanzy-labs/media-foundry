@@ -1,0 +1,81 @@
+{
+  "slice": "MF-012",
+  "type": "activity_output_validation",
+  "fixture": "mf012-05-cascade-failure",
+  "activity": {
+    "all_observed": true,
+    "camera_choreography": "pull_back",
+    "deterministic": true,
+    "dominant_activity": "cascade_failure",
+    "event_evidence": [
+      {
+        "duration": 2.0,
+        "id": "anomaly",
+        "observed": {
+          "observed_frame": 389,
+          "time": 0.8,
+          "type": "anomaly_seed"
+        },
+        "start": 0.8,
+        "status": "PASS",
+        "type": "anomaly_seed"
+      },
+      {
+        "duration": 6.0,
+        "id": "cascade",
+        "observed": {
+          "observed_frame": 389,
+          "time": 2.2,
+          "type": "cascade_failure"
+        },
+        "start": 2.2,
+        "status": "PASS",
+        "type": "cascade_failure"
+      }
+    ],
+    "opening_choreography": "warning_state_open",
+    "primitive_count": 18,
+    "primitives": [
+      "target_acquire",
+      "target_move",
+      "target_escape",
+      "target_reacquire",
+      "tracker_converge",
+      "target_lock",
+      "fragment_spawn",
+      "fragment_drift",
+      "fragment_align",
+      "record_reconstruct",
+      "connection_attempt",
+      "signal_travel",
+      "bridge_form",
+      "bridge_stabilize",
+      "path_override",
+      "network_reroute",
+      "anomaly_seed",
+      "cascade_failure"
+    ],
+    "result": "PASS",
+    "seed": 26066,
+    "subject_agnostic": true,
+    "supporting_activities": [],
+    "targets": [
+      "circuit_network",
+      "survivor_path"
+    ],
+    "version": 1
+  },
+  "checks": {
+    "config": "PASS",
+    "renderer_strategy": "PASS",
+    "dominant_activity": "PASS",
+    "supporting_activities": "PASS",
+    "opening": "PASS",
+    "camera": "PASS",
+    "all_events_observed": "PASS",
+    "deterministic_seed": "PASS",
+    "encoded_media": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

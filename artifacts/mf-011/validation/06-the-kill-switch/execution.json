@@ -1,0 +1,91 @@
+{
+  "beats": [
+    {
+      "end": 2.3,
+      "first_frame": 0,
+      "id": "circuits",
+      "last_frame": 68,
+      "start": 0.0,
+      "status": "PASS",
+      "type": "intro"
+    },
+    {
+      "end": 4.4,
+      "first_frame": 69,
+      "id": "formation",
+      "last_frame": 131,
+      "start": 2.3,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 6.5,
+      "first_frame": 132,
+      "id": "opening",
+      "last_frame": 194,
+      "start": 4.4,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 11.0,
+      "first_frame": 195,
+      "id": "page_1",
+      "last_frame": 329,
+      "start": 6.5,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 15.5,
+      "first_frame": 330,
+      "id": "page_2",
+      "last_frame": 464,
+      "start": 11.0,
+      "status": "PASS",
+      "type": "emphasis"
+    },
+    {
+      "end": 20.0,
+      "first_frame": 465,
+      "id": "page_3",
+      "last_frame": 599,
+      "start": 15.5,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 22.0,
+      "first_frame": 600,
+      "id": "result_hold",
+      "last_frame": 659,
+      "start": 20.0,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 24.0,
+      "first_frame": 660,
+      "id": "dissolve",
+      "last_frame": 719,
+      "start": 22.0,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 29.0,
+      "first_frame": 720,
+      "id": "cta",
+      "last_frame": 869,
+      "start": 24.0,
+      "status": "PASS",
+      "type": "outro"
+    }
+  ],
+  "duration": 29.0,
+  "fixture": "mf011-06-the-kill-switch",
+  "mode": "beats",
+  "result": "PASS",
+  "slice": "MF-004",
+  "total_frames": 870
+}

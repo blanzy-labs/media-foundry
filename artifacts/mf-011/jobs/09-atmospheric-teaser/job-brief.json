@@ -1,0 +1,69 @@
+{
+  "id": "09-atmospheric-teaser",
+  "title": "Atmospheric Teaser",
+  "purpose": "Let the recovered-record world carry a minimal mystery teaser.",
+  "story_fact_ids": [
+    "simon_framed_and_hunted"
+  ],
+  "distinguishing_features": [
+    "minimal text",
+    "slow circuit wake",
+    "baseline nodes",
+    "ambient musical region without ambient SFX"
+  ],
+  "fixture": "content/fixtures/mf011/09-atmospheric-teaser.json",
+  "phrases": [
+    "RECOVERED PROCESS",
+    "SOURCE UNKNOWN",
+    "TARGET ACTIVE"
+  ],
+  "creative": {
+    "mechanism": "classification_link",
+    "events": [
+      "leo_resolve",
+      "zeph_resolve",
+      "bridge_attempt",
+      "bridge_stable"
+    ],
+    "timing": {
+      "intro_seconds": 7.0,
+      "investigation_seconds": 13.0,
+      "result_hold_seconds": 2.0,
+      "cta_seconds": 8.0
+    },
+    "palette_profile": "baseline",
+    "camera_profile": "wide_investigation",
+    "node_profile": "baseline",
+    "projection_profile": "baseline",
+    "cta_profile": "cool_signal",
+    "audio_cue": "baseline_full"
+  },
+  "music": {
+    "query": {
+      "mood": [
+        "ambient",
+        "mystery",
+        "reflective"
+      ],
+      "use_case": [
+        "ambient_teaser"
+      ]
+    },
+    "track_id": "cold_concrete_anatomy",
+    "region_id": "ambient_a",
+    "actual_start": 145.0,
+    "actual_end": 175.0,
+    "video_duration": 30.0,
+    "fade_in": 2.0,
+    "fade_out": 3.0,
+    "gain_db": -6.5,
+    "ducking": {
+      "narration_duck_db": -8.0,
+      "attack_ms": 140,
+      "release_ms": 360
+    },
+    "selection_reason": "The sparse ambient region lets the chamber and unresolved record carry the teaser."
+  },
+  "narration": null,
+  "renderer_changes_required": false
+}

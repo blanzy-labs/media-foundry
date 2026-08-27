@@ -1,0 +1,105 @@
+{
+  "slice": "MF-012",
+  "type": "activity_output_validation",
+  "fixture": "mf012-02-record-reconstruction",
+  "activity": {
+    "all_observed": true,
+    "camera_choreography": "reveal_from_detail",
+    "deterministic": true,
+    "dominant_activity": "reconstruction",
+    "event_evidence": [
+      {
+        "duration": 1.5,
+        "id": "spawn",
+        "observed": {
+          "observed_frame": 359,
+          "time": 0.5,
+          "type": "fragment_spawn"
+        },
+        "start": 0.5,
+        "status": "PASS",
+        "type": "fragment_spawn"
+      },
+      {
+        "duration": 3.2,
+        "id": "drift",
+        "observed": {
+          "observed_frame": 359,
+          "time": 1.0,
+          "type": "fragment_drift"
+        },
+        "start": 1.0,
+        "status": "PASS",
+        "type": "fragment_drift"
+      },
+      {
+        "duration": 2.5,
+        "id": "align",
+        "observed": {
+          "observed_frame": 359,
+          "time": 3.6,
+          "type": "fragment_align"
+        },
+        "start": 3.6,
+        "status": "PASS",
+        "type": "fragment_align"
+      },
+      {
+        "duration": 2.2,
+        "id": "reconstruct",
+        "observed": {
+          "observed_frame": 359,
+          "time": 5.8,
+          "type": "record_reconstruct"
+        },
+        "start": 5.8,
+        "status": "PASS",
+        "type": "record_reconstruct"
+      }
+    ],
+    "opening_choreography": "corrupt_record_resolve",
+    "primitive_count": 18,
+    "primitives": [
+      "target_acquire",
+      "target_move",
+      "target_escape",
+      "target_reacquire",
+      "tracker_converge",
+      "target_lock",
+      "fragment_spawn",
+      "fragment_drift",
+      "fragment_align",
+      "record_reconstruct",
+      "connection_attempt",
+      "signal_travel",
+      "bridge_form",
+      "bridge_stabilize",
+      "path_override",
+      "network_reroute",
+      "anomaly_seed",
+      "cascade_failure"
+    ],
+    "result": "PASS",
+    "seed": 26066,
+    "subject_agnostic": true,
+    "supporting_activities": [],
+    "targets": [
+      "fragment_field",
+      "primary_record"
+    ],
+    "version": 1
+  },
+  "checks": {
+    "config": "PASS",
+    "renderer_strategy": "PASS",
+    "dominant_activity": "PASS",
+    "supporting_activities": "PASS",
+    "opening": "PASS",
+    "camera": "PASS",
+    "all_events_observed": "PASS",
+    "deterministic_seed": "PASS",
+    "encoded_media": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

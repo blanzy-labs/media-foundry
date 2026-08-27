@@ -1,0 +1,348 @@
+{
+  "campaign_id": "unknown-process-mf-011-v1",
+  "run_id": "campaign-run-002",
+  "trigger_kind": "scheduled",
+  "state": "COMPLETE",
+  "started_at": "2026-08-25T18:07:18+00:00",
+  "transitions": [
+    {
+      "state": "PENDING",
+      "at": "2026-08-25T18:07:18+00:00"
+    },
+    {
+      "state": "PREFLIGHT",
+      "at": "2026-08-25T18:07:18+00:00"
+    },
+    {
+      "state": "RUNNING",
+      "at": "2026-08-25T18:07:20+00:00"
+    },
+    {
+      "state": "COMPLETE",
+      "at": "2026-08-25T18:16:23+00:00"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "01-simon-target-acquired",
+      "state": "READY_FOR_REVIEW",
+      "attempts": 1,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:07:18+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:07:20+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:07:20+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:07:20+00:00"
+        },
+        {
+          "state": "VALIDATING",
+          "at": "2026-08-25T18:08:15+00:00"
+        },
+        {
+          "state": "READY_FOR_REVIEW",
+          "at": "2026-08-25T18:08:15+00:00"
+        }
+      ]
+    },
+    {
+      "id": "02-leo-living-data-bridge",
+      "state": "READY_FOR_REVIEW",
+      "attempts": 1,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:07:18+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:08:15+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:08:15+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:08:15+00:00"
+        },
+        {
+          "state": "VALIDATING",
+          "at": "2026-08-25T18:09:08+00:00"
+        },
+        {
+          "state": "READY_FOR_REVIEW",
+          "at": "2026-08-25T18:09:08+00:00"
+        }
+      ]
+    },
+    {
+      "id": "03-zeph-evolving-too-fast",
+      "state": "READY_FOR_REVIEW",
+      "attempts": 1,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:07:18+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:09:08+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:09:08+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:09:08+00:00"
+        },
+        {
+          "state": "VALIDATING",
+          "at": "2026-08-25T18:09:59+00:00"
+        },
+        {
+          "state": "READY_FOR_REVIEW",
+          "at": "2026-08-25T18:09:59+00:00"
+        }
+      ]
+    },
+    {
+      "id": "04-the-syndicate",
+      "state": "READY_FOR_REVIEW",
+      "attempts": 1,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:07:18+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:09:59+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:09:59+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:09:59+00:00"
+        },
+        {
+          "state": "VALIDATING",
+          "at": "2026-08-25T18:10:55+00:00"
+        },
+        {
+          "state": "READY_FOR_REVIEW",
+          "at": "2026-08-25T18:10:55+00:00"
+        }
+      ]
+    },
+    {
+      "id": "05-simon-biometric-anomaly",
+      "state": "READY_FOR_REVIEW",
+      "attempts": 1,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:07:18+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:10:55+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:10:55+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:10:55+00:00"
+        },
+        {
+          "state": "VALIDATING",
+          "at": "2026-08-25T18:11:46+00:00"
+        },
+        {
+          "state": "READY_FOR_REVIEW",
+          "at": "2026-08-25T18:11:46+00:00"
+        }
+      ]
+    },
+    {
+      "id": "06-the-kill-switch",
+      "state": "READY_FOR_REVIEW",
+      "attempts": 1,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:07:18+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:11:46+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:11:46+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:11:46+00:00"
+        },
+        {
+          "state": "VALIDATING",
+          "at": "2026-08-25T18:12:41+00:00"
+        },
+        {
+          "state": "READY_FOR_REVIEW",
+          "at": "2026-08-25T18:12:41+00:00"
+        }
+      ]
+    },
+    {
+      "id": "07-digital-empire",
+      "state": "READY_FOR_REVIEW",
+      "attempts": 1,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:07:18+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:12:41+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:12:41+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:12:41+00:00"
+        },
+        {
+          "state": "VALIDATING",
+          "at": "2026-08-25T18:13:38+00:00"
+        },
+        {
+          "state": "READY_FOR_REVIEW",
+          "at": "2026-08-25T18:13:38+00:00"
+        }
+      ]
+    },
+    {
+      "id": "08-for-what-he-is",
+      "state": "READY_FOR_REVIEW",
+      "attempts": 1,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:07:18+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:13:38+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:13:38+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:13:38+00:00"
+        },
+        {
+          "state": "VALIDATING",
+          "at": "2026-08-25T18:14:30+00:00"
+        },
+        {
+          "state": "READY_FOR_REVIEW",
+          "at": "2026-08-25T18:14:30+00:00"
+        }
+      ]
+    },
+    {
+      "id": "09-atmospheric-teaser",
+      "state": "READY_FOR_REVIEW",
+      "attempts": 1,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:07:18+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:14:30+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:14:30+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:14:30+00:00"
+        },
+        {
+          "state": "VALIDATING",
+          "at": "2026-08-25T18:15:27+00:00"
+        },
+        {
+          "state": "READY_FOR_REVIEW",
+          "at": "2026-08-25T18:15:27+00:00"
+        }
+      ]
+    },
+    {
+      "id": "10-direct-book-cta",
+      "state": "READY_FOR_REVIEW",
+      "attempts": 1,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:07:18+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:15:27+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:15:27+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:15:27+00:00"
+        },
+        {
+          "state": "VALIDATING",
+          "at": "2026-08-25T18:16:22+00:00"
+        },
+        {
+          "state": "READY_FOR_REVIEW",
+          "at": "2026-08-25T18:16:22+00:00"
+        }
+      ]
+    }
+  ],
+  "ended_at": "2026-08-25T18:16:23+00:00"
+}

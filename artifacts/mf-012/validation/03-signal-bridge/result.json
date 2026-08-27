@@ -1,0 +1,77 @@
+{
+  "demo_id": "03-signal-bridge",
+  "state": "READY_FOR_REVIEW",
+  "runtime_seconds": 12.0,
+  "frame_count": 360,
+  "dominant_activity": "connection",
+  "supporting_activities": [],
+  "opening_choreography": "follow_energy_packet",
+  "camera_choreography": "follow_packet",
+  "spatial_behavior": [
+    "isolated side nodes",
+    "packet crosses full width",
+    "downstream wall cells respond"
+  ],
+  "text_behavior": [
+    "type_on",
+    "rewrite",
+    "highlight",
+    "lock"
+  ],
+  "activity_sequence": [
+    {
+      "id": "attempt",
+      "type": "connection_attempt",
+      "target": "node_b",
+      "start": 0.7,
+      "duration": 2.4,
+      "intensity": 0.8,
+      "overlap": true
+    },
+    {
+      "id": "travel",
+      "type": "signal_travel",
+      "target": "node_b",
+      "start": 1.5,
+      "duration": 3.0,
+      "intensity": 1.0,
+      "overlap": true
+    },
+    {
+      "id": "form",
+      "type": "bridge_form",
+      "target": "node_b",
+      "start": 4.1,
+      "duration": 2.0,
+      "intensity": 0.9,
+      "overlap": true
+    },
+    {
+      "id": "stabilize",
+      "type": "bridge_stabilize",
+      "target": "wall_cells",
+      "start": 5.6,
+      "duration": 2.2,
+      "intensity": 1.0,
+      "overlap": true
+    }
+  ],
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf012/activity-vocabulary-v1/run-001/03-signal-bridge/demo.mp4",
+    "bytes": 3454308,
+    "sha256": "a3bddb24e87bfa151ec65877c07986e0abd8b672d75149d74cd9c6cffba9b4b0"
+  },
+  "motion_evidence": "/home/blanzy/media-foundry-output/mf012/activity-vocabulary-v1/run-001/03-signal-bridge/motion-evidence/sequence.png",
+  "representative_frames": "/home/blanzy/media-foundry-output/mf012/activity-vocabulary-v1/run-001/03-signal-bridge/representative-frames",
+  "render_ms": 10765,
+  "render_ms_per_frame": 29.903,
+  "metrics": {
+    "config_validation_ms": 45,
+    "timeline_preflight_ms": 43,
+    "render_ms": 10765,
+    "encode_ms": 23925,
+    "media_validation_ms": 1224,
+    "output_validation_ms": 131
+  },
+  "result": "PASS"
+}

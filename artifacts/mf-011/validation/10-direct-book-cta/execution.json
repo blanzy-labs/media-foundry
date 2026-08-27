@@ -1,0 +1,91 @@
+{
+  "beats": [
+    {
+      "end": 2.3,
+      "first_frame": 0,
+      "id": "circuits",
+      "last_frame": 68,
+      "start": 0.0,
+      "status": "PASS",
+      "type": "intro"
+    },
+    {
+      "end": 4.4,
+      "first_frame": 69,
+      "id": "formation",
+      "last_frame": 131,
+      "start": 2.3,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 6.0,
+      "first_frame": 132,
+      "id": "opening",
+      "last_frame": 179,
+      "start": 4.4,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 10.333,
+      "first_frame": 180,
+      "id": "page_1",
+      "last_frame": 309,
+      "start": 6.0,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 14.666,
+      "first_frame": 310,
+      "id": "page_2",
+      "last_frame": 439,
+      "start": 10.333,
+      "status": "PASS",
+      "type": "emphasis"
+    },
+    {
+      "end": 18.999,
+      "first_frame": 440,
+      "id": "page_3",
+      "last_frame": 569,
+      "start": 14.666,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 21.999,
+      "first_frame": 570,
+      "id": "result_hold",
+      "last_frame": 659,
+      "start": 18.999,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 23.999,
+      "first_frame": 660,
+      "id": "dissolve",
+      "last_frame": 719,
+      "start": 21.999,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 30.0,
+      "first_frame": 720,
+      "id": "cta",
+      "last_frame": 899,
+      "start": 23.999,
+      "status": "PASS",
+      "type": "outro"
+    }
+  ],
+  "duration": 30.0,
+  "fixture": "mf011-10-direct-book-cta",
+  "mode": "beats",
+  "result": "PASS",
+  "slice": "MF-004",
+  "total_frames": 900
+}

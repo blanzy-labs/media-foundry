@@ -1,0 +1,70 @@
+{
+  "id": "06-the-kill-switch",
+  "title": "The Kill-Switch",
+  "purpose": "Reveal that Simon's biometrics contain the kill-switch to a digital empire.",
+  "story_fact_ids": [
+    "simon_biometrics_contain_kill_switch",
+    "kill_switch_threatens_digital_empire"
+  ],
+  "distinguishing_features": [
+    "encrypted region opening",
+    "biometric match",
+    "system warning escalation",
+    "dread-weighted reveal"
+  ],
+  "fixture": "content/fixtures/mf011/06-the-kill-switch.json",
+  "phrases": [
+    "HIDDEN BIOMETRIC KEY",
+    "KILL-SWITCH DETECTED",
+    "LOCATION: SIMON"
+  ],
+  "creative": {
+    "mechanism": "biometric_scan",
+    "events": [
+      "biometric_scan",
+      "deep_scan",
+      "hidden_region",
+      "kill_switch_reveal"
+    ],
+    "timing": {
+      "intro_seconds": 6.5,
+      "investigation_seconds": 13.5,
+      "result_hold_seconds": 2.0,
+      "cta_seconds": 7.0
+    },
+    "palette_profile": "revelation",
+    "camera_profile": "calm_to_push",
+    "node_profile": "stable_then_overload",
+    "projection_profile": "biometric",
+    "cta_profile": "revelation",
+    "audio_cue": "revelation"
+  },
+  "music": {
+    "query": {
+      "mood": [
+        "revelation",
+        "ominous",
+        "escalation"
+      ],
+      "use_case": [
+        "biometric_reveal"
+      ]
+    },
+    "track_id": "below_the_iron_floor",
+    "region_id": "revelation_a",
+    "actual_start": 71.0,
+    "actual_end": 100.0,
+    "video_duration": 29.0,
+    "fade_in": 1.0,
+    "fade_out": 2.5,
+    "gain_db": -4.5,
+    "ducking": {
+      "narration_duck_db": -8.0,
+      "attack_ms": 110,
+      "release_ms": 280
+    },
+    "selection_reason": "The approved rising reveal passage supports the deeper scan and final dread."
+  },
+  "narration": null,
+  "renderer_changes_required": false
+}

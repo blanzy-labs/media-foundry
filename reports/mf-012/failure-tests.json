@@ -1,0 +1,58 @@
+{
+  "slice": "MF-012",
+  "type": "isolated_failure_tests",
+  "tests": [
+    {
+      "name": "unknown_activity",
+      "expected": "UNKNOWN_ACTIVITY",
+      "actual_errors": [
+        "UNKNOWN_ACTIVITY"
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "missing_target_reference",
+      "expected": "MISSING_TARGET_REFERENCE",
+      "actual_errors": [
+        "MISSING_TARGET_REFERENCE"
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "impossible_dependency",
+      "expected": "IMPOSSIBLE_ACTIVITY_DEPENDENCY",
+      "actual_errors": [
+        "IMPOSSIBLE_ACTIVITY_DEPENDENCY",
+        "ACTIVITY_OVERLAP_MISSING"
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "invalid_timing",
+      "expected": "INVALID_ACTIVITY_TIMING",
+      "actual_errors": [
+        "INVALID_ACTIVITY_TIMING"
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "excessive_complexity",
+      "expected": "ACTIVITY_COMPLEXITY_EXCEEDED",
+      "actual_errors": [
+        "ACTIVITY_COMPLEXITY_EXCEEDED"
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "unknown_opening",
+      "expected": "UNKNOWN_OPENING_CHOREOGRAPHY",
+      "actual_errors": [
+        "UNKNOWN_OPENING_CHOREOGRAPHY"
+      ],
+      "result": "PASS"
+    }
+  ],
+  "passed": 6,
+  "total": 6,
+  "result": "PASS"
+}

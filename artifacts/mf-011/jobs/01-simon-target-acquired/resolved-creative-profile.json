@@ -1,0 +1,20 @@
+{
+  "mechanism": "tracking",
+  "events": [
+    "target_search",
+    "target_reacquire",
+    "target_lock"
+  ],
+  "timing": {
+    "intro_seconds": 5.2,
+    "investigation_seconds": 12.4,
+    "result_hold_seconds": 1.4,
+    "cta_seconds": 8.0
+  },
+  "palette_profile": "pursuit",
+  "camera_profile": "tight_pursuit",
+  "node_profile": "urgent",
+  "projection_profile": "warning_trace",
+  "cta_profile": "warning",
+  "audio_cue": "pursuit"
+}

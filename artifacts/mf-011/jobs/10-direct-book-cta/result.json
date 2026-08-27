@@ -1,0 +1,91 @@
+{
+  "job_id": "10-direct-book-cta",
+  "title": "Direct Book CTA",
+  "state": "READY_FOR_REVIEW",
+  "technical": "PASS",
+  "editorial": "PENDING_HUMAN",
+  "release": "PENDING_HUMAN",
+  "runtime_seconds": 30.0,
+  "frame_count": 900,
+  "mechanism": "biometric_scan",
+  "profiles": {
+    "palette_profile": "pursuit",
+    "camera_profile": "calm_to_push",
+    "node_profile": "urgent",
+    "projection_profile": "biometric",
+    "cta_profile": "revelation"
+  },
+  "distinguishing_features": [
+    "rapid clue progression",
+    "multi-subject summary",
+    "kill-switch reveal",
+    "strongest CTA hold"
+  ],
+  "music": {
+    "query": {
+      "mood": [
+        "investigation",
+        "mystery",
+        "paranoia"
+      ],
+      "use_case": [
+        "direct_promo"
+      ]
+    },
+    "track_id": "concrete_and_chain",
+    "region_id": "investigation_a",
+    "actual_start": 76.0,
+    "actual_end": 106.0,
+    "video_duration": 30.0,
+    "fade_in": 0.8,
+    "fade_out": 2.6,
+    "gain_db": -4.8,
+    "ducking": {
+      "narration_duck_db": -8.0,
+      "attack_ms": 100,
+      "release_ms": 280
+    },
+    "selection_reason": "A sustained investigation section supports rapid clues before the extended conversion hold.",
+    "track_title": "Concrete and Chain",
+    "cue_tags": [
+      "investigation",
+      "mystery",
+      "paranoia"
+    ],
+    "usable_start": 71.0,
+    "usable_end": 109.0,
+    "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91"
+  },
+  "audio_policy": {
+    "presentation": "music_only",
+    "sfx_count": 0,
+    "ambient_machine_audio": false,
+    "narration": "off"
+  },
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/10-direct-book-cta/final.mp4",
+    "bytes": 5699543,
+    "sha256": "54d806f9c1e7809bc641da5a68b78cd2c72f3fa546979aef1ec21ec00095aff6"
+  },
+  "evidence": {
+    "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/10-direct-book-cta/contact-sheet.png",
+    "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/10-direct-book-cta/motion-evidence/sequence.png",
+    "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/10-direct-book-cta/representative-frames"
+  },
+  "metrics": {
+    "selection_ms": 64,
+    "creative-preflight_ms": 43,
+    "timeline-preflight_ms": 45,
+    "music_ms": 1140,
+    "silence_ms": 53,
+    "render_ms": 24164,
+    "mix_ms": 1767,
+    "encode_ms": 27379,
+    "media_validation_ms": 813,
+    "output_validation_ms": 55
+  },
+  "publish": false,
+  "result": "PASS",
+  "attempts": 1,
+  "attempt_errors": []
+}

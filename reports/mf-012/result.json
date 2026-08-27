@@ -1,0 +1,26 @@
+{
+  "slice": "MF-012",
+  "type": "technical_acceptance",
+  "vocabulary_id": "visual_activity_v1",
+  "primitive_count": 18,
+  "demo_count": 5,
+  "ready_for_review": 5,
+  "checks": {
+    "mf011_baseline_preserved": "PASS",
+    "vocabulary_12_to_18": "PASS",
+    "subject_agnostic": "PASS",
+    "five_demos_ready": "PASS",
+    "failure_tests": "PASS",
+    "legacy_pixel_regression": "PASS",
+    "determinism": "PASS",
+    "renderer_unchanged_during_run": "PASS",
+    "not_published": "PASS"
+  },
+  "failure_tests": "PASS",
+  "legacy_regression": "PASS",
+  "determinism": "PASS",
+  "human_review": "PENDING_HUMAN",
+  "production_approved_activities": [],
+  "published": 0,
+  "result": "TECHNICAL_PASS"
+}

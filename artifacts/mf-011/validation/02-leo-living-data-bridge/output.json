@@ -1,0 +1,53 @@
+{
+  "slice": "MF-011",
+  "type": "job_output_validation",
+  "job_id": "02-leo-living-data-bridge",
+  "mechanism": "classification_link",
+  "mechanism_exclusivity": {
+    "biometric_scan": "NOT_RUN",
+    "classification_link": "PASS",
+    "tracking": "NOT_RUN"
+  },
+  "profiles": {
+    "palette_profile": "mystery",
+    "camera_profile": "wide_investigation",
+    "node_profile": "analytical",
+    "projection_profile": "classification",
+    "cta_profile": "cool_signal"
+  },
+  "music_selection": {
+    "contract": "mf010_music_selection_v1",
+    "project": "unknown-process",
+    "track_id": "cold_concrete_anatomy",
+    "qualified_id": "unknown-process:cold_concrete_anatomy",
+    "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "region_id": "investigation_a",
+    "usable_start": 71.0,
+    "usable_end": 109.0,
+    "actual_start": 73.0,
+    "actual_end": 101.0,
+    "video_duration": 28.0,
+    "fade_in": 1.2,
+    "fade_out": 2.0,
+    "result": "PASS"
+  },
+  "checks": {
+    "mechanism_loaded": "PASS",
+    "mechanism_exclusivity": "PASS",
+    "unique_events": "PASS",
+    "profiles_loaded": "PASS",
+    "timing_loaded": "PASS",
+    "campaign_identity": "PASS",
+    "timeline": "PASS",
+    "music_selection": "PASS",
+    "music_source": "PASS",
+    "music_offsets": "PASS",
+    "music_mix": "PASS",
+    "sfx_disabled": "PASS",
+    "ambient_disabled": "PASS",
+    "narration_off": "PASS",
+    "encoded_media": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

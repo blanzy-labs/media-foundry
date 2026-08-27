@@ -1,0 +1,129 @@
+{
+  "slice": "MF-012",
+  "type": "activity_output_validation",
+  "fixture": "mf012-01-moving-target-pursuit",
+  "activity": {
+    "all_observed": true,
+    "camera_choreography": "lateral_track",
+    "deterministic": true,
+    "dominant_activity": "pursuit",
+    "event_evidence": [
+      {
+        "duration": 1.0,
+        "id": "acquire",
+        "observed": {
+          "observed_frame": 329,
+          "time": 0.5,
+          "type": "target_acquire"
+        },
+        "start": 0.5,
+        "status": "PASS",
+        "type": "target_acquire"
+      },
+      {
+        "duration": 3.0,
+        "id": "move",
+        "observed": {
+          "observed_frame": 329,
+          "time": 1.1,
+          "type": "target_move"
+        },
+        "start": 1.1,
+        "status": "PASS",
+        "type": "target_move"
+      },
+      {
+        "duration": 1.0,
+        "id": "escape",
+        "observed": {
+          "observed_frame": 329,
+          "time": 3.4,
+          "type": "target_escape"
+        },
+        "start": 3.4,
+        "status": "PASS",
+        "type": "target_escape"
+      },
+      {
+        "duration": 1.3,
+        "id": "reacquire",
+        "observed": {
+          "observed_frame": 329,
+          "time": 4.3,
+          "type": "target_reacquire"
+        },
+        "start": 4.3,
+        "status": "PASS",
+        "type": "target_reacquire"
+      },
+      {
+        "duration": 2.2,
+        "id": "converge",
+        "observed": {
+          "observed_frame": 329,
+          "time": 4.8,
+          "type": "tracker_converge"
+        },
+        "start": 4.8,
+        "status": "PASS",
+        "type": "tracker_converge"
+      },
+      {
+        "duration": 1.2,
+        "id": "lock",
+        "observed": {
+          "observed_frame": 329,
+          "time": 6.8,
+          "type": "target_lock"
+        },
+        "start": 6.8,
+        "status": "PASS",
+        "type": "target_lock"
+      }
+    ],
+    "opening_choreography": "target_already_moving",
+    "primitive_count": 18,
+    "primitives": [
+      "target_acquire",
+      "target_move",
+      "target_escape",
+      "target_reacquire",
+      "tracker_converge",
+      "target_lock",
+      "fragment_spawn",
+      "fragment_drift",
+      "fragment_align",
+      "record_reconstruct",
+      "connection_attempt",
+      "signal_travel",
+      "bridge_form",
+      "bridge_stabilize",
+      "path_override",
+      "network_reroute",
+      "anomaly_seed",
+      "cascade_failure"
+    ],
+    "result": "PASS",
+    "seed": 26066,
+    "subject_agnostic": true,
+    "supporting_activities": [],
+    "targets": [
+      "primary_target",
+      "tracker_field"
+    ],
+    "version": 1
+  },
+  "checks": {
+    "config": "PASS",
+    "renderer_strategy": "PASS",
+    "dominant_activity": "PASS",
+    "supporting_activities": "PASS",
+    "opening": "PASS",
+    "camera": "PASS",
+    "all_events_observed": "PASS",
+    "deterministic_seed": "PASS",
+    "encoded_media": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

@@ -1,0 +1,91 @@
+{
+  "job_id": "06-the-kill-switch",
+  "title": "The Kill-Switch",
+  "state": "READY_FOR_REVIEW",
+  "technical": "PASS",
+  "editorial": "PENDING_HUMAN",
+  "release": "PENDING_HUMAN",
+  "runtime_seconds": 29.0,
+  "frame_count": 870,
+  "mechanism": "biometric_scan",
+  "profiles": {
+    "palette_profile": "revelation",
+    "camera_profile": "calm_to_push",
+    "node_profile": "stable_then_overload",
+    "projection_profile": "biometric",
+    "cta_profile": "revelation"
+  },
+  "distinguishing_features": [
+    "encrypted region opening",
+    "biometric match",
+    "system warning escalation",
+    "dread-weighted reveal"
+  ],
+  "music": {
+    "query": {
+      "mood": [
+        "revelation",
+        "ominous",
+        "escalation"
+      ],
+      "use_case": [
+        "biometric_reveal"
+      ]
+    },
+    "track_id": "below_the_iron_floor",
+    "region_id": "revelation_a",
+    "actual_start": 71.0,
+    "actual_end": 100.0,
+    "video_duration": 29.0,
+    "fade_in": 1.0,
+    "fade_out": 2.5,
+    "gain_db": -4.5,
+    "ducking": {
+      "narration_duck_db": -8.0,
+      "attack_ms": 110,
+      "release_ms": 280
+    },
+    "selection_reason": "The approved rising reveal passage supports the deeper scan and final dread.",
+    "track_title": "Below the Iron Floor",
+    "cue_tags": [
+      "revelation",
+      "discovery",
+      "ominous"
+    ],
+    "usable_start": 67.0,
+    "usable_end": 111.0,
+    "source_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568"
+  },
+  "audio_policy": {
+    "presentation": "music_only",
+    "sfx_count": 0,
+    "ambient_machine_audio": false,
+    "narration": "off"
+  },
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/06-the-kill-switch/final.mp4",
+    "bytes": 5601285,
+    "sha256": "d32001b8af27faecf01d478aa101ee3c858cdbb07cc5a680defa46d10f5d71d8"
+  },
+  "evidence": {
+    "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/06-the-kill-switch/contact-sheet.png",
+    "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/06-the-kill-switch/motion-evidence/sequence.png",
+    "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/06-the-kill-switch/representative-frames"
+  },
+  "metrics": {
+    "selection_ms": 57,
+    "creative-preflight_ms": 41,
+    "timeline-preflight_ms": 43,
+    "music_ms": 1045,
+    "silence_ms": 51,
+    "render_ms": 23626,
+    "mix_ms": 1692,
+    "encode_ms": 27445,
+    "media_validation_ms": 794,
+    "output_validation_ms": 58
+  },
+  "publish": false,
+  "result": "PASS",
+  "attempts": 1,
+  "attempt_errors": []
+}

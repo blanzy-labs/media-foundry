@@ -1,0 +1,717 @@
+{
+  "id": "mf011-06-the-kill-switch",
+  "template": "scrappy_diorama",
+  "seed": 26066,
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_seconds": 29.0
+  },
+  "subject": {
+    "type": "book",
+    "title": "Unknown Process",
+    "author": "R.C. Blanzy",
+    "canonical_author": "Robert C. Blanzy",
+    "series": "The Second Presence",
+    "book_number": 1,
+    "authoritative_url": "https://rcblanzy.com/books/unknown-process",
+    "retrieval_date": "2026-08-24",
+    "metadata_provenance": [
+      {
+        "source": "https://www.rcblanzy.com/books/unknown-process/",
+        "organization": "Robert C. Blanzy",
+        "retrieval_date": "2026-08-24",
+        "supports": "Title, author, series position, synopsis, and canonical destination"
+      }
+    ]
+  },
+  "approved_copy": {
+    "synopsis": "Framed, hunted, and stripped of his old life, Simon is forced on the run alongside two impossible targets: Leo, a bio-engineered boy acting as a living data bridge, and Zeph, a hunted AI kernel evolving at a terrifying speed. Pursued by the Syndicate\u2014a cabal of global elites using bleeding-edge technology to subjugate the planet\u2014Simon realizes he isn't just a protector. He carries the ultimate weapon. Locked within his own biometrics is the kill-switch to a digital empire. To survive, Simon must navigate a deadly maze of corporate black-ops and untethered artificial intelligence, or watch humanity be quietly enslaved by an unseen hand.",
+    "source": "user-approved copy and https://www.rcblanzy.com/books/unknown-process/",
+    "sole_narrative_basis": true,
+    "invented_plot_details": false
+  },
+  "visual_strategy": {
+    "preference": "godot_indicator_pulse_refinement",
+    "fallback": "fail",
+    "static_book_cover_allowed": false
+  },
+  "visual": {
+    "kind": "indicator_pulse_polish",
+    "primary": "071015",
+    "secondary": "39b8c9",
+    "label": "LIVE INVESTIGATION",
+    "props": []
+  },
+  "intro": {
+    "text": "UNKNOWN PROCESS"
+  },
+  "content": {
+    "headline": "UNKNOWN PROCESS",
+    "body": "THE SECOND PRESENCE \u2022 BOOK ONE",
+    "emphasis": "R.C. BLANZY"
+  },
+  "outro": {
+    "text": "CONTINUE THE ADVENTURE",
+    "tagline": "R.C. BLANZY"
+  },
+  "page_phrases": [
+    "HIDDEN BIOMETRIC KEY",
+    "KILL-SWITCH DETECTED",
+    "LOCATION: SIMON"
+  ],
+  "cta": {
+    "text": "Continue the adventure",
+    "website": "https://rcblanzy.com/books/unknown-process",
+    "canonical_url": "https://rcblanzy.com/books/unknown-process",
+    "display_url": "rcblanzy.com/books/unknown-process",
+    "source": "https://www.rcblanzy.com/books/unknown-process/",
+    "status": "APPROVED"
+  },
+  "voice_contract": {
+    "status": "BLOCKED_PRODUCTION_VOICE",
+    "available_provider": null,
+    "test_voice_allowed": false,
+    "release_eligible": false,
+    "narration_text": "Framed and hunted, Simon runs with Leo, a living data bridge, and Zeph, an evolving AI kernel. Hidden in Simon's biometrics is the kill-switch to a digital empire. Continue the adventure.",
+    "approved_copy_only": true,
+    "required_final_line": "Continue the adventure."
+  },
+  "audio": {
+    "enabled": true
+  },
+  "music": {
+    "source": "media/audio/music/unknown-process/Below_the_Iron_Floor.mp3",
+    "required": true,
+    "continuous": true,
+    "loop": false,
+    "selected_offset": 71.0,
+    "normalization_lufs": -24,
+    "gain_db": -4.5,
+    "narration_duck_db": -8.0,
+    "attack_ms": 110,
+    "release_ms": 280,
+    "fade_in": 1.0,
+    "fade_out": 2.5,
+    "provenance": {
+      "type": "user_supplied_generated",
+      "asset_class": "approved_catalog_track",
+      "release_eligible": true,
+      "track_id": "below_the_iron_floor",
+      "region_id": "revelation_a",
+      "source_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+      "approval_reviewer": "user",
+      "usage": "MF-010 hash-bound human approval; local production master."
+    }
+  },
+  "generated_scene": {
+    "components": [
+      {
+        "id": "chamber",
+        "type": "electronic_chamber"
+      },
+      {
+        "id": "circuits",
+        "type": "circuit_crawler"
+      },
+      {
+        "id": "burst",
+        "type": "electrical_burst"
+      },
+      {
+        "id": "cradle",
+        "type": "projection_emitter"
+      },
+      {
+        "id": "book",
+        "type": "projected_data_window"
+      },
+      {
+        "id": "page_1",
+        "type": "record_channel"
+      },
+      {
+        "id": "page_2",
+        "type": "record_channel"
+      },
+      {
+        "id": "page_3",
+        "type": "record_channel"
+      },
+      {
+        "id": "dissolve",
+        "type": "screen_collapse"
+      },
+      {
+        "id": "lights",
+        "type": "lofi_light"
+      },
+      {
+        "id": "powered_cells",
+        "type": "powered_cells"
+      },
+      {
+        "id": "website",
+        "type": "website_reveal"
+      }
+    ],
+    "events": [
+      {
+        "id": "path_draw_start",
+        "type": "path_draw_start",
+        "time": 0
+      },
+      {
+        "id": "paths_drawn",
+        "type": "paths_drawn",
+        "time": 0.845
+      },
+      {
+        "id": "energy_flow",
+        "type": "energy_flow",
+        "time": 0.91
+      },
+      {
+        "id": "central_node_charge",
+        "type": "central_node_charge",
+        "time": 1.755
+      },
+      {
+        "id": "overload",
+        "type": "overload",
+        "time": 2.275
+      },
+      {
+        "id": "overload_pulse_1",
+        "type": "overload_pulse",
+        "time": 2.535
+      },
+      {
+        "id": "overload_pulse_2",
+        "type": "overload_pulse",
+        "time": 2.925
+      },
+      {
+        "id": "overload_peak",
+        "type": "overload_peak",
+        "time": 3.055
+      },
+      {
+        "id": "spark_burst",
+        "type": "spark_burst",
+        "time": 3.25
+      },
+      {
+        "id": "title_form",
+        "type": "title_form",
+        "time": 3.348
+      },
+      {
+        "id": "projection_emission",
+        "type": "projection_emission",
+        "time": 3.478
+      },
+      {
+        "id": "screen_initialize",
+        "type": "screen_initialize",
+        "time": 3.478
+      },
+      {
+        "id": "camera_push",
+        "type": "camera_push",
+        "time": 3.705
+      },
+      {
+        "id": "title_stabilized",
+        "type": "title_stabilized",
+        "time": 4.16
+      },
+      {
+        "id": "record_query_1",
+        "type": "record_query",
+        "time": 6.5
+      },
+      {
+        "id": "record_typing_1",
+        "type": "record_typing",
+        "time": 7.085
+      },
+      {
+        "id": "biometric_scan",
+        "type": "biometric_scan",
+        "time": 7.76
+      },
+      {
+        "id": "record_activity_1",
+        "type": "record_activity",
+        "time": 7.76
+      },
+      {
+        "id": "record_confirm_1",
+        "type": "record_confirm",
+        "time": 9.47
+      },
+      {
+        "id": "record_lock_1",
+        "type": "record_lock",
+        "time": 9.92
+      },
+      {
+        "id": "record_hold_1",
+        "type": "record_hold",
+        "time": 10.325
+      },
+      {
+        "id": "record_reset_1",
+        "type": "record_reset",
+        "time": 10.685
+      },
+      {
+        "id": "screen_refresh_1",
+        "type": "screen_refresh",
+        "time": 10.82
+      },
+      {
+        "id": "record_query_2",
+        "type": "record_query",
+        "time": 11.0
+      },
+      {
+        "id": "record_typing_2",
+        "type": "record_typing",
+        "time": 11.585
+      },
+      {
+        "id": "deep_scan",
+        "type": "deep_scan",
+        "time": 12.26
+      },
+      {
+        "id": "record_activity_2",
+        "type": "record_activity",
+        "time": 12.26
+      },
+      {
+        "id": "record_confirm_2",
+        "type": "record_confirm",
+        "time": 13.97
+      },
+      {
+        "id": "record_lock_2",
+        "type": "record_lock",
+        "time": 14.42
+      },
+      {
+        "id": "record_hold_2",
+        "type": "record_hold",
+        "time": 14.825
+      },
+      {
+        "id": "record_reset_2",
+        "type": "record_reset",
+        "time": 15.185
+      },
+      {
+        "id": "screen_refresh_2",
+        "type": "screen_refresh",
+        "time": 15.32
+      },
+      {
+        "id": "record_query_3",
+        "type": "record_query",
+        "time": 15.5
+      },
+      {
+        "id": "record_typing_3",
+        "type": "record_typing",
+        "time": 16.085
+      },
+      {
+        "id": "hidden_region",
+        "type": "hidden_region",
+        "time": 16.76
+      },
+      {
+        "id": "record_activity_3",
+        "type": "record_activity",
+        "time": 16.76
+      },
+      {
+        "id": "record_confirm_3",
+        "type": "record_confirm",
+        "time": 18.47
+      },
+      {
+        "id": "kill_switch_reveal",
+        "type": "kill_switch_reveal",
+        "time": 18.92
+      },
+      {
+        "id": "record_lock_3",
+        "type": "record_lock",
+        "time": 18.92
+      },
+      {
+        "id": "record_hold_3",
+        "type": "record_hold",
+        "time": 19.325
+      },
+      {
+        "id": "final_record_settle",
+        "type": "settle",
+        "time": 20.0
+      },
+      {
+        "id": "data_dissolve",
+        "type": "data_dissolve",
+        "time": 22.0
+      },
+      {
+        "id": "screen_collapse",
+        "type": "screen_collapse",
+        "time": 22.0
+      },
+      {
+        "id": "energy_reclaimed",
+        "type": "energy_reclaimed",
+        "time": 22.8
+      },
+      {
+        "id": "return_energy",
+        "type": "return_energy",
+        "time": 23.12
+      },
+      {
+        "id": "camera_pull_back",
+        "type": "camera_pull_back",
+        "time": 23.54
+      },
+      {
+        "id": "cta_energy",
+        "type": "cta_energy",
+        "time": 24.38
+      },
+      {
+        "id": "cta_typing",
+        "type": "cta_typing",
+        "time": 25.01
+      },
+      {
+        "id": "cta_lock",
+        "type": "cta_lock",
+        "time": 25.85
+      },
+      {
+        "id": "cta_reveal",
+        "type": "cta_reveal",
+        "time": 26.34
+      },
+      {
+        "id": "website_reveal",
+        "type": "website_reveal",
+        "time": 26.34
+      },
+      {
+        "id": "cta_settle",
+        "type": "settle",
+        "time": 26.9
+      }
+    ]
+  },
+  "sfx": [],
+  "beats": [
+    {
+      "id": "circuits",
+      "type": "intro",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.3,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "formation",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.1,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "opening",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.1,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "page_1",
+      "type": "statement",
+      "text": "HIDDEN BIOMETRIC KEY",
+      "duration": 4.5,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "page_2",
+      "type": "emphasis",
+      "text": "KILL-SWITCH DETECTED",
+      "duration": 4.5,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "page_3",
+      "type": "statement",
+      "text": "LOCATION: SIMON",
+      "duration": 4.5,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "result_hold",
+      "type": "reveal",
+      "text": "LOCATION: SIMON",
+      "duration": 2.0,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "dissolve",
+      "type": "statement",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 2.0,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "cta",
+      "type": "outro",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 5.0,
+      "transition": "cut",
+      "narration": null
+    }
+  ],
+  "creative": {
+    "mechanism": "biometric_scan",
+    "events": [
+      "biometric_scan",
+      "deep_scan",
+      "hidden_region",
+      "kill_switch_reveal"
+    ],
+    "timing": {
+      "intro_seconds": 6.5,
+      "investigation_seconds": 13.5,
+      "result_hold_seconds": 2.0,
+      "cta_seconds": 7.0
+    },
+    "palette_profile": "revelation",
+    "camera_profile": "calm_to_push",
+    "node_profile": "stable_then_overload",
+    "projection_profile": "biometric",
+    "cta_profile": "revelation",
+    "audio_cue": "revelation"
+  },
+  "campaign_audio_policy": {
+    "music": "enabled",
+    "presentation": "music_only",
+    "sfx": "disabled",
+    "ambient_machine_audio": "disabled",
+    "narration": "off"
+  },
+  "micro_variation": {
+    "version": 1,
+    "enabled": true,
+    "generator": "mf012r1_lcg_v1",
+    "seed": 121202,
+    "channels": [
+      "indicator_dots",
+      "background_tiles",
+      "floating_ring_dot"
+    ],
+    "motion_budget": {
+      "major_motion_elements": 1,
+      "minor_simultaneous_accents": 3
+    },
+    "indicator_dots": {
+      "mode": "reactive_colored_indicators",
+      "colors": [
+        "amber",
+        "purple",
+        "green",
+        "blue"
+      ],
+      "flashes": [
+        {
+          "dot": 0,
+          "start": 5.1,
+          "duration": 0.39,
+          "intensity": 0.26
+        },
+        {
+          "dot": 3,
+          "start": 9.0,
+          "duration": 0.38,
+          "intensity": 0.26
+        },
+        {
+          "dot": 2,
+          "start": 12.4,
+          "duration": 0.46,
+          "intensity": 0.26
+        },
+        {
+          "dot": 1,
+          "start": 17.0,
+          "duration": 0.38,
+          "intensity": 0.26
+        },
+        {
+          "dot": 0,
+          "start": 21.6,
+          "duration": 0.41,
+          "intensity": 0.26
+        },
+        {
+          "dot": 3,
+          "start": 25.3,
+          "duration": 0.44,
+          "intensity": 0.26
+        }
+      ]
+    },
+    "background_tiles": {
+      "mode": "sparse_color_shifts",
+      "visible_tile_count": 54,
+      "active_indices": [
+        4,
+        11,
+        36,
+        41,
+        48
+      ],
+      "active_density": 0.092593,
+      "peak_alpha": 0.105,
+      "events": [
+        {
+          "tile_index": 41,
+          "start": 4.6,
+          "duration": 1.95,
+          "behavior": "tile_dim",
+          "color": "green",
+          "intensity": 0.105
+        },
+        {
+          "tile_index": 41,
+          "start": 8.9,
+          "duration": 1.55,
+          "behavior": "tile_dim",
+          "color": "blue",
+          "intensity": 0.105
+        },
+        {
+          "tile_index": 11,
+          "start": 12.7,
+          "duration": 1.85,
+          "behavior": "tile_color_shift",
+          "color": "amber",
+          "intensity": 0.105
+        },
+        {
+          "tile_index": 48,
+          "start": 15.4,
+          "duration": 1.85,
+          "behavior": "tile_dim",
+          "color": "purple",
+          "intensity": 0.105
+        },
+        {
+          "tile_index": 11,
+          "start": 19.2,
+          "duration": 1.95,
+          "behavior": "tile_color_shift",
+          "color": "green",
+          "intensity": 0.105
+        },
+        {
+          "tile_index": 41,
+          "start": 23.7,
+          "duration": 2.05,
+          "behavior": "tile_wake",
+          "color": "blue",
+          "intensity": 0.105
+        },
+        {
+          "tile_index": 36,
+          "start": 26.3,
+          "duration": 1.75,
+          "behavior": "tile_color_shift",
+          "color": "amber",
+          "intensity": 0.105
+        }
+      ]
+    },
+    "floating_ring_dot": {
+      "enabled": true,
+      "behavior": "slow_hover",
+      "color": "blue",
+      "radius": 10.0,
+      "active_start": 1.0,
+      "active_end": 23.8,
+      "maximum_speed": 14.0,
+      "safe_zone": {
+        "x": 220,
+        "y": -465,
+        "width": 90,
+        "height": 115
+      },
+      "protected_zones": [
+        {
+          "id": "main_projection_and_story_text",
+          "x": -216,
+          "y": -326,
+          "width": 432,
+          "height": 378
+        },
+        {
+          "id": "cta_url_author",
+          "x": -226,
+          "y": -150,
+          "width": 452,
+          "height": 260
+        },
+        {
+          "id": "emitter_and_indicators",
+          "x": -125,
+          "y": 190,
+          "width": 250,
+          "height": 75
+        }
+      ],
+      "path": [
+        {
+          "x": 235,
+          "y": -430
+        },
+        {
+          "x": 275,
+          "y": -397
+        },
+        {
+          "x": 242,
+          "y": -365
+        }
+      ]
+    },
+    "audio_policy": {
+      "music": true,
+      "sfx": false,
+      "ambient": false
+    },
+    "visual_priority": 5,
+    "schedule_signature": "cf5f23c85919a9a015d63049bb844e5b359012150ffe0dda6ea03b2846477b79"
+  }
+}

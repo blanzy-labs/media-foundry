@@ -1,0 +1,111 @@
+{
+  "slice": "MF-004",
+  "fixture": "mf011-10-direct-book-cta",
+  "mode": "beats",
+  "result": "PASS",
+  "duration": 30.0,
+  "number_of_beats": 9,
+  "sequential_no_gaps": true,
+  "beats": [
+    {
+      "id": "circuits",
+      "type": "intro",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.3,
+      "transition": "cut",
+      "narration": null,
+      "index": 0,
+      "start": 0.0,
+      "end": 2.3
+    },
+    {
+      "id": "formation",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.1,
+      "transition": "cut",
+      "narration": null,
+      "index": 1,
+      "start": 2.3,
+      "end": 4.4
+    },
+    {
+      "id": "opening",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 1.6,
+      "transition": "cut",
+      "narration": null,
+      "index": 2,
+      "start": 4.4,
+      "end": 6.0
+    },
+    {
+      "id": "page_1",
+      "type": "statement",
+      "text": "SIMON HUNTED",
+      "duration": 4.333,
+      "transition": "cut",
+      "narration": null,
+      "index": 3,
+      "start": 6.0,
+      "end": 10.333
+    },
+    {
+      "id": "page_2",
+      "type": "emphasis",
+      "text": "LEO BRIDGE / ZEPH EVOLVING",
+      "duration": 4.333,
+      "transition": "cut",
+      "narration": null,
+      "index": 4,
+      "start": 10.333,
+      "end": 14.666
+    },
+    {
+      "id": "page_3",
+      "type": "statement",
+      "text": "KILL-SWITCH INSIDE HIM",
+      "duration": 4.333,
+      "transition": "cut",
+      "narration": null,
+      "index": 5,
+      "start": 14.666,
+      "end": 18.999
+    },
+    {
+      "id": "result_hold",
+      "type": "reveal",
+      "text": "KILL-SWITCH INSIDE HIM",
+      "duration": 3.0,
+      "transition": "cut",
+      "narration": null,
+      "index": 6,
+      "start": 18.999,
+      "end": 21.999
+    },
+    {
+      "id": "dissolve",
+      "type": "statement",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 2.0,
+      "transition": "cut",
+      "narration": null,
+      "index": 7,
+      "start": 21.999,
+      "end": 23.999
+    },
+    {
+      "id": "cta",
+      "type": "outro",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 6.001,
+      "transition": "cut",
+      "narration": null,
+      "index": 8,
+      "start": 23.999,
+      "end": 30.0
+    }
+  ],
+  "preflight_seconds": 5.3e-05
+}

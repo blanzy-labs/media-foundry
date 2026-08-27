@@ -1,0 +1,56 @@
+{
+  "slice": "MF-011",
+  "render": "PASS",
+  "validation": {
+    "file": {
+      "status": "PASS",
+      "detail": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/08-for-what-he-is/final.mp4"
+    },
+    "container": {
+      "status": "PASS",
+      "detail": "mov,mp4,m4a,3gp,3g2,mj2"
+    },
+    "video_stream": {
+      "status": "PASS",
+      "detail": "h264"
+    },
+    "audio_stream": {
+      "status": "PASS",
+      "detail": "aac"
+    },
+    "resolution": {
+      "status": "PASS",
+      "detail": "1080x1920"
+    },
+    "orientation": {
+      "status": "PASS",
+      "detail": "vertical"
+    },
+    "duration": {
+      "status": "PASS",
+      "detail": "26.000 seconds"
+    },
+    "frame_rate": {
+      "status": "PASS",
+      "detail": "30.000 fps"
+    },
+    "video_codec": {
+      "status": "PASS",
+      "detail": "h264"
+    },
+    "audio_codec": {
+      "status": "PASS",
+      "detail": "aac"
+    },
+    "decode": {
+      "status": "PASS",
+      "detail": "full decode succeeded"
+    }
+  },
+  "result": "PASS",
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/08-for-what-he-is/final.mp4",
+    "bytes": 5628572,
+    "sha256": "5f598551f472fa65e4a3b0dcacd39dbf121b9268ec9b045ac47a2d25f1aa2dea"
+  }
+}

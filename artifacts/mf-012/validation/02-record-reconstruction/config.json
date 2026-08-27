@@ -1,0 +1,66 @@
+{
+  "slice": "MF-012",
+  "type": "activity_config_validation",
+  "fixture": "mf012-02-record-reconstruction",
+  "dominant_activity": "reconstruction",
+  "supporting_activities": [],
+  "opening_choreography": "corrupt_record_resolve",
+  "camera_choreography": "reveal_from_detail",
+  "primitive_count": 18,
+  "sequence": [
+    {
+      "id": "spawn",
+      "type": "fragment_spawn",
+      "target": "fragment_field",
+      "start": 0.5,
+      "duration": 1.5,
+      "intensity": 0.9,
+      "overlap": true
+    },
+    {
+      "id": "drift",
+      "type": "fragment_drift",
+      "target": "fragment_field",
+      "start": 1.0,
+      "duration": 3.2,
+      "intensity": 0.8,
+      "overlap": true
+    },
+    {
+      "id": "align",
+      "type": "fragment_align",
+      "target": "fragment_field",
+      "start": 3.6,
+      "duration": 2.5,
+      "intensity": 1.0,
+      "overlap": true
+    },
+    {
+      "id": "reconstruct",
+      "type": "record_reconstruct",
+      "target": "primary_record",
+      "start": 5.8,
+      "duration": 2.2,
+      "intensity": 1.0,
+      "overlap": true
+    }
+  ],
+  "checks": {
+    "vocabulary_size": "PASS",
+    "subject_agnostic": "PASS",
+    "activity_present": "PASS",
+    "contract_fields": "PASS",
+    "demo_runtime": "PASS",
+    "complexity_budget": "PASS",
+    "opening": "PASS",
+    "camera": "PASS",
+    "target_declarations": "PASS",
+    "sequence_size": "PASS",
+    "sequence_entries": "PASS",
+    "intentional_overlap": "PASS",
+    "fixture_strategy": "PASS",
+    "silent_visual_demo": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

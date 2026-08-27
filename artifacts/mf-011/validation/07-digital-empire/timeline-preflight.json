@@ -1,0 +1,111 @@
+{
+  "slice": "MF-004",
+  "fixture": "mf011-07-digital-empire",
+  "mode": "beats",
+  "result": "PASS",
+  "duration": 30.0,
+  "number_of_beats": 9,
+  "sequential_no_gaps": true,
+  "beats": [
+    {
+      "id": "circuits",
+      "type": "intro",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.3,
+      "transition": "cut",
+      "narration": null,
+      "index": 0,
+      "start": 0.0,
+      "end": 2.3
+    },
+    {
+      "id": "formation",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.1,
+      "transition": "cut",
+      "narration": null,
+      "index": 1,
+      "start": 2.3,
+      "end": 4.4
+    },
+    {
+      "id": "opening",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.6,
+      "transition": "cut",
+      "narration": null,
+      "index": 2,
+      "start": 4.4,
+      "end": 7.0
+    },
+    {
+      "id": "page_1",
+      "type": "statement",
+      "text": "CONTROL NETWORK EXPANDING",
+      "duration": 4.667,
+      "transition": "cut",
+      "narration": null,
+      "index": 3,
+      "start": 7.0,
+      "end": 11.667
+    },
+    {
+      "id": "page_2",
+      "type": "emphasis",
+      "text": "ONE OVERRIDE EXISTS",
+      "duration": 4.667,
+      "transition": "cut",
+      "narration": null,
+      "index": 4,
+      "start": 11.667,
+      "end": 16.334
+    },
+    {
+      "id": "page_3",
+      "type": "statement",
+      "text": "OVERRIDE: SIMON",
+      "duration": 4.667,
+      "transition": "cut",
+      "narration": null,
+      "index": 5,
+      "start": 16.334,
+      "end": 21.001
+    },
+    {
+      "id": "result_hold",
+      "type": "reveal",
+      "text": "OVERRIDE: SIMON",
+      "duration": 3.0,
+      "transition": "cut",
+      "narration": null,
+      "index": 6,
+      "start": 21.001,
+      "end": 24.001
+    },
+    {
+      "id": "dissolve",
+      "type": "statement",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 2.0,
+      "transition": "cut",
+      "narration": null,
+      "index": 7,
+      "start": 24.001,
+      "end": 26.001
+    },
+    {
+      "id": "cta",
+      "type": "outro",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 3.999,
+      "transition": "cut",
+      "narration": null,
+      "index": 8,
+      "start": 26.001,
+      "end": 30.0
+    }
+  ],
+  "preflight_seconds": 5.3e-05
+}

@@ -1,0 +1,84 @@
+{
+  "slice": "MF-012",
+  "type": "activity_config_validation",
+  "fixture": "mf012-01-moving-target-pursuit",
+  "dominant_activity": "pursuit",
+  "supporting_activities": [],
+  "opening_choreography": "target_already_moving",
+  "camera_choreography": "lateral_track",
+  "primitive_count": 18,
+  "sequence": [
+    {
+      "id": "acquire",
+      "type": "target_acquire",
+      "target": "primary_target",
+      "start": 0.5,
+      "duration": 1.0,
+      "intensity": 0.8,
+      "overlap": true
+    },
+    {
+      "id": "move",
+      "type": "target_move",
+      "target": "primary_target",
+      "start": 1.1,
+      "duration": 3.0,
+      "intensity": 1.0,
+      "overlap": true
+    },
+    {
+      "id": "escape",
+      "type": "target_escape",
+      "target": "primary_target",
+      "start": 3.4,
+      "duration": 1.0,
+      "intensity": 1.0,
+      "overlap": true
+    },
+    {
+      "id": "reacquire",
+      "type": "target_reacquire",
+      "target": "primary_target",
+      "start": 4.3,
+      "duration": 1.3,
+      "intensity": 1.0,
+      "overlap": true
+    },
+    {
+      "id": "converge",
+      "type": "tracker_converge",
+      "target": "tracker_field",
+      "start": 4.8,
+      "duration": 2.2,
+      "intensity": 0.9,
+      "overlap": true
+    },
+    {
+      "id": "lock",
+      "type": "target_lock",
+      "target": "primary_target",
+      "start": 6.8,
+      "duration": 1.2,
+      "intensity": 1.0,
+      "overlap": true
+    }
+  ],
+  "checks": {
+    "vocabulary_size": "PASS",
+    "subject_agnostic": "PASS",
+    "activity_present": "PASS",
+    "contract_fields": "PASS",
+    "demo_runtime": "PASS",
+    "complexity_budget": "PASS",
+    "opening": "PASS",
+    "camera": "PASS",
+    "target_declarations": "PASS",
+    "sequence_size": "PASS",
+    "sequence_entries": "PASS",
+    "intentional_overlap": "PASS",
+    "fixture_strategy": "PASS",
+    "silent_visual_demo": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

@@ -1,0 +1,90 @@
+{
+  "job_id": "02-leo-living-data-bridge",
+  "title": "Leo: Living Data Bridge",
+  "state": "READY_FOR_REVIEW",
+  "technical": "PASS",
+  "editorial": "PENDING_HUMAN",
+  "release": "PENDING_HUMAN",
+  "runtime_seconds": 28.0,
+  "frame_count": 840,
+  "mechanism": "classification_link",
+  "profiles": {
+    "palette_profile": "mystery",
+    "camera_profile": "wide_investigation",
+    "node_profile": "analytical",
+    "projection_profile": "classification",
+    "cta_profile": "cool_signal"
+  },
+  "distinguishing_features": [
+    "identity classification",
+    "unstable boundary",
+    "bridge establishment",
+    "wide analytical frame"
+  ],
+  "music": {
+    "query": {
+      "mood": [
+        "mystery",
+        "investigation"
+      ],
+      "use_case": [
+        "classification"
+      ]
+    },
+    "track_id": "cold_concrete_anatomy",
+    "region_id": "investigation_a",
+    "actual_start": 73.0,
+    "actual_end": 101.0,
+    "video_duration": 28.0,
+    "fade_in": 1.2,
+    "fade_out": 2.0,
+    "gain_db": -5.5,
+    "ducking": {
+      "narration_duck_db": -8.0,
+      "attack_ms": 120,
+      "release_ms": 300
+    },
+    "selection_reason": "Even analytical motion supports classification uncertainty and the bridge reveal.",
+    "track_title": "Cold Concrete Anatomy",
+    "cue_tags": [
+      "investigation",
+      "mystery",
+      "paranoia"
+    ],
+    "usable_start": 71.0,
+    "usable_end": 109.0,
+    "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf"
+  },
+  "audio_policy": {
+    "presentation": "music_only",
+    "sfx_count": 0,
+    "ambient_machine_audio": false,
+    "narration": "off"
+  },
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/02-leo-living-data-bridge/final.mp4",
+    "bytes": 5202906,
+    "sha256": "f7803a01e1ecf1ec3ea05eabc620d7a0c2880503cf3a36a681d7ad5a6a5ff958"
+  },
+  "evidence": {
+    "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/02-leo-living-data-bridge/contact-sheet.png",
+    "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/02-leo-living-data-bridge/motion-evidence/sequence.png",
+    "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/02-leo-living-data-bridge/representative-frames"
+  },
+  "metrics": {
+    "selection_ms": 59,
+    "creative-preflight_ms": 52,
+    "timeline-preflight_ms": 46,
+    "music_ms": 1089,
+    "silence_ms": 51,
+    "render_ms": 22492,
+    "mix_ms": 1678,
+    "encode_ms": 26661,
+    "media_validation_ms": 761,
+    "output_validation_ms": 55
+  },
+  "publish": false,
+  "result": "PASS",
+  "attempts": 1,
+  "attempt_errors": []
+}

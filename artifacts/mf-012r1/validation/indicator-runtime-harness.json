@@ -1,0 +1,60 @@
+{
+  "slice": "MF-012R1",
+  "type": "indicator_runtime_headless_validation",
+  "classification": "SCENE_ATTACHED_RUNTIME_NODE",
+  "runtime_inheritance_preserved": true,
+  "standalone_entry_point": "godot/indicator_pulse_stage_headless.gd",
+  "references": {
+    "preloaded_and_instantiated_by": "godot/mf002.gd",
+    "subclassed_by": "godot/activity_vocabulary_stage.gd",
+    "selected_by_fixtures": "visual_strategy.preference=godot_indicator_pulse_refinement",
+    "direct_runtime_script_entries": []
+  },
+  "harness": {
+    "command": [
+      "godot",
+      "--headless",
+      "--path",
+      "godot",
+      "--script",
+      "indicator_pulse_stage_headless.gd"
+    ],
+    "exit_code": 0,
+    "output": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nINDICATOR_PULSE_STAGE_HEADLESS_OK runtime_base=Node2D direct_script_entry=false\n",
+    "gui_error": false
+  },
+  "mf012r1_layouts": [
+    {
+      "fixture": "video-01-restrained.json",
+      "exit_code": 0,
+      "gui_error": false,
+      "layout_result": "PASS",
+      "micro_variation_result": "PASS",
+      "output": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nMF002_LAYOUT fixture=mf011-02-leo-living-data-bridge intro=PASS headline=PASS body=PASS emphasis=PASS labels=PASS outro=PASS overlap_checks=PASS\nMF002_RENDER_START id=mf011-02-leo-living-data-bridge grammar=scrappy-diorama-v1 seed=26066 frames=840\nMF004_TIMELINE_READY mode=beats beats=9 duration=28.000\nMF002_STRUCTURAL safe_area=PASS layers=workshop,sign,media,paper,tape,props layout=PASS\nMF002_LAYOUT_ONLY_COMPLETE id=mf011-02-leo-living-data-bridge\n"
+    },
+    {
+      "fixture": "video-02-reactive.json",
+      "exit_code": 0,
+      "gui_error": false,
+      "layout_result": "PASS",
+      "micro_variation_result": "PASS",
+      "output": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nMF002_LAYOUT fixture=mf011-06-the-kill-switch intro=PASS headline=PASS body=PASS emphasis=PASS labels=PASS outro=PASS overlap_checks=PASS\nMF002_RENDER_START id=mf011-06-the-kill-switch grammar=scrappy-diorama-v1 seed=26066 frames=870\nMF004_TIMELINE_READY mode=beats beats=9 duration=29.000\nMF002_STRUCTURAL safe_area=PASS layers=workshop,sign,media,paper,tape,props layout=PASS\nMF002_LAYOUT_ONLY_COMPLETE id=mf011-06-the-kill-switch\n"
+    }
+  ],
+  "mf013": {
+    "status": "NOT_PRESENT",
+    "repository_files": []
+  },
+  "checks": {
+    "runtime_inherits_node_chain": "PASS",
+    "scene_runtime_preloads_component": "PASS",
+    "activity_stage_subclasses_component": "PASS",
+    "no_direct_runtime_script_entry": "PASS",
+    "headless_harness": "PASS",
+    "no_harness_gui_error": "PASS",
+    "mf012r1_layout_validation": "PASS",
+    "no_mf012r1_gui_error": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

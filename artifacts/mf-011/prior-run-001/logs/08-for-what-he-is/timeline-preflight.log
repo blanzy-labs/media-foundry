@@ -1,0 +1,111 @@
+{
+  "slice": "MF-004",
+  "fixture": "mf011-08-for-what-he-is",
+  "mode": "beats",
+  "result": "PASS",
+  "duration": 24.0,
+  "number_of_beats": 9,
+  "sequential_no_gaps": true,
+  "beats": [
+    {
+      "id": "circuits",
+      "type": "intro",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.3,
+      "transition": "cut",
+      "narration": null,
+      "index": 0,
+      "start": 0.0,
+      "end": 2.3
+    },
+    {
+      "id": "formation",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.1,
+      "transition": "cut",
+      "narration": null,
+      "index": 1,
+      "start": 2.3,
+      "end": 4.4
+    },
+    {
+      "id": "opening",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 0.6,
+      "transition": "cut",
+      "narration": null,
+      "index": 2,
+      "start": 4.4,
+      "end": 5.0
+    },
+    {
+      "id": "page_1",
+      "type": "statement",
+      "text": "THEY ARE HUNTING SIMON",
+      "duration": 4.0,
+      "transition": "cut",
+      "narration": null,
+      "index": 3,
+      "start": 5.0,
+      "end": 9.0
+    },
+    {
+      "id": "page_2",
+      "type": "emphasis",
+      "text": "NOT FOR WHAT HE KNOWS",
+      "duration": 4.0,
+      "transition": "cut",
+      "narration": null,
+      "index": 4,
+      "start": 9.0,
+      "end": 13.0
+    },
+    {
+      "id": "page_3",
+      "type": "statement",
+      "text": "FOR WHAT HE IS",
+      "duration": 4.0,
+      "transition": "cut",
+      "narration": null,
+      "index": 5,
+      "start": 13.0,
+      "end": 17.0
+    },
+    {
+      "id": "result_hold",
+      "type": "reveal",
+      "text": "FOR WHAT HE IS",
+      "duration": 1.0,
+      "transition": "cut",
+      "narration": null,
+      "index": 6,
+      "start": 17.0,
+      "end": 18.0
+    },
+    {
+      "id": "dissolve",
+      "type": "statement",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 2.0,
+      "transition": "cut",
+      "narration": null,
+      "index": 7,
+      "start": 18.0,
+      "end": 20.0
+    },
+    {
+      "id": "cta",
+      "type": "outro",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 4.0,
+      "transition": "cut",
+      "narration": null,
+      "index": 8,
+      "start": 20.0,
+      "end": 24.0
+    }
+  ],
+  "preflight_seconds": 5e-05
+}

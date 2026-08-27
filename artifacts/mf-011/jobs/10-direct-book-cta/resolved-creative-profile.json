@@ -1,0 +1,21 @@
+{
+  "mechanism": "biometric_scan",
+  "events": [
+    "biometric_scan",
+    "deep_scan",
+    "hidden_region",
+    "kill_switch_reveal"
+  ],
+  "timing": {
+    "intro_seconds": 6.0,
+    "investigation_seconds": 13.0,
+    "result_hold_seconds": 3.0,
+    "cta_seconds": 8.0
+  },
+  "palette_profile": "pursuit",
+  "camera_profile": "calm_to_push",
+  "node_profile": "urgent",
+  "projection_profile": "biometric",
+  "cta_profile": "revelation",
+  "audio_cue": "investigation"
+}

@@ -1,0 +1,232 @@
+{
+  "id": "video-02",
+  "variant": "reactive",
+  "source_job": "06-the-kill-switch",
+  "source": {
+    "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/06-the-kill-switch/final.mp4",
+    "preserved_path": "/home/blanzy/media-foundry-output/mf012r1/guardrailed-micro-variation/run-001/video-02/original-reference/video-original.mp4",
+    "sha256": "d32001b8af27faecf01d478aa101ee3c858cdbb07cc5a680defa46d10f5d71d8",
+    "bytes": 5601285
+  },
+  "refined": {
+    "path": "/home/blanzy/media-foundry-output/mf012r1/guardrailed-micro-variation/run-001/video-02/refined/video-micro-variation.mp4",
+    "sha256": "6cec1371761738b0c579054418dde2666105485afdc34c1cf067ed1103071403",
+    "bytes": 5639870
+  },
+  "runtime_seconds": 29.0,
+  "frame_count": 870,
+  "micro_variation": {
+    "version": 1,
+    "enabled": true,
+    "generator": "mf012r1_lcg_v1",
+    "seed": 121202,
+    "channels": [
+      "indicator_dots",
+      "background_tiles",
+      "floating_ring_dot"
+    ],
+    "motion_budget": {
+      "major_motion_elements": 1,
+      "minor_simultaneous_accents": 3
+    },
+    "indicator_dots": {
+      "mode": "reactive_colored_indicators",
+      "colors": [
+        "amber",
+        "purple",
+        "green",
+        "blue"
+      ],
+      "flashes": [
+        {
+          "dot": 0,
+          "start": 5.1,
+          "duration": 0.39,
+          "intensity": 0.26
+        },
+        {
+          "dot": 3,
+          "start": 9.0,
+          "duration": 0.38,
+          "intensity": 0.26
+        },
+        {
+          "dot": 2,
+          "start": 12.4,
+          "duration": 0.46,
+          "intensity": 0.26
+        },
+        {
+          "dot": 1,
+          "start": 17.0,
+          "duration": 0.38,
+          "intensity": 0.26
+        },
+        {
+          "dot": 0,
+          "start": 21.6,
+          "duration": 0.41,
+          "intensity": 0.26
+        },
+        {
+          "dot": 3,
+          "start": 25.3,
+          "duration": 0.44,
+          "intensity": 0.26
+        }
+      ]
+    },
+    "background_tiles": {
+      "mode": "sparse_color_shifts",
+      "visible_tile_count": 54,
+      "active_indices": [
+        4,
+        11,
+        36,
+        41,
+        48
+      ],
+      "active_density": 0.092593,
+      "peak_alpha": 0.105,
+      "events": [
+        {
+          "tile_index": 41,
+          "start": 4.6,
+          "duration": 1.95,
+          "behavior": "tile_dim",
+          "color": "green",
+          "intensity": 0.105
+        },
+        {
+          "tile_index": 41,
+          "start": 8.9,
+          "duration": 1.55,
+          "behavior": "tile_dim",
+          "color": "blue",
+          "intensity": 0.105
+        },
+        {
+          "tile_index": 11,
+          "start": 12.7,
+          "duration": 1.85,
+          "behavior": "tile_color_shift",
+          "color": "amber",
+          "intensity": 0.105
+        },
+        {
+          "tile_index": 48,
+          "start": 15.4,
+          "duration": 1.85,
+          "behavior": "tile_dim",
+          "color": "purple",
+          "intensity": 0.105
+        },
+        {
+          "tile_index": 11,
+          "start": 19.2,
+          "duration": 1.95,
+          "behavior": "tile_color_shift",
+          "color": "green",
+          "intensity": 0.105
+        },
+        {
+          "tile_index": 41,
+          "start": 23.7,
+          "duration": 2.05,
+          "behavior": "tile_wake",
+          "color": "blue",
+          "intensity": 0.105
+        },
+        {
+          "tile_index": 36,
+          "start": 26.3,
+          "duration": 1.75,
+          "behavior": "tile_color_shift",
+          "color": "amber",
+          "intensity": 0.105
+        }
+      ]
+    },
+    "floating_ring_dot": {
+      "enabled": true,
+      "behavior": "slow_hover",
+      "color": "blue",
+      "radius": 10.0,
+      "active_start": 1.0,
+      "active_end": 23.8,
+      "maximum_speed": 14.0,
+      "safe_zone": {
+        "x": 220,
+        "y": -465,
+        "width": 90,
+        "height": 115
+      },
+      "protected_zones": [
+        {
+          "id": "main_projection_and_story_text",
+          "x": -216,
+          "y": -326,
+          "width": 432,
+          "height": 378
+        },
+        {
+          "id": "cta_url_author",
+          "x": -226,
+          "y": -150,
+          "width": 452,
+          "height": 260
+        },
+        {
+          "id": "emitter_and_indicators",
+          "x": -125,
+          "y": 190,
+          "width": 250,
+          "height": 75
+        }
+      ],
+      "path": [
+        {
+          "x": 235,
+          "y": -430
+        },
+        {
+          "x": 275,
+          "y": -397
+        },
+        {
+          "x": 242,
+          "y": -365
+        }
+      ]
+    },
+    "audio_policy": {
+      "music": true,
+      "sfx": false,
+      "ambient": false
+    },
+    "visual_priority": 5,
+    "schedule_signature": "cf5f23c85919a9a015d63049bb844e5b359012150ffe0dda6ea03b2846477b79"
+  },
+  "audio_packet_sha256": "5e62f93da2e63d73e7d888a547662aad8826ee98ad2b7e27fbb503c03d39a8d6",
+  "audio_packet_identical": true,
+  "text_identical": true,
+  "cue_identical": true,
+  "safe_zone": "PASS",
+  "motion_budget": "PASS",
+  "determinism": "PASS",
+  "legacy_default": "PASS",
+  "motion_evidence": "/home/blanzy/media-foundry-output/mf012r1/guardrailed-micro-variation/run-001/video-02/motion-evidence/original-vs-refined.mp4",
+  "metrics": {
+    "config_validation_ms": 113,
+    "timeline_preflight_ms": 42,
+    "render_ms": 22706,
+    "encode_ms": 26209,
+    "media_validation_ms": 730,
+    "output_validation_ms": 5713,
+    "determinism_render_ms": 22590,
+    "legacy_render_ms": 22676
+  },
+  "human_review": "PENDING_HUMAN",
+  "published": false,
+  "result": "PASS"
+}

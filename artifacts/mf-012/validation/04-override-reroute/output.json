@@ -1,0 +1,82 @@
+{
+  "slice": "MF-012",
+  "type": "activity_output_validation",
+  "fixture": "mf012-04-override-reroute",
+  "activity": {
+    "all_observed": true,
+    "camera_choreography": "wide_to_close",
+    "deterministic": true,
+    "dominant_activity": "override",
+    "event_evidence": [
+      {
+        "duration": 3.2,
+        "id": "override",
+        "observed": {
+          "observed_frame": 329,
+          "time": 0.7,
+          "type": "path_override"
+        },
+        "start": 0.7,
+        "status": "PASS",
+        "type": "path_override"
+      },
+      {
+        "duration": 4.0,
+        "id": "reroute",
+        "observed": {
+          "observed_frame": 329,
+          "time": 2.7,
+          "type": "network_reroute"
+        },
+        "start": 2.7,
+        "status": "PASS",
+        "type": "network_reroute"
+      }
+    ],
+    "opening_choreography": "signal_intrusion",
+    "primitive_count": 18,
+    "primitives": [
+      "target_acquire",
+      "target_move",
+      "target_escape",
+      "target_reacquire",
+      "tracker_converge",
+      "target_lock",
+      "fragment_spawn",
+      "fragment_drift",
+      "fragment_align",
+      "record_reconstruct",
+      "connection_attempt",
+      "signal_travel",
+      "bridge_form",
+      "bridge_stabilize",
+      "path_override",
+      "network_reroute",
+      "anomaly_seed",
+      "cascade_failure"
+    ],
+    "result": "PASS",
+    "seed": 26066,
+    "subject_agnostic": true,
+    "supporting_activities": [],
+    "targets": [
+      "circuit_network",
+      "central_hub",
+      "west_bus"
+    ],
+    "version": 1
+  },
+  "checks": {
+    "config": "PASS",
+    "renderer_strategy": "PASS",
+    "dominant_activity": "PASS",
+    "supporting_activities": "PASS",
+    "opening": "PASS",
+    "camera": "PASS",
+    "all_events_observed": "PASS",
+    "deterministic_seed": "PASS",
+    "encoded_media": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

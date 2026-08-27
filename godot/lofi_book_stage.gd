@@ -32,8 +32,10 @@ func configure(source_fixture: Dictionary, source_timeline: Dictionary, _source_
 	var website_value = fixture.get("cta", {}).get("website")
 	website = str(website_value) if typeof(website_value) == TYPE_STRING else ""
 	page_phrases = fixture.get("page_phrases", [])
-	var extended := str(fixture.get("visual_strategy", {}).get("preference", "")) in ["godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement", "godot_integrated_lower_right_refinement", "godot_indicator_pulse_refinement"]
-	if title.is_empty() or author.is_empty() or page_phrases.size() < 2 or page_phrases.size() > 3 or duration < 17.0 or duration > (30.0 if extended else 20.0):
+	var activity_demo:bool=fixture.get("activity",{}).get("demo",false)==true
+	var extended := str(fixture.get("visual_strategy", {}).get("preference", "")) in ["godot_extended_data_window_refinement", "godot_live_investigation_refinement", "godot_final_polish_refinement", "godot_lower_right_polish_refinement", "godot_integrated_lower_right_refinement", "godot_indicator_pulse_refinement", "godot_activity_vocabulary_v1"]
+	var duration_valid:bool=duration>=8.0 and duration<=15.0 if activity_demo else duration>=17.0 and duration<=(30.0 if extended else 20.0)
+	if title.is_empty() or author.is_empty() or page_phrases.size() < 2 or page_phrases.size() > 3 or not duration_valid:
 		return {"result": "FAIL", "error": "MF006_SCENE_CONFIG_FAILED: title, author, page phrases, or duration invalid"}
 	var scene: Dictionary = fixture.get("generated_scene", {})
 	for item in scene.get("components", []):

@@ -1,0 +1,388 @@
+{
+  "campaign_id": "unknown-process-mf-011-v1",
+  "run_id": "campaign-run-001",
+  "trigger_kind": "scheduled",
+  "state": "PARTIAL",
+  "started_at": "2026-08-25T18:00:54+00:00",
+  "transitions": [
+    {
+      "state": "PENDING",
+      "at": "2026-08-25T18:00:54+00:00"
+    },
+    {
+      "state": "PREFLIGHT",
+      "at": "2026-08-25T18:00:54+00:00"
+    },
+    {
+      "state": "RUNNING",
+      "at": "2026-08-25T18:00:56+00:00"
+    },
+    {
+      "state": "PARTIAL",
+      "at": "2026-08-25T18:06:35+00:00"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "01-simon-target-acquired",
+      "state": "READY_FOR_REVIEW",
+      "attempts": 1,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:00:54+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:00:56+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:00:56+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:00:56+00:00"
+        },
+        {
+          "state": "VALIDATING",
+          "at": "2026-08-25T18:01:50+00:00"
+        },
+        {
+          "state": "READY_FOR_REVIEW",
+          "at": "2026-08-25T18:01:50+00:00"
+        }
+      ]
+    },
+    {
+      "id": "02-leo-living-data-bridge",
+      "state": "READY_FOR_REVIEW",
+      "attempts": 1,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:00:54+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:01:50+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:01:50+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:01:50+00:00"
+        },
+        {
+          "state": "VALIDATING",
+          "at": "2026-08-25T18:02:44+00:00"
+        },
+        {
+          "state": "READY_FOR_REVIEW",
+          "at": "2026-08-25T18:02:44+00:00"
+        }
+      ]
+    },
+    {
+      "id": "03-zeph-evolving-too-fast",
+      "state": "READY_FOR_REVIEW",
+      "attempts": 1,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:00:54+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:02:44+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:02:44+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:02:44+00:00"
+        },
+        {
+          "state": "VALIDATING",
+          "at": "2026-08-25T18:03:34+00:00"
+        },
+        {
+          "state": "READY_FOR_REVIEW",
+          "at": "2026-08-25T18:03:34+00:00"
+        }
+      ]
+    },
+    {
+      "id": "04-the-syndicate",
+      "state": "READY_FOR_REVIEW",
+      "attempts": 1,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:00:54+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:03:34+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:03:34+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:03:34+00:00"
+        },
+        {
+          "state": "VALIDATING",
+          "at": "2026-08-25T18:04:32+00:00"
+        },
+        {
+          "state": "READY_FOR_REVIEW",
+          "at": "2026-08-25T18:04:32+00:00"
+        }
+      ]
+    },
+    {
+      "id": "05-simon-biometric-anomaly",
+      "state": "FAILED",
+      "attempts": 2,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:00:54+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:04:32+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:04:32+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:04:32+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:04:34+00:00",
+          "detail": "attempt 2"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:04:34+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:04:34+00:00"
+        },
+        {
+          "state": "FAILED",
+          "at": "2026-08-25T18:04:36+00:00",
+          "detail": "command failed (1): godot --path godot --fixed-fps 30 res://mf002.tscn -- --fixture /home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-001/05-simon-biometric-anomaly/resolved-config.json --grammar /home/blanzy/projects/media-foundry/config/visual-grammar.json --output-dir /home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-001/05-simon-biometric-anomaly/work/frames --layout-report /home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-001/05-simon-biometric-anomaly/validation/layout.json --timeline-report /home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-001/05-simon-biometric-anomaly/validation/execution.json; see /home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-001/05-simon-biometric-anomaly/logs/render.log"
+        }
+      ]
+    },
+    {
+      "id": "06-the-kill-switch",
+      "state": "READY_FOR_REVIEW",
+      "attempts": 1,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:00:54+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:04:36+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:04:36+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:04:36+00:00"
+        },
+        {
+          "state": "VALIDATING",
+          "at": "2026-08-25T18:05:33+00:00"
+        },
+        {
+          "state": "READY_FOR_REVIEW",
+          "at": "2026-08-25T18:05:33+00:00"
+        }
+      ]
+    },
+    {
+      "id": "07-digital-empire",
+      "state": "FAILED",
+      "attempts": 2,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:00:54+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:05:33+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:05:33+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:05:33+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:05:33+00:00",
+          "detail": "attempt 2"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:05:33+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:05:33+00:00"
+        },
+        {
+          "state": "FAILED",
+          "at": "2026-08-25T18:05:33+00:00",
+          "detail": "command failed (1): python3 scripts/preflight_mf004.py --fixture /home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-001/07-digital-empire/resolved-config.json --grammar config/visual-grammar.json --project-root . --output /home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-001/07-digital-empire/validation/timeline-preflight.json; see /home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-001/07-digital-empire/logs/timeline-preflight.log"
+        }
+      ]
+    },
+    {
+      "id": "08-for-what-he-is",
+      "state": "FAILED",
+      "attempts": 2,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:00:54+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:05:33+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:05:33+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:05:33+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:05:35+00:00",
+          "detail": "attempt 2"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:05:35+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:05:35+00:00"
+        },
+        {
+          "state": "FAILED",
+          "at": "2026-08-25T18:05:37+00:00",
+          "detail": "command failed (1): godot --path godot --fixed-fps 30 res://mf002.tscn -- --fixture /home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-001/08-for-what-he-is/resolved-config.json --grammar /home/blanzy/projects/media-foundry/config/visual-grammar.json --output-dir /home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-001/08-for-what-he-is/work/frames --layout-report /home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-001/08-for-what-he-is/validation/layout.json --timeline-report /home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-001/08-for-what-he-is/validation/execution.json; see /home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-001/08-for-what-he-is/logs/render.log"
+        }
+      ]
+    },
+    {
+      "id": "09-atmospheric-teaser",
+      "state": "READY_FOR_REVIEW",
+      "attempts": 1,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:00:54+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:05:37+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:05:37+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:05:37+00:00"
+        },
+        {
+          "state": "VALIDATING",
+          "at": "2026-08-25T18:06:34+00:00"
+        },
+        {
+          "state": "READY_FOR_REVIEW",
+          "at": "2026-08-25T18:06:34+00:00"
+        }
+      ]
+    },
+    {
+      "id": "10-direct-book-cta",
+      "state": "FAILED",
+      "attempts": 2,
+      "transitions": [
+        {
+          "state": "PENDING",
+          "at": "2026-08-25T18:00:54+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:06:34+00:00",
+          "detail": "attempt 1"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:06:34+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:06:34+00:00"
+        },
+        {
+          "state": "PREFLIGHT",
+          "at": "2026-08-25T18:06:34+00:00",
+          "detail": "attempt 2"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-25T18:06:34+00:00"
+        },
+        {
+          "state": "RENDERING",
+          "at": "2026-08-25T18:06:34+00:00"
+        },
+        {
+          "state": "FAILED",
+          "at": "2026-08-25T18:06:34+00:00",
+          "detail": "command failed (1): python3 scripts/preflight_mf004.py --fixture /home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-001/10-direct-book-cta/resolved-config.json --grammar config/visual-grammar.json --project-root . --output /home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-001/10-direct-book-cta/validation/timeline-preflight.json; see /home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-001/10-direct-book-cta/logs/timeline-preflight.log"
+        }
+      ]
+    }
+  ],
+  "ended_at": "2026-08-25T18:06:35+00:00"
+}

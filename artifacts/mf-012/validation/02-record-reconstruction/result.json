@@ -1,0 +1,76 @@
+{
+  "demo_id": "02-record-reconstruction",
+  "state": "READY_FOR_REVIEW",
+  "runtime_seconds": 12.0,
+  "frame_count": 360,
+  "dominant_activity": "reconstruction",
+  "supporting_activities": [],
+  "opening_choreography": "corrupt_record_resolve",
+  "camera_choreography": "reveal_from_detail",
+  "spatial_behavior": [
+    "fragments spawn across chamber",
+    "pieces drift toward projection",
+    "one coherent record consolidates"
+  ],
+  "text_behavior": [
+    "scramble",
+    "resolve",
+    "reveal_hidden"
+  ],
+  "activity_sequence": [
+    {
+      "id": "spawn",
+      "type": "fragment_spawn",
+      "target": "fragment_field",
+      "start": 0.5,
+      "duration": 1.5,
+      "intensity": 0.9,
+      "overlap": true
+    },
+    {
+      "id": "drift",
+      "type": "fragment_drift",
+      "target": "fragment_field",
+      "start": 1.0,
+      "duration": 3.2,
+      "intensity": 0.8,
+      "overlap": true
+    },
+    {
+      "id": "align",
+      "type": "fragment_align",
+      "target": "fragment_field",
+      "start": 3.6,
+      "duration": 2.5,
+      "intensity": 1.0,
+      "overlap": true
+    },
+    {
+      "id": "reconstruct",
+      "type": "record_reconstruct",
+      "target": "primary_record",
+      "start": 5.8,
+      "duration": 2.2,
+      "intensity": 1.0,
+      "overlap": true
+    }
+  ],
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf012/activity-vocabulary-v1/run-001/02-record-reconstruction/demo.mp4",
+    "bytes": 3154765,
+    "sha256": "98bfa50d8452bc121ca484cdaaf5e4dc2c50c5267f7fd75e6787246331ac5782"
+  },
+  "motion_evidence": "/home/blanzy/media-foundry-output/mf012/activity-vocabulary-v1/run-001/02-record-reconstruction/motion-evidence/sequence.png",
+  "representative_frames": "/home/blanzy/media-foundry-output/mf012/activity-vocabulary-v1/run-001/02-record-reconstruction/representative-frames",
+  "render_ms": 10325,
+  "render_ms_per_frame": 28.681,
+  "metrics": {
+    "config_validation_ms": 43,
+    "timeline_preflight_ms": 43,
+    "render_ms": 10325,
+    "encode_ms": 16131,
+    "media_validation_ms": 504,
+    "output_validation_ms": 43
+  },
+  "result": "PASS"
+}

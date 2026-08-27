@@ -1,0 +1,38 @@
+{
+  "slice": "MF-012R1",
+  "type": "micro_variation_config",
+  "fixture": "mf011-06-the-kill-switch",
+  "seed": 121202,
+  "channels": [
+    "indicator_dots",
+    "background_tiles",
+    "floating_ring_dot"
+  ],
+  "channel_count": 3,
+  "active_tile_count": 5,
+  "active_tile_density": 0.092593,
+  "maximum_minor_simultaneous": 2,
+  "major_motion_elements": 1,
+  "ring_speed": 4.29,
+  "checks": {
+    "schema": "PASS",
+    "source_preservation": "PASS",
+    "channel_budget": "PASS",
+    "known_channels": "PASS",
+    "seed": "PASS",
+    "schedule_signature": "PASS",
+    "audio_policy": "PASS",
+    "indicator_mode": "PASS",
+    "indicator_colors": "PASS",
+    "indicator_flashes": "PASS",
+    "tile_density": "PASS",
+    "tile_text_exclusion": "PASS",
+    "tile_events": "PASS",
+    "ring_channel": "PASS",
+    "ring_safe_zone": "PASS",
+    "motion_budget": "PASS",
+    "event_timing": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

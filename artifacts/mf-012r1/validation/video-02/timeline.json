@@ -1,0 +1,111 @@
+{
+  "slice": "MF-004",
+  "fixture": "mf011-06-the-kill-switch",
+  "mode": "beats",
+  "result": "PASS",
+  "duration": 29.0,
+  "number_of_beats": 9,
+  "sequential_no_gaps": true,
+  "beats": [
+    {
+      "id": "circuits",
+      "type": "intro",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.3,
+      "transition": "cut",
+      "narration": null,
+      "index": 0,
+      "start": 0.0,
+      "end": 2.3
+    },
+    {
+      "id": "formation",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.1,
+      "transition": "cut",
+      "narration": null,
+      "index": 1,
+      "start": 2.3,
+      "end": 4.4
+    },
+    {
+      "id": "opening",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.1,
+      "transition": "cut",
+      "narration": null,
+      "index": 2,
+      "start": 4.4,
+      "end": 6.5
+    },
+    {
+      "id": "page_1",
+      "type": "statement",
+      "text": "HIDDEN BIOMETRIC KEY",
+      "duration": 4.5,
+      "transition": "cut",
+      "narration": null,
+      "index": 3,
+      "start": 6.5,
+      "end": 11.0
+    },
+    {
+      "id": "page_2",
+      "type": "emphasis",
+      "text": "KILL-SWITCH DETECTED",
+      "duration": 4.5,
+      "transition": "cut",
+      "narration": null,
+      "index": 4,
+      "start": 11.0,
+      "end": 15.5
+    },
+    {
+      "id": "page_3",
+      "type": "statement",
+      "text": "LOCATION: SIMON",
+      "duration": 4.5,
+      "transition": "cut",
+      "narration": null,
+      "index": 5,
+      "start": 15.5,
+      "end": 20.0
+    },
+    {
+      "id": "result_hold",
+      "type": "reveal",
+      "text": "LOCATION: SIMON",
+      "duration": 2.0,
+      "transition": "cut",
+      "narration": null,
+      "index": 6,
+      "start": 20.0,
+      "end": 22.0
+    },
+    {
+      "id": "dissolve",
+      "type": "statement",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 2.0,
+      "transition": "cut",
+      "narration": null,
+      "index": 7,
+      "start": 22.0,
+      "end": 24.0
+    },
+    {
+      "id": "cta",
+      "type": "outro",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 5.0,
+      "transition": "cut",
+      "narration": null,
+      "index": 8,
+      "start": 24.0,
+      "end": 29.0
+    }
+  ],
+  "preflight_seconds": 4.9e-05
+}

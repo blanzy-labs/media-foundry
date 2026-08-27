@@ -1,0 +1,44 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 595.84 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 5070
+
+MF002_LAYOUT fixture=mf011-01-simon-target-acquired intro=PASS headline=PASS body=PASS emphasis=PASS labels=PASS outro=PASS overlap_checks=PASS
+MF002_RENDER_START id=mf011-01-simon-target-acquired grammar=scrappy-diorama-v1 seed=26066 frames=810
+MF004_TIMELINE_READY mode=beats beats=9 duration=27.000
+MF002_STRUCTURAL safe_area=PASS layers=workshop,sign,media,paper,tape,props layout=PASS
+MF004_BEAT_ACTIVE id=circuits type=intro frame=0 start=0.000 end=2.300
+MF002_RENDER_FRAME 0
+MF002_RENDER_FRAME 30
+MF002_RENDER_FRAME 60
+MF004_BEAT_ACTIVE id=formation type=reveal frame=69 start=2.300 end=4.400
+MF002_RENDER_FRAME 90
+MF002_RENDER_FRAME 120
+MF004_BEAT_ACTIVE id=opening type=reveal frame=132 start=4.400 end=5.200
+MF002_RENDER_FRAME 150
+MF004_BEAT_ACTIVE id=page_1 type=statement frame=156 start=5.200 end=9.333
+MF002_RENDER_FRAME 180
+MF002_RENDER_FRAME 210
+MF002_RENDER_FRAME 240
+MF002_RENDER_FRAME 270
+MF004_BEAT_ACTIVE id=page_2 type=emphasis frame=280 start=9.333 end=13.466
+MF002_RENDER_FRAME 300
+MF002_RENDER_FRAME 330
+MF002_RENDER_FRAME 360
+MF002_RENDER_FRAME 390
+MF004_BEAT_ACTIVE id=page_3 type=statement frame=404 start=13.466 end=17.599
+MF002_RENDER_FRAME 420
+MF002_RENDER_FRAME 450
+MF002_RENDER_FRAME 480
+MF002_RENDER_FRAME 510
+MF004_BEAT_ACTIVE id=result_hold type=reveal frame=528 start=17.599 end=18.999
+MF002_RENDER_FRAME 540
+MF004_BEAT_ACTIVE id=dissolve type=statement frame=570 start=18.999 end=20.999
+MF002_RENDER_FRAME 570
+MF002_RENDER_FRAME 600
+MF004_BEAT_ACTIVE id=cta type=outro frame=630 start=20.999 end=27.000
+MF002_RENDER_FRAME 630
+MF002_RENDER_FRAME 660
+MF002_RENDER_FRAME 690
+MF002_RENDER_FRAME 720
+MF002_RENDER_FRAME 750
+MF002_RENDER_FRAME 780
+MF002_RENDER_COMPLETE id=mf011-01-simon-target-acquired frames=810

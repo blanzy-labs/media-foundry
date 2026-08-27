@@ -7,7 +7,9 @@ func configure(source_fixture: Dictionary, source_timeline: Dictionary, source_l
 	if result.get("result")!="PASS":return result
 	for id in ["record_activity_1","record_lock_1","record_activity_2","record_lock_2","record_activity_3","record_lock_3","cta_typing"]:
 		if _time(id)>duration:return {"result":"FAIL","error":"MF006R4_SCENE_CONFIG_FAILED: missing extended activity event "+id}
-	if duration<26 or duration>30:return {"result":"FAIL","error":"MF006R4_SCENE_CONFIG_FAILED: extended duration outside 26-30 seconds"}
+	var activity_demo:bool=source_fixture.get("activity",{}).get("demo",false)==true
+	if activity_demo and (duration<8 or duration>15):return {"result":"FAIL","error":"MF012_ACTIVITY_DEMO_DURATION_INVALID: expected 8-15 seconds"}
+	if not activity_demo and (duration<26 or duration>30):return {"result":"FAIL","error":"MF006R4_SCENE_CONFIG_FAILED: extended duration outside 26-30 seconds"}
 	return {"result":"PASS"}
 
 func set_story_time(value:float)->void:

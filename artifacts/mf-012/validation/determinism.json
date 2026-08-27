@@ -1,0 +1,7 @@
+{
+  "demo_id": "01-moving-target-pursuit",
+  "first_sha256": "71376bc91f727d5f8732c5076f2f62d2247ba13701f7576929863c1f5e2984da",
+  "second_sha256": "71376bc91f727d5f8732c5076f2f62d2247ba13701f7576929863c1f5e2984da",
+  "byte_identical": true,
+  "result": "PASS"
+}

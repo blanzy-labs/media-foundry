@@ -1,0 +1,46 @@
+{
+  "slice": "MF-005R1",
+  "fixture": "mf011-03-zeph-evolving-too-fast",
+  "status": "PASS",
+  "source": "media/audio/music/unknown-process/Abandoned_Intake.mp3",
+  "audio_path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/03-zeph-evolving-too-fast/audio/music.wav",
+  "source_analysis": {
+    "duration": 171.885667,
+    "sample_rate": 44100,
+    "channels": 2,
+    "codec": "mp3",
+    "container": "mp3",
+    "bit_rate": 192000
+  },
+  "source_duration": 171.885667,
+  "selected_offset": 52.0,
+  "duration": 26.0,
+  "continuous": true,
+  "loop": false,
+  "loop_count": 0,
+  "normalization_lufs": -24.0,
+  "gain_db": -5.5,
+  "narration_duck_db": -8.0,
+  "attack_ms": 100.0,
+  "release_ms": 260.0,
+  "fade_in": 0.8,
+  "fade_out": 1.8,
+  "activity": {
+    "start": 0.0,
+    "end": 26.0
+  },
+  "provenance": {
+    "type": "user_supplied_generated",
+    "asset_class": "approved_catalog_track",
+    "release_eligible": true,
+    "track_id": "abandoned_intake",
+    "region_id": "revelation_a",
+    "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+    "approval_reviewer": "user",
+    "usage": "MF-010 hash-bound human approval; local production master."
+  },
+  "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+  "prepared_sha256": "c1592a41fd04de2d6bc2fefbd063226f602e69926d31813d968ba44dc1c4dfdf",
+  "preparation_seconds": 0.920801,
+  "result": "PASS"
+}

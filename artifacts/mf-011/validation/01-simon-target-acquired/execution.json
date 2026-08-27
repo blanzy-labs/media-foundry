@@ -1,0 +1,91 @@
+{
+  "beats": [
+    {
+      "end": 2.3,
+      "first_frame": 0,
+      "id": "circuits",
+      "last_frame": 68,
+      "start": 0.0,
+      "status": "PASS",
+      "type": "intro"
+    },
+    {
+      "end": 4.4,
+      "first_frame": 69,
+      "id": "formation",
+      "last_frame": 131,
+      "start": 2.3,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 5.2,
+      "first_frame": 132,
+      "id": "opening",
+      "last_frame": 155,
+      "start": 4.4,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 9.333,
+      "first_frame": 156,
+      "id": "page_1",
+      "last_frame": 279,
+      "start": 5.2,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 13.466,
+      "first_frame": 280,
+      "id": "page_2",
+      "last_frame": 403,
+      "start": 9.333,
+      "status": "PASS",
+      "type": "emphasis"
+    },
+    {
+      "end": 17.599,
+      "first_frame": 404,
+      "id": "page_3",
+      "last_frame": 527,
+      "start": 13.466,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 18.999,
+      "first_frame": 528,
+      "id": "result_hold",
+      "last_frame": 569,
+      "start": 17.599,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 20.999,
+      "first_frame": 570,
+      "id": "dissolve",
+      "last_frame": 629,
+      "start": 18.999,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 27.0,
+      "first_frame": 630,
+      "id": "cta",
+      "last_frame": 809,
+      "start": 20.999,
+      "status": "PASS",
+      "type": "outro"
+    }
+  ],
+  "duration": 27.0,
+  "fixture": "mf011-01-simon-target-acquired",
+  "mode": "beats",
+  "result": "PASS",
+  "slice": "MF-004",
+  "total_frames": 810
+}

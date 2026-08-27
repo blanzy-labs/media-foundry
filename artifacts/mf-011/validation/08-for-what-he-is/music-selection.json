@@ -1,0 +1,16 @@
+{
+  "contract": "mf010_music_selection_v1",
+  "project": "unknown-process",
+  "track_id": "abandoned_intake",
+  "qualified_id": "unknown-process:abandoned_intake",
+  "track_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+  "region_id": "pursuit_a",
+  "usable_start": 111.0,
+  "usable_end": 151.0,
+  "actual_start": 114.0,
+  "actual_end": 140.0,
+  "video_duration": 26.0,
+  "fade_in": 0.4,
+  "fade_out": 1.4,
+  "result": "PASS"
+}

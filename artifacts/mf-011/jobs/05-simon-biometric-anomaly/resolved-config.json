@@ -1,0 +1,525 @@
+{
+  "id": "mf011-05-simon-biometric-anomaly",
+  "template": "scrappy_diorama",
+  "seed": 26066,
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_seconds": 26.0
+  },
+  "subject": {
+    "type": "book",
+    "title": "Unknown Process",
+    "author": "R.C. Blanzy",
+    "canonical_author": "Robert C. Blanzy",
+    "series": "The Second Presence",
+    "book_number": 1,
+    "authoritative_url": "https://rcblanzy.com/books/unknown-process",
+    "retrieval_date": "2026-08-24",
+    "metadata_provenance": [
+      {
+        "source": "https://www.rcblanzy.com/books/unknown-process/",
+        "organization": "Robert C. Blanzy",
+        "retrieval_date": "2026-08-24",
+        "supports": "Title, author, series position, synopsis, and canonical destination"
+      }
+    ]
+  },
+  "approved_copy": {
+    "synopsis": "Framed, hunted, and stripped of his old life, Simon is forced on the run alongside two impossible targets: Leo, a bio-engineered boy acting as a living data bridge, and Zeph, a hunted AI kernel evolving at a terrifying speed. Pursued by the Syndicate\u2014a cabal of global elites using bleeding-edge technology to subjugate the planet\u2014Simon realizes he isn't just a protector. He carries the ultimate weapon. Locked within his own biometrics is the kill-switch to a digital empire. To survive, Simon must navigate a deadly maze of corporate black-ops and untethered artificial intelligence, or watch humanity be quietly enslaved by an unseen hand.",
+    "source": "user-approved copy and https://www.rcblanzy.com/books/unknown-process/",
+    "sole_narrative_basis": true,
+    "invented_plot_details": false
+  },
+  "visual_strategy": {
+    "preference": "godot_indicator_pulse_refinement",
+    "fallback": "fail",
+    "static_book_cover_allowed": false
+  },
+  "visual": {
+    "kind": "indicator_pulse_polish",
+    "primary": "071015",
+    "secondary": "39b8c9",
+    "label": "LIVE INVESTIGATION",
+    "props": []
+  },
+  "intro": {
+    "text": "UNKNOWN PROCESS"
+  },
+  "content": {
+    "headline": "UNKNOWN PROCESS",
+    "body": "THE SECOND PRESENCE \u2022 BOOK ONE",
+    "emphasis": "R.C. BLANZY"
+  },
+  "outro": {
+    "text": "CONTINUE THE ADVENTURE",
+    "tagline": "R.C. BLANZY"
+  },
+  "page_phrases": [
+    "BIOMETRIC STATUS: NORMAL",
+    "ANOMALY / DEEP SCAN",
+    "ENCRYPTED REGION: ACCESS DENIED"
+  ],
+  "cta": {
+    "text": "Continue the adventure",
+    "website": "https://rcblanzy.com/books/unknown-process",
+    "canonical_url": "https://rcblanzy.com/books/unknown-process",
+    "display_url": "rcblanzy.com/books/unknown-process",
+    "source": "https://www.rcblanzy.com/books/unknown-process/",
+    "status": "APPROVED"
+  },
+  "voice_contract": {
+    "status": "BLOCKED_PRODUCTION_VOICE",
+    "available_provider": null,
+    "test_voice_allowed": false,
+    "release_eligible": false,
+    "narration_text": "Framed and hunted, Simon runs with Leo, a living data bridge, and Zeph, an evolving AI kernel. Hidden in Simon's biometrics is the kill-switch to a digital empire. Continue the adventure.",
+    "approved_copy_only": true,
+    "required_final_line": "Continue the adventure."
+  },
+  "audio": {
+    "enabled": true
+  },
+  "music": {
+    "source": "media/audio/music/unknown-process/Abandoned_Intake.mp3",
+    "required": true,
+    "continuous": true,
+    "loop": false,
+    "selected_offset": 128.0,
+    "normalization_lufs": -24,
+    "gain_db": -6.0,
+    "narration_duck_db": -8.0,
+    "attack_ms": 120,
+    "release_ms": 300,
+    "fade_in": 1.0,
+    "fade_out": 1.8,
+    "provenance": {
+      "type": "user_supplied_generated",
+      "asset_class": "approved_catalog_track",
+      "release_eligible": true,
+      "track_id": "abandoned_intake",
+      "region_id": "investigation_a",
+      "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+      "approval_reviewer": "user",
+      "usage": "MF-010 hash-bound human approval; local production master."
+    }
+  },
+  "generated_scene": {
+    "components": [
+      {
+        "id": "chamber",
+        "type": "electronic_chamber"
+      },
+      {
+        "id": "circuits",
+        "type": "circuit_crawler"
+      },
+      {
+        "id": "burst",
+        "type": "electrical_burst"
+      },
+      {
+        "id": "cradle",
+        "type": "projection_emitter"
+      },
+      {
+        "id": "book",
+        "type": "projected_data_window"
+      },
+      {
+        "id": "page_1",
+        "type": "record_channel"
+      },
+      {
+        "id": "page_2",
+        "type": "record_channel"
+      },
+      {
+        "id": "page_3",
+        "type": "record_channel"
+      },
+      {
+        "id": "dissolve",
+        "type": "screen_collapse"
+      },
+      {
+        "id": "lights",
+        "type": "lofi_light"
+      },
+      {
+        "id": "powered_cells",
+        "type": "powered_cells"
+      },
+      {
+        "id": "website",
+        "type": "website_reveal"
+      }
+    ],
+    "events": [
+      {
+        "id": "path_draw_start",
+        "type": "path_draw_start",
+        "time": 0
+      },
+      {
+        "id": "paths_drawn",
+        "type": "paths_drawn",
+        "time": 0.65
+      },
+      {
+        "id": "energy_flow",
+        "type": "energy_flow",
+        "time": 0.7
+      },
+      {
+        "id": "central_node_charge",
+        "type": "central_node_charge",
+        "time": 1.35
+      },
+      {
+        "id": "overload",
+        "type": "overload",
+        "time": 1.75
+      },
+      {
+        "id": "overload_pulse_1",
+        "type": "overload_pulse",
+        "time": 1.95
+      },
+      {
+        "id": "overload_pulse_2",
+        "type": "overload_pulse",
+        "time": 2.25
+      },
+      {
+        "id": "overload_peak",
+        "type": "overload_peak",
+        "time": 2.35
+      },
+      {
+        "id": "spark_burst",
+        "type": "spark_burst",
+        "time": 2.5
+      },
+      {
+        "id": "title_form",
+        "type": "title_form",
+        "time": 2.575
+      },
+      {
+        "id": "projection_emission",
+        "type": "projection_emission",
+        "time": 2.675
+      },
+      {
+        "id": "screen_initialize",
+        "type": "screen_initialize",
+        "time": 2.675
+      },
+      {
+        "id": "camera_push",
+        "type": "camera_push",
+        "time": 2.85
+      },
+      {
+        "id": "title_stabilized",
+        "type": "title_stabilized",
+        "time": 3.2
+      },
+      {
+        "id": "record_query_1",
+        "type": "record_query",
+        "time": 5.0
+      },
+      {
+        "id": "record_typing_1",
+        "type": "record_typing",
+        "time": 5.563
+      },
+      {
+        "id": "biometric_scan",
+        "type": "biometric_scan",
+        "time": 6.213
+      },
+      {
+        "id": "record_activity_1",
+        "type": "record_activity",
+        "time": 6.213
+      },
+      {
+        "id": "record_confirm_1",
+        "type": "record_confirm",
+        "time": 7.86
+      },
+      {
+        "id": "record_lock_1",
+        "type": "record_lock",
+        "time": 8.293
+      },
+      {
+        "id": "record_hold_1",
+        "type": "record_hold",
+        "time": 8.683
+      },
+      {
+        "id": "record_reset_1",
+        "type": "record_reset",
+        "time": 9.03
+      },
+      {
+        "id": "screen_refresh_1",
+        "type": "screen_refresh",
+        "time": 9.16
+      },
+      {
+        "id": "record_query_2",
+        "type": "record_query",
+        "time": 9.333
+      },
+      {
+        "id": "record_typing_2",
+        "type": "record_typing",
+        "time": 9.897
+      },
+      {
+        "id": "deep_scan",
+        "type": "deep_scan",
+        "time": 10.547
+      },
+      {
+        "id": "record_activity_2",
+        "type": "record_activity",
+        "time": 10.547
+      },
+      {
+        "id": "record_confirm_2",
+        "type": "record_confirm",
+        "time": 12.193
+      },
+      {
+        "id": "record_lock_2",
+        "type": "record_lock",
+        "time": 12.627
+      },
+      {
+        "id": "record_hold_2",
+        "type": "record_hold",
+        "time": 13.017
+      },
+      {
+        "id": "record_reset_2",
+        "type": "record_reset",
+        "time": 13.363
+      },
+      {
+        "id": "screen_refresh_2",
+        "type": "screen_refresh",
+        "time": 13.493
+      },
+      {
+        "id": "record_query_3",
+        "type": "record_query",
+        "time": 13.667
+      },
+      {
+        "id": "record_typing_3",
+        "type": "record_typing",
+        "time": 14.23
+      },
+      {
+        "id": "hidden_region",
+        "type": "hidden_region",
+        "time": 14.88
+      },
+      {
+        "id": "record_activity_3",
+        "type": "record_activity",
+        "time": 14.88
+      },
+      {
+        "id": "record_confirm_3",
+        "type": "record_confirm",
+        "time": 16.527
+      },
+      {
+        "id": "kill_switch_reveal",
+        "type": "kill_switch_reveal",
+        "time": 16.96
+      },
+      {
+        "id": "record_lock_3",
+        "type": "record_lock",
+        "time": 16.96
+      },
+      {
+        "id": "record_hold_3",
+        "type": "record_hold",
+        "time": 17.35
+      },
+      {
+        "id": "final_record_settle",
+        "type": "settle",
+        "time": 18.0
+      },
+      {
+        "id": "data_dissolve",
+        "type": "data_dissolve",
+        "time": 20.0
+      },
+      {
+        "id": "screen_collapse",
+        "type": "screen_collapse",
+        "time": 20.0
+      },
+      {
+        "id": "energy_reclaimed",
+        "type": "energy_reclaimed",
+        "time": 20.72
+      },
+      {
+        "id": "return_energy",
+        "type": "return_energy",
+        "time": 20.96
+      },
+      {
+        "id": "camera_pull_back",
+        "type": "camera_pull_back",
+        "time": 21.32
+      },
+      {
+        "id": "cta_energy",
+        "type": "cta_energy",
+        "time": 22.04
+      },
+      {
+        "id": "cta_typing",
+        "type": "cta_typing",
+        "time": 22.58
+      },
+      {
+        "id": "cta_lock",
+        "type": "cta_lock",
+        "time": 23.3
+      },
+      {
+        "id": "cta_reveal",
+        "type": "cta_reveal",
+        "time": 23.72
+      },
+      {
+        "id": "website_reveal",
+        "type": "website_reveal",
+        "time": 23.72
+      },
+      {
+        "id": "cta_settle",
+        "type": "settle",
+        "time": 24.2
+      }
+    ]
+  },
+  "sfx": [],
+  "beats": [
+    {
+      "id": "circuits",
+      "type": "intro",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.3,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "formation",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 2.1,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "opening",
+      "type": "reveal",
+      "text": "UNKNOWN PROCESS",
+      "duration": 0.6,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "page_1",
+      "type": "statement",
+      "text": "BIOMETRIC STATUS: NORMAL",
+      "duration": 4.333,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "page_2",
+      "type": "emphasis",
+      "text": "ANOMALY / DEEP SCAN",
+      "duration": 4.333,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "page_3",
+      "type": "statement",
+      "text": "ENCRYPTED REGION: ACCESS DENIED",
+      "duration": 4.333,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "result_hold",
+      "type": "reveal",
+      "text": "ENCRYPTED REGION: ACCESS DENIED",
+      "duration": 2.0,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "dissolve",
+      "type": "statement",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 2.0,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "cta",
+      "type": "outro",
+      "text": "CONTINUE THE ADVENTURE",
+      "duration": 4.001,
+      "transition": "cut",
+      "narration": null
+    }
+  ],
+  "creative": {
+    "mechanism": "biometric_scan",
+    "events": [
+      "biometric_scan",
+      "deep_scan",
+      "hidden_region",
+      "kill_switch_reveal"
+    ],
+    "timing": {
+      "intro_seconds": 5.0,
+      "investigation_seconds": 13.0,
+      "result_hold_seconds": 2.0,
+      "cta_seconds": 6.0
+    },
+    "palette_profile": "mystery",
+    "camera_profile": "calm_to_push",
+    "node_profile": "analytical",
+    "projection_profile": "biometric",
+    "cta_profile": "cool_signal",
+    "audio_cue": "investigation"
+  },
+  "campaign_audio_policy": {
+    "music": "enabled",
+    "presentation": "music_only",
+    "sfx": "disabled",
+    "ambient_machine_audio": "disabled",
+    "narration": "off"
+  }
+}

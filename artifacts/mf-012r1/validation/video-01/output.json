@@ -1,0 +1,72 @@
+{
+  "slice": "MF-012R1",
+  "type": "ab_output_validation",
+  "source_video": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/02-leo-living-data-bridge/final.mp4",
+  "refined_video": "/home/blanzy/media-foundry-output/mf012r1/guardrailed-micro-variation/run-001/video-01/refined/video-micro-variation.mp4",
+  "source_sha256": "f7803a01e1ecf1ec3ea05eabc620d7a0c2880503cf3a36a681d7ad5a6a5ff958",
+  "refined_sha256": "8439ed7fe925ae5f25cfd6eba850fa56d1aa858b12e76e9a8bd9fb897bfb31a5",
+  "source_probe": {
+    "width": 1080,
+    "height": 1920,
+    "frames": 840,
+    "duration": 28.0,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "sample_rate": 48000,
+    "channels": 1
+  },
+  "refined_probe": {
+    "width": 1080,
+    "height": 1920,
+    "frames": 840,
+    "duration": 28.0,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "sample_rate": 48000,
+    "channels": 1
+  },
+  "audio": {
+    "source_packet_sha256": "be038df4c11c4b6c3a3e56d8d0659dc6249e7fd95b64d63f0a7e07b04326b9c1",
+    "refined_packet_sha256": "be038df4c11c4b6c3a3e56d8d0659dc6249e7fd95b64d63f0a7e07b04326b9c1",
+    "source_decoded_sha256": "2a285a28e6d957b25473305f8c0ce3212ba853d632548bcc742bfb5cc988204c",
+    "refined_decoded_sha256": "2a285a28e6d957b25473305f8c0ce3212ba853d632548bcc742bfb5cc988204c"
+  },
+  "music_selection": {
+    "contract": "mf010_music_selection_v1",
+    "project": "unknown-process",
+    "track_id": "cold_concrete_anatomy",
+    "qualified_id": "unknown-process:cold_concrete_anatomy",
+    "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "region_id": "investigation_a",
+    "usable_start": 71.0,
+    "usable_end": 109.0,
+    "actual_start": 73.0,
+    "actual_end": 101.0,
+    "video_duration": 28.0,
+    "fade_in": 1.2,
+    "fade_out": 2.0,
+    "result": "PASS"
+  },
+  "checks": {
+    "config": "PASS",
+    "runtime": "PASS",
+    "frame_count": "PASS",
+    "media_shape": "PASS",
+    "audio_stream_format": "PASS",
+    "audio_packet_identity": "PASS",
+    "audio_decode_identity": "PASS",
+    "text_equivalence": "PASS",
+    "music_config_equivalence": "PASS",
+    "cue_identity": "PASS",
+    "gain_identity": "PASS",
+    "music_only": "PASS",
+    "safe_zone": "PASS",
+    "motion_budget": "PASS",
+    "deterministic_seed": "PASS",
+    "no_noisy_geometry": "PASS",
+    "subject_agnostic": "PASS",
+    "media_validation": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

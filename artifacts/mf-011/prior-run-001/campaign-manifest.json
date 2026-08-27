@@ -1,0 +1,316 @@
+{
+  "campaign": {
+    "id": "unknown-process-mf-011-v1",
+    "slice": "MF-011",
+    "project": "unknown-process",
+    "title": "Unknown Process 10-Video Campaign Run v1",
+    "production_grammar": "unknown_process_recovered_record_v2",
+    "production_grammar_file": "config/production-grammars/unknown-process-recovered-record-v2.json",
+    "baseline_git_ref": "c637c956629ac564aa3f5c9927b5cae4b41fe3e7",
+    "execution": "sequential_unattended",
+    "job_limit": 10,
+    "output_archive": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1",
+    "publish": false,
+    "require_human_release_approval": true
+  },
+  "policy": {
+    "allow_renderer_changes": false,
+    "allow_runtime_architecture_changes": false,
+    "allow_visual_grammar_changes": false,
+    "max_technical_retries": 1,
+    "continue_after_job_failure": true,
+    "unsupported_brief_state": "NEEDS_ENGINEERING",
+    "codex_boundary": "APPROVED_CONTROLS_AND_APPROVED_CUE_BOUNDS_ONLY",
+    "automatic_publication": false,
+    "automatic_editorial_approval": false
+  },
+  "audio_policy": {
+    "music": "enabled",
+    "sfx": "disabled",
+    "ambient_machine_audio": "disabled",
+    "narration": "off",
+    "presentation": "music_only"
+  },
+  "approved_source": {
+    "id": "unknown-process-approved-synopsis-v1",
+    "title": "Unknown Process",
+    "author": "R.C. Blanzy",
+    "canonical_url": "https://rcblanzy.com/books/unknown-process",
+    "display_url": "rcblanzy.com/books/unknown-process",
+    "basis": "User-approved synopsis supplied for MF-006R1",
+    "allowed_fact_ids": [
+      "simon_framed_and_hunted",
+      "leo_bio_engineered_living_data_bridge",
+      "zeph_hunted_ai_kernel_evolving_rapidly",
+      "syndicate_global_elites_advanced_technology",
+      "simon_biometrics_contain_kill_switch",
+      "kill_switch_threatens_digital_empire",
+      "simon_central_to_stopping_system"
+    ]
+  },
+  "shared_identity": {
+    "world": "recovered-record circuit chamber",
+    "screen_family": "single projected recovered-record window",
+    "typography_family": "frozen Unknown Process grammar",
+    "circuit_language": "deterministic low-fi node-and-path system",
+    "cta": "CONTINUE THE ADVENTURE",
+    "display_url": "RCBLANZY.COM/BOOKS/UNKNOWN-PROCESS"
+  },
+  "music_catalog": "config/music/catalog.json",
+  "state_models": {
+    "campaign": ["PENDING", "PREFLIGHT", "RUNNING", "COMPLETE", "PARTIAL", "FAILED", "BLOCKED"],
+    "job": ["PENDING", "PREFLIGHT", "READY", "RENDERING", "VALIDATING", "READY_FOR_REVIEW", "BLOCKED", "FAILED", "NEEDS_ENGINEERING"]
+  },
+  "jobs": [
+    {
+      "id": "01-simon-target-acquired",
+      "title": "Simon: Target Acquired",
+      "purpose": "Strong pursuit hook showing Simon is already being tracked.",
+      "story_fact_ids": ["simon_framed_and_hunted"],
+      "distinguishing_features": ["temporary signal loss", "reacquisition", "final target lock", "tight pursuit camera"],
+      "fixture": "content/fixtures/mf011/01-simon-target-acquired.json",
+      "phrases": ["TARGET TRACE DETECTED", "SIGNAL LOST / REACQUIRING", "TARGET ACQUIRED: SIMON"],
+      "creative": {
+        "mechanism": "tracking",
+        "events": ["target_search", "target_reacquire", "target_lock"],
+        "timing": {"intro_seconds": 5.2, "investigation_seconds": 12.4, "result_hold_seconds": 1.4, "cta_seconds": 8.0},
+        "palette_profile": "pursuit", "camera_profile": "tight_pursuit", "node_profile": "urgent",
+        "projection_profile": "warning_trace", "cta_profile": "warning", "audio_cue": "pursuit"
+      },
+      "music": {
+        "query": {"mood": ["pursuit", "tension", "escalation"], "use_case": ["tracking"]},
+        "track_id": "concrete_and_chain", "region_id": "pursuit_a",
+        "actual_start": 21.0, "actual_end": 48.0, "video_duration": 27.0,
+        "fade_in": 0.6, "fade_out": 1.6, "gain_db": -5.0,
+        "ducking": {"narration_duck_db": -8.0, "attack_ms": 90, "release_ms": 240},
+        "selection_reason": "Sparse entry builds through reacquisition and lands the final lock cleanly."
+      },
+      "narration": null, "renderer_changes_required": false
+    },
+    {
+      "id": "02-leo-living-data-bridge",
+      "title": "Leo: Living Data Bridge",
+      "purpose": "Introduce Leo as an extraordinary bio-engineered living data bridge.",
+      "story_fact_ids": ["leo_bio_engineered_living_data_bridge"],
+      "distinguishing_features": ["identity classification", "unstable boundary", "bridge establishment", "wide analytical frame"],
+      "fixture": "content/fixtures/mf011/02-leo-living-data-bridge.json",
+      "phrases": ["SUBJECT: LEO / BIO-ENGINEERED", "DATA PATH EXPANDING", "LIVING DATA BRIDGE"],
+      "creative": {
+        "mechanism": "classification_link",
+        "events": ["leo_resolve", "zeph_resolve", "bridge_attempt", "bridge_stable"],
+        "timing": {"intro_seconds": 6.2, "investigation_seconds": 12.0, "result_hold_seconds": 2.0, "cta_seconds": 7.8},
+        "palette_profile": "mystery", "camera_profile": "wide_investigation", "node_profile": "analytical",
+        "projection_profile": "classification", "cta_profile": "cool_signal", "audio_cue": "investigation"
+      },
+      "music": {
+        "query": {"mood": ["mystery", "investigation"], "use_case": ["classification"]},
+        "track_id": "cold_concrete_anatomy", "region_id": "investigation_a",
+        "actual_start": 73.0, "actual_end": 101.0, "video_duration": 28.0,
+        "fade_in": 1.2, "fade_out": 2.0, "gain_db": -5.5,
+        "ducking": {"narration_duck_db": -8.0, "attack_ms": 120, "release_ms": 300},
+        "selection_reason": "Even analytical motion supports classification uncertainty and the bridge reveal."
+      },
+      "narration": null, "renderer_changes_required": false
+    },
+    {
+      "id": "03-zeph-evolving-too-fast",
+      "title": "Zeph: Evolving Too Fast",
+      "purpose": "Introduce Zeph independently as a hunted AI kernel evolving rapidly.",
+      "story_fact_ids": ["zeph_hunted_ai_kernel_evolving_rapidly"],
+      "distinguishing_features": ["AI signature mutation", "classification retries", "cool unstable palette", "irregular node emphasis"],
+      "fixture": "content/fixtures/mf011/03-zeph-evolving-too-fast.json",
+      "phrases": ["AI KERNEL: ZEPH", "SIGNATURE CHANGED / RETRYING", "EVOLVING TOO FAST"],
+      "creative": {
+        "mechanism": "classification_link",
+        "events": ["leo_resolve", "zeph_resolve", "bridge_attempt", "bridge_stable"],
+        "timing": {"intro_seconds": 5.6, "investigation_seconds": 13.0, "result_hold_seconds": 1.4, "cta_seconds": 6.0},
+        "palette_profile": "mystery", "camera_profile": "calm_to_push", "node_profile": "urgent",
+        "projection_profile": "classification", "cta_profile": "cool_signal", "audio_cue": "revelation"
+      },
+      "music": {
+        "query": {"mood": ["mystery", "ominous", "escalation"], "use_case": ["title_reveal"]},
+        "track_id": "abandoned_intake", "region_id": "revelation_a",
+        "actual_start": 52.0, "actual_end": 78.0, "video_duration": 26.0,
+        "fade_in": 0.8, "fade_out": 1.8, "gain_db": -5.5,
+        "ducking": {"narration_duck_db": -8.0, "attack_ms": 100, "release_ms": 260},
+        "selection_reason": "The rising ominous passage reinforces repeated signature mutation without overpowering it."
+      },
+      "narration": null, "renderer_changes_required": false
+    },
+    {
+      "id": "04-the-syndicate",
+      "title": "The Syndicate",
+      "purpose": "Represent the Syndicate as a distributed hierarchy of hidden control paths.",
+      "story_fact_ids": ["syndicate_global_elites_advanced_technology"],
+      "distinguishing_features": ["distributed node hierarchy", "multiplying control paths", "wide threat scale", "warning projection"],
+      "fixture": "content/fixtures/mf011/04-the-syndicate.json",
+      "phrases": ["UNAUTHORIZED NETWORK", "GLOBAL CONTROL PATHS", "IDENTITY: THE SYNDICATE"],
+      "creative": {
+        "mechanism": "classification_link",
+        "events": ["leo_resolve", "zeph_resolve", "bridge_attempt", "bridge_stable"],
+        "timing": {"intro_seconds": 6.4, "investigation_seconds": 14.0, "result_hold_seconds": 2.6, "cta_seconds": 7.0},
+        "palette_profile": "revelation", "camera_profile": "wide_investigation", "node_profile": "stable_then_overload",
+        "projection_profile": "warning_trace", "cta_profile": "warning", "audio_cue": "investigation"
+      },
+      "music": {
+        "query": {"mood": ["conspiracy", "ominous", "tension", "mystery"], "use_case": ["classification"]},
+        "track_id": "below_the_iron_floor", "region_id": "investigation_a",
+        "actual_start": 96.0, "actual_end": 126.0, "video_duration": 30.0,
+        "fade_in": 1.0, "fade_out": 2.2, "gain_db": -5.0,
+        "ducking": {"narration_duck_db": -8.0, "attack_ms": 110, "release_ms": 280},
+        "selection_reason": "A steady paranoid section gives the expanding hierarchy weight and scale."
+      },
+      "narration": null, "renderer_changes_required": false
+    },
+    {
+      "id": "05-simon-biometric-anomaly",
+      "title": "Simon: Biometric Anomaly",
+      "purpose": "Set up Simon's hidden biometric region without fully revealing the kill-switch.",
+      "story_fact_ids": ["simon_biometrics_contain_kill_switch"],
+      "distinguishing_features": ["apparently normal record", "deep scan", "encrypted region", "denied reveal"],
+      "fixture": "content/fixtures/mf011/05-simon-biometric-anomaly.json",
+      "phrases": ["BIOMETRIC STATUS: NORMAL", "ANOMALY / DEEP SCAN", "ENCRYPTED REGION: ACCESS DENIED"],
+      "creative": {
+        "mechanism": "biometric_scan",
+        "events": ["biometric_scan", "deep_scan", "hidden_region", "kill_switch_reveal"],
+        "timing": {"intro_seconds": 5.0, "investigation_seconds": 13.0, "result_hold_seconds": 2.0, "cta_seconds": 5.0},
+        "palette_profile": "mystery", "camera_profile": "calm_to_push", "node_profile": "analytical",
+        "projection_profile": "biometric", "cta_profile": "cool_signal", "audio_cue": "investigation"
+      },
+      "music": {
+        "query": {"mood": ["investigation", "mystery"], "use_case": ["classification"]},
+        "track_id": "abandoned_intake", "region_id": "investigation_a",
+        "actual_start": 128.0, "actual_end": 153.0, "video_duration": 25.0,
+        "fade_in": 1.0, "fade_out": 1.8, "gain_db": -6.0,
+        "ducking": {"narration_duck_db": -8.0, "attack_ms": 120, "release_ms": 300},
+        "selection_reason": "The lower-density investigation cue leaves room for a restrained anomaly setup."
+      },
+      "narration": null, "renderer_changes_required": false
+    },
+    {
+      "id": "06-the-kill-switch",
+      "title": "The Kill-Switch",
+      "purpose": "Reveal that Simon's biometrics contain the kill-switch to a digital empire.",
+      "story_fact_ids": ["simon_biometrics_contain_kill_switch", "kill_switch_threatens_digital_empire"],
+      "distinguishing_features": ["encrypted region opening", "biometric match", "system warning escalation", "dread-weighted reveal"],
+      "fixture": "content/fixtures/mf011/06-the-kill-switch.json",
+      "phrases": ["HIDDEN BIOMETRIC KEY", "KILL-SWITCH DETECTED", "LOCATION: SIMON"],
+      "creative": {
+        "mechanism": "biometric_scan",
+        "events": ["biometric_scan", "deep_scan", "hidden_region", "kill_switch_reveal"],
+        "timing": {"intro_seconds": 6.5, "investigation_seconds": 13.5, "result_hold_seconds": 2.0, "cta_seconds": 7.0},
+        "palette_profile": "revelation", "camera_profile": "calm_to_push", "node_profile": "stable_then_overload",
+        "projection_profile": "biometric", "cta_profile": "revelation", "audio_cue": "revelation"
+      },
+      "music": {
+        "query": {"mood": ["revelation", "ominous", "escalation"], "use_case": ["biometric_reveal"]},
+        "track_id": "below_the_iron_floor", "region_id": "revelation_a",
+        "actual_start": 71.0, "actual_end": 100.0, "video_duration": 29.0,
+        "fade_in": 1.0, "fade_out": 2.5, "gain_db": -4.5,
+        "ducking": {"narration_duck_db": -8.0, "attack_ms": 110, "release_ms": 280},
+        "selection_reason": "The approved rising reveal passage supports the deeper scan and final dread."
+      },
+      "narration": null, "renderer_changes_required": false
+    },
+    {
+      "id": "07-digital-empire",
+      "title": "Digital Empire",
+      "purpose": "Show a distributed control system and Simon as its single interruption point.",
+      "story_fact_ids": ["kill_switch_threatens_digital_empire", "simon_central_to_stopping_system"],
+      "distinguishing_features": ["network expansion", "control consolidation", "single interruption point", "maximum campaign scale"],
+      "fixture": "content/fixtures/mf011/07-digital-empire.json",
+      "phrases": ["CONTROL NETWORK EXPANDING", "ONE OVERRIDE EXISTS", "OVERRIDE: SIMON"],
+      "creative": {
+        "mechanism": "classification_link",
+        "events": ["leo_resolve", "zeph_resolve", "bridge_attempt", "bridge_stable"],
+        "timing": {"intro_seconds": 7.0, "investigation_seconds": 14.0, "result_hold_seconds": 3.0, "cta_seconds": 8.0},
+        "palette_profile": "revelation", "camera_profile": "wide_investigation", "node_profile": "stable_then_overload",
+        "projection_profile": "classification", "cta_profile": "revelation", "audio_cue": "revelation"
+      },
+      "music": {
+        "query": {"mood": ["ominous", "escalation", "revelation"], "use_case": ["title_reveal"]},
+        "track_id": "concrete_and_chain", "region_id": "revelation_a",
+        "actual_start": 127.0, "actual_end": 159.0, "video_duration": 32.0,
+        "fade_in": 1.2, "fade_out": 2.8, "gain_db": -5.0,
+        "ducking": {"narration_duck_db": -8.0, "attack_ms": 120, "release_ms": 320},
+        "selection_reason": "The long escalating region supports network growth and the single-point interruption reveal."
+      },
+      "narration": null, "renderer_changes_required": false
+    },
+    {
+      "id": "08-for-what-he-is",
+      "title": "For What He Is",
+      "purpose": "Deliver a concise intrigue hook about why Simon is being hunted.",
+      "story_fact_ids": ["simon_framed_and_hunted", "simon_biometrics_contain_kill_switch"],
+      "distinguishing_features": ["rapid pursuit trace", "misdirection", "biometric implication", "shortest runtime"],
+      "fixture": "content/fixtures/mf011/08-for-what-he-is.json",
+      "phrases": ["THEY ARE HUNTING SIMON", "NOT FOR WHAT HE KNOWS", "FOR WHAT HE IS"],
+      "creative": {
+        "mechanism": "tracking",
+        "events": ["target_search", "target_reacquire", "target_lock"],
+        "timing": {"intro_seconds": 5.0, "investigation_seconds": 12.0, "result_hold_seconds": 1.0, "cta_seconds": 6.0},
+        "palette_profile": "pursuit", "camera_profile": "tight_pursuit", "node_profile": "stable_then_overload",
+        "projection_profile": "biometric", "cta_profile": "warning", "audio_cue": "pursuit"
+      },
+      "music": {
+        "query": {"mood": ["tension", "mystery", "escalation"], "use_case": ["tracking"]},
+        "track_id": "abandoned_intake", "region_id": "pursuit_a",
+        "actual_start": 114.0, "actual_end": 138.0, "video_duration": 24.0,
+        "fade_in": 0.4, "fade_out": 1.4, "gain_db": -5.0,
+        "ducking": {"narration_duck_db": -8.0, "attack_ms": 90, "release_ms": 220},
+        "selection_reason": "A compact rising pursuit subsection makes the misdirection land without padding."
+      },
+      "narration": null, "renderer_changes_required": false
+    },
+    {
+      "id": "09-atmospheric-teaser",
+      "title": "Atmospheric Teaser",
+      "purpose": "Let the recovered-record world carry a minimal mystery teaser.",
+      "story_fact_ids": ["simon_framed_and_hunted"],
+      "distinguishing_features": ["minimal text", "slow circuit wake", "baseline nodes", "ambient musical region without ambient SFX"],
+      "fixture": "content/fixtures/mf011/09-atmospheric-teaser.json",
+      "phrases": ["RECOVERED PROCESS", "SOURCE UNKNOWN", "TARGET ACTIVE"],
+      "creative": {
+        "mechanism": "classification_link",
+        "events": ["leo_resolve", "zeph_resolve", "bridge_attempt", "bridge_stable"],
+        "timing": {"intro_seconds": 7.0, "investigation_seconds": 13.0, "result_hold_seconds": 2.0, "cta_seconds": 8.0},
+        "palette_profile": "baseline", "camera_profile": "wide_investigation", "node_profile": "baseline",
+        "projection_profile": "baseline", "cta_profile": "cool_signal", "audio_cue": "baseline_full"
+      },
+      "music": {
+        "query": {"mood": ["ambient", "mystery", "reflective"], "use_case": ["ambient_teaser"]},
+        "track_id": "cold_concrete_anatomy", "region_id": "ambient_a",
+        "actual_start": 145.0, "actual_end": 175.0, "video_duration": 30.0,
+        "fade_in": 2.0, "fade_out": 3.0, "gain_db": -6.5,
+        "ducking": {"narration_duck_db": -8.0, "attack_ms": 140, "release_ms": 360},
+        "selection_reason": "The sparse ambient region lets the chamber and unresolved record carry the teaser."
+      },
+      "narration": null, "renderer_changes_required": false
+    },
+    {
+      "id": "10-direct-book-cta",
+      "title": "Direct Book CTA",
+      "purpose": "Deliver the campaign's clearest conversion-oriented story and title piece.",
+      "story_fact_ids": ["simon_framed_and_hunted", "leo_bio_engineered_living_data_bridge", "zeph_hunted_ai_kernel_evolving_rapidly", "simon_biometrics_contain_kill_switch"],
+      "distinguishing_features": ["rapid clue progression", "multi-subject summary", "kill-switch reveal", "strongest CTA hold"],
+      "fixture": "content/fixtures/mf011/10-direct-book-cta.json",
+      "phrases": ["SIMON HUNTED", "LEO BRIDGE / ZEPH EVOLVING", "KILL-SWITCH INSIDE HIM"],
+      "creative": {
+        "mechanism": "biometric_scan",
+        "events": ["biometric_scan", "deep_scan", "hidden_region", "kill_switch_reveal"],
+        "timing": {"intro_seconds": 6.0, "investigation_seconds": 14.0, "result_hold_seconds": 3.0, "cta_seconds": 8.0},
+        "palette_profile": "pursuit", "camera_profile": "calm_to_push", "node_profile": "urgent",
+        "projection_profile": "biometric", "cta_profile": "revelation", "audio_cue": "investigation"
+      },
+      "music": {
+        "query": {"mood": ["investigation", "mystery", "paranoia"], "use_case": ["direct_promo"]},
+        "track_id": "concrete_and_chain", "region_id": "investigation_a",
+        "actual_start": 76.0, "actual_end": 107.0, "video_duration": 31.0,
+        "fade_in": 0.8, "fade_out": 2.6, "gain_db": -4.8,
+        "ducking": {"narration_duck_db": -8.0, "attack_ms": 100, "release_ms": 280},
+        "selection_reason": "A sustained investigation section supports rapid clues before the extended conversion hold."
+      },
+      "narration": null, "renderer_changes_required": false
+    }
+  ]
+}

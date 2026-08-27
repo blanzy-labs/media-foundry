@@ -1,0 +1,58 @@
+{
+  "demo_id": "04-override-reroute",
+  "state": "READY_FOR_REVIEW",
+  "runtime_seconds": 11.0,
+  "frame_count": 330,
+  "dominant_activity": "override",
+  "supporting_activities": [],
+  "opening_choreography": "signal_intrusion",
+  "camera_choreography": "wide_to_close",
+  "spatial_behavior": [
+    "foreign signal enters from west",
+    "multiple routes change priority",
+    "control consolidates at hub"
+  ],
+  "text_behavior": [
+    "replace",
+    "highlight",
+    "lock"
+  ],
+  "activity_sequence": [
+    {
+      "id": "override",
+      "type": "path_override",
+      "target": "circuit_network",
+      "start": 0.7,
+      "duration": 3.2,
+      "intensity": 1.0,
+      "overlap": true
+    },
+    {
+      "id": "reroute",
+      "type": "network_reroute",
+      "target": "central_hub",
+      "start": 2.7,
+      "duration": 4.0,
+      "intensity": 1.0,
+      "overlap": true
+    }
+  ],
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf012/activity-vocabulary-v1/run-001/04-override-reroute/demo.mp4",
+    "bytes": 3307468,
+    "sha256": "bd9f2936b88548a331fd2adff35fc91e39ecac3f37a24e0b6209c7b182373d7e"
+  },
+  "motion_evidence": "/home/blanzy/media-foundry-output/mf012/activity-vocabulary-v1/run-001/04-override-reroute/motion-evidence/sequence.png",
+  "representative_frames": "/home/blanzy/media-foundry-output/mf012/activity-vocabulary-v1/run-001/04-override-reroute/representative-frames",
+  "render_ms": 32538,
+  "render_ms_per_frame": 98.6,
+  "metrics": {
+    "config_validation_ms": 85,
+    "timeline_preflight_ms": 57,
+    "render_ms": 32538,
+    "encode_ms": 16343,
+    "media_validation_ms": 557,
+    "output_validation_ms": 57
+  },
+  "result": "PASS"
+}

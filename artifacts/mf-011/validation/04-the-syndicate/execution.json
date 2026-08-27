@@ -1,0 +1,91 @@
+{
+  "beats": [
+    {
+      "end": 2.3,
+      "first_frame": 0,
+      "id": "circuits",
+      "last_frame": 68,
+      "start": 0.0,
+      "status": "PASS",
+      "type": "intro"
+    },
+    {
+      "end": 4.4,
+      "first_frame": 69,
+      "id": "formation",
+      "last_frame": 131,
+      "start": 2.3,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 6.4,
+      "first_frame": 132,
+      "id": "opening",
+      "last_frame": 191,
+      "start": 4.4,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 11.067,
+      "first_frame": 192,
+      "id": "page_1",
+      "last_frame": 332,
+      "start": 6.4,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 15.734,
+      "first_frame": 333,
+      "id": "page_2",
+      "last_frame": 472,
+      "start": 11.067,
+      "status": "PASS",
+      "type": "emphasis"
+    },
+    {
+      "end": 20.401,
+      "first_frame": 473,
+      "id": "page_3",
+      "last_frame": 612,
+      "start": 15.734,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 23.001,
+      "first_frame": 613,
+      "id": "result_hold",
+      "last_frame": 690,
+      "start": 20.401,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 25.001,
+      "first_frame": 691,
+      "id": "dissolve",
+      "last_frame": 750,
+      "start": 23.001,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 30.0,
+      "first_frame": 751,
+      "id": "cta",
+      "last_frame": 899,
+      "start": 25.001,
+      "status": "PASS",
+      "type": "outro"
+    }
+  ],
+  "duration": 30.0,
+  "fixture": "mf011-04-the-syndicate",
+  "mode": "beats",
+  "result": "PASS",
+  "slice": "MF-004",
+  "total_frames": 900
+}

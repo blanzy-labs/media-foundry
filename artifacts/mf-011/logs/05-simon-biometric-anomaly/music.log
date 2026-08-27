@@ -1,0 +1,46 @@
+{
+  "slice": "MF-005R1",
+  "fixture": "mf011-05-simon-biometric-anomaly",
+  "status": "PASS",
+  "source": "media/audio/music/unknown-process/Abandoned_Intake.mp3",
+  "audio_path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/05-simon-biometric-anomaly/audio/music.wav",
+  "source_analysis": {
+    "duration": 171.885667,
+    "sample_rate": 44100,
+    "channels": 2,
+    "codec": "mp3",
+    "container": "mp3",
+    "bit_rate": 192000
+  },
+  "source_duration": 171.885667,
+  "selected_offset": 128.0,
+  "duration": 26.0,
+  "continuous": true,
+  "loop": false,
+  "loop_count": 0,
+  "normalization_lufs": -24.0,
+  "gain_db": -6.0,
+  "narration_duck_db": -8.0,
+  "attack_ms": 120.0,
+  "release_ms": 300.0,
+  "fade_in": 1.0,
+  "fade_out": 1.8,
+  "activity": {
+    "start": 0.0,
+    "end": 26.0
+  },
+  "provenance": {
+    "type": "user_supplied_generated",
+    "asset_class": "approved_catalog_track",
+    "release_eligible": true,
+    "track_id": "abandoned_intake",
+    "region_id": "investigation_a",
+    "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+    "approval_reviewer": "user",
+    "usage": "MF-010 hash-bound human approval; local production master."
+  },
+  "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+  "prepared_sha256": "1c8c70d5cfecad7617d390fa677f78ad759d959526e6336392aa272e58b267d7",
+  "preparation_seconds": 0.973161,
+  "result": "PASS"
+}

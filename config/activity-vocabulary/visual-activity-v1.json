@@ -1,0 +1,51 @@
+{
+  "id": "visual_activity_v1",
+  "version": 1,
+  "status": "ENGINEERING_DEMONSTRATION",
+  "complexity": {"dominant_activities": 1, "maximum_supporting_activities": 2, "maximum_sequence_entries": 10},
+  "timing": {"minimum_start": 0.0, "minimum_duration": 0.1, "maximum_intensity": 1.0, "maximum_repeat": 4, "overlap_allowed": true},
+  "targets": ["west_bus", "east_bus", "north_bus", "south_bus", "primary_target", "tracker_field", "primary_record", "fragment_field", "node_a", "node_b", "circuit_network", "wall_cells", "central_hub", "survivor_path"],
+  "primitives": [
+    {"name":"target_acquire","family":"pursuit","purpose":"Resolve a target and establish a trackable location.","required":["target","start","duration"],"optional":["intensity","origin"],"dependencies":[],"visual":"Target marker resolves from an uncertain trace.","compatible_supporting":["connection"]},
+    {"name":"target_move","family":"pursuit","purpose":"Move an acquired target through bounded scene anchors.","required":["target","start","duration"],"optional":["intensity","origin","destination"],"dependencies":["target_acquire"],"visual":"Target travels laterally while trackers adjust.","compatible_supporting":["connection"]},
+    {"name":"target_escape","family":"pursuit","purpose":"Break the current trace and overshoot trackers.","required":["target","start","duration"],"optional":["intensity"],"dependencies":["target_move"],"visual":"Target exits the trace field and tracking lines miss.","compatible_supporting":[]},
+    {"name":"target_reacquire","family":"pursuit","purpose":"Resolve the escaped target at a new bounded location.","required":["target","start","duration"],"optional":["intensity","destination"],"dependencies":["target_escape"],"visual":"Target reappears away from its prior position.","compatible_supporting":["connection"]},
+    {"name":"tracker_converge","family":"pursuit","purpose":"Converge multiple tracking traces on a resolved target.","required":["target","start","duration"],"optional":["intensity"],"dependencies":["target_reacquire"],"visual":"Independent trackers correct course toward one point.","compatible_supporting":[]},
+    {"name":"target_lock","family":"pursuit","purpose":"Commit a stable target lock after acquisition.","required":["target","start","duration"],"optional":["intensity"],"dependencies":["target_acquire","target_reacquire"],"visual":"Lock brackets close around the target.","compatible_supporting":[]},
+    {"name":"fragment_spawn","family":"reconstruction","purpose":"Create deterministic corrupt record fragments.","required":["target","start","duration"],"optional":["intensity","repeat"],"dependencies":[],"visual":"Separated data pieces appear across the chamber.","compatible_supporting":["connection"]},
+    {"name":"fragment_drift","family":"reconstruction","purpose":"Move fragments through deterministic spatial drift.","required":["target","start","duration"],"optional":["intensity"],"dependencies":["fragment_spawn"],"visual":"Fragments drift inward without random choreography.","compatible_supporting":["connection"]},
+    {"name":"fragment_align","family":"reconstruction","purpose":"Align fragments into a coherent record grid.","required":["target","start","duration"],"optional":["intensity"],"dependencies":["fragment_drift"],"visual":"Pieces settle into bounded rows and columns.","compatible_supporting":[]},
+    {"name":"record_reconstruct","family":"reconstruction","purpose":"Resolve aligned fragments into one recovered record.","required":["target","start","duration"],"optional":["intensity"],"dependencies":["fragment_align"],"visual":"The fragmented field consolidates into a coherent screen.","compatible_supporting":[]},
+    {"name":"connection_attempt","family":"connection","purpose":"Attempt a link between isolated nodes.","required":["target","start","duration"],"optional":["intensity","repeat"],"dependencies":[],"visual":"An incomplete segmented link searches between nodes.","compatible_supporting":["reconstruction"]},
+    {"name":"signal_travel","family":"connection","purpose":"Move visible packets through an attempted connection.","required":["target","start","duration"],"optional":["intensity","repeat"],"dependencies":["connection_attempt"],"visual":"Packets visibly cross the scene rather than flashing.","compatible_supporting":["pursuit","reconstruction"]},
+    {"name":"bridge_form","family":"connection","purpose":"Convert an attempted link into a continuous bridge.","required":["target","start","duration"],"optional":["intensity"],"dependencies":["connection_attempt","signal_travel"],"visual":"Broken segments join into one continuous path.","compatible_supporting":[]},
+    {"name":"bridge_stabilize","family":"connection","purpose":"Stabilize a formed bridge and propagate downstream response.","required":["target","start","duration"],"optional":["intensity"],"dependencies":["bridge_form"],"visual":"Bridge thickens and wall cells respond in sequence.","compatible_supporting":[]},
+    {"name":"path_override","family":"override","purpose":"Inject a foreign control signal into an existing route.","required":["target","start","duration"],"optional":["intensity","origin"],"dependencies":[],"visual":"A warm intrusion travels into the normal circuit system.","compatible_supporting":["connection"]},
+    {"name":"network_reroute","family":"override","purpose":"Move additional paths onto the overridden route.","required":["target","start","duration"],"optional":["intensity"],"dependencies":["path_override"],"visual":"Independent paths change color and flow toward new control.","compatible_supporting":["connection"]},
+    {"name":"anomaly_seed","family":"cascade_failure","purpose":"Introduce one bounded failure origin.","required":["target","start","duration"],"optional":["intensity"],"dependencies":[],"visual":"One node enters a visible warning state.","compatible_supporting":[]},
+    {"name":"cascade_failure","family":"cascade_failure","purpose":"Propagate ordered failures while preserving one survivor path.","required":["target","start","duration"],"optional":["intensity"],"dependencies":["anomaly_seed"],"visual":"Nodes fail progressively and one route remains active.","compatible_supporting":[]}
+  ],
+  "openings": [
+    {"name":"cold_open_active_record","behavior":"Begin on an already live coherent record."},
+    {"name":"signal_intrusion","behavior":"Begin with a foreign signal entering from a scene edge."},
+    {"name":"slow_system_wake","behavior":"Wake sparse wall cells and circuits before projection."},
+    {"name":"target_already_moving","behavior":"Begin with the primary target in motion."},
+    {"name":"corrupt_record_resolve","behavior":"Begin on separated fragments moving toward order."},
+    {"name":"warning_state_open","behavior":"Begin with one bounded warning state already active."},
+    {"name":"single_cell_propagation","behavior":"Begin at one wall cell and propagate outward."},
+    {"name":"follow_energy_packet","behavior":"Begin close on one packet and follow it to the hub."},
+    {"name":"network_overload_open","behavior":"Begin on loaded paths before controlled failure."},
+    {"name":"projection_from_darkness","behavior":"Materialize the record from a dark chamber."}
+  ],
+  "cameras": [
+    {"name":"static","behavior":"Stable established view."},
+    {"name":"slow_push","behavior":"Bounded gradual push toward the primary action."},
+    {"name":"pull_back","behavior":"Bounded reveal from close framing to the full system."},
+    {"name":"lateral_track","behavior":"Track activity laterally within safe bounds."},
+    {"name":"follow_packet","behavior":"Follow a moving signal between bounded anchors."},
+    {"name":"orbit_subtle","behavior":"Small deterministic orbital drift around the system."},
+    {"name":"close_to_wide","behavior":"Reveal system context from a close detail."},
+    {"name":"wide_to_close","behavior":"Resolve from system scale into one record detail."},
+    {"name":"reveal_from_detail","behavior":"Begin enlarged and settle into readable full composition."}
+  ]
+}

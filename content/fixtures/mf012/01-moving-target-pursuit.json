@@ -1,0 +1,555 @@
+{
+  "id": "mf012-01-moving-target-pursuit",
+  "template": "scrappy_diorama",
+  "seed": 26066,
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_seconds": 11.0
+  },
+  "subject": {
+    "type": "book",
+    "title": "Unknown Process",
+    "author": "R.C. Blanzy",
+    "canonical_author": "Robert C. Blanzy",
+    "series": "The Second Presence",
+    "book_number": 1,
+    "authoritative_url": "https://rcblanzy.com/books/unknown-process",
+    "retrieval_date": "2026-08-24",
+    "metadata_provenance": [
+      {
+        "source": "https://www.rcblanzy.com/books/unknown-process/",
+        "organization": "Robert C. Blanzy",
+        "retrieval_date": "2026-08-24",
+        "supports": "Title, author, series position, synopsis, and canonical destination"
+      }
+    ]
+  },
+  "approved_copy": {
+    "synopsis": "Framed, hunted, and stripped of his old life, Simon is forced on the run alongside two impossible targets: Leo, a bio-engineered boy acting as a living data bridge, and Zeph, a hunted AI kernel evolving at a terrifying speed. Pursued by the Syndicate\u2014a cabal of global elites using bleeding-edge technology to subjugate the planet\u2014Simon realizes he isn't just a protector. He carries the ultimate weapon. Locked within his own biometrics is the kill-switch to a digital empire. To survive, Simon must navigate a deadly maze of corporate black-ops and untethered artificial intelligence, or watch humanity be quietly enslaved by an unseen hand.",
+    "source": "user-approved copy and https://www.rcblanzy.com/books/unknown-process/",
+    "sole_narrative_basis": true,
+    "invented_plot_details": false
+  },
+  "visual_strategy": {
+    "preference": "godot_activity_vocabulary_v1",
+    "fallback": "fail",
+    "static_book_cover_allowed": false
+  },
+  "visual": {
+    "kind": "indicator_pulse_polish",
+    "primary": "071015",
+    "secondary": "39b8c9",
+    "label": "LIVE INVESTIGATION",
+    "props": []
+  },
+  "intro": {
+    "text": "UNKNOWN PROCESS"
+  },
+  "content": {
+    "headline": "UNKNOWN PROCESS",
+    "body": "THE SECOND PRESENCE \u2022 BOOK ONE",
+    "emphasis": "R.C. BLANZY"
+  },
+  "outro": {
+    "text": "CONTINUE THE ADVENTURE",
+    "tagline": "R.C. BLANZY"
+  },
+  "page_phrases": [
+    "TARGET ACTIVE",
+    "TRACE LOST / SEARCHING",
+    "TARGET LOCKED"
+  ],
+  "cta": {
+    "text": "Continue the adventure",
+    "website": "https://rcblanzy.com/books/unknown-process",
+    "canonical_url": "https://rcblanzy.com/books/unknown-process",
+    "display_url": "rcblanzy.com/books/unknown-process",
+    "source": "https://www.rcblanzy.com/books/unknown-process/",
+    "status": "APPROVED"
+  },
+  "voice_contract": {
+    "status": "BLOCKED_PRODUCTION_VOICE",
+    "available_provider": null,
+    "test_voice_allowed": false,
+    "release_eligible": false,
+    "narration_text": "Framed and hunted, Simon runs with Leo, a living data bridge, and Zeph, an evolving AI kernel. Hidden in Simon's biometrics is the kill-switch to a digital empire. Continue the adventure.",
+    "approved_copy_only": true,
+    "required_final_line": "Continue the adventure."
+  },
+  "audio": {
+    "enabled": true
+  },
+  "music": null,
+  "generated_scene": {
+    "components": [
+      {
+        "id": "chamber",
+        "type": "electronic_chamber"
+      },
+      {
+        "id": "circuits",
+        "type": "circuit_crawler"
+      },
+      {
+        "id": "burst",
+        "type": "electrical_burst"
+      },
+      {
+        "id": "cradle",
+        "type": "projection_emitter"
+      },
+      {
+        "id": "book",
+        "type": "projected_data_window"
+      },
+      {
+        "id": "page_1",
+        "type": "record_channel"
+      },
+      {
+        "id": "page_2",
+        "type": "record_channel"
+      },
+      {
+        "id": "page_3",
+        "type": "record_channel"
+      },
+      {
+        "id": "dissolve",
+        "type": "screen_collapse"
+      },
+      {
+        "id": "lights",
+        "type": "lofi_light"
+      },
+      {
+        "id": "powered_cells",
+        "type": "powered_cells"
+      },
+      {
+        "id": "website",
+        "type": "website_reveal"
+      }
+    ],
+    "events": [
+      {
+        "id": "path_draw_start",
+        "type": "path_draw_start",
+        "time": 0.0
+      },
+      {
+        "id": "paths_drawn",
+        "type": "paths_drawn",
+        "time": 0.275
+      },
+      {
+        "id": "energy_flow",
+        "type": "energy_flow",
+        "time": 0.297
+      },
+      {
+        "id": "central_node_charge",
+        "type": "central_node_charge",
+        "time": 0.572
+      },
+      {
+        "id": "overload",
+        "type": "overload",
+        "time": 0.741
+      },
+      {
+        "id": "overload_pulse_1",
+        "type": "overload_pulse",
+        "time": 0.826
+      },
+      {
+        "id": "overload_pulse_2",
+        "type": "overload_pulse",
+        "time": 0.953
+      },
+      {
+        "id": "overload_peak",
+        "type": "overload_peak",
+        "time": 0.996
+      },
+      {
+        "id": "spark_burst",
+        "type": "spark_burst",
+        "time": 1.059
+      },
+      {
+        "id": "title_form",
+        "type": "title_form",
+        "time": 1.091
+      },
+      {
+        "id": "projection_emission",
+        "type": "projection_emission",
+        "time": 1.133
+      },
+      {
+        "id": "screen_initialize",
+        "type": "screen_initialize",
+        "time": 1.133
+      },
+      {
+        "id": "camera_push",
+        "type": "camera_push",
+        "time": 1.208
+      },
+      {
+        "id": "title_stabilized",
+        "type": "title_stabilized",
+        "time": 1.356
+      },
+      {
+        "id": "record_query_1",
+        "type": "record_query",
+        "time": 2.119
+      },
+      {
+        "id": "record_typing_1",
+        "type": "record_typing",
+        "time": 2.337
+      },
+      {
+        "id": "record_activity_1",
+        "type": "record_activity",
+        "time": 2.59
+      },
+      {
+        "id": "target_search",
+        "type": "target_search",
+        "time": 2.59
+      },
+      {
+        "id": "record_confirm_1",
+        "type": "record_confirm",
+        "time": 3.23
+      },
+      {
+        "id": "record_lock_1",
+        "type": "record_lock",
+        "time": 3.398
+      },
+      {
+        "id": "record_hold_1",
+        "type": "record_hold",
+        "time": 3.55
+      },
+      {
+        "id": "record_reset_1",
+        "type": "record_reset",
+        "time": 3.685
+      },
+      {
+        "id": "screen_refresh_1",
+        "type": "screen_refresh",
+        "time": 3.735
+      },
+      {
+        "id": "record_query_2",
+        "type": "record_query",
+        "time": 3.802
+      },
+      {
+        "id": "record_typing_2",
+        "type": "record_typing",
+        "time": 4.022
+      },
+      {
+        "id": "record_activity_2",
+        "type": "record_activity",
+        "time": 4.274
+      },
+      {
+        "id": "target_reacquire",
+        "type": "target_reacquire",
+        "time": 4.274
+      },
+      {
+        "id": "record_confirm_2",
+        "type": "record_confirm",
+        "time": 4.914
+      },
+      {
+        "id": "record_lock_2",
+        "type": "record_lock",
+        "time": 5.082
+      },
+      {
+        "id": "record_hold_2",
+        "type": "record_hold",
+        "time": 5.234
+      },
+      {
+        "id": "record_reset_2",
+        "type": "record_reset",
+        "time": 5.368
+      },
+      {
+        "id": "screen_refresh_2",
+        "type": "screen_refresh",
+        "time": 5.419
+      },
+      {
+        "id": "record_query_3",
+        "type": "record_query",
+        "time": 5.487
+      },
+      {
+        "id": "record_typing_3",
+        "type": "record_typing",
+        "time": 5.705
+      },
+      {
+        "id": "record_activity_3",
+        "type": "record_activity",
+        "time": 5.958
+      },
+      {
+        "id": "record_confirm_3",
+        "type": "record_confirm",
+        "time": 6.598
+      },
+      {
+        "id": "record_lock_3",
+        "type": "record_lock",
+        "time": 6.766
+      },
+      {
+        "id": "target_lock",
+        "type": "target_lock",
+        "time": 6.766
+      },
+      {
+        "id": "record_hold_3",
+        "type": "record_hold",
+        "time": 6.918
+      },
+      {
+        "id": "final_record_settle",
+        "type": "settle",
+        "time": 7.17
+      },
+      {
+        "id": "data_dissolve",
+        "type": "data_dissolve",
+        "time": 7.741
+      },
+      {
+        "id": "screen_collapse",
+        "type": "screen_collapse",
+        "time": 7.741
+      },
+      {
+        "id": "energy_reclaimed",
+        "type": "energy_reclaimed",
+        "time": 8.067
+      },
+      {
+        "id": "return_energy",
+        "type": "return_energy",
+        "time": 8.262
+      },
+      {
+        "id": "camera_pull_back",
+        "type": "camera_pull_back",
+        "time": 8.458
+      },
+      {
+        "id": "cta_energy",
+        "type": "cta_energy",
+        "time": 8.849
+      },
+      {
+        "id": "cta_typing",
+        "type": "cta_typing",
+        "time": 9.142
+      },
+      {
+        "id": "cta_lock",
+        "type": "cta_lock",
+        "time": 9.533
+      },
+      {
+        "id": "cta_reveal",
+        "type": "cta_reveal",
+        "time": 9.761
+      },
+      {
+        "id": "website_reveal",
+        "type": "website_reveal",
+        "time": 9.761
+      },
+      {
+        "id": "cta_settle",
+        "type": "settle",
+        "time": 10.022
+      }
+    ]
+  },
+  "sfx": [],
+  "beats": [
+    {
+      "id": "circuits",
+      "type": "intro",
+      "text": "VISUAL ACTIVITY",
+      "duration": 1.0,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "formation",
+      "type": "reveal",
+      "text": "TARGET ACTIVE",
+      "duration": 0.5,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "opening",
+      "type": "reveal",
+      "text": "TARGET ACTIVE",
+      "duration": 0.5,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "page_1",
+      "type": "statement",
+      "text": "TARGET ACTIVE",
+      "duration": 1.5,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "page_2",
+      "type": "emphasis",
+      "text": "TRACE LOST / SEARCHING",
+      "duration": 1.0,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "page_3",
+      "type": "statement",
+      "text": "TARGET LOCKED",
+      "duration": 1.5,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "result_hold",
+      "type": "reveal",
+      "text": "TARGET LOCKED",
+      "duration": 0.5,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "dissolve",
+      "type": "statement",
+      "text": "ACTIVITY COMPLETE",
+      "duration": 1.5,
+      "transition": "cut",
+      "narration": null
+    },
+    {
+      "id": "cta",
+      "type": "outro",
+      "text": "VISUAL ACTIVITY",
+      "duration": 3.0,
+      "transition": "cut",
+      "narration": null
+    }
+  ],
+  "campaign_audio_policy": {
+    "music": "enabled",
+    "presentation": "music_only",
+    "sfx": "disabled",
+    "ambient_machine_audio": "disabled",
+    "narration": "off"
+  },
+  "activity": {
+    "version": 1,
+    "demo": true,
+    "dominant_activity": "pursuit",
+    "supporting_activities": [],
+    "opening_choreography": "target_already_moving",
+    "camera_choreography": "lateral_track",
+    "targets": [
+      "primary_target",
+      "tracker_field"
+    ],
+    "spatial_behavior": [
+      "target crosses center",
+      "trackers enter from four scene quadrants",
+      "reacquisition occurs off-center"
+    ],
+    "text_behavior": [
+      "type_on",
+      "erase",
+      "rewrite",
+      "lock"
+    ],
+    "sequence": [
+      {
+        "id": "acquire",
+        "type": "target_acquire",
+        "target": "primary_target",
+        "start": 0.5,
+        "duration": 1.0,
+        "intensity": 0.8,
+        "overlap": true
+      },
+      {
+        "id": "move",
+        "type": "target_move",
+        "target": "primary_target",
+        "start": 1.1,
+        "duration": 3.0,
+        "intensity": 1.0,
+        "overlap": true
+      },
+      {
+        "id": "escape",
+        "type": "target_escape",
+        "target": "primary_target",
+        "start": 3.4,
+        "duration": 1.0,
+        "intensity": 1.0,
+        "overlap": true
+      },
+      {
+        "id": "reacquire",
+        "type": "target_reacquire",
+        "target": "primary_target",
+        "start": 4.3,
+        "duration": 1.3,
+        "intensity": 1.0,
+        "overlap": true
+      },
+      {
+        "id": "converge",
+        "type": "tracker_converge",
+        "target": "tracker_field",
+        "start": 4.8,
+        "duration": 2.2,
+        "intensity": 0.9,
+        "overlap": true
+      },
+      {
+        "id": "lock",
+        "type": "target_lock",
+        "target": "primary_target",
+        "start": 6.8,
+        "duration": 1.2,
+        "intensity": 1.0,
+        "overlap": true
+      }
+    ]
+  }
+}

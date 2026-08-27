@@ -1,0 +1,91 @@
+{
+  "beats": [
+    {
+      "end": 2.3,
+      "first_frame": 0,
+      "id": "circuits",
+      "last_frame": 68,
+      "start": 0.0,
+      "status": "PASS",
+      "type": "intro"
+    },
+    {
+      "end": 4.4,
+      "first_frame": 69,
+      "id": "formation",
+      "last_frame": 131,
+      "start": 2.3,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 5.6,
+      "first_frame": 132,
+      "id": "opening",
+      "last_frame": 167,
+      "start": 4.4,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 9.933,
+      "first_frame": 168,
+      "id": "page_1",
+      "last_frame": 297,
+      "start": 5.6,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 14.266,
+      "first_frame": 298,
+      "id": "page_2",
+      "last_frame": 427,
+      "start": 9.933,
+      "status": "PASS",
+      "type": "emphasis"
+    },
+    {
+      "end": 18.599,
+      "first_frame": 428,
+      "id": "page_3",
+      "last_frame": 557,
+      "start": 14.266,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 19.999,
+      "first_frame": 558,
+      "id": "result_hold",
+      "last_frame": 599,
+      "start": 18.599,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 21.999,
+      "first_frame": 600,
+      "id": "dissolve",
+      "last_frame": 659,
+      "start": 19.999,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 26.0,
+      "first_frame": 660,
+      "id": "cta",
+      "last_frame": 779,
+      "start": 21.999,
+      "status": "PASS",
+      "type": "outro"
+    }
+  ],
+  "duration": 26.0,
+  "fixture": "mf011-03-zeph-evolving-too-fast",
+  "mode": "beats",
+  "result": "PASS",
+  "slice": "MF-004",
+  "total_frames": 780
+}

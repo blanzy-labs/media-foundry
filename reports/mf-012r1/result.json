@@ -1,0 +1,36 @@
+{
+  "slice": "MF-012R1",
+  "type": "technical_acceptance",
+  "checks": {
+    "two_sources_preserved": "PASS",
+    "two_refined_variants": "PASS",
+    "text_preserved": "PASS",
+    "audio_packet_identity": "PASS",
+    "cue_identity": "PASS",
+    "runtime_and_frames": "PASS",
+    "safe_zones": "PASS",
+    "motion_budgets": "PASS",
+    "determinism": "PASS",
+    "legacy_defaults": "PASS",
+    "failure_tests": "PASS",
+    "renderer_integrity": "PASS",
+    "not_published": "PASS"
+  },
+  "source_jobs": [
+    "02-leo-living-data-bridge",
+    "06-the-kill-switch"
+  ],
+  "refined_count": 2,
+  "failure_tests": "PASS",
+  "human_review": "PENDING_HUMAN",
+  "approved_micro_variations": [],
+  "rejected_noisy_behaviors": [
+    "crossing_tracer_lines",
+    "central_web_geometry",
+    "screen_wide_flashes",
+    "motion_over_text"
+  ],
+  "five_video_test": "HOLD_FOR_HUMAN_REVIEW",
+  "published": 0,
+  "result": "TECHNICAL_PASS"
+}

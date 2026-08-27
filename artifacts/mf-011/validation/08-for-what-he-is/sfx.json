@@ -1,0 +1,8 @@
+{
+  "slice": "MF-011",
+  "policy": "disabled",
+  "event_count": 0,
+  "ambient_machine_audio": false,
+  "generated_audio": false,
+  "result": "PASS"
+}

@@ -1,0 +1,91 @@
+{
+  "beats": [
+    {
+      "end": 2.3,
+      "first_frame": 0,
+      "id": "circuits",
+      "last_frame": 68,
+      "start": 0.0,
+      "status": "PASS",
+      "type": "intro"
+    },
+    {
+      "end": 4.4,
+      "first_frame": 69,
+      "id": "formation",
+      "last_frame": 131,
+      "start": 2.3,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 6.2,
+      "first_frame": 132,
+      "id": "opening",
+      "last_frame": 185,
+      "start": 4.4,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 10.2,
+      "first_frame": 186,
+      "id": "page_1",
+      "last_frame": 305,
+      "start": 6.2,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 14.2,
+      "first_frame": 306,
+      "id": "page_2",
+      "last_frame": 425,
+      "start": 10.2,
+      "status": "PASS",
+      "type": "emphasis"
+    },
+    {
+      "end": 18.2,
+      "first_frame": 426,
+      "id": "page_3",
+      "last_frame": 545,
+      "start": 14.2,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 20.2,
+      "first_frame": 546,
+      "id": "result_hold",
+      "last_frame": 605,
+      "start": 18.2,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 22.2,
+      "first_frame": 606,
+      "id": "dissolve",
+      "last_frame": 665,
+      "start": 20.2,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 28.0,
+      "first_frame": 666,
+      "id": "cta",
+      "last_frame": 839,
+      "start": 22.2,
+      "status": "PASS",
+      "type": "outro"
+    }
+  ],
+  "duration": 28.0,
+  "fixture": "mf011-02-leo-living-data-bridge",
+  "mode": "beats",
+  "result": "PASS",
+  "slice": "MF-004",
+  "total_frames": 840
+}

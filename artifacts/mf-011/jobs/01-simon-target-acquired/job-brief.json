@@ -1,0 +1,68 @@
+{
+  "id": "01-simon-target-acquired",
+  "title": "Simon: Target Acquired",
+  "purpose": "Strong pursuit hook showing Simon is already being tracked.",
+  "story_fact_ids": [
+    "simon_framed_and_hunted"
+  ],
+  "distinguishing_features": [
+    "temporary signal loss",
+    "reacquisition",
+    "final target lock",
+    "tight pursuit camera"
+  ],
+  "fixture": "content/fixtures/mf011/01-simon-target-acquired.json",
+  "phrases": [
+    "TARGET TRACE DETECTED",
+    "SIGNAL LOST / REACQUIRING",
+    "TARGET ACQUIRED: SIMON"
+  ],
+  "creative": {
+    "mechanism": "tracking",
+    "events": [
+      "target_search",
+      "target_reacquire",
+      "target_lock"
+    ],
+    "timing": {
+      "intro_seconds": 5.2,
+      "investigation_seconds": 12.4,
+      "result_hold_seconds": 1.4,
+      "cta_seconds": 8.0
+    },
+    "palette_profile": "pursuit",
+    "camera_profile": "tight_pursuit",
+    "node_profile": "urgent",
+    "projection_profile": "warning_trace",
+    "cta_profile": "warning",
+    "audio_cue": "pursuit"
+  },
+  "music": {
+    "query": {
+      "mood": [
+        "pursuit",
+        "tension",
+        "escalation"
+      ],
+      "use_case": [
+        "tracking"
+      ]
+    },
+    "track_id": "concrete_and_chain",
+    "region_id": "pursuit_a",
+    "actual_start": 21.0,
+    "actual_end": 48.0,
+    "video_duration": 27.0,
+    "fade_in": 0.6,
+    "fade_out": 1.6,
+    "gain_db": -5.0,
+    "ducking": {
+      "narration_duck_db": -8.0,
+      "attack_ms": 90,
+      "release_ms": 240
+    },
+    "selection_reason": "Sparse entry builds through reacquisition and lands the final lock cleanly."
+  },
+  "narration": null,
+  "renderer_changes_required": false
+}

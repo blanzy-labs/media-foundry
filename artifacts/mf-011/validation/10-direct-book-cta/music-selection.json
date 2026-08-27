@@ -1,0 +1,16 @@
+{
+  "contract": "mf010_music_selection_v1",
+  "project": "unknown-process",
+  "track_id": "concrete_and_chain",
+  "qualified_id": "unknown-process:concrete_and_chain",
+  "track_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+  "region_id": "investigation_a",
+  "usable_start": 71.0,
+  "usable_end": 109.0,
+  "actual_start": 76.0,
+  "actual_end": 106.0,
+  "video_duration": 30.0,
+  "fade_in": 0.8,
+  "fade_out": 2.6,
+  "result": "PASS"
+}

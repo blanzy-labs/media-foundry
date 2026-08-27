@@ -1,0 +1,91 @@
+{
+  "job_id": "09-atmospheric-teaser",
+  "title": "Atmospheric Teaser",
+  "state": "READY_FOR_REVIEW",
+  "technical": "PASS",
+  "editorial": "PENDING_HUMAN",
+  "release": "PENDING_HUMAN",
+  "runtime_seconds": 30.0,
+  "frame_count": 900,
+  "mechanism": "classification_link",
+  "profiles": {
+    "palette_profile": "baseline",
+    "camera_profile": "wide_investigation",
+    "node_profile": "baseline",
+    "projection_profile": "baseline",
+    "cta_profile": "cool_signal"
+  },
+  "distinguishing_features": [
+    "minimal text",
+    "slow circuit wake",
+    "baseline nodes",
+    "ambient musical region without ambient SFX"
+  ],
+  "music": {
+    "query": {
+      "mood": [
+        "ambient",
+        "mystery",
+        "reflective"
+      ],
+      "use_case": [
+        "ambient_teaser"
+      ]
+    },
+    "track_id": "cold_concrete_anatomy",
+    "region_id": "ambient_a",
+    "actual_start": 145.0,
+    "actual_end": 175.0,
+    "video_duration": 30.0,
+    "fade_in": 2.0,
+    "fade_out": 3.0,
+    "gain_db": -6.5,
+    "ducking": {
+      "narration_duck_db": -8.0,
+      "attack_ms": 140,
+      "release_ms": 360
+    },
+    "selection_reason": "The sparse ambient region lets the chamber and unresolved record carry the teaser.",
+    "track_title": "Cold Concrete Anatomy",
+    "cue_tags": [
+      "ambient",
+      "mystery",
+      "reflective"
+    ],
+    "usable_start": 143.0,
+    "usable_end": 175.0,
+    "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf"
+  },
+  "audio_policy": {
+    "presentation": "music_only",
+    "sfx_count": 0,
+    "ambient_machine_audio": false,
+    "narration": "off"
+  },
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/09-atmospheric-teaser/final.mp4",
+    "bytes": 5537450,
+    "sha256": "3cbdf0a0db29796e4185f796180ae376fca63576ff5bceba7ba4070b31e6dff6"
+  },
+  "evidence": {
+    "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/09-atmospheric-teaser/contact-sheet.png",
+    "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/09-atmospheric-teaser/motion-evidence/sequence.png",
+    "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/09-atmospheric-teaser/representative-frames"
+  },
+  "metrics": {
+    "selection_ms": 60,
+    "creative-preflight_ms": 45,
+    "timeline-preflight_ms": 45,
+    "music_ms": 1138,
+    "silence_ms": 54,
+    "render_ms": 23828,
+    "mix_ms": 1828,
+    "encode_ms": 28013,
+    "media_validation_ms": 815,
+    "output_validation_ms": 59
+  },
+  "publish": false,
+  "result": "PASS",
+  "attempts": 1,
+  "attempt_errors": []
+}

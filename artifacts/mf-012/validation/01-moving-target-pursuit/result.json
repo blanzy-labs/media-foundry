@@ -1,0 +1,95 @@
+{
+  "demo_id": "01-moving-target-pursuit",
+  "state": "READY_FOR_REVIEW",
+  "runtime_seconds": 11.0,
+  "frame_count": 330,
+  "dominant_activity": "pursuit",
+  "supporting_activities": [],
+  "opening_choreography": "target_already_moving",
+  "camera_choreography": "lateral_track",
+  "spatial_behavior": [
+    "target crosses center",
+    "trackers enter from four scene quadrants",
+    "reacquisition occurs off-center"
+  ],
+  "text_behavior": [
+    "type_on",
+    "erase",
+    "rewrite",
+    "lock"
+  ],
+  "activity_sequence": [
+    {
+      "id": "acquire",
+      "type": "target_acquire",
+      "target": "primary_target",
+      "start": 0.5,
+      "duration": 1.0,
+      "intensity": 0.8,
+      "overlap": true
+    },
+    {
+      "id": "move",
+      "type": "target_move",
+      "target": "primary_target",
+      "start": 1.1,
+      "duration": 3.0,
+      "intensity": 1.0,
+      "overlap": true
+    },
+    {
+      "id": "escape",
+      "type": "target_escape",
+      "target": "primary_target",
+      "start": 3.4,
+      "duration": 1.0,
+      "intensity": 1.0,
+      "overlap": true
+    },
+    {
+      "id": "reacquire",
+      "type": "target_reacquire",
+      "target": "primary_target",
+      "start": 4.3,
+      "duration": 1.3,
+      "intensity": 1.0,
+      "overlap": true
+    },
+    {
+      "id": "converge",
+      "type": "tracker_converge",
+      "target": "tracker_field",
+      "start": 4.8,
+      "duration": 2.2,
+      "intensity": 0.9,
+      "overlap": true
+    },
+    {
+      "id": "lock",
+      "type": "target_lock",
+      "target": "primary_target",
+      "start": 6.8,
+      "duration": 1.2,
+      "intensity": 1.0,
+      "overlap": true
+    }
+  ],
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf012/activity-vocabulary-v1/run-001/01-moving-target-pursuit/demo.mp4",
+    "bytes": 3021490,
+    "sha256": "71376bc91f727d5f8732c5076f2f62d2247ba13701f7576929863c1f5e2984da"
+  },
+  "motion_evidence": "/home/blanzy/media-foundry-output/mf012/activity-vocabulary-v1/run-001/01-moving-target-pursuit/motion-evidence/sequence.png",
+  "representative_frames": "/home/blanzy/media-foundry-output/mf012/activity-vocabulary-v1/run-001/01-moving-target-pursuit/representative-frames",
+  "render_ms": 9429,
+  "render_ms_per_frame": 28.573,
+  "metrics": {
+    "config_validation_ms": 45,
+    "timeline_preflight_ms": 43,
+    "render_ms": 9429,
+    "encode_ms": 14625,
+    "media_validation_ms": 450,
+    "output_validation_ms": 42
+  },
+  "result": "PASS"
+}

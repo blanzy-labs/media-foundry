@@ -1,0 +1,70 @@
+{
+  "id": "04-the-syndicate",
+  "title": "The Syndicate",
+  "purpose": "Represent the Syndicate as a distributed hierarchy of hidden control paths.",
+  "story_fact_ids": [
+    "syndicate_global_elites_advanced_technology"
+  ],
+  "distinguishing_features": [
+    "distributed node hierarchy",
+    "multiplying control paths",
+    "wide threat scale",
+    "warning projection"
+  ],
+  "fixture": "content/fixtures/mf011/04-the-syndicate.json",
+  "phrases": [
+    "UNAUTHORIZED NETWORK",
+    "GLOBAL CONTROL PATHS",
+    "IDENTITY: THE SYNDICATE"
+  ],
+  "creative": {
+    "mechanism": "classification_link",
+    "events": [
+      "leo_resolve",
+      "zeph_resolve",
+      "bridge_attempt",
+      "bridge_stable"
+    ],
+    "timing": {
+      "intro_seconds": 6.4,
+      "investigation_seconds": 14.0,
+      "result_hold_seconds": 2.6,
+      "cta_seconds": 7.0
+    },
+    "palette_profile": "revelation",
+    "camera_profile": "wide_investigation",
+    "node_profile": "stable_then_overload",
+    "projection_profile": "warning_trace",
+    "cta_profile": "warning",
+    "audio_cue": "investigation"
+  },
+  "music": {
+    "query": {
+      "mood": [
+        "conspiracy",
+        "ominous",
+        "tension",
+        "mystery"
+      ],
+      "use_case": [
+        "classification"
+      ]
+    },
+    "track_id": "below_the_iron_floor",
+    "region_id": "investigation_a",
+    "actual_start": 96.0,
+    "actual_end": 126.0,
+    "video_duration": 30.0,
+    "fade_in": 1.0,
+    "fade_out": 2.2,
+    "gain_db": -5.0,
+    "ducking": {
+      "narration_duck_db": -8.0,
+      "attack_ms": 110,
+      "release_ms": 280
+    },
+    "selection_reason": "A steady paranoid section gives the expanding hierarchy weight and scale."
+  },
+  "narration": null,
+  "renderer_changes_required": false
+}

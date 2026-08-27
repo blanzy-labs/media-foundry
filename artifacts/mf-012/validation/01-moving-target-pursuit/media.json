@@ -1,0 +1,56 @@
+{
+  "slice": "MF-012",
+  "render": "PASS",
+  "validation": {
+    "file": {
+      "status": "PASS",
+      "detail": "/home/blanzy/media-foundry-output/mf012/activity-vocabulary-v1/run-001/01-moving-target-pursuit/demo.mp4"
+    },
+    "container": {
+      "status": "PASS",
+      "detail": "mov,mp4,m4a,3gp,3g2,mj2"
+    },
+    "video_stream": {
+      "status": "PASS",
+      "detail": "h264"
+    },
+    "audio_stream": {
+      "status": "PASS",
+      "detail": "aac"
+    },
+    "resolution": {
+      "status": "PASS",
+      "detail": "1080x1920"
+    },
+    "orientation": {
+      "status": "PASS",
+      "detail": "vertical"
+    },
+    "duration": {
+      "status": "PASS",
+      "detail": "11.000 seconds"
+    },
+    "frame_rate": {
+      "status": "PASS",
+      "detail": "30.000 fps"
+    },
+    "video_codec": {
+      "status": "PASS",
+      "detail": "h264"
+    },
+    "audio_codec": {
+      "status": "PASS",
+      "detail": "aac"
+    },
+    "decode": {
+      "status": "PASS",
+      "detail": "full decode succeeded"
+    }
+  },
+  "result": "PASS",
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf012/activity-vocabulary-v1/run-001/01-moving-target-pursuit/demo.mp4",
+    "bytes": 3021490,
+    "sha256": "71376bc91f727d5f8732c5076f2f62d2247ba13701f7576929863c1f5e2984da"
+  }
+}

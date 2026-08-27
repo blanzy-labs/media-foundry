@@ -1,0 +1,53 @@
+{
+  "slice": "MF-011",
+  "type": "job_output_validation",
+  "job_id": "01-simon-target-acquired",
+  "mechanism": "tracking",
+  "mechanism_exclusivity": {
+    "biometric_scan": "NOT_RUN",
+    "classification_link": "NOT_RUN",
+    "tracking": "PASS"
+  },
+  "profiles": {
+    "palette_profile": "pursuit",
+    "camera_profile": "tight_pursuit",
+    "node_profile": "urgent",
+    "projection_profile": "warning_trace",
+    "cta_profile": "warning"
+  },
+  "music_selection": {
+    "contract": "mf010_music_selection_v1",
+    "project": "unknown-process",
+    "track_id": "concrete_and_chain",
+    "qualified_id": "unknown-process:concrete_and_chain",
+    "track_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+    "region_id": "pursuit_a",
+    "usable_start": 19.0,
+    "usable_end": 59.0,
+    "actual_start": 21.0,
+    "actual_end": 48.0,
+    "video_duration": 27.0,
+    "fade_in": 0.6,
+    "fade_out": 1.6,
+    "result": "PASS"
+  },
+  "checks": {
+    "mechanism_loaded": "PASS",
+    "mechanism_exclusivity": "PASS",
+    "unique_events": "PASS",
+    "profiles_loaded": "PASS",
+    "timing_loaded": "PASS",
+    "campaign_identity": "PASS",
+    "timeline": "PASS",
+    "music_selection": "PASS",
+    "music_source": "PASS",
+    "music_offsets": "PASS",
+    "music_mix": "PASS",
+    "sfx_disabled": "PASS",
+    "ambient_disabled": "PASS",
+    "narration_off": "PASS",
+    "encoded_media": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

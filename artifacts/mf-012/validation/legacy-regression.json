@@ -1,0 +1,47 @@
+{
+  "slice": "MF-012",
+  "type": "legacy_pixel_regression",
+  "cases": [
+    {
+      "slice": "MF-011",
+      "fixture": "content/fixtures/mf011/01-simon-target-acquired.json",
+      "frame": 461,
+      "expected": "artifacts/mf-011/representative-frames/01-simon-target-acquired/phase-3.png",
+      "expected_sha256": "bb8d0d615befab967914f8e7bd531dd4e07fc68fe880988493226edeabd81abf",
+      "actual_sha256": "bb8d0d615befab967914f8e7bd531dd4e07fc68fe880988493226edeabd81abf",
+      "render_ms": 22010,
+      "frame_count": 810,
+      "layout_result": "PASS",
+      "timeline_result": "PASS",
+      "result": "PASS"
+    },
+    {
+      "slice": "MF-008B-R1",
+      "fixture": "content/fixtures/mf008b-r1/leo-zeph-investigation.json",
+      "frame": 481,
+      "expected": "artifacts/mf-008b-r1/representative-frames/leo-zeph-investigation/phase-3.png",
+      "expected_sha256": "565c3ebab7f7a936361ad4d9090095ea41069e4890cc1b62d50276ad92b90d8f",
+      "actual_sha256": "565c3ebab7f7a936361ad4d9090095ea41069e4890cc1b62d50276ad92b90d8f",
+      "render_ms": 22683,
+      "frame_count": 840,
+      "layout_result": "PASS",
+      "timeline_result": "PASS",
+      "result": "PASS"
+    },
+    {
+      "slice": "MF-006R9",
+      "fixture": "content/fixtures/mf006r9-unknown-process.json",
+      "frame": 349,
+      "expected": "artifacts/mf-006r9/motion-evidence/08-000349.png",
+      "expected_sha256": "3d4a5e0b40aa721a7fc08aadae28d231b0a6bd658425189251ad2dfe435efa8e",
+      "actual_sha256": "3d4a5e0b40aa721a7fc08aadae28d231b0a6bd658425189251ad2dfe435efa8e",
+      "render_ms": 22390,
+      "frame_count": 840,
+      "layout_result": "PASS",
+      "timeline_result": "PASS",
+      "result": "PASS"
+    }
+  ],
+  "errors": [],
+  "result": "PASS"
+}

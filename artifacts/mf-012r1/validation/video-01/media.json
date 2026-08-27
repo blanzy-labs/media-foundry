@@ -1,0 +1,56 @@
+{
+  "slice": "MF-012R1",
+  "render": "PASS",
+  "validation": {
+    "file": {
+      "status": "PASS",
+      "detail": "/home/blanzy/media-foundry-output/mf012r1/guardrailed-micro-variation/run-001/video-01/refined/video-micro-variation.mp4"
+    },
+    "container": {
+      "status": "PASS",
+      "detail": "mov,mp4,m4a,3gp,3g2,mj2"
+    },
+    "video_stream": {
+      "status": "PASS",
+      "detail": "h264"
+    },
+    "audio_stream": {
+      "status": "PASS",
+      "detail": "aac"
+    },
+    "resolution": {
+      "status": "PASS",
+      "detail": "1080x1920"
+    },
+    "orientation": {
+      "status": "PASS",
+      "detail": "vertical"
+    },
+    "duration": {
+      "status": "PASS",
+      "detail": "28.000 seconds"
+    },
+    "frame_rate": {
+      "status": "PASS",
+      "detail": "30.000 fps"
+    },
+    "video_codec": {
+      "status": "PASS",
+      "detail": "h264"
+    },
+    "audio_codec": {
+      "status": "PASS",
+      "detail": "aac"
+    },
+    "decode": {
+      "status": "PASS",
+      "detail": "full decode succeeded"
+    }
+  },
+  "result": "PASS",
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf012r1/guardrailed-micro-variation/run-001/video-01/refined/video-micro-variation.mp4",
+    "bytes": 5217037,
+    "sha256": "8439ed7fe925ae5f25cfd6eba850fa56d1aa858b12e76e9a8bd9fb897bfb31a5"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "job_id": "04-the-syndicate",
+  "title": "The Syndicate",
+  "state": "READY_FOR_REVIEW",
+  "technical": "PASS",
+  "editorial": "PENDING_HUMAN",
+  "release": "PENDING_HUMAN",
+  "runtime_seconds": 30.0,
+  "frame_count": 900,
+  "mechanism": "classification_link",
+  "profiles": {
+    "palette_profile": "revelation",
+    "camera_profile": "wide_investigation",
+    "node_profile": "stable_then_overload",
+    "projection_profile": "warning_trace",
+    "cta_profile": "warning"
+  },
+  "distinguishing_features": [
+    "distributed node hierarchy",
+    "multiplying control paths",
+    "wide threat scale",
+    "warning projection"
+  ],
+  "music": {
+    "query": {
+      "mood": [
+        "conspiracy",
+        "ominous",
+        "tension",
+        "mystery"
+      ],
+      "use_case": [
+        "classification"
+      ]
+    },
+    "track_id": "below_the_iron_floor",
+    "region_id": "investigation_a",
+    "actual_start": 96.0,
+    "actual_end": 126.0,
+    "video_duration": 30.0,
+    "fade_in": 1.0,
+    "fade_out": 2.2,
+    "gain_db": -5.0,
+    "ducking": {
+      "narration_duck_db": -8.0,
+      "attack_ms": 110,
+      "release_ms": 280
+    },
+    "selection_reason": "A steady paranoid section gives the expanding hierarchy weight and scale.",
+    "track_title": "Below the Iron Floor",
+    "cue_tags": [
+      "investigation",
+      "mystery",
+      "paranoia"
+    ],
+    "usable_start": 93.0,
+    "usable_end": 131.0,
+    "source_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568"
+  },
+  "audio_policy": {
+    "presentation": "music_only",
+    "sfx_count": 0,
+    "ambient_machine_audio": false,
+    "narration": "off"
+  },
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/04-the-syndicate/final.mp4",
+    "bytes": 5902549,
+    "sha256": "ecac7db3840496c53c8efe6f74e0203d135839daac7c5d9217cb03856382d6ee"
+  },
+  "evidence": {
+    "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/04-the-syndicate/contact-sheet.png",
+    "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/04-the-syndicate/motion-evidence/sequence.png",
+    "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/04-the-syndicate/representative-frames"
+  },
+  "metrics": {
+    "selection_ms": 58,
+    "creative-preflight_ms": 43,
+    "timeline-preflight_ms": 45,
+    "music_ms": 1102,
+    "silence_ms": 52,
+    "render_ms": 24037,
+    "mix_ms": 1789,
+    "encode_ms": 28441,
+    "media_validation_ms": 813,
+    "output_validation_ms": 57
+  },
+  "publish": false,
+  "result": "PASS",
+  "attempts": 1,
+  "attempt_errors": []
+}

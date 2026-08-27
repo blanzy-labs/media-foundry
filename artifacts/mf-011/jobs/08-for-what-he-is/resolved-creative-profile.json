@@ -1,0 +1,20 @@
+{
+  "mechanism": "tracking",
+  "events": [
+    "target_search",
+    "target_reacquire",
+    "target_lock"
+  ],
+  "timing": {
+    "intro_seconds": 5.0,
+    "investigation_seconds": 13.0,
+    "result_hold_seconds": 1.0,
+    "cta_seconds": 7.0
+  },
+  "palette_profile": "pursuit",
+  "camera_profile": "tight_pursuit",
+  "node_profile": "stable_then_overload",
+  "projection_profile": "biometric",
+  "cta_profile": "warning",
+  "audio_cue": "pursuit"
+}

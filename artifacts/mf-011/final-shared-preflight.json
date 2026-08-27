@@ -1,0 +1,575 @@
+{
+  "slice": "MF-011",
+  "type": "shared_preflight",
+  "campaign_id": "unknown-process-mf-011-v1",
+  "manifest_path": "/home/blanzy/projects/media-foundry/config/campaigns/unknown-process-mf-011-v1.json",
+  "manifest_sha256": "b5797155ebd3ee1e558bd7cf2ddbb7b00420f75ea93c8b6e225dfb7e97a9d011",
+  "grammar_id": "unknown_process_recovered_record_v2",
+  "grammar_source_git_ref": "8f4cbae5e1125ae8b95f894f3f45dbab6a730a25",
+  "grammar_sha256": "a5020243b8687681a25ff9bd8e5d99b7aa2a523c489bec12bc0e19f720c11314",
+  "baseline_git_ref": "c637c956629ac564aa3f5c9927b5cae4b41fe3e7",
+  "renderer_source_hash": "80fe5c5824ea90fb67c2995f37233b714fa9acdbf74b209f691c83a81a6a89f9",
+  "shared_style_sha256": "2aac4b81d41d3b78ecd7892d879078d0c67fd6a641904f4bd62ba641ec074d5d",
+  "catalog_sha256": "e738ed273be867eca34ea677f1b469a62b049947f3007822b7233b6219410f4b",
+  "approval_state_sha256": "2319f11667c0efaae49e48dccceeb2b86feeb112b12a12014fba692a24ff7f8f",
+  "approved_tracks": 4,
+  "approved_regions": 20,
+  "checks": {
+    "manifest_syntax": {
+      "status": "PASS",
+      "detail": "b5797155ebd3ee1e558bd7cf2ddbb7b00420f75ea93c8b6e225dfb7e97a9d011"
+    },
+    "baseline_git_ref": {
+      "status": "PASS",
+      "detail": {
+        "head": "c637c956629ac564aa3f5c9927b5cae4b41fe3e7",
+        "pinned": "c637c956629ac564aa3f5c9927b5cae4b41fe3e7"
+      }
+    },
+    "grammar_frozen": {
+      "status": "PASS",
+      "detail": "unknown_process_recovered_record_v2"
+    },
+    "pinned_grammar_files": {
+      "status": "PASS",
+      "detail": "15/15"
+    },
+    "renderer_changes_prohibited": {
+      "status": "PASS",
+      "detail": "config/fixture only"
+    },
+    "music_only_policy": {
+      "status": "PASS",
+      "detail": {
+        "music": "enabled",
+        "sfx": "disabled",
+        "ambient_machine_audio": "disabled",
+        "narration": "off",
+        "presentation": "music_only"
+      }
+    },
+    "catalog_refresh": {
+      "status": "PASS",
+      "detail": {
+        "operation": "refresh",
+        "catalog": "/home/blanzy/projects/media-foundry/config/music/catalog.json",
+        "catalog_changed": false,
+        "discovered": 4,
+        "new": [],
+        "changed": [],
+        "unchanged": [
+          "unknown-process:abandoned_intake",
+          "unknown-process:below_the_iron_floor",
+          "unknown-process:cold_concrete_anatomy",
+          "unknown-process:concrete_and_chain"
+        ],
+        "missing": [],
+        "restored": [],
+        "ignored": [
+          {
+            "path": "media/audio/music/clockwork-heist.mp3",
+            "reason": "LEGACY_ROOT_FILE_OUTSIDE_PROJECT_NAMESPACE"
+          },
+          {
+            "path": "media/audio/music/scrappy-ambient-loop.wav",
+            "reason": "LEGACY_ROOT_FILE_OUTSIDE_PROJECT_NAMESPACE"
+          },
+          {
+            "path": "media/audio/music/waiting-for-the-shift.mp3",
+            "reason": "LEGACY_ROOT_FILE_OUTSIDE_PROJECT_NAMESPACE"
+          }
+        ],
+        "errors": [],
+        "unreviewed": 0,
+        "approved": 4,
+        "review_required": 0,
+        "result": "PASS"
+      }
+    },
+    "catalog_validation": {
+      "status": "PASS",
+      "detail": {
+        "operation": "validate",
+        "catalog": "/home/blanzy/projects/media-foundry/config/music/catalog.json",
+        "tracks": 4,
+        "production_eligible": [
+          "unknown-process:abandoned_intake",
+          "unknown-process:below_the_iron_floor",
+          "unknown-process:cold_concrete_anatomy",
+          "unknown-process:concrete_and_chain"
+        ],
+        "errors": [],
+        "warnings": [],
+        "result": "PASS"
+      }
+    },
+    "catalog_frozen": {
+      "status": "PASS",
+      "detail": "e738ed273be867eca34ea677f1b469a62b049947f3007822b7233b6219410f4b"
+    },
+    "approved_library": {
+      "status": "PASS",
+      "detail": {
+        "tracks": 4,
+        "regions": 20
+      }
+    },
+    "ten_manifest_jobs": {
+      "status": "PASS",
+      "detail": [
+        "01-simon-target-acquired",
+        "02-leo-living-data-bridge",
+        "03-zeph-evolving-too-fast",
+        "04-the-syndicate",
+        "05-simon-biometric-anomaly",
+        "06-the-kill-switch",
+        "07-digital-empire",
+        "08-for-what-he-is",
+        "09-atmospheric-teaser",
+        "10-direct-book-cta"
+      ]
+    },
+    "manifest_is_workload": {
+      "status": "PASS",
+      "detail": [
+        "content/fixtures/mf011/01-simon-target-acquired.json",
+        "content/fixtures/mf011/02-leo-living-data-bridge.json",
+        "content/fixtures/mf011/03-zeph-evolving-too-fast.json",
+        "content/fixtures/mf011/04-the-syndicate.json",
+        "content/fixtures/mf011/05-simon-biometric-anomaly.json",
+        "content/fixtures/mf011/06-the-kill-switch.json",
+        "content/fixtures/mf011/07-digital-empire.json",
+        "content/fixtures/mf011/08-for-what-he-is.json",
+        "content/fixtures/mf011/09-atmospheric-teaser.json",
+        "content/fixtures/mf011/10-direct-book-cta.json"
+      ]
+    },
+    "required_tools": {
+      "status": "PASS",
+      "detail": "required tools present"
+    },
+    "archive_space": {
+      "status": "PASS",
+      "detail": 651766403072
+    },
+    "job_preflight": {
+      "status": "PASS",
+      "detail": [
+        {
+          "job_id": "01-simon-target-acquired",
+          "mechanism": "tracking",
+          "track_id": "concrete_and_chain",
+          "region_id": "pursuit_a",
+          "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+          "runtime_seconds": 27.0,
+          "eligible": true,
+          "bounds_valid": true,
+          "query_match": true,
+          "fixture_match": true,
+          "errors": [],
+          "result": "PASS"
+        },
+        {
+          "job_id": "02-leo-living-data-bridge",
+          "mechanism": "classification_link",
+          "track_id": "cold_concrete_anatomy",
+          "region_id": "investigation_a",
+          "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+          "runtime_seconds": 28.0,
+          "eligible": true,
+          "bounds_valid": true,
+          "query_match": true,
+          "fixture_match": true,
+          "errors": [],
+          "result": "PASS"
+        },
+        {
+          "job_id": "03-zeph-evolving-too-fast",
+          "mechanism": "classification_link",
+          "track_id": "abandoned_intake",
+          "region_id": "revelation_a",
+          "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+          "runtime_seconds": 26.0,
+          "eligible": true,
+          "bounds_valid": true,
+          "query_match": true,
+          "fixture_match": true,
+          "errors": [],
+          "result": "PASS"
+        },
+        {
+          "job_id": "04-the-syndicate",
+          "mechanism": "classification_link",
+          "track_id": "below_the_iron_floor",
+          "region_id": "investigation_a",
+          "source_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+          "runtime_seconds": 30.0,
+          "eligible": true,
+          "bounds_valid": true,
+          "query_match": true,
+          "fixture_match": true,
+          "errors": [],
+          "result": "PASS"
+        },
+        {
+          "job_id": "05-simon-biometric-anomaly",
+          "mechanism": "biometric_scan",
+          "track_id": "abandoned_intake",
+          "region_id": "investigation_a",
+          "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+          "runtime_seconds": 26.0,
+          "eligible": true,
+          "bounds_valid": true,
+          "query_match": true,
+          "fixture_match": true,
+          "errors": [],
+          "result": "PASS"
+        },
+        {
+          "job_id": "06-the-kill-switch",
+          "mechanism": "biometric_scan",
+          "track_id": "below_the_iron_floor",
+          "region_id": "revelation_a",
+          "source_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+          "runtime_seconds": 29.0,
+          "eligible": true,
+          "bounds_valid": true,
+          "query_match": true,
+          "fixture_match": true,
+          "errors": [],
+          "result": "PASS"
+        },
+        {
+          "job_id": "07-digital-empire",
+          "mechanism": "classification_link",
+          "track_id": "concrete_and_chain",
+          "region_id": "revelation_a",
+          "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+          "runtime_seconds": 30.0,
+          "eligible": true,
+          "bounds_valid": true,
+          "query_match": true,
+          "fixture_match": true,
+          "errors": [],
+          "result": "PASS"
+        },
+        {
+          "job_id": "08-for-what-he-is",
+          "mechanism": "tracking",
+          "track_id": "abandoned_intake",
+          "region_id": "pursuit_a",
+          "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+          "runtime_seconds": 26.0,
+          "eligible": true,
+          "bounds_valid": true,
+          "query_match": true,
+          "fixture_match": true,
+          "errors": [],
+          "result": "PASS"
+        },
+        {
+          "job_id": "09-atmospheric-teaser",
+          "mechanism": "classification_link",
+          "track_id": "cold_concrete_anatomy",
+          "region_id": "ambient_a",
+          "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+          "runtime_seconds": 30.0,
+          "eligible": true,
+          "bounds_valid": true,
+          "query_match": true,
+          "fixture_match": true,
+          "errors": [],
+          "result": "PASS"
+        },
+        {
+          "job_id": "10-direct-book-cta",
+          "mechanism": "biometric_scan",
+          "track_id": "concrete_and_chain",
+          "region_id": "investigation_a",
+          "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+          "runtime_seconds": 30.0,
+          "eligible": true,
+          "bounds_valid": true,
+          "query_match": true,
+          "fixture_match": true,
+          "errors": [],
+          "result": "PASS"
+        }
+      ]
+    },
+    "mechanism_breadth": {
+      "status": "PASS",
+      "detail": [
+        "tracking",
+        "classification_link",
+        "classification_link",
+        "classification_link",
+        "biometric_scan",
+        "biometric_scan",
+        "classification_link",
+        "tracking",
+        "classification_link",
+        "biometric_scan"
+      ]
+    },
+    "bounded_cosmetic_variety": {
+      "status": "PASS",
+      "detail": 10
+    },
+    "music_variety": {
+      "status": "PASS",
+      "detail": null
+    },
+    "runtime_variety": {
+      "status": "PASS",
+      "detail": [
+        26.0,
+        27.0,
+        28.0,
+        29.0,
+        30.0
+      ]
+    },
+    "no_publication": {
+      "status": "PASS",
+      "detail": "publish=false"
+    }
+  },
+  "pinned_files": [
+    {
+      "path": "config/visual-grammar.json",
+      "expected_sha256": "2aac4b81d41d3b78ecd7892d879078d0c67fd6a641904f4bd62ba641ec074d5d",
+      "actual_sha256": "2aac4b81d41d3b78ecd7892d879078d0c67fd6a641904f4bd62ba641ec074d5d",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/mf002.tscn",
+      "expected_sha256": "f94e4ce708e2b68da235f70b2ba4ec44282c3564c0959440865de24c6d71fda2",
+      "actual_sha256": "f94e4ce708e2b68da235f70b2ba4ec44282c3564c0959440865de24c6d71fda2",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/mf002.gd",
+      "expected_sha256": "296d69385011454ad2aa1f0c15d8bb9043879178bf9c47513b50cdf4f63a4d76",
+      "actual_sha256": "296d69385011454ad2aa1f0c15d8bb9043879178bf9c47513b50cdf4f63a4d76",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/beat_timeline.gd",
+      "expected_sha256": "34494dcd3f3b40e865f51f62aa5649546ba1cd6367ec5aaeabf13ffa69d48d04",
+      "actual_sha256": "34494dcd3f3b40e865f51f62aa5649546ba1cd6367ec5aaeabf13ffa69d48d04",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/lofi_book_stage.gd",
+      "expected_sha256": "0b2e1bf729c32c1cd6c52068def97cf71b04a266bef246093b0604a32f2dd950",
+      "actual_sha256": "0b2e1bf729c32c1cd6c52068def97cf71b04a266bef246093b0604a32f2dd950",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/projected_data_window_stage.gd",
+      "expected_sha256": "6adae54cb26a23b3f813b9e31f842ff97f7ffcb1ae63132e98d4d1d5b99862e7",
+      "actual_sha256": "6adae54cb26a23b3f813b9e31f842ff97f7ffcb1ae63132e98d4d1d5b99862e7",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/integrated_lower_right_stage.gd",
+      "expected_sha256": "fc12ec5dbdc19d42ded123ff351f9692ec4dbf505f79ea2c67a7f7f2eff8141d",
+      "actual_sha256": "fc12ec5dbdc19d42ded123ff351f9692ec4dbf505f79ea2c67a7f7f2eff8141d",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/indicator_pulse_stage.gd",
+      "expected_sha256": "505e5b30000998786800356804832125abb656291a66a68d1a6f8449ed594051",
+      "actual_sha256": "505e5b30000998786800356804832125abb656291a66a68d1a6f8449ed594051",
+      "status": "PASS"
+    },
+    {
+      "path": "scripts/preflight_mf004.py",
+      "expected_sha256": "019984f257dcc1f55b6af4f54f6dcb1e1e264e0fa67b964fa50b140b1e1041a1",
+      "actual_sha256": "019984f257dcc1f55b6af4f54f6dcb1e1e264e0fa67b964fa50b140b1e1041a1",
+      "status": "PASS"
+    },
+    {
+      "path": "scripts/generate_mf006_sfx.py",
+      "expected_sha256": "6e0d84de474f0713b4b20e4852d4c0d609766d6e4af8aac910dd0909467df172",
+      "actual_sha256": "6e0d84de474f0713b4b20e4852d4c0d609766d6e4af8aac910dd0909467df172",
+      "status": "PASS"
+    },
+    {
+      "path": "scripts/prepare_mf005r1_music.py",
+      "expected_sha256": "4314cc8875c0c3c0eee82e091fd72c47b974ee2b1d2e5c9aae054da714f4512b",
+      "actual_sha256": "4314cc8875c0c3c0eee82e091fd72c47b974ee2b1d2e5c9aae054da714f4512b",
+      "status": "PASS"
+    },
+    {
+      "path": "scripts/mix_mf005_audio.py",
+      "expected_sha256": "b75fe5a7418a262ec0b8aa2087498796f7c365795f7dd9c2a6c8a8951cfd0536",
+      "actual_sha256": "b75fe5a7418a262ec0b8aa2087498796f7c365795f7dd9c2a6c8a8951cfd0536",
+      "status": "PASS"
+    },
+    {
+      "path": "scripts/validate_media.py",
+      "expected_sha256": "4993bebea9d71ceb673d7a208312282182daf154261708b080901fc13c83338e",
+      "actual_sha256": "4993bebea9d71ceb673d7a208312282182daf154261708b080901fc13c83338e",
+      "status": "PASS"
+    },
+    {
+      "path": "scripts/validate_mf008c_creative.py",
+      "expected_sha256": "18744f8cfdfb84aaec8df2eb2db2191cfa54582e60b1d7f97f76d948b7c1969b",
+      "actual_sha256": "18744f8cfdfb84aaec8df2eb2db2191cfa54582e60b1d7f97f76d948b7c1969b",
+      "status": "PASS"
+    },
+    {
+      "path": "schemas/mf008c-creative-control.schema.json",
+      "expected_sha256": "f9e99af7ece2cf9438a773479cab0976bd04648ccc5d90e4e5da0ed3a24a1784",
+      "actual_sha256": "f9e99af7ece2cf9438a773479cab0976bd04648ccc5d90e4e5da0ed3a24a1784",
+      "status": "PASS"
+    }
+  ],
+  "jobs": [
+    {
+      "job_id": "01-simon-target-acquired",
+      "mechanism": "tracking",
+      "track_id": "concrete_and_chain",
+      "region_id": "pursuit_a",
+      "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+      "runtime_seconds": 27.0,
+      "eligible": true,
+      "bounds_valid": true,
+      "query_match": true,
+      "fixture_match": true,
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "02-leo-living-data-bridge",
+      "mechanism": "classification_link",
+      "track_id": "cold_concrete_anatomy",
+      "region_id": "investigation_a",
+      "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+      "runtime_seconds": 28.0,
+      "eligible": true,
+      "bounds_valid": true,
+      "query_match": true,
+      "fixture_match": true,
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "03-zeph-evolving-too-fast",
+      "mechanism": "classification_link",
+      "track_id": "abandoned_intake",
+      "region_id": "revelation_a",
+      "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+      "runtime_seconds": 26.0,
+      "eligible": true,
+      "bounds_valid": true,
+      "query_match": true,
+      "fixture_match": true,
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "04-the-syndicate",
+      "mechanism": "classification_link",
+      "track_id": "below_the_iron_floor",
+      "region_id": "investigation_a",
+      "source_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+      "runtime_seconds": 30.0,
+      "eligible": true,
+      "bounds_valid": true,
+      "query_match": true,
+      "fixture_match": true,
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "05-simon-biometric-anomaly",
+      "mechanism": "biometric_scan",
+      "track_id": "abandoned_intake",
+      "region_id": "investigation_a",
+      "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+      "runtime_seconds": 26.0,
+      "eligible": true,
+      "bounds_valid": true,
+      "query_match": true,
+      "fixture_match": true,
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "06-the-kill-switch",
+      "mechanism": "biometric_scan",
+      "track_id": "below_the_iron_floor",
+      "region_id": "revelation_a",
+      "source_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+      "runtime_seconds": 29.0,
+      "eligible": true,
+      "bounds_valid": true,
+      "query_match": true,
+      "fixture_match": true,
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "07-digital-empire",
+      "mechanism": "classification_link",
+      "track_id": "concrete_and_chain",
+      "region_id": "revelation_a",
+      "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+      "runtime_seconds": 30.0,
+      "eligible": true,
+      "bounds_valid": true,
+      "query_match": true,
+      "fixture_match": true,
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "08-for-what-he-is",
+      "mechanism": "tracking",
+      "track_id": "abandoned_intake",
+      "region_id": "pursuit_a",
+      "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+      "runtime_seconds": 26.0,
+      "eligible": true,
+      "bounds_valid": true,
+      "query_match": true,
+      "fixture_match": true,
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "09-atmospheric-teaser",
+      "mechanism": "classification_link",
+      "track_id": "cold_concrete_anatomy",
+      "region_id": "ambient_a",
+      "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+      "runtime_seconds": 30.0,
+      "eligible": true,
+      "bounds_valid": true,
+      "query_match": true,
+      "fixture_match": true,
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "10-direct-book-cta",
+      "mechanism": "biometric_scan",
+      "track_id": "concrete_and_chain",
+      "region_id": "investigation_a",
+      "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+      "runtime_seconds": 30.0,
+      "eligible": true,
+      "bounds_valid": true,
+      "query_match": true,
+      "fixture_match": true,
+      "errors": [],
+      "result": "PASS"
+    }
+  ],
+  "errors": [],
+  "state": "READY",
+  "result": "PASS"
+}

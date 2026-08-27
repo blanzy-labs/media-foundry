@@ -1,0 +1,966 @@
+{
+  "slice": "MF-011",
+  "campaign_id": "unknown-process-mf-011-v1",
+  "run_id": "campaign-run-002",
+  "trigger_kind": "scheduled",
+  "execution_authority": "OpenClaw orchestration with Codex bounded execution",
+  "start_state": "PENDING",
+  "state": "COMPLETE",
+  "started_at": "2026-08-25T18:07:18+00:00",
+  "ended_at": "2026-08-25T18:16:23+00:00",
+  "elapsed_ms": 544836,
+  "jobs_attempted": 10,
+  "jobs": [
+    {
+      "job_id": "01-simon-target-acquired",
+      "title": "Simon: Target Acquired",
+      "state": "READY_FOR_REVIEW",
+      "technical": "PASS",
+      "editorial": "PENDING_HUMAN",
+      "release": "PENDING_HUMAN",
+      "runtime_seconds": 27.0,
+      "frame_count": 810,
+      "mechanism": "tracking",
+      "profiles": {
+        "palette_profile": "pursuit",
+        "camera_profile": "tight_pursuit",
+        "node_profile": "urgent",
+        "projection_profile": "warning_trace",
+        "cta_profile": "warning"
+      },
+      "distinguishing_features": [
+        "temporary signal loss",
+        "reacquisition",
+        "final target lock",
+        "tight pursuit camera"
+      ],
+      "music": {
+        "query": {
+          "mood": [
+            "pursuit",
+            "tension",
+            "escalation"
+          ],
+          "use_case": [
+            "tracking"
+          ]
+        },
+        "track_id": "concrete_and_chain",
+        "region_id": "pursuit_a",
+        "actual_start": 21.0,
+        "actual_end": 48.0,
+        "video_duration": 27.0,
+        "fade_in": 0.6,
+        "fade_out": 1.6,
+        "gain_db": -5.0,
+        "ducking": {
+          "narration_duck_db": -8.0,
+          "attack_ms": 90,
+          "release_ms": 240
+        },
+        "selection_reason": "Sparse entry builds through reacquisition and lands the final lock cleanly.",
+        "track_title": "Concrete and Chain",
+        "cue_tags": [
+          "pursuit",
+          "tension",
+          "escalation"
+        ],
+        "usable_start": 19.0,
+        "usable_end": 59.0,
+        "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91"
+      },
+      "audio_policy": {
+        "presentation": "music_only",
+        "sfx_count": 0,
+        "ambient_machine_audio": false,
+        "narration": "off"
+      },
+      "artifact": {
+        "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/01-simon-target-acquired/final.mp4",
+        "bytes": 5881999,
+        "sha256": "8be5218ce0581973bb0cfea0a10ff080a898321461bcec12a33be125294e071f"
+      },
+      "evidence": {
+        "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/01-simon-target-acquired/contact-sheet.png",
+        "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/01-simon-target-acquired/motion-evidence/sequence.png",
+        "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/01-simon-target-acquired/representative-frames"
+      },
+      "metrics": {
+        "selection_ms": 60,
+        "creative-preflight_ms": 45,
+        "timeline-preflight_ms": 43,
+        "music_ms": 1075,
+        "silence_ms": 51,
+        "render_ms": 22096,
+        "mix_ms": 1658,
+        "encode_ms": 28757,
+        "media_validation_ms": 803,
+        "output_validation_ms": 55
+      },
+      "publish": false,
+      "result": "PASS",
+      "attempts": 1,
+      "attempt_errors": []
+    },
+    {
+      "job_id": "02-leo-living-data-bridge",
+      "title": "Leo: Living Data Bridge",
+      "state": "READY_FOR_REVIEW",
+      "technical": "PASS",
+      "editorial": "PENDING_HUMAN",
+      "release": "PENDING_HUMAN",
+      "runtime_seconds": 28.0,
+      "frame_count": 840,
+      "mechanism": "classification_link",
+      "profiles": {
+        "palette_profile": "mystery",
+        "camera_profile": "wide_investigation",
+        "node_profile": "analytical",
+        "projection_profile": "classification",
+        "cta_profile": "cool_signal"
+      },
+      "distinguishing_features": [
+        "identity classification",
+        "unstable boundary",
+        "bridge establishment",
+        "wide analytical frame"
+      ],
+      "music": {
+        "query": {
+          "mood": [
+            "mystery",
+            "investigation"
+          ],
+          "use_case": [
+            "classification"
+          ]
+        },
+        "track_id": "cold_concrete_anatomy",
+        "region_id": "investigation_a",
+        "actual_start": 73.0,
+        "actual_end": 101.0,
+        "video_duration": 28.0,
+        "fade_in": 1.2,
+        "fade_out": 2.0,
+        "gain_db": -5.5,
+        "ducking": {
+          "narration_duck_db": -8.0,
+          "attack_ms": 120,
+          "release_ms": 300
+        },
+        "selection_reason": "Even analytical motion supports classification uncertainty and the bridge reveal.",
+        "track_title": "Cold Concrete Anatomy",
+        "cue_tags": [
+          "investigation",
+          "mystery",
+          "paranoia"
+        ],
+        "usable_start": 71.0,
+        "usable_end": 109.0,
+        "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf"
+      },
+      "audio_policy": {
+        "presentation": "music_only",
+        "sfx_count": 0,
+        "ambient_machine_audio": false,
+        "narration": "off"
+      },
+      "artifact": {
+        "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/02-leo-living-data-bridge/final.mp4",
+        "bytes": 5202906,
+        "sha256": "f7803a01e1ecf1ec3ea05eabc620d7a0c2880503cf3a36a681d7ad5a6a5ff958"
+      },
+      "evidence": {
+        "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/02-leo-living-data-bridge/contact-sheet.png",
+        "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/02-leo-living-data-bridge/motion-evidence/sequence.png",
+        "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/02-leo-living-data-bridge/representative-frames"
+      },
+      "metrics": {
+        "selection_ms": 59,
+        "creative-preflight_ms": 52,
+        "timeline-preflight_ms": 46,
+        "music_ms": 1089,
+        "silence_ms": 51,
+        "render_ms": 22492,
+        "mix_ms": 1678,
+        "encode_ms": 26661,
+        "media_validation_ms": 761,
+        "output_validation_ms": 55
+      },
+      "publish": false,
+      "result": "PASS",
+      "attempts": 1,
+      "attempt_errors": []
+    },
+    {
+      "job_id": "03-zeph-evolving-too-fast",
+      "title": "Zeph: Evolving Too Fast",
+      "state": "READY_FOR_REVIEW",
+      "technical": "PASS",
+      "editorial": "PENDING_HUMAN",
+      "release": "PENDING_HUMAN",
+      "runtime_seconds": 26.0,
+      "frame_count": 780,
+      "mechanism": "classification_link",
+      "profiles": {
+        "palette_profile": "mystery",
+        "camera_profile": "calm_to_push",
+        "node_profile": "urgent",
+        "projection_profile": "classification",
+        "cta_profile": "cool_signal"
+      },
+      "distinguishing_features": [
+        "AI signature mutation",
+        "classification retries",
+        "cool unstable palette",
+        "irregular node emphasis"
+      ],
+      "music": {
+        "query": {
+          "mood": [
+            "mystery",
+            "ominous",
+            "escalation"
+          ],
+          "use_case": [
+            "title_reveal"
+          ]
+        },
+        "track_id": "abandoned_intake",
+        "region_id": "revelation_a",
+        "actual_start": 52.0,
+        "actual_end": 78.0,
+        "video_duration": 26.0,
+        "fade_in": 0.8,
+        "fade_out": 1.8,
+        "gain_db": -5.5,
+        "ducking": {
+          "narration_duck_db": -8.0,
+          "attack_ms": 100,
+          "release_ms": 260
+        },
+        "selection_reason": "The rising ominous passage reinforces repeated signature mutation without overpowering it.",
+        "track_title": "Abandoned Intake",
+        "cue_tags": [
+          "revelation",
+          "discovery",
+          "ominous"
+        ],
+        "usable_start": 49.0,
+        "usable_end": 93.0,
+        "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee"
+      },
+      "audio_policy": {
+        "presentation": "music_only",
+        "sfx_count": 0,
+        "ambient_machine_audio": false,
+        "narration": "off"
+      },
+      "artifact": {
+        "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/03-zeph-evolving-too-fast/final.mp4",
+        "bytes": 5114882,
+        "sha256": "4136731d7ba74dc8dc6f72260ad772c2ce12f2669863f9c067af3210ec6ef407"
+      },
+      "evidence": {
+        "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/03-zeph-evolving-too-fast/contact-sheet.png",
+        "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/03-zeph-evolving-too-fast/motion-evidence/sequence.png",
+        "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/03-zeph-evolving-too-fast/representative-frames"
+      },
+      "metrics": {
+        "selection_ms": 59,
+        "creative-preflight_ms": 48,
+        "timeline-preflight_ms": 46,
+        "music_ms": 969,
+        "silence_ms": 52,
+        "render_ms": 21295,
+        "mix_ms": 1578,
+        "encode_ms": 24998,
+        "media_validation_ms": 758,
+        "output_validation_ms": 55
+      },
+      "publish": false,
+      "result": "PASS",
+      "attempts": 1,
+      "attempt_errors": []
+    },
+    {
+      "job_id": "04-the-syndicate",
+      "title": "The Syndicate",
+      "state": "READY_FOR_REVIEW",
+      "technical": "PASS",
+      "editorial": "PENDING_HUMAN",
+      "release": "PENDING_HUMAN",
+      "runtime_seconds": 30.0,
+      "frame_count": 900,
+      "mechanism": "classification_link",
+      "profiles": {
+        "palette_profile": "revelation",
+        "camera_profile": "wide_investigation",
+        "node_profile": "stable_then_overload",
+        "projection_profile": "warning_trace",
+        "cta_profile": "warning"
+      },
+      "distinguishing_features": [
+        "distributed node hierarchy",
+        "multiplying control paths",
+        "wide threat scale",
+        "warning projection"
+      ],
+      "music": {
+        "query": {
+          "mood": [
+            "conspiracy",
+            "ominous",
+            "tension",
+            "mystery"
+          ],
+          "use_case": [
+            "classification"
+          ]
+        },
+        "track_id": "below_the_iron_floor",
+        "region_id": "investigation_a",
+        "actual_start": 96.0,
+        "actual_end": 126.0,
+        "video_duration": 30.0,
+        "fade_in": 1.0,
+        "fade_out": 2.2,
+        "gain_db": -5.0,
+        "ducking": {
+          "narration_duck_db": -8.0,
+          "attack_ms": 110,
+          "release_ms": 280
+        },
+        "selection_reason": "A steady paranoid section gives the expanding hierarchy weight and scale.",
+        "track_title": "Below the Iron Floor",
+        "cue_tags": [
+          "investigation",
+          "mystery",
+          "paranoia"
+        ],
+        "usable_start": 93.0,
+        "usable_end": 131.0,
+        "source_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568"
+      },
+      "audio_policy": {
+        "presentation": "music_only",
+        "sfx_count": 0,
+        "ambient_machine_audio": false,
+        "narration": "off"
+      },
+      "artifact": {
+        "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/04-the-syndicate/final.mp4",
+        "bytes": 5902549,
+        "sha256": "ecac7db3840496c53c8efe6f74e0203d135839daac7c5d9217cb03856382d6ee"
+      },
+      "evidence": {
+        "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/04-the-syndicate/contact-sheet.png",
+        "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/04-the-syndicate/motion-evidence/sequence.png",
+        "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/04-the-syndicate/representative-frames"
+      },
+      "metrics": {
+        "selection_ms": 58,
+        "creative-preflight_ms": 43,
+        "timeline-preflight_ms": 45,
+        "music_ms": 1102,
+        "silence_ms": 52,
+        "render_ms": 24037,
+        "mix_ms": 1789,
+        "encode_ms": 28441,
+        "media_validation_ms": 813,
+        "output_validation_ms": 57
+      },
+      "publish": false,
+      "result": "PASS",
+      "attempts": 1,
+      "attempt_errors": []
+    },
+    {
+      "job_id": "05-simon-biometric-anomaly",
+      "title": "Simon: Biometric Anomaly",
+      "state": "READY_FOR_REVIEW",
+      "technical": "PASS",
+      "editorial": "PENDING_HUMAN",
+      "release": "PENDING_HUMAN",
+      "runtime_seconds": 26.0,
+      "frame_count": 780,
+      "mechanism": "biometric_scan",
+      "profiles": {
+        "palette_profile": "mystery",
+        "camera_profile": "calm_to_push",
+        "node_profile": "analytical",
+        "projection_profile": "biometric",
+        "cta_profile": "cool_signal"
+      },
+      "distinguishing_features": [
+        "apparently normal record",
+        "deep scan",
+        "encrypted region",
+        "denied reveal"
+      ],
+      "music": {
+        "query": {
+          "mood": [
+            "investigation",
+            "mystery"
+          ],
+          "use_case": [
+            "classification"
+          ]
+        },
+        "track_id": "abandoned_intake",
+        "region_id": "investigation_a",
+        "actual_start": 128.0,
+        "actual_end": 154.0,
+        "video_duration": 26.0,
+        "fade_in": 1.0,
+        "fade_out": 1.8,
+        "gain_db": -6.0,
+        "ducking": {
+          "narration_duck_db": -8.0,
+          "attack_ms": 120,
+          "release_ms": 300
+        },
+        "selection_reason": "The lower-density investigation cue leaves room for a restrained anomaly setup.",
+        "track_title": "Abandoned Intake",
+        "cue_tags": [
+          "investigation",
+          "mystery",
+          "paranoia"
+        ],
+        "usable_start": 123.0,
+        "usable_end": 161.0,
+        "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee"
+      },
+      "audio_policy": {
+        "presentation": "music_only",
+        "sfx_count": 0,
+        "ambient_machine_audio": false,
+        "narration": "off"
+      },
+      "artifact": {
+        "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/05-simon-biometric-anomaly/final.mp4",
+        "bytes": 5036797,
+        "sha256": "28ad939e7d3b2fcb786720af80c72aa953ca66b54d6eab2849f2bd9932480eb8"
+      },
+      "evidence": {
+        "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/05-simon-biometric-anomaly/contact-sheet.png",
+        "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/05-simon-biometric-anomaly/motion-evidence/sequence.png",
+        "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/05-simon-biometric-anomaly/representative-frames"
+      },
+      "metrics": {
+        "selection_ms": 60,
+        "creative-preflight_ms": 46,
+        "timeline-preflight_ms": 50,
+        "music_ms": 1028,
+        "silence_ms": 55,
+        "render_ms": 21099,
+        "mix_ms": 1587,
+        "encode_ms": 25236,
+        "media_validation_ms": 767,
+        "output_validation_ms": 55
+      },
+      "publish": false,
+      "result": "PASS",
+      "attempts": 1,
+      "attempt_errors": []
+    },
+    {
+      "job_id": "06-the-kill-switch",
+      "title": "The Kill-Switch",
+      "state": "READY_FOR_REVIEW",
+      "technical": "PASS",
+      "editorial": "PENDING_HUMAN",
+      "release": "PENDING_HUMAN",
+      "runtime_seconds": 29.0,
+      "frame_count": 870,
+      "mechanism": "biometric_scan",
+      "profiles": {
+        "palette_profile": "revelation",
+        "camera_profile": "calm_to_push",
+        "node_profile": "stable_then_overload",
+        "projection_profile": "biometric",
+        "cta_profile": "revelation"
+      },
+      "distinguishing_features": [
+        "encrypted region opening",
+        "biometric match",
+        "system warning escalation",
+        "dread-weighted reveal"
+      ],
+      "music": {
+        "query": {
+          "mood": [
+            "revelation",
+            "ominous",
+            "escalation"
+          ],
+          "use_case": [
+            "biometric_reveal"
+          ]
+        },
+        "track_id": "below_the_iron_floor",
+        "region_id": "revelation_a",
+        "actual_start": 71.0,
+        "actual_end": 100.0,
+        "video_duration": 29.0,
+        "fade_in": 1.0,
+        "fade_out": 2.5,
+        "gain_db": -4.5,
+        "ducking": {
+          "narration_duck_db": -8.0,
+          "attack_ms": 110,
+          "release_ms": 280
+        },
+        "selection_reason": "The approved rising reveal passage supports the deeper scan and final dread.",
+        "track_title": "Below the Iron Floor",
+        "cue_tags": [
+          "revelation",
+          "discovery",
+          "ominous"
+        ],
+        "usable_start": 67.0,
+        "usable_end": 111.0,
+        "source_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568"
+      },
+      "audio_policy": {
+        "presentation": "music_only",
+        "sfx_count": 0,
+        "ambient_machine_audio": false,
+        "narration": "off"
+      },
+      "artifact": {
+        "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/06-the-kill-switch/final.mp4",
+        "bytes": 5601285,
+        "sha256": "d32001b8af27faecf01d478aa101ee3c858cdbb07cc5a680defa46d10f5d71d8"
+      },
+      "evidence": {
+        "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/06-the-kill-switch/contact-sheet.png",
+        "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/06-the-kill-switch/motion-evidence/sequence.png",
+        "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/06-the-kill-switch/representative-frames"
+      },
+      "metrics": {
+        "selection_ms": 57,
+        "creative-preflight_ms": 41,
+        "timeline-preflight_ms": 43,
+        "music_ms": 1045,
+        "silence_ms": 51,
+        "render_ms": 23626,
+        "mix_ms": 1692,
+        "encode_ms": 27445,
+        "media_validation_ms": 794,
+        "output_validation_ms": 58
+      },
+      "publish": false,
+      "result": "PASS",
+      "attempts": 1,
+      "attempt_errors": []
+    },
+    {
+      "job_id": "07-digital-empire",
+      "title": "Digital Empire",
+      "state": "READY_FOR_REVIEW",
+      "technical": "PASS",
+      "editorial": "PENDING_HUMAN",
+      "release": "PENDING_HUMAN",
+      "runtime_seconds": 30.0,
+      "frame_count": 900,
+      "mechanism": "classification_link",
+      "profiles": {
+        "palette_profile": "revelation",
+        "camera_profile": "wide_investigation",
+        "node_profile": "stable_then_overload",
+        "projection_profile": "classification",
+        "cta_profile": "revelation"
+      },
+      "distinguishing_features": [
+        "network expansion",
+        "control consolidation",
+        "single interruption point",
+        "maximum campaign scale"
+      ],
+      "music": {
+        "query": {
+          "mood": [
+            "ominous",
+            "escalation",
+            "revelation"
+          ],
+          "use_case": [
+            "title_reveal"
+          ]
+        },
+        "track_id": "concrete_and_chain",
+        "region_id": "revelation_a",
+        "actual_start": 127.0,
+        "actual_end": 157.0,
+        "video_duration": 30.0,
+        "fade_in": 1.2,
+        "fade_out": 2.8,
+        "gain_db": -5.0,
+        "ducking": {
+          "narration_duck_db": -8.0,
+          "attack_ms": 120,
+          "release_ms": 320
+        },
+        "selection_reason": "The long escalating region supports network growth and the single-point interruption reveal.",
+        "track_title": "Concrete and Chain",
+        "cue_tags": [
+          "revelation",
+          "discovery",
+          "ominous"
+        ],
+        "usable_start": 123.0,
+        "usable_end": 167.0,
+        "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91"
+      },
+      "audio_policy": {
+        "presentation": "music_only",
+        "sfx_count": 0,
+        "ambient_machine_audio": false,
+        "narration": "off"
+      },
+      "artifact": {
+        "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/07-digital-empire/final.mp4",
+        "bytes": 5756056,
+        "sha256": "1b1bb0166c8c62cf97f08f85406ba466092f392c0d7e4b580a7c92eb7d0a054f"
+      },
+      "evidence": {
+        "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/07-digital-empire/contact-sheet.png",
+        "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/07-digital-empire/motion-evidence/sequence.png",
+        "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/07-digital-empire/representative-frames"
+      },
+      "metrics": {
+        "selection_ms": 58,
+        "creative-preflight_ms": 43,
+        "timeline-preflight_ms": 44,
+        "music_ms": 1090,
+        "silence_ms": 53,
+        "render_ms": 23983,
+        "mix_ms": 1740,
+        "encode_ms": 28467,
+        "media_validation_ms": 817,
+        "output_validation_ms": 64
+      },
+      "publish": false,
+      "result": "PASS",
+      "attempts": 1,
+      "attempt_errors": []
+    },
+    {
+      "job_id": "08-for-what-he-is",
+      "title": "For What He Is",
+      "state": "READY_FOR_REVIEW",
+      "technical": "PASS",
+      "editorial": "PENDING_HUMAN",
+      "release": "PENDING_HUMAN",
+      "runtime_seconds": 26.0,
+      "frame_count": 780,
+      "mechanism": "tracking",
+      "profiles": {
+        "palette_profile": "pursuit",
+        "camera_profile": "tight_pursuit",
+        "node_profile": "stable_then_overload",
+        "projection_profile": "biometric",
+        "cta_profile": "warning"
+      },
+      "distinguishing_features": [
+        "rapid pursuit trace",
+        "misdirection",
+        "biometric implication",
+        "shortest runtime"
+      ],
+      "music": {
+        "query": {
+          "mood": [
+            "tension",
+            "mystery",
+            "escalation"
+          ],
+          "use_case": [
+            "tracking"
+          ]
+        },
+        "track_id": "abandoned_intake",
+        "region_id": "pursuit_a",
+        "actual_start": 114.0,
+        "actual_end": 140.0,
+        "video_duration": 26.0,
+        "fade_in": 0.4,
+        "fade_out": 1.4,
+        "gain_db": -5.0,
+        "ducking": {
+          "narration_duck_db": -8.0,
+          "attack_ms": 90,
+          "release_ms": 220
+        },
+        "selection_reason": "A compact rising pursuit subsection makes the misdirection land without padding.",
+        "track_title": "Abandoned Intake",
+        "cue_tags": [
+          "pursuit",
+          "tension",
+          "escalation"
+        ],
+        "usable_start": 111.0,
+        "usable_end": 151.0,
+        "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee"
+      },
+      "audio_policy": {
+        "presentation": "music_only",
+        "sfx_count": 0,
+        "ambient_machine_audio": false,
+        "narration": "off"
+      },
+      "artifact": {
+        "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/08-for-what-he-is/final.mp4",
+        "bytes": 5628572,
+        "sha256": "5f598551f472fa65e4a3b0dcacd39dbf121b9268ec9b045ac47a2d25f1aa2dea"
+      },
+      "evidence": {
+        "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/08-for-what-he-is/contact-sheet.png",
+        "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/08-for-what-he-is/motion-evidence/sequence.png",
+        "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/08-for-what-he-is/representative-frames"
+      },
+      "metrics": {
+        "selection_ms": 62,
+        "creative-preflight_ms": 45,
+        "timeline-preflight_ms": 45,
+        "music_ms": 1020,
+        "silence_ms": 52,
+        "render_ms": 21143,
+        "mix_ms": 1542,
+        "encode_ms": 27865,
+        "media_validation_ms": 764,
+        "output_validation_ms": 58
+      },
+      "publish": false,
+      "result": "PASS",
+      "attempts": 1,
+      "attempt_errors": []
+    },
+    {
+      "job_id": "09-atmospheric-teaser",
+      "title": "Atmospheric Teaser",
+      "state": "READY_FOR_REVIEW",
+      "technical": "PASS",
+      "editorial": "PENDING_HUMAN",
+      "release": "PENDING_HUMAN",
+      "runtime_seconds": 30.0,
+      "frame_count": 900,
+      "mechanism": "classification_link",
+      "profiles": {
+        "palette_profile": "baseline",
+        "camera_profile": "wide_investigation",
+        "node_profile": "baseline",
+        "projection_profile": "baseline",
+        "cta_profile": "cool_signal"
+      },
+      "distinguishing_features": [
+        "minimal text",
+        "slow circuit wake",
+        "baseline nodes",
+        "ambient musical region without ambient SFX"
+      ],
+      "music": {
+        "query": {
+          "mood": [
+            "ambient",
+            "mystery",
+            "reflective"
+          ],
+          "use_case": [
+            "ambient_teaser"
+          ]
+        },
+        "track_id": "cold_concrete_anatomy",
+        "region_id": "ambient_a",
+        "actual_start": 145.0,
+        "actual_end": 175.0,
+        "video_duration": 30.0,
+        "fade_in": 2.0,
+        "fade_out": 3.0,
+        "gain_db": -6.5,
+        "ducking": {
+          "narration_duck_db": -8.0,
+          "attack_ms": 140,
+          "release_ms": 360
+        },
+        "selection_reason": "The sparse ambient region lets the chamber and unresolved record carry the teaser.",
+        "track_title": "Cold Concrete Anatomy",
+        "cue_tags": [
+          "ambient",
+          "mystery",
+          "reflective"
+        ],
+        "usable_start": 143.0,
+        "usable_end": 175.0,
+        "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf"
+      },
+      "audio_policy": {
+        "presentation": "music_only",
+        "sfx_count": 0,
+        "ambient_machine_audio": false,
+        "narration": "off"
+      },
+      "artifact": {
+        "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/09-atmospheric-teaser/final.mp4",
+        "bytes": 5537450,
+        "sha256": "3cbdf0a0db29796e4185f796180ae376fca63576ff5bceba7ba4070b31e6dff6"
+      },
+      "evidence": {
+        "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/09-atmospheric-teaser/contact-sheet.png",
+        "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/09-atmospheric-teaser/motion-evidence/sequence.png",
+        "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/09-atmospheric-teaser/representative-frames"
+      },
+      "metrics": {
+        "selection_ms": 60,
+        "creative-preflight_ms": 45,
+        "timeline-preflight_ms": 45,
+        "music_ms": 1138,
+        "silence_ms": 54,
+        "render_ms": 23828,
+        "mix_ms": 1828,
+        "encode_ms": 28013,
+        "media_validation_ms": 815,
+        "output_validation_ms": 59
+      },
+      "publish": false,
+      "result": "PASS",
+      "attempts": 1,
+      "attempt_errors": []
+    },
+    {
+      "job_id": "10-direct-book-cta",
+      "title": "Direct Book CTA",
+      "state": "READY_FOR_REVIEW",
+      "technical": "PASS",
+      "editorial": "PENDING_HUMAN",
+      "release": "PENDING_HUMAN",
+      "runtime_seconds": 30.0,
+      "frame_count": 900,
+      "mechanism": "biometric_scan",
+      "profiles": {
+        "palette_profile": "pursuit",
+        "camera_profile": "calm_to_push",
+        "node_profile": "urgent",
+        "projection_profile": "biometric",
+        "cta_profile": "revelation"
+      },
+      "distinguishing_features": [
+        "rapid clue progression",
+        "multi-subject summary",
+        "kill-switch reveal",
+        "strongest CTA hold"
+      ],
+      "music": {
+        "query": {
+          "mood": [
+            "investigation",
+            "mystery",
+            "paranoia"
+          ],
+          "use_case": [
+            "direct_promo"
+          ]
+        },
+        "track_id": "concrete_and_chain",
+        "region_id": "investigation_a",
+        "actual_start": 76.0,
+        "actual_end": 106.0,
+        "video_duration": 30.0,
+        "fade_in": 0.8,
+        "fade_out": 2.6,
+        "gain_db": -4.8,
+        "ducking": {
+          "narration_duck_db": -8.0,
+          "attack_ms": 100,
+          "release_ms": 280
+        },
+        "selection_reason": "A sustained investigation section supports rapid clues before the extended conversion hold.",
+        "track_title": "Concrete and Chain",
+        "cue_tags": [
+          "investigation",
+          "mystery",
+          "paranoia"
+        ],
+        "usable_start": 71.0,
+        "usable_end": 109.0,
+        "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91"
+      },
+      "audio_policy": {
+        "presentation": "music_only",
+        "sfx_count": 0,
+        "ambient_machine_audio": false,
+        "narration": "off"
+      },
+      "artifact": {
+        "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/10-direct-book-cta/final.mp4",
+        "bytes": 5699543,
+        "sha256": "54d806f9c1e7809bc641da5a68b78cd2c72f3fa546979aef1ec21ec00095aff6"
+      },
+      "evidence": {
+        "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/10-direct-book-cta/contact-sheet.png",
+        "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/10-direct-book-cta/motion-evidence/sequence.png",
+        "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/10-direct-book-cta/representative-frames"
+      },
+      "metrics": {
+        "selection_ms": 64,
+        "creative-preflight_ms": 43,
+        "timeline-preflight_ms": 45,
+        "music_ms": 1140,
+        "silence_ms": 53,
+        "render_ms": 24164,
+        "mix_ms": 1767,
+        "encode_ms": 27379,
+        "media_validation_ms": 813,
+        "output_validation_ms": 55
+      },
+      "publish": false,
+      "result": "PASS",
+      "attempts": 1,
+      "attempt_errors": []
+    }
+  ],
+  "ready_for_review": 10,
+  "grammar_id": "unknown_process_recovered_record_v2",
+  "grammar_source_git_ref": "8f4cbae5e1125ae8b95f894f3f45dbab6a730a25",
+  "grammar_sha256": "a5020243b8687681a25ff9bd8e5d99b7aa2a523c489bec12bc0e19f720c11314",
+  "baseline_git_ref": "c637c956629ac564aa3f5c9927b5cae4b41fe3e7",
+  "manifest_sha256": "b5797155ebd3ee1e558bd7cf2ddbb7b00420f75ea93c8b6e225dfb7e97a9d011",
+  "renderer_state_before": {
+    "godot/mf002.tscn": "f94e4ce708e2b68da235f70b2ba4ec44282c3564c0959440865de24c6d71fda2",
+    "godot/mf002.gd": "296d69385011454ad2aa1f0c15d8bb9043879178bf9c47513b50cdf4f63a4d76",
+    "godot/beat_timeline.gd": "34494dcd3f3b40e865f51f62aa5649546ba1cd6367ec5aaeabf13ffa69d48d04",
+    "godot/lofi_book_stage.gd": "0b2e1bf729c32c1cd6c52068def97cf71b04a266bef246093b0604a32f2dd950",
+    "godot/projected_data_window_stage.gd": "6adae54cb26a23b3f813b9e31f842ff97f7ffcb1ae63132e98d4d1d5b99862e7",
+    "godot/integrated_lower_right_stage.gd": "fc12ec5dbdc19d42ded123ff351f9692ec4dbf505f79ea2c67a7f7f2eff8141d",
+    "godot/indicator_pulse_stage.gd": "505e5b30000998786800356804832125abb656291a66a68d1a6f8449ed594051"
+  },
+  "renderer_state_after": {
+    "godot/mf002.tscn": "f94e4ce708e2b68da235f70b2ba4ec44282c3564c0959440865de24c6d71fda2",
+    "godot/mf002.gd": "296d69385011454ad2aa1f0c15d8bb9043879178bf9c47513b50cdf4f63a4d76",
+    "godot/beat_timeline.gd": "34494dcd3f3b40e865f51f62aa5649546ba1cd6367ec5aaeabf13ffa69d48d04",
+    "godot/lofi_book_stage.gd": "0b2e1bf729c32c1cd6c52068def97cf71b04a266bef246093b0604a32f2dd950",
+    "godot/projected_data_window_stage.gd": "6adae54cb26a23b3f813b9e31f842ff97f7ffcb1ae63132e98d4d1d5b99862e7",
+    "godot/integrated_lower_right_stage.gd": "fc12ec5dbdc19d42ded123ff351f9692ec4dbf505f79ea2c67a7f7f2eff8141d",
+    "godot/indicator_pulse_stage.gd": "505e5b30000998786800356804832125abb656291a66a68d1a6f8449ed594051"
+  },
+  "renderer_source_hash_before": "80fe5c5824ea90fb67c2995f37233b714fa9acdbf74b209f691c83a81a6a89f9",
+  "renderer_source_hash_after": "80fe5c5824ea90fb67c2995f37233b714fa9acdbf74b209f691c83a81a6a89f9",
+  "renderer_changes": 0,
+  "catalog_sha256_before": "e738ed273be867eca34ea677f1b469a62b049947f3007822b7233b6219410f4b",
+  "catalog_sha256_after": "e738ed273be867eca34ea677f1b469a62b049947f3007822b7233b6219410f4b",
+  "catalog_changes": 0,
+  "audio_policy": {
+    "music": "enabled",
+    "sfx": "disabled",
+    "ambient_machine_audio": "disabled",
+    "narration": "off",
+    "presentation": "music_only"
+  },
+  "published": 0,
+  "human_review": "PENDING_HUMAN",
+  "useful_candidate_percentage": null,
+  "campaign_contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/campaign-contact-sheet.png",
+  "result": "PASS"
+}

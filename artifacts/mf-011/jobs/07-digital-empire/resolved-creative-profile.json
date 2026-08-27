@@ -1,0 +1,21 @@
+{
+  "mechanism": "classification_link",
+  "events": [
+    "leo_resolve",
+    "zeph_resolve",
+    "bridge_attempt",
+    "bridge_stable"
+  ],
+  "timing": {
+    "intro_seconds": 7.0,
+    "investigation_seconds": 14.0,
+    "result_hold_seconds": 3.0,
+    "cta_seconds": 6.0
+  },
+  "palette_profile": "revelation",
+  "camera_profile": "wide_investigation",
+  "node_profile": "stable_then_overload",
+  "projection_profile": "classification",
+  "cta_profile": "revelation",
+  "audio_cue": "revelation"
+}

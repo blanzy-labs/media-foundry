@@ -1,0 +1,91 @@
+{
+  "job_id": "01-simon-target-acquired",
+  "title": "Simon: Target Acquired",
+  "state": "READY_FOR_REVIEW",
+  "technical": "PASS",
+  "editorial": "PENDING_HUMAN",
+  "release": "PENDING_HUMAN",
+  "runtime_seconds": 27.0,
+  "frame_count": 810,
+  "mechanism": "tracking",
+  "profiles": {
+    "palette_profile": "pursuit",
+    "camera_profile": "tight_pursuit",
+    "node_profile": "urgent",
+    "projection_profile": "warning_trace",
+    "cta_profile": "warning"
+  },
+  "distinguishing_features": [
+    "temporary signal loss",
+    "reacquisition",
+    "final target lock",
+    "tight pursuit camera"
+  ],
+  "music": {
+    "query": {
+      "mood": [
+        "pursuit",
+        "tension",
+        "escalation"
+      ],
+      "use_case": [
+        "tracking"
+      ]
+    },
+    "track_id": "concrete_and_chain",
+    "region_id": "pursuit_a",
+    "actual_start": 21.0,
+    "actual_end": 48.0,
+    "video_duration": 27.0,
+    "fade_in": 0.6,
+    "fade_out": 1.6,
+    "gain_db": -5.0,
+    "ducking": {
+      "narration_duck_db": -8.0,
+      "attack_ms": 90,
+      "release_ms": 240
+    },
+    "selection_reason": "Sparse entry builds through reacquisition and lands the final lock cleanly.",
+    "track_title": "Concrete and Chain",
+    "cue_tags": [
+      "pursuit",
+      "tension",
+      "escalation"
+    ],
+    "usable_start": 19.0,
+    "usable_end": 59.0,
+    "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91"
+  },
+  "audio_policy": {
+    "presentation": "music_only",
+    "sfx_count": 0,
+    "ambient_machine_audio": false,
+    "narration": "off"
+  },
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/01-simon-target-acquired/final.mp4",
+    "bytes": 5881999,
+    "sha256": "8be5218ce0581973bb0cfea0a10ff080a898321461bcec12a33be125294e071f"
+  },
+  "evidence": {
+    "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/01-simon-target-acquired/contact-sheet.png",
+    "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/01-simon-target-acquired/motion-evidence/sequence.png",
+    "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/01-simon-target-acquired/representative-frames"
+  },
+  "metrics": {
+    "selection_ms": 60,
+    "creative-preflight_ms": 45,
+    "timeline-preflight_ms": 43,
+    "music_ms": 1075,
+    "silence_ms": 51,
+    "render_ms": 22096,
+    "mix_ms": 1658,
+    "encode_ms": 28757,
+    "media_validation_ms": 803,
+    "output_validation_ms": 55
+  },
+  "publish": false,
+  "result": "PASS",
+  "attempts": 1,
+  "attempt_errors": []
+}

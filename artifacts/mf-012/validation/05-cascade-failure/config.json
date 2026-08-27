@@ -1,0 +1,48 @@
+{
+  "slice": "MF-012",
+  "type": "activity_config_validation",
+  "fixture": "mf012-05-cascade-failure",
+  "dominant_activity": "cascade_failure",
+  "supporting_activities": [],
+  "opening_choreography": "warning_state_open",
+  "camera_choreography": "pull_back",
+  "primitive_count": 18,
+  "sequence": [
+    {
+      "id": "anomaly",
+      "type": "anomaly_seed",
+      "target": "circuit_network",
+      "start": 0.8,
+      "duration": 2.0,
+      "intensity": 0.9,
+      "overlap": true
+    },
+    {
+      "id": "cascade",
+      "type": "cascade_failure",
+      "target": "survivor_path",
+      "start": 2.2,
+      "duration": 6.0,
+      "intensity": 1.0,
+      "overlap": true
+    }
+  ],
+  "checks": {
+    "vocabulary_size": "PASS",
+    "subject_agnostic": "PASS",
+    "activity_present": "PASS",
+    "contract_fields": "PASS",
+    "demo_runtime": "PASS",
+    "complexity_budget": "PASS",
+    "opening": "PASS",
+    "camera": "PASS",
+    "target_declarations": "PASS",
+    "sequence_size": "PASS",
+    "sequence_entries": "PASS",
+    "intentional_overlap": "PASS",
+    "fixture_strategy": "PASS",
+    "silent_visual_demo": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

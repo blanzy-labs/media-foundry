@@ -1,0 +1,91 @@
+{
+  "beats": [
+    {
+      "end": 2.3,
+      "first_frame": 0,
+      "id": "circuits",
+      "last_frame": 68,
+      "start": 0.0,
+      "status": "PASS",
+      "type": "intro"
+    },
+    {
+      "end": 4.4,
+      "first_frame": 69,
+      "id": "formation",
+      "last_frame": 131,
+      "start": 2.3,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 5.0,
+      "first_frame": 132,
+      "id": "opening",
+      "last_frame": 149,
+      "start": 4.4,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 9.333,
+      "first_frame": 150,
+      "id": "page_1",
+      "last_frame": 279,
+      "start": 5.0,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 13.666,
+      "first_frame": 280,
+      "id": "page_2",
+      "last_frame": 409,
+      "start": 9.333,
+      "status": "PASS",
+      "type": "emphasis"
+    },
+    {
+      "end": 17.999,
+      "first_frame": 410,
+      "id": "page_3",
+      "last_frame": 539,
+      "start": 13.666,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 18.999,
+      "first_frame": 540,
+      "id": "result_hold",
+      "last_frame": 569,
+      "start": 17.999,
+      "status": "PASS",
+      "type": "reveal"
+    },
+    {
+      "end": 20.999,
+      "first_frame": 570,
+      "id": "dissolve",
+      "last_frame": 629,
+      "start": 18.999,
+      "status": "PASS",
+      "type": "statement"
+    },
+    {
+      "end": 26.0,
+      "first_frame": 630,
+      "id": "cta",
+      "last_frame": 779,
+      "start": 20.999,
+      "status": "PASS",
+      "type": "outro"
+    }
+  ],
+  "duration": 26.0,
+  "fixture": "mf011-08-for-what-he-is",
+  "mode": "beats",
+  "result": "PASS",
+  "slice": "MF-004",
+  "total_frames": 780
+}

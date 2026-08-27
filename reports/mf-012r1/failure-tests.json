@@ -1,0 +1,70 @@
+{
+  "slice": "MF-012R1",
+  "type": "isolated_failure_tests",
+  "tests": [
+    {
+      "name": "ring_enters_text_zone",
+      "expected": "MICRO_VARIATION_SAFE_ZONE_VIOLATION",
+      "actual_errors": [
+        "MICRO_VARIATION_SCHEDULE_NOT_REPRODUCIBLE",
+        "MICRO_VARIATION_SAFE_ZONE_VIOLATION"
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "unsupported_indicator_color",
+      "expected": "UNSUPPORTED_INDICATOR_COLOR",
+      "actual_errors": [
+        "MICRO_VARIATION_SCHEDULE_NOT_REPRODUCIBLE",
+        "UNSUPPORTED_INDICATOR_COLOR"
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "excessive_active_tiles",
+      "expected": "MICRO_VARIATION_TILE_DENSITY_EXCEEDED",
+      "actual_errors": [
+        "MICRO_VARIATION_SCHEDULE_NOT_REPRODUCIBLE",
+        "MICRO_VARIATION_TILE_DENSITY_EXCEEDED",
+        "MICRO_VARIATION_TILE_TEXT_CONTRAST_VIOLATION",
+        "MICRO_VARIATION_TILE_CONFIG_INVALID"
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "unseeded_random_configuration",
+      "expected": "MICRO_VARIATION_SEED_REQUIRED",
+      "actual_errors": [
+        "MICRO_VARIATION_SCHEMA_INVALID",
+        "MICRO_VARIATION_SEED_REQUIRED",
+        "MICRO_VARIATION_SCHEDULE_NOT_REPRODUCIBLE"
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "too_many_channels",
+      "expected": "MICRO_VARIATION_BUDGET_EXCEEDED",
+      "actual_errors": [
+        "MICRO_VARIATION_SCHEMA_INVALID",
+        "MICRO_VARIATION_BUDGET_EXCEEDED",
+        "UNKNOWN_MICRO_VARIATION_TYPE",
+        "MICRO_VARIATION_SCHEDULE_NOT_REPRODUCIBLE"
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "unknown_micro_variation",
+      "expected": "UNKNOWN_MICRO_VARIATION_TYPE",
+      "actual_errors": [
+        "MICRO_VARIATION_SCHEMA_INVALID",
+        "UNKNOWN_MICRO_VARIATION_TYPE",
+        "MICRO_VARIATION_SCHEDULE_NOT_REPRODUCIBLE",
+        "MICRO_VARIATION_RING_CONFIG_INVALID"
+      ],
+      "result": "PASS"
+    }
+  ],
+  "passed": 6,
+  "total": 6,
+  "result": "PASS"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "07-digital-empire",
+  "title": "Digital Empire",
+  "purpose": "Show a distributed control system and Simon as its single interruption point.",
+  "story_fact_ids": [
+    "kill_switch_threatens_digital_empire",
+    "simon_central_to_stopping_system"
+  ],
+  "distinguishing_features": [
+    "network expansion",
+    "control consolidation",
+    "single interruption point",
+    "maximum campaign scale"
+  ],
+  "fixture": "content/fixtures/mf011/07-digital-empire.json",
+  "phrases": [
+    "CONTROL NETWORK EXPANDING",
+    "ONE OVERRIDE EXISTS",
+    "OVERRIDE: SIMON"
+  ],
+  "creative": {
+    "mechanism": "classification_link",
+    "events": [
+      "leo_resolve",
+      "zeph_resolve",
+      "bridge_attempt",
+      "bridge_stable"
+    ],
+    "timing": {
+      "intro_seconds": 7.0,
+      "investigation_seconds": 14.0,
+      "result_hold_seconds": 3.0,
+      "cta_seconds": 6.0
+    },
+    "palette_profile": "revelation",
+    "camera_profile": "wide_investigation",
+    "node_profile": "stable_then_overload",
+    "projection_profile": "classification",
+    "cta_profile": "revelation",
+    "audio_cue": "revelation"
+  },
+  "music": {
+    "query": {
+      "mood": [
+        "ominous",
+        "escalation",
+        "revelation"
+      ],
+      "use_case": [
+        "title_reveal"
+      ]
+    },
+    "track_id": "concrete_and_chain",
+    "region_id": "revelation_a",
+    "actual_start": 127.0,
+    "actual_end": 157.0,
+    "video_duration": 30.0,
+    "fade_in": 1.2,
+    "fade_out": 2.8,
+    "gain_db": -5.0,
+    "ducking": {
+      "narration_duck_db": -8.0,
+      "attack_ms": 120,
+      "release_ms": 320
+    },
+    "selection_reason": "The long escalating region supports network growth and the single-point interruption reveal."
+  },
+  "narration": null,
+  "renderer_changes_required": false
+}

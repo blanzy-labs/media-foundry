@@ -1,0 +1,66 @@
+{
+  "slice": "MF-012",
+  "type": "activity_config_validation",
+  "fixture": "mf012-03-signal-bridge",
+  "dominant_activity": "connection",
+  "supporting_activities": [],
+  "opening_choreography": "follow_energy_packet",
+  "camera_choreography": "follow_packet",
+  "primitive_count": 18,
+  "sequence": [
+    {
+      "id": "attempt",
+      "type": "connection_attempt",
+      "target": "node_b",
+      "start": 0.7,
+      "duration": 2.4,
+      "intensity": 0.8,
+      "overlap": true
+    },
+    {
+      "id": "travel",
+      "type": "signal_travel",
+      "target": "node_b",
+      "start": 1.5,
+      "duration": 3.0,
+      "intensity": 1.0,
+      "overlap": true
+    },
+    {
+      "id": "form",
+      "type": "bridge_form",
+      "target": "node_b",
+      "start": 4.1,
+      "duration": 2.0,
+      "intensity": 0.9,
+      "overlap": true
+    },
+    {
+      "id": "stabilize",
+      "type": "bridge_stabilize",
+      "target": "wall_cells",
+      "start": 5.6,
+      "duration": 2.2,
+      "intensity": 1.0,
+      "overlap": true
+    }
+  ],
+  "checks": {
+    "vocabulary_size": "PASS",
+    "subject_agnostic": "PASS",
+    "activity_present": "PASS",
+    "contract_fields": "PASS",
+    "demo_runtime": "PASS",
+    "complexity_budget": "PASS",
+    "opening": "PASS",
+    "camera": "PASS",
+    "target_declarations": "PASS",
+    "sequence_size": "PASS",
+    "sequence_entries": "PASS",
+    "intentional_overlap": "PASS",
+    "fixture_strategy": "PASS",
+    "silent_visual_demo": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

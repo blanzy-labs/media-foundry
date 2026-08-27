@@ -1,0 +1,48 @@
+{
+  "slice": "MF-012",
+  "type": "activity_config_validation",
+  "fixture": "mf012-04-override-reroute",
+  "dominant_activity": "override",
+  "supporting_activities": [],
+  "opening_choreography": "signal_intrusion",
+  "camera_choreography": "wide_to_close",
+  "primitive_count": 18,
+  "sequence": [
+    {
+      "id": "override",
+      "type": "path_override",
+      "target": "circuit_network",
+      "start": 0.7,
+      "duration": 3.2,
+      "intensity": 1.0,
+      "overlap": true
+    },
+    {
+      "id": "reroute",
+      "type": "network_reroute",
+      "target": "central_hub",
+      "start": 2.7,
+      "duration": 4.0,
+      "intensity": 1.0,
+      "overlap": true
+    }
+  ],
+  "checks": {
+    "vocabulary_size": "PASS",
+    "subject_agnostic": "PASS",
+    "activity_present": "PASS",
+    "contract_fields": "PASS",
+    "demo_runtime": "PASS",
+    "complexity_budget": "PASS",
+    "opening": "PASS",
+    "camera": "PASS",
+    "target_declarations": "PASS",
+    "sequence_size": "PASS",
+    "sequence_entries": "PASS",
+    "intentional_overlap": "PASS",
+    "fixture_strategy": "PASS",
+    "silent_visual_demo": "PASS"
+  },
+  "errors": [],
+  "result": "PASS"
+}

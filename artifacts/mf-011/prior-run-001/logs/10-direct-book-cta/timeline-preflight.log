@@ -1,0 +1,5 @@
+{
+  "slice": "MF-004",
+  "result": "FAIL",
+  "error": "DURATION_INVALID: configured duration must be between 10 and 30 seconds"
+}

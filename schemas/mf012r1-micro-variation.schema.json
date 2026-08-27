@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mf012r1-micro-variation.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "enabled", "generator", "seed", "channels", "motion_budget", "indicator_dots", "background_tiles", "floating_ring_dot", "audio_policy", "visual_priority", "schedule_signature"],
+  "properties": {
+    "version": {"const": 1},
+    "enabled": {"const": true},
+    "generator": {"const": "mf012r1_lcg_v1"},
+    "seed": {"type": "integer", "minimum": 1},
+    "channels": {"type": "array", "minItems": 1, "maxItems": 3, "uniqueItems": true, "items": {"enum": ["indicator_dots", "background_tiles", "floating_ring_dot"]}},
+    "motion_budget": {
+      "type": "object", "additionalProperties": false,
+      "required": ["major_motion_elements", "minor_simultaneous_accents"],
+      "properties": {"major_motion_elements": {"type": "integer", "minimum": 0, "maximum": 1}, "minor_simultaneous_accents": {"const": 3}}
+    },
+    "indicator_dots": {"type": "object"},
+    "background_tiles": {"type": "object"},
+    "floating_ring_dot": {"type": ["object", "null"]},
+    "audio_policy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["music", "sfx", "ambient"],
+      "properties": {"music": {"const": true}, "sfx": {"const": false}, "ambient": {"const": false}}
+    },
+    "visual_priority": {"const": 5},
+    "schedule_signature": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

@@ -1,0 +1,1143 @@
+{
+  "slice": "MF-011",
+  "type": "independent_campaign_validation",
+  "archive": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002",
+  "jobs": [
+    {
+      "job_id": "01-simon-target-acquired",
+      "runtime_seconds": 27.0,
+      "frame_count": 810,
+      "mechanism": "tracking",
+      "profiles": {
+        "palette_profile": "pursuit",
+        "camera_profile": "tight_pursuit",
+        "node_profile": "urgent",
+        "projection_profile": "warning_trace",
+        "cta_profile": "warning"
+      },
+      "track_id": "concrete_and_chain",
+      "track_title": "Concrete and Chain",
+      "region_id": "pursuit_a",
+      "actual_start": 21.0,
+      "actual_end": 48.0,
+      "fade_in": 0.6,
+      "fade_out": 1.6,
+      "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+      "sfx_count": 0,
+      "artifact_path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/01-simon-target-acquired/final.mp4",
+      "artifact_sha256": "8be5218ce0581973bb0cfea0a10ff080a898321461bcec12a33be125294e071f",
+      "checks": {
+        "terminal_ready": "PASS",
+        "retry_limit": "PASS",
+        "artifact_hash": "PASS",
+        "media_streams": "PASS",
+        "media_shape": "PASS",
+        "runtime_and_frames": "PASS",
+        "full_decode": "PASS",
+        "job_validation": "PASS",
+        "resolved_fixture": "PASS",
+        "music_only": "PASS",
+        "narration_off": "PASS",
+        "approved_track": "PASS",
+        "approved_region": "PASS",
+        "cue_bounds": "PASS",
+        "selection_identity": "PASS",
+        "music_preparation": "PASS",
+        "evidence": "PASS",
+        "not_published": "PASS"
+      },
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "02-leo-living-data-bridge",
+      "runtime_seconds": 28.0,
+      "frame_count": 840,
+      "mechanism": "classification_link",
+      "profiles": {
+        "palette_profile": "mystery",
+        "camera_profile": "wide_investigation",
+        "node_profile": "analytical",
+        "projection_profile": "classification",
+        "cta_profile": "cool_signal"
+      },
+      "track_id": "cold_concrete_anatomy",
+      "track_title": "Cold Concrete Anatomy",
+      "region_id": "investigation_a",
+      "actual_start": 73.0,
+      "actual_end": 101.0,
+      "fade_in": 1.2,
+      "fade_out": 2.0,
+      "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+      "sfx_count": 0,
+      "artifact_path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/02-leo-living-data-bridge/final.mp4",
+      "artifact_sha256": "f7803a01e1ecf1ec3ea05eabc620d7a0c2880503cf3a36a681d7ad5a6a5ff958",
+      "checks": {
+        "terminal_ready": "PASS",
+        "retry_limit": "PASS",
+        "artifact_hash": "PASS",
+        "media_streams": "PASS",
+        "media_shape": "PASS",
+        "runtime_and_frames": "PASS",
+        "full_decode": "PASS",
+        "job_validation": "PASS",
+        "resolved_fixture": "PASS",
+        "music_only": "PASS",
+        "narration_off": "PASS",
+        "approved_track": "PASS",
+        "approved_region": "PASS",
+        "cue_bounds": "PASS",
+        "selection_identity": "PASS",
+        "music_preparation": "PASS",
+        "evidence": "PASS",
+        "not_published": "PASS"
+      },
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "03-zeph-evolving-too-fast",
+      "runtime_seconds": 26.0,
+      "frame_count": 780,
+      "mechanism": "classification_link",
+      "profiles": {
+        "palette_profile": "mystery",
+        "camera_profile": "calm_to_push",
+        "node_profile": "urgent",
+        "projection_profile": "classification",
+        "cta_profile": "cool_signal"
+      },
+      "track_id": "abandoned_intake",
+      "track_title": "Abandoned Intake",
+      "region_id": "revelation_a",
+      "actual_start": 52.0,
+      "actual_end": 78.0,
+      "fade_in": 0.8,
+      "fade_out": 1.8,
+      "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+      "sfx_count": 0,
+      "artifact_path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/03-zeph-evolving-too-fast/final.mp4",
+      "artifact_sha256": "4136731d7ba74dc8dc6f72260ad772c2ce12f2669863f9c067af3210ec6ef407",
+      "checks": {
+        "terminal_ready": "PASS",
+        "retry_limit": "PASS",
+        "artifact_hash": "PASS",
+        "media_streams": "PASS",
+        "media_shape": "PASS",
+        "runtime_and_frames": "PASS",
+        "full_decode": "PASS",
+        "job_validation": "PASS",
+        "resolved_fixture": "PASS",
+        "music_only": "PASS",
+        "narration_off": "PASS",
+        "approved_track": "PASS",
+        "approved_region": "PASS",
+        "cue_bounds": "PASS",
+        "selection_identity": "PASS",
+        "music_preparation": "PASS",
+        "evidence": "PASS",
+        "not_published": "PASS"
+      },
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "04-the-syndicate",
+      "runtime_seconds": 30.0,
+      "frame_count": 900,
+      "mechanism": "classification_link",
+      "profiles": {
+        "palette_profile": "revelation",
+        "camera_profile": "wide_investigation",
+        "node_profile": "stable_then_overload",
+        "projection_profile": "warning_trace",
+        "cta_profile": "warning"
+      },
+      "track_id": "below_the_iron_floor",
+      "track_title": "Below the Iron Floor",
+      "region_id": "investigation_a",
+      "actual_start": 96.0,
+      "actual_end": 126.0,
+      "fade_in": 1.0,
+      "fade_out": 2.2,
+      "source_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+      "sfx_count": 0,
+      "artifact_path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/04-the-syndicate/final.mp4",
+      "artifact_sha256": "ecac7db3840496c53c8efe6f74e0203d135839daac7c5d9217cb03856382d6ee",
+      "checks": {
+        "terminal_ready": "PASS",
+        "retry_limit": "PASS",
+        "artifact_hash": "PASS",
+        "media_streams": "PASS",
+        "media_shape": "PASS",
+        "runtime_and_frames": "PASS",
+        "full_decode": "PASS",
+        "job_validation": "PASS",
+        "resolved_fixture": "PASS",
+        "music_only": "PASS",
+        "narration_off": "PASS",
+        "approved_track": "PASS",
+        "approved_region": "PASS",
+        "cue_bounds": "PASS",
+        "selection_identity": "PASS",
+        "music_preparation": "PASS",
+        "evidence": "PASS",
+        "not_published": "PASS"
+      },
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "05-simon-biometric-anomaly",
+      "runtime_seconds": 26.0,
+      "frame_count": 780,
+      "mechanism": "biometric_scan",
+      "profiles": {
+        "palette_profile": "mystery",
+        "camera_profile": "calm_to_push",
+        "node_profile": "analytical",
+        "projection_profile": "biometric",
+        "cta_profile": "cool_signal"
+      },
+      "track_id": "abandoned_intake",
+      "track_title": "Abandoned Intake",
+      "region_id": "investigation_a",
+      "actual_start": 128.0,
+      "actual_end": 154.0,
+      "fade_in": 1.0,
+      "fade_out": 1.8,
+      "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+      "sfx_count": 0,
+      "artifact_path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/05-simon-biometric-anomaly/final.mp4",
+      "artifact_sha256": "28ad939e7d3b2fcb786720af80c72aa953ca66b54d6eab2849f2bd9932480eb8",
+      "checks": {
+        "terminal_ready": "PASS",
+        "retry_limit": "PASS",
+        "artifact_hash": "PASS",
+        "media_streams": "PASS",
+        "media_shape": "PASS",
+        "runtime_and_frames": "PASS",
+        "full_decode": "PASS",
+        "job_validation": "PASS",
+        "resolved_fixture": "PASS",
+        "music_only": "PASS",
+        "narration_off": "PASS",
+        "approved_track": "PASS",
+        "approved_region": "PASS",
+        "cue_bounds": "PASS",
+        "selection_identity": "PASS",
+        "music_preparation": "PASS",
+        "evidence": "PASS",
+        "not_published": "PASS"
+      },
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "06-the-kill-switch",
+      "runtime_seconds": 29.0,
+      "frame_count": 870,
+      "mechanism": "biometric_scan",
+      "profiles": {
+        "palette_profile": "revelation",
+        "camera_profile": "calm_to_push",
+        "node_profile": "stable_then_overload",
+        "projection_profile": "biometric",
+        "cta_profile": "revelation"
+      },
+      "track_id": "below_the_iron_floor",
+      "track_title": "Below the Iron Floor",
+      "region_id": "revelation_a",
+      "actual_start": 71.0,
+      "actual_end": 100.0,
+      "fade_in": 1.0,
+      "fade_out": 2.5,
+      "source_sha256": "bb322ffc6b6a5792c3ac2c510ede43d213da048c53e76253ececf55385dd2568",
+      "sfx_count": 0,
+      "artifact_path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/06-the-kill-switch/final.mp4",
+      "artifact_sha256": "d32001b8af27faecf01d478aa101ee3c858cdbb07cc5a680defa46d10f5d71d8",
+      "checks": {
+        "terminal_ready": "PASS",
+        "retry_limit": "PASS",
+        "artifact_hash": "PASS",
+        "media_streams": "PASS",
+        "media_shape": "PASS",
+        "runtime_and_frames": "PASS",
+        "full_decode": "PASS",
+        "job_validation": "PASS",
+        "resolved_fixture": "PASS",
+        "music_only": "PASS",
+        "narration_off": "PASS",
+        "approved_track": "PASS",
+        "approved_region": "PASS",
+        "cue_bounds": "PASS",
+        "selection_identity": "PASS",
+        "music_preparation": "PASS",
+        "evidence": "PASS",
+        "not_published": "PASS"
+      },
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "07-digital-empire",
+      "runtime_seconds": 30.0,
+      "frame_count": 900,
+      "mechanism": "classification_link",
+      "profiles": {
+        "palette_profile": "revelation",
+        "camera_profile": "wide_investigation",
+        "node_profile": "stable_then_overload",
+        "projection_profile": "classification",
+        "cta_profile": "revelation"
+      },
+      "track_id": "concrete_and_chain",
+      "track_title": "Concrete and Chain",
+      "region_id": "revelation_a",
+      "actual_start": 127.0,
+      "actual_end": 157.0,
+      "fade_in": 1.2,
+      "fade_out": 2.8,
+      "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+      "sfx_count": 0,
+      "artifact_path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/07-digital-empire/final.mp4",
+      "artifact_sha256": "1b1bb0166c8c62cf97f08f85406ba466092f392c0d7e4b580a7c92eb7d0a054f",
+      "checks": {
+        "terminal_ready": "PASS",
+        "retry_limit": "PASS",
+        "artifact_hash": "PASS",
+        "media_streams": "PASS",
+        "media_shape": "PASS",
+        "runtime_and_frames": "PASS",
+        "full_decode": "PASS",
+        "job_validation": "PASS",
+        "resolved_fixture": "PASS",
+        "music_only": "PASS",
+        "narration_off": "PASS",
+        "approved_track": "PASS",
+        "approved_region": "PASS",
+        "cue_bounds": "PASS",
+        "selection_identity": "PASS",
+        "music_preparation": "PASS",
+        "evidence": "PASS",
+        "not_published": "PASS"
+      },
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "08-for-what-he-is",
+      "runtime_seconds": 26.0,
+      "frame_count": 780,
+      "mechanism": "tracking",
+      "profiles": {
+        "palette_profile": "pursuit",
+        "camera_profile": "tight_pursuit",
+        "node_profile": "stable_then_overload",
+        "projection_profile": "biometric",
+        "cta_profile": "warning"
+      },
+      "track_id": "abandoned_intake",
+      "track_title": "Abandoned Intake",
+      "region_id": "pursuit_a",
+      "actual_start": 114.0,
+      "actual_end": 140.0,
+      "fade_in": 0.4,
+      "fade_out": 1.4,
+      "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee",
+      "sfx_count": 0,
+      "artifact_path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/08-for-what-he-is/final.mp4",
+      "artifact_sha256": "5f598551f472fa65e4a3b0dcacd39dbf121b9268ec9b045ac47a2d25f1aa2dea",
+      "checks": {
+        "terminal_ready": "PASS",
+        "retry_limit": "PASS",
+        "artifact_hash": "PASS",
+        "media_streams": "PASS",
+        "media_shape": "PASS",
+        "runtime_and_frames": "PASS",
+        "full_decode": "PASS",
+        "job_validation": "PASS",
+        "resolved_fixture": "PASS",
+        "music_only": "PASS",
+        "narration_off": "PASS",
+        "approved_track": "PASS",
+        "approved_region": "PASS",
+        "cue_bounds": "PASS",
+        "selection_identity": "PASS",
+        "music_preparation": "PASS",
+        "evidence": "PASS",
+        "not_published": "PASS"
+      },
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "09-atmospheric-teaser",
+      "runtime_seconds": 30.0,
+      "frame_count": 900,
+      "mechanism": "classification_link",
+      "profiles": {
+        "palette_profile": "baseline",
+        "camera_profile": "wide_investigation",
+        "node_profile": "baseline",
+        "projection_profile": "baseline",
+        "cta_profile": "cool_signal"
+      },
+      "track_id": "cold_concrete_anatomy",
+      "track_title": "Cold Concrete Anatomy",
+      "region_id": "ambient_a",
+      "actual_start": 145.0,
+      "actual_end": 175.0,
+      "fade_in": 2.0,
+      "fade_out": 3.0,
+      "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+      "sfx_count": 0,
+      "artifact_path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/09-atmospheric-teaser/final.mp4",
+      "artifact_sha256": "3cbdf0a0db29796e4185f796180ae376fca63576ff5bceba7ba4070b31e6dff6",
+      "checks": {
+        "terminal_ready": "PASS",
+        "retry_limit": "PASS",
+        "artifact_hash": "PASS",
+        "media_streams": "PASS",
+        "media_shape": "PASS",
+        "runtime_and_frames": "PASS",
+        "full_decode": "PASS",
+        "job_validation": "PASS",
+        "resolved_fixture": "PASS",
+        "music_only": "PASS",
+        "narration_off": "PASS",
+        "approved_track": "PASS",
+        "approved_region": "PASS",
+        "cue_bounds": "PASS",
+        "selection_identity": "PASS",
+        "music_preparation": "PASS",
+        "evidence": "PASS",
+        "not_published": "PASS"
+      },
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "job_id": "10-direct-book-cta",
+      "runtime_seconds": 30.0,
+      "frame_count": 900,
+      "mechanism": "biometric_scan",
+      "profiles": {
+        "palette_profile": "pursuit",
+        "camera_profile": "calm_to_push",
+        "node_profile": "urgent",
+        "projection_profile": "biometric",
+        "cta_profile": "revelation"
+      },
+      "track_id": "concrete_and_chain",
+      "track_title": "Concrete and Chain",
+      "region_id": "investigation_a",
+      "actual_start": 76.0,
+      "actual_end": 106.0,
+      "fade_in": 0.8,
+      "fade_out": 2.6,
+      "source_sha256": "4fcb84cfa4e885ddd600d4a53aa113e05f36b7cfae208ccb2ca9a24bf0c64d91",
+      "sfx_count": 0,
+      "artifact_path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/10-direct-book-cta/final.mp4",
+      "artifact_sha256": "54d806f9c1e7809bc641da5a68b78cd2c72f3fa546979aef1ec21ec00095aff6",
+      "checks": {
+        "terminal_ready": "PASS",
+        "retry_limit": "PASS",
+        "artifact_hash": "PASS",
+        "media_streams": "PASS",
+        "media_shape": "PASS",
+        "runtime_and_frames": "PASS",
+        "full_decode": "PASS",
+        "job_validation": "PASS",
+        "resolved_fixture": "PASS",
+        "music_only": "PASS",
+        "narration_off": "PASS",
+        "approved_track": "PASS",
+        "approved_region": "PASS",
+        "cue_bounds": "PASS",
+        "selection_identity": "PASS",
+        "music_preparation": "PASS",
+        "evidence": "PASS",
+        "not_published": "PASS"
+      },
+      "errors": [],
+      "result": "PASS"
+    }
+  ],
+  "pairwise_diversity": [
+    {
+      "left": "01-simon-target-acquired",
+      "right": "02-leo-living-data-bridge",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "01-simon-target-acquired",
+      "right": "03-zeph-evolving-too-fast",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "01-simon-target-acquired",
+      "right": "04-the-syndicate",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "01-simon-target-acquired",
+      "right": "05-simon-biometric-anomaly",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "01-simon-target-acquired",
+      "right": "06-the-kill-switch",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "01-simon-target-acquired",
+      "right": "07-digital-empire",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "01-simon-target-acquired",
+      "right": "08-for-what-he-is",
+      "differentiators": [
+        "node_profile",
+        "projection_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "01-simon-target-acquired",
+      "right": "09-atmospheric-teaser",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "01-simon-target-acquired",
+      "right": "10-direct-book-cta",
+      "differentiators": [
+        "mechanism",
+        "camera_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "02-leo-living-data-bridge",
+      "right": "03-zeph-evolving-too-fast",
+      "differentiators": [
+        "camera_profile",
+        "node_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "02-leo-living-data-bridge",
+      "right": "04-the-syndicate",
+      "differentiators": [
+        "palette_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "02-leo-living-data-bridge",
+      "right": "05-simon-biometric-anomaly",
+      "differentiators": [
+        "mechanism",
+        "camera_profile",
+        "projection_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "02-leo-living-data-bridge",
+      "right": "06-the-kill-switch",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "02-leo-living-data-bridge",
+      "right": "07-digital-empire",
+      "differentiators": [
+        "palette_profile",
+        "node_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "02-leo-living-data-bridge",
+      "right": "08-for-what-he-is",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "02-leo-living-data-bridge",
+      "right": "09-atmospheric-teaser",
+      "differentiators": [
+        "palette_profile",
+        "node_profile",
+        "projection_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "02-leo-living-data-bridge",
+      "right": "10-direct-book-cta",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "03-zeph-evolving-too-fast",
+      "right": "04-the-syndicate",
+      "differentiators": [
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "03-zeph-evolving-too-fast",
+      "right": "05-simon-biometric-anomaly",
+      "differentiators": [
+        "mechanism",
+        "node_profile",
+        "projection_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "03-zeph-evolving-too-fast",
+      "right": "06-the-kill-switch",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "03-zeph-evolving-too-fast",
+      "right": "07-digital-empire",
+      "differentiators": [
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "03-zeph-evolving-too-fast",
+      "right": "08-for-what-he-is",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "03-zeph-evolving-too-fast",
+      "right": "09-atmospheric-teaser",
+      "differentiators": [
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "03-zeph-evolving-too-fast",
+      "right": "10-direct-book-cta",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "04-the-syndicate",
+      "right": "05-simon-biometric-anomaly",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "04-the-syndicate",
+      "right": "06-the-kill-switch",
+      "differentiators": [
+        "mechanism",
+        "camera_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "04-the-syndicate",
+      "right": "07-digital-empire",
+      "differentiators": [
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "04-the-syndicate",
+      "right": "08-for-what-he-is",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "projection_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "04-the-syndicate",
+      "right": "09-atmospheric-teaser",
+      "differentiators": [
+        "palette_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "04-the-syndicate",
+      "right": "10-direct-book-cta",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "05-simon-biometric-anomaly",
+      "right": "06-the-kill-switch",
+      "differentiators": [
+        "palette_profile",
+        "node_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "05-simon-biometric-anomaly",
+      "right": "07-digital-empire",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "05-simon-biometric-anomaly",
+      "right": "08-for-what-he-is",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "05-simon-biometric-anomaly",
+      "right": "09-atmospheric-teaser",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "05-simon-biometric-anomaly",
+      "right": "10-direct-book-cta",
+      "differentiators": [
+        "palette_profile",
+        "node_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "06-the-kill-switch",
+      "right": "07-digital-empire",
+      "differentiators": [
+        "mechanism",
+        "camera_profile",
+        "projection_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "06-the-kill-switch",
+      "right": "08-for-what-he-is",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "06-the-kill-switch",
+      "right": "09-atmospheric-teaser",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "06-the-kill-switch",
+      "right": "10-direct-book-cta",
+      "differentiators": [
+        "palette_profile",
+        "node_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "07-digital-empire",
+      "right": "08-for-what-he-is",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "07-digital-empire",
+      "right": "09-atmospheric-teaser",
+      "differentiators": [
+        "palette_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "07-digital-empire",
+      "right": "10-direct-book-cta",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "08-for-what-he-is",
+      "right": "09-atmospheric-teaser",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "08-for-what-he-is",
+      "right": "10-direct-book-cta",
+      "differentiators": [
+        "mechanism",
+        "camera_profile",
+        "node_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    },
+    {
+      "left": "09-atmospheric-teaser",
+      "right": "10-direct-book-cta",
+      "differentiators": [
+        "mechanism",
+        "palette_profile",
+        "camera_profile",
+        "node_profile",
+        "projection_profile",
+        "cta_profile",
+        "pacing",
+        "event_narrative",
+        "music"
+      ],
+      "result": "PASS"
+    }
+  ],
+  "checks": {
+    "manifest_hash": "PASS",
+    "one_manifest_ten_jobs": "PASS",
+    "campaign_state_model": "PASS",
+    "all_jobs_terminal": "PASS",
+    "shared_preflight": "PASS",
+    "final_preflight": "PASS",
+    "renderer_integrity": "PASS",
+    "grammar_integrity": "PASS",
+    "catalog_integrity": "PASS",
+    "music_only_all": "PASS",
+    "campaign_diversity": "PASS",
+    "mechanism_breadth": "PASS",
+    "music_distribution": "PASS",
+    "runtime_distribution": "PASS",
+    "campaign_evidence": "PASS",
+    "no_publication": "PASS",
+    "human_review_not_fabricated": "PASS"
+  },
+  "errors": [],
+  "human_review": "PENDING_HUMAN",
+  "result": "PASS"
+}

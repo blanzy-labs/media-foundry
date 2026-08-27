@@ -1,0 +1,91 @@
+{
+  "job_id": "08-for-what-he-is",
+  "title": "For What He Is",
+  "state": "READY_FOR_REVIEW",
+  "technical": "PASS",
+  "editorial": "PENDING_HUMAN",
+  "release": "PENDING_HUMAN",
+  "runtime_seconds": 26.0,
+  "frame_count": 780,
+  "mechanism": "tracking",
+  "profiles": {
+    "palette_profile": "pursuit",
+    "camera_profile": "tight_pursuit",
+    "node_profile": "stable_then_overload",
+    "projection_profile": "biometric",
+    "cta_profile": "warning"
+  },
+  "distinguishing_features": [
+    "rapid pursuit trace",
+    "misdirection",
+    "biometric implication",
+    "shortest runtime"
+  ],
+  "music": {
+    "query": {
+      "mood": [
+        "tension",
+        "mystery",
+        "escalation"
+      ],
+      "use_case": [
+        "tracking"
+      ]
+    },
+    "track_id": "abandoned_intake",
+    "region_id": "pursuit_a",
+    "actual_start": 114.0,
+    "actual_end": 140.0,
+    "video_duration": 26.0,
+    "fade_in": 0.4,
+    "fade_out": 1.4,
+    "gain_db": -5.0,
+    "ducking": {
+      "narration_duck_db": -8.0,
+      "attack_ms": 90,
+      "release_ms": 220
+    },
+    "selection_reason": "A compact rising pursuit subsection makes the misdirection land without padding.",
+    "track_title": "Abandoned Intake",
+    "cue_tags": [
+      "pursuit",
+      "tension",
+      "escalation"
+    ],
+    "usable_start": 111.0,
+    "usable_end": 151.0,
+    "source_sha256": "bd75a6c95880f923ebf5e259d149bfbd32c4c9663bca96a5a491adcc453f86ee"
+  },
+  "audio_policy": {
+    "presentation": "music_only",
+    "sfx_count": 0,
+    "ambient_machine_audio": false,
+    "narration": "off"
+  },
+  "artifact": {
+    "path": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/08-for-what-he-is/final.mp4",
+    "bytes": 5628572,
+    "sha256": "5f598551f472fa65e4a3b0dcacd39dbf121b9268ec9b045ac47a2d25f1aa2dea"
+  },
+  "evidence": {
+    "contact_sheet": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/08-for-what-he-is/contact-sheet.png",
+    "motion_sequence": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/08-for-what-he-is/motion-evidence/sequence.png",
+    "representative_frames": "/home/blanzy/media-foundry-output/mf011/unknown-process-v1/campaign-run-002/08-for-what-he-is/representative-frames"
+  },
+  "metrics": {
+    "selection_ms": 62,
+    "creative-preflight_ms": 45,
+    "timeline-preflight_ms": 45,
+    "music_ms": 1020,
+    "silence_ms": 52,
+    "render_ms": 21143,
+    "mix_ms": 1542,
+    "encode_ms": 27865,
+    "media_validation_ms": 764,
+    "output_validation_ms": 58
+  },
+  "publish": false,
+  "result": "PASS",
+  "attempts": 1,
+  "attempt_errors": []
+}

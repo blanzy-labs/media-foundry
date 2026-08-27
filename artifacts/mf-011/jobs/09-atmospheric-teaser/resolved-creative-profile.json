@@ -1,0 +1,21 @@
+{
+  "mechanism": "classification_link",
+  "events": [
+    "leo_resolve",
+    "zeph_resolve",
+    "bridge_attempt",
+    "bridge_stable"
+  ],
+  "timing": {
+    "intro_seconds": 7.0,
+    "investigation_seconds": 13.0,
+    "result_hold_seconds": 2.0,
+    "cta_seconds": 8.0
+  },
+  "palette_profile": "baseline",
+  "camera_profile": "wide_investigation",
+  "node_profile": "baseline",
+  "projection_profile": "baseline",
+  "cta_profile": "cool_signal",
+  "audio_cue": "baseline_full"
+}

@@ -1,0 +1,8 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 595.84 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 5070
+
+MF002_LAYOUT fixture=mf011-08-for-what-he-is intro=PASS headline=PASS body=PASS emphasis=PASS labels=PASS outro=PASS overlap_checks=PASS
+MF004_BEAT_ACTIVE id=circuits type=intro frame=0 start=0.000 end=2.300
+MF002_RENDER_FRAME 0
+
+MF006R4_SCENE_CONFIG_FAILED: extended duration outside 26-30 seconds
