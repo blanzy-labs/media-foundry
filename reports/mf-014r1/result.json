@@ -1,0 +1,207 @@
+{
+  "slice": "MF-014R1",
+  "checks": {
+    "mf014_video_preserved": {
+      "status": "PASS",
+      "detail": "b6bb0ff0d6fee78ba3a7421706e790f8340862b8b2a785b3d149451fba3e318a"
+    },
+    "source_plate_preserved": {
+      "status": "PASS",
+      "detail": "d2c59e27382c206ac8d195955d92daa8151e433a26a8fbc23d0635da7e1285f7"
+    },
+    "config_identity": {
+      "status": "PASS",
+      "detail": "214908b1baca6101243ab9a65e1aa64048cb790b0f8fd7cd142134bbec6b73c7"
+    },
+    "path_count": {
+      "status": "PASS",
+      "detail": 6
+    },
+    "all_origins_offscreen": {
+      "status": "PASS",
+      "detail": {
+        "left_upper": true,
+        "right_upper": true,
+        "top_center": true,
+        "left_lower": true,
+        "right_lower": true,
+        "bottom_center": true
+      }
+    },
+    "destinations_inside_title_region": {
+      "status": "PASS",
+      "detail": {
+        "left_upper": [
+          0.2,
+          0.37
+        ],
+        "right_upper": [
+          0.57,
+          0.39
+        ],
+        "top_center": [
+          0.46,
+          0.31
+        ],
+        "left_lower": [
+          0.29,
+          0.49
+        ],
+        "right_lower": [
+          0.56,
+          0.5
+        ],
+        "bottom_center": [
+          0.4,
+          0.49
+        ]
+      }
+    },
+    "staggered_arrivals": {
+      "status": "PASS",
+      "detail": [
+        1.0,
+        1.45,
+        2.0,
+        2.5,
+        2.85,
+        3.1
+      ]
+    },
+    "burn_progression_completes": {
+      "status": "PASS",
+      "detail": [
+        4.7,
+        5.7,
+        5.8,
+        6.05,
+        6.4,
+        6.300000000000001
+      ]
+    },
+    "title_after_convergence": {
+      "status": "PASS",
+      "detail": {
+        "heat_start": 5.2,
+        "last_path_complete": 6.4,
+        "peak_at": 8.2
+      }
+    },
+    "title_peak_hold": {
+      "status": "PASS",
+      "detail": 1.0
+    },
+    "title_settle_level": {
+      "status": "PASS",
+      "detail": 0.5
+    },
+    "residual_hold_exists": {
+      "status": "PASS",
+      "detail": {
+        "settle_end": 10.399999999999999,
+        "duration": 12.0,
+        "hold_seconds": 1.6000000000000014
+      }
+    },
+    "video_contract": {
+      "status": "PASS",
+      "detail": {
+        "codec": "h264",
+        "duration": 12.0,
+        "fps": 30.0,
+        "frames": "360"
+      }
+    },
+    "audio_stream": {
+      "status": "PASS",
+      "detail": {
+        "codec": "aac",
+        "sample_rate": "48000"
+      }
+    },
+    "audio_video_decode": {
+      "status": "PASS",
+      "detail": "full decode succeeded"
+    },
+    "approved_music_hash": {
+      "status": "PASS",
+      "detail": {
+        "track": "cold_concrete_anatomy",
+        "region": "revelation_a",
+        "sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf"
+      }
+    },
+    "approved_cue_bounds": {
+      "status": "PASS",
+      "detail": {
+        "usable": [
+          5.0,
+          49.0
+        ],
+        "actual": [
+          5.0,
+          17.0
+        ]
+      }
+    },
+    "audio_loudness": {
+      "status": "PASS",
+      "detail": {
+        "integrated_lufs": -16.07,
+        "true_peak_db": -3.95,
+        "loudness_range_lu": 4.2
+      }
+    },
+    "evidence_frames": {
+      "status": "PASS",
+      "detail": [
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r1/representative-frames/idle.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r1/representative-frames/first-entry.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r1/representative-frames/multiple-incoming.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r1/representative-frames/title-early-heat.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r1/representative-frames/title-peak.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r1/representative-frames/title-settled.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r1/representative-frames/final.png"
+      ]
+    },
+    "idle_pixel_identity": {
+      "status": "PASS",
+      "detail": {
+        "shape": [
+          1154,
+          768,
+          3
+        ]
+      }
+    },
+    "visible_multi_path_burn": {
+      "status": "PASS",
+      "detail": 0.03644
+    },
+    "final_residual_visible": {
+      "status": "PASS",
+      "detail": 0.16708
+    },
+    "observed_peak_above_settle": {
+      "status": "PASS",
+      "detail": {
+        "peak_roi_red": 93.25,
+        "settled_roi_red": 83.285
+      }
+    },
+    "residual_held_to_final": {
+      "status": "PASS",
+      "detail": {
+        "settled_roi_red": 83.285,
+        "final_roi_red": 83.021
+      }
+    },
+    "not_published": {
+      "status": "PASS",
+      "detail": false
+    }
+  },
+  "human_review": "PENDING_HUMAN",
+  "published": false,
+  "result": "TECHNICAL_PASS"
+}

@@ -1,0 +1,35 @@
+{
+  "slice": "MF-014R2",
+  "baseline_config": "config/mf014r1-circuit-burn.json",
+  "duration_seconds": 15.0,
+  "font_assets": {
+    "tagline": "/usr/share/fonts/truetype/liberation/LiberationSansNarrow-Bold.ttf",
+    "website": "/usr/share/fonts/truetype/liberation/LiberationSansNarrow-Regular.ttf"
+  },
+  "supporting_text": {
+    "tagline": {
+      "text": "SUBJUGATE THE PLANET",
+      "position": [0.5, 0.665],
+      "font_size": 31,
+      "reveal_start": 10.5,
+      "reveal_duration": 1.0,
+      "etched_intensity": 1.0,
+      "supporting_brightness": 0.66
+    },
+    "website": {
+      "text": "rcblanzy.com/books/unknown-process",
+      "position": [0.52, 0.865],
+      "font_size": 21,
+      "reveal_start": 11.8,
+      "reveal_duration": 1.0,
+      "etched_intensity": 0.92,
+      "supporting_brightness": 0.58
+    }
+  },
+  "final_hold_start": 12.8,
+  "music_override": {
+    "source_end": 20.0,
+    "fade_out": 1.4,
+    "post_normalization_gain_db": -1.0
+  }
+}

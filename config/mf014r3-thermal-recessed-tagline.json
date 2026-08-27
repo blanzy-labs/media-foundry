@@ -1,0 +1,32 @@
+{
+  "slice": "MF-014R3",
+  "baseline_config": "config/mf014r1-circuit-burn.json",
+  "duration_seconds": 15.5,
+  "tagline": {
+    "text": "SUBJUGATE THE PLANET",
+    "layout_lines": ["SUBJUGATE THE", "PLANET"],
+    "font": "/usr/share/fonts/truetype/liberation/LiberationSansNarrow-Bold.ttf",
+    "position": [0.7, 0.79],
+    "bounding_region": [0.51, 0.73, 0.9, 0.855],
+    "font_size": 32,
+    "recessed_intensity": 0.72,
+    "cold_visibility": 0.18,
+    "heat_reveal_start": 11.25,
+    "heat_propagation_duration": 1.4,
+    "heat_settle_duration": 1.1,
+    "active_heat_level": 0.65,
+    "final_settle_brightness": 0.28,
+    "direction": "right_to_left"
+  },
+  "thermal_route": {
+    "points": [[0.84, 0.6], [0.84, 0.705], [0.8, 0.705], [0.8, 0.745]],
+    "start": 10.4,
+    "duration": 1.0
+  },
+  "final_hold_start": 13.75,
+  "music_override": {
+    "source_end": 20.5,
+    "fade_out": 1.5,
+    "post_normalization_gain_db": -1.0
+  }
+}

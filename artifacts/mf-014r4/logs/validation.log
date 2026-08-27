@@ -1,0 +1,311 @@
+{
+  "slice": "MF-014R4",
+  "checks": {
+    "r1_video_frozen": {
+      "status": "PASS",
+      "detail": "83e69ab2751959280ff9140caa910c90d1848b0990ff05aacf4c20e24d42069a"
+    },
+    "r1_config_frozen": {
+      "status": "PASS",
+      "detail": "214908b1baca6101243ab9a65e1aa64048cb790b0f8fd7cd142134bbec6b73c7"
+    },
+    "source_frozen": {
+      "status": "PASS",
+      "detail": "d2c59e27382c206ac8d195955d92daa8151e433a26a8fbc23d0635da7e1285f7"
+    },
+    "config_identity": {
+      "status": "PASS",
+      "detail": "09e3b0b9a6610a6690fc2163f6911783912c242f73d0f62c4ba29269c1db3b44"
+    },
+    "exact_information": {
+      "status": "PASS",
+      "detail": {
+        "tagline": "SUBJUGATE THE PLANET",
+        "website": "rcblanzy.com/books/unknown-process",
+        "website_lines": [
+          "rcblanzy.com/",
+          "books/",
+          "unknown-process"
+        ]
+      }
+    },
+    "lower_right_rail_safe": {
+      "status": "PASS",
+      "detail": {
+        "region": [
+          0.32,
+          0.69,
+          0.635,
+          0.91
+        ],
+        "rail_boundary": 0.635,
+        "positions": [
+          [
+            0.5,
+            0.75
+          ],
+          [
+            0.495,
+            0.845
+          ]
+        ]
+      }
+    },
+    "hierarchy_and_settle": {
+      "status": "PASS",
+      "detail": {
+        "tagline": [
+          1.0,
+          0.66
+        ],
+        "website": [
+          0.82,
+          0.62
+        ]
+      }
+    },
+    "controlled_combustion": {
+      "status": "PASS",
+      "detail": {
+        "tagline": {
+          "flame": 0.72,
+          "embers": 5
+        },
+        "website": {
+          "flame": 0.22,
+          "embers": 2
+        }
+      }
+    },
+    "route_connected": {
+      "status": "PASS",
+      "detail": {
+        "start": [
+          0.62,
+          0.6
+        ],
+        "point_count": 4
+      }
+    },
+    "thermal_timing": {
+      "status": "PASS",
+      "detail": {
+        "route_start": 10.4,
+        "tagline_start": 10.9,
+        "website_start": 12.1,
+        "settle_ends": [
+          13.9,
+          14.5
+        ],
+        "final_hold_seconds": 2.5
+      }
+    },
+    "video_contract": {
+      "status": "PASS",
+      "detail": {
+        "codec": "h264",
+        "duration": 17.0,
+        "fps": 30.0,
+        "frames": "510",
+        "size": [
+          768,
+          1154
+        ]
+      }
+    },
+    "audio_stream": {
+      "status": "PASS",
+      "detail": {
+        "codec": "aac"
+      }
+    },
+    "full_decode": {
+      "status": "PASS",
+      "detail": "succeeded"
+    },
+    "approved_music_preserved": {
+      "status": "PASS",
+      "detail": {
+        "contract": "mf010_music_selection_v1",
+        "project": "unknown-process",
+        "track_id": "cold_concrete_anatomy",
+        "qualified_id": "unknown-process:cold_concrete_anatomy",
+        "track_path": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+        "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+        "track_approval": "APPROVED",
+        "region_id": "revelation_a",
+        "region_approval": "APPROVED",
+        "usable_start": 5.0,
+        "usable_end": 49.0,
+        "actual_start": 5.0,
+        "actual_end": 22.0,
+        "video_duration": 17.0,
+        "fade_in": 1.0,
+        "fade_out": 1.6,
+        "post_normalization_gain_db": -1.0,
+        "loudness": {
+          "integrated_lufs": -16.04,
+          "true_peak_db": -2.38,
+          "loudness_range_lu": 4.4
+        },
+        "result": "PASS"
+      }
+    },
+    "audio_levels": {
+      "status": "PASS",
+      "detail": {
+        "integrated_lufs": -16.04,
+        "true_peak_db": -2.38,
+        "loudness_range_lu": 4.4
+      }
+    },
+    "evidence_complete": {
+      "status": "PASS",
+      "detail": {
+        "representative_frames": 10,
+        "mobile_files": 3,
+        "comparison": "/home/blanzy/projects/media-foundry/artifacts/mf-014r4/motion-evidence/mf014r1-vs-mf014r4.mp4"
+      }
+    },
+    "r1_title_peak_pixel_preserved": {
+      "status": "PASS",
+      "detail": {
+        "roi": [
+          0.045,
+          0.235,
+          0.605,
+          0.535
+        ]
+      }
+    },
+    "tagline_full_size_readable": {
+      "status": "PASS",
+      "detail": {
+        "bbox": [
+          267,
+          839,
+          499,
+          885
+        ],
+        "glyph_height": 47,
+        "changed_glyph_ratio": 1.0,
+        "local_luma_contrast": 41.276,
+        "glyph_luma_p95": 128.0,
+        "thermal_left_delta": 8.738,
+        "thermal_right_delta": 125.458,
+        "right_to_left_ratio": 14.359
+      }
+    },
+    "tagline_right_to_left_reveal": {
+      "status": "PASS",
+      "detail": {
+        "left": 8.737550471063257,
+        "right": 125.45819397993311
+      }
+    },
+    "website_full_size_readable": {
+      "status": "PASS",
+      "detail": {
+        "bbox": [
+          283,
+          941,
+          477,
+          1009
+        ],
+        "glyph_height": 69,
+        "changed_glyph_ratio": 1.0,
+        "local_luma_contrast": 67.482,
+        "glyph_luma_p95": 145.0,
+        "thermal_left_delta": 102.43,
+        "thermal_right_delta": 147.344,
+        "right_to_left_ratio": 1.438
+      }
+    },
+    "website_right_to_left_reveal": {
+      "status": "PASS",
+      "detail": {
+        "left": 102.42984409799554,
+        "right": 147.3441709242917
+      }
+    },
+    "title_remains_hero": {
+      "status": "PASS",
+      "detail": {
+        "title_pixels_over_110": 19286,
+        "information_pixels_over_110": 5588,
+        "dominance_ratio": 3.451
+      }
+    },
+    "controlled_flame_visible": {
+      "status": "PASS",
+      "detail": {
+        "changed_ratio_above_tagline": 0.21888
+      }
+    },
+    "tagline_mobile_readable": {
+      "status": "PASS",
+      "detail": {
+        "glyph_height": 23,
+        "local_luma_contrast": 42.324,
+        "glyph_luma_p95": 118.0
+      }
+    },
+    "website_mobile_readable": {
+      "status": "PASS",
+      "detail": {
+        "glyph_height": 33,
+        "local_luma_contrast": 70.291,
+        "glyph_luma_p95": 142.0
+      }
+    },
+    "not_published": {
+      "status": "PASS",
+      "detail": false
+    }
+  },
+  "readability_and_material_metrics": {
+    "tagline": {
+      "bbox": [
+        267,
+        839,
+        499,
+        885
+      ],
+      "glyph_height": 47,
+      "changed_glyph_ratio": 1.0,
+      "local_luma_contrast": 41.276,
+      "glyph_luma_p95": 128.0,
+      "thermal_left_delta": 8.738,
+      "thermal_right_delta": 125.458,
+      "right_to_left_ratio": 14.359
+    },
+    "website": {
+      "bbox": [
+        283,
+        941,
+        477,
+        1009
+      ],
+      "glyph_height": 69,
+      "changed_glyph_ratio": 1.0,
+      "local_luma_contrast": 67.482,
+      "glyph_luma_p95": 145.0,
+      "thermal_left_delta": 102.43,
+      "thermal_right_delta": 147.344,
+      "right_to_left_ratio": 1.438
+    },
+    "tagline_mobile": {
+      "glyph_height": 23,
+      "local_luma_contrast": 42.324,
+      "glyph_luma_p95": 118.0
+    },
+    "website_mobile": {
+      "glyph_height": 33,
+      "local_luma_contrast": 70.291,
+      "glyph_luma_p95": 142.0
+    }
+  },
+  "human_review": "PENDING_HUMAN",
+  "published": false,
+  "result": "TECHNICAL_PASS"
+}

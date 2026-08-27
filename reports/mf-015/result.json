@@ -1,0 +1,410 @@
+{
+  "slice": "MF-015",
+  "checks": {
+    "source_reference_verified": {
+      "status": "PASS",
+      "detail": {
+        "path": "/home/blanzy/Pictures/50s style book cover.png",
+        "sha256": "a4df3398242b6dc20ee667848cb7464658b527316700ffb278bc5ab1f1cee8d6",
+        "usage": "art_direction_reference"
+      }
+    },
+    "config_identity": {
+      "status": "PASS",
+      "detail": "d553d675a689b8478e6be60525d51ac579f4e91a3c0150275cf777e9024cf803"
+    },
+    "deterministic_seed_recorded": {
+      "status": "PASS",
+      "detail": 1501957
+    },
+    "timeline_and_hard_cut_order": {
+      "status": "PASS",
+      "detail": [
+        {
+          "id": "black",
+          "kind": "black",
+          "start": 0.0,
+          "end": 1.0
+        },
+        {
+          "id": "opening",
+          "kind": "card",
+          "start": 1.0,
+          "end": 3.6
+        },
+        {
+          "id": "wake",
+          "kind": "machine",
+          "start": 3.6,
+          "end": 7.0
+        },
+        {
+          "id": "unknown",
+          "kind": "card",
+          "start": 7.0,
+          "end": 8.15
+        },
+        {
+          "id": "charge",
+          "kind": "machine",
+          "start": 8.15,
+          "end": 12.5
+        },
+        {
+          "id": "uncontrolled",
+          "kind": "card",
+          "start": 12.5,
+          "end": 13.65
+        },
+        {
+          "id": "escalation",
+          "kind": "machine",
+          "start": 13.65,
+          "end": 18.0
+        },
+        {
+          "id": "undiscovered",
+          "kind": "card",
+          "start": 18.0,
+          "end": 19.15
+        },
+        {
+          "id": "peak",
+          "kind": "machine",
+          "start": 19.15,
+          "end": 24.6
+        },
+        {
+          "id": "final",
+          "kind": "final",
+          "start": 24.6,
+          "end": 30.0
+        }
+      ]
+    },
+    "required_cards_exact": {
+      "status": "PASS",
+      "detail": {
+        "cards": {
+          "opening": [
+            "A PROCESS",
+            "NO ONE WAS MEANT",
+            "TO DISCOVER"
+          ],
+          "unknown": [
+            "UNKNOWN"
+          ],
+          "uncontrolled": [
+            "UNCONTROLLED"
+          ],
+          "undiscovered": [
+            "UNDISCOVERED"
+          ]
+        },
+        "final": {
+          "title": [
+            "UNKNOWN",
+            "PROCESS"
+          ],
+          "book": "BOOK ONE",
+          "cta": "rcblanzy.com/books/unknown-process"
+        }
+      }
+    },
+    "no_modern_ui_contract": {
+      "status": "PASS",
+      "detail": []
+    },
+    "video_contract": {
+      "status": "PASS",
+      "detail": {
+        "codec": "h264",
+        "duration": 30.0,
+        "fps": 30.0,
+        "frames": "900",
+        "size": [
+          768,
+          1152
+        ]
+      }
+    },
+    "audio_stream": {
+      "status": "PASS",
+      "detail": "aac"
+    },
+    "full_audio_video_decode": {
+      "status": "PASS",
+      "detail": "succeeded"
+    },
+    "temporary_audio_explicit": {
+      "status": "PASS",
+      "detail": {
+        "status": "MUSIC_PENDING_APPROVAL",
+        "source": "locally_generated_temporary_score",
+        "path": "/home/blanzy/projects/media-foundry/artifacts/mf-015/audio/temporary-retro-futurist-score.wav",
+        "sha256": "eb7397b4d6901effc10ccca72ba438f0588ec9c58c5af17321f1b5b33e7f7e71",
+        "generated": true,
+        "copyright": "locally generated temporary test score",
+        "narration": false,
+        "processing": "highpass=f=42,lowpass=f=9600,loudnorm=I=-16.0:TP=-1.5:LRA=8",
+        "levels": {
+          "integrated_lufs": -15.76,
+          "true_peak_db": -1.84,
+          "loudness_range_lu": 2.2
+        }
+      }
+    },
+    "audio_levels": {
+      "status": "PASS",
+      "detail": {
+        "integrated_lufs": -15.76,
+        "true_peak_db": -1.84,
+        "loudness_range_lu": 2.2
+      }
+    },
+    "evidence_complete": {
+      "status": "PASS",
+      "detail": {
+        "representative_frames": 12,
+        "motion_evidence": "/home/blanzy/projects/media-foundry/artifacts/mf-015/motion-evidence/trailer-sequence.png"
+      }
+    },
+    "representative_frames_deterministic": {
+      "status": "PASS",
+      "detail": {
+        "black-opening": true,
+        "opening-intertitle": true,
+        "machine-dormant": true,
+        "machine-waking": true,
+        "unknown-card": true,
+        "reactor-charging": true,
+        "uncontrolled-card": true,
+        "escalation": true,
+        "undiscovered-card": true,
+        "reactor-peak": true,
+        "final-title": true,
+        "final-cta": true
+      }
+    },
+    "cards_present_readable_unclipped": {
+      "status": "PASS",
+      "detail": {
+        "unknown-card": {
+          "bbox": [
+            63,
+            495,
+            728,
+            615
+          ],
+          "contrast": 88.569,
+          "glyph_p90": 171.0,
+          "edge_margin": 39
+        },
+        "uncontrolled-card": {
+          "bbox": [
+            61,
+            523,
+            721,
+            601
+          ],
+          "contrast": 83.829,
+          "glyph_p90": 211.0,
+          "edge_margin": 46
+        },
+        "undiscovered-card": {
+          "bbox": [
+            55,
+            521,
+            727,
+            603
+          ],
+          "contrast": 99.541,
+          "glyph_p90": 172.0,
+          "edge_margin": 40
+        },
+        "final-title": {
+          "bbox": [
+            55,
+            287,
+            738,
+            410
+          ],
+          "contrast": 151.378,
+          "glyph_p90": 210.0,
+          "edge_margin": 29
+        },
+        "final-cta": {
+          "bbox": [
+            111,
+            994,
+            659,
+            1033
+          ],
+          "contrast": 115.241,
+          "glyph_p90": 211.0,
+          "edge_margin": 108
+        }
+      }
+    },
+    "reactor_escalation_progresses": {
+      "status": "PASS",
+      "detail": {
+        "machine-dormant": {
+          "mean_luma": 71.959,
+          "bright_ratio": 0.15056
+        },
+        "machine-waking": {
+          "mean_luma": 82.845,
+          "bright_ratio": 0.17616
+        },
+        "reactor-charging": {
+          "mean_luma": 86.631,
+          "bright_ratio": 0.18763
+        },
+        "escalation": {
+          "mean_luma": 90.17,
+          "bright_ratio": 0.20594
+        },
+        "reactor-peak": {
+          "mean_luma": 171.137,
+          "bright_ratio": 0.91715
+        }
+      }
+    },
+    "warning_lights_activate": {
+      "status": "PASS",
+      "detail": {
+        "machine-dormant": 0,
+        "machine-waking": 185,
+        "reactor-charging": 657,
+        "escalation": 1016
+      }
+    },
+    "analog_gauges_present_and_move": {
+      "status": "PASS",
+      "detail": {
+        "cream_gauge_pixels": 6224,
+        "changed_ratio": 0.04553
+      }
+    },
+    "silhouette_present_and_reacts": {
+      "status": "PASS",
+      "detail": {
+        "dark_silhouette_ratio": 0.53132,
+        "reaction_changed_ratio": 0.18311
+      }
+    },
+    "new_scene_not_static_cover_pan": {
+      "status": "PASS",
+      "detail": {
+        "cover_machine_correlation": 0.10275,
+        "dormant_to_waking_changed_ratio": 0.05896
+      }
+    },
+    "vintage_print_film_controls": {
+      "status": "PASS",
+      "detail": {
+        "grain_strength": 0.055,
+        "jitter_pixels": 1,
+        "dust_count": 8,
+        "registration_peak_pixels": 2,
+        "edge_wear": 18
+      }
+    },
+    "not_published": {
+      "status": "PASS",
+      "detail": false
+    }
+  },
+  "visual_metrics": {
+    "card_readability": {
+      "unknown-card": {
+        "bbox": [
+          63,
+          495,
+          728,
+          615
+        ],
+        "contrast": 88.569,
+        "glyph_p90": 171.0,
+        "edge_margin": 39
+      },
+      "uncontrolled-card": {
+        "bbox": [
+          61,
+          523,
+          721,
+          601
+        ],
+        "contrast": 83.829,
+        "glyph_p90": 211.0,
+        "edge_margin": 46
+      },
+      "undiscovered-card": {
+        "bbox": [
+          55,
+          521,
+          727,
+          603
+        ],
+        "contrast": 99.541,
+        "glyph_p90": 172.0,
+        "edge_margin": 40
+      },
+      "final-title": {
+        "bbox": [
+          55,
+          287,
+          738,
+          410
+        ],
+        "contrast": 151.378,
+        "glyph_p90": 210.0,
+        "edge_margin": 29
+      },
+      "final-cta": {
+        "bbox": [
+          111,
+          994,
+          659,
+          1033
+        ],
+        "contrast": 115.241,
+        "glyph_p90": 211.0,
+        "edge_margin": 108
+      }
+    },
+    "reactor": {
+      "machine-dormant": {
+        "mean_luma": 71.959,
+        "bright_ratio": 0.15056
+      },
+      "machine-waking": {
+        "mean_luma": 82.845,
+        "bright_ratio": 0.17616
+      },
+      "reactor-charging": {
+        "mean_luma": 86.631,
+        "bright_ratio": 0.18763
+      },
+      "escalation": {
+        "mean_luma": 90.17,
+        "bright_ratio": 0.20594
+      },
+      "reactor-peak": {
+        "mean_luma": 171.137,
+        "bright_ratio": 0.91715
+      }
+    },
+    "warning_lamps": {
+      "machine-dormant": 0,
+      "machine-waking": 185,
+      "reactor-charging": 657,
+      "escalation": 1016
+    }
+  },
+  "audio_status": "MUSIC_PENDING_APPROVAL",
+  "human_review": "PENDING_HUMAN",
+  "published": false,
+  "result": "TECHNICAL_PASS"
+}

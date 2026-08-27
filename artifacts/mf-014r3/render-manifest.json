@@ -1,0 +1,117 @@
+{
+  "slice": "MF-014R3",
+  "config": "/home/blanzy/projects/media-foundry/config/mf014r3-thermal-recessed-tagline.json",
+  "config_sha256": "7e1d3769d792e1b3b1a2acb95c26ad47ea567e9071fde9e260736caa7a6c47b5",
+  "baseline": {
+    "video": "/home/blanzy/projects/media-foundry/artifacts/mf-014r1/refined-final.mp4",
+    "video_sha256": "83e69ab2751959280ff9140caa910c90d1848b0990ff05aacf4c20e24d42069a",
+    "config_sha256": "214908b1baca6101243ab9a65e1aa64048cb790b0f8fd7cd142134bbec6b73c7",
+    "source_sha256": "d2c59e27382c206ac8d195955d92daa8151e433a26a8fbc23d0635da7e1285f7"
+  },
+  "output": {
+    "path": "/home/blanzy/projects/media-foundry/artifacts/mf-014r3/refined-final.mp4",
+    "sha256": "ee27959aa588f30ebb2d603dcacab2589a2e68eaf999fd336d13864ee378db10",
+    "bytes": 4514112
+  },
+  "video": {
+    "duration_seconds": 15.5,
+    "fps": 30,
+    "frame_count": 465,
+    "width": 768,
+    "height": 1154,
+    "raw_frame_sequence_sha256": "a1fb7377a18a16d931b00d5e9e551ee836e08c9a186b06cb145afbbeb6dba050"
+  },
+  "tagline": {
+    "text": "SUBJUGATE THE PLANET",
+    "layout_lines": [
+      "SUBJUGATE THE",
+      "PLANET"
+    ],
+    "font": "/usr/share/fonts/truetype/liberation/LiberationSansNarrow-Bold.ttf",
+    "position": [
+      0.7,
+      0.79
+    ],
+    "bounding_region": [
+      0.51,
+      0.73,
+      0.9,
+      0.855
+    ],
+    "font_size": 32,
+    "recessed_intensity": 0.72,
+    "cold_visibility": 0.18,
+    "heat_reveal_start": 11.25,
+    "heat_propagation_duration": 1.4,
+    "heat_settle_duration": 1.1,
+    "active_heat_level": 0.65,
+    "final_settle_brightness": 0.28,
+    "direction": "right_to_left"
+  },
+  "thermal_route": {
+    "points": [
+      [
+        0.84,
+        0.6
+      ],
+      [
+        0.84,
+        0.705
+      ],
+      [
+        0.8,
+        0.705
+      ],
+      [
+        0.8,
+        0.745
+      ]
+    ],
+    "start": 10.4,
+    "duration": 1.0
+  },
+  "url_included": false,
+  "final_hold_start": 13.75,
+  "final_hold_seconds": 1.75,
+  "music": {
+    "contract": "mf010_music_selection_v1",
+    "project": "unknown-process",
+    "track_id": "cold_concrete_anatomy",
+    "qualified_id": "unknown-process:cold_concrete_anatomy",
+    "track_path": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+    "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "track_approval": "APPROVED",
+    "region_id": "revelation_a",
+    "region_approval": "APPROVED",
+    "usable_start": 5.0,
+    "usable_end": 49.0,
+    "actual_start": 5.0,
+    "actual_end": 20.5,
+    "video_duration": 15.5,
+    "fade_in": 1.0,
+    "fade_out": 1.5,
+    "post_normalization_gain_db": -1.0,
+    "loudness": {
+      "integrated_lufs": -16.29,
+      "true_peak_db": -2.38,
+      "loudness_range_lu": 7.2
+    },
+    "result": "PASS"
+  },
+  "representative_frames": [
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r3/representative-frames/cold-plate.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r3/representative-frames/active-incoming.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r3/representative-frames/title-peak.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r3/representative-frames/title-settled.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r3/representative-frames/tagline-cold-detail.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r3/representative-frames/tagline-thermal-reveal.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r3/representative-frames/final.png"
+  ],
+  "motion_evidence": {
+    "full": "/home/blanzy/projects/media-foundry/artifacts/mf-014r3/motion-evidence/refined-sequence.png",
+    "material_detail": "/home/blanzy/projects/media-foundry/artifacts/mf-014r3/motion-evidence/tagline-material-sequence.png"
+  },
+  "elapsed_ms": 173971,
+  "human_review": "PENDING_HUMAN",
+  "published": false
+}

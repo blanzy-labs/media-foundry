@@ -1,0 +1,192 @@
+{
+  "slice": "MF-014R2",
+  "checks": {
+    "r1_video_preserved": {
+      "status": "PASS",
+      "detail": "83e69ab2751959280ff9140caa910c90d1848b0990ff05aacf4c20e24d42069a"
+    },
+    "r1_config_preserved": {
+      "status": "PASS",
+      "detail": "214908b1baca6101243ab9a65e1aa64048cb790b0f8fd7cd142134bbec6b73c7"
+    },
+    "source_plate_preserved": {
+      "status": "PASS",
+      "detail": "d2c59e27382c206ac8d195955d92daa8151e433a26a8fbc23d0635da7e1285f7"
+    },
+    "config_identity": {
+      "status": "PASS",
+      "detail": "5ed5d0351927281292cf2c36e52e15291c85d4b1593bfbb4128be8dd7b170ec0"
+    },
+    "tagline_exact": {
+      "status": "PASS",
+      "detail": "SUBJUGATE THE PLANET"
+    },
+    "website_exact": {
+      "status": "PASS",
+      "detail": "rcblanzy.com/books/unknown-process"
+    },
+    "font_assets": {
+      "status": "PASS",
+      "detail": {
+        "tagline": "/usr/share/fonts/truetype/liberation/LiberationSansNarrow-Bold.ttf",
+        "website": "/usr/share/fonts/truetype/liberation/LiberationSansNarrow-Regular.ttf"
+      }
+    },
+    "supporting_reveal_order": {
+      "status": "PASS",
+      "detail": {
+        "title_settle_end": 10.399999999999999,
+        "tagline": [
+          10.5,
+          11.5
+        ],
+        "website": [
+          11.8,
+          12.8
+        ]
+      }
+    },
+    "final_reading_hold": {
+      "status": "PASS",
+      "detail": 2.1999999999999993
+    },
+    "supporting_hierarchy_config": {
+      "status": "PASS",
+      "detail": {
+        "tagline_size": 31,
+        "website_size": 21,
+        "tagline_brightness": 0.66,
+        "website_brightness": 0.58
+      }
+    },
+    "video_contract": {
+      "status": "PASS",
+      "detail": {
+        "codec": "h264",
+        "duration": 15.0,
+        "fps": 30.0,
+        "frames": "450"
+      }
+    },
+    "audio_stream": {
+      "status": "PASS",
+      "detail": {
+        "codec": "aac",
+        "sample_rate": "48000"
+      }
+    },
+    "audio_video_decode": {
+      "status": "PASS",
+      "detail": "full decode succeeded"
+    },
+    "music_direction_preserved": {
+      "status": "PASS",
+      "detail": {
+        "track": "cold_concrete_anatomy",
+        "region": "revelation_a",
+        "start": 5.0
+      }
+    },
+    "music_extension_bounded": {
+      "status": "PASS",
+      "detail": {
+        "actual": [
+          5.0,
+          20.0
+        ],
+        "usable": [
+          5.0,
+          49.0
+        ]
+      }
+    },
+    "audio_loudness": {
+      "status": "PASS",
+      "detail": {
+        "integrated_lufs": -16.16,
+        "true_peak_db": -2.38,
+        "loudness_range_lu": 6.9
+      }
+    },
+    "evidence_frames": {
+      "status": "PASS",
+      "detail": [
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r2/representative-frames/idle.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r2/representative-frames/active-incoming.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r2/representative-frames/title-peak.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r2/representative-frames/title-settled.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r2/representative-frames/tagline-revealed.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r2/representative-frames/website-revealed.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r2/representative-frames/final.png"
+      ]
+    },
+    "title_peak_pixel_preserved": {
+      "status": "PASS",
+      "detail": {
+        "shape": [
+          1154,
+          768,
+          3
+        ]
+      }
+    },
+    "tagline_readability": {
+      "status": "PASS",
+      "detail": {
+        "glyph_pixels": 3631,
+        "mean_absolute_delta": 56.589,
+        "changed_glyph_ratio": 0.98595,
+        "local_luma_contrast": 16.647,
+        "glyph_luma_p95": 100.0
+      }
+    },
+    "website_readability": {
+      "status": "PASS",
+      "detail": {
+        "glyph_pixels": 1931,
+        "mean_absolute_delta": 36.981,
+        "changed_glyph_ratio": 0.8493,
+        "local_luma_contrast": 28.662,
+        "glyph_luma_p95": 100.0
+      }
+    },
+    "title_visual_dominance": {
+      "status": "PASS",
+      "detail": {
+        "title_roi_luma_p95": 133.0,
+        "support_glyph_luma_p95": 100.0
+      }
+    },
+    "bounded_added_coverage": {
+      "status": "PASS",
+      "detail": 0.0091
+    },
+    "final_state_stable": {
+      "status": "PASS",
+      "detail": 0.027
+    },
+    "not_published": {
+      "status": "PASS",
+      "detail": false
+    }
+  },
+  "readability": {
+    "tagline": {
+      "glyph_pixels": 3631,
+      "mean_absolute_delta": 56.589,
+      "changed_glyph_ratio": 0.98595,
+      "local_luma_contrast": 16.647,
+      "glyph_luma_p95": 100.0
+    },
+    "website": {
+      "glyph_pixels": 1931,
+      "mean_absolute_delta": 36.981,
+      "changed_glyph_ratio": 0.8493,
+      "local_luma_contrast": 28.662,
+      "glyph_luma_p95": 100.0
+    }
+  },
+  "human_review": "PENDING_HUMAN",
+  "published": false,
+  "result": "TECHNICAL_PASS"
+}

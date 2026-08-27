@@ -1,0 +1,252 @@
+{
+  "slice": "MF-014R4A",
+  "checks": {
+    "prior_r4_frozen": {
+      "status": "PASS",
+      "detail": "5562e6d9217ce7bf467d05e4ef512f6273d2e93203a5b18a1b99ffe33136b233"
+    },
+    "prior_r4_config_frozen": {
+      "status": "PASS",
+      "detail": "09e3b0b9a6610a6690fc2163f6911783912c242f73d0f62c4ba29269c1db3b44"
+    },
+    "config_identity": {
+      "status": "PASS",
+      "detail": "6635b9ebdd80f2948510fec534aebfa6a6cca4ac2f5f7485c0b9d36cf5595802"
+    },
+    "treatment_timing_music_unchanged": {
+      "status": "PASS",
+      "detail": "all non-placement configuration fields are identical"
+    },
+    "exact_text_preserved": {
+      "status": "PASS",
+      "detail": {
+        "tagline": "SUBJUGATE THE PLANET",
+        "website": "rcblanzy.com/books/unknown-process"
+      }
+    },
+    "measurable_rightward_translation": {
+      "status": "PASS",
+      "detail": {
+        "tagline": {
+          "before": [
+            0.5,
+            0.75
+          ],
+          "after": [
+            0.56,
+            0.75
+          ],
+          "normalized_delta": [
+            0.06000000000000005,
+            0.0
+          ],
+          "pixel_delta": [
+            46.08,
+            0.0
+          ]
+        },
+        "website": {
+          "before": [
+            0.495,
+            0.845
+          ],
+          "after": [
+            0.555,
+            0.845
+          ],
+          "normalized_delta": [
+            0.06000000000000005,
+            0.0
+          ],
+          "pixel_delta": [
+            46.08,
+            0.0
+          ]
+        }
+      }
+    },
+    "lower_right_identity": {
+      "status": "PASS",
+      "detail": [
+        0.38,
+        0.69,
+        0.695,
+        0.91
+      ]
+    },
+    "video_contract": {
+      "status": "PASS",
+      "detail": {
+        "codec": "h264",
+        "duration": 17.0,
+        "fps": 30.0,
+        "frames": "510",
+        "size": [
+          768,
+          1154
+        ]
+      }
+    },
+    "audio_stream": {
+      "status": "PASS",
+      "detail": "aac"
+    },
+    "full_decode": {
+      "status": "PASS",
+      "detail": "succeeded"
+    },
+    "audio_bit_exact": {
+      "status": "PASS",
+      "detail": {
+        "prior_pcm_sha256": "a14eeffb1caa7daf673c2561fcd95588a38b7919c92fd67a37df04fa81a85612",
+        "current_pcm_sha256": "a14eeffb1caa7daf673c2561fcd95588a38b7919c92fd67a37df04fa81a85612",
+        "errors": [
+          "",
+          ""
+        ]
+      }
+    },
+    "final_hold_preserved": {
+      "status": "PASS",
+      "detail": 2.5
+    },
+    "evidence_complete": {
+      "status": "PASS",
+      "detail": {
+        "representative_frames": 10,
+        "comparison_files": [
+          "/home/blanzy/projects/media-foundry/artifacts/mf-014r4a/before-after-comparison/final-placement.png",
+          "/home/blanzy/projects/media-foundry/artifacts/mf-014r4a/before-after-comparison/r4-vs-r4a.mp4"
+        ]
+      }
+    },
+    "title_sequence_preserved": {
+      "status": "PASS",
+      "detail": {
+        "pixel_identical_roi": [
+          0.045,
+          0.235,
+          0.605,
+          0.535
+        ]
+      }
+    },
+    "unrelated_final_pixels_unchanged": {
+      "status": "PASS",
+      "detail": {
+        "excluded": "61-pixel expanded union of old and new information masks"
+      }
+    },
+    "tagline_visible_unobstructed": {
+      "status": "PASS",
+      "detail": {
+        "bbox": [
+          313,
+          839,
+          545,
+          885
+        ],
+        "right_margin_px": 222,
+        "clipped": false,
+        "full_contrast": 40.849,
+        "dark_glyph_ratio": 0.0,
+        "mobile_height": 23,
+        "mobile_contrast": 41.732,
+        "mobile_p95": 118.0
+      }
+    },
+    "tagline_mobile_readable": {
+      "status": "PASS",
+      "detail": {
+        "bbox": [
+          313,
+          839,
+          545,
+          885
+        ],
+        "right_margin_px": 222,
+        "clipped": false,
+        "full_contrast": 40.849,
+        "dark_glyph_ratio": 0.0,
+        "mobile_height": 23,
+        "mobile_contrast": 41.732,
+        "mobile_p95": 118.0
+      }
+    },
+    "website_visible_unobstructed": {
+      "status": "PASS",
+      "detail": {
+        "bbox": [
+          329,
+          941,
+          523,
+          1009
+        ],
+        "right_margin_px": 244,
+        "clipped": false,
+        "full_contrast": 67.065,
+        "dark_glyph_ratio": 0.0,
+        "mobile_height": 33,
+        "mobile_contrast": 69.534,
+        "mobile_p95": 143.0
+      }
+    },
+    "website_mobile_readable": {
+      "status": "PASS",
+      "detail": {
+        "bbox": [
+          329,
+          941,
+          523,
+          1009
+        ],
+        "right_margin_px": 244,
+        "clipped": false,
+        "full_contrast": 67.065,
+        "dark_glyph_ratio": 0.0,
+        "mobile_height": 33,
+        "mobile_contrast": 69.534,
+        "mobile_p95": 143.0
+      }
+    },
+    "not_published": {
+      "status": "PASS",
+      "detail": false
+    }
+  },
+  "placement_and_readability_metrics": {
+    "tagline": {
+      "bbox": [
+        313,
+        839,
+        545,
+        885
+      ],
+      "right_margin_px": 222,
+      "clipped": false,
+      "full_contrast": 40.849,
+      "dark_glyph_ratio": 0.0,
+      "mobile_height": 23,
+      "mobile_contrast": 41.732,
+      "mobile_p95": 118.0
+    },
+    "website": {
+      "bbox": [
+        329,
+        941,
+        523,
+        1009
+      ],
+      "right_margin_px": 244,
+      "clipped": false,
+      "full_contrast": 67.065,
+      "dark_glyph_ratio": 0.0,
+      "mobile_height": 33,
+      "mobile_contrast": 69.534,
+      "mobile_p95": 143.0
+    }
+  },
+  "human_review": "PENDING_HUMAN",
+  "published": false,
+  "result": "TECHNICAL_PASS"
+}

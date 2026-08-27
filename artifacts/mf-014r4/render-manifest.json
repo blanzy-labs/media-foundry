@@ -1,0 +1,152 @@
+{
+  "slice": "MF-014R4",
+  "config": "/home/blanzy/projects/media-foundry/config/mf014r4-incandescent-information.json",
+  "config_sha256": "09e3b0b9a6610a6690fc2163f6911783912c242f73d0f62c4ba29269c1db3b44",
+  "seed": 1404,
+  "baseline": {
+    "video": "/home/blanzy/projects/media-foundry/artifacts/mf-014r1/refined-final.mp4",
+    "video_sha256": "83e69ab2751959280ff9140caa910c90d1848b0990ff05aacf4c20e24d42069a",
+    "config_sha256": "214908b1baca6101243ab9a65e1aa64048cb790b0f8fd7cd142134bbec6b73c7",
+    "source_sha256": "d2c59e27382c206ac8d195955d92daa8151e433a26a8fbc23d0635da7e1285f7"
+  },
+  "output": {
+    "path": "/home/blanzy/projects/media-foundry/artifacts/mf-014r4/refined-final.mp4",
+    "sha256": "5562e6d9217ce7bf467d05e4ef512f6273d2e93203a5b18a1b99ffe33136b233",
+    "bytes": 5048090
+  },
+  "video": {
+    "duration_seconds": 17.0,
+    "fps": 30,
+    "frame_count": 510,
+    "width": 768,
+    "height": 1154,
+    "raw_frame_sequence_sha256": "1970101fa11dbb830b046620193ee75c2ed52cebfafdc6556a6f95aaa02e974f"
+  },
+  "information_region": [
+    0.32,
+    0.69,
+    0.635,
+    0.91
+  ],
+  "elements": {
+    "tagline": {
+      "text": "SUBJUGATE THE PLANET",
+      "layout_lines": [
+        "SUBJUGATE THE",
+        "PLANET"
+      ],
+      "position": [
+        0.5,
+        0.75
+      ],
+      "font_size": 34,
+      "heat_start": 10.9,
+      "heat_travel_duration": 1.3,
+      "peak_hold_duration": 0.7,
+      "settle_duration": 1.0,
+      "peak_level": 1.0,
+      "final_level": 0.66,
+      "cold_recess_visibility": 0.2,
+      "flame_intensity": 0.72,
+      "ember_count": 5,
+      "line_spacing": -2,
+      "glow_radius": 4.5,
+      "glow_opacity": 0.42,
+      "core_opacity": 0.32,
+      "direction": "right_to_left"
+    },
+    "website": {
+      "text": "rcblanzy.com/books/unknown-process",
+      "layout_lines": [
+        "rcblanzy.com/",
+        "books/",
+        "unknown-process"
+      ],
+      "position": [
+        0.495,
+        0.845
+      ],
+      "font_size": 28,
+      "heat_start": 12.1,
+      "heat_travel_duration": 1.1,
+      "peak_hold_duration": 0.5,
+      "settle_duration": 0.8,
+      "peak_level": 0.82,
+      "final_level": 0.62,
+      "cold_recess_visibility": 0.16,
+      "flame_intensity": 0.22,
+      "ember_count": 2,
+      "line_spacing": 0,
+      "glow_radius": 2.4,
+      "glow_opacity": 0.28,
+      "core_opacity": 0.68,
+      "direction": "right_to_left"
+    }
+  },
+  "thermal_route": {
+    "points": [
+      [
+        0.62,
+        0.6
+      ],
+      [
+        0.62,
+        0.68
+      ],
+      [
+        0.58,
+        0.68
+      ],
+      [
+        0.58,
+        0.705
+      ]
+    ],
+    "start": 10.4,
+    "duration": 0.9
+  },
+  "final_hold_start": 14.5,
+  "final_hold_seconds": 2.5,
+  "mobile_preview_width": 360,
+  "music": {
+    "contract": "mf010_music_selection_v1",
+    "project": "unknown-process",
+    "track_id": "cold_concrete_anatomy",
+    "qualified_id": "unknown-process:cold_concrete_anatomy",
+    "track_path": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+    "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "track_approval": "APPROVED",
+    "region_id": "revelation_a",
+    "region_approval": "APPROVED",
+    "usable_start": 5.0,
+    "usable_end": 49.0,
+    "actual_start": 5.0,
+    "actual_end": 22.0,
+    "video_duration": 17.0,
+    "fade_in": 1.0,
+    "fade_out": 1.6,
+    "post_normalization_gain_db": -1.0,
+    "loudness": {
+      "integrated_lufs": -16.04,
+      "true_peak_db": -2.38,
+      "loudness_range_lu": 4.4
+    },
+    "result": "PASS"
+  },
+  "representative_frames": [
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r4/representative-frames/idle.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r4/representative-frames/main-circuit-burn.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r4/representative-frames/title-peak.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r4/representative-frames/title-residual.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r4/representative-frames/information-cold.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r4/representative-frames/tagline-igniting.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r4/representative-frames/tagline-peak.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r4/representative-frames/url-heating.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r4/representative-frames/final-information.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r4/representative-frames/final-composition.png"
+  ],
+  "motion_evidence": "/home/blanzy/projects/media-foundry/artifacts/mf-014r4/motion-evidence/refined-sequence.png",
+  "human_review": "PENDING_HUMAN",
+  "elapsed_ms": 253853,
+  "published": false
+}

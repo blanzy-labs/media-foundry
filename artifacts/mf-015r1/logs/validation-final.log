@@ -1,0 +1,573 @@
+{
+  "slice": "MF-015R1",
+  "checks": {
+    "mf015_baseline_frozen": {
+      "status": "PASS",
+      "detail": "f145f0b089f54e6db32a4ab907f53ae8eb4b6dbbe7ebcb7eed50bec8034b7d7c"
+    },
+    "mf015_config_frozen": {
+      "status": "PASS",
+      "detail": "d553d675a689b8478e6be60525d51ac579f4e91a3c0150275cf777e9024cf803"
+    },
+    "config_identity": {
+      "status": "PASS",
+      "detail": "7c3b80471e2b8189118c44f6c3e7f9d9d29efd3a7caaeabfa7d682ce1316372e"
+    },
+    "structure_pacing_content_audio_preserved": {
+      "status": "PASS",
+      "detail": {
+        "seed": true,
+        "source_reference": true,
+        "video": true,
+        "palette": true,
+        "fonts": true,
+        "timeline": true,
+        "audio": true
+      }
+    },
+    "refinement_stage_declared": {
+      "status": "PASS",
+      "detail": "pulp_trailer_stage_r1:PulpTrailerRefinementStage"
+    },
+    "stronger_print_film_controls": {
+      "status": "PASS",
+      "detail": {
+        "baseline": {
+          "grain_strength": 0.055,
+          "jitter_pixels": 1,
+          "dust_count": 8,
+          "registration_peak_pixels": 2,
+          "edge_wear": 18
+        },
+        "refined": {
+          "grain_strength": 0.075,
+          "jitter_pixels": 2,
+          "dust_count": 12,
+          "registration_peak_pixels": 3,
+          "edge_wear": 25,
+          "paper_fiber_strength": 0.11,
+          "ink_coverage": 0.88,
+          "selected_registration_interval": 9
+        }
+      }
+    },
+    "depth_material_reactor_controls": {
+      "status": "PASS",
+      "detail": {
+        "depth_layers": 4,
+        "grime_marks": 96,
+        "plasma_blobs": 7,
+        "character_rim_level": 0.72
+      }
+    },
+    "video_contract": {
+      "status": "PASS",
+      "detail": {
+        "codec": "h264",
+        "duration": 30.0,
+        "fps": 30.0,
+        "frames": "900",
+        "size": [
+          768,
+          1152
+        ]
+      }
+    },
+    "audio_stream": {
+      "status": "PASS",
+      "detail": "aac"
+    },
+    "full_decode": {
+      "status": "PASS",
+      "detail": "succeeded"
+    },
+    "audio_bit_exact_to_mf015": {
+      "status": "PASS",
+      "detail": {
+        "mf015_pcm_sha256": "416f77e922a303a27207b0d39c1823490678509815aa2ba3a6f05faf5bfe8bb9",
+        "mf015r1_pcm_sha256": "416f77e922a303a27207b0d39c1823490678509815aa2ba3a6f05faf5bfe8bb9"
+      }
+    },
+    "temporary_audio_status_preserved": {
+      "status": "PASS",
+      "detail": {
+        "status": "MUSIC_PENDING_APPROVAL",
+        "source": "locally_generated_temporary_score",
+        "path": "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/audio/temporary-retro-futurist-score.wav",
+        "sha256": "eb7397b4d6901effc10ccca72ba438f0588ec9c58c5af17321f1b5b33e7f7e71",
+        "generated": true,
+        "copyright": "locally generated temporary test score",
+        "narration": false,
+        "processing": "highpass=f=42,lowpass=f=9600,loudnorm=I=-16.0:TP=-1.5:LRA=8",
+        "levels": {
+          "integrated_lufs": -15.76,
+          "true_peak_db": -1.84,
+          "loudness_range_lu": 2.2
+        }
+      }
+    },
+    "evidence_and_comparisons_complete": {
+      "status": "PASS",
+      "detail": {
+        "representative_frames": 12,
+        "comparison_files": [
+          "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/before-after-comparison/character-materiality.png",
+          "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/before-after-comparison/character-reaction.png",
+          "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/before-after-comparison/final-card.png",
+          "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/before-after-comparison/mf015-vs-mf015r1.mp4"
+        ]
+      }
+    },
+    "representative_frames_deterministic": {
+      "status": "PASS",
+      "detail": {
+        "opening-intertitle": true,
+        "machine-dormant": true,
+        "machine-waking": true,
+        "human-early": true,
+        "unknown-card": true,
+        "reactor-charging": true,
+        "uncontrolled-card": true,
+        "character-reaction": true,
+        "undiscovered-card": true,
+        "reactor-peak": true,
+        "final-title": true,
+        "final-cta": true
+      }
+    },
+    "intertitles_final_title_cta_readable": {
+      "status": "PASS",
+      "detail": {
+        "unknown-card": {
+          "before": {
+            "bbox": [
+              63,
+              495,
+              728,
+              615
+            ],
+            "contrast": 88.569,
+            "glyph_p90": 171.0,
+            "edge_margin": 39
+          },
+          "after": {
+            "bbox": [
+              63,
+              495,
+              728,
+              615
+            ],
+            "contrast": 84.926,
+            "glyph_p90": 169.0,
+            "edge_margin": 39
+          }
+        },
+        "uncontrolled-card": {
+          "before": {
+            "bbox": [
+              61,
+              523,
+              721,
+              601
+            ],
+            "contrast": 83.829,
+            "glyph_p90": 211.0,
+            "edge_margin": 46
+          },
+          "after": {
+            "bbox": [
+              61,
+              523,
+              721,
+              601
+            ],
+            "contrast": 75.964,
+            "glyph_p90": 208.0,
+            "edge_margin": 46
+          }
+        },
+        "undiscovered-card": {
+          "before": {
+            "bbox": [
+              55,
+              521,
+              727,
+              603
+            ],
+            "contrast": 99.541,
+            "glyph_p90": 172.0,
+            "edge_margin": 40
+          },
+          "after": {
+            "bbox": [
+              55,
+              521,
+              727,
+              603
+            ],
+            "contrast": 93.257,
+            "glyph_p90": 170.0,
+            "edge_margin": 40
+          }
+        },
+        "final-title": {
+          "before": {
+            "bbox": [
+              55,
+              287,
+              738,
+              410
+            ],
+            "contrast": 151.378,
+            "glyph_p90": 210.0,
+            "edge_margin": 29
+          },
+          "after": {
+            "bbox": [
+              55,
+              287,
+              738,
+              410
+            ],
+            "contrast": 144.839,
+            "glyph_p90": 207.0,
+            "edge_margin": 29
+          }
+        },
+        "final-cta": {
+          "before": {
+            "bbox": [
+              111,
+              994,
+              659,
+              1033
+            ],
+            "contrast": 115.241,
+            "glyph_p90": 211.0,
+            "edge_margin": 108
+          },
+          "after": {
+            "bbox": [
+              111,
+              994,
+              659,
+              1033
+            ],
+            "contrast": 110.429,
+            "glyph_p90": 208.0,
+            "edge_margin": 108
+          }
+        }
+      }
+    },
+    "character_anatomy_readability_improved": {
+      "status": "PASS",
+      "detail": {
+        "before": {
+          "head": {
+            "midtone_ratio": 0.22943,
+            "gold_rim_pixels": 657
+          },
+          "torso": {
+            "midtone_ratio": 0.07552,
+            "gold_rim_pixels": 346
+          },
+          "hand": {
+            "midtone_ratio": 0.36737,
+            "gold_rim_pixels": 674
+          },
+          "legs": {
+            "midtone_ratio": 0.59528,
+            "gold_rim_pixels": 316
+          }
+        },
+        "after": {
+          "head": {
+            "midtone_ratio": 0.81906,
+            "gold_rim_pixels": 435
+          },
+          "torso": {
+            "midtone_ratio": 0.82998,
+            "gold_rim_pixels": 1331
+          },
+          "hand": {
+            "midtone_ratio": 0.84567,
+            "gold_rim_pixels": 1048
+          },
+          "legs": {
+            "midtone_ratio": 0.66134,
+            "gold_rim_pixels": 578
+          }
+        }
+      }
+    },
+    "character_reaction_refined": {
+      "status": "PASS",
+      "detail": {
+        "before_changed_ratio": 0.14572,
+        "after_changed_ratio": 0.30103
+      }
+    },
+    "pulp_materiality_measurably_stronger": {
+      "status": "PASS",
+      "detail": {
+        "background": {
+          "before_gradient": 3.64245,
+          "after_gradient": 4.10884,
+          "ratio": 1.12804
+        },
+        "machine_room": {
+          "before_gradient": 3.74811,
+          "after_gradient": 4.25899,
+          "ratio": 1.1363
+        }
+      }
+    },
+    "reactor_stranger_and_escalates": {
+      "status": "PASS",
+      "detail": {
+        "baseline_charge_asymmetry": 23.341,
+        "refined": {
+          "machine-dormant": {
+            "mean_luma": 71.723,
+            "bright_ratio": 0.13341,
+            "asymmetry": 26.829
+          },
+          "machine-waking": {
+            "mean_luma": 83.358,
+            "bright_ratio": 0.16326,
+            "asymmetry": 30.224
+          },
+          "reactor-charging": {
+            "mean_luma": 88.061,
+            "bright_ratio": 0.17125,
+            "asymmetry": 29.174
+          },
+          "character-reaction": {
+            "mean_luma": 101.601,
+            "bright_ratio": 0.17389,
+            "asymmetry": 24.286
+          },
+          "reactor-peak": {
+            "mean_luma": 155.115,
+            "bright_ratio": 0.68587,
+            "asymmetry": 11.49
+          }
+        }
+      }
+    },
+    "not_published": {
+      "status": "PASS",
+      "detail": false
+    }
+  },
+  "comparison_metrics": {
+    "readability": {
+      "unknown-card": {
+        "before": {
+          "bbox": [
+            63,
+            495,
+            728,
+            615
+          ],
+          "contrast": 88.569,
+          "glyph_p90": 171.0,
+          "edge_margin": 39
+        },
+        "after": {
+          "bbox": [
+            63,
+            495,
+            728,
+            615
+          ],
+          "contrast": 84.926,
+          "glyph_p90": 169.0,
+          "edge_margin": 39
+        }
+      },
+      "uncontrolled-card": {
+        "before": {
+          "bbox": [
+            61,
+            523,
+            721,
+            601
+          ],
+          "contrast": 83.829,
+          "glyph_p90": 211.0,
+          "edge_margin": 46
+        },
+        "after": {
+          "bbox": [
+            61,
+            523,
+            721,
+            601
+          ],
+          "contrast": 75.964,
+          "glyph_p90": 208.0,
+          "edge_margin": 46
+        }
+      },
+      "undiscovered-card": {
+        "before": {
+          "bbox": [
+            55,
+            521,
+            727,
+            603
+          ],
+          "contrast": 99.541,
+          "glyph_p90": 172.0,
+          "edge_margin": 40
+        },
+        "after": {
+          "bbox": [
+            55,
+            521,
+            727,
+            603
+          ],
+          "contrast": 93.257,
+          "glyph_p90": 170.0,
+          "edge_margin": 40
+        }
+      },
+      "final-title": {
+        "before": {
+          "bbox": [
+            55,
+            287,
+            738,
+            410
+          ],
+          "contrast": 151.378,
+          "glyph_p90": 210.0,
+          "edge_margin": 29
+        },
+        "after": {
+          "bbox": [
+            55,
+            287,
+            738,
+            410
+          ],
+          "contrast": 144.839,
+          "glyph_p90": 207.0,
+          "edge_margin": 29
+        }
+      },
+      "final-cta": {
+        "before": {
+          "bbox": [
+            111,
+            994,
+            659,
+            1033
+          ],
+          "contrast": 115.241,
+          "glyph_p90": 211.0,
+          "edge_margin": 108
+        },
+        "after": {
+          "bbox": [
+            111,
+            994,
+            659,
+            1033
+          ],
+          "contrast": 110.429,
+          "glyph_p90": 208.0,
+          "edge_margin": 108
+        }
+      }
+    },
+    "character_anatomy": {
+      "before": {
+        "head": {
+          "midtone_ratio": 0.22943,
+          "gold_rim_pixels": 657
+        },
+        "torso": {
+          "midtone_ratio": 0.07552,
+          "gold_rim_pixels": 346
+        },
+        "hand": {
+          "midtone_ratio": 0.36737,
+          "gold_rim_pixels": 674
+        },
+        "legs": {
+          "midtone_ratio": 0.59528,
+          "gold_rim_pixels": 316
+        }
+      },
+      "after": {
+        "head": {
+          "midtone_ratio": 0.81906,
+          "gold_rim_pixels": 435
+        },
+        "torso": {
+          "midtone_ratio": 0.82998,
+          "gold_rim_pixels": 1331
+        },
+        "hand": {
+          "midtone_ratio": 0.84567,
+          "gold_rim_pixels": 1048
+        },
+        "legs": {
+          "midtone_ratio": 0.66134,
+          "gold_rim_pixels": 578
+        }
+      }
+    },
+    "character_motion": {
+      "before_changed_ratio": 0.14572,
+      "after_changed_ratio": 0.30103
+    },
+    "materiality": {
+      "background": {
+        "before_gradient": 3.64245,
+        "after_gradient": 4.10884,
+        "ratio": 1.12804
+      },
+      "machine_room": {
+        "before_gradient": 3.74811,
+        "after_gradient": 4.25899,
+        "ratio": 1.1363
+      }
+    },
+    "reactor": {
+      "machine-dormant": {
+        "mean_luma": 71.723,
+        "bright_ratio": 0.13341,
+        "asymmetry": 26.829
+      },
+      "machine-waking": {
+        "mean_luma": 83.358,
+        "bright_ratio": 0.16326,
+        "asymmetry": 30.224
+      },
+      "reactor-charging": {
+        "mean_luma": 88.061,
+        "bright_ratio": 0.17125,
+        "asymmetry": 29.174
+      },
+      "character-reaction": {
+        "mean_luma": 101.601,
+        "bright_ratio": 0.17389,
+        "asymmetry": 24.286
+      },
+      "reactor-peak": {
+        "mean_luma": 155.115,
+        "bright_ratio": 0.68587,
+        "asymmetry": 11.49
+      }
+    }
+  },
+  "audio_status": "MUSIC_PENDING_APPROVAL",
+  "human_review": "PENDING_HUMAN",
+  "published": false,
+  "result": "TECHNICAL_PASS"
+}

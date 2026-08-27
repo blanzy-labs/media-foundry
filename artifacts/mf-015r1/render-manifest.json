@@ -1,0 +1,200 @@
+{
+  "slice": "MF-015R1",
+  "config": "/home/blanzy/projects/media-foundry/config/mf015r1-pulp-material-refinement.json",
+  "config_sha256": "7c3b80471e2b8189118c44f6c3e7f9d9d29efd3a7caaeabfa7d682ce1316372e",
+  "seed": 1501957,
+  "source_reference": {
+    "path": "/home/blanzy/Pictures/50s style book cover.png",
+    "sha256": "a4df3398242b6dc20ee667848cb7464658b527316700ffb278bc5ab1f1cee8d6",
+    "usage": "art_direction_reference",
+    "verified": true
+  },
+  "output": {
+    "path": "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/final-test.mp4",
+    "sha256": "4945abbb49965b1132fa99be45e2d9019e5214ef0ccf23905936da0077f113a6",
+    "bytes": 20030811
+  },
+  "video": {
+    "width": 768,
+    "height": 1152,
+    "fps": 30,
+    "duration_seconds": 30.0,
+    "frame_count": 900,
+    "raw_frame_sequence_sha256": "2d28c5cef474c6b9d5841036ca175a32d0d9b26be0e83e7ac9185fae7a28e57d"
+  },
+  "timeline": [
+    {
+      "id": "black",
+      "kind": "black",
+      "start": 0.0,
+      "end": 1.0
+    },
+    {
+      "id": "opening",
+      "kind": "card",
+      "start": 1.0,
+      "end": 3.6,
+      "lines": [
+        "A PROCESS",
+        "NO ONE WAS MEANT",
+        "TO DISCOVER"
+      ],
+      "color": "cream"
+    },
+    {
+      "id": "wake",
+      "kind": "machine",
+      "start": 3.6,
+      "end": 7.0,
+      "intensity": [
+        0.04,
+        0.34
+      ],
+      "phase": "wake"
+    },
+    {
+      "id": "unknown",
+      "kind": "card",
+      "start": 7.0,
+      "end": 8.15,
+      "lines": [
+        "UNKNOWN"
+      ],
+      "color": "yellow"
+    },
+    {
+      "id": "charge",
+      "kind": "machine",
+      "start": 8.15,
+      "end": 12.5,
+      "intensity": [
+        0.3,
+        0.62
+      ],
+      "phase": "charge"
+    },
+    {
+      "id": "uncontrolled",
+      "kind": "card",
+      "start": 12.5,
+      "end": 13.65,
+      "lines": [
+        "UNCONTROLLED"
+      ],
+      "color": "cream"
+    },
+    {
+      "id": "escalation",
+      "kind": "machine",
+      "start": 13.65,
+      "end": 18.0,
+      "intensity": [
+        0.58,
+        0.84
+      ],
+      "phase": "escalation"
+    },
+    {
+      "id": "undiscovered",
+      "kind": "card",
+      "start": 18.0,
+      "end": 19.15,
+      "lines": [
+        "UNDISCOVERED"
+      ],
+      "color": "yellow"
+    },
+    {
+      "id": "peak",
+      "kind": "machine",
+      "start": 19.15,
+      "end": 24.6,
+      "intensity": [
+        0.82,
+        1.0
+      ],
+      "phase": "peak"
+    },
+    {
+      "id": "final",
+      "kind": "final",
+      "start": 24.6,
+      "end": 30.0,
+      "title": [
+        "UNKNOWN",
+        "PROCESS"
+      ],
+      "book": "BOOK ONE",
+      "author": "ROBERT BLANZY",
+      "cta": "rcblanzy.com/books/unknown-process",
+      "cta_start": 27.0
+    }
+  ],
+  "machine": {
+    "indicator_thresholds": [
+      0.12,
+      0.21,
+      0.32,
+      0.48,
+      0.66,
+      0.82
+    ],
+    "gauge_warning_level": 0.72,
+    "silhouette_reaction_start": 0.52,
+    "reactor_pulse_hz": 3.1,
+    "energy_filaments": 9,
+    "depth_layers": 4,
+    "grime_marks": 96,
+    "plasma_blobs": 7,
+    "character_rim_level": 0.72
+  },
+  "film": {
+    "grain_strength": 0.075,
+    "jitter_pixels": 2,
+    "dust_count": 12,
+    "registration_peak_pixels": 3,
+    "edge_wear": 25,
+    "paper_fiber_strength": 0.11,
+    "ink_coverage": 0.88,
+    "selected_registration_interval": 9
+  },
+  "audio": {
+    "status": "MUSIC_PENDING_APPROVAL",
+    "source": "locally_generated_temporary_score",
+    "path": "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/audio/temporary-retro-futurist-score.wav",
+    "sha256": "eb7397b4d6901effc10ccca72ba438f0588ec9c58c5af17321f1b5b33e7f7e71",
+    "generated": true,
+    "copyright": "locally generated temporary test score",
+    "narration": false,
+    "processing": "highpass=f=42,lowpass=f=9600,loudnorm=I=-16.0:TP=-1.5:LRA=8",
+    "levels": {
+      "integrated_lufs": -15.76,
+      "true_peak_db": -1.84,
+      "loudness_range_lu": 2.2
+    }
+  },
+  "representative_frames": [
+    "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/representative-frames/opening-intertitle.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/representative-frames/machine-dormant.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/representative-frames/machine-waking.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/representative-frames/human-early.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/representative-frames/unknown-card.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/representative-frames/reactor-charging.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/representative-frames/uncontrolled-card.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/representative-frames/character-reaction.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/representative-frames/undiscovered-card.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/representative-frames/reactor-peak.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/representative-frames/final-title.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/representative-frames/final-cta.png"
+  ],
+  "motion_evidence": "/home/blanzy/projects/media-foundry/artifacts/mf-015r1/motion-evidence/trailer-sequence.png",
+  "elapsed_ms": 160940,
+  "human_review": "PENDING_HUMAN",
+  "published": false,
+  "prior_artifact": {
+    "path": "artifacts/mf-015/final-test.mp4",
+    "sha256": "f145f0b089f54e6db32a4ab907f53ae8eb4b6dbbe7ebcb7eed50bec8034b7d7c",
+    "config_path": "config/mf015-pulp-trailer.json",
+    "config_sha256": "d553d675a689b8478e6be60525d51ac579f4e91a3c0150275cf777e9024cf803"
+  }
+}

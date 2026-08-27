@@ -1,0 +1,68 @@
+{
+  "slice": "MF-014R4A",
+  "baseline_config": "config/mf014r1-circuit-burn.json",
+  "prior_artifact": {
+    "path": "artifacts/mf-014r4/refined-final.mp4",
+    "sha256": "5562e6d9217ce7bf467d05e4ef512f6273d2e93203a5b18a1b99ffe33136b233",
+    "config_path": "config/mf014r4-incandescent-information.json",
+    "config_sha256": "09e3b0b9a6610a6690fc2163f6911783912c242f73d0f62c4ba29269c1db3b44"
+  },
+  "seed": 1404,
+  "duration_seconds": 17.0,
+  "information_region": [0.38, 0.69, 0.695, 0.91],
+  "font": "/usr/share/fonts/truetype/liberation/LiberationSansNarrow-Bold.ttf",
+  "elements": {
+    "tagline": {
+      "text": "SUBJUGATE THE PLANET",
+      "layout_lines": ["SUBJUGATE THE", "PLANET"],
+      "position": [0.56, 0.75],
+      "font_size": 34,
+      "heat_start": 10.9,
+      "heat_travel_duration": 1.3,
+      "peak_hold_duration": 0.7,
+      "settle_duration": 1.0,
+      "peak_level": 1.0,
+      "final_level": 0.66,
+      "cold_recess_visibility": 0.2,
+      "flame_intensity": 0.72,
+      "ember_count": 5,
+      "line_spacing": -2,
+      "glow_radius": 4.5,
+      "glow_opacity": 0.42,
+      "core_opacity": 0.32,
+      "direction": "right_to_left"
+    },
+    "website": {
+      "text": "rcblanzy.com/books/unknown-process",
+      "layout_lines": ["rcblanzy.com/", "books/", "unknown-process"],
+      "position": [0.555, 0.845],
+      "font_size": 28,
+      "heat_start": 12.1,
+      "heat_travel_duration": 1.1,
+      "peak_hold_duration": 0.5,
+      "settle_duration": 0.8,
+      "peak_level": 0.82,
+      "final_level": 0.62,
+      "cold_recess_visibility": 0.16,
+      "flame_intensity": 0.22,
+      "ember_count": 2,
+      "line_spacing": 0,
+      "glow_radius": 2.4,
+      "glow_opacity": 0.28,
+      "core_opacity": 0.68,
+      "direction": "right_to_left"
+    }
+  },
+  "thermal_route": {
+    "points": [[0.62, 0.6], [0.62, 0.68], [0.58, 0.68], [0.58, 0.705]],
+    "start": 10.4,
+    "duration": 0.9
+  },
+  "final_hold_start": 14.5,
+  "mobile_preview_width": 360,
+  "music_override": {
+    "source_end": 22.0,
+    "fade_out": 1.6,
+    "post_normalization_gain_db": -1.0
+  }
+}

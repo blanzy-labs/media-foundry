@@ -1,0 +1,438 @@
+{
+  "slice": "MF-015R2",
+  "checks": {
+    "character_candidate_frozen": {
+      "status": "PASS",
+      "detail": "4945abbb49965b1132fa99be45e2d9019e5214ef0ccf23905936da0077f113a6"
+    },
+    "character_config_frozen": {
+      "status": "PASS",
+      "detail": "7c3b80471e2b8189118c44f6c3e7f9d9d29efd3a7caaeabfa7d682ce1316372e"
+    },
+    "config_identity": {
+      "status": "PASS",
+      "detail": "4f7b24ed0c93fa523edc61b109d3e100a80d7fe3bbd995097f569fdb1bd9a029"
+    },
+    "ab_structure_and_style_integrity": {
+      "status": "PASS",
+      "detail": {
+        "seed": true,
+        "source_reference": true,
+        "video": true,
+        "palette": true,
+        "fonts": true,
+        "timeline": true,
+        "film": true,
+        "machine": true,
+        "audio": true
+      }
+    },
+    "intertitle_order_preserved": {
+      "status": "PASS",
+      "detail": {
+        "opening": [
+          "A PROCESS",
+          "NO ONE WAS MEANT",
+          "TO DISCOVER"
+        ],
+        "unknown": [
+          "UNKNOWN"
+        ],
+        "uncontrolled": [
+          "UNCONTROLLED"
+        ],
+        "undiscovered": [
+          "UNDISCOVERED"
+        ]
+      }
+    },
+    "human_renderer_removed": {
+      "status": "PASS",
+      "detail": {
+        "human_character": false,
+        "draw_figure_ast": "single return"
+      }
+    },
+    "bounded_environmental_effect_budget": {
+      "status": "PASS",
+      "detail": {
+        "budget": {
+          "dominant": 1,
+          "supporting_max": 3
+        },
+        "steam_sources": 2,
+        "arc_events": [
+          16.75,
+          21.85,
+          23.1
+        ],
+        "dust_particles": 18,
+        "ring_vibration_max_pixels": 2,
+        "cable_sway_pixels": 5
+      }
+    },
+    "composition_rebalance_declared": {
+      "status": "PASS",
+      "detail": {
+        "foreground_instrument_bank": true,
+        "automatic_lever": true,
+        "moving_shadow_strength": 0.24
+      }
+    },
+    "video_contract": {
+      "status": "PASS",
+      "detail": {
+        "codec": "h264",
+        "duration": 30.0,
+        "fps": 30.0,
+        "frames": "900",
+        "size": [
+          768,
+          1152
+        ]
+      }
+    },
+    "audio_stream": {
+      "status": "PASS",
+      "detail": "aac"
+    },
+    "full_decode": {
+      "status": "PASS",
+      "detail": "succeeded"
+    },
+    "audio_bit_exact_to_character_version": {
+      "status": "PASS",
+      "detail": {
+        "mf015r1_pcm_sha256": "416f77e922a303a27207b0d39c1823490678509815aa2ba3a6f05faf5bfe8bb9",
+        "mf015r2_pcm_sha256": "416f77e922a303a27207b0d39c1823490678509815aa2ba3a6f05faf5bfe8bb9"
+      }
+    },
+    "motion_and_comparison_evidence": {
+      "status": "PASS",
+      "detail": {
+        "representative_frames": 12,
+        "comparison_files": [
+          "/home/blanzy/projects/media-foundry/artifacts/mf-015r2/before-after-comparison/charge-composition.png",
+          "/home/blanzy/projects/media-foundry/artifacts/mf-015r2/before-after-comparison/escalation-composition.png",
+          "/home/blanzy/projects/media-foundry/artifacts/mf-015r2/before-after-comparison/character-vs-characterless.mp4"
+        ]
+      }
+    },
+    "environmental_frames_deterministic": {
+      "status": "PASS",
+      "detail": {
+        "opening-intertitle": true,
+        "dark-machine-room": true,
+        "initial-activation": true,
+        "unknown-card": true,
+        "first-reactor-escalation": true,
+        "steam-light-gauges": true,
+        "uncontrolled-card": true,
+        "stronger-machine-instability": true,
+        "undiscovered-card": true,
+        "maximum-reactor-state": true,
+        "final-title": true,
+        "final-cta": true
+      }
+    },
+    "human_visually_absent_all_sampled_machine_states": {
+      "status": "PASS",
+      "detail": {
+        "prior_character_head_pixels": 435,
+        "r2_head_pixels": {
+          "dark-machine-room": 15,
+          "initial-activation": 0,
+          "first-reactor-escalation": 11,
+          "steam-light-gauges": 16,
+          "stronger-machine-instability": 29
+        }
+      }
+    },
+    "reactor_escalation_strengthened": {
+      "status": "PASS",
+      "detail": {
+        "dark-machine-room": {
+          "reactor_mean": 72.809,
+          "reactor_bright_ratio": 0.1318,
+          "frame_mean": 41.935
+        },
+        "initial-activation": {
+          "reactor_mean": 84.858,
+          "reactor_bright_ratio": 0.16084,
+          "frame_mean": 45.144
+        },
+        "first-reactor-escalation": {
+          "reactor_mean": 90.175,
+          "reactor_bright_ratio": 0.16815,
+          "frame_mean": 46.304
+        },
+        "stronger-machine-instability": {
+          "reactor_mean": 98.019,
+          "reactor_bright_ratio": 0.19163,
+          "frame_mean": 48.109
+        },
+        "maximum-reactor-state": {
+          "reactor_mean": 152.117,
+          "reactor_bright_ratio": 0.57031,
+          "frame_mean": 125.086
+        }
+      }
+    },
+    "reactor_remains_visual_hero": {
+      "status": "PASS",
+      "detail": {
+        "dark-machine-room": 1.963,
+        "initial-activation": 2.183,
+        "first-reactor-escalation": 2.293,
+        "stronger-machine-instability": 2.438
+      }
+    },
+    "composition_rebalanced_without_empty_hole": {
+      "status": "PASS",
+      "detail": {
+        "former_character_region_mean": 39.598,
+        "former_character_region_std": 26.711,
+        "right_to_left_luma_ratio": 1.511
+      }
+    },
+    "steam_vapor_executes_bounded": {
+      "status": "PASS",
+      "detail": {
+        "state": {
+          "active": true,
+          "opacity": 230
+        },
+        "alpha_pixels": 15572
+      }
+    },
+    "electrical_arc_executes_briefly": {
+      "status": "PASS",
+      "detail": {
+        "state": {
+          "active": true,
+          "event": 16.75,
+          "level": 1.0
+        },
+        "alpha_pixels": 694
+      }
+    },
+    "environment_light_pressure_motion_visible": {
+      "status": "PASS",
+      "detail": {
+        "changed_ratio": 0.1176,
+        "mean_delta": 10.837
+      }
+    },
+    "pulp_materiality_preserved": {
+      "status": "PASS",
+      "detail": {
+        "background": {
+          "character_version": 4.10884,
+          "characterless": 4.03221,
+          "retention_ratio": 0.98135
+        },
+        "machine_room": {
+          "character_version": 4.25899,
+          "characterless": 4.17983,
+          "retention_ratio": 0.98141
+        }
+      }
+    },
+    "cards_final_title_cta_readable": {
+      "status": "PASS",
+      "detail": {
+        "unknown-card": {
+          "bbox": [
+            63,
+            495,
+            728,
+            615
+          ],
+          "contrast": 84.926,
+          "glyph_p90": 169.0,
+          "edge_margin": 39
+        },
+        "uncontrolled-card": {
+          "bbox": [
+            61,
+            523,
+            721,
+            601
+          ],
+          "contrast": 75.964,
+          "glyph_p90": 208.0,
+          "edge_margin": 46
+        },
+        "undiscovered-card": {
+          "bbox": [
+            55,
+            521,
+            727,
+            603
+          ],
+          "contrast": 93.257,
+          "glyph_p90": 170.0,
+          "edge_margin": 40
+        },
+        "final-title": {
+          "bbox": [
+            55,
+            287,
+            738,
+            410
+          ],
+          "contrast": 144.839,
+          "glyph_p90": 207.0,
+          "edge_margin": 29
+        },
+        "final-cta": {
+          "bbox": [
+            111,
+            994,
+            659,
+            1033
+          ],
+          "contrast": 110.429,
+          "glyph_p90": 208.0,
+          "edge_margin": 108
+        }
+      }
+    },
+    "render_cost_practical": {
+      "status": "PASS",
+      "detail": {
+        "mf015r1_elapsed_ms": 160940,
+        "mf015r2_elapsed_ms": 213741,
+        "ratio": 1.3281,
+        "increase_percent": 32.81
+      }
+    },
+    "not_published": {
+      "status": "PASS",
+      "detail": false
+    }
+  },
+  "environmental_metrics": {
+    "human_absence": {
+      "prior_character_head_pixels": 435,
+      "r2_head_pixels": {
+        "dark-machine-room": 15,
+        "initial-activation": 0,
+        "first-reactor-escalation": 11,
+        "steam-light-gauges": 16,
+        "stronger-machine-instability": 29
+      }
+    },
+    "reactor": {
+      "dark-machine-room": {
+        "reactor_mean": 72.809,
+        "reactor_bright_ratio": 0.1318,
+        "frame_mean": 41.935
+      },
+      "initial-activation": {
+        "reactor_mean": 84.858,
+        "reactor_bright_ratio": 0.16084,
+        "frame_mean": 45.144
+      },
+      "first-reactor-escalation": {
+        "reactor_mean": 90.175,
+        "reactor_bright_ratio": 0.16815,
+        "frame_mean": 46.304
+      },
+      "stronger-machine-instability": {
+        "reactor_mean": 98.019,
+        "reactor_bright_ratio": 0.19163,
+        "frame_mean": 48.109
+      },
+      "maximum-reactor-state": {
+        "reactor_mean": 152.117,
+        "reactor_bright_ratio": 0.57031,
+        "frame_mean": 125.086
+      }
+    },
+    "composition": {
+      "former_character_region_mean": 39.598,
+      "former_character_region_std": 26.711,
+      "right_to_left_luma_ratio": 1.511
+    },
+    "materiality": {
+      "background": {
+        "character_version": 4.10884,
+        "characterless": 4.03221,
+        "retention_ratio": 0.98135
+      },
+      "machine_room": {
+        "character_version": 4.25899,
+        "characterless": 4.17983,
+        "retention_ratio": 0.98141
+      }
+    },
+    "readability": {
+      "unknown-card": {
+        "bbox": [
+          63,
+          495,
+          728,
+          615
+        ],
+        "contrast": 84.926,
+        "glyph_p90": 169.0,
+        "edge_margin": 39
+      },
+      "uncontrolled-card": {
+        "bbox": [
+          61,
+          523,
+          721,
+          601
+        ],
+        "contrast": 75.964,
+        "glyph_p90": 208.0,
+        "edge_margin": 46
+      },
+      "undiscovered-card": {
+        "bbox": [
+          55,
+          521,
+          727,
+          603
+        ],
+        "contrast": 93.257,
+        "glyph_p90": 170.0,
+        "edge_margin": 40
+      },
+      "final-title": {
+        "bbox": [
+          55,
+          287,
+          738,
+          410
+        ],
+        "contrast": 144.839,
+        "glyph_p90": 207.0,
+        "edge_margin": 29
+      },
+      "final-cta": {
+        "bbox": [
+          111,
+          994,
+          659,
+          1033
+        ],
+        "contrast": 110.429,
+        "glyph_p90": 208.0,
+        "edge_margin": 108
+      }
+    }
+  },
+  "performance": {
+    "mf015r1_elapsed_ms": 160940,
+    "mf015r2_elapsed_ms": 213741,
+    "ratio": 1.3281,
+    "increase_percent": 32.81
+  },
+  "audio_status": "MUSIC_PENDING_APPROVAL",
+  "human_ab_review": "PENDING_HUMAN",
+  "published": false,
+  "result": "TECHNICAL_PASS"
+}

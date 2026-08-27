@@ -1,0 +1,15 @@
+{
+  "status": "MUSIC_PENDING_APPROVAL",
+  "source": "locally_generated_temporary_score",
+  "path": "/home/blanzy/projects/media-foundry/artifacts/mf-015r2/audio/temporary-retro-futurist-score.wav",
+  "sha256": "eb7397b4d6901effc10ccca72ba438f0588ec9c58c5af17321f1b5b33e7f7e71",
+  "generated": true,
+  "copyright": "locally generated temporary test score",
+  "narration": false,
+  "processing": "highpass=f=42,lowpass=f=9600,loudnorm=I=-16.0:TP=-1.5:LRA=8",
+  "levels": {
+    "integrated_lufs": -15.76,
+    "true_peak_db": -1.84,
+    "loudness_range_lu": 2.2
+  }
+}

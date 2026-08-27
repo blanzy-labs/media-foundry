@@ -1,0 +1,115 @@
+{
+  "slice": "MF-014R2",
+  "config": "/home/blanzy/projects/media-foundry/config/mf014r2-etched-supporting-text.json",
+  "config_sha256": "5ed5d0351927281292cf2c36e52e15291c85d4b1593bfbb4128be8dd7b170ec0",
+  "baseline": {
+    "video": "/home/blanzy/projects/media-foundry/artifacts/mf-014r1/refined-final.mp4",
+    "video_sha256": "83e69ab2751959280ff9140caa910c90d1848b0990ff05aacf4c20e24d42069a",
+    "config_sha256": "214908b1baca6101243ab9a65e1aa64048cb790b0f8fd7cd142134bbec6b73c7",
+    "source_sha256": "d2c59e27382c206ac8d195955d92daa8151e433a26a8fbc23d0635da7e1285f7",
+    "music": {
+      "catalog": "config/music/catalog.json",
+      "project": "unknown-process",
+      "track_id": "cold_concrete_anatomy",
+      "cue_region_id": "revelation_a",
+      "source_start": 5.0,
+      "source_end": 17.0,
+      "fade_in": 1.0,
+      "fade_out": 1.2,
+      "target_integrated_lufs": -16.0,
+      "target_true_peak_db": -1.5,
+      "post_normalization_gain_db": -2.5
+    }
+  },
+  "output": {
+    "path": "/home/blanzy/projects/media-foundry/artifacts/mf-014r2/refined-final.mp4",
+    "sha256": "81bb0fd745a1a382ccfb17f0cdd3dcd090d52c11396e609970727c639a111288",
+    "bytes": 4470635
+  },
+  "video": {
+    "duration_seconds": 15.0,
+    "fps": 30,
+    "frame_count": 450,
+    "width": 768,
+    "height": 1154,
+    "raw_frame_sequence_sha256": "e0573c6df8c691bbe84e77469d1ca15cd0e308008a6614544c0995f58911b71b"
+  },
+  "supporting_text": {
+    "tagline": {
+      "text": "SUBJUGATE THE PLANET",
+      "position": [
+        0.5,
+        0.665
+      ],
+      "font_size": 31,
+      "reveal_start": 10.5,
+      "reveal_duration": 1.0,
+      "etched_intensity": 1.0,
+      "supporting_brightness": 0.66
+    },
+    "website": {
+      "text": "rcblanzy.com/books/unknown-process",
+      "position": [
+        0.52,
+        0.865
+      ],
+      "font_size": 21,
+      "reveal_start": 11.8,
+      "reveal_duration": 1.0,
+      "etched_intensity": 0.92,
+      "supporting_brightness": 0.58
+    }
+  },
+  "font_assets": {
+    "tagline": "/usr/share/fonts/truetype/liberation/LiberationSansNarrow-Bold.ttf",
+    "website": "/usr/share/fonts/truetype/liberation/LiberationSansNarrow-Regular.ttf"
+  },
+  "title_timing": {
+    "title_heat_start": 5.2,
+    "title_heat_rise_duration": 3.0,
+    "title_peak_level": 1.0,
+    "title_peak_hold_duration": 1.0,
+    "title_settle_level": 0.5,
+    "title_settle_duration": 1.2
+  },
+  "final_hold_start": 12.8,
+  "final_hold_seconds": 2.1999999999999993,
+  "music": {
+    "contract": "mf010_music_selection_v1",
+    "project": "unknown-process",
+    "track_id": "cold_concrete_anatomy",
+    "qualified_id": "unknown-process:cold_concrete_anatomy",
+    "track_path": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+    "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "track_approval": "APPROVED",
+    "region_id": "revelation_a",
+    "region_approval": "APPROVED",
+    "usable_start": 5.0,
+    "usable_end": 49.0,
+    "actual_start": 5.0,
+    "actual_end": 20.0,
+    "video_duration": 15.0,
+    "fade_in": 1.0,
+    "fade_out": 1.4,
+    "post_normalization_gain_db": -1.0,
+    "loudness": {
+      "integrated_lufs": -16.16,
+      "true_peak_db": -2.38,
+      "loudness_range_lu": 6.9
+    },
+    "result": "PASS"
+  },
+  "representative_frames": [
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r2/representative-frames/idle.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r2/representative-frames/active-incoming.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r2/representative-frames/title-peak.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r2/representative-frames/title-settled.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r2/representative-frames/tagline-revealed.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r2/representative-frames/website-revealed.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014r2/representative-frames/final.png"
+  ],
+  "motion_evidence": "/home/blanzy/projects/media-foundry/artifacts/mf-014r2/motion-evidence/refined-sequence.png",
+  "elapsed_ms": 159778,
+  "human_review": "PENDING_HUMAN",
+  "published": false
+}

@@ -1,0 +1,130 @@
+{
+  "slice": "MF-014",
+  "checks": {
+    "source_present": {
+      "status": "PASS",
+      "detail": "/home/blanzy/Pictures/8c4b3ca8-9c15-4e73-a78d-28b6987368f1.png"
+    },
+    "video_present": {
+      "status": "PASS",
+      "detail": "/home/blanzy/projects/media-foundry/artifacts/mf-014/final-test.mp4"
+    },
+    "manifest_present": {
+      "status": "PASS",
+      "detail": "/home/blanzy/projects/media-foundry/artifacts/mf-014/render-manifest.json"
+    },
+    "source_identity": {
+      "status": "PASS",
+      "detail": "d2c59e27382c206ac8d195955d92daa8151e433a26a8fbc23d0635da7e1285f7"
+    },
+    "duration": {
+      "status": "PASS",
+      "detail": 9.0
+    },
+    "codec": {
+      "status": "PASS",
+      "detail": "h264"
+    },
+    "portrait": {
+      "status": "PASS",
+      "detail": "768x1154"
+    },
+    "frame_count": {
+      "status": "PASS",
+      "detail": 270
+    },
+    "full_decode": {
+      "status": "PASS",
+      "detail": "full decode succeeded"
+    },
+    "representative_frames": {
+      "status": "PASS",
+      "detail": [
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014/representative-frames/idle.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014/representative-frames/ignition.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014/representative-frames/active-burn.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014/representative-frames/title-interaction.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014/representative-frames/settled.png"
+      ]
+    },
+    "idle_base_pixel_identity": {
+      "status": "PASS",
+      "detail": {
+        "expected_shape": [
+          1154,
+          768,
+          3
+        ],
+        "actual_shape": [
+          1154,
+          768,
+          3
+        ]
+      }
+    },
+    "visible_active_change": {
+      "status": "PASS",
+      "detail": {
+        "mean_absolute_delta": 0.559,
+        "changed_pixel_ratio": 0.02315
+      }
+    },
+    "aftermath_remains": {
+      "status": "PASS",
+      "detail": {
+        "mean_absolute_delta": 0.7648,
+        "changed_pixel_ratio": 0.03582
+      }
+    },
+    "controlled_coverage": {
+      "status": "PASS",
+      "detail": {
+        "ignition": {
+          "mean_absolute_delta": 0.0778,
+          "changed_pixel_ratio": 0.00228
+        },
+        "active-burn": {
+          "mean_absolute_delta": 0.559,
+          "changed_pixel_ratio": 0.02315
+        },
+        "title-interaction": {
+          "mean_absolute_delta": 2.7319,
+          "changed_pixel_ratio": 0.21967
+        },
+        "settled": {
+          "mean_absolute_delta": 0.7648,
+          "changed_pixel_ratio": 0.03582
+        }
+      }
+    },
+    "path_count": {
+      "status": "PASS",
+      "detail": 4
+    },
+    "not_published": {
+      "status": "PASS",
+      "detail": false
+    }
+  },
+  "visual_metrics": {
+    "ignition": {
+      "mean_absolute_delta": 0.0778,
+      "changed_pixel_ratio": 0.00228
+    },
+    "active-burn": {
+      "mean_absolute_delta": 0.559,
+      "changed_pixel_ratio": 0.02315
+    },
+    "title-interaction": {
+      "mean_absolute_delta": 2.7319,
+      "changed_pixel_ratio": 0.21967
+    },
+    "settled": {
+      "mean_absolute_delta": 0.7648,
+      "changed_pixel_ratio": 0.03582
+    }
+  },
+  "human_review": "PENDING_HUMAN",
+  "published": false,
+  "result": "TECHNICAL_PASS"
+}

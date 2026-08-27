@@ -1,0 +1,34 @@
+{
+  "slice": "MF-014",
+  "source": {
+    "path": "/home/blanzy/Pictures/8c4b3ca8-9c15-4e73-a78d-28b6987368f1.png",
+    "preserved_copy": "/home/blanzy/projects/media-foundry/artifacts/mf-014/source-reference.png",
+    "sha256": "d2c59e27382c206ac8d195955d92daa8151e433a26a8fbc23d0635da7e1285f7",
+    "bytes": 3051559
+  },
+  "effect": {
+    "module": "metal_circuit_burn_stage",
+    "path_count": 4,
+    "duration_seconds": 9.0,
+    "fps": 30,
+    "frame_count": 270,
+    "width": 768,
+    "height": 1154
+  },
+  "video": {
+    "path": "/home/blanzy/projects/media-foundry/artifacts/mf-014/final-test.mp4",
+    "sha256": "b6bb0ff0d6fee78ba3a7421706e790f8340862b8b2a785b3d149451fba3e318a",
+    "bytes": 2593801
+  },
+  "raw_frame_sequence_sha256": "203f12e982ee08df66c708cc84082b50ce62c3eae609847bfaf2ad06917d48c2",
+  "representative_frames": [
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014/representative-frames/idle.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014/representative-frames/ignition.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014/representative-frames/active-burn.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014/representative-frames/title-interaction.png",
+    "/home/blanzy/projects/media-foundry/artifacts/mf-014/representative-frames/settled.png"
+  ],
+  "motion_evidence": "/home/blanzy/projects/media-foundry/artifacts/mf-014/motion-evidence/burn-sequence.png",
+  "elapsed_ms": 62930,
+  "published": false
+}

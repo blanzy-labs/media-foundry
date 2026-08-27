@@ -1,0 +1,213 @@
+{
+  "slice": "MF-014R3",
+  "checks": {
+    "r1_video_preserved": {
+      "status": "PASS",
+      "detail": "83e69ab2751959280ff9140caa910c90d1848b0990ff05aacf4c20e24d42069a"
+    },
+    "r1_config_preserved": {
+      "status": "PASS",
+      "detail": "214908b1baca6101243ab9a65e1aa64048cb790b0f8fd7cd142134bbec6b73c7"
+    },
+    "source_plate_preserved": {
+      "status": "PASS",
+      "detail": "d2c59e27382c206ac8d195955d92daa8151e433a26a8fbc23d0635da7e1285f7"
+    },
+    "config_identity": {
+      "status": "PASS",
+      "detail": "7e1d3769d792e1b3b1a2acb95c26ad47ea567e9071fde9e260736caa7a6c47b5"
+    },
+    "url_excluded": {
+      "status": "PASS",
+      "detail": false
+    },
+    "tagline_exact": {
+      "status": "PASS",
+      "detail": "SUBJUGATE THE PLANET"
+    },
+    "lower_right_placement": {
+      "status": "PASS",
+      "detail": {
+        "position": [
+          0.7,
+          0.79
+        ],
+        "bounds": [
+          0.51,
+          0.73,
+          0.9,
+          0.855
+        ]
+      }
+    },
+    "recessed_controls": {
+      "status": "PASS",
+      "detail": {
+        "recessed_intensity": 0.72,
+        "cold_visibility": 0.18,
+        "active_heat_level": 0.65,
+        "final_settle_brightness": 0.28
+      }
+    },
+    "post_title_thermal_causality": {
+      "status": "PASS",
+      "detail": {
+        "title_settle_end": 10.399999999999999,
+        "route": [
+          10.4,
+          11.4
+        ],
+        "heat_start": 11.25,
+        "direction": "right_to_left"
+      }
+    },
+    "route_branches_from_existing_path": {
+      "status": "PASS",
+      "detail": {
+        "route_start": [
+          0.84,
+          0.6
+        ],
+        "point_count": 4
+      }
+    },
+    "settle_and_final_hold": {
+      "status": "PASS",
+      "detail": {
+        "heat_settle_end": 13.75,
+        "hold_start": 13.75,
+        "hold_seconds": 1.75
+      }
+    },
+    "video_contract": {
+      "status": "PASS",
+      "detail": {
+        "codec": "h264",
+        "duration": 15.5,
+        "fps": 30.0,
+        "frames": "465"
+      }
+    },
+    "audio_stream": {
+      "status": "PASS",
+      "detail": {
+        "codec": "aac",
+        "sample_rate": "48000"
+      }
+    },
+    "audio_video_decode": {
+      "status": "PASS",
+      "detail": "full decode succeeded"
+    },
+    "music_direction_preserved": {
+      "status": "PASS",
+      "detail": {
+        "track": "cold_concrete_anatomy",
+        "region": "revelation_a",
+        "start": 5.0
+      }
+    },
+    "music_extension_bounded": {
+      "status": "PASS",
+      "detail": {
+        "actual": [
+          5.0,
+          20.5
+        ],
+        "usable": [
+          5.0,
+          49.0
+        ]
+      }
+    },
+    "audio_loudness": {
+      "status": "PASS",
+      "detail": {
+        "integrated_lufs": -16.29,
+        "true_peak_db": -2.38,
+        "loudness_range_lu": 7.2
+      }
+    },
+    "evidence_frames": {
+      "status": "PASS",
+      "detail": [
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r3/representative-frames/cold-plate.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r3/representative-frames/active-incoming.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r3/representative-frames/title-peak.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r3/representative-frames/title-settled.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r3/representative-frames/tagline-cold-detail.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r3/representative-frames/tagline-thermal-reveal.png",
+        "/home/blanzy/projects/media-foundry/artifacts/mf-014r3/representative-frames/final.png"
+      ]
+    },
+    "cold_recess_physically_present": {
+      "status": "PASS",
+      "detail": {
+        "mean_glyph_delta": 6.263,
+        "changed_glyph_ratio": 0.24204,
+        "full_frame_changed_ratio": 0.00158,
+        "edge_highlight_ratio": 0.31491,
+        "edge_shadow_ratio": 0.44804
+      }
+    },
+    "r1_title_peak_preserved": {
+      "status": "PASS",
+      "detail": {
+        "roi": "title"
+      }
+    },
+    "heat_driven_spatial_reveal": {
+      "status": "PASS",
+      "detail": {
+        "left_half_delta": 9.506,
+        "right_half_delta": 47.662,
+        "right_to_left_ratio": 5.014
+      }
+    },
+    "settled_stamp_readable": {
+      "status": "PASS",
+      "detail": {
+        "changed_glyph_ratio": 0.79525,
+        "local_luma_contrast": 6.83,
+        "glyph_luma_p95": 66.0
+      }
+    },
+    "title_remains_dominant": {
+      "status": "PASS",
+      "detail": {
+        "title_luma_p95": 133.0,
+        "tagline_luma_p95": 66.0
+      }
+    },
+    "bounded_added_coverage": {
+      "status": "PASS",
+      "detail": 0.00344
+    },
+    "not_published": {
+      "status": "PASS",
+      "detail": false
+    }
+  },
+  "material_metrics": {
+    "cold": {
+      "mean_glyph_delta": 6.263,
+      "changed_glyph_ratio": 0.24204,
+      "full_frame_changed_ratio": 0.00158,
+      "edge_highlight_ratio": 0.31491,
+      "edge_shadow_ratio": 0.44804
+    },
+    "thermal": {
+      "left_half_delta": 9.506,
+      "right_half_delta": 47.662,
+      "right_to_left_ratio": 5.014
+    },
+    "final": {
+      "changed_glyph_ratio": 0.79525,
+      "local_luma_contrast": 6.83,
+      "glyph_luma_p95": 66.0
+    }
+  },
+  "human_review": "PENDING_HUMAN",
+  "published": false,
+  "result": "TECHNICAL_PASS"
+}

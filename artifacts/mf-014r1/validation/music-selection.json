@@ -1,0 +1,26 @@
+{
+  "contract": "mf010_music_selection_v1",
+  "project": "unknown-process",
+  "track_id": "cold_concrete_anatomy",
+  "qualified_id": "unknown-process:cold_concrete_anatomy",
+  "track_path": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+  "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+  "track_approval": "APPROVED",
+  "region_id": "revelation_a",
+  "region_approval": "APPROVED",
+  "usable_start": 5.0,
+  "usable_end": 49.0,
+  "actual_start": 5.0,
+  "actual_end": 17.0,
+  "video_duration": 12.0,
+  "fade_in": 1.0,
+  "fade_out": 1.2,
+  "post_normalization_gain_db": -2.5,
+  "visual_peak_source_time": 13.2,
+  "loudness": {
+    "integrated_lufs": -16.07,
+    "true_peak_db": -3.95,
+    "loudness_range_lu": 4.2
+  },
+  "result": "PASS"
+}
