@@ -1,0 +1,45 @@
+{
+  "slice": "MF-016",
+  "config": "/home/blanzy/projects/media-foundry/config/mf016-pulp-composition.json",
+  "config_sha256": "53971df4c454268eb09c5d9715fae7fab6defd8979484888d318d643355b26ef",
+  "seed": 1601957,
+  "source_regression": {
+    "path": "artifacts/mf-015r2/final-test.mp4",
+    "sha256": "3c3d570d9c8d33a0942373937beefef49809b46f2e7a256008c3b9c2de9dc080",
+    "sample_seconds": 11.3
+  },
+  "static_keyframes": [
+    {
+      "state": "dormant",
+      "path": "/home/blanzy/projects/media-foundry/artifacts/mf-016/pulp-keyframes/dormant.png",
+      "sha256": "52762d05126e07f19ef1079dead7091e3ac8fab4e3b50f2293a2ce7adbd6fa31"
+    },
+    {
+      "state": "wake",
+      "path": "/home/blanzy/projects/media-foundry/artifacts/mf-016/pulp-keyframes/wake.png",
+      "sha256": "5b29060827ad93f55ab31772d1264e9c74dcb4af57add192f97fc005fa66e41d"
+    },
+    {
+      "state": "escalation",
+      "path": "/home/blanzy/projects/media-foundry/artifacts/mf-016/pulp-keyframes/escalation.png",
+      "sha256": "c13d677d93ba87963948a67d9982fbe8974f165b8221186d4c9ed45d99117f8a"
+    },
+    {
+      "state": "peak",
+      "path": "/home/blanzy/projects/media-foundry/artifacts/mf-016/pulp-keyframes/peak.png",
+      "sha256": "a7387edfe9c069d7d6d23bb658a99d7c286dd050eac306630431c7a4655b5886"
+    }
+  ],
+  "contact_sheet": "/home/blanzy/projects/media-foundry/artifacts/mf-016/composition-contact-sheet.png",
+  "before_after": "/home/blanzy/projects/media-foundry/artifacts/mf-016/before-after/problem-vs-corrected.png",
+  "machine_validation": "PASS",
+  "gate_decision": {
+    "state": "BLOCKED_COMPOSITION",
+    "animation_authorized": false,
+    "machine_validation": "PASS",
+    "human_status": "PENDING_HUMAN",
+    "reason": "HUMAN_COMPOSITION_APPROVAL_REQUIRED"
+  },
+  "full_video_rendered": false,
+  "published": false
+}

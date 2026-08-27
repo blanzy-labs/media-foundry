@@ -1,0 +1,93 @@
+{
+  "slice": "MF-016",
+  "type": "composition_contract_tests",
+  "tests": [
+    {
+      "name": "missing_semantic_role",
+      "expected": "MISSING_OR_INVALID_SEMANTIC_ROLE",
+      "errors": [
+        "MISSING_OR_INVALID_SEMANTIC_ROLE"
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "missing_visual_purpose",
+      "expected": "INVALID_VISUAL_PURPOSE",
+      "errors": [
+        "INVALID_VISUAL_PURPOSE"
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "fill_empty_space_rejected",
+      "expected": "INVALID_VISUAL_PURPOSE",
+      "errors": [
+        "INVALID_VISUAL_PURPOSE"
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "unmotivated_hero_occlusion",
+      "expected": "UNMOTIVATED_HERO_OCCLUSION",
+      "errors": [
+        "NEGATIVE_SPACE_INTRUSION",
+        "UNMOTIVATED_HERO_OCCLUSION",
+        "UNMOTIVATED_CROSS_SCENE_OCCLUSION",
+        "UNMOTIVATED_LARGE_HIGH_CONTRAST_SHAPE"
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "unmotivated_cross_scene_line",
+      "expected": "UNMOTIVATED_CROSS_SCENE_OCCLUSION",
+      "errors": [
+        "NEGATIVE_SPACE_INTRUSION",
+        "UNMOTIVATED_HERO_OCCLUSION",
+        "UNMOTIVATED_CROSS_SCENE_OCCLUSION",
+        "UNMOTIVATED_LARGE_HIGH_CONTRAST_SHAPE"
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "excessive_support_density",
+      "expected": "EXCESSIVE_SUPPORT_DENSITY",
+      "errors": [
+        "EXCESSIVE_SUPPORT_DENSITY"
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "preserved_negative_space_is_valid",
+      "expected": "PASS",
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "name": "pending_human_blocks_animation",
+      "expected": "BLOCKED_COMPOSITION",
+      "actual": "BLOCKED_COMPOSITION",
+      "result": "PASS"
+    },
+    {
+      "name": "valid_human_approval_authorizes_animation",
+      "expected": "COMPOSITION_READY",
+      "actual": "COMPOSITION_READY",
+      "result": "PASS"
+    },
+    {
+      "name": "legacy_simple_format_compatible",
+      "expected": false,
+      "actual": false,
+      "result": "PASS"
+    },
+    {
+      "name": "complex_scene_requires_gate",
+      "expected": true,
+      "actual": true,
+      "result": "PASS"
+    }
+  ],
+  "passed": 11,
+  "total": 11,
+  "result": "PASS"
+}

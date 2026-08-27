@@ -1,0 +1,249 @@
+{
+  "slice": "MF-016",
+  "result": "TECHNICAL_PASS",
+  "composition_state": "COMPOSITION_PENDING",
+  "human_review": "PENDING_HUMAN",
+  "checks": {
+    "prior_candidates_frozen": {
+      "status": "PASS",
+      "detail": {
+        "artifacts/mf-015/final-test.mp4": "f145f0b089f54e6db32a4ab907f53ae8eb4b6dbbe7ebcb7eed50bec8034b7d7c",
+        "artifacts/mf-015r1/final-test.mp4": "4945abbb49965b1132fa99be45e2d9019e5214ef0ccf23905936da0077f113a6",
+        "artifacts/mf-015r2/final-test.mp4": "3c3d570d9c8d33a0942373937beefef49809b46f2e7a256008c3b9c2de9dc080"
+      }
+    },
+    "contract_vocabulary": {
+      "status": "PASS",
+      "detail": {
+        "roles": [
+          "atmosphere",
+          "background_structure",
+          "decorative",
+          "depth_element",
+          "foreground_frame",
+          "hero",
+          "light_source",
+          "machine_support",
+          "primary_subject",
+          "story_prop",
+          "support_subject",
+          "text"
+        ],
+        "purposes": [
+          "communicate_machine_state",
+          "create_foreground_depth",
+          "establish_depth",
+          "establish_location",
+          "establish_scale",
+          "frame_hero",
+          "guide_eye",
+          "provide_light",
+          "support_perspective",
+          "support_story"
+        ],
+        "zones": [
+          "background_zone",
+          "foreground_zone",
+          "hero_zone",
+          "negative_space_zone",
+          "no_occlusion_zone",
+          "support_zone",
+          "text_safe_zone"
+        ]
+      }
+    },
+    "semantic_manifest": {
+      "status": "PASS",
+      "detail": {
+        "checks": {
+          "zone_vocabulary_and_geometry": "PASS",
+          "required_zone_kinds": "PASS",
+          "unique_object_ids": "PASS",
+          "semantic_role_required": "PASS",
+          "valid_visual_purpose_required": "PASS",
+          "remove_if_unnecessary_policy": "PASS",
+          "visual_hierarchy": "PASS",
+          "objects_inside_allowed_zones": "PASS",
+          "no_unexpected_frame_clipping": "PASS",
+          "preserved_negative_space": "PASS",
+          "hero_and_no_occlusion_protection": "PASS",
+          "text_safety": "PASS",
+          "long_line_guardrail": "PASS",
+          "large_shape_guardrail": "PASS",
+          "support_zone_capacity": "PASS",
+          "negative_space_not_occupancy_scored": "PASS",
+          "animation_cannot_rescue_composition": "PASS"
+        },
+        "errors": [],
+        "advisories": [],
+        "result": "PASS"
+      }
+    },
+    "four_static_states": {
+      "status": "PASS",
+      "detail": [
+        "dormant",
+        "wake",
+        "escalation",
+        "peak"
+      ]
+    },
+    "negative_space_first_class": {
+      "status": "PASS",
+      "detail": "preserved and not occupancy-scored"
+    },
+    "known_problem_geometry_removed": {
+      "status": "PASS",
+      "detail": [
+        "room_shell",
+        "main_reactor",
+        "left_control_bank",
+        "rear_tower",
+        "left_wall_pipe",
+        "floor_plinth"
+      ]
+    },
+    "one_intentional_support_bank": {
+      "status": "PASS",
+      "detail": "one major object in support_left"
+    },
+    "keyframe_integrity": {
+      "status": "PASS",
+      "detail": [
+        {
+          "state": "dormant",
+          "path": "/home/blanzy/projects/media-foundry/artifacts/mf-016/pulp-keyframes/dormant.png",
+          "sha256": "52762d05126e07f19ef1079dead7091e3ac8fab4e3b50f2293a2ce7adbd6fa31"
+        },
+        {
+          "state": "wake",
+          "path": "/home/blanzy/projects/media-foundry/artifacts/mf-016/pulp-keyframes/wake.png",
+          "sha256": "5b29060827ad93f55ab31772d1264e9c74dcb4af57add192f97fc005fa66e41d"
+        },
+        {
+          "state": "escalation",
+          "path": "/home/blanzy/projects/media-foundry/artifacts/mf-016/pulp-keyframes/escalation.png",
+          "sha256": "c13d677d93ba87963948a67d9982fbe8974f165b8221186d4c9ed45d99117f8a"
+        },
+        {
+          "state": "peak",
+          "path": "/home/blanzy/projects/media-foundry/artifacts/mf-016/pulp-keyframes/peak.png",
+          "sha256": "a7387edfe9c069d7d6d23bb658a99d7c286dd050eac306630431c7a4655b5886"
+        }
+      ]
+    },
+    "deterministic_keyframes": {
+      "status": "PASS",
+      "detail": "pixel-identical rerender"
+    },
+    "brightness_hierarchy": {
+      "status": "PASS",
+      "detail": {
+        "dormant": {
+          "hero_mean": 43.44,
+          "support_mean": 30.812,
+          "negative_space_mean": 13.391,
+          "hero_support_ratio": 1.41
+        },
+        "wake": {
+          "hero_mean": 51.57,
+          "support_mean": 32.876,
+          "negative_space_mean": 13.474,
+          "hero_support_ratio": 1.569
+        },
+        "escalation": {
+          "hero_mean": 62.857,
+          "support_mean": 35.266,
+          "negative_space_mean": 14.304,
+          "hero_support_ratio": 1.782
+        },
+        "peak": {
+          "hero_mean": 74.832,
+          "support_mean": 37.855,
+          "negative_space_mean": 16.019,
+          "hero_support_ratio": 1.977
+        }
+      }
+    },
+    "static_state_progression": {
+      "status": "PASS",
+      "detail": [
+        43.44,
+        51.57,
+        62.857,
+        74.832
+      ]
+    },
+    "contact_sheet_and_comparison": {
+      "status": "PASS",
+      "detail": {
+        "contact_sheet": "/home/blanzy/projects/media-foundry/artifacts/mf-016/composition-contact-sheet.png",
+        "before_after": "/home/blanzy/projects/media-foundry/artifacts/mf-016/before-after/problem-vs-corrected.png"
+      }
+    },
+    "purpose_and_failure_tests": {
+      "status": "PASS",
+      "detail": {
+        "passed": 11,
+        "total": 11
+      }
+    },
+    "fail_closed_gate": {
+      "status": "PASS",
+      "detail": {
+        "state": "BLOCKED_COMPOSITION",
+        "animation_authorized": false,
+        "machine_validation": "PASS",
+        "human_status": "PENDING_HUMAN",
+        "reason": "HUMAN_COMPOSITION_APPROVAL_REQUIRED"
+      }
+    },
+    "legacy_simple_compatibility": {
+      "status": "PASS",
+      "detail": "simple bypasses; complex requires gate"
+    },
+    "no_full_video_render": {
+      "status": "PASS",
+      "detail": []
+    },
+    "human_authority_preserved": {
+      "status": "PASS",
+      "detail": {
+        "human_status": "PENDING_HUMAN",
+        "reviewer": null
+      }
+    },
+    "not_published": {
+      "status": "PASS",
+      "detail": false
+    }
+  },
+  "frame_metrics": {
+    "dormant": {
+      "hero_mean": 43.44,
+      "support_mean": 30.812,
+      "negative_space_mean": 13.391,
+      "hero_support_ratio": 1.41
+    },
+    "wake": {
+      "hero_mean": 51.57,
+      "support_mean": 32.876,
+      "negative_space_mean": 13.474,
+      "hero_support_ratio": 1.569
+    },
+    "escalation": {
+      "hero_mean": 62.857,
+      "support_mean": 35.266,
+      "negative_space_mean": 14.304,
+      "hero_support_ratio": 1.782
+    },
+    "peak": {
+      "hero_mean": 74.832,
+      "support_mean": 37.855,
+      "negative_space_mean": 16.019,
+      "hero_support_ratio": 1.977
+    }
+  },
+  "animation_authorized": false,
+  "published": false
+}
