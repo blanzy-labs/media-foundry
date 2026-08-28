@@ -1,0 +1,34 @@
+{
+  "slice": "MF-020R3",
+  "result": "PASS",
+  "technical_state": "READY_FOR_HUMAN_REVIEW",
+  "baseline": {
+    "path": "artifacts/mf-020r2/final-test.mp4",
+    "sha256": "af74ae892c56bc1ac5c8790d4a36b2d8330d46175b2762ad98900d7617cdc6b8"
+  },
+  "refined_artifact": {
+    "path": "artifacts/mf-020r3/final-test.mp4",
+    "sha256": "77a96e5a0d47275ea7931ed72e8f1088114e43582fef2ec15ebbe8d0f29f4d1c",
+    "bytes": 3151834,
+    "duration_seconds": 20.0,
+    "resolution": [768, 1152],
+    "fps": 30,
+    "frames": 600
+  },
+  "brightness": {
+    "before_dormant": {"frame_mean": 10.786, "hero_mean": 8.45, "hero_bright_pixels": 0, "console_mean": 8.521},
+    "refined_dormant": {"frame_mean": 20.823, "hero_mean": 20.642, "hero_bright_pixels": 488, "console_mean": 17.943},
+    "startup": {"frame_mean": 20.965, "hero_mean": 21.029, "hero_bright_pixels": 524, "console_mean": 17.752},
+    "mid_active": {"frame_mean": 30.335, "hero_mean": 49.556, "hero_bright_pixels": 44469, "console_mean": 17.379},
+    "peak": {"frame_mean": 43.74, "hero_mean": 77.196, "hero_bright_pixels": 97507, "console_mean": 18.062}
+  },
+  "composition_gate": {"result": "STATIC_TECHNICAL_PASS", "state": "READY_FOR_HUMAN_COMPOSITION_REVIEW", "checks_passed": 11, "checks_total": 11},
+  "lighting_invariant_gate": {"result": "PASS", "checks_passed": 10, "checks_total": 10},
+  "final_media_gate": {"result": "PASS", "checks_passed": 10, "checks_total": 10, "full_decode": "PASS"},
+  "lamp_alignment_preserved": true,
+  "audio_essence_preserved": true,
+  "audio_essence_md5": "dee3bd64164609dcd2bf156e8b498ab6",
+  "human_review": "PENDING_HUMAN",
+  "release_ready": false,
+  "published": false
+}

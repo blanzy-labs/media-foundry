@@ -1,0 +1,40 @@
+{
+  "slice": "MF-020R3",
+  "base_manifest": "config/mf-bench-001.json",
+  "scope": "dormant_state_lighting_and_machine_readability_only",
+  "frozen_invariants": {
+    "base_manifest_sha256": "748f354d047f98af1feff90de65e4cb4216fe11eaa7b016191de20fb4065875a",
+    "upper_ring_lamps_canonical_sha256": "ddefe5b0b8e44099880925a27db30291c01e75a5a819cd1f45950a7d1f4a1ec5",
+    "shot_canonical_sha256": "0102f9e8910d98865696cdc2f806a42403cf399a5e4c68f4d460a9868215757f",
+    "text_canonical_sha256": "d613a77a24c45897876c81be07b5fd348972cb064662afb77c4096391ca95ebc",
+    "audio_canonical_sha256": "da32cec12613cdc72d15c0d8cb7db6903ecfbd9a2819449b7e7fe0ec60239402"
+  },
+  "dormant_lighting": {
+    "world": {
+      "color": [0.055, 0.095, 0.08, 1.0],
+      "strength": 0.42
+    },
+    "inspection_fill": {
+      "color": [0.055, 0.20, 0.16],
+      "energy": 150.0
+    },
+    "room_readability": {
+      "color": [0.07, 0.24, 0.18],
+      "energy": 1450.0
+    },
+    "service_practical": {
+      "location": [4.8, -0.2, 6.3],
+      "color": [1.0, 0.24, 0.045],
+      "energy": 520.0,
+      "shadow_soft_size": 2.2
+    }
+  },
+  "stages": {
+    "blockout": {
+      "seconds": [0.9, 3.8, 10.8, 17.8],
+      "labels": ["dormant", "startup", "mid-active", "peak"]
+    }
+  },
+  "human_review": "PENDING_HUMAN",
+  "publication": false
+}

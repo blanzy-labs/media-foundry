@@ -1,0 +1,269 @@
+{
+  "slice": "MF-020R3",
+  "result": "STATIC_TECHNICAL_PASS",
+  "state": "READY_FOR_HUMAN_COMPOSITION_REVIEW",
+  "passed": 11,
+  "total": 11,
+  "checks": {
+    "source_strategy": {
+      "status": "PASS",
+      "detail": {
+        "result": "PASS",
+        "state": "PASS",
+        "configured_strategy": "PROCEDURAL",
+        "resolved_strategy": "PROCEDURAL",
+        "recommended_strategy": "PROCEDURAL",
+        "recommendation_reasons": [
+          "geometric precision is high",
+          "animation-first construction is appropriate"
+        ],
+        "checks": {
+          "source_strategy_required": "PASS",
+          "known_source_strategy": "PASS",
+          "quality_intent": "PASS",
+          "bounded_assessment": "PASS",
+          "human_override": "PASS",
+          "fallback_policy": "PASS",
+          "no_silent_fallback": "PASS",
+          "plate_contract": "NOT_REQUIRED",
+          "required_plate_exists": "NOT_REQUIRED",
+          "plate_approval_vocabulary": "NOT_REQUIRED",
+          "plate_provenance": "NOT_REQUIRED",
+          "plate_hash_integrity": "NOT_REQUIRED",
+          "production_plate_approved": "NOT_REQUIRED",
+          "plate_layer_and_region_plan": "NOT_REQUIRED",
+          "authentic_media_exists": "NOT_REQUIRED",
+          "composition_gate_bound": "PASS"
+        },
+        "warnings": [],
+        "errors": [],
+        "asset": null,
+        "release_ready": true
+      }
+    },
+    "reference_art_direction_only": {
+      "status": "PASS",
+      "detail": {
+        "path": "/home/blanzy/Pictures/50s style book cover.png",
+        "sha256": "a4df3398242b6dc20ee667848cb7464658b527316700ffb278bc5ab1f1cee8d6",
+        "usage": "art_direction_only",
+        "embedded_in_video": false
+      }
+    },
+    "semantic_composition_contract": {
+      "status": "PASS",
+      "detail": {
+        "checks": {
+          "zone_vocabulary_and_geometry": "PASS",
+          "required_zone_kinds": "PASS",
+          "unique_object_ids": "PASS",
+          "semantic_role_required": "PASS",
+          "valid_visual_purpose_required": "PASS",
+          "remove_if_unnecessary_policy": "PASS",
+          "visual_hierarchy": "PASS",
+          "objects_inside_allowed_zones": "PASS",
+          "no_unexpected_frame_clipping": "PASS",
+          "preserved_negative_space": "PASS",
+          "hero_and_no_occlusion_protection": "PASS",
+          "text_safety": "PASS",
+          "long_line_guardrail": "PASS",
+          "large_shape_guardrail": "PASS",
+          "support_zone_capacity": "PASS",
+          "negative_space_not_occupancy_scored": "PASS",
+          "animation_cannot_rescue_composition": "PASS"
+        },
+        "errors": [],
+        "advisories": [],
+        "result": "PASS"
+      }
+    },
+    "human_gate_preserved": {
+      "status": "PASS",
+      "detail": {
+        "state": "BLOCKED_COMPOSITION",
+        "animation_authorized": false,
+        "machine_validation": "PASS",
+        "human_status": "PENDING_HUMAN",
+        "reason": "HUMAN_COMPOSITION_APPROVAL_REQUIRED"
+      }
+    },
+    "static_keyframes_exist": {
+      "status": "PASS",
+      "detail": [
+        "artifacts/mf-020r3/proof/dormant.png",
+        "artifacts/mf-020r3/proof/startup.png",
+        "artifacts/mf-020r3/proof/mid-active.png",
+        "artifacts/mf-020r3/proof/peak.png"
+      ]
+    },
+    "opening_hook_readable_not_dead_black": {
+      "status": "PASS",
+      "detail": {
+        "label": "dormant",
+        "frame_mean": 20.823,
+        "hero_mean": 20.642,
+        "hero_bright_pixels": 488,
+        "console_mean": 17.943,
+        "title_yellow_pixels": 0
+      }
+    },
+    "hero_and_console_hierarchy": {
+      "status": "PASS",
+      "detail": [
+        {
+          "label": "dormant",
+          "frame_mean": 20.823,
+          "hero_mean": 20.642,
+          "hero_bright_pixels": 488,
+          "console_mean": 17.943,
+          "title_yellow_pixels": 0
+        },
+        {
+          "label": "startup",
+          "frame_mean": 20.965,
+          "hero_mean": 21.029,
+          "hero_bright_pixels": 524,
+          "console_mean": 17.752,
+          "title_yellow_pixels": 0
+        },
+        {
+          "label": "mid-active",
+          "frame_mean": 30.335,
+          "hero_mean": 49.556,
+          "hero_bright_pixels": 44469,
+          "console_mean": 17.379,
+          "title_yellow_pixels": 0
+        },
+        {
+          "label": "peak",
+          "frame_mean": 43.74,
+          "hero_mean": 77.196,
+          "hero_bright_pixels": 97507,
+          "console_mean": 18.062,
+          "title_yellow_pixels": 113
+        }
+      ]
+    },
+    "static_progression_is_distinct": {
+      "status": "PASS",
+      "detail": [
+        707117,
+        863681,
+        880078
+      ]
+    },
+    "identity_reveal_earned_and_safe": {
+      "status": "PASS",
+      "detail": [
+        {
+          "label": "dormant",
+          "frame_mean": 20.823,
+          "hero_mean": 20.642,
+          "hero_bright_pixels": 488,
+          "console_mean": 17.943,
+          "title_yellow_pixels": 0
+        },
+        {
+          "label": "startup",
+          "frame_mean": 20.965,
+          "hero_mean": 21.029,
+          "hero_bright_pixels": 524,
+          "console_mean": 17.752,
+          "title_yellow_pixels": 0
+        },
+        {
+          "label": "mid-active",
+          "frame_mean": 30.335,
+          "hero_mean": 49.556,
+          "hero_bright_pixels": 44469,
+          "console_mean": 17.379,
+          "title_yellow_pixels": 0
+        },
+        {
+          "label": "peak",
+          "frame_mean": 43.74,
+          "hero_mean": 77.196,
+          "hero_bright_pixels": 97507,
+          "console_mean": 18.062,
+          "title_yellow_pixels": 113
+        }
+      ]
+    },
+    "render_fingerprint": {
+      "status": "PASS",
+      "detail": {
+        "config_sha256": "8b397bbffd676a3d3c23d67b2fee7e0b897568a1e85ac7eded0a43e1fb942912",
+        "base_config_sha256": "748f354d047f98af1feff90de65e4cb4216fe11eaa7b016191de20fb4065875a",
+        "builder_sha256": "d1cded0ed7ccd2d3579b58134949087fb60914fc6a38bac1a93133b03c35b921",
+        "template_sha256": "6668c12086c36eb68e29bc6fea101139291ef2ae96b8d55867d017856c20aea2",
+        "seed": 1001001,
+        "blender_version": "5.2.0 LTS",
+        "engine": "BLENDER_EEVEE",
+        "resolution": [
+          768,
+          1152
+        ],
+        "fps": 30,
+        "frames": 600
+      }
+    },
+    "empty_lab_and_physical_causality": {
+      "status": "PASS",
+      "detail": {
+        "objects": {
+          "hero": "self_starting_induction_chamber",
+          "console": "unattended_witness_console",
+          "gauges": 2,
+          "relays": 5,
+          "ring_lamps": 9,
+          "operator_count": 0
+        },
+        "causality": {
+          "pilot_precedes_gauge": true,
+          "gauge_precedes_relays": true,
+          "relays_precede_containment": true,
+          "containment_precedes_energy": true,
+          "energy_precedes_title": true
+        },
+        "reference_embedded": false
+      }
+    }
+  },
+  "metrics": [
+    {
+      "label": "dormant",
+      "frame_mean": 20.823,
+      "hero_mean": 20.642,
+      "hero_bright_pixels": 488,
+      "console_mean": 17.943,
+      "title_yellow_pixels": 0
+    },
+    {
+      "label": "startup",
+      "frame_mean": 20.965,
+      "hero_mean": 21.029,
+      "hero_bright_pixels": 524,
+      "console_mean": 17.752,
+      "title_yellow_pixels": 0
+    },
+    {
+      "label": "mid-active",
+      "frame_mean": 30.335,
+      "hero_mean": 49.556,
+      "hero_bright_pixels": 44469,
+      "console_mean": 17.379,
+      "title_yellow_pixels": 0
+    },
+    {
+      "label": "peak",
+      "frame_mean": 43.74,
+      "hero_mean": 77.196,
+      "hero_bright_pixels": 97507,
+      "console_mean": 18.062,
+      "title_yellow_pixels": 113
+    }
+  ],
+  "full_video_rendered": false,
+  "creative_status": "PENDING_HUMAN",
+  "published": false
+}

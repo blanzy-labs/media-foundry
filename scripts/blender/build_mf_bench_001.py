@@ -31,7 +31,16 @@ def arguments() -> argparse.Namespace:
 A = arguments()
 ROOT = Path.cwd().resolve()
 CONFIG_PATH = (ROOT / A.manifest).resolve()
-CONFIG = json.loads(CONFIG_PATH.read_text())
+CONFIG_DEFINITION = json.loads(CONFIG_PATH.read_text())
+BASE_CONFIG_PATH = None
+if CONFIG_DEFINITION.get("base_manifest"):
+    BASE_CONFIG_PATH = (ROOT / CONFIG_DEFINITION["base_manifest"]).resolve()
+    CONFIG = json.loads(BASE_CONFIG_PATH.read_text())
+    for config_key, config_value in CONFIG_DEFINITION.items():
+        if config_key not in ("base_manifest", "frozen_invariants"):
+            CONFIG[config_key] = config_value
+else:
+    CONFIG = CONFIG_DEFINITION
 SHOT = CONFIG["shot"]
 FPS = SHOT["fps"]
 
@@ -192,8 +201,10 @@ scene.render.image_settings.color_depth = "8"
 scene.render.image_settings.compression = 35
 scene.render.use_file_extension = True
 scene.world.use_nodes = True
-scene.world.node_tree.nodes["Background"].inputs["Color"].default_value = (0.055, 0.095, 0.080, 1)
-scene.world.node_tree.nodes["Background"].inputs["Strength"].default_value = 0.38
+lighting = CONFIG.get("dormant_lighting", {})
+world_lighting = lighting.get("world", {"color": [0.055, 0.095, 0.080, 1], "strength": 0.38})
+scene.world.node_tree.nodes["Background"].inputs["Color"].default_value = world_lighting["color"]
+scene.world.node_tree.nodes["Background"].inputs["Strength"].default_value = world_lighting["strength"]
 
 # Palette and surface system are derived from the cover without embedding it.
 iron = worn_material("sooted_iron", (0.009, 0.017, 0.016, 1), (0.055, 0.095, 0.085, 1), 0.72, 0.67)
@@ -370,17 +381,27 @@ for index in range(3):
 bpy.ops.object.light_add(type="AREA", location=(-3.4, -3.6, 5.9))
 moon = bpy.context.object
 moon.name = "ColdInspectionFill"
-moon.data.energy = 105
-moon.data.color = (0.035, 0.15, 0.13)
+inspection_fill = lighting.get("inspection_fill", {"energy": 105, "color": [0.035, 0.15, 0.13]})
+moon.data.energy = inspection_fill["energy"]
+moon.data.color = inspection_fill["color"]
 moon.data.shape = "DISK"
 moon.data.size = 4.0
 moon.rotation_euler = (math.radians(24), 0, math.radians(-12))
 bpy.ops.object.light_add(type="POINT", location=(-2.4, -4.0, 5.2))
 room_fill = bpy.context.object
 room_fill.name = "DormantRoomReadability"
-room_fill.data.color = (0.035, 0.16, 0.13)
-room_fill.data.energy = 980
+room_readability = lighting.get("room_readability", {"energy": 980, "color": [0.035, 0.16, 0.13]})
+room_fill.data.color = room_readability["color"]
+room_fill.data.energy = room_readability["energy"]
 room_fill.data.shadow_soft_size = 3.2
+service_practical = lighting.get("service_practical")
+if service_practical:
+    bpy.ops.object.light_add(type="POINT", location=service_practical["location"])
+    service_light = bpy.context.object
+    service_light.name = "DimAmberServicePractical"
+    service_light.data.color = service_practical["color"]
+    service_light.data.energy = service_practical["energy"]
+    service_light.data.shadow_soft_size = service_practical["shadow_soft_size"]
 bpy.ops.object.light_add(type="POINT", location=(hero_x, hero_y - 0.25, 4.2))
 hero_light = bpy.context.object
 hero_light.name = "ContainedProcessLight"
@@ -498,6 +519,7 @@ builder_path = Path(__file__).resolve()
 template_path = (ROOT / CONFIG["render"]["blender"]["template"]).resolve()
 fingerprint = {
     "config_sha256": sha256(CONFIG_PATH),
+    "base_config_sha256": sha256(BASE_CONFIG_PATH) if BASE_CONFIG_PATH else None,
     "builder_sha256": sha256(builder_path),
     "template_sha256": sha256(template_path),
     "seed": CONFIG["seed"],

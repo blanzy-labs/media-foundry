@@ -1,0 +1,198 @@
+{
+  "slice": "MF-020R3",
+  "result": "PASS",
+  "technical_state": "READY_FOR_HUMAN_REVIEW",
+  "checks_passed": 10,
+  "checks_total": 10,
+  "checks": [
+    {
+      "name": "pre_render_gates",
+      "passed": true,
+      "evidence": {
+        "lighting": {
+          "result": "PASS",
+          "passed": 10,
+          "total": 10
+        },
+        "composition": {
+          "result": "STATIC_TECHNICAL_PASS",
+          "state": "READY_FOR_HUMAN_COMPOSITION_REVIEW",
+          "passed": 11,
+          "total": 11
+        }
+      }
+    },
+    {
+      "name": "immutable_render_fingerprint",
+      "passed": true,
+      "evidence": {
+        "expected": {
+          "config_sha256": "8b397bbffd676a3d3c23d67b2fee7e0b897568a1e85ac7eded0a43e1fb942912",
+          "base_config_sha256": "748f354d047f98af1feff90de65e4cb4216fe11eaa7b016191de20fb4065875a",
+          "builder_sha256": "d1cded0ed7ccd2d3579b58134949087fb60914fc6a38bac1a93133b03c35b921",
+          "template_sha256": "6668c12086c36eb68e29bc6fea101139291ef2ae96b8d55867d017856c20aea2"
+        },
+        "performance": {
+          "config_sha256": "8b397bbffd676a3d3c23d67b2fee7e0b897568a1e85ac7eded0a43e1fb942912",
+          "base_config_sha256": "748f354d047f98af1feff90de65e4cb4216fe11eaa7b016191de20fb4065875a",
+          "builder_sha256": "d1cded0ed7ccd2d3579b58134949087fb60914fc6a38bac1a93133b03c35b921",
+          "template_sha256": "6668c12086c36eb68e29bc6fea101139291ef2ae96b8d55867d017856c20aea2",
+          "seed": 1001001,
+          "blender_version": "5.2.0 LTS",
+          "engine": "BLENDER_EEVEE",
+          "resolution": [
+            768,
+            1152
+          ],
+          "fps": 30,
+          "frames": 600
+        },
+        "scene_contract": {
+          "config_sha256": "8b397bbffd676a3d3c23d67b2fee7e0b897568a1e85ac7eded0a43e1fb942912",
+          "base_config_sha256": "748f354d047f98af1feff90de65e4cb4216fe11eaa7b016191de20fb4065875a",
+          "builder_sha256": "d1cded0ed7ccd2d3579b58134949087fb60914fc6a38bac1a93133b03c35b921",
+          "template_sha256": "6668c12086c36eb68e29bc6fea101139291ef2ae96b8d55867d017856c20aea2",
+          "seed": 1001001,
+          "blender_version": "5.2.0 LTS",
+          "engine": "BLENDER_EEVEE",
+          "resolution": [
+            768,
+            1152
+          ],
+          "fps": 30,
+          "frames": 600
+        }
+      }
+    },
+    {
+      "name": "final_r2_lamp_alignment_preserved",
+      "passed": true,
+      "evidence": {
+        "differences": []
+      }
+    },
+    {
+      "name": "final_camera_text_causality_preserved",
+      "passed": true,
+      "evidence": {
+        "camera": {
+          "name": "EmptyLabWitnessCamera",
+          "lens_mm": 49.0,
+          "move": "slow_dolly_in_with_restrained_lateral_drift",
+          "single_shot": true
+        },
+        "text": {
+          "title": "UNKNOWN PROCESS",
+          "supporting_line": "NO OPERATOR PRESENT",
+          "cta": "TRY A WEB GAME",
+          "canonical_url": "https://rcblanzy.com/books/unknown-process",
+          "display_url": "rcblanzy.com/books/unknown-process"
+        },
+        "causality": {
+          "pilot_precedes_gauge": true,
+          "gauge_precedes_relays": true,
+          "relays_precede_containment": true,
+          "containment_precedes_energy": true,
+          "energy_precedes_title": true
+        }
+      }
+    },
+    {
+      "name": "complete_frame_sequence",
+      "passed": true,
+      "evidence": {
+        "count": 600,
+        "first": 0,
+        "last": 599,
+        "rendered": 600
+      }
+    },
+    {
+      "name": "final_video_contract",
+      "passed": true,
+      "evidence": {
+        "duration_seconds": 20.0,
+        "codec": "h264",
+        "resolution": [
+          768,
+          1152
+        ],
+        "fps": "30/1",
+        "frames": "600"
+      }
+    },
+    {
+      "name": "audio_unchanged",
+      "passed": true,
+      "evidence": {
+        "codec": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "baseline_essence": "MD5=dee3bd64164609dcd2bf156e8b498ab6",
+        "refined_essence": "MD5=dee3bd64164609dcd2bf156e8b498ab6"
+      }
+    },
+    {
+      "name": "full_decode",
+      "passed": true,
+      "evidence": {
+        "returncode": 0,
+        "stderr": ""
+      }
+    },
+    {
+      "name": "audio_loudness_preserved",
+      "passed": true,
+      "evidence": {
+        "integrated_lufs": -16.49,
+        "true_peak_db": -2.36
+      }
+    },
+    {
+      "name": "review_evidence_complete",
+      "passed": true,
+      "evidence": [
+        {
+          "path": "artifacts/mf-020r3/proof/dormant.png",
+          "sha256": "b33bf6574f7fa3cebaa0f69774f2cdfdebccacb499ca1dc3a3a72d8bcb73c424"
+        },
+        {
+          "path": "artifacts/mf-020r3/proof/startup.png",
+          "sha256": "31ac836f14bb5c61edbd744f48d0afee3bbb86a72f807d366d51daabf78b535a"
+        },
+        {
+          "path": "artifacts/mf-020r3/proof/mid-active.png",
+          "sha256": "f47c10d58db35c4c3f312cf0fe2991c8aefbcaadbe04b0d1681ef9337c07dc89"
+        },
+        {
+          "path": "artifacts/mf-020r3/proof/peak.png",
+          "sha256": "cc4d7c352555e84d1d61b708d94342660f2326046ff18c04b8c8729e50d9d1fa"
+        },
+        {
+          "path": "artifacts/mf-020r3/comparison/before-dormant.png",
+          "sha256": "ece6097e6c92c12ff8230b91513df0c8b8e58588037be06ea00a3a88182f5bf7"
+        },
+        {
+          "path": "artifacts/mf-020r3/comparison/after-dormant.png",
+          "sha256": "b33bf6574f7fa3cebaa0f69774f2cdfdebccacb499ca1dc3a3a72d8bcb73c424"
+        },
+        {
+          "path": "artifacts/mf-020r3/comparison/before-after-dormant.png",
+          "sha256": "cb3823800dfd26b7035a263bf1da70e2feb60b423d60cbfbf5bbc06750754477"
+        },
+        {
+          "path": "artifacts/mf-020r3/representative-frames/contact-sheet.png",
+          "sha256": "02b69c531699fc2ad913906797ba4bc90bf6967b5cabd5f69540fd46b5343bbd"
+        }
+      ]
+    }
+  ],
+  "artifact": {
+    "path": "artifacts/mf-020r3/final-test.mp4",
+    "sha256": "77a96e5a0d47275ea7931ed72e8f1088114e43582fef2ec15ebbe8d0f29f4d1c",
+    "bytes": 3151834
+  },
+  "human_review": "PENDING_HUMAN",
+  "release_ready": false,
+  "published": false
+}

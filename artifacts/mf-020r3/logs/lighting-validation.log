@@ -1,0 +1,225 @@
+{
+  "slice": "MF-020R3",
+  "result": "PASS",
+  "technical_state": "LIGHTING_GATE_PASS",
+  "checks_passed": 10,
+  "checks_total": 10,
+  "checks": [
+    {
+      "name": "lighting_only_manifest_scope",
+      "passed": true,
+      "evidence": [
+        "base_manifest",
+        "dormant_lighting",
+        "frozen_invariants",
+        "human_review",
+        "publication",
+        "scope",
+        "slice",
+        "stages"
+      ]
+    },
+    {
+      "name": "frozen_base_invariants",
+      "passed": true,
+      "evidence": {
+        "base_sha256": "748f354d047f98af1feff90de65e4cb4216fe11eaa7b016191de20fb4065875a",
+        "canonical_sha256": {
+          "upper_ring_lamps": "ddefe5b0b8e44099880925a27db30291c01e75a5a819cd1f45950a7d1f4a1ec5",
+          "shot": "0102f9e8910d98865696cdc2f806a42403cf399a5e4c68f4d460a9868215757f",
+          "text": "d613a77a24c45897876c81be07b5fd348972cb064662afb77c4096391ca95ebc",
+          "audio": "da32cec12613cdc72d15c0d8cb7db6903ecfbd9a2819449b7e7fe0ec60239402"
+        }
+      }
+    },
+    {
+      "name": "r2_lamp_alignment_preserved_exactly",
+      "passed": true,
+      "evidence": {
+        "differences": [],
+        "baseline_contract": "artifacts/mf-020r2/proof/scene-contract.json",
+        "refined_contract": "artifacts/mf-020r3/proof/scene-contract.json"
+      }
+    },
+    {
+      "name": "camera_and_scene_contract_preserved",
+      "passed": true,
+      "evidence": {
+        "camera": {
+          "name": "EmptyLabWitnessCamera",
+          "lens_mm": 49.0,
+          "move": "slow_dolly_in_with_restrained_lateral_drift",
+          "single_shot": true
+        },
+        "objects": {
+          "hero": "self_starting_induction_chamber",
+          "console": "unattended_witness_console",
+          "gauges": 2,
+          "relays": 5,
+          "ring_lamps": 9,
+          "operator_count": 0
+        },
+        "causality": {
+          "pilot_precedes_gauge": true,
+          "gauge_precedes_relays": true,
+          "relays_precede_containment": true,
+          "containment_precedes_energy": true,
+          "energy_precedes_title": true
+        }
+      }
+    },
+    {
+      "name": "text_preserved",
+      "passed": true,
+      "evidence": {
+        "title": "UNKNOWN PROCESS",
+        "supporting_line": "NO OPERATOR PRESENT",
+        "cta": "TRY A WEB GAME",
+        "canonical_url": "https://rcblanzy.com/books/unknown-process",
+        "display_url": "rcblanzy.com/books/unknown-process"
+      }
+    },
+    {
+      "name": "existing_composition_gate",
+      "passed": true,
+      "evidence": {
+        "result": "STATIC_TECHNICAL_PASS",
+        "state": "READY_FOR_HUMAN_COMPOSITION_REVIEW",
+        "passed": 11,
+        "total": 11
+      }
+    },
+    {
+      "name": "dormant_readability_improved",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "label": "dormant-signal",
+          "frame_mean": 10.786,
+          "hero_mean": 8.45,
+          "hero_bright_pixels": 0,
+          "console_mean": 8.521,
+          "title_yellow_pixels": 0
+        },
+        "after": {
+          "label": "dormant",
+          "frame_mean": 20.823,
+          "hero_mean": 20.642,
+          "hero_bright_pixels": 488,
+          "console_mean": 17.943,
+          "title_yellow_pixels": 0
+        },
+        "threshold": {
+          "frame_mean_min": 3.0,
+          "hero_mean_min": 2.0,
+          "hero_bright_pixels_min_exclusive": 30,
+          "bright_luma": 80
+        }
+      }
+    },
+    {
+      "name": "monotonic_lighting_progression",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "dormant",
+          "frame_mean": 20.823,
+          "hero_mean": 20.642
+        },
+        {
+          "label": "startup",
+          "frame_mean": 20.965,
+          "hero_mean": 21.029
+        },
+        {
+          "label": "mid-active",
+          "frame_mean": 30.335,
+          "hero_mean": 49.556
+        },
+        {
+          "label": "peak",
+          "frame_mean": 43.74,
+          "hero_mean": 77.196
+        }
+      ]
+    },
+    {
+      "name": "meaningful_dynamic_range",
+      "passed": true,
+      "evidence": {
+        "peak_to_dormant_frame_ratio": 2.100562,
+        "peak_to_dormant_hero_ratio": 3.739754,
+        "dormant_hero_mean": 20.642,
+        "dormant_console_mean": 17.943
+      }
+    },
+    {
+      "name": "four_state_proof_complete",
+      "passed": true,
+      "evidence": [
+        {
+          "path": "artifacts/mf-020r3/proof/dormant.png",
+          "sha256": "b33bf6574f7fa3cebaa0f69774f2cdfdebccacb499ca1dc3a3a72d8bcb73c424"
+        },
+        {
+          "path": "artifacts/mf-020r3/proof/startup.png",
+          "sha256": "31ac836f14bb5c61edbd744f48d0afee3bbb86a72f807d366d51daabf78b535a"
+        },
+        {
+          "path": "artifacts/mf-020r3/proof/mid-active.png",
+          "sha256": "f47c10d58db35c4c3f312cf0fe2991c8aefbcaadbe04b0d1681ef9337c07dc89"
+        },
+        {
+          "path": "artifacts/mf-020r3/proof/peak.png",
+          "sha256": "cc4d7c352555e84d1d61b708d94342660f2326046ff18c04b8c8729e50d9d1fa"
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "before_dormant": {
+      "label": "dormant-signal",
+      "frame_mean": 10.786,
+      "hero_mean": 8.45,
+      "hero_bright_pixels": 0,
+      "console_mean": 8.521,
+      "title_yellow_pixels": 0
+    },
+    "refined_states": [
+      {
+        "label": "dormant",
+        "frame_mean": 20.823,
+        "hero_mean": 20.642,
+        "hero_bright_pixels": 488,
+        "console_mean": 17.943,
+        "title_yellow_pixels": 0
+      },
+      {
+        "label": "startup",
+        "frame_mean": 20.965,
+        "hero_mean": 21.029,
+        "hero_bright_pixels": 524,
+        "console_mean": 17.752,
+        "title_yellow_pixels": 0
+      },
+      {
+        "label": "mid-active",
+        "frame_mean": 30.335,
+        "hero_mean": 49.556,
+        "hero_bright_pixels": 44469,
+        "console_mean": 17.379,
+        "title_yellow_pixels": 0
+      },
+      {
+        "label": "peak",
+        "frame_mean": 43.74,
+        "hero_mean": 77.196,
+        "hero_bright_pixels": 97507,
+        "console_mean": 18.062,
+        "title_yellow_pixels": 113
+      }
+    ]
+  },
+  "human_review": "PENDING_HUMAN",
+  "publication": false
+}

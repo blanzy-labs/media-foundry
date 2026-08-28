@@ -36,6 +36,8 @@ artifacts/mf-020/work/
 artifacts/mf-020/scene/
 artifacts/mf-020r2/frames/
 artifacts/mf-020r2/silent.mp4
+artifacts/mf-020r3/frames/
+artifacts/mf-020r3/silent.mp4
 
 # Project music masters are local immutable inputs; catalog metadata is tracked.
 media/audio/music/*/

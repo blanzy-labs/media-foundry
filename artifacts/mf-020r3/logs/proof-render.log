@@ -1,0 +1,18 @@
+00:00.409  blend            | Read blend: "/home/blanzy/projects/media-foundry/templates/blender/pulp-reactor-v1.blend"
+/home/blanzy/projects/media-foundry/scripts/blender/build_mf_bench_001.py:203: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes = True
+/home/blanzy/projects/media-foundry/scripts/blender/build_mf_bench_001.py:84: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  result.use_nodes = True
+/home/blanzy/projects/media-foundry/scripts/blender/build_mf_bench_001.py:65: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  result.use_nodes = True
+/home/blanzy/projects/media-foundry/scripts/blender/build_mf_bench_001.py:497: DeprecationWarning: 'Scene.use_nodes' is expected to be removed in Blender 6.0
+  scene.use_nodes = True
+00:02.150  render           | Saved: '/home/blanzy/projects/media-foundry/artifacts/mf-020r3/proof/dormant.png'
+00:02.674  render           | Saved: '/home/blanzy/projects/media-foundry/artifacts/mf-020r3/proof/startup.png'
+00:03.273  render           | Saved: '/home/blanzy/projects/media-foundry/artifacts/mf-020r3/proof/mid-active.png'
+00:03.884  render           | Saved: '/home/blanzy/projects/media-foundry/artifacts/mf-020r3/proof/peak.png'
+Info: Saved as "dormant-readable.blend"
+MF_BENCH_001_RENDER_OK {"build_ms": 488, "device": "CPU_HEADLESS_DEFAULT", "engine": "BLENDER_EEVEE", "mode": "stills", "render_fingerprint": {"base_config_sha256": "748f354d047f98af1feff90de65e4cb4216fe11eaa7b016191de20fb4065875a", "blender_version": "5.2.0 LTS", "builder_sha256": "d1cded0ed7ccd2d3579b58134949087fb60914fc6a38bac1a93133b03c35b921", "config_sha256": "8b397bbffd676a3d3c23d67b2fee7e0b897568a1e85ac7eded0a43e1fb942912", "engine": "BLENDER_EEVEE", "fps": 30, "frames": 600, "resolution": [768, 1152], "seed": 1001001, "template_sha256": "6668c12086c36eb68e29bc6fea101139291ef2ae96b8d55867d017856c20aea2"}, "render_ms": 2903, "rendered": 4, "total_ms": 3464}
+Blender 5.2.0 LTS (hash fbe6228777e7 built 2026-07-14 01:32:04)
+
+Blender quit
