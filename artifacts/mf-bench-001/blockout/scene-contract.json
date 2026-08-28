@@ -1,0 +1,680 @@
+{
+  "slice": "MF-BENCH-001",
+  "scene_id": "empty_lab_self_start_v1",
+  "backend": "BLENDER",
+  "source_strategy": "PROCEDURAL",
+  "render_fingerprint": {
+    "config_sha256": "748f354d047f98af1feff90de65e4cb4216fe11eaa7b016191de20fb4065875a",
+    "builder_sha256": "0e664933100edeec86bc6271a8c597d93dd5b6605be35bd18ba39b6699722fce",
+    "template_sha256": "6668c12086c36eb68e29bc6fea101139291ef2ae96b8d55867d017856c20aea2",
+    "seed": 1001001,
+    "blender_version": "5.2.0 LTS",
+    "engine": "BLENDER_EEVEE",
+    "resolution": [
+      768,
+      1152
+    ],
+    "fps": 30,
+    "frames": 600
+  },
+  "camera": {
+    "name": "EmptyLabWitnessCamera",
+    "lens_mm": 49.0,
+    "move": "slow_dolly_in_with_restrained_lateral_drift",
+    "single_shot": true
+  },
+  "proof_camera": {
+    "name": "UpperRingFixedProofCamera",
+    "lens_mm": 35.0,
+    "location": [
+      0.850000024,
+      -5.650000095,
+      7.579999924
+    ],
+    "rotation_euler": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "animated": false
+  },
+  "objects": {
+    "hero": "self_starting_induction_chamber",
+    "console": "unattended_witness_console",
+    "gauges": 2,
+    "relays": 5,
+    "ring_lamps": 9,
+    "operator_count": 0
+  },
+  "upper_ring_lamps": {
+    "placement": {
+      "count": 9,
+      "host": "UpperRingAssembly",
+      "arc_root": "LampArcRoot",
+      "ring_center_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "host_outer_radius": 1.82,
+      "radius": 1.82,
+      "start_angle_degrees": 205.0,
+      "end_angle_degrees": 335.0,
+      "elevation_offset": 0.0,
+      "bulb_radius": 0.075,
+      "socket_radius": 0.095,
+      "socket_depth": 0.42,
+      "minimum_spacing_margin": 0.03,
+      "protected_detail_radius": 0.075,
+      "placement_space": "UPPER_RING_LOCAL",
+      "glow_implementation": "CENTERED_EMISSIVE_BULB_WITH_COMPOSITOR_BLOOM"
+    },
+    "placement_formula": "angle=lerp(start_angle,end_angle,index/(count-1)); local=(cos(angle)*radius,sin(angle)*radius,elevation)",
+    "hierarchy": [
+      "ReactorRoot",
+      "UpperRingAssembly",
+      "LampArcRoot",
+      "UpperRingLamp_NN",
+      "BulbGlow"
+    ],
+    "master_geometry": {
+      "bulb_mesh": "UpperRingLampSharedBulbMesh",
+      "socket_mesh": "UpperRingLampSharedSocketMesh"
+    },
+    "records": [
+      {
+        "index": 0,
+        "angle_degrees": 205.0,
+        "local_position": [
+          -1.649480224,
+          -0.769165218,
+          0.0
+        ],
+        "world_position": [
+          -0.7994802,
+          0.480834782,
+          6.820000172
+        ],
+        "local_rotation_euler": [
+          0.0,
+          0.0,
+          3.577924967
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "parent": "LampArcRoot",
+        "bulb_parent": "UpperRingLamp_00",
+        "bulb_local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "glow_anchor_delta": 0.0,
+        "shared_bulb_mesh": "UpperRingLampSharedBulbMesh",
+        "shared_socket_mesh": "UpperRingLampSharedSocketMesh"
+      },
+      {
+        "index": 1,
+        "angle_degrees": 221.25,
+        "local_position": [
+          -1.368348479,
+          -1.200009346,
+          0.0
+        ],
+        "world_position": [
+          -0.518348455,
+          0.049990654,
+          6.820000172
+        ],
+        "local_rotation_euler": [
+          0.0,
+          0.0,
+          3.861541033
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "parent": "LampArcRoot",
+        "bulb_parent": "UpperRingLamp_01",
+        "bulb_local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "glow_anchor_delta": 0.0,
+        "shared_bulb_mesh": "UpperRingLampSharedBulbMesh",
+        "shared_socket_mesh": "UpperRingLampSharedSocketMesh"
+      },
+      {
+        "index": 2,
+        "angle_degrees": 237.5,
+        "local_position": [
+          -0.977885306,
+          -1.534972429,
+          0.0
+        ],
+        "world_position": [
+          -0.127885282,
+          -0.284972429,
+          6.820000172
+        ],
+        "local_rotation_euler": [
+          0.0,
+          0.0,
+          4.14515686
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "parent": "LampArcRoot",
+        "bulb_parent": "UpperRingLamp_02",
+        "bulb_local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "glow_anchor_delta": 0.0,
+        "shared_bulb_mesh": "UpperRingLampSharedBulbMesh",
+        "shared_socket_mesh": "UpperRingLampSharedSocketMesh"
+      },
+      {
+        "index": 3,
+        "angle_degrees": 253.75,
+        "local_position": [
+          -0.509288788,
+          -1.74729073,
+          0.0
+        ],
+        "world_position": [
+          0.340711236,
+          -0.49729073,
+          6.820000172
+        ],
+        "local_rotation_euler": [
+          0.0,
+          0.0,
+          4.428772926
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "parent": "LampArcRoot",
+        "bulb_parent": "UpperRingLamp_03",
+        "bulb_local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "glow_anchor_delta": 0.0,
+        "shared_bulb_mesh": "UpperRingLampSharedBulbMesh",
+        "shared_socket_mesh": "UpperRingLampSharedSocketMesh"
+      },
+      {
+        "index": 4,
+        "angle_degrees": 270.0,
+        "local_position": [
+          -0.0,
+          -1.820000052,
+          0.0
+        ],
+        "world_position": [
+          0.850000024,
+          -0.570000052,
+          6.820000172
+        ],
+        "local_rotation_euler": [
+          0.0,
+          0.0,
+          4.712388992
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "parent": "LampArcRoot",
+        "bulb_parent": "UpperRingLamp_04",
+        "bulb_local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "glow_anchor_delta": 0.0,
+        "shared_bulb_mesh": "UpperRingLampSharedBulbMesh",
+        "shared_socket_mesh": "UpperRingLampSharedSocketMesh"
+      },
+      {
+        "index": 5,
+        "angle_degrees": 286.25,
+        "local_position": [
+          0.509288788,
+          -1.74729073,
+          0.0
+        ],
+        "world_position": [
+          1.359288812,
+          -0.49729073,
+          6.820000172
+        ],
+        "local_rotation_euler": [
+          0.0,
+          0.0,
+          4.996005058
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "parent": "LampArcRoot",
+        "bulb_parent": "UpperRingLamp_05",
+        "bulb_local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "glow_anchor_delta": 0.0,
+        "shared_bulb_mesh": "UpperRingLampSharedBulbMesh",
+        "shared_socket_mesh": "UpperRingLampSharedSocketMesh"
+      },
+      {
+        "index": 6,
+        "angle_degrees": 302.5,
+        "local_position": [
+          0.977885306,
+          -1.534972429,
+          0.0
+        ],
+        "world_position": [
+          1.827885389,
+          -0.284972429,
+          6.820000172
+        ],
+        "local_rotation_euler": [
+          0.0,
+          0.0,
+          5.279621124
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "parent": "LampArcRoot",
+        "bulb_parent": "UpperRingLamp_06",
+        "bulb_local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "glow_anchor_delta": 0.0,
+        "shared_bulb_mesh": "UpperRingLampSharedBulbMesh",
+        "shared_socket_mesh": "UpperRingLampSharedSocketMesh"
+      },
+      {
+        "index": 7,
+        "angle_degrees": 318.75,
+        "local_position": [
+          1.368348479,
+          -1.200009346,
+          0.0
+        ],
+        "world_position": [
+          2.218348503,
+          0.049990654,
+          6.820000172
+        ],
+        "local_rotation_euler": [
+          0.0,
+          0.0,
+          5.56323719
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "parent": "LampArcRoot",
+        "bulb_parent": "UpperRingLamp_07",
+        "bulb_local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "glow_anchor_delta": 0.0,
+        "shared_bulb_mesh": "UpperRingLampSharedBulbMesh",
+        "shared_socket_mesh": "UpperRingLampSharedSocketMesh"
+      },
+      {
+        "index": 8,
+        "angle_degrees": 335.0,
+        "local_position": [
+          1.649480224,
+          -0.769165218,
+          0.0
+        ],
+        "world_position": [
+          2.499480247,
+          0.480834782,
+          6.820000172
+        ],
+        "local_rotation_euler": [
+          0.0,
+          0.0,
+          5.846852779
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "parent": "LampArcRoot",
+        "bulb_parent": "UpperRingLamp_08",
+        "bulb_local_position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "glow_anchor_delta": 0.0,
+        "shared_bulb_mesh": "UpperRingLampSharedBulbMesh",
+        "shared_socket_mesh": "UpperRingLampSharedSocketMesh"
+      }
+    ],
+    "spacing": {
+      "center_distances": [
+        0.51445283,
+        0.514452866,
+        0.514452866,
+        0.514452827,
+        0.514452827,
+        0.514452866,
+        0.514452866,
+        0.51445283
+      ],
+      "minimum_allowed": 0.18,
+      "minimum_observed": 0.514452827,
+      "maximum_observed": 0.514452866,
+      "maximum_variation": 3.9374e-08
+    },
+    "maximum_radial_deviation": 5.2e-08,
+    "overlap_count": 0,
+    "protected_detail_intersection_count": 0,
+    "maximum_glow_anchor_delta": 0.0,
+    "position_samples": {
+      "off": [
+        [
+          -0.7994802,
+          0.480834782,
+          6.820000172
+        ],
+        [
+          -0.518348455,
+          0.049990654,
+          6.820000172
+        ],
+        [
+          -0.127885282,
+          -0.284972429,
+          6.820000172
+        ],
+        [
+          0.340711236,
+          -0.49729073,
+          6.820000172
+        ],
+        [
+          0.850000024,
+          -0.570000052,
+          6.820000172
+        ],
+        [
+          1.359288812,
+          -0.49729073,
+          6.820000172
+        ],
+        [
+          1.827885389,
+          -0.284972429,
+          6.820000172
+        ],
+        [
+          2.218348503,
+          0.049990654,
+          6.820000172
+        ],
+        [
+          2.499480247,
+          0.480834782,
+          6.820000172
+        ]
+      ],
+      "half": [
+        [
+          -0.7994802,
+          0.480834782,
+          6.820000172
+        ],
+        [
+          -0.518348455,
+          0.049990654,
+          6.820000172
+        ],
+        [
+          -0.127885282,
+          -0.284972429,
+          6.820000172
+        ],
+        [
+          0.340711236,
+          -0.49729073,
+          6.820000172
+        ],
+        [
+          0.850000024,
+          -0.570000052,
+          6.820000172
+        ],
+        [
+          1.359288812,
+          -0.49729073,
+          6.820000172
+        ],
+        [
+          1.827885389,
+          -0.284972429,
+          6.820000172
+        ],
+        [
+          2.218348503,
+          0.049990654,
+          6.820000172
+        ],
+        [
+          2.499480247,
+          0.480834782,
+          6.820000172
+        ]
+      ],
+      "all": [
+        [
+          -0.7994802,
+          0.480834782,
+          6.820000172
+        ],
+        [
+          -0.518348455,
+          0.049990654,
+          6.820000172
+        ],
+        [
+          -0.127885282,
+          -0.284972429,
+          6.820000172
+        ],
+        [
+          0.340711236,
+          -0.49729073,
+          6.820000172
+        ],
+        [
+          0.850000024,
+          -0.570000052,
+          6.820000172
+        ],
+        [
+          1.359288812,
+          -0.49729073,
+          6.820000172
+        ],
+        [
+          1.827885389,
+          -0.284972429,
+          6.820000172
+        ],
+        [
+          2.218348503,
+          0.049990654,
+          6.820000172
+        ],
+        [
+          2.499480247,
+          0.480834782,
+          6.820000172
+        ]
+      ],
+      "camera_end": [
+        [
+          -0.7994802,
+          0.480834782,
+          6.820000172
+        ],
+        [
+          -0.518348455,
+          0.049990654,
+          6.820000172
+        ],
+        [
+          -0.127885282,
+          -0.284972429,
+          6.820000172
+        ],
+        [
+          0.340711236,
+          -0.49729073,
+          6.820000172
+        ],
+        [
+          0.850000024,
+          -0.570000052,
+          6.820000172
+        ],
+        [
+          1.359288812,
+          -0.49729073,
+          6.820000172
+        ],
+        [
+          1.827885389,
+          -0.284972429,
+          6.820000172
+        ],
+        [
+          2.218348503,
+          0.049990654,
+          6.820000172
+        ],
+        [
+          2.499480247,
+          0.480834782,
+          6.820000172
+        ]
+      ]
+    },
+    "activation_samples": {
+      "off": {
+        "emission_strengths": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "active_count": 0
+      },
+      "half": {
+        "emission_strengths": [
+          7.980379105,
+          7.98943615,
+          7.99586916,
+          7.999399662,
+          2.074074268,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "active_count": 5
+      },
+      "all": {
+        "emission_strengths": [
+          7.872536182,
+          7.894958019,
+          7.915837288,
+          7.934979439,
+          7.952169895,
+          7.964358807,
+          7.977425575,
+          7.987817764,
+          7.995224476
+        ],
+        "active_count": 9
+      },
+      "camera_end": {
+        "emission_strengths": [
+          4.300000191,
+          4.300000191,
+          4.300000191,
+          4.300000191,
+          4.300000191,
+          4.300000191,
+          4.300000191,
+          4.300000191,
+          4.300000191
+        ],
+        "active_count": 9
+      }
+    },
+    "maximum_position_drift": 0.0,
+    "placement_animation_channels": 0,
+    "screen_space_offsets": 0,
+    "per_lamp_manual_offsets": 0
+  },
+  "causality": {
+    "pilot_precedes_gauge": true,
+    "gauge_precedes_relays": true,
+    "relays_precede_containment": true,
+    "containment_precedes_energy": true,
+    "energy_precedes_title": true
+  },
+  "text": {
+    "title": "UNKNOWN PROCESS",
+    "supporting_line": "NO OPERATOR PRESENT",
+    "cta": "TRY A WEB GAME",
+    "canonical_url": "https://rcblanzy.com/books/unknown-process",
+    "display_url": "rcblanzy.com/books/unknown-process"
+  },
+  "reference_embedded": false
+}

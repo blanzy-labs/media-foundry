@@ -1,0 +1,281 @@
+{
+  "slice": "MF-020R2",
+  "result": "PASS",
+  "technical_state": "ALIGNMENT_GATE_PASS",
+  "checks_passed": 18,
+  "checks_total": 18,
+  "checks": [
+    {
+      "name": "slice_contract",
+      "passed": true,
+      "evidence": {
+        "focused_slice": "MF-020R2",
+        "backend": "BLENDER"
+      }
+    },
+    {
+      "name": "single_parameter_block",
+      "passed": true,
+      "evidence": {
+        "count": 9,
+        "host": "UpperRingAssembly",
+        "arc_root": "LampArcRoot",
+        "ring_center_local": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "host_outer_radius": 1.82,
+        "radius": 1.82,
+        "start_angle_degrees": 205.0,
+        "end_angle_degrees": 335.0,
+        "elevation_offset": 0.0,
+        "bulb_radius": 0.075,
+        "socket_radius": 0.095,
+        "socket_depth": 0.42,
+        "minimum_spacing_margin": 0.03,
+        "protected_detail_radius": 0.075,
+        "placement_space": "UPPER_RING_LOCAL",
+        "glow_implementation": "CENTERED_EMISSIVE_BULB_WITH_COMPOSITOR_BLOOM"
+      }
+    },
+    {
+      "name": "lamp_count",
+      "passed": true,
+      "evidence": {
+        "records": 9,
+        "configured": 9
+      }
+    },
+    {
+      "name": "hierarchy",
+      "passed": true,
+      "evidence": [
+        "ReactorRoot",
+        "UpperRingAssembly",
+        "LampArcRoot",
+        "UpperRingLamp_NN",
+        "BulbGlow"
+      ]
+    },
+    {
+      "name": "shared_master_geometry",
+      "passed": true,
+      "evidence": {
+        "bulb_meshes": [
+          "UpperRingLampSharedBulbMesh"
+        ],
+        "socket_meshes": [
+          "UpperRingLampSharedSocketMesh"
+        ]
+      }
+    },
+    {
+      "name": "even_arc_interpolation",
+      "passed": true,
+      "evidence": {
+        "maximum_angle_error_degrees": 0.0,
+        "angles": [
+          205.0,
+          221.25,
+          237.5,
+          253.75,
+          270.0,
+          286.25,
+          302.5,
+          318.75,
+          335.0
+        ]
+      }
+    },
+    {
+      "name": "constant_scale",
+      "passed": true,
+      "evidence": [
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "radial_deviation",
+      "passed": true,
+      "evidence": 5.2e-08
+    },
+    {
+      "name": "spacing_tolerance",
+      "passed": true,
+      "evidence": {
+        "center_distances": [
+          0.51445283,
+          0.514452866,
+          0.514452866,
+          0.514452827,
+          0.514452827,
+          0.514452866,
+          0.514452866,
+          0.51445283
+        ],
+        "minimum_allowed": 0.18,
+        "minimum_observed": 0.514452827,
+        "maximum_observed": 0.514452866,
+        "maximum_variation": 3.9374e-08
+      }
+    },
+    {
+      "name": "no_lamp_overlap",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "name": "no_protected_detail_intersection",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "name": "centered_glow",
+      "passed": true,
+      "evidence": 0.0
+    },
+    {
+      "name": "no_placement_hacks",
+      "passed": true,
+      "evidence": {
+        "placement_animation_channels": 0,
+        "screen_space_offsets": 0,
+        "per_lamp_manual_offsets": 0
+      }
+    },
+    {
+      "name": "activation_position_invariance",
+      "passed": true,
+      "evidence": {
+        "maximum_position_drift": 0.0,
+        "states": [
+          "all",
+          "camera_end",
+          "half",
+          "off"
+        ]
+      }
+    },
+    {
+      "name": "activation_changes_emission_only",
+      "passed": true,
+      "evidence": {
+        "off": 0,
+        "half": 5,
+        "all": 9,
+        "camera_end": 9
+      }
+    },
+    {
+      "name": "fixed_proof_camera",
+      "passed": true,
+      "evidence": {
+        "name": "UpperRingFixedProofCamera",
+        "lens_mm": 35.0,
+        "location": [
+          0.850000024,
+          -5.650000095,
+          7.579999924
+        ],
+        "rotation_euler": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "animated": false
+      }
+    },
+    {
+      "name": "fixed_camera_proof_images",
+      "passed": true,
+      "evidence": [
+        {
+          "path": "artifacts/mf-020r2/proof/lamps-off.png",
+          "sha256": "558763ad8a6f45037505ad426b8cba2cff6b766b8be944dc9218a58bbf456d46",
+          "resolution": [
+            768,
+            1152
+          ]
+        },
+        {
+          "path": "artifacts/mf-020r2/proof/lamps-half.png",
+          "sha256": "256ad8cc4fb8d69ec825be1352e88070123d7b76df6cfd5ef44f3472892bd5ca",
+          "resolution": [
+            768,
+            1152
+          ]
+        },
+        {
+          "path": "artifacts/mf-020r2/proof/lamps-all.png",
+          "sha256": "2b6238d8f556da25e2a027a6e54dc271bf11013bc9aab1c028bfc3b393700e44",
+          "resolution": [
+            768,
+            1152
+          ]
+        }
+      ]
+    },
+    {
+      "name": "geometry_level_source_implementation",
+      "passed": true,
+      "evidence": {
+        "centralized_formula": true,
+        "per_index_condition_found": false
+      }
+    }
+  ],
+  "inputs": {
+    "contract": "artifacts/mf-020r2/proof/scene-contract.json",
+    "contract_sha256": "f67537b516177215397efe5bdebbb3ffaac68546dcb38b1f3ee60f7abfadbfa7",
+    "focused_config_sha256": "b33233c94804f7227f0ad65a668e75ecb3a993d91025510a766f40356466f5f3",
+    "base_config_sha256": "748f354d047f98af1feff90de65e4cb4216fe11eaa7b016191de20fb4065875a",
+    "builder_sha256": "0e664933100edeec86bc6271a8c597d93dd5b6605be35bd18ba39b6699722fce"
+  },
+  "human_review": "PENDING_HUMAN",
+  "publication": false
+}

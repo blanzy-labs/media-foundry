@@ -1,0 +1,47 @@
+{
+  "slice": "MF-020R2",
+  "result": "PASS",
+  "technical_state": "READY_FOR_HUMAN_REVIEW",
+  "root_cause": "Lamps were arranged as a world-space screen-facing x/z ellipse with constant y instead of being derived from the real upper-ring plane.",
+  "implementation": "Nine shared lamp instances generated from one ring-local arc and parented through ReactorRoot/UpperRingAssembly/LampArcRoot, with radial sockets and centered emissive bulbs.",
+  "parameters": {
+    "count": 9,
+    "radius": 1.82,
+    "start_angle_degrees": 205.0,
+    "end_angle_degrees": 335.0,
+    "elevation_offset": 0.0
+  },
+  "alignment": {
+    "checks_passed": 18,
+    "checks_total": 18,
+    "minimum_spacing": 0.514452827,
+    "maximum_spacing_variation": 3.9374e-8,
+    "maximum_radial_deviation": 5.2e-8,
+    "overlap_count": 0,
+    "protected_detail_intersection_count": 0,
+    "maximum_glow_anchor_delta": 0.0,
+    "maximum_position_drift": 0.0
+  },
+  "final_validation": {
+    "checks_passed": 9,
+    "checks_total": 9,
+    "duration_seconds": 20.0,
+    "resolution": [768, 1152],
+    "fps": 30,
+    "frames": 600,
+    "full_decode": "PASS"
+  },
+  "artifact": {
+    "path": "artifacts/mf-020r2/final-test.mp4",
+    "sha256": "af74ae892c56bc1ac5c8790d4a36b2d8330d46175b2762ad98900d7617cdc6b8",
+    "bytes": 2825693
+  },
+  "benchmark_composition_gate": {
+    "state": "BLOCKED_COMPOSITION",
+    "failed_check": "opening_hook_readable_not_dead_black",
+    "note": "Recorded without override; unrelated lighting was not changed in this focused slice."
+  },
+  "human_review": "PENDING_HUMAN",
+  "release_ready": false,
+  "published": false
+}

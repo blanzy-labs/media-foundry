@@ -1,0 +1,29 @@
+{
+  "slice": "MF-020R2",
+  "scope": "upper_reactor_ring_lamp_alignment_only",
+  "base_config": "config/mf-bench-001.json",
+  "authoritative_host": "UpperRingAssembly",
+  "required_hierarchy": [
+    "ReactorRoot",
+    "UpperRingAssembly",
+    "LampArcRoot"
+  ],
+  "proof_states_seconds": {
+    "off": 5.7,
+    "half": 6.55,
+    "all": 7.5,
+    "camera_end": 20.0
+  },
+  "tolerances_scene_units": {
+    "spacing_variation_max": 0.000001,
+    "radial_deviation_max": 0.000001,
+    "position_drift_max": 0.000001,
+    "glow_anchor_delta_max": 0.000001
+  },
+  "required_overlap_count": 0,
+  "required_protected_detail_intersection_count": 0,
+  "required_manual_offset_count": 0,
+  "required_screen_space_offset_count": 0,
+  "human_review": "PENDING_HUMAN",
+  "publication": false
+}

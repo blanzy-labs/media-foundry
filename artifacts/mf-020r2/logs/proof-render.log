@@ -1,0 +1,17 @@
+00:00.425  blend            | Read blend: "/home/blanzy/projects/media-foundry/templates/blender/pulp-reactor-v1.blend"
+/home/blanzy/projects/media-foundry/scripts/blender/build_mf_bench_001.py:194: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes = True
+/home/blanzy/projects/media-foundry/scripts/blender/build_mf_bench_001.py:75: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  result.use_nodes = True
+/home/blanzy/projects/media-foundry/scripts/blender/build_mf_bench_001.py:56: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  result.use_nodes = True
+/home/blanzy/projects/media-foundry/scripts/blender/build_mf_bench_001.py:476: DeprecationWarning: 'Scene.use_nodes' is expected to be removed in Blender 6.0
+  scene.use_nodes = True
+00:02.087  render           | Saved: '/home/blanzy/projects/media-foundry/artifacts/mf-020r2/proof/lamps-off.png'
+00:02.517  render           | Saved: '/home/blanzy/projects/media-foundry/artifacts/mf-020r2/proof/lamps-half.png'
+00:02.937  render           | Saved: '/home/blanzy/projects/media-foundry/artifacts/mf-020r2/proof/lamps-all.png'
+Info: Saved as "aligned-ring.blend"
+MF_BENCH_001_RENDER_OK {"build_ms": 501, "device": "CPU_HEADLESS_DEFAULT", "engine": "BLENDER_EEVEE", "mode": "lamp-proof", "render_fingerprint": {"blender_version": "5.2.0 LTS", "builder_sha256": "0e664933100edeec86bc6271a8c597d93dd5b6605be35bd18ba39b6699722fce", "config_sha256": "748f354d047f98af1feff90de65e4cb4216fe11eaa7b016191de20fb4065875a", "engine": "BLENDER_EEVEE", "fps": 30, "frames": 600, "resolution": [768, 1152], "seed": 1001001, "template_sha256": "6668c12086c36eb68e29bc6fea101139291ef2ae96b8d55867d017856c20aea2"}, "render_ms": 1920, "rendered": 3, "total_ms": 2499}
+Blender 5.2.0 LTS (hash fbe6228777e7 built 2026-07-14 01:32:04)
+
+Blender quit

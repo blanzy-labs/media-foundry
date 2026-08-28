@@ -1,0 +1,128 @@
+{
+  "slice": "MF-BENCH-001",
+  "seed": 1001001,
+  "creative_concept": "THE LAB SHOULD BE EMPTY",
+  "reference": {
+    "path": "/home/blanzy/Pictures/50s style book cover.png",
+    "sha256": "a4df3398242b6dc20ee667848cb7464658b527316700ffb278bc5ab1f1cee8d6",
+    "usage": "art_direction_only",
+    "embedded_in_video": false
+  },
+  "visual_source": {
+    "mode": "development",
+    "quality_intent": "CINEMATIC",
+    "requirements": {
+      "surface_complexity": "MEDIUM",
+      "illustration_complexity": "LOW",
+      "character_complexity": "LOW",
+      "geometric_precision": "HIGH",
+      "motion_requirement": "HIGH",
+      "lighting_requirement": "HIGH",
+      "depth_requirement": "HIGH",
+      "authenticity_requirement": "LOW"
+    },
+    "configured_strategy": "PROCEDURAL",
+    "resolved_strategy": "PROCEDURAL",
+    "human_override": null,
+    "reason": [
+      "the brief requires a new physical scene rather than an animated cover or plate",
+      "the hero, gauges, relays, practical lamps, contained energy and steam require geometric causality",
+      "Blender can supply worn procedural materials and cinematic depth without introducing a static background"
+    ],
+    "fallback": {"allowed": false, "strategies": []},
+    "composition_gate": {
+      "required": true,
+      "manifest_path": "config/mf-bench-001-composition.json",
+      "manifest_sha256": "2a666f5b885ef3d32c34ed0e8ec8cbbcbe1d1ad2c14f2359efc60ac1d08e1112"
+    }
+  },
+  "render": {
+    "backend": "BLENDER",
+    "required_capabilities": ["cinematic_render", "complex_materials", "frame_sequence_render", "procedural_scene_build"],
+    "fallback": {"allowed": false, "backends": []},
+    "blender": {
+      "template": "templates/blender/pulp-reactor-v1.blend",
+      "builder_script": "scripts/blender/build_mf_bench_001.py",
+      "scene_output": "artifacts/mf-bench-001/scene/the-lab-should-be-empty.blend",
+      "render_engine_family": "realtime_eevee",
+      "samples": 16,
+      "output_format": "PNG",
+      "transparent": false,
+      "resume": false
+    }
+  },
+  "shot": {
+    "id": "empty_lab_self_start_v1",
+    "runtime_seconds": 20.0,
+    "fps": 30,
+    "resolution": [768, 1152],
+    "lens_mm": 49.0,
+    "camera_move": "slow_dolly_in_with_restrained_lateral_drift",
+    "hero": "self_starting_induction_chamber",
+    "secondary": "unattended_witness_console",
+    "negative_space": "empty_upper_left_inspection_volume",
+    "events_seconds": {
+      "pilot_signal": 0.75,
+      "gauge_twitch": 2.25,
+      "relay_one": 3.45,
+      "relay_chain": 4.35,
+      "containment_rings": 6.1,
+      "process_ignition": 8.0,
+      "pressure_vent": 10.2,
+      "unstable_escalation": 12.4,
+      "identity_reveal": 15.4,
+      "cta_reveal": 17.3,
+      "final_hold": 18.1
+    },
+    "semantic_sequence": ["DORMANT_ROOM", "UNEXPLAINED_PILOT_SIGNAL", "GAUGE_TWITCH", "RELAY_RESPONSE", "CONTAINMENT_WAKE", "PROCESS_IGNITION", "PRESSURE_RELEASE", "UNSTABLE_ESCALATION", "UNKNOWN_PROCESS_REVEAL", "CTA", "FINAL_HOLD"]
+  },
+  "upper_ring_lamps": {
+    "count": 9,
+    "host": "UpperRingAssembly",
+    "arc_root": "LampArcRoot",
+    "ring_center_local": [0.0, 0.0, 0.0],
+    "host_outer_radius": 1.82,
+    "radius": 1.82,
+    "start_angle_degrees": 205.0,
+    "end_angle_degrees": 335.0,
+    "elevation_offset": 0.0,
+    "bulb_radius": 0.075,
+    "socket_radius": 0.095,
+    "socket_depth": 0.42,
+    "minimum_spacing_margin": 0.03,
+    "protected_detail_radius": 0.075,
+    "placement_space": "UPPER_RING_LOCAL",
+    "glow_implementation": "CENTERED_EMISSIVE_BULB_WITH_COMPOSITOR_BLOOM"
+  },
+  "stages": {
+    "blockout": {
+      "seconds": [0.9, 3.8, 10.8, 17.8],
+      "labels": ["dormant-signal", "system-response", "process-active", "identity-reveal"]
+    }
+  },
+  "audio": {
+    "catalog": "config/music/catalog.json",
+    "qualified_id": "unknown-process:cold_concrete_anatomy",
+    "source": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+    "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "cue_region": "revelation_a",
+    "start_seconds": 9.0,
+    "end_seconds": 29.0,
+    "fade_in_seconds": 0.7,
+    "fade_out_seconds": 1.5,
+    "target_lufs": -16.0,
+    "true_peak_db": -1.5,
+    "post_normalization_gain_db": -1.0,
+    "sfx_policy": "NO_APPROVED_STANDALONE_SFX_AVAILABLE",
+    "ambience_policy": "MUSIC_CUE_ONLY"
+  },
+  "text": {
+    "title": "UNKNOWN PROCESS",
+    "supporting_line": "NO OPERATOR PRESENT",
+    "cta": "TRY A WEB GAME",
+    "canonical_url": "https://rcblanzy.com/books/unknown-process",
+    "display_url": "rcblanzy.com/books/unknown-process"
+  },
+  "human_review": "PENDING_HUMAN",
+  "publication": false
+}

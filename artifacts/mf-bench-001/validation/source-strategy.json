@@ -1,0 +1,33 @@
+{
+  "result": "PASS",
+  "state": "PASS",
+  "configured_strategy": "PROCEDURAL",
+  "resolved_strategy": "PROCEDURAL",
+  "recommended_strategy": "PROCEDURAL",
+  "recommendation_reasons": [
+    "geometric precision is high",
+    "animation-first construction is appropriate"
+  ],
+  "checks": {
+    "source_strategy_required": "PASS",
+    "known_source_strategy": "PASS",
+    "quality_intent": "PASS",
+    "bounded_assessment": "PASS",
+    "human_override": "PASS",
+    "fallback_policy": "PASS",
+    "no_silent_fallback": "PASS",
+    "plate_contract": "NOT_REQUIRED",
+    "required_plate_exists": "NOT_REQUIRED",
+    "plate_approval_vocabulary": "NOT_REQUIRED",
+    "plate_provenance": "NOT_REQUIRED",
+    "plate_hash_integrity": "NOT_REQUIRED",
+    "production_plate_approved": "NOT_REQUIRED",
+    "plate_layer_and_region_plan": "NOT_REQUIRED",
+    "authentic_media_exists": "NOT_REQUIRED",
+    "composition_gate_bound": "PASS"
+  },
+  "warnings": [],
+  "errors": [],
+  "asset": null,
+  "release_ready": true
+}

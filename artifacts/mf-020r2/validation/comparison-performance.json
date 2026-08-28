@@ -1,0 +1,23 @@
+{
+  "mode": "stills",
+  "build_ms": 504,
+  "render_ms": 2617,
+  "total_ms": 3128,
+  "rendered": 4,
+  "engine": "BLENDER_EEVEE",
+  "device": "CPU_HEADLESS_DEFAULT",
+  "render_fingerprint": {
+    "config_sha256": "748f354d047f98af1feff90de65e4cb4216fe11eaa7b016191de20fb4065875a",
+    "builder_sha256": "22c1ac487a69a19e3b711c41a10ac5baa47e9d27c3a33789655ef38260c5875c",
+    "template_sha256": "6668c12086c36eb68e29bc6fea101139291ef2ae96b8d55867d017856c20aea2",
+    "seed": 1001001,
+    "blender_version": "5.2.0 LTS",
+    "engine": "BLENDER_EEVEE",
+    "resolution": [
+      768,
+      1152
+    ],
+    "fps": 30,
+    "frames": 600
+  }
+}

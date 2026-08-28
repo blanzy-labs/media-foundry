@@ -1,0 +1,162 @@
+{
+  "slice": "MF-020R2",
+  "result": "PASS",
+  "technical_state": "READY_FOR_HUMAN_REVIEW",
+  "checks_passed": 9,
+  "checks_total": 9,
+  "checks": [
+    {
+      "name": "immutable_render_fingerprint",
+      "passed": true,
+      "evidence": {
+        "expected": {
+          "config_sha256": "748f354d047f98af1feff90de65e4cb4216fe11eaa7b016191de20fb4065875a",
+          "builder_sha256": "0e664933100edeec86bc6271a8c597d93dd5b6605be35bd18ba39b6699722fce",
+          "template_sha256": "6668c12086c36eb68e29bc6fea101139291ef2ae96b8d55867d017856c20aea2"
+        },
+        "performance": {
+          "config_sha256": "748f354d047f98af1feff90de65e4cb4216fe11eaa7b016191de20fb4065875a",
+          "builder_sha256": "0e664933100edeec86bc6271a8c597d93dd5b6605be35bd18ba39b6699722fce",
+          "template_sha256": "6668c12086c36eb68e29bc6fea101139291ef2ae96b8d55867d017856c20aea2",
+          "seed": 1001001,
+          "blender_version": "5.2.0 LTS",
+          "engine": "BLENDER_EEVEE",
+          "resolution": [
+            768,
+            1152
+          ],
+          "fps": 30,
+          "frames": 600
+        },
+        "scene_contract": {
+          "config_sha256": "748f354d047f98af1feff90de65e4cb4216fe11eaa7b016191de20fb4065875a",
+          "builder_sha256": "0e664933100edeec86bc6271a8c597d93dd5b6605be35bd18ba39b6699722fce",
+          "template_sha256": "6668c12086c36eb68e29bc6fea101139291ef2ae96b8d55867d017856c20aea2",
+          "seed": 1001001,
+          "blender_version": "5.2.0 LTS",
+          "engine": "BLENDER_EEVEE",
+          "resolution": [
+            768,
+            1152
+          ],
+          "fps": 30,
+          "frames": 600
+        }
+      }
+    },
+    {
+      "name": "alignment_gate_precedes_final",
+      "passed": true,
+      "evidence": {
+        "result": "PASS",
+        "passed": 18,
+        "total": 18
+      }
+    },
+    {
+      "name": "complete_frame_sequence",
+      "passed": true,
+      "evidence": {
+        "count": 600,
+        "first": 0,
+        "last": 599,
+        "rendered": 600
+      }
+    },
+    {
+      "name": "final_video_contract",
+      "passed": true,
+      "evidence": {
+        "duration_seconds": 20.0,
+        "codec": "h264",
+        "resolution": [
+          768,
+          1152
+        ],
+        "fps": "30/1",
+        "frames": "600"
+      }
+    },
+    {
+      "name": "final_audio_stream",
+      "passed": true,
+      "evidence": {
+        "codec": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration_seconds": "20.000000"
+      }
+    },
+    {
+      "name": "full_decode",
+      "passed": true,
+      "evidence": {
+        "returncode": 0,
+        "stderr": ""
+      }
+    },
+    {
+      "name": "approved_music_unchanged",
+      "passed": true,
+      "evidence": {
+        "qualified_id": "unknown-process:cold_concrete_anatomy",
+        "cue": "revelation_a",
+        "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+        "offset": [
+          9.0,
+          29.0
+        ]
+      }
+    },
+    {
+      "name": "bounded_audio_loudness",
+      "passed": true,
+      "evidence": {
+        "integrated_lufs": -16.49,
+        "true_peak_db": -2.36
+      }
+    },
+    {
+      "name": "review_evidence_complete",
+      "passed": true,
+      "evidence": [
+        {
+          "path": "artifacts/mf-020r2/debug/lamp-arc-overlay.png",
+          "sha256": "0502b5af50cb9bb58c872ee66a03521100e9ca7cf7886ee7ac7757ee929de7f6"
+        },
+        {
+          "path": "artifacts/mf-020r2/debug/anchor-closeup.png",
+          "sha256": "2b6238d8f556da25e2a027a6e54dc271bf11013bc9aab1c028bfc3b393700e44"
+        },
+        {
+          "path": "artifacts/mf-020r2/proof/lamps-off.png",
+          "sha256": "558763ad8a6f45037505ad426b8cba2cff6b766b8be944dc9218a58bbf456d46"
+        },
+        {
+          "path": "artifacts/mf-020r2/proof/lamps-half.png",
+          "sha256": "256ad8cc4fb8d69ec825be1352e88070123d7b76df6cfd5ef44f3472892bd5ca"
+        },
+        {
+          "path": "artifacts/mf-020r2/proof/lamps-all.png",
+          "sha256": "2b6238d8f556da25e2a027a6e54dc271bf11013bc9aab1c028bfc3b393700e44"
+        },
+        {
+          "path": "artifacts/mf-020r2/comparison/before.png",
+          "sha256": "196d702443298e6412ede5084d36ab44c7d0259365ede0a515ab9f8d10ccb03a"
+        },
+        {
+          "path": "artifacts/mf-020r2/comparison/after.png",
+          "sha256": "93370f16afde7ef934c7bda736c0677047ca7563ebb55fab33dd1b97ace43d65"
+        }
+      ]
+    }
+  ],
+  "artifact": {
+    "path": "artifacts/mf-020r2/final-test.mp4",
+    "sha256": "af74ae892c56bc1ac5c8790d4a36b2d8330d46175b2762ad98900d7617cdc6b8",
+    "bytes": 2825693
+  },
+  "human_review": "PENDING_HUMAN",
+  "release_ready": false,
+  "published": false
+}

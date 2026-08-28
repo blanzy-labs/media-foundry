@@ -1,0 +1,23 @@
+	Command being timed: "blender --background templates/blender/pulp-reactor-v1.blend --python scripts/blender/build_mf_bench_001.py -- --manifest config/mf-bench-001.json --output-dir artifacts/mf-020r2/proof --mode lamp-proof --scene-output artifacts/mf-020r2/scene/aligned-ring.blend --performance artifacts/mf-020r2/validation/proof-performance.json"
+	User time (seconds): 4.72
+	System time (seconds): 5.65
+	Percent of CPU this job got: 330%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.13
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 725300
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 150465
+	Voluntary context switches: 4953
+	Involuntary context switches: 448472
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 4720
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

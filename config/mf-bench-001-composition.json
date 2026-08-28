@@ -1,0 +1,121 @@
+{
+  "slice": "MF-BENCH-001",
+  "version": 1,
+  "scene_id": "the_lab_should_be_empty",
+  "complex_scene": true,
+  "seed": 1001001,
+  "canvas": {"width": 768, "height": 1152},
+  "composition": {
+    "required": true,
+    "static_states": ["dormant-signal", "system-response", "process-active", "identity-reveal"]
+  },
+  "gate": {"state": "COMPOSITION_PENDING", "human_approval_required": true},
+  "approval": {"human_status": "PENDING_HUMAN", "reviewer": null},
+  "hierarchy": {
+    "primary": "self_starting_chamber",
+    "secondary": "witness_console",
+    "tertiary": ["relay_spine", "overhead_services", "inspection_threshold"]
+  },
+  "policies": {
+    "empty_region_is_defect": false,
+    "animation_may_rescue_composition": false,
+    "allow_unmotivated_hero_occlusion": false,
+    "density_metrics_are_advisory": true,
+    "new_objects_require_declared_purpose": true
+  },
+  "zones": [
+    {"id": "background_full", "kind": "background_zone", "x": 0.0, "y": 0.0, "width": 1.0, "height": 1.0},
+    {"id": "hero_central", "kind": "hero_zone", "x": 0.28, "y": 0.14, "width": 0.56, "height": 0.64},
+    {"id": "hero_clearance", "kind": "no_occlusion_zone", "x": 0.28, "y": 0.14, "width": 0.56, "height": 0.64},
+    {"id": "console_left", "kind": "support_zone", "x": 0.035, "y": 0.47, "width": 0.24, "height": 0.37},
+    {"id": "foreground_threshold", "kind": "foreground_zone", "x": 0.0, "y": 0.89, "width": 1.0, "height": 0.11},
+    {"id": "quiet_upper_left", "kind": "negative_space_zone", "x": 0.035, "y": 0.09, "width": 0.21, "height": 0.29, "preserve": true},
+    {"id": "title_safe", "kind": "text_safe_zone", "x": 0.29, "y": 0.035, "width": 0.66, "height": 0.08},
+    {"id": "cta_safe", "kind": "text_safe_zone", "x": 0.31, "y": 0.79, "width": 0.64, "height": 0.075}
+  ],
+  "support_zone_capacity": {
+    "console_left": {"recommended_major_objects": 1, "hard_maximum_major_objects": 1}
+  },
+  "objects": [
+    {
+      "id": "room_shell",
+      "semantic_role": "background_structure",
+      "purpose": ["establish_location", "establish_depth", "support_perspective"],
+      "visual_priority": "tertiary",
+      "allowed_zone": "background_full",
+      "geometry": {"kind": "rect", "x": 0.0, "y": 0.0, "width": 1.0, "height": 1.0},
+      "may_occlude": [],
+      "may_not_occlude": ["self_starting_chamber", "title_safe", "cta_safe"],
+      "remove_if_no_visual_purpose": true,
+      "major": false,
+      "estimated_contrast": 0.16
+    },
+    {
+      "id": "self_starting_chamber",
+      "semantic_role": "hero",
+      "purpose": ["support_story", "communicate_machine_state", "provide_light", "guide_eye", "establish_scale"],
+      "visual_priority": "primary",
+      "allowed_zone": "hero_central",
+      "geometry": {"kind": "rect", "x": 0.31, "y": 0.17, "width": 0.49, "height": 0.58},
+      "may_occlude": ["background_full"],
+      "may_not_occlude": ["title_safe", "cta_safe"],
+      "remove_if_no_visual_purpose": true,
+      "major": true,
+      "estimated_contrast": 0.96
+    },
+    {
+      "id": "witness_console",
+      "semantic_role": "machine_support",
+      "purpose": ["communicate_machine_state", "establish_scale", "support_story"],
+      "visual_priority": "secondary",
+      "allowed_zone": "console_left",
+      "geometry": {"kind": "rect", "x": 0.045, "y": 0.50, "width": 0.215, "height": 0.32},
+      "may_occlude": ["background_full"],
+      "may_not_occlude": ["self_starting_chamber", "hero_clearance", "title_safe", "cta_safe"],
+      "remove_if_no_visual_purpose": true,
+      "major": true,
+      "estimated_contrast": 0.58
+    },
+    {
+      "id": "relay_spine",
+      "semantic_role": "background_structure",
+      "purpose": ["communicate_machine_state", "establish_depth", "guide_eye"],
+      "visual_priority": "tertiary",
+      "allowed_zone": "background_full",
+      "geometry": {"kind": "rect", "x": 0.84, "y": 0.24, "width": 0.10, "height": 0.46},
+      "may_occlude": ["background_full"],
+      "may_not_occlude": ["self_starting_chamber", "title_safe", "cta_safe"],
+      "remove_if_no_visual_purpose": true,
+      "major": false,
+      "estimated_contrast": 0.38
+    },
+    {
+      "id": "overhead_services",
+      "semantic_role": "background_structure",
+      "purpose": ["establish_location", "frame_hero", "support_perspective"],
+      "visual_priority": "tertiary",
+      "allowed_zone": "background_full",
+      "geometry": {"kind": "rect", "x": 0.26, "y": 0.12, "width": 0.68, "height": 0.035},
+      "may_occlude": ["background_full"],
+      "may_not_occlude": ["title_safe", "quiet_upper_left"],
+      "remove_if_no_visual_purpose": true,
+      "major": false,
+      "estimated_contrast": 0.24
+    },
+    {
+      "id": "inspection_threshold",
+      "semantic_role": "foreground_frame",
+      "purpose": ["create_foreground_depth", "frame_hero", "support_perspective"],
+      "visual_priority": "tertiary",
+      "allowed_zone": "foreground_threshold",
+      "geometry": {"kind": "rect", "x": 0.0, "y": 0.91, "width": 1.0, "height": 0.09},
+      "may_occlude": ["background_full"],
+      "may_not_occlude": ["self_starting_chamber", "hero_clearance", "cta_safe"],
+      "remove_if_no_visual_purpose": true,
+      "major": false,
+      "estimated_contrast": 0.50
+    }
+  ],
+  "advisory_metrics": ["luma_variance", "hero_region_brightness", "edge_density", "object_count"],
+  "future_critic_hook": ["hierarchy", "occlusion", "balance", "visual_noise", "depth", "purpose", "negative_space", "perspective", "readability"]
+}

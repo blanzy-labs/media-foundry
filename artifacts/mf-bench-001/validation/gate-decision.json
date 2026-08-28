@@ -1,0 +1,7 @@
+{
+  "state": "BLOCKED_COMPOSITION",
+  "animation_authorized": false,
+  "machine_validation": "PASS",
+  "human_status": "PENDING_HUMAN",
+  "reason": "HUMAN_COMPOSITION_APPROVAL_REQUIRED"
+}
