@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "zone_vocabulary_and_geometry": "PASS",
+    "required_zone_kinds": "PASS",
+    "unique_object_ids": "PASS",
+    "semantic_role_required": "PASS",
+    "valid_visual_purpose_required": "PASS",
+    "remove_if_unnecessary_policy": "PASS",
+    "visual_hierarchy": "PASS",
+    "objects_inside_allowed_zones": "PASS",
+    "no_unexpected_frame_clipping": "PASS",
+    "preserved_negative_space": "PASS",
+    "hero_and_no_occlusion_protection": "PASS",
+    "text_safety": "PASS",
+    "long_line_guardrail": "PASS",
+    "large_shape_guardrail": "PASS",
+    "support_zone_capacity": "PASS",
+    "negative_space_not_occupancy_scored": "PASS",
+    "animation_cannot_rescue_composition": "PASS"
+  },
+  "errors": [],
+  "advisories": [],
+  "result": "PASS"
+}

@@ -1,0 +1,11 @@
+{
+  "stage": "lighting",
+  "mode": "stills",
+  "build_ms": 418,
+  "render_ms": 1048,
+  "total_ms": 1466,
+  "rendered": 1,
+  "resumed_frames": 0,
+  "engine": "BLENDER_EEVEE",
+  "device": "CPU_HEADLESS_DEFAULT"
+}

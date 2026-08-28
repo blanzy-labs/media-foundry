@@ -1,0 +1,34 @@
+{
+  "tolerance_frames": 2,
+  "candidate_a": {
+    "startup_lever_start": 34,
+    "startup_lever_end": 68,
+    "gauge_wake": 52,
+    "blue_stage": 82,
+    "green_stage": 125,
+    "yellow_stage": 164,
+    "linked_ring_activation": 172,
+    "reactor_escalation": 182,
+    "title_start": 213,
+    "cta_start": 250,
+    "url_start": 286,
+    "critical_tease": 345
+  },
+  "candidate_b": {
+    "startup_lever_start": 34,
+    "startup_lever_end": 68,
+    "gauge_wake": 52,
+    "blue_stage": 82,
+    "green_stage": 125,
+    "yellow_stage": 164,
+    "linked_ring_activation": 172,
+    "reactor_escalation": 182,
+    "title_start": 213,
+    "cta_start": 250,
+    "url_start": 286,
+    "critical_tease": 345
+  },
+  "maximum_delta_frames": 0,
+  "semantic_order_equal": true,
+  "result": "PASS"
+}

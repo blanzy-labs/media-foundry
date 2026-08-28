@@ -1,0 +1,63 @@
+{
+  "slice": "MF-018A",
+  "mode": "PULP_GAME_WORLD",
+  "seed": 1801957,
+  "video": {"width": 768, "height": 1152, "fps": 30, "duration_seconds": 12.0},
+  "visual": {
+    "palette": {
+      "black": "#070c0b", "deep_teal": "#092d2c", "teal": "#185755",
+      "paper": "#e0c98b", "cream": "#f4da97", "yellow": "#e6b905",
+      "amber": "#ef800c", "red": "#b12312"
+    },
+    "style": "retro_low_fi_2_5d_pulp_game_scene",
+    "camera": "restrained_native_push_in",
+    "surface": "deterministic_distressed_metal",
+    "human_character": false
+  },
+  "motion": {
+    "wake_start": 1.2,
+    "reactor_start": 2.2,
+    "warning_start": 3.0,
+    "charge_start": 4.0,
+    "peak_start": 8.7,
+    "hold_start": 10.4,
+    "reactor_pulse_hz": 1.7,
+    "camera_push_percent": 3.2,
+    "steam_sources": 1,
+    "dust_particles": 14,
+    "lamp_count": 10,
+    "gauge_count": 3
+  },
+  "composition_manifest": "config/mf018a-native-composition.json",
+  "art_direction_reference": {
+    "path": "/home/blanzy/Pictures/50s style book cover.png",
+    "sha256": "a4df3398242b6dc20ee667848cb7464658b527316700ffb278bc5ab1f1cee8d6",
+    "usage": "palette_mood_proportions_print_character_only"
+  },
+  "audio": {
+    "direction": "music_led_no_additional_sfx",
+    "catalog": "config/music/catalog.json",
+    "track_id": "cold_concrete_anatomy",
+    "qualified_id": "unknown-process:cold_concrete_anatomy",
+    "source": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+    "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "track_approval": "APPROVED",
+    "cue_region": "revelation_a",
+    "cue_approval": "APPROVED",
+    "start_seconds": 5.0,
+    "end_seconds": 17.0,
+    "fade_in_seconds": 0.8,
+    "fade_out_seconds": 1.2,
+    "target_lufs": -16.0,
+    "true_peak_db": -1.5,
+    "post_normalization_gain_db": -2.4
+  },
+  "representative_frames": [
+    [0.4, "dark-dormant"], [1.8, "early-activation"], [3.5, "console-lamps"],
+    [6.0, "reactor-mid-activation"], [9.5, "peak-reactor"], [11.2, "final-hold"]
+  ],
+  "comparison": {
+    "hybrid_artifact": "artifacts/mf-017/hybrid/motion-proof.mp4",
+    "hybrid_sha256": "f6b18c9b9b97c3e12bb25b538e1d351e974ceec8d114dfce2b3d9461869f7859"
+  }
+}

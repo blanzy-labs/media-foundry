@@ -1,0 +1,288 @@
+{
+  "slice": "MF-018A",
+  "result": "TECHNICAL_PASS",
+  "mode": "PULP_GAME_WORLD",
+  "release_ready": false,
+  "composition_status": "COMPOSITION_PENDING",
+  "human_review": "PENDING_HUMAN",
+  "checks": {
+    "prior_slices_frozen": {
+      "status": "PASS",
+      "detail": {
+        "artifacts/mf-015/final-test.mp4": "f145f0b089f54e6db32a4ab907f53ae8eb4b6dbbe7ebcb7eed50bec8034b7d7c",
+        "artifacts/mf-015r1/final-test.mp4": "4945abbb49965b1132fa99be45e2d9019e5214ef0ccf23905936da0077f113a6",
+        "artifacts/mf-015r2/final-test.mp4": "3c3d570d9c8d33a0942373937beefef49809b46f2e7a256008c3b9c2de9dc080",
+        "config/mf016-pulp-composition.json": "53971df4c454268eb09c5d9715fae7fab6defd8979484888d318d643355b26ef",
+        "artifacts/mf-017/hybrid/motion-proof.mp4": "f6b18c9b9b97c3e12bb25b538e1d351e974ceec8d114dfce2b3d9461869f7859"
+      }
+    },
+    "config_and_source_integrity": {
+      "status": "PASS",
+      "detail": {
+        "config": "41056752e6442e1de4400a7be1b107ead9b7b4f3548a08994b2660da5b40939c",
+        "composition": "eff78520968de5cbe0bbb680bbea16ce6a9212d6ec8b4df183015c6054741709",
+        "godot": "38e4c7fa9ef027510ad9e538a8863a9dbd2e94c7c62347b35b86a956f87c5a56"
+      }
+    },
+    "semantic_composition_contract": {
+      "status": "PASS",
+      "detail": {
+        "checks": {
+          "zone_vocabulary_and_geometry": "PASS",
+          "required_zone_kinds": "PASS",
+          "unique_object_ids": "PASS",
+          "semantic_role_required": "PASS",
+          "valid_visual_purpose_required": "PASS",
+          "remove_if_unnecessary_policy": "PASS",
+          "visual_hierarchy": "PASS",
+          "objects_inside_allowed_zones": "PASS",
+          "no_unexpected_frame_clipping": "PASS",
+          "preserved_negative_space": "PASS",
+          "hero_and_no_occlusion_protection": "PASS",
+          "text_safety": "PASS",
+          "long_line_guardrail": "PASS",
+          "large_shape_guardrail": "PASS",
+          "support_zone_capacity": "PASS",
+          "negative_space_not_occupancy_scored": "PASS",
+          "animation_cannot_rescue_composition": "PASS"
+        },
+        "errors": [],
+        "advisories": [],
+        "result": "PASS"
+      }
+    },
+    "composition_human_gate_preserved": {
+      "status": "PASS",
+      "detail": {
+        "gate": "COMPOSITION_PENDING",
+        "human": "PENDING_HUMAN",
+        "release_ready": false
+      }
+    },
+    "art_direction_reference_bound": {
+      "status": "PASS",
+      "detail": {
+        "path": "/home/blanzy/Pictures/50s style book cover.png",
+        "sha256": "a4df3398242b6dc20ee667848cb7464658b527316700ffb278bc5ab1f1cee8d6"
+      }
+    },
+    "approved_local_audio": {
+      "status": "PASS",
+      "detail": {
+        "track_id": "cold_concrete_anatomy",
+        "qualified_id": "unknown-process:cold_concrete_anatomy",
+        "track_path": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+        "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+        "track_approval": "APPROVED",
+        "cue_id": "revelation_a",
+        "cue_approval": "APPROVED",
+        "usable_start": 5.0,
+        "usable_end": 49.0,
+        "actual_start": 5.0,
+        "actual_end": 17.0,
+        "fade_in": 0.8,
+        "fade_out": 1.2,
+        "post_normalization_gain_db": -2.4,
+        "direction": "music_led_no_additional_sfx",
+        "loudness": {
+          "integrated_lufs": -16.04,
+          "true_peak_db": -3.82,
+          "loudness_range_lu": 4.2
+        },
+        "result": "PASS"
+      }
+    },
+    "audio_delivery_levels": {
+      "status": "PASS",
+      "detail": {
+        "measured": {
+          "integrated_lufs": -16.04,
+          "true_peak_db": -3.82,
+          "loudness_range_lu": 4.2
+        },
+        "target_lufs": -16.0,
+        "true_peak_ceiling": -1.5
+      }
+    },
+    "artifact_integrity": {
+      "status": "PASS",
+      "detail": {
+        "godot-native-pulp-scene.mp4": "a6507e574567dd2b041981ac5f51ca7123dc700636e6cd394ccbb086d19c549b",
+        "representative-frames/contact-sheet.png": "5ce2bfdb91d295117c500094ff80eb63140ff6172e5a1ece3f7eddc4a39d0702",
+        "comparison/hybrid-vs-native.png": "146ef90deff4091c41080e8c8742f238e7e63acc4d2e0f2e74e0838abb340e2f",
+        "comparison/hybrid-vs-native.mp4": "a59e84bb5b3f1ed58a9f7d66fd367e6a0f221c6d26434466a8822cc0640c8783",
+        "representative-frames/dark-dormant.png": "483a3561a5834d0c7959b2759d8abe4041369c18a632e46510d60bdb84e5cff5",
+        "representative-frames/early-activation.png": "f1a6204877fd18cc9bec4078328c9ce8b25f6c6b4bb9c129873eec312ed41bcd",
+        "representative-frames/console-lamps.png": "a34ed752eb92ff1bb0321cd3bf1c64e439eb609203da5a0273cd0dfaa6cf6f3b",
+        "representative-frames/reactor-mid-activation.png": "7cb0e274f06208651ba57b6c710a000e0006a7f65801d1eaa535e4dd69910ddb",
+        "representative-frames/peak-reactor.png": "02d428adc13f6e971b2dcc1c3c8ef649f7625997cf3cdb9f2368ee757727b4c3",
+        "representative-frames/final-hold.png": "f52581a9326926240ffa2467769f6f7d31d19d841daf623758594a2a9cd08324",
+        "static-keyframes/activation.png": "a34ed752eb92ff1bb0321cd3bf1c64e439eb609203da5a0273cd0dfaa6cf6f3b",
+        "static-keyframes/dormant.png": "483a3561a5834d0c7959b2759d8abe4041369c18a632e46510d60bdb84e5cff5",
+        "static-keyframes/peak.png": "02d428adc13f6e971b2dcc1c3c8ef649f7625997cf3cdb9f2368ee757727b4c3"
+      }
+    },
+    "candidate_media_contract": {
+      "status": "PASS",
+      "detail": {
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 768,
+        "height": 1152,
+        "fps": "30/1",
+        "frames": 360,
+        "duration": 12.0,
+        "sample_rate": 48000
+      }
+    },
+    "full_candidate_decode": {
+      "status": "PASS",
+      "detail": ""
+    },
+    "matched_hybrid_comparison": {
+      "status": "PASS",
+      "detail": {
+        "video_codec": "h264",
+        "audio_codec": null,
+        "width": 1536,
+        "height": 1152,
+        "fps": "30/1",
+        "frames": 120,
+        "duration": 4.0,
+        "sample_rate": 0
+      }
+    },
+    "static_and_representative_evidence": {
+      "status": "PASS",
+      "detail": [
+        "artifacts/mf-018a/representative-frames/dark-dormant.png",
+        "artifacts/mf-018a/representative-frames/early-activation.png",
+        "artifacts/mf-018a/representative-frames/console-lamps.png",
+        "artifacts/mf-018a/representative-frames/reactor-mid-activation.png",
+        "artifacts/mf-018a/representative-frames/peak-reactor.png",
+        "artifacts/mf-018a/representative-frames/final-hold.png",
+        "artifacts/mf-018a/static-keyframes/dormant.png",
+        "artifacts/mf-018a/static-keyframes/activation.png",
+        "artifacts/mf-018a/static-keyframes/peak.png"
+      ]
+    },
+    "godot_native_render_clean": {
+      "status": "PASS",
+      "detail": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nMF018A_NATIVE_SCENE_OK frames=360 seed=1801957.0"
+    },
+    "native_scene_construction": {
+      "status": "PASS",
+      "detail": {
+        "required": [
+          "clipPath id='chamber'",
+          "for gauge in range(3)",
+          "Attached ring lamps",
+          "steam valve",
+          "camera transform",
+          "load_svg_from_string",
+          "Native console"
+        ],
+        "forbidden_absent": [
+          "--base",
+          "load_png_from_buffer",
+          "Image.load(",
+          "plate_path"
+        ]
+      }
+    },
+    "meaningful_machine_state_motion": {
+      "status": "PASS",
+      "detail": {
+        "dormant_to_activation_mean": 6.339296694155093,
+        "activation_to_peak_mean": 14.968256067346644,
+        "changed_ratio": 0.3521683304398148
+      }
+    },
+    "reactor_visual_dominance": {
+      "status": "PASS",
+      "detail": {
+        "dormant": 1.1599705253812769,
+        "activation": 1.2108050020941221,
+        "peak": 1.4211466545034472
+      }
+    },
+    "energy_bound_to_chamber": {
+      "status": "PASS",
+      "detail": {
+        "inside_new_yellow_pixels": 9694,
+        "adjacent_new_yellow_pixels": 455,
+        "binding_ratio": 21.305
+      }
+    },
+    "warning_lamps_seated_in_machine_regions": {
+      "status": "PASS",
+      "detail": {
+        "ring_pixels": 1221,
+        "console_pixels": 533,
+        "total_red_pixels": 1941
+      }
+    },
+    "native_gauge_response": {
+      "status": "PASS",
+      "detail": {
+        "gauge_region_mean_delta": 23.962613333333334
+      }
+    },
+    "deterministic_seed_and_schedule": {
+      "status": "PASS",
+      "detail": {
+        "seed": 1801957,
+        "motion": {
+          "wake_start": 1.2,
+          "reactor_start": 2.2,
+          "warning_start": 3.0,
+          "charge_start": 4.0,
+          "peak_start": 8.7,
+          "hold_start": 10.4,
+          "reactor_pulse_hz": 1.7,
+          "camera_push_percent": 3.2,
+          "steam_sources": 1,
+          "dust_particles": 14,
+          "lamp_count": 10,
+          "gauge_count": 3
+        },
+        "raw_frames_retained": false
+      }
+    },
+    "practical_render_performance": {
+      "status": "PASS",
+      "detail": {
+        "native_elapsed_ms": 25894,
+        "mf017_reference_elapsed_ms": 89310,
+        "native_to_mf017_ratio": 0.29
+      }
+    },
+    "no_publication": {
+      "status": "PASS",
+      "detail": {
+        "published": false,
+        "human_review": "PENDING_HUMAN"
+      }
+    }
+  },
+  "metrics": {
+    "motion": {
+      "dormant_to_activation_mean": 6.339296694155093,
+      "activation_to_peak_mean": 14.968256067346644,
+      "changed_ratio": 0.3521683304398148
+    },
+    "hierarchy": {
+      "dormant": 1.1599705253812769,
+      "activation": 1.2108050020941221,
+      "peak": 1.4211466545034472
+    },
+    "energy_binding": {
+      "inside_new_yellow_pixels": 9694,
+      "adjacent_new_yellow_pixels": 455,
+      "binding_ratio": 21.305
+    },
+    "gauge_delta": 23.962613333333334,
+    "performance_ms": 25894
+  },
+  "published": false
+}

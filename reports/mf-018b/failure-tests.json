@@ -1,0 +1,64 @@
+{
+  "slice": "MF-018B",
+  "result": "PASS",
+  "passed": 7,
+  "total": 7,
+  "cases": [
+    {
+      "name": "duplicate_interaction_id",
+      "expected_code": "DUPLICATE_INTERACTION_ID",
+      "observed_codes": [
+        "DUPLICATE_INTERACTION_ID"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "missing_interaction_node",
+      "expected_code": "MISSING_INTERACTION_NODE",
+      "observed_codes": [
+        "MISSING_INTERACTION_NODE"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "invalid_state_variable",
+      "expected_code": "INVALID_STATE_VARIABLE",
+      "observed_codes": [
+        "INVALID_STATE_VARIABLE"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "missing_audio_hook",
+      "expected_code": "MISSING_AUDIO_HOOK",
+      "observed_codes": [
+        "MISSING_AUDIO_HOOK"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "absolute_local_path",
+      "expected_code": "ABSOLUTE_OR_UNSAFE_PATH",
+      "observed_codes": [
+        "ABSOLUTE_OR_UNSAFE_PATH"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "promo_dependency_in_base",
+      "expected_code": "PROMO_DEPENDENCY_IN_BASE_SCENE",
+      "observed_codes": [
+        "PROMO_DEPENDENCY_IN_BASE_SCENE"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "unresolved_asset",
+      "expected_code": "UNRESOLVED_OR_CHANGED_ASSET",
+      "observed_codes": [
+        "UNRESOLVED_OR_CHANGED_ASSET"
+      ],
+      "status": "PASS"
+    }
+  ]
+}

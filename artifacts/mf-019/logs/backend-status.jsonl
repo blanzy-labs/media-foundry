@@ -1,0 +1,6 @@
+{"state": "BACKEND_PREFLIGHT", "detail": "", "monotonic_ms": 314364718}
+{"state": "BUILDING_SCENE", "detail": "static composition", "monotonic_ms": 314365365}
+{"state": "RENDERING_FRAMES", "detail": "", "monotonic_ms": 314365651}
+{"state": "VALIDATING_FRAMES", "detail": "", "monotonic_ms": 314463934}
+{"state": "FINALIZING", "detail": "", "monotonic_ms": 314463992}
+{"state": "READY_FOR_REVIEW", "detail": "", "monotonic_ms": 314476038}

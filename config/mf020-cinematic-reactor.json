@@ -1,0 +1,76 @@
+{
+  "slice": "MF-020",
+  "seed": 200020,
+  "render": {
+    "backend": "BLENDER",
+    "required_capabilities": ["cinematic_render", "complex_materials", "frame_sequence_render", "procedural_scene_build"],
+    "fallback": {"allowed": false, "backends": []},
+    "blender": {
+      "template": "templates/blender/pulp-reactor-v1.blend",
+      "builder_script": "scripts/blender/build_cinematic_reactor.py",
+      "scene_output": "artifacts/mf-020/scene/cinematic-reactor-hero.blend",
+      "render_engine_family": "realtime_eevee",
+      "samples": 16,
+      "output_format": "PNG",
+      "transparent": false,
+      "resume": true
+    }
+  },
+  "shot": {
+    "id": "reactor_approach_hero_v1",
+    "intent": "A low, restrained camera approach reveals a dormant experimental reactor; a physical startup mechanism causes gauges, warning lamps, steam, the containment collar, and internal energy to wake in a readable causal escalation before a threatening final hold.",
+    "runtime_seconds": 10.0,
+    "fps": 30,
+    "resolution": [768, 1152],
+    "lens_mm": 46.0,
+    "camera_move": "slow_push_with_subtle_rightward_orbit",
+    "hero": "central_glass_containment_reactor",
+    "secondary": "left_foreground_analog_console",
+    "final_hold_seconds": 1.7,
+    "events_seconds": {
+      "lever_engages": 1.2,
+      "lever_locked": 2.2,
+      "gauges_wake": 1.8,
+      "warning_amber": 2.8,
+      "warning_red": 3.6,
+      "pressure_release": 4.4,
+      "energy_forms": 4.8,
+      "collar_response": 5.3,
+      "full_power": 7.3,
+      "final_hold": 8.3
+    }
+  },
+  "stages": {
+    "order": ["CONCEPT", "BLOCKOUT", "DETAIL", "LIGHTING", "ANIMATION_FX", "FINAL_RENDER", "FINALIZATION"],
+    "blockout": {"seconds": [0.5, 5.2, 9.4], "labels": ["dormant", "escalation", "final"], "required_state": "CONFIGURED_READY"},
+    "detail": {"seconds": [7.3], "labels": ["detail-pass"]},
+    "lighting": {"seconds": [7.3], "labels": ["lighting-pass"]},
+    "fx": {"seconds": [5.0, 7.3, 9.4], "labels": ["pressure-release", "full-power", "final-hold"]}
+  },
+  "audio": {
+    "catalog": "config/music/catalog.json",
+    "qualified_id": "unknown-process:cold_concrete_anatomy",
+    "source": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+    "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "cue_region": "revelation_a",
+    "start_seconds": 5.0,
+    "end_seconds": 15.0,
+    "fade_in_seconds": 0.7,
+    "fade_out_seconds": 1.2,
+    "target_lufs": -16.0,
+    "true_peak_db": -1.5,
+    "post_normalization_gain_db": -1.3,
+    "sfx_policy": "NONE_FOR_FIRST_PROOF"
+  },
+  "finalization": {
+    "title": "UNKNOWN PROCESS",
+    "title_start_seconds": 8.1,
+    "title_end_seconds": 10.0,
+    "title_owner": "MEDIA_FOUNDRY",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_sample_rate": 48000
+  },
+  "human_review": "PENDING_HUMAN",
+  "publication": false
+}

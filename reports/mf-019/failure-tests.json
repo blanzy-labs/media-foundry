@@ -1,0 +1,73 @@
+{
+  "slice": "MF-019",
+  "result": "PASS",
+  "passed": 13,
+  "total": 13,
+  "tests": {
+    "unknown_backend": {
+      "status": "PASS",
+      "expected": "UNKNOWN_RENDER_BACKEND",
+      "actual": "UNKNOWN_RENDER_BACKEND"
+    },
+    "blender_missing": {
+      "status": "PASS",
+      "expected": "BLENDER_NOT_AVAILABLE",
+      "actual": "BLENDER_NOT_AVAILABLE"
+    },
+    "explicit_fallback_only": {
+      "status": "PASS",
+      "expected": "GODOT",
+      "actual": "GODOT"
+    },
+    "headless_script_failure": {
+      "status": "PASS",
+      "expected": "BLENDER_SCENE_BUILD_FAILED",
+      "actual": "BLENDER_SCENE_BUILD_FAILED"
+    },
+    "missing_template": {
+      "status": "PASS",
+      "expected": "BLENDER_TEMPLATE_MISSING",
+      "actual": "BLENDER_TEMPLATE_MISSING"
+    },
+    "missing_asset": {
+      "status": "PASS",
+      "expected": "BLENDER_SCENE_BUILD_FAILED",
+      "actual": "BLENDER_SCENE_BUILD_FAILED"
+    },
+    "unsupported_engine": {
+      "status": "PASS",
+      "expected": "BLENDER_RENDER_ENGINE_UNSUPPORTED",
+      "actual": "BLENDER_RENDER_ENGINE_UNSUPPORTED"
+    },
+    "incomplete_frame_sequence": {
+      "status": "PASS",
+      "expected": "BLENDER_FRAME_SEQUENCE_INCOMPLETE",
+      "actual": "BLENDER_FRAME_SEQUENCE_INCOMPLETE"
+    },
+    "silent_fallback_forbidden": {
+      "status": "PASS",
+      "expected": "BLENDER_NOT_AVAILABLE",
+      "actual": "BLENDER_NOT_AVAILABLE"
+    },
+    "absolute_asset_path": {
+      "status": "PASS",
+      "expected": "ABSOLUTE_BACKEND_ASSET_PATH",
+      "actual": "ABSOLUTE_BACKEND_ASSET_PATH"
+    },
+    "audio_mismatch": {
+      "status": "PASS",
+      "expected": "AB_AUDIO_MISMATCH",
+      "actual": "AB_AUDIO_MISMATCH"
+    },
+    "text_cta_mismatch": {
+      "status": "PASS",
+      "expected": "AB_CONTENT_MISMATCH",
+      "actual": "AB_CONTENT_MISMATCH"
+    },
+    "unsupported_capability": {
+      "status": "PASS",
+      "expected": "BACKEND_CAPABILITY_UNSUPPORTED",
+      "actual": "BACKEND_CAPABILITY_UNSUPPORTED"
+    }
+  }
+}

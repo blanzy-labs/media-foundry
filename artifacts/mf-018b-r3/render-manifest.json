@@ -1,0 +1,150 @@
+{
+  "slice": "MF-018B-R3",
+  "config": "/home/blanzy/projects/media-foundry/config/mf018b-r3-display-cleanup.json",
+  "config_sha256": "cdee43ff8f70045b1638e75c2c1254d3700e2d2854e6ddb13a0f1d20ce7bf297",
+  "seed": 1801959,
+  "baseline": {
+    "artifact": "artifacts/mf-018b-r2/final-test.mp4",
+    "artifact_sha256": "0f9411777e1bd61b592e84ddf53d1c0c7f51e7b009aa51bb060c0e63c0c3e099",
+    "scene": "godot/mf018b_r2_pulp_scene.tscn",
+    "scene_sha256": "a8537d34ffb99e4c0b6b86f07312c391223e843acb0698c31f46503ff66c5dcb",
+    "script": "godot/mf018b_r2_pulp_scene.gd",
+    "script_sha256": "f9f08e11790f55c0d51aa294e79e8fba6bda4b1c73d812a85cc2d248a118cd1d",
+    "config": "config/mf018b-r2-cleanup.json",
+    "config_sha256": "315991f92deac35893204979ce8f90e2cca42d3bdc5188cbefa9809371596782",
+    "manifest": "artifacts/mf-018b-r2/render-manifest.json",
+    "manifest_sha256": "91b18752802fc3d2db9e07c559fada6b9cdf91e80b6c23c1891d01e9f28c0d26",
+    "evidence": "artifacts/mf-018b-r2/representative-frames/contact-sheet.png",
+    "evidence_sha256": "fe28b03fb3760a2e9040985569259bddc0a6310cf54f981c0f3d89654a52f94e",
+    "handoff": "handoff/playable-scene/mf018b-r1/manifest.json",
+    "handoff_sha256": "dcf9670970fccc4797d0adb49a69e60162213838fff3ec43fb72f0ee163f0a94"
+  },
+  "scene": {
+    "path": "godot/mf018b_r3_pulp_scene.tscn",
+    "sha256": "80c4e632e97a86e3ba68a548b1984d88f1aedc5f4bfe5de0175e9f36f814c711",
+    "standalone_probe": "PASS",
+    "r1_driver_reused": true
+  },
+  "inherited_handoff": {
+    "path": "handoff/playable-scene/mf018b-r1/manifest.json",
+    "sha256": "dcf9670970fccc4797d0adb49a69e60162213838fff3ec43fb72f0ee163f0a94",
+    "validation": "PASS",
+    "interface_changed": false
+  },
+  "display_contract": {
+    "node": "Machines/InformationDisplay",
+    "panel_bounds": [
+      42,
+      164,
+      240,
+      412
+    ],
+    "title": "UNKNOWN PROCESS",
+    "cta": "TRY A WEB GAME",
+    "canonical_url": "https://rcblanzy.com/books/unknown-process",
+    "display_url": "rcblanzy.com/books/unknown-process",
+    "metadata_source": "content/fixtures/mf006r4-unknown-process.json",
+    "title_start": 7.1,
+    "cta_start": 8.35,
+    "url_start": 9.55,
+    "minimum_full_copy_hold_seconds": 3.65,
+    "style": "in_world_monospaced_machine_display"
+  },
+  "cleanup_contract": {
+    "r2_lower_rectangular_outline_restored": false,
+    "overall_sloped_control_outline_complete": true,
+    "l_shaped_reactor_pipe_present": false,
+    "replacement_props_added": 0,
+    "r1_promo_driver_reused": true,
+    "startup_logic_changed": false,
+    "indicator_logic_changed": false,
+    "audio_changed": false
+  },
+  "video": {
+    "width": 768,
+    "height": 1152,
+    "fps": 30,
+    "duration_seconds": 14.0,
+    "frame_count": 420
+  },
+  "audio": {
+    "track": "unknown-process:cold_concrete_anatomy",
+    "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "track_approval": "APPROVED",
+    "cue": "revelation_a",
+    "cue_approval": "APPROVED",
+    "actual_start": 5.0,
+    "actual_end": 19.0,
+    "loudness": {
+      "integrated_lufs": -16.03,
+      "true_peak_db": -2.78,
+      "loudness_range_lu": 5.0
+    },
+    "event_markers": {
+      "startup_lever_clunk": 1.15,
+      "gauge_wake": 1.75,
+      "blue_stage": 2.75,
+      "green_stage": 4.15,
+      "yellow_link_trigger": 5.45,
+      "linked_ring_activation": 5.72
+    },
+    "changed_from_r2": false,
+    "additional_cue_added": false,
+    "result": "PASS"
+  },
+  "outputs": {
+    "final-test.mp4": {
+      "sha256": "610ae3b11d3d70e8823876add19752421a8cb627872bc44bbfc07314c42af47a",
+      "bytes": 2589353
+    },
+    "representative-frames/contact-sheet.png": {
+      "sha256": "5932565ae812425754adfa80b5a34ae7aefafd62f3cc3b8cc5a7727735446f49",
+      "bytes": 303301
+    },
+    "comparison/r2-vs-r3.png": {
+      "sha256": "1aac169d6ca60d823bbc2b1c2e86dc8361b3f7ebbdefd598a6b25779d3c80c17",
+      "bytes": 154347
+    },
+    "comparison/r2-vs-r3.mp4": {
+      "sha256": "514ccfef41f04fc3608783cffcd73f00fc70a464da31c445cb47d9fdc6fe437b",
+      "bytes": 3128579
+    },
+    "representative-frames/clean-dormant-scene.png": {
+      "sha256": "e8a658ef931573bbfff26dd676dd525548ca021084d17250bea0ffa1ecff5afd",
+      "bytes": 165199
+    },
+    "representative-frames/book-title-reveal.png": {
+      "sha256": "baff40d3ac6b836fe9100d3aca4ac7dee0490735f741e378edda14d8dfb6477a",
+      "bytes": 211243
+    },
+    "representative-frames/web-game-cta-reveal.png": {
+      "sha256": "2c1ba9e84d6837d845b6b864e03a97e56f242a60608cffeb12554575c4d0be05",
+      "bytes": 228169
+    },
+    "representative-frames/full-panel-active.png": {
+      "sha256": "a099bb717b1c1c944cf1a6e9ba8f587179b46238f702605fcd23c138e011437c",
+      "bytes": 236555
+    },
+    "representative-frames/final-active-machine-with-cta.png": {
+      "sha256": "79eb90febd7e745bf0b79b4861a9a57e4aaead4630ba3c09b0fc169806d3fb64",
+      "bytes": 258600
+    },
+    "closeups/completed-control-panel-outline.png": {
+      "sha256": "2f47abab88e044a4aac7f67f226ef3881a50d710c607f225dbbd89b2a8bec38c",
+      "bytes": 179992
+    },
+    "closeups/l-shaped-artifact-removed.png": {
+      "sha256": "8141a52f60066c8718eb02743dd38115f2db31f1a1c0b0925ccd0d9cf74cfd83",
+      "bytes": 55473
+    },
+    "closeups/upper-left-information-panel.png": {
+      "sha256": "b2d48fbcdd685c9214eeb3d1b5d47f162e2061e5863a4c585cc70127d011dfdc",
+      "bytes": 103128
+    }
+  },
+  "elapsed_ms": 42766,
+  "human_review": "PENDING_HUMAN",
+  "release_ready": false,
+  "gameplay_implemented": false,
+  "published": false
+}

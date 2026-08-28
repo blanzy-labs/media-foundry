@@ -1,0 +1,52 @@
+{
+  "slice": "MF-018B-R2",
+  "mode": "PULP_GAME_WORLD_LEVER_AND_OUTLINE_CLEANUP",
+  "seed": 1801959,
+  "video": {"width": 768, "height": 1152, "fps": 30, "duration_seconds": 14.0},
+  "scene": "godot/mf018b_r2_pulp_scene.tscn",
+  "base_script": "godot/mf018b_r2_pulp_scene.gd",
+  "promo_driver": "godot/mf018b_r1_promo_driver.gd",
+  "renderer": "godot/mf018b_r2_render.gd",
+  "composition_manifest": "config/mf018b-native-composition.json",
+  "handoff_manifest": "handoff/playable-scene/mf018b-r1/manifest.json",
+  "cleanup_contract": {
+    "right_machine_lever_present": false,
+    "right_machine_steam_from_removed_lever_present": false,
+    "control_panel_inner_outline_present": false,
+    "replacement_props_added": 0,
+    "r1_promo_driver_reused": true,
+    "r1_startup_timeline_changed": false,
+    "r1_indicator_logic_changed": false,
+    "r1_audio_logic_changed": false,
+    "right_machine_cleanup_roi": [640, 810, 748, 985],
+    "panel_outline_cleanup_roi": [45, 735, 245, 985]
+  },
+  "representative_frames": [[0.5, "full-scene-cleanup"], [3.6, "startup-panel-active"], [5.6, "yellow-trigger-preserved"], [6.6, "linked-ring-preserved"], [10.5, "final-active-machine"]],
+  "closeups": [[10.5, "right-machine-lever-removed"], [5.6, "control-panel-outline-removed"], [3.6, "startup-controls-preserved"]],
+  "audio": {
+    "direction": "unchanged_from_mf018b_r1",
+    "catalog": "config/music/catalog.json",
+    "qualified_id": "unknown-process:cold_concrete_anatomy",
+    "source": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+    "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "cue_region": "revelation_a",
+    "start_seconds": 5.0,
+    "end_seconds": 19.0,
+    "fade_in_seconds": 0.8,
+    "fade_out_seconds": 1.4,
+    "target_lufs": -16.0,
+    "true_peak_db": -1.5,
+    "post_normalization_gain_db": -1.3,
+    "event_markers": {"startup_lever_clunk": 1.15, "gauge_wake": 1.75, "blue_stage": 2.75, "green_stage": 4.15, "yellow_link_trigger": 5.45, "linked_ring_activation": 5.72}
+  },
+  "baseline": {
+    "artifact": "artifacts/mf-018b-r1/final-test.mp4",
+    "artifact_sha256": "1910158da2dc5190626f3db55c682d0f44f2e87b0319334844c3f4b0aed10f56",
+    "scene": "godot/mf018b_r1_pulp_scene.tscn",
+    "scene_sha256": "9a60b061a6a51d698f97c932253914cf452eb64d2d7923cf5839a7da2376ff31",
+    "config": "config/mf018b-r1-control-cleanup.json",
+    "config_sha256": "750d4a7385e40a3345d9a446f56d00cfe5fef0ea56c84900370e1ee81893663e",
+    "handoff": "handoff/playable-scene/mf018b-r1/manifest.json",
+    "handoff_sha256": "dcf9670970fccc4797d0adb49a69e60162213838fff3ec43fb72f0ee163f0a94"
+  }
+}

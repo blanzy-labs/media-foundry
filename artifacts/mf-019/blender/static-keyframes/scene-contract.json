@@ -1,0 +1,51 @@
+{
+  "seed": 190019,
+  "engine": "BLENDER_EEVEE",
+  "samples": 16,
+  "resolution": [
+    768,
+    1152
+  ],
+  "fps": 30,
+  "frames": 420,
+  "objects": {
+    "reactor": "GlassChamber",
+    "energy": "CoreContainment",
+    "ring_lights": 8,
+    "gauges": 3,
+    "lever": "StartupLeverHinge",
+    "indicators": 4,
+    "display": [
+      "DisplayTitle",
+      "DisplayCTA",
+      "DisplayURL"
+    ]
+  },
+  "events_seconds": {
+    "startup_lever_start": 1.15,
+    "startup_lever_end": 2.25,
+    "gauge_wake": 1.75,
+    "blue_stage": 2.75,
+    "green_stage": 4.15,
+    "yellow_stage": 5.45,
+    "linked_ring_activation": 5.72,
+    "reactor_escalation": 6.05,
+    "title_start": 7.1,
+    "cta_start": 8.35,
+    "url_start": 9.55,
+    "critical_tease": 11.5
+  },
+  "text": {
+    "title": "UNKNOWN PROCESS",
+    "cta": "TRY A WEB GAME",
+    "url": "rcblanzy.com/books/unknown-process"
+  },
+  "attached_motion": {
+    "ring_lights": true,
+    "gauge_pivots": true,
+    "lever_hinge": true,
+    "indicators_in_console": true,
+    "energy_in_chamber": true,
+    "local_reactor_light": true
+  }
+}

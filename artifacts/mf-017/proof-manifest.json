@@ -1,0 +1,105 @@
+{
+  "slice": "MF-017",
+  "strategy": "HYBRID",
+  "source_status": "PRODUCTION_PLATE_PENDING",
+  "config": "/home/blanzy/projects/media-foundry/config/mf017-pulp-visual-source.json",
+  "config_sha256": "07cc1c9734d872ddda46f9da038ac93c467aefc9357f173dddde2d4a13df02fd",
+  "plate": {
+    "path": "/home/blanzy/projects/media-foundry/media/visual/plates/mf017/pulp-lab-development-v1.png",
+    "sha256": "5fa2143ec5a71b57307835bbfc09940adbbf48929cb90fd271e680053a924aa5",
+    "approval": "REVIEW_REQUIRED",
+    "provenance": "generated"
+  },
+  "source_validation": {
+    "result": "PASS",
+    "state": "PASS",
+    "configured_strategy": "HYBRID",
+    "resolved_strategy": "HYBRID",
+    "recommended_strategy": "HYBRID",
+    "recommendation_reasons": [
+      "high illustration or surface richness is required",
+      "meaningful local motion or lighting remains required"
+    ],
+    "checks": {
+      "source_strategy_required": "PASS",
+      "known_source_strategy": "PASS",
+      "quality_intent": "PASS",
+      "bounded_assessment": "PASS",
+      "human_override": "PASS",
+      "fallback_policy": "PASS",
+      "no_silent_fallback": "PASS",
+      "plate_contract": "PASS",
+      "required_plate_exists": "PASS",
+      "plate_approval_vocabulary": "PASS",
+      "plate_provenance": "PASS",
+      "plate_hash_integrity": "PASS",
+      "production_plate_approved": "NOT_REQUIRED",
+      "plate_layer_and_region_plan": "PASS",
+      "authentic_media_exists": "NOT_REQUIRED",
+      "composition_gate_bound": "PASS"
+    },
+    "warnings": [
+      {
+        "code": "PRODUCTION_PLATE_PENDING",
+        "approval": "REVIEW_REQUIRED"
+      }
+    ],
+    "errors": [],
+    "asset": {
+      "path": "/home/blanzy/projects/media-foundry/media/visual/plates/mf017/pulp-lab-development-v1.png",
+      "exists": true,
+      "declared_sha256": "5fa2143ec5a71b57307835bbfc09940adbbf48929cb90fd271e680053a924aa5",
+      "actual_sha256": "5fa2143ec5a71b57307835bbfc09940adbbf48929cb90fd271e680053a924aa5",
+      "declared_approval": "REVIEW_REQUIRED",
+      "effective_approval": "REVIEW_REQUIRED"
+    },
+    "release_ready": false
+  },
+  "composition_validation": "PASS",
+  "composition_human_status": "APPROVED",
+  "godot_overlay": {
+    "script": "godot/mf017_visual_source_proof.gd",
+    "reactor": true,
+    "warning_lamps": true,
+    "local_light_reaction": true,
+    "environmental_steam": true
+  },
+  "outputs": {
+    "procedural/static-proof.png": {
+      "path": "/home/blanzy/projects/media-foundry/artifacts/mf-017/procedural/static-proof.png",
+      "sha256": "39ad7ee86dda3cb5b96e4ae9bb57aa9052591e8b77da545f4865af0a20e25aaf",
+      "bytes": 1342021
+    },
+    "procedural/motion-proof.mp4": {
+      "path": "/home/blanzy/projects/media-foundry/artifacts/mf-017/procedural/motion-proof.mp4",
+      "sha256": "ca38493d05252c0bca70e169d9f097604184d9c63b05bb05d6d813bb7758d836",
+      "bytes": 1256554
+    },
+    "hybrid/static-proof.png": {
+      "path": "/home/blanzy/projects/media-foundry/artifacts/mf-017/hybrid/static-proof.png",
+      "sha256": "0a554e3cc69bd900fb29b541ae53056e5ee66206df92f74bea159d97cda503e4",
+      "bytes": 1856295
+    },
+    "hybrid/motion-proof.mp4": {
+      "path": "/home/blanzy/projects/media-foundry/artifacts/mf-017/hybrid/motion-proof.mp4",
+      "sha256": "f6b18c9b9b97c3e12bb25b538e1d351e974ceec8d114dfce2b3d9461869f7859",
+      "bytes": 1168966
+    },
+    "comparison/side-by-side.png": {
+      "path": "/home/blanzy/projects/media-foundry/artifacts/mf-017/comparison/side-by-side.png",
+      "sha256": "55ca058fa3acd5c9383020a3477c185bd19769a967a338cbeb5f5d79bd428b6d",
+      "bytes": 653769
+    },
+    "comparison/side-by-side.mp4": {
+      "path": "/home/blanzy/projects/media-foundry/artifacts/mf-017/comparison/side-by-side.mp4",
+      "sha256": "88bbc92ec7030818abdd901411a71f847f83eba6e36b789743079dec96b3a7f3",
+      "bytes": 2381605
+    }
+  },
+  "duration_seconds": 4.0,
+  "fps": 30,
+  "full_trailer_rendered": false,
+  "elapsed_ms": 89310,
+  "human_review": "PENDING_HUMAN",
+  "published": false
+}

@@ -1,0 +1,24 @@
+{
+  "track": "unknown-process:cold_concrete_anatomy",
+  "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+  "track_approval": "APPROVED",
+  "cue": "revelation_a",
+  "cue_approval": "APPROVED",
+  "actual_start": 5.0,
+  "actual_end": 19.0,
+  "loudness": {
+    "integrated_lufs": -16.03,
+    "true_peak_db": -2.78,
+    "loudness_range_lu": 5.0
+  },
+  "event_markers": {
+    "startup_lever_clunk": 1.15,
+    "gauge_wake": 1.75,
+    "blue_stage": 2.75,
+    "green_stage": 4.15,
+    "yellow_link_trigger": 5.45,
+    "linked_ring_activation": 5.72
+  },
+  "dedicated_sfx_added": false,
+  "result": "PASS"
+}

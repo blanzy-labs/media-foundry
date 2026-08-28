@@ -1,0 +1,29 @@
+{
+  "slice": "MF-019",
+  "result": "PASS",
+  "checks": {
+    "binary_exists": true,
+    "ffmpeg": true,
+    "ffprobe": true,
+    "headless_background": true,
+    "python_scripting": true,
+    "realtime_engine": true,
+    "required_font": true,
+    "output_writable": true
+  },
+  "blender": {
+    "executable": "/home/blanzy/.local/opt/blender-5.2.0/blender",
+    "version": "5.2.0 LTS",
+    "python": "3.13.13",
+    "engines": [
+      "BLENDER_EEVEE"
+    ],
+    "selected_engine": "BLENDER_EEVEE",
+    "device": "CPU_HEADLESS_DEFAULT"
+  },
+  "font": "godot/fonts/Lato-Regular.ttf",
+  "ffmpeg": "/usr/bin/ffmpeg",
+  "ffprobe": "/usr/bin/ffprobe",
+  "headless_returncode": 0,
+  "elapsed_ms": 598
+}

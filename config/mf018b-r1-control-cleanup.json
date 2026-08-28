@@ -1,0 +1,68 @@
+{
+  "slice": "MF-018B-R1",
+  "mode": "PULP_GAME_WORLD_CONTROL_CLEANUP",
+  "seed": 1801959,
+  "video": {"width": 768, "height": 1152, "fps": 30, "duration_seconds": 14.0},
+  "scene": "godot/mf018b_r1_pulp_scene.tscn",
+  "base_script": "godot/mf018b_r1_pulp_scene.gd",
+  "promo_driver": "godot/mf018b_r1_promo_driver.gd",
+  "renderer": "godot/mf018b_r1_render.gd",
+  "composition_manifest": "config/mf018b-native-composition.json",
+  "handoff_manifest": "handoff/playable-scene/mf018b-r1/manifest.json",
+  "startup_timeline": {
+    "lever_start": 1.15,
+    "lever_end": 2.25,
+    "gauge_start": 1.75,
+    "blue_start": 2.75,
+    "green_start": 4.15,
+    "yellow_start": 5.45,
+    "linked_ring_start": 5.72,
+    "reactor_escalation_start": 6.05
+  },
+  "geometry_contract": {
+    "small_ring_detail_count": 18,
+    "large_linked_indicator_count": 6,
+    "large_indicator_radius": 12.0,
+    "small_indicator_radius": 4.0,
+    "large_track_radii": [137.0, 48.0],
+    "small_track_radii": [170.0, 79.0],
+    "four_dot_centers_x": [70.0, 116.0, 162.0, 208.0],
+    "four_dot_y": 921.0,
+    "four_dot_radius": 11.0,
+    "four_dot_safe_bounds": [57.0, 225.0],
+    "startup_lever_degrees": [-90.0, 0.0],
+    "passive_containment_switch_present": false
+  },
+  "representative_frames": [
+    [0.5, "dormant"], [1.1, "startup-lever-before"], [2.4, "startup-lever-after"],
+    [2.7, "gauges-respond"], [3.6, "four-dot-blue"], [4.9, "four-dot-green"],
+    [5.6, "four-dot-yellow-trigger"], [6.6, "linked-ring-activating"], [10.5, "strong-active-machine"]
+  ],
+  "closeups": [[0.5, "upper-ring-dormant"], [6.6, "upper-ring-linked"], [3.6, "four-dot-blue-clean"], [5.6, "four-dot-yellow-clean"], [1.1, "lever-before"], [2.4, "lever-after"]],
+  "audio": {
+    "direction": "approved_music_unchanged_event_timing_remapped",
+    "catalog": "config/music/catalog.json",
+    "qualified_id": "unknown-process:cold_concrete_anatomy",
+    "source": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+    "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "cue_region": "revelation_a",
+    "start_seconds": 5.0,
+    "end_seconds": 19.0,
+    "fade_in_seconds": 0.8,
+    "fade_out_seconds": 1.4,
+    "target_lufs": -16.0,
+    "true_peak_db": -1.5,
+    "post_normalization_gain_db": -1.3,
+    "event_markers": {"startup_lever_clunk": 1.15, "gauge_wake": 1.75, "blue_stage": 2.75, "green_stage": 4.15, "yellow_link_trigger": 5.45, "linked_ring_activation": 5.72}
+  },
+  "baseline": {
+    "artifact": "artifacts/mf-018b/final-test.mp4",
+    "artifact_sha256": "f629364bf73ebb9a16b181ea43221530ed428f009f2e1093a572447d5ca20d42",
+    "scene": "godot/mf018b_pulp_scene.tscn",
+    "scene_sha256": "1e4df3528e96bf5a8db019d059b60aa57e4b337e4dad4c882f74ce176215c48b",
+    "config": "config/mf018b-native-pulp-scene.json",
+    "config_sha256": "a4d825ba29c66fe61aac010f2d4a96bf018379266b606fb0b4dea459adc8f974",
+    "handoff": "handoff/playable-scene/mf018b/manifest.json",
+    "handoff_sha256": "b9f25ff451c503537f0b9b3565d81d954f297b85c16640b2086404b7dd9afe55"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "contract": "media_foundry_render_backend_v1",
+  "default_backend": "GODOT",
+  "backends": {
+    "GODOT": {
+      "enabled": true,
+      "frame_sequence_render": true,
+      "capabilities": ["native_interactivity", "game_ready", "fast_batch_render", "procedural_ui", "frame_sequence_render", "web_game_precursor"]
+    },
+    "BLENDER": {
+      "enabled": true,
+      "frame_sequence_render": true,
+      "capabilities": ["complex_materials", "volumetric_lighting", "character_rigging", "cinematic_render", "frame_sequence_render", "procedural_scene_build"]
+    },
+    "COMPARE": {
+      "enabled": true,
+      "frame_sequence_render": true,
+      "capabilities": ["semantic_ab_comparison", "frame_sequence_render", "shared_finalization"]
+    }
+  },
+  "failure_states": [
+    "UNKNOWN_RENDER_BACKEND",
+    "BLENDER_NOT_AVAILABLE",
+    "BLENDER_SCENE_BUILD_FAILED",
+    "BLENDER_RENDER_FAILED",
+    "BLENDER_FRAME_SEQUENCE_INCOMPLETE",
+    "BACKEND_CAPABILITY_UNSUPPORTED",
+    "SILENT_BACKEND_FALLBACK_FORBIDDEN",
+    "AB_AUDIO_MISMATCH",
+    "AB_CONTENT_MISMATCH",
+    "ABSOLUTE_BACKEND_ASSET_PATH",
+    "BLENDER_TEMPLATE_MISSING",
+    "BLENDER_RENDER_ENGINE_UNSUPPORTED"
+  ]
+}

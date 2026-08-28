@@ -1,0 +1,498 @@
+{
+  "slice": "MF-020",
+  "result": "READY_FOR_TECHNICAL_VALIDATION",
+  "backend": "BLENDER",
+  "godot_dependency": false,
+  "compare_mode": false,
+  "config": "config/mf020-cinematic-reactor.json",
+  "config_sha256": "9be9cec6e23803704fe440f6cf0e2779c250b9ab2ae257ae883454fc2b11fa66",
+  "template": {
+    "path": "templates/blender/pulp-reactor-v1.blend",
+    "sha256": "6668c12086c36eb68e29bc6fea101139291ef2ae96b8d55867d017856c20aea2"
+  },
+  "builder": {
+    "path": "scripts/blender/build_cinematic_reactor.py",
+    "sha256": "6489ec5d73942fd824488f854b015f66edfef564a5f93c3fe6a89f59e308641b"
+  },
+  "scene": {
+    "path": "artifacts/mf-020/scene/cinematic-reactor-hero.blend",
+    "sha256": "d7a341af1c185ec97f54aa8f7625c0335156afdc276ba0825916abdf96279fc0",
+    "bytes": 293877
+  },
+  "blender": {
+    "executable": "/home/blanzy/.local/opt/blender-5.2.0/blender",
+    "version": "5.2.0 LTS",
+    "python": "3.13.13",
+    "engines": [
+      "BLENDER_EEVEE"
+    ],
+    "selected_engine": "BLENDER_EEVEE",
+    "device": "CPU_HEADLESS_DEFAULT"
+  },
+  "shot": {
+    "id": "reactor_approach_hero_v1",
+    "intent": "A low, restrained camera approach reveals a dormant experimental reactor; a physical startup mechanism causes gauges, warning lamps, steam, the containment collar, and internal energy to wake in a readable causal escalation before a threatening final hold.",
+    "runtime_seconds": 10.0,
+    "fps": 30,
+    "resolution": [
+      768,
+      1152
+    ],
+    "lens_mm": 46.0,
+    "camera_move": "slow_push_with_subtle_rightward_orbit",
+    "hero": "central_glass_containment_reactor",
+    "secondary": "left_foreground_analog_console",
+    "final_hold_seconds": 1.7,
+    "events_seconds": {
+      "lever_engages": 1.2,
+      "lever_locked": 2.2,
+      "gauges_wake": 1.8,
+      "warning_amber": 2.8,
+      "warning_red": 3.6,
+      "pressure_release": 4.4,
+      "energy_forms": 4.8,
+      "collar_response": 5.3,
+      "full_power": 7.3,
+      "final_hold": 8.3
+    }
+  },
+  "stage_order": [
+    "CONCEPT",
+    "BLOCKOUT",
+    "DETAIL",
+    "LIGHTING",
+    "ANIMATION_FX",
+    "FINAL_RENDER",
+    "FINALIZATION"
+  ],
+  "blockout_gate": {
+    "slice": "MF-020",
+    "gate": "BLENDER_BLOCKOUT",
+    "result": "PASS",
+    "checks": {
+      "blockout_keyframes_exist": {
+        "status": "PASS",
+        "detail": [
+          "artifacts/mf-020/blockout/dormant.png",
+          "artifacts/mf-020/blockout/escalation.png",
+          "artifacts/mf-020/blockout/final.png"
+        ]
+      },
+      "portrait_output_contract": {
+        "status": "PASS",
+        "detail": [
+          [
+            1152,
+            768,
+            3
+          ],
+          [
+            1152,
+            768,
+            3
+          ],
+          [
+            1152,
+            768,
+            3
+          ]
+        ]
+      },
+      "reactor_is_readable_hero": {
+        "status": "PASS",
+        "detail": [
+          {
+            "label": "dormant",
+            "hero_luma": 23.149,
+            "console_luma": 18.966,
+            "edge_bright_pixels": 0,
+            "hero_bright_pixels": 1380
+          },
+          {
+            "label": "escalation",
+            "hero_luma": 29.806,
+            "console_luma": 22.695,
+            "edge_bright_pixels": 321,
+            "hero_bright_pixels": 7490
+          },
+          {
+            "label": "final",
+            "hero_luma": 40.654,
+            "console_luma": 21.774,
+            "edge_bright_pixels": 0,
+            "hero_bright_pixels": 34678
+          }
+        ]
+      },
+      "console_visible_secondary": {
+        "status": "PASS",
+        "detail": [
+          {
+            "label": "dormant",
+            "hero_luma": 23.149,
+            "console_luma": 18.966,
+            "edge_bright_pixels": 0,
+            "hero_bright_pixels": 1380
+          },
+          {
+            "label": "escalation",
+            "hero_luma": 29.806,
+            "console_luma": 22.695,
+            "edge_bright_pixels": 321,
+            "hero_bright_pixels": 7490
+          },
+          {
+            "label": "final",
+            "hero_luma": 40.654,
+            "console_luma": 21.774,
+            "edge_bright_pixels": 0,
+            "hero_bright_pixels": 34678
+          }
+        ]
+      },
+      "no_distracting_edge_clutter": {
+        "status": "PASS",
+        "detail": [
+          {
+            "label": "dormant",
+            "hero_luma": 23.149,
+            "console_luma": 18.966,
+            "edge_bright_pixels": 0,
+            "hero_bright_pixels": 1380
+          },
+          {
+            "label": "escalation",
+            "hero_luma": 29.806,
+            "console_luma": 22.695,
+            "edge_bright_pixels": 321,
+            "hero_bright_pixels": 7490
+          },
+          {
+            "label": "final",
+            "hero_luma": 40.654,
+            "console_luma": 21.774,
+            "edge_bright_pixels": 0,
+            "hero_bright_pixels": 34678
+          }
+        ]
+      },
+      "camera_path_and_escalation_readable": {
+        "status": "PASS",
+        "detail": [
+          765440,
+          849943
+        ]
+      },
+      "single_perspective_camera_contract": {
+        "status": "PASS",
+        "detail": {
+          "name": "CinematicHeroCamera",
+          "lens_mm": 46.0,
+          "move": "slow_push_with_subtle_rightward_orbit",
+          "single_shot": true
+        }
+      },
+      "purposeful_blockout_elements": {
+        "status": "PASS",
+        "detail": {
+          "reactor": "GlassChamber",
+          "console": "AnalogConsole",
+          "gauges": 3,
+          "lever": "StartupLeverHinge",
+          "ring_lamps": 7,
+          "collar": "MotorizedCollar",
+          "energy_filaments": 2
+        }
+      },
+      "configured_ready_before_detail": {
+        "status": "PASS",
+        "detail": {
+          "seconds": [
+            0.5,
+            5.2,
+            9.4
+          ],
+          "labels": [
+            "dormant",
+            "escalation",
+            "final"
+          ],
+          "required_state": "CONFIGURED_READY"
+        }
+      }
+    },
+    "metrics": [
+      {
+        "label": "dormant",
+        "hero_luma": 23.149,
+        "console_luma": 18.966,
+        "edge_bright_pixels": 0,
+        "hero_bright_pixels": 1380
+      },
+      {
+        "label": "escalation",
+        "hero_luma": 29.806,
+        "console_luma": 22.695,
+        "edge_bright_pixels": 321,
+        "hero_bright_pixels": 7490
+      },
+      {
+        "label": "final",
+        "hero_luma": 40.654,
+        "console_luma": 21.774,
+        "edge_bright_pixels": 0,
+        "hero_bright_pixels": 34678
+      }
+    ],
+    "stage_state": "CONFIGURED_READY",
+    "detail_render_authorized": true
+  },
+  "scene_contract": {
+    "slice": "MF-020",
+    "backend": "BLENDER",
+    "stage": "final",
+    "seed": 200020,
+    "engine": "BLENDER_EEVEE",
+    "samples": 16,
+    "resolution": [
+      768,
+      1152
+    ],
+    "fps": 30,
+    "frames": 300,
+    "shot_id": "reactor_approach_hero_v1",
+    "camera": {
+      "name": "CinematicHeroCamera",
+      "lens_mm": 46.0,
+      "move": "slow_push_with_subtle_rightward_orbit",
+      "single_shot": true
+    },
+    "production_stage_order": [
+      "CONCEPT",
+      "BLOCKOUT",
+      "DETAIL",
+      "LIGHTING",
+      "ANIMATION_FX",
+      "FINAL_RENDER",
+      "FINALIZATION"
+    ],
+    "events_seconds": {
+      "lever_engages": 1.2,
+      "lever_locked": 2.2,
+      "gauges_wake": 1.8,
+      "warning_amber": 2.8,
+      "warning_red": 3.6,
+      "pressure_release": 4.4,
+      "energy_forms": 4.8,
+      "collar_response": 5.3,
+      "full_power": 7.3,
+      "final_hold": 8.3
+    },
+    "objects": {
+      "reactor": "GlassChamber",
+      "console": "AnalogConsole",
+      "gauges": 3,
+      "lever": "StartupLeverHinge",
+      "ring_lamps": 7,
+      "collar": "MotorizedCollar",
+      "energy_filaments": 7
+    },
+    "mechanical_logic": {
+      "lever_hinge": true,
+      "gauge_pivots": true,
+      "mounted_warning_lamps": true,
+      "pressure_precedes_energy": true,
+      "energy_inside_chamber": true,
+      "collar_response_after_energy": true
+    },
+    "fx": {
+      "steam_volumes": 4,
+      "contained_sparks": 9,
+      "bounded_compositor_glow": true
+    },
+    "godot_dependency": false
+  },
+  "render_settings": {
+    "template": "templates/blender/pulp-reactor-v1.blend",
+    "builder_script": "scripts/blender/build_cinematic_reactor.py",
+    "scene_output": "artifacts/mf-020/scene/cinematic-reactor-hero.blend",
+    "render_engine_family": "realtime_eevee",
+    "samples": 16,
+    "output_format": "PNG",
+    "transparent": false,
+    "resume": true,
+    "resolved_engine": "BLENDER_EEVEE",
+    "device": "CPU_HEADLESS_DEFAULT"
+  },
+  "finalization": {
+    "result": "PASS",
+    "media": {
+      "video": "h264",
+      "audio": "aac",
+      "width": 768,
+      "height": 1152,
+      "fps": "30/1",
+      "frames": 300,
+      "duration": 10.0,
+      "sample_rate": 48000
+    },
+    "full_decode": "PASS",
+    "frame_count": 300,
+    "frame_storage_bytes": 246753404,
+    "title": {
+      "text": "UNKNOWN PROCESS",
+      "owner": "MEDIA_FOUNDRY",
+      "start_seconds": 8.1,
+      "end_seconds": 10.0
+    },
+    "audio": {
+      "track": "unknown-process:cold_concrete_anatomy",
+      "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+      "track_approval": "APPROVED",
+      "cue": "revelation_a",
+      "cue_approval": "APPROVED",
+      "source_offsets_seconds": [
+        5.0,
+        15.0
+      ],
+      "fade_in_seconds": 0.7,
+      "fade_out_seconds": 1.2,
+      "post_normalization_gain_db": -1.3,
+      "sfx_policy": "NONE_FOR_FIRST_PROOF",
+      "loudness": {
+        "integrated_lufs": -16.22,
+        "true_peak_db": -2.78,
+        "loudness_range_lu": 2.1
+      }
+    },
+    "elapsed_ms": 3010
+  },
+  "performance": {
+    "preflight_ms": 593,
+    "stages": {
+      "blockout": {
+        "stage": "blockout",
+        "mode": "stills",
+        "build_ms": 321,
+        "render_ms": 1458,
+        "total_ms": 1780,
+        "rendered": 3,
+        "resumed_frames": 0,
+        "engine": "BLENDER_EEVEE",
+        "device": "CPU_HEADLESS_DEFAULT"
+      },
+      "detail": {
+        "stage": "detail",
+        "mode": "stills",
+        "build_ms": 412,
+        "render_ms": 983,
+        "total_ms": 1396,
+        "rendered": 1,
+        "resumed_frames": 0,
+        "engine": "BLENDER_EEVEE",
+        "device": "CPU_HEADLESS_DEFAULT"
+      },
+      "lighting": {
+        "stage": "lighting",
+        "mode": "stills",
+        "build_ms": 418,
+        "render_ms": 1048,
+        "total_ms": 1466,
+        "rendered": 1,
+        "resumed_frames": 0,
+        "engine": "BLENDER_EEVEE",
+        "device": "CPU_HEADLESS_DEFAULT"
+      },
+      "fx": {
+        "stage": "fx",
+        "mode": "stills",
+        "build_ms": 564,
+        "render_ms": 1810,
+        "total_ms": 2374,
+        "rendered": 3,
+        "resumed_frames": 0,
+        "engine": "BLENDER_EEVEE",
+        "device": "CPU_HEADLESS_DEFAULT"
+      }
+    },
+    "final_render": {
+      "stage": "final",
+      "mode": "frames",
+      "build_ms": 572,
+      "render_ms": 89922,
+      "total_ms": 90566,
+      "rendered": 300,
+      "resumed_frames": 0,
+      "engine": "BLENDER_EEVEE",
+      "device": "CPU_HEADLESS_DEFAULT"
+    },
+    "finalization_ms": 3010,
+    "frame_storage_bytes": 246753404,
+    "artifact_bytes": 2712924,
+    "peak_memory_kb": 815992,
+    "total_elapsed_ms": 106630
+  },
+  "outputs": {
+    "blockout/final.png": {
+      "sha256": "f793bec3a4318a6316c356425493e2c1bfba40422931c6dee1840ad9f1ef8dd3",
+      "bytes": 1202556
+    },
+    "blockout/dormant.png": {
+      "sha256": "b7d25e78e54945585013ce4b4481dd7122b58d89c643968564303277ed3e91dc",
+      "bytes": 1010237
+    },
+    "blockout/escalation.png": {
+      "sha256": "2262dc1d99435926606605a816b0ff0e4a011c4f4ff4f0a7aaefe66d82f9880c",
+      "bytes": 1100321
+    },
+    "previews/detail/detail-pass.png": {
+      "sha256": "268c4574f558ec05dc8186ea53ff3f1feb71d48a62309e9cebb608da04f37c90",
+      "bytes": 872802
+    },
+    "previews/lighting/lighting-pass.png": {
+      "sha256": "ee14f81c08ab33cad451f0cd90f5093a383345e393d1d70e0db27a24ebfa8158",
+      "bytes": 862303
+    },
+    "previews/fx/full-power.png": {
+      "sha256": "5ecb36f28db07ba2697642104f054c183229d526283e4d156a5cd1f8ba9cca3a",
+      "bytes": 1016971
+    },
+    "previews/fx/final-hold.png": {
+      "sha256": "6c4f9c8e1f7c0a9796353614d5306ae7536144bc374812ee82e14ff354d0ed35",
+      "bytes": 1049603
+    },
+    "previews/fx/pressure-release.png": {
+      "sha256": "f06a435b71002b9be67b537cbe8b8d635fdc92c20bf2a454a44f7e0e947410ce",
+      "bytes": 773069
+    },
+    "representative-stills/dormant-0.5s.png": {
+      "sha256": "838043aa67fa8c0cf5f09326519e8485f937e4940a1fb9d0914764bce80ad5a4",
+      "bytes": 629567
+    },
+    "representative-stills/lever-locked-2.3s.png": {
+      "sha256": "2d53e7e11e2e9f3e7abaa08f370479e140eb1372e324b37a06ebb1015abb7660",
+      "bytes": 636750
+    },
+    "representative-stills/pressure-release-4.6s.png": {
+      "sha256": "08c1930144f68e3931792b0e649dcaab1b05142d4b6557575f4033084c9ae974",
+      "bytes": 738922
+    },
+    "representative-stills/full-power-7.3s.png": {
+      "sha256": "f7628c527ca1760494c02bd9d333a8393053406935c899c141bf9a62084c01c1",
+      "bytes": 1016983
+    },
+    "representative-stills/final-hold-9.4s.png": {
+      "sha256": "a0cb7cf663347dec7493cd5f3db36b3321ac475f1e4e59f1f266d1ab457a70cd",
+      "bytes": 1049615
+    },
+    "final-test.mp4": {
+      "sha256": "15456cdfcfdabc051f326d81fd44e7acc912ea3957ee5e34d1653c265dd0a058",
+      "bytes": 2712924
+    }
+  },
+  "human_review": "PENDING_HUMAN",
+  "release_ready": false,
+  "published": false,
+  "gameplay_ready": false,
+  "blender_to_godot_export": false
+}

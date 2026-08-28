@@ -1,0 +1,22 @@
+{
+  "candidate_a_godot": {
+    "recorded_total_ms": 41829,
+    "artifact_bytes": 2563750,
+    "frame_storage_bytes": 0,
+    "peak_memory_kb": null,
+    "note": "Prior approved artifact reused; stage-level timing unavailable."
+  },
+  "candidate_b_blender": {
+    "preflight_ms": 602,
+    "static_build_render_ms": 1964,
+    "scene_build_ms": 360,
+    "frame_render_ms": 97153,
+    "finalization_ms": 2744,
+    "recorded_total_ms": 102823,
+    "artifact_bytes": 991231,
+    "frame_storage_bytes": 340916063,
+    "peak_memory_kb": 859348,
+    "rendered_frames": 420,
+    "resumed_frames": 0
+  }
+}

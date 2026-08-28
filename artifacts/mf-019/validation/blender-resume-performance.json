@@ -1,0 +1,10 @@
+{
+  "mode": "frames",
+  "build_ms": 340,
+  "render_ms": 7,
+  "total_ms": 348,
+  "rendered": 0,
+  "resumed_frames": 420,
+  "engine": "BLENDER_EEVEE",
+  "device": "CPU_HEADLESS_DEFAULT"
+}

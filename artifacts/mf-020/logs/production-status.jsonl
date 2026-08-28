@@ -1,0 +1,10 @@
+{"state": "BACKEND_PREFLIGHT", "detail": "", "monotonic_ms": 328258507}
+{"state": "BLOCKOUT", "detail": "simple geometry and camera previs", "monotonic_ms": 328259148}
+{"state": "BLOCKOUT_GATE", "detail": "", "monotonic_ms": 328261678}
+{"state": "DETAIL_PASS", "detail": "", "monotonic_ms": 328261934}
+{"state": "LIGHTING_PASS", "detail": "", "monotonic_ms": 328264078}
+{"state": "ANIMATION_FX_PASS", "detail": "", "monotonic_ms": 328266292}
+{"state": "FINAL_RENDER", "detail": "", "monotonic_ms": 328269450}
+{"state": "VALIDATING_FRAMES", "detail": "", "monotonic_ms": 328360817}
+{"state": "FINALIZATION", "detail": "", "monotonic_ms": 328360866}
+{"state": "READY_FOR_REVIEW", "detail": "", "monotonic_ms": 328365137}

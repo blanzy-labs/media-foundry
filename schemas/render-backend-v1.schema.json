@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "render-backend-v1.schema.json",
+  "title": "Media Foundry bounded render backend contract",
+  "type": "object",
+  "required": ["contract", "default_backend", "backends", "failure_states"],
+  "properties": {
+    "contract": {"const": "media_foundry_render_backend_v1"},
+    "default_backend": {"const": "GODOT"},
+    "backends": {
+      "type": "object",
+      "required": ["GODOT", "BLENDER", "COMPARE"],
+      "additionalProperties": false,
+      "properties": {
+        "GODOT": {"$ref": "#/$defs/backend"},
+        "BLENDER": {"$ref": "#/$defs/backend"},
+        "COMPARE": {"$ref": "#/$defs/backend"}
+      }
+    },
+    "failure_states": {"type": "array", "items": {"type": "string"}, "minItems": 7, "uniqueItems": true}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "backend": {
+      "type": "object",
+      "required": ["enabled", "capabilities", "frame_sequence_render"],
+      "properties": {
+        "enabled": {"type": "boolean"},
+        "capabilities": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "frame_sequence_render": {"type": "boolean"}
+      },
+      "additionalProperties": true
+    }
+  }
+}

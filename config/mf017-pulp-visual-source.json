@@ -1,0 +1,70 @@
+{
+  "slice": "MF-017",
+  "version": 1,
+  "scene_id": "unknown_process_pulp_machine_room",
+  "complex_scene": true,
+  "seed": 1701957,
+  "visual_source": {
+    "mode": "development",
+    "quality_intent": "CINEMATIC",
+    "requirements": {
+      "surface_complexity": "HIGH",
+      "illustration_complexity": "HIGH",
+      "character_complexity": "LOW",
+      "geometric_precision": "MEDIUM",
+      "motion_requirement": "HIGH",
+      "lighting_requirement": "HIGH",
+      "depth_requirement": "HIGH",
+      "authenticity_requirement": "LOW"
+    },
+    "configured_strategy": "HYBRID",
+    "resolved_strategy": "HYBRID",
+    "human_override": null,
+    "reason": [
+      "painterly surface richness and period wear are primary quality requirements",
+      "reactor, gauges, lamps, lighting and atmosphere still require meaningful local animation",
+      "the procedural baseline is compositionally approved but materially too vector-like"
+    ],
+    "fallback": {"allowed": false, "strategies": []},
+    "composition_gate": {
+      "required": true,
+      "manifest_path": "config/mf016-pulp-composition.json",
+      "manifest_sha256": "53971df4c454268eb09c5d9715fae7fab6defd8979484888d318d643355b26ef",
+      "human_status": "APPROVED",
+      "approval_basis": "MF-017 executive brief"
+    },
+    "plate": {
+      "id": "pulp_lab_development_v1",
+      "source_path": "media/visual/plates/mf017/pulp-lab-development-v1.png",
+      "source_type": "raster_illustration",
+      "dimensions": {"width": 1024, "height": 1536},
+      "aspect_ratio": "2:3",
+      "provenance": "generated",
+      "source_sha256": "5fa2143ec5a71b57307835bbfc09940adbbf48929cb90fd271e680053a924aa5",
+      "generation_method": "OpenAI built-in image generation",
+      "art_direction_reference": {
+        "path": "/home/blanzy/Pictures/50s style book cover.png",
+        "sha256": "a4df3398242b6dc20ee667848cb7464658b527316700ffb278bc5ab1f1cee8d6"
+      },
+      "crop_policy": "center_crop_preserve_reactor_and_control_bank",
+      "safe_zones": ["hero_center_right", "negative_space_upper_left", "future_text_safe"],
+      "animated_regions": [
+        {"id": "reactor_chamber", "owner": "godot", "bounds": [0.47, 0.31, 0.22, 0.37]},
+        {"id": "warning_lamps", "owner": "compositor", "bounds": [0.48, 0.18, 0.39, 0.08]},
+        {"id": "control_gauges", "owner": "compositor", "bounds": [0.03, 0.61, 0.31, 0.19]},
+        {"id": "reactor_light_spill", "owner": "plate", "bounds": [0.34, 0.19, 0.56, 0.68]},
+        {"id": "steam_vent", "owner": "compositor", "bounds": [0.70, 0.67, 0.12, 0.15]}
+      ],
+      "protected_regions": ["reactor_silhouette", "control_bank_silhouette", "negative_space_upper_left"],
+      "layer_plan": [
+        {"id": "plate_base", "owner": "plate", "motion": "static"},
+        {"id": "local_light_reaction", "owner": "compositor", "motion": "intensity_bound"},
+        {"id": "reactor_energy", "owner": "godot", "motion": "animated_hero"},
+        {"id": "gauges_and_lamps", "owner": "compositor", "motion": "state_bound"},
+        {"id": "steam_and_dust", "owner": "compositor", "motion": "seeded_local"},
+        {"id": "film_treatment", "owner": "compositor", "motion": "seeded_global_subtle"}
+      ],
+      "approval": {"status": "REVIEW_REQUIRED", "reviewer": null, "approved_sha256": null}
+    }
+  }
+}

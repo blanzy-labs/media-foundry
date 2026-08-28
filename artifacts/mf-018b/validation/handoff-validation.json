@@ -1,0 +1,136 @@
+{
+  "result": "PASS",
+  "checks": {
+    "contract_version": {
+      "status": "PASS",
+      "detail": null
+    },
+    "package_identity": {
+      "status": "PASS",
+      "detail": null
+    },
+    "unique_interaction_ids": {
+      "status": "PASS",
+      "detail": [
+        "coolant_dial",
+        "field_dial",
+        "containment_switch",
+        "emergency_lever"
+      ]
+    },
+    "interaction_metadata": {
+      "status": "PASS",
+      "detail": null
+    },
+    "declared_node_paths": {
+      "status": "PASS",
+      "detail": [
+        "Machines/Console/Controls/DialCoolant",
+        "Machines/Console/Controls/DialField",
+        "Machines/Console/Controls/SwitchContainment",
+        "Machines/Console/Controls/LeverEmergency",
+        "PromoCamera"
+      ]
+    },
+    "valid_state_variables": {
+      "status": "PASS",
+      "detail": [
+        "reactor_energy",
+        "temperature",
+        "containment",
+        "field_strength",
+        "pressure",
+        "warning_level"
+      ]
+    },
+    "visual_state_vocabulary": {
+      "status": "PASS",
+      "detail": null
+    },
+    "semantic_signal_names": {
+      "status": "PASS",
+      "detail": [
+        "reactor_state_changed",
+        "reactor_energy_changed",
+        "temperature_changed",
+        "containment_changed",
+        "field_strength_changed",
+        "pressure_changed",
+        "warning_level_changed",
+        "control_activated",
+        "machine_warning",
+        "machine_critical",
+        "audio_event_requested"
+      ]
+    },
+    "audio_hooks_resolve": {
+      "status": "PASS",
+      "detail": [
+        "control_dial",
+        "control_dial",
+        "switch_toggle",
+        "lever_clunk"
+      ]
+    },
+    "portable_project_paths": {
+      "status": "PASS",
+      "detail": [
+        "godot/mf018b_pulp_scene.tscn",
+        "godot/mf018b_pulp_scene.gd",
+        "godot/mf018b_promo_driver.gd",
+        "godot/mf018b_pulp_scene.tscn",
+        "godot/mf018b_pulp_scene.gd",
+        "godot/mf018b_promo_driver.gd",
+        "config/mf018b-native-pulp-scene.json",
+        "config/mf018b-native-composition.json",
+        "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3"
+      ]
+    },
+    "asset_integrity": {
+      "status": "PASS",
+      "detail": {
+        "base_scene": {
+          "exists": true,
+          "sha256": "1e4df3528e96bf5a8db019d059b60aa57e4b337e4dad4c882f74ce176215c48b"
+        },
+        "base_script": {
+          "exists": true,
+          "sha256": "dfd8874c489e49386313b28c5a02764db13db9af904eae727d26798ab3084056"
+        },
+        "promo_driver": {
+          "exists": true,
+          "sha256": "1dcebc2c040f9086c86ed31a998559e5a7957f1c96e5026f92c94587494357dc"
+        },
+        "scene_config": {
+          "exists": true,
+          "sha256": "a4d825ba29c66fe61aac010f2d4a96bf018379266b606fb0b4dea459adc8f974"
+        },
+        "composition": {
+          "exists": true,
+          "sha256": "a8ff7b8f83ece7572251ffb7438f34070e8fcc3c10c1bf4f5c52969472c74003"
+        },
+        "approved_music": {
+          "exists": true,
+          "sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf"
+        }
+      }
+    },
+    "promo_driver_separation": {
+      "status": "PASS",
+      "detail": null
+    },
+    "zero_game_foundry_dependency": {
+      "status": "PASS",
+      "detail": null
+    },
+    "ownership_boundary": {
+      "status": "PASS",
+      "detail": null
+    },
+    "base_scene_api_declared": {
+      "status": "PASS",
+      "detail": null
+    }
+  },
+  "errors": []
+}

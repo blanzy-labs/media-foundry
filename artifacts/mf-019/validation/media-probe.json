@@ -1,0 +1,32 @@
+{
+  "candidate_a": {
+    "video": "h264",
+    "audio": "aac",
+    "width": 768,
+    "height": 1152,
+    "fps": "30/1",
+    "frames": 420,
+    "duration": 14.0,
+    "sample_rate": 48000
+  },
+  "candidate_b": {
+    "video": "h264",
+    "audio": "aac",
+    "width": 768,
+    "height": 1152,
+    "fps": "30/1",
+    "frames": 420,
+    "duration": 14.0,
+    "sample_rate": 48000
+  },
+  "comparison": {
+    "video": "h264",
+    "audio": "aac",
+    "width": 1536,
+    "height": 1152,
+    "fps": "30/1",
+    "frames": 420,
+    "duration": 14.0,
+    "sample_rate": 48000
+  }
+}
