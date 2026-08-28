@@ -1,0 +1,10 @@
+00:00.422  blend            | Read blend: "/home/blanzy/projects/media-foundry/templates/blender/pulp-reactor-v1.blend"
+/home/blanzy/projects/media-foundry/scripts/blender/build_cinematic_reactor.py:225: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+/home/blanzy/projects/media-foundry/scripts/blender/build_cinematic_reactor.py:63: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  value.use_nodes = True
+00:01.830  render           | Saved: '/home/blanzy/projects/media-foundry/artifacts/mf-020/previews/lighting/lighting-pass.png'
+MF020_BLENDER_RENDER_OK {"build_ms": 418, "device": "CPU_HEADLESS_DEFAULT", "engine": "BLENDER_EEVEE", "mode": "stills", "render_ms": 980, "rendered": 1, "resumed_frames": 0, "stage": "lighting", "total_ms": 1399}
+Blender 5.2.0 LTS (hash fbe6228777e7 built 2026-07-14 01:32:04)
+
+Blender quit

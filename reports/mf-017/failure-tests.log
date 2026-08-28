@@ -1,0 +1,108 @@
+{
+  "slice": "MF-017",
+  "type": "visual_source_failure_tests",
+  "tests": [
+    {
+      "name": "missing_source_strategy",
+      "expected": "MISSING_SOURCE_STRATEGY",
+      "errors": [
+        "MISSING_SOURCE_STRATEGY",
+        "UNKNOWN_SOURCE_STRATEGY",
+        "SILENT_STRATEGY_FALLBACK_PROHIBITED"
+      ],
+      "state": "BLOCKED_VISUAL_SOURCE",
+      "result": "PASS"
+    },
+    {
+      "name": "unknown_source_strategy",
+      "expected": "UNKNOWN_SOURCE_STRATEGY",
+      "errors": [
+        "MISSING_SOURCE_STRATEGY",
+        "UNKNOWN_SOURCE_STRATEGY",
+        "SILENT_STRATEGY_FALLBACK_PROHIBITED"
+      ],
+      "state": "BLOCKED_VISUAL_SOURCE",
+      "result": "PASS"
+    },
+    {
+      "name": "hybrid_missing_plate",
+      "expected": "MISSING_APPROVED_PLATE",
+      "errors": [
+        "MISSING_APPROVED_PLATE",
+        "PLATE_HASH_CHANGED"
+      ],
+      "state": "BLOCKED_VISUAL_SOURCE",
+      "result": "PASS"
+    },
+    {
+      "name": "changed_approved_plate_hash",
+      "expected": "PLATE_HASH_CHANGED",
+      "errors": [
+        "PLATE_HASH_CHANGED"
+      ],
+      "state": "REVIEW_REQUIRED",
+      "result": "PASS"
+    },
+    {
+      "name": "unreviewed_plate_in_production",
+      "expected": "UNREVIEWED_PLATE_FOR_PRODUCTION",
+      "errors": [
+        "UNREVIEWED_PLATE_FOR_PRODUCTION"
+      ],
+      "state": "BLOCKED_APPROVAL",
+      "result": "PASS"
+    },
+    {
+      "name": "silent_fallback_attempt",
+      "expected": "SILENT_STRATEGY_FALLBACK_PROHIBITED",
+      "errors": [
+        "SILENT_STRATEGY_FALLBACK_PROHIBITED"
+      ],
+      "state": "BLOCKED_VISUAL_SOURCE",
+      "result": "PASS"
+    },
+    {
+      "name": "authentic_media_missing",
+      "expected": "MISSING_AUTHENTIC_MEDIA",
+      "errors": [
+        "MISSING_AUTHENTIC_MEDIA"
+      ],
+      "state": "BLOCKED_VISUAL_SOURCE",
+      "result": "PASS"
+    },
+    {
+      "name": "high_illustration_procedural_advisory",
+      "expected": "VISUAL_SOURCE_STRATEGY_WARNING",
+      "warnings": [
+        "VISUAL_SOURCE_STRATEGY_WARNING"
+      ],
+      "result": "PASS"
+    },
+    {
+      "name": "low_complexity_procedural",
+      "expected": "PROCEDURAL PASS",
+      "recommended": "PROCEDURAL",
+      "result": "PASS"
+    },
+    {
+      "name": "explicit_fallback_allowed",
+      "expected": "PASS",
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "name": "pulp_hybrid_development_integration",
+      "expected": "PASS WITH PRODUCTION_PLATE_PENDING",
+      "warnings": [
+        {
+          "code": "PRODUCTION_PLATE_PENDING",
+          "approval": "REVIEW_REQUIRED"
+        }
+      ],
+      "result": "PASS"
+    }
+  ],
+  "passed": 11,
+  "total": 11,
+  "result": "PASS"
+}

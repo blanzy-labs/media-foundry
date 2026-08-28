@@ -1,0 +1,381 @@
+{
+  "slice": "MF-017",
+  "result": "TECHNICAL_PASS",
+  "source_status": "PRODUCTION_PLATE_PENDING",
+  "release_ready": false,
+  "human_review": "PENDING_HUMAN",
+  "checks": {
+    "mf016_frozen_and_valid": {
+      "status": "PASS",
+      "detail": {
+        "checks": {
+          "zone_vocabulary_and_geometry": "PASS",
+          "required_zone_kinds": "PASS",
+          "unique_object_ids": "PASS",
+          "semantic_role_required": "PASS",
+          "valid_visual_purpose_required": "PASS",
+          "remove_if_unnecessary_policy": "PASS",
+          "visual_hierarchy": "PASS",
+          "objects_inside_allowed_zones": "PASS",
+          "no_unexpected_frame_clipping": "PASS",
+          "preserved_negative_space": "PASS",
+          "hero_and_no_occlusion_protection": "PASS",
+          "text_safety": "PASS",
+          "long_line_guardrail": "PASS",
+          "large_shape_guardrail": "PASS",
+          "support_zone_capacity": "PASS",
+          "negative_space_not_occupancy_scored": "PASS",
+          "animation_cannot_rescue_composition": "PASS"
+        },
+        "errors": [],
+        "advisories": [],
+        "result": "PASS"
+      }
+    },
+    "source_strategy_contract": {
+      "status": "PASS",
+      "detail": {
+        "result": "PASS",
+        "state": "PASS",
+        "configured_strategy": "HYBRID",
+        "resolved_strategy": "HYBRID",
+        "recommended_strategy": "HYBRID",
+        "recommendation_reasons": [
+          "high illustration or surface richness is required",
+          "meaningful local motion or lighting remains required"
+        ],
+        "checks": {
+          "source_strategy_required": "PASS",
+          "known_source_strategy": "PASS",
+          "quality_intent": "PASS",
+          "bounded_assessment": "PASS",
+          "human_override": "PASS",
+          "fallback_policy": "PASS",
+          "no_silent_fallback": "PASS",
+          "plate_contract": "PASS",
+          "required_plate_exists": "PASS",
+          "plate_approval_vocabulary": "PASS",
+          "plate_provenance": "PASS",
+          "plate_hash_integrity": "PASS",
+          "production_plate_approved": "NOT_REQUIRED",
+          "plate_layer_and_region_plan": "PASS",
+          "authentic_media_exists": "NOT_REQUIRED",
+          "composition_gate_bound": "PASS"
+        },
+        "warnings": [
+          {
+            "code": "PRODUCTION_PLATE_PENDING",
+            "approval": "REVIEW_REQUIRED"
+          }
+        ],
+        "errors": [],
+        "asset": {
+          "path": "/home/blanzy/projects/media-foundry/media/visual/plates/mf017/pulp-lab-development-v1.png",
+          "exists": true,
+          "declared_sha256": "5fa2143ec5a71b57307835bbfc09940adbbf48929cb90fd271e680053a924aa5",
+          "actual_sha256": "5fa2143ec5a71b57307835bbfc09940adbbf48929cb90fd271e680053a924aa5",
+          "declared_approval": "REVIEW_REQUIRED",
+          "effective_approval": "REVIEW_REQUIRED"
+        },
+        "release_ready": false
+      }
+    },
+    "independent_hybrid_recommendation": {
+      "status": "PASS",
+      "detail": [
+        "high illustration or surface richness is required",
+        "meaningful local motion or lighting remains required"
+      ]
+    },
+    "plate_integrity_and_dimensions": {
+      "status": "PASS",
+      "detail": {
+        "sha256": "5fa2143ec5a71b57307835bbfc09940adbbf48929cb90fd271e680053a924aa5",
+        "size": [
+          1024,
+          1536
+        ]
+      }
+    },
+    "plate_provenance_and_review_state": {
+      "status": "PASS",
+      "detail": {
+        "status": "REVIEW_REQUIRED",
+        "reviewer": null,
+        "approved_sha256": null
+      }
+    },
+    "no_silent_fallback": {
+      "status": "PASS",
+      "detail": {
+        "allowed": false,
+        "strategies": []
+      }
+    },
+    "layer_and_animation_regions": {
+      "status": "PASS",
+      "detail": {
+        "layers": [
+          {
+            "id": "plate_base",
+            "owner": "plate",
+            "motion": "static"
+          },
+          {
+            "id": "local_light_reaction",
+            "owner": "compositor",
+            "motion": "intensity_bound"
+          },
+          {
+            "id": "reactor_energy",
+            "owner": "godot",
+            "motion": "animated_hero"
+          },
+          {
+            "id": "gauges_and_lamps",
+            "owner": "compositor",
+            "motion": "state_bound"
+          },
+          {
+            "id": "steam_and_dust",
+            "owner": "compositor",
+            "motion": "seeded_local"
+          },
+          {
+            "id": "film_treatment",
+            "owner": "compositor",
+            "motion": "seeded_global_subtle"
+          }
+        ],
+        "regions": [
+          {
+            "id": "reactor_chamber",
+            "owner": "godot",
+            "bounds": [
+              0.47,
+              0.31,
+              0.22,
+              0.37
+            ]
+          },
+          {
+            "id": "warning_lamps",
+            "owner": "compositor",
+            "bounds": [
+              0.48,
+              0.18,
+              0.39,
+              0.08
+            ]
+          },
+          {
+            "id": "control_gauges",
+            "owner": "compositor",
+            "bounds": [
+              0.03,
+              0.61,
+              0.31,
+              0.19
+            ]
+          },
+          {
+            "id": "reactor_light_spill",
+            "owner": "plate",
+            "bounds": [
+              0.34,
+              0.19,
+              0.56,
+              0.68
+            ]
+          },
+          {
+            "id": "steam_vent",
+            "owner": "compositor",
+            "bounds": [
+              0.7,
+              0.67,
+              0.12,
+              0.15
+            ]
+          }
+        ]
+      }
+    },
+    "failure_and_compatibility_tests": {
+      "status": "PASS",
+      "detail": {
+        "passed": 11,
+        "total": 11
+      }
+    },
+    "proof_artifact_integrity": {
+      "status": "PASS",
+      "detail": {
+        "procedural/static-proof.png": "39ad7ee86dda3cb5b96e4ae9bb57aa9052591e8b77da545f4865af0a20e25aaf",
+        "procedural/motion-proof.mp4": "ca38493d05252c0bca70e169d9f097604184d9c63b05bb05d6d813bb7758d836",
+        "hybrid/static-proof.png": "0a554e3cc69bd900fb29b541ae53056e5ee66206df92f74bea159d97cda503e4",
+        "hybrid/motion-proof.mp4": "f6b18c9b9b97c3e12bb25b538e1d351e974ceec8d114dfce2b3d9461869f7859",
+        "comparison/side-by-side.png": "55ca058fa3acd5c9383020a3477c185bd19769a967a338cbeb5f5d79bd428b6d",
+        "comparison/side-by-side.mp4": "88bbc92ec7030818abdd901411a71f847f83eba6e36b789743079dec96b3a7f3"
+      }
+    },
+    "matched_motion_proof_contract": {
+      "status": "PASS",
+      "detail": {
+        "procedural/motion-proof.mp4": {
+          "codec": "h264",
+          "width": 768,
+          "height": 1152,
+          "frames": 120,
+          "fps": "30/1",
+          "duration": 4.0,
+          "audio_streams": 0
+        },
+        "hybrid/motion-proof.mp4": {
+          "codec": "h264",
+          "width": 768,
+          "height": 1152,
+          "frames": 120,
+          "fps": "30/1",
+          "duration": 4.0,
+          "audio_streams": 0
+        },
+        "comparison/side-by-side.mp4": {
+          "codec": "h264",
+          "width": 1536,
+          "height": 1152,
+          "frames": 120,
+          "fps": "30/1",
+          "duration": 4.0,
+          "audio_streams": 0
+        }
+      }
+    },
+    "full_decode": {
+      "status": "PASS",
+      "detail": "all three proof videos decoded"
+    },
+    "godot_hybrid_integration": {
+      "status": "PASS",
+      "detail": {
+        "script": "godot/mf017_visual_source_proof.gd",
+        "reactor": true,
+        "warning_lamps": true,
+        "local_light_reaction": true,
+        "environmental_steam": true
+      }
+    },
+    "plate_material_richness": {
+      "status": "PASS",
+      "detail": {
+        "procedural": {
+          "gradient_mean": 7.540186613624135,
+          "laplacian_p90": 46.71520000000004,
+          "quantized_color_count": 1061
+        },
+        "hybrid": {
+          "gradient_mean": 9.880465662657674,
+          "laplacian_p90": 69.56537999999998,
+          "quantized_color_count": 2776
+        },
+        "ratios": {
+          "gradient_mean": 1.31,
+          "laplacian_p90": 1.489,
+          "quantized_color_count": 2.616
+        }
+      }
+    },
+    "local_light_and_hero_overlay_visible": {
+      "status": "PASS",
+      "detail": {
+        "reactor_region_mean_delta": 22.711,
+        "changed_ratio": 0.1544
+      }
+    },
+    "meaningful_local_motion": {
+      "status": "PASS",
+      "detail": {
+        "procedural": {
+          "mean_delta": 1.527,
+          "changed_ratio": 0.0374
+        },
+        "hybrid": {
+          "mean_delta": 2.212,
+          "changed_ratio": 0.0375
+        }
+      }
+    },
+    "mf016_hero_hierarchy_preserved": {
+      "status": "PASS",
+      "detail": {
+        "procedural": {
+          "hero_mean": 69.063,
+          "support_mean": 35.266,
+          "ratio": 1.958
+        },
+        "hybrid": {
+          "hero_mean": 42.953,
+          "support_mean": 37.745,
+          "ratio": 1.138
+        }
+      }
+    },
+    "source_status_fail_closed": {
+      "status": "PASS",
+      "detail": {
+        "source": "PRODUCTION_PLATE_PENDING",
+        "human": "PENDING_HUMAN"
+      }
+    },
+    "no_full_trailer": {
+      "status": "PASS",
+      "detail": false
+    },
+    "not_published": {
+      "status": "PASS",
+      "detail": false
+    }
+  },
+  "metrics": {
+    "materiality": {
+      "procedural": {
+        "gradient_mean": 7.540186613624135,
+        "laplacian_p90": 46.71520000000004,
+        "quantized_color_count": 1061
+      },
+      "hybrid": {
+        "gradient_mean": 9.880465662657674,
+        "laplacian_p90": 69.56537999999998,
+        "quantized_color_count": 2776
+      },
+      "ratios": {
+        "gradient_mean": 1.3103741550381471,
+        "laplacian_p90": 1.4891380107545278,
+        "quantized_color_count": 2.6163996229971724
+      }
+    },
+    "motion": {
+      "procedural": {
+        "mean_delta": 1.527,
+        "changed_ratio": 0.0374
+      },
+      "hybrid": {
+        "mean_delta": 2.212,
+        "changed_ratio": 0.0375
+      }
+    },
+    "hierarchy": {
+      "procedural": {
+        "hero_mean": 69.063,
+        "support_mean": 35.266,
+        "ratio": 1.958
+      },
+      "hybrid": {
+        "hero_mean": 42.953,
+        "support_mean": 37.745,
+        "ratio": 1.138
+      }
+    }
+  },
+  "published": false
+}

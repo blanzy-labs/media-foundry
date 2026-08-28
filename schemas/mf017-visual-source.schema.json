@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mf017-visual-source.schema.json",
+  "title": "Media Foundry visual-source strategy contract",
+  "type": "object",
+  "required": ["version", "scene_id", "complex_scene", "visual_source"],
+  "properties": {
+    "version": {"const": 1},
+    "complex_scene": {"type": "boolean"},
+    "visual_source": {
+      "type": "object",
+      "required": ["mode", "quality_intent", "requirements", "configured_strategy", "resolved_strategy", "fallback", "composition_gate"],
+      "properties": {
+        "configured_strategy": {"enum": ["PROCEDURAL", "PLATE", "HYBRID", "AUTHENTIC_MEDIA"]},
+        "resolved_strategy": {"enum": ["PROCEDURAL", "PLATE", "HYBRID", "AUTHENTIC_MEDIA"]},
+        "quality_intent": {"enum": ["FAST", "STANDARD", "CINEMATIC"]},
+        "requirements": {"type": "object"},
+        "plate": {"type": ["object", "null"]},
+        "authentic_media": {"type": ["object", "null"]}
+      }
+    }
+  }
+}

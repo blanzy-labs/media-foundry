@@ -1,0 +1,131 @@
+{
+  "slice": "MF-018A",
+  "mode": "PULP_GAME_WORLD",
+  "native_scene": true,
+  "config": "/home/blanzy/projects/media-foundry/config/mf018a-native-pulp-scene.json",
+  "config_sha256": "41056752e6442e1de4400a7be1b107ead9b7b4f3548a08994b2660da5b40939c",
+  "composition": "/home/blanzy/projects/media-foundry/config/mf018a-native-composition.json",
+  "composition_sha256": "eff78520968de5cbe0bbb680bbea16ce6a9212d6ec8b4df183015c6054741709",
+  "composition_machine_validation": {
+    "checks": {
+      "zone_vocabulary_and_geometry": "PASS",
+      "required_zone_kinds": "PASS",
+      "unique_object_ids": "PASS",
+      "semantic_role_required": "PASS",
+      "valid_visual_purpose_required": "PASS",
+      "remove_if_unnecessary_policy": "PASS",
+      "visual_hierarchy": "PASS",
+      "objects_inside_allowed_zones": "PASS",
+      "no_unexpected_frame_clipping": "PASS",
+      "preserved_negative_space": "PASS",
+      "hero_and_no_occlusion_protection": "PASS",
+      "text_safety": "PASS",
+      "long_line_guardrail": "PASS",
+      "large_shape_guardrail": "PASS",
+      "support_zone_capacity": "PASS",
+      "negative_space_not_occupancy_scored": "PASS",
+      "animation_cannot_rescue_composition": "PASS"
+    },
+    "errors": [],
+    "advisories": [],
+    "result": "PASS"
+  },
+  "composition_gate": "COMPOSITION_PENDING",
+  "composition_human_status": "PENDING_HUMAN",
+  "godot_script": "godot/mf018a_native_pulp_scene.gd",
+  "godot_script_sha256": "38e4c7fa9ef027510ad9e538a8863a9dbd2e94c7c62347b35b86a956f87c5a56",
+  "seed": 1801957,
+  "video": {
+    "width": 768,
+    "height": 1152,
+    "fps": 30,
+    "duration_seconds": 12.0,
+    "frame_count": 360
+  },
+  "audio": {
+    "track_id": "cold_concrete_anatomy",
+    "qualified_id": "unknown-process:cold_concrete_anatomy",
+    "track_path": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+    "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "track_approval": "APPROVED",
+    "cue_id": "revelation_a",
+    "cue_approval": "APPROVED",
+    "usable_start": 5.0,
+    "usable_end": 49.0,
+    "actual_start": 5.0,
+    "actual_end": 17.0,
+    "fade_in": 0.8,
+    "fade_out": 1.2,
+    "post_normalization_gain_db": -2.4,
+    "direction": "music_led_no_additional_sfx",
+    "loudness": {
+      "integrated_lufs": -16.04,
+      "true_peak_db": -3.82,
+      "loudness_range_lu": 4.2
+    },
+    "result": "PASS"
+  },
+  "comparison_baseline": {
+    "path": "/home/blanzy/projects/media-foundry/artifacts/mf-017/hybrid/motion-proof.mp4",
+    "sha256": "f6b18c9b9b97c3e12bb25b538e1d351e974ceec8d114dfce2b3d9461869f7859"
+  },
+  "outputs": {
+    "godot-native-pulp-scene.mp4": {
+      "sha256": "a6507e574567dd2b041981ac5f51ca7123dc700636e6cd394ccbb086d19c549b",
+      "bytes": 2668968
+    },
+    "representative-frames/contact-sheet.png": {
+      "sha256": "5ce2bfdb91d295117c500094ff80eb63140ff6172e5a1ece3f7eddc4a39d0702",
+      "bytes": 310377
+    },
+    "comparison/hybrid-vs-native.png": {
+      "sha256": "146ef90deff4091c41080e8c8742f238e7e63acc4d2e0f2e74e0838abb340e2f",
+      "bytes": 534498
+    },
+    "comparison/hybrid-vs-native.mp4": {
+      "sha256": "a59e84bb5b3f1ed58a9f7d66fd367e6a0f221c6d26434466a8822cc0640c8783",
+      "bytes": 1916970
+    },
+    "representative-frames/dark-dormant.png": {
+      "sha256": "483a3561a5834d0c7959b2759d8abe4041369c18a632e46510d60bdb84e5cff5",
+      "bytes": 131568
+    },
+    "representative-frames/early-activation.png": {
+      "sha256": "f1a6204877fd18cc9bec4078328c9ce8b25f6c6b4bb9c129873eec312ed41bcd",
+      "bytes": 139584
+    },
+    "representative-frames/console-lamps.png": {
+      "sha256": "a34ed752eb92ff1bb0321cd3bf1c64e439eb609203da5a0273cd0dfaa6cf6f3b",
+      "bytes": 161860
+    },
+    "representative-frames/reactor-mid-activation.png": {
+      "sha256": "7cb0e274f06208651ba57b6c710a000e0006a7f65801d1eaa535e4dd69910ddb",
+      "bytes": 174496
+    },
+    "representative-frames/peak-reactor.png": {
+      "sha256": "02d428adc13f6e971b2dcc1c3c8ef649f7625997cf3cdb9f2368ee757727b4c3",
+      "bytes": 209206
+    },
+    "representative-frames/final-hold.png": {
+      "sha256": "f52581a9326926240ffa2467769f6f7d31d19d841daf623758594a2a9cd08324",
+      "bytes": 227958
+    },
+    "static-keyframes/activation.png": {
+      "sha256": "a34ed752eb92ff1bb0321cd3bf1c64e439eb609203da5a0273cd0dfaa6cf6f3b",
+      "bytes": 161860
+    },
+    "static-keyframes/dormant.png": {
+      "sha256": "483a3561a5834d0c7959b2759d8abe4041369c18a632e46510d60bdb84e5cff5",
+      "bytes": 131568
+    },
+    "static-keyframes/peak.png": {
+      "sha256": "02d428adc13f6e971b2dcc1c3c8ef649f7625997cf3cdb9f2368ee757727b4c3",
+      "bytes": 209206
+    }
+  },
+  "raw_frames_retained": false,
+  "elapsed_ms": 25894,
+  "human_review": "PENDING_HUMAN",
+  "release_ready": false,
+  "published": false
+}

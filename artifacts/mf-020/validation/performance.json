@@ -1,0 +1,65 @@
+{
+  "preflight_ms": 593,
+  "stages": {
+    "blockout": {
+      "stage": "blockout",
+      "mode": "stills",
+      "build_ms": 321,
+      "render_ms": 1458,
+      "total_ms": 1780,
+      "rendered": 3,
+      "resumed_frames": 0,
+      "engine": "BLENDER_EEVEE",
+      "device": "CPU_HEADLESS_DEFAULT"
+    },
+    "detail": {
+      "stage": "detail",
+      "mode": "stills",
+      "build_ms": 412,
+      "render_ms": 983,
+      "total_ms": 1396,
+      "rendered": 1,
+      "resumed_frames": 0,
+      "engine": "BLENDER_EEVEE",
+      "device": "CPU_HEADLESS_DEFAULT"
+    },
+    "lighting": {
+      "stage": "lighting",
+      "mode": "stills",
+      "build_ms": 418,
+      "render_ms": 1048,
+      "total_ms": 1466,
+      "rendered": 1,
+      "resumed_frames": 0,
+      "engine": "BLENDER_EEVEE",
+      "device": "CPU_HEADLESS_DEFAULT"
+    },
+    "fx": {
+      "stage": "fx",
+      "mode": "stills",
+      "build_ms": 564,
+      "render_ms": 1810,
+      "total_ms": 2374,
+      "rendered": 3,
+      "resumed_frames": 0,
+      "engine": "BLENDER_EEVEE",
+      "device": "CPU_HEADLESS_DEFAULT"
+    }
+  },
+  "final_render": {
+    "stage": "final",
+    "mode": "frames",
+    "build_ms": 572,
+    "render_ms": 89922,
+    "total_ms": 90566,
+    "rendered": 300,
+    "resumed_frames": 0,
+    "engine": "BLENDER_EEVEE",
+    "device": "CPU_HEADLESS_DEFAULT"
+  },
+  "finalization_ms": 3010,
+  "frame_storage_bytes": 246753404,
+  "artifact_bytes": 2712924,
+  "peak_memory_kb": 815992,
+  "total_elapsed_ms": 106630
+}

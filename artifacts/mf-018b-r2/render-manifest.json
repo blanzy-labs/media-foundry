@@ -1,0 +1,136 @@
+{
+  "slice": "MF-018B-R2",
+  "config": "/home/blanzy/projects/media-foundry/config/mf018b-r2-cleanup.json",
+  "config_sha256": "315991f92deac35893204979ce8f90e2cca42d3bdc5188cbefa9809371596782",
+  "seed": 1801959,
+  "baseline": {
+    "artifact": "artifacts/mf-018b-r1/final-test.mp4",
+    "artifact_sha256": "1910158da2dc5190626f3db55c682d0f44f2e87b0319334844c3f4b0aed10f56",
+    "scene": "godot/mf018b_r1_pulp_scene.tscn",
+    "scene_sha256": "9a60b061a6a51d698f97c932253914cf452eb64d2d7923cf5839a7da2376ff31",
+    "config": "config/mf018b-r1-control-cleanup.json",
+    "config_sha256": "750d4a7385e40a3345d9a446f56d00cfe5fef0ea56c84900370e1ee81893663e",
+    "handoff": "handoff/playable-scene/mf018b-r1/manifest.json",
+    "handoff_sha256": "dcf9670970fccc4797d0adb49a69e60162213838fff3ec43fb72f0ee163f0a94"
+  },
+  "scene": {
+    "path": "godot/mf018b_r2_pulp_scene.tscn",
+    "sha256": "a8537d34ffb99e4c0b6b86f07312c391223e843acb0698c31f46503ff66c5dcb",
+    "standalone_probe": "PASS",
+    "r1_driver_reused": true
+  },
+  "inherited_handoff": {
+    "path": "handoff/playable-scene/mf018b-r1/manifest.json",
+    "sha256": "dcf9670970fccc4797d0adb49a69e60162213838fff3ec43fb72f0ee163f0a94",
+    "validation": "PASS",
+    "interface_changed": false
+  },
+  "cleanup_contract": {
+    "right_machine_lever_present": false,
+    "right_machine_steam_from_removed_lever_present": false,
+    "control_panel_inner_outline_present": false,
+    "replacement_props_added": 0,
+    "r1_promo_driver_reused": true,
+    "r1_startup_timeline_changed": false,
+    "r1_indicator_logic_changed": false,
+    "r1_audio_logic_changed": false,
+    "right_machine_cleanup_roi": [
+      640,
+      810,
+      748,
+      985
+    ],
+    "panel_outline_cleanup_roi": [
+      45,
+      735,
+      245,
+      985
+    ]
+  },
+  "video": {
+    "width": 768,
+    "height": 1152,
+    "fps": 30,
+    "duration_seconds": 14.0,
+    "frame_count": 420
+  },
+  "audio": {
+    "track": "unknown-process:cold_concrete_anatomy",
+    "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "track_approval": "APPROVED",
+    "cue": "revelation_a",
+    "cue_approval": "APPROVED",
+    "actual_start": 5.0,
+    "actual_end": 19.0,
+    "loudness": {
+      "integrated_lufs": -16.03,
+      "true_peak_db": -2.78,
+      "loudness_range_lu": 5.0
+    },
+    "event_markers": {
+      "startup_lever_clunk": 1.15,
+      "gauge_wake": 1.75,
+      "blue_stage": 2.75,
+      "green_stage": 4.15,
+      "yellow_link_trigger": 5.45,
+      "linked_ring_activation": 5.72
+    },
+    "changed_from_r1": false,
+    "result": "PASS"
+  },
+  "outputs": {
+    "final-test.mp4": {
+      "sha256": "0f9411777e1bd61b592e84ddf53d1c0c7f51e7b009aa51bb060c0e63c0c3e099",
+      "bytes": 2443452
+    },
+    "representative-frames/contact-sheet.png": {
+      "sha256": "fe28b03fb3760a2e9040985569259bddc0a6310cf54f981c0f3d89654a52f94e",
+      "bytes": 257427
+    },
+    "comparison/r1-vs-r2.png": {
+      "sha256": "2cb569c2ca2ede024c74f6e3c39d30d56b34caf13c6a81b172b2cf32e7e0dc5a",
+      "bytes": 143856
+    },
+    "comparison/r1-vs-r2.mp4": {
+      "sha256": "a5725934788ec5be430c032d933e4c7a970ddb87207e258950283cda05ef660f",
+      "bytes": 1674184
+    },
+    "representative-frames/full-scene-cleanup.png": {
+      "sha256": "ad338faa796c6b3e07067b710c0ead76cc9b89067a6fe10b829116e4fdb3256c",
+      "bytes": 163459
+    },
+    "representative-frames/startup-panel-active.png": {
+      "sha256": "2b39c53f14bb7ca250ca2946feb92793f97d4a2dbc8914eefac6a250bb92100d",
+      "bytes": 166762
+    },
+    "representative-frames/yellow-trigger-preserved.png": {
+      "sha256": "18a4bf56359b76233cd2ed2e896552f4710415ae2ab80bbf5c53947957b59c94",
+      "bytes": 169345
+    },
+    "representative-frames/linked-ring-preserved.png": {
+      "sha256": "def6508310cf055d1895ac48e0c6fecefcf030e996c74f38f867cfd188e32902",
+      "bytes": 184818
+    },
+    "representative-frames/final-active-machine.png": {
+      "sha256": "71469576c38c575a2ce57b483d9b668de73868728f53aef21bd75848a7c4c7bd",
+      "bytes": 232159
+    },
+    "closeups/control-panel-outline-removed.png": {
+      "sha256": "533b2dba0fb40eacc2b776e3e32012f84d9e5f137137250dda10b8ca0e648aad",
+      "bytes": 93265
+    },
+    "closeups/right-machine-lever-removed.png": {
+      "sha256": "8db49dab0c3eabb74fb6cae354da874786f8516effecf424f46b50bce7ae9174",
+      "bytes": 62986
+    },
+    "closeups/startup-controls-preserved.png": {
+      "sha256": "f1af9070cd8fac1aeae737759b7feecbc2859f2d277ed105b91251256d3084a2",
+      "bytes": 94286
+    }
+  },
+  "elapsed_ms": 39053,
+  "human_review": "PENDING_HUMAN",
+  "release_ready": false,
+  "gameplay_implemented": false,
+  "published": false
+}

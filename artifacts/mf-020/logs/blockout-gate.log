@@ -1,0 +1,182 @@
+{
+  "slice": "MF-020",
+  "gate": "BLENDER_BLOCKOUT",
+  "result": "PASS",
+  "checks": {
+    "blockout_keyframes_exist": {
+      "status": "PASS",
+      "detail": [
+        "artifacts/mf-020/blockout/dormant.png",
+        "artifacts/mf-020/blockout/escalation.png",
+        "artifacts/mf-020/blockout/final.png"
+      ]
+    },
+    "portrait_output_contract": {
+      "status": "PASS",
+      "detail": [
+        [
+          1152,
+          768,
+          3
+        ],
+        [
+          1152,
+          768,
+          3
+        ],
+        [
+          1152,
+          768,
+          3
+        ]
+      ]
+    },
+    "reactor_is_readable_hero": {
+      "status": "PASS",
+      "detail": [
+        {
+          "label": "dormant",
+          "hero_luma": 23.149,
+          "console_luma": 18.966,
+          "edge_bright_pixels": 0,
+          "hero_bright_pixels": 1380
+        },
+        {
+          "label": "escalation",
+          "hero_luma": 29.806,
+          "console_luma": 22.695,
+          "edge_bright_pixels": 321,
+          "hero_bright_pixels": 7490
+        },
+        {
+          "label": "final",
+          "hero_luma": 40.654,
+          "console_luma": 21.774,
+          "edge_bright_pixels": 0,
+          "hero_bright_pixels": 34678
+        }
+      ]
+    },
+    "console_visible_secondary": {
+      "status": "PASS",
+      "detail": [
+        {
+          "label": "dormant",
+          "hero_luma": 23.149,
+          "console_luma": 18.966,
+          "edge_bright_pixels": 0,
+          "hero_bright_pixels": 1380
+        },
+        {
+          "label": "escalation",
+          "hero_luma": 29.806,
+          "console_luma": 22.695,
+          "edge_bright_pixels": 321,
+          "hero_bright_pixels": 7490
+        },
+        {
+          "label": "final",
+          "hero_luma": 40.654,
+          "console_luma": 21.774,
+          "edge_bright_pixels": 0,
+          "hero_bright_pixels": 34678
+        }
+      ]
+    },
+    "no_distracting_edge_clutter": {
+      "status": "PASS",
+      "detail": [
+        {
+          "label": "dormant",
+          "hero_luma": 23.149,
+          "console_luma": 18.966,
+          "edge_bright_pixels": 0,
+          "hero_bright_pixels": 1380
+        },
+        {
+          "label": "escalation",
+          "hero_luma": 29.806,
+          "console_luma": 22.695,
+          "edge_bright_pixels": 321,
+          "hero_bright_pixels": 7490
+        },
+        {
+          "label": "final",
+          "hero_luma": 40.654,
+          "console_luma": 21.774,
+          "edge_bright_pixels": 0,
+          "hero_bright_pixels": 34678
+        }
+      ]
+    },
+    "camera_path_and_escalation_readable": {
+      "status": "PASS",
+      "detail": [
+        765440,
+        849943
+      ]
+    },
+    "single_perspective_camera_contract": {
+      "status": "PASS",
+      "detail": {
+        "name": "CinematicHeroCamera",
+        "lens_mm": 46.0,
+        "move": "slow_push_with_subtle_rightward_orbit",
+        "single_shot": true
+      }
+    },
+    "purposeful_blockout_elements": {
+      "status": "PASS",
+      "detail": {
+        "reactor": "GlassChamber",
+        "console": "AnalogConsole",
+        "gauges": 3,
+        "lever": "StartupLeverHinge",
+        "ring_lamps": 7,
+        "collar": "MotorizedCollar",
+        "energy_filaments": 2
+      }
+    },
+    "configured_ready_before_detail": {
+      "status": "PASS",
+      "detail": {
+        "seconds": [
+          0.5,
+          5.2,
+          9.4
+        ],
+        "labels": [
+          "dormant",
+          "escalation",
+          "final"
+        ],
+        "required_state": "CONFIGURED_READY"
+      }
+    }
+  },
+  "metrics": [
+    {
+      "label": "dormant",
+      "hero_luma": 23.149,
+      "console_luma": 18.966,
+      "edge_bright_pixels": 0,
+      "hero_bright_pixels": 1380
+    },
+    {
+      "label": "escalation",
+      "hero_luma": 29.806,
+      "console_luma": 22.695,
+      "edge_bright_pixels": 321,
+      "hero_bright_pixels": 7490
+    },
+    {
+      "label": "final",
+      "hero_luma": 40.654,
+      "console_luma": 21.774,
+      "edge_bright_pixels": 0,
+      "hero_bright_pixels": 34678
+    }
+  ],
+  "stage_state": "CONFIGURED_READY",
+  "detail_render_authorized": true
+}

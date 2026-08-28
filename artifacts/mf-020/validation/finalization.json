@@ -1,0 +1,43 @@
+{
+  "result": "PASS",
+  "media": {
+    "video": "h264",
+    "audio": "aac",
+    "width": 768,
+    "height": 1152,
+    "fps": "30/1",
+    "frames": 300,
+    "duration": 10.0,
+    "sample_rate": 48000
+  },
+  "full_decode": "PASS",
+  "frame_count": 300,
+  "frame_storage_bytes": 246753404,
+  "title": {
+    "text": "UNKNOWN PROCESS",
+    "owner": "MEDIA_FOUNDRY",
+    "start_seconds": 8.1,
+    "end_seconds": 10.0
+  },
+  "audio": {
+    "track": "unknown-process:cold_concrete_anatomy",
+    "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "track_approval": "APPROVED",
+    "cue": "revelation_a",
+    "cue_approval": "APPROVED",
+    "source_offsets_seconds": [
+      5.0,
+      15.0
+    ],
+    "fade_in_seconds": 0.7,
+    "fade_out_seconds": 1.2,
+    "post_normalization_gain_db": -1.3,
+    "sfx_policy": "NONE_FOR_FIRST_PROOF",
+    "loudness": {
+      "integrated_lufs": -16.22,
+      "true_peak_db": -2.78,
+      "loudness_range_lu": 2.1
+    }
+  },
+  "elapsed_ms": 3010
+}

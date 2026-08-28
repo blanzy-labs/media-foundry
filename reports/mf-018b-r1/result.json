@@ -1,0 +1,468 @@
+{
+  "slice": "MF-018B-R1",
+  "result": "TECHNICAL_PASS",
+  "release_ready": false,
+  "human_review": "PENDING_HUMAN",
+  "checks": {
+    "mf018b_baseline_preserved": {
+      "status": "PASS",
+      "detail": {
+        "artifact": "f629364bf73ebb9a16b181ea43221530ed428f009f2e1093a572447d5ca20d42",
+        "scene": "1e4df3528e96bf5a8db019d059b60aa57e4b337e4dad4c882f74ce176215c48b",
+        "config": "a4d825ba29c66fe61aac010f2d4a96bf018379266b606fb0b4dea459adc8f974",
+        "handoff": "b9f25ff451c503537f0b9b3565d81d954f297b85c16640b2086404b7dd9afe55"
+      }
+    },
+    "composition_preserved": {
+      "status": "PASS",
+      "detail": {
+        "checks": {
+          "zone_vocabulary_and_geometry": "PASS",
+          "required_zone_kinds": "PASS",
+          "unique_object_ids": "PASS",
+          "semantic_role_required": "PASS",
+          "valid_visual_purpose_required": "PASS",
+          "remove_if_unnecessary_policy": "PASS",
+          "visual_hierarchy": "PASS",
+          "objects_inside_allowed_zones": "PASS",
+          "no_unexpected_frame_clipping": "PASS",
+          "preserved_negative_space": "PASS",
+          "hero_and_no_occlusion_protection": "PASS",
+          "text_safety": "PASS",
+          "long_line_guardrail": "PASS",
+          "large_shape_guardrail": "PASS",
+          "support_zone_capacity": "PASS",
+          "negative_space_not_occupancy_scored": "PASS",
+          "animation_cannot_rescue_composition": "PASS"
+        },
+        "errors": [],
+        "advisories": [],
+        "result": "PASS"
+      }
+    },
+    "r1_playable_handoff": {
+      "status": "PASS",
+      "detail": {
+        "result": "PASS",
+        "checks": {
+          "contract_version": {
+            "status": "PASS",
+            "detail": null
+          },
+          "package_identity": {
+            "status": "PASS",
+            "detail": null
+          },
+          "unique_interaction_ids": {
+            "status": "PASS",
+            "detail": [
+              "coolant_dial",
+              "field_dial",
+              "startup_lever"
+            ]
+          },
+          "interaction_metadata": {
+            "status": "PASS",
+            "detail": null
+          },
+          "declared_node_paths": {
+            "status": "PASS",
+            "detail": [
+              "Machines/Console/Controls/DialCoolant",
+              "Machines/Console/Controls/DialField",
+              "Machines/Console/Controls/StartupLever",
+              "PromoCamera"
+            ]
+          },
+          "valid_state_variables": {
+            "status": "PASS",
+            "detail": [
+              "reactor_energy",
+              "temperature",
+              "containment",
+              "field_strength",
+              "pressure",
+              "warning_level",
+              "startup_progress",
+              "indicator_stage",
+              "linked_ring_activation"
+            ]
+          },
+          "visual_state_vocabulary": {
+            "status": "PASS",
+            "detail": null
+          },
+          "semantic_signal_names": {
+            "status": "PASS",
+            "detail": [
+              "reactor_state_changed",
+              "reactor_energy_changed",
+              "temperature_changed",
+              "containment_changed",
+              "field_strength_changed",
+              "pressure_changed",
+              "warning_level_changed",
+              "control_activated",
+              "machine_warning",
+              "machine_critical",
+              "audio_event_requested",
+              "startup_progress_changed",
+              "indicator_stage_changed",
+              "linked_ring_activation_changed",
+              "startup_initiated",
+              "yellow_trigger_reached"
+            ]
+          },
+          "audio_hooks_resolve": {
+            "status": "PASS",
+            "detail": [
+              "control_dial",
+              "control_dial",
+              "startup_lever_clunk"
+            ]
+          },
+          "portable_project_paths": {
+            "status": "PASS",
+            "detail": [
+              "godot/mf018b_r1_pulp_scene.tscn",
+              "godot/mf018b_r1_pulp_scene.gd",
+              "godot/mf018b_r1_promo_driver.gd",
+              "godot/mf018b_r1_pulp_scene.tscn",
+              "godot/mf018b_r1_pulp_scene.gd",
+              "godot/mf018b_pulp_scene.gd",
+              "godot/mf018b_r1_promo_driver.gd",
+              "config/mf018b-r1-control-cleanup.json",
+              "config/mf018b-native-composition.json",
+              "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3"
+            ]
+          },
+          "asset_integrity": {
+            "status": "PASS",
+            "detail": {
+              "base_scene": {
+                "exists": true,
+                "sha256": "9a60b061a6a51d698f97c932253914cf452eb64d2d7923cf5839a7da2376ff31"
+              },
+              "base_script": {
+                "exists": true,
+                "sha256": "705e594b681bf4c7035a487d28e67c3c29d0a437b12f304c44275f9272cd338a"
+              },
+              "parent_visual_api": {
+                "exists": true,
+                "sha256": "dfd8874c489e49386313b28c5a02764db13db9af904eae727d26798ab3084056"
+              },
+              "promo_driver": {
+                "exists": true,
+                "sha256": "1a4f744aebd1e660ea3bd1cc41874c5d0f9d9651f7e22fe7a04cd248773040a7"
+              },
+              "scene_config": {
+                "exists": true,
+                "sha256": "750d4a7385e40a3345d9a446f56d00cfe5fef0ea56c84900370e1ee81893663e"
+              },
+              "composition": {
+                "exists": true,
+                "sha256": "a8ff7b8f83ece7572251ffb7438f34070e8fcc3c10c1bf4f5c52969472c74003"
+              },
+              "approved_music": {
+                "exists": true,
+                "sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf"
+              }
+            }
+          },
+          "promo_driver_separation": {
+            "status": "PASS",
+            "detail": null
+          },
+          "zero_game_foundry_dependency": {
+            "status": "PASS",
+            "detail": null
+          },
+          "ownership_boundary": {
+            "status": "PASS",
+            "detail": null
+          },
+          "base_scene_api_declared": {
+            "status": "PASS",
+            "detail": null
+          }
+        },
+        "errors": []
+      }
+    },
+    "scene_load_and_external_api": {
+      "status": "PASS",
+      "detail": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nMF018B_R1_PROBE_OK nodes=5 passive_switch=false signals=5 driver_loaded=false"
+    },
+    "passive_lever_detail_removed": {
+      "status": "PASS",
+      "detail": false
+    },
+    "startup_lever_interaction": {
+      "status": "PASS",
+      "detail": [
+        "coolant_dial",
+        "field_dial",
+        "startup_lever"
+      ]
+    },
+    "upper_large_indicator_count_reduced": {
+      "status": "PASS",
+      "detail": {
+        "large": 6,
+        "small": 18
+      }
+    },
+    "large_indicators_do_not_overlap": {
+      "status": "PASS",
+      "detail": {
+        "minimum_center_distance": 41.477,
+        "required": 26.0
+      }
+    },
+    "large_do_not_cover_small": {
+      "status": "PASS",
+      "detail": {
+        "minimum_center_distance": 31.059,
+        "required": 18.0
+      }
+    },
+    "four_dot_spacing": {
+      "status": "PASS",
+      "detail": {
+        "centers": [
+          70.0,
+          116.0,
+          162.0,
+          208.0
+        ],
+        "radius": 11.0,
+        "spacing": 46.0,
+        "safe_bounds": [
+          57.0,
+          225.0
+        ]
+      }
+    },
+    "fourth_dot_border_clearance": {
+      "status": "PASS",
+      "detail": {
+        "clearances": [
+          40.25,
+          33.21,
+          26.17,
+          19.13
+        ]
+      }
+    },
+    "startup_lever_rotates_right": {
+      "status": "PASS",
+      "detail": {
+        "before_local": [
+          48.47480106100796,
+          35.51458885941645
+        ],
+        "after_local": [
+          91.5,
+          78.5
+        ],
+        "x_delta": 43.03,
+        "y_delta": 42.99
+      }
+    },
+    "gauges_respond_after_lever": {
+      "status": "PASS",
+      "detail": {
+        "gauge_region_delta": 5.974051069703243
+      }
+    },
+    "blue_green_yellow_logic": {
+      "status": "PASS",
+      "detail": {
+        "blue_pixels": 444,
+        "green_pixels": 882,
+        "yellow_pixels": 856
+      }
+    },
+    "yellow_triggers_linked_ring": {
+      "status": "PASS",
+      "detail": {
+        "yellow_frame_ring_pixels": 259,
+        "linked_frame_ring_pixels": 755,
+        "delta": 496
+      }
+    },
+    "causal_startup_order": {
+      "status": "PASS",
+      "detail": [
+        1.15,
+        1.75,
+        2.75,
+        4.15,
+        5.45,
+        5.72,
+        6.05
+      ]
+    },
+    "representative_and_closeup_evidence": {
+      "status": "PASS",
+      "detail": {
+        "representative": 9,
+        "closeups": 6
+      }
+    },
+    "artifact_integrity": {
+      "status": "PASS",
+      "detail": {
+        "final-test.mp4": "1910158da2dc5190626f3db55c682d0f44f2e87b0319334844c3f4b0aed10f56",
+        "representative-frames/contact-sheet.png": "46bad6d7bb0a48ba9030f31d25bbef90db5da03670a278cc2c9b2de8b616bceb",
+        "comparison/mf018b-vs-r1.png": "93b9024c3031b3432b4e4dc03752cc520d9097f067d7382520bfe4a38099d340",
+        "comparison/mf018b-vs-r1.mp4": "f771533e59712eb547555cd79bd28d8b9e62c6deee93eec4aea071039f322cb9",
+        "representative-frames/dormant.png": "63c6b4264d6d43a68035d747a42313865fbe7f7fedb5cce5161d5cdcd90b659c",
+        "representative-frames/startup-lever-before.png": "531b2859f260b84af0eb13ff4604a84bdb5786e9a5541eb14739add491909cdb",
+        "representative-frames/startup-lever-after.png": "232917d96ecd1c1d254610bc51d94d39468086a36d5e5f3ad14afd5c17847c1b",
+        "representative-frames/gauges-respond.png": "9faff2fd8c382878eb5bc0a113e5d636c52c2889f86d027af3aae4dc54e26818",
+        "representative-frames/four-dot-blue.png": "dcf330f51072626dafd69dc9a11af80a318e8f696c5d7a9c408b6c53ef680f4b",
+        "representative-frames/four-dot-green.png": "644535195ee0340e69c3e78455b2fec6914eb31b65455efc3ebf056e51e54563",
+        "representative-frames/four-dot-yellow-trigger.png": "0f73d9d34ec3f4e67cbbf18111c86a81d8b5f4795dc20add916ef884d676d7ce",
+        "representative-frames/linked-ring-activating.png": "463977378a8cb76361cdd58c1d67999d0887bf7b4e90dc14291b0fe03c4b2b33",
+        "representative-frames/strong-active-machine.png": "94c6cf76ef80f3ce91b338176a128edaa1227118385751f9f94c5d60c64169cf",
+        "closeups/four-dot-blue-clean.png": "a261e6df52e92cc9b7185ff06ea68586a7b76add8b49acd7675415d79e382e9b",
+        "closeups/four-dot-yellow-clean.png": "6f02b3fccc2d01076b6b744a853e31f623614e7809cdf80e7f8ba7458b93f427",
+        "closeups/lever-after.png": "c7a9396c891e1e11d91d270e69f448740b7e80d93ac3c488733a595dd22c1b3e",
+        "closeups/lever-before.png": "e8171f1ab36457e71044ed9f8f307560f7af5fede242afe0f239c46bc15d69ea",
+        "closeups/upper-ring-dormant.png": "7105f76b1b04609830f86c0163f354c52b4387037726bf613750a52486c42b55",
+        "closeups/upper-ring-linked.png": "e04bd90ef5aebee6ee520d0322a1cf367bb47320d5d2f299e65f3ac84bd4e7e6"
+      }
+    },
+    "promo_media_contract": {
+      "status": "PASS",
+      "detail": {
+        "video": "h264",
+        "audio": "aac",
+        "width": 768,
+        "height": 1152,
+        "fps": "30/1",
+        "frames": 420,
+        "duration": 14.0,
+        "sample_rate": 48000
+      }
+    },
+    "full_decode": {
+      "status": "PASS",
+      "detail": ""
+    },
+    "baseline_comparison": {
+      "status": "PASS",
+      "detail": {
+        "video": "h264",
+        "audio": null,
+        "width": 1536,
+        "height": 1152,
+        "fps": "30/1",
+        "frames": 240,
+        "duration": 8.0,
+        "sample_rate": 0
+      }
+    },
+    "approved_audio_unchanged": {
+      "status": "PASS",
+      "detail": {
+        "track": "unknown-process:cold_concrete_anatomy",
+        "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+        "track_approval": "APPROVED",
+        "cue": "revelation_a",
+        "cue_approval": "APPROVED",
+        "actual_start": 5.0,
+        "actual_end": 19.0,
+        "loudness": {
+          "integrated_lufs": -16.03,
+          "true_peak_db": -2.78,
+          "loudness_range_lu": 5.0
+        },
+        "event_markers": {
+          "startup_lever_clunk": 1.15,
+          "gauge_wake": 1.75,
+          "blue_stage": 2.75,
+          "green_stage": 4.15,
+          "yellow_link_trigger": 5.45,
+          "linked_ring_activation": 5.72
+        },
+        "dedicated_sfx_added": false,
+        "result": "PASS"
+      }
+    },
+    "audio_levels": {
+      "status": "PASS",
+      "detail": {
+        "integrated_lufs": -16.03,
+        "true_peak_db": -2.78,
+        "loudness_range_lu": 5.0
+      }
+    },
+    "clean_native_render": {
+      "status": "PASS",
+      "detail": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nMF018B_R1_NATIVE_OK frames=420 state={\"containment\":0.5,\"controls\":{\"coolant_dial\":0.42,\"field_dial\":0.78,\"startup_lever\":1.0},\"field_strength\":0.9,\"indicator_stage\":1.0,\"linked_ring_activation\":1.0,\"machine_state\":\"CRITICAL\",\"pressure\":0.86,\"reactor_energy\":0.895,\"startup_progress\":1.0,\"temperature\":0.85,\"warning_level\":0.92}"
+    },
+    "motion_coherence_preserved": {
+      "status": "PASS",
+      "detail": {
+        "chamber_delta": 40.53428943089431,
+        "adjacent_delta": 23.81494358974359
+      }
+    },
+    "promo_scene_separation": {
+      "status": "PASS",
+      "detail": {
+        "scene": {
+          "path": "godot/mf018b_r1_pulp_scene.tscn",
+          "sha256": "9a60b061a6a51d698f97c932253914cf452eb64d2d7923cf5839a7da2376ff31",
+          "standalone_probe": "PASS",
+          "promo_driver_separate": true
+        },
+        "driver_optional": true
+      }
+    },
+    "no_gameplay_or_publication": {
+      "status": "PASS",
+      "detail": {
+        "gameplay": false,
+        "published": false,
+        "human": "PENDING_HUMAN"
+      }
+    }
+  },
+  "metrics": {
+    "ring_min_large_distance": 41.47650904675936,
+    "ring_min_large_small_distance": 31.05935095433318,
+    "four_dot_clearances": [
+      40.24590163934431,
+      33.20765027322409,
+      26.16939890710387,
+      19.131147540983648
+    ],
+    "lever": {
+      "before_local": [
+        48.47480106100796,
+        35.51458885941645
+      ],
+      "after_local": [
+        91.5,
+        78.5
+      ],
+      "x_delta": 43.03,
+      "y_delta": 42.99
+    },
+    "gauge_delta": 5.974051069703243,
+    "colors": {
+      "blue_pixels": 444,
+      "green_pixels": 882,
+      "yellow_pixels": 856
+    },
+    "ring_link": {
+      "pre": 259,
+      "post": 755
+    },
+    "elapsed_ms": 39974
+  },
+  "published": false
+}

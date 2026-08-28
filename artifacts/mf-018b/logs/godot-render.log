@@ -1,0 +1,3 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+MF018B_NATIVE_SCENE_OK frames=420 signals=105 state={"containment":0.726580093696063,"controls":{"containment_switch":1.0,"coolant_dial":0.56,"emergency_lever":0.0,"field_dial":0.8},"field_strength":0.749119750143832,"machine_state":"UNSTABLE","pressure":0.552474726719816,"reactor_energy":0.796839812607874,"temperature":0.517979781375853,"warning_level":0.526969672063779}

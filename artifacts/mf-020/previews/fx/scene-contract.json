@@ -1,0 +1,65 @@
+{
+  "slice": "MF-020",
+  "backend": "BLENDER",
+  "stage": "fx",
+  "seed": 200020,
+  "engine": "BLENDER_EEVEE",
+  "samples": 16,
+  "resolution": [
+    768,
+    1152
+  ],
+  "fps": 30,
+  "frames": 300,
+  "shot_id": "reactor_approach_hero_v1",
+  "camera": {
+    "name": "CinematicHeroCamera",
+    "lens_mm": 46.0,
+    "move": "slow_push_with_subtle_rightward_orbit",
+    "single_shot": true
+  },
+  "production_stage_order": [
+    "CONCEPT",
+    "BLOCKOUT",
+    "DETAIL",
+    "LIGHTING",
+    "ANIMATION_FX",
+    "FINAL_RENDER",
+    "FINALIZATION"
+  ],
+  "events_seconds": {
+    "lever_engages": 1.2,
+    "lever_locked": 2.2,
+    "gauges_wake": 1.8,
+    "warning_amber": 2.8,
+    "warning_red": 3.6,
+    "pressure_release": 4.4,
+    "energy_forms": 4.8,
+    "collar_response": 5.3,
+    "full_power": 7.3,
+    "final_hold": 8.3
+  },
+  "objects": {
+    "reactor": "GlassChamber",
+    "console": "AnalogConsole",
+    "gauges": 3,
+    "lever": "StartupLeverHinge",
+    "ring_lamps": 7,
+    "collar": "MotorizedCollar",
+    "energy_filaments": 7
+  },
+  "mechanical_logic": {
+    "lever_hinge": true,
+    "gauge_pivots": true,
+    "mounted_warning_lamps": true,
+    "pressure_precedes_energy": true,
+    "energy_inside_chamber": true,
+    "collar_response_after_energy": true
+  },
+  "fx": {
+    "steam_volumes": 4,
+    "contained_sparks": 9,
+    "bounded_compositor_glow": true
+  },
+  "godot_dependency": false
+}

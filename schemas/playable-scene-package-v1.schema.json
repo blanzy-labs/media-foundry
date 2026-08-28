@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "playable-scene-package-v1.schema.json",
+  "title": "Playable Scene Package v1",
+  "type": "object",
+  "required": ["contract", "package", "visual_states", "state_variables", "interaction_points", "signals", "audio_events", "animations", "cameras", "assets", "dependencies", "ownership", "gameplay_implemented", "portable_paths"],
+  "properties": {
+    "contract": {"const": "playable_scene_package_v1"},
+    "package": {"type": "object", "required": ["id", "version", "source_commit", "scene_path", "scene_hash", "base_script", "promo_driver", "promo_driver_optional"]},
+    "visual_states": {"type": "array", "minItems": 4, "uniqueItems": true},
+    "state_variables": {"type": "array", "minItems": 1},
+    "interaction_points": {"type": "array", "minItems": 1},
+    "signals": {"type": "array", "minItems": 1, "uniqueItems": true},
+    "audio_events": {"type": "array", "minItems": 1},
+    "animations": {"type": "array", "minItems": 1},
+    "cameras": {"type": "array", "minItems": 1},
+    "assets": {"type": "array", "minItems": 1},
+    "dependencies": {"type": "object"},
+    "ownership": {"type": "object"},
+    "gameplay_implemented": {"const": false},
+    "portable_paths": {"const": true}
+  },
+  "additionalProperties": true
+}

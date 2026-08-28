@@ -1,0 +1,142 @@
+{
+  "slice": "MF-018B-R4",
+  "config": "/home/blanzy/projects/media-foundry/config/mf018b-r4-outline-polish.json",
+  "config_sha256": "d142fd048cfcf9c86ecd82c81193aedef19db47aab8285d5478d8a3349e8026a",
+  "seed": 1801959,
+  "baseline": {
+    "artifact": "artifacts/mf-018b-r3/final-test.mp4",
+    "artifact_sha256": "610ae3b11d3d70e8823876add19752421a8cb627872bc44bbfc07314c42af47a",
+    "scene": "godot/mf018b_r3_pulp_scene.tscn",
+    "scene_sha256": "80c4e632e97a86e3ba68a548b1984d88f1aedc5f4bfe5de0175e9f36f814c711",
+    "script": "godot/mf018b_r3_pulp_scene.gd",
+    "script_sha256": "7b2d9bcc242b4412c41f68685b640cb43027dc2798291d14fe6491b1dd7e9583",
+    "config": "config/mf018b-r3-display-cleanup.json",
+    "config_sha256": "cdee43ff8f70045b1638e75c2c1254d3700e2d2854e6ddb13a0f1d20ce7bf297",
+    "manifest": "artifacts/mf-018b-r3/render-manifest.json",
+    "manifest_sha256": "fc06469f3fc4df5780aba00a35172a44a24c951af5694812bf7d2e87a4fb6987",
+    "evidence": "artifacts/mf-018b-r3/representative-frames/contact-sheet.png",
+    "evidence_sha256": "5932565ae812425754adfa80b5a34ae7aefafd62f3cc3b8cc5a7727735446f49",
+    "handoff": "handoff/playable-scene/mf018b-r1/manifest.json",
+    "handoff_sha256": "dcf9670970fccc4797d0adb49a69e60162213838fff3ec43fb72f0ee163f0a94"
+  },
+  "scene": {
+    "path": "godot/mf018b_r4_pulp_scene.tscn",
+    "sha256": "90e3d617f22f4a7f173a396d0aaff26fcebd417b391089f0f3f5ef87c76a00d4",
+    "standalone_probe": "PASS",
+    "r1_driver_reused": true
+  },
+  "inherited_handoff": {
+    "path": "handoff/playable-scene/mf018b-r1/manifest.json",
+    "sha256": "dcf9670970fccc4797d0adb49a69e60162213838fff3ec43fb72f0ee163f0a94",
+    "validation": "PASS",
+    "interface_changed": false
+  },
+  "outline_contract": {
+    "legacy_partial_perimeter_present": false,
+    "clean_perimeter_id": "r3_complete_control_outline",
+    "clean_perimeter_count": 1,
+    "clean_perimeter_path": "M51 613 L228 575 L245 625 L240 946 L52 982 Z",
+    "clean_perimeter_closed": true,
+    "panel_shape_changed": false,
+    "internal_controls_changed": false,
+    "replacement_props_added": 0
+  },
+  "preservation_contract": {
+    "r1_promo_driver_reused": true,
+    "startup_logic_changed": false,
+    "indicator_logic_changed": false,
+    "reactor_behavior_changed": false,
+    "information_display_changed": false,
+    "audio_changed": false
+  },
+  "video": {
+    "width": 768,
+    "height": 1152,
+    "fps": 30,
+    "duration_seconds": 14.0,
+    "frame_count": 420
+  },
+  "audio": {
+    "track": "unknown-process:cold_concrete_anatomy",
+    "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "track_approval": "APPROVED",
+    "cue": "revelation_a",
+    "cue_approval": "APPROVED",
+    "actual_start": 5.0,
+    "actual_end": 19.0,
+    "loudness": {
+      "integrated_lufs": -16.03,
+      "true_peak_db": -2.78,
+      "loudness_range_lu": 5.0
+    },
+    "event_markers": {
+      "startup_lever_clunk": 1.15,
+      "gauge_wake": 1.75,
+      "blue_stage": 2.75,
+      "green_stage": 4.15,
+      "yellow_link_trigger": 5.45,
+      "linked_ring_activation": 5.72
+    },
+    "changed_from_r3": false,
+    "result": "PASS"
+  },
+  "outputs": {
+    "final-test.mp4": {
+      "sha256": "930b0f8bcf264a1ec3af5778e92cdb1958a10de826a6b7c9d670fb88ffed7d2a",
+      "bytes": 2563750
+    },
+    "representative-frames/contact-sheet.png": {
+      "sha256": "9c9c64c5f19862ffbf73eca1a32830c7875543b1d86e6835ac2a1afb8d60b6ce",
+      "bytes": 276658
+    },
+    "comparison/r3-vs-r4-panel-closeup.png": {
+      "sha256": "b830ab5f4a2d06da1ae459e4dc38aab1fa1f76cfe601239279e7ab1f75cc8507",
+      "bytes": 210708
+    },
+    "comparison/r3-vs-r4.png": {
+      "sha256": "0bdf2eea833b52ecd4c74651a0b5e5167050422f5a27fd751246b28cdf464864",
+      "bytes": 160476
+    },
+    "comparison/r3-vs-r4.mp4": {
+      "sha256": "e1fc1bf5e25d0ce1dc9755864da80837f98ca6c48e409b4487a0cacbfe744967",
+      "bytes": 1700671
+    },
+    "representative-frames/full-scene-polished.png": {
+      "sha256": "58e53dfdc19baf72a40616439ba048761b7838ff034a62d1dc055de1d56b6e47",
+      "bytes": 164394
+    },
+    "representative-frames/startup-panel-preserved.png": {
+      "sha256": "864e7434fe76e7e1dc6ec8f5df5900474049d34df6ab623bc3be96bfa8183217",
+      "bytes": 167758
+    },
+    "representative-frames/indicator-sequence-preserved.png": {
+      "sha256": "dc5fda51e790523545d8e9471aadb8bd70be2fae52c8a7754826ddf671290de3",
+      "bytes": 170655
+    },
+    "representative-frames/clean-outline-active.png": {
+      "sha256": "0043151e70ec2257699d2c4c26f6589faf6076686917a7f929e36336b2fd5f49",
+      "bytes": 235127
+    },
+    "representative-frames/final-active-machine.png": {
+      "sha256": "b9ccee54f7498f6376f847ed0c6b60f487697a56c945e86397f9cc7b6b455b0e",
+      "bytes": 257120
+    },
+    "closeups/cleaned-control-panel.png": {
+      "sha256": "2c36890586e1c0bb58e35df979223747fc4d358fd9db466bde5dc40d8cfc0416",
+      "bytes": 174025
+    },
+    "closeups/previously-problematic-left-edge.png": {
+      "sha256": "cf3b1f5d1e0b331252c954b0fb293b044ca7a0bd3ad98ddc33a1908400fe312a",
+      "bytes": 144823
+    },
+    "closeups/startup-controls-preserved.png": {
+      "sha256": "a281dcc7dbda7c0117f4ec23ed37ebb580e682bfb8b549cff1865937cfe9b588",
+      "bytes": 106134
+    }
+  },
+  "elapsed_ms": 41829,
+  "human_review": "PENDING_HUMAN",
+  "release_ready": false,
+  "gameplay_implemented": false,
+  "published": false
+}

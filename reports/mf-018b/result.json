@@ -1,0 +1,604 @@
+{
+  "slice": "MF-018B",
+  "result": "TECHNICAL_PASS",
+  "release_ready": false,
+  "human_review": "PENDING_HUMAN",
+  "checks": {
+    "mf018a_preserved": {
+      "status": "PASS",
+      "detail": {
+        "artifact": "a6507e574567dd2b041981ac5f51ca7123dc700636e6cd394ccbb086d19c549b",
+        "config": "41056752e6442e1de4400a7be1b107ead9b7b4f3548a08994b2660da5b40939c"
+      }
+    },
+    "static_composition_contract": {
+      "status": "PASS",
+      "detail": {
+        "checks": {
+          "zone_vocabulary_and_geometry": "PASS",
+          "required_zone_kinds": "PASS",
+          "unique_object_ids": "PASS",
+          "semantic_role_required": "PASS",
+          "valid_visual_purpose_required": "PASS",
+          "remove_if_unnecessary_policy": "PASS",
+          "visual_hierarchy": "PASS",
+          "objects_inside_allowed_zones": "PASS",
+          "no_unexpected_frame_clipping": "PASS",
+          "preserved_negative_space": "PASS",
+          "hero_and_no_occlusion_protection": "PASS",
+          "text_safety": "PASS",
+          "long_line_guardrail": "PASS",
+          "large_shape_guardrail": "PASS",
+          "support_zone_capacity": "PASS",
+          "negative_space_not_occupancy_scored": "PASS",
+          "animation_cannot_rescue_composition": "PASS"
+        },
+        "errors": [],
+        "advisories": [],
+        "result": "PASS"
+      }
+    },
+    "playable_scene_contract": {
+      "status": "PASS",
+      "detail": {
+        "result": "PASS",
+        "checks": {
+          "contract_version": {
+            "status": "PASS",
+            "detail": null
+          },
+          "package_identity": {
+            "status": "PASS",
+            "detail": null
+          },
+          "unique_interaction_ids": {
+            "status": "PASS",
+            "detail": [
+              "coolant_dial",
+              "field_dial",
+              "containment_switch",
+              "emergency_lever"
+            ]
+          },
+          "interaction_metadata": {
+            "status": "PASS",
+            "detail": null
+          },
+          "declared_node_paths": {
+            "status": "PASS",
+            "detail": [
+              "Machines/Console/Controls/DialCoolant",
+              "Machines/Console/Controls/DialField",
+              "Machines/Console/Controls/SwitchContainment",
+              "Machines/Console/Controls/LeverEmergency",
+              "PromoCamera"
+            ]
+          },
+          "valid_state_variables": {
+            "status": "PASS",
+            "detail": [
+              "reactor_energy",
+              "temperature",
+              "containment",
+              "field_strength",
+              "pressure",
+              "warning_level"
+            ]
+          },
+          "visual_state_vocabulary": {
+            "status": "PASS",
+            "detail": null
+          },
+          "semantic_signal_names": {
+            "status": "PASS",
+            "detail": [
+              "reactor_state_changed",
+              "reactor_energy_changed",
+              "temperature_changed",
+              "containment_changed",
+              "field_strength_changed",
+              "pressure_changed",
+              "warning_level_changed",
+              "control_activated",
+              "machine_warning",
+              "machine_critical",
+              "audio_event_requested"
+            ]
+          },
+          "audio_hooks_resolve": {
+            "status": "PASS",
+            "detail": [
+              "control_dial",
+              "control_dial",
+              "switch_toggle",
+              "lever_clunk"
+            ]
+          },
+          "portable_project_paths": {
+            "status": "PASS",
+            "detail": [
+              "godot/mf018b_pulp_scene.tscn",
+              "godot/mf018b_pulp_scene.gd",
+              "godot/mf018b_promo_driver.gd",
+              "godot/mf018b_pulp_scene.tscn",
+              "godot/mf018b_pulp_scene.gd",
+              "godot/mf018b_promo_driver.gd",
+              "config/mf018b-native-pulp-scene.json",
+              "config/mf018b-native-composition.json",
+              "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3"
+            ]
+          },
+          "asset_integrity": {
+            "status": "PASS",
+            "detail": {
+              "base_scene": {
+                "exists": true,
+                "sha256": "1e4df3528e96bf5a8db019d059b60aa57e4b337e4dad4c882f74ce176215c48b"
+              },
+              "base_script": {
+                "exists": true,
+                "sha256": "dfd8874c489e49386313b28c5a02764db13db9af904eae727d26798ab3084056"
+              },
+              "promo_driver": {
+                "exists": true,
+                "sha256": "1dcebc2c040f9086c86ed31a998559e5a7957f1c96e5026f92c94587494357dc"
+              },
+              "scene_config": {
+                "exists": true,
+                "sha256": "a4d825ba29c66fe61aac010f2d4a96bf018379266b606fb0b4dea459adc8f974"
+              },
+              "composition": {
+                "exists": true,
+                "sha256": "a8ff7b8f83ece7572251ffb7438f34070e8fcc3c10c1bf4f5c52969472c74003"
+              },
+              "approved_music": {
+                "exists": true,
+                "sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf"
+              }
+            }
+          },
+          "promo_driver_separation": {
+            "status": "PASS",
+            "detail": null
+          },
+          "zero_game_foundry_dependency": {
+            "status": "PASS",
+            "detail": null
+          },
+          "ownership_boundary": {
+            "status": "PASS",
+            "detail": null
+          },
+          "base_scene_api_declared": {
+            "status": "PASS",
+            "detail": null
+          }
+        },
+        "errors": []
+      }
+    },
+    "required_failure_tests": {
+      "status": "PASS",
+      "detail": {
+        "slice": "MF-018B",
+        "result": "PASS",
+        "passed": 7,
+        "total": 7,
+        "cases": [
+          {
+            "name": "duplicate_interaction_id",
+            "expected_code": "DUPLICATE_INTERACTION_ID",
+            "observed_codes": [
+              "DUPLICATE_INTERACTION_ID"
+            ],
+            "status": "PASS"
+          },
+          {
+            "name": "missing_interaction_node",
+            "expected_code": "MISSING_INTERACTION_NODE",
+            "observed_codes": [
+              "MISSING_INTERACTION_NODE"
+            ],
+            "status": "PASS"
+          },
+          {
+            "name": "invalid_state_variable",
+            "expected_code": "INVALID_STATE_VARIABLE",
+            "observed_codes": [
+              "INVALID_STATE_VARIABLE"
+            ],
+            "status": "PASS"
+          },
+          {
+            "name": "missing_audio_hook",
+            "expected_code": "MISSING_AUDIO_HOOK",
+            "observed_codes": [
+              "MISSING_AUDIO_HOOK"
+            ],
+            "status": "PASS"
+          },
+          {
+            "name": "absolute_local_path",
+            "expected_code": "ABSOLUTE_OR_UNSAFE_PATH",
+            "observed_codes": [
+              "ABSOLUTE_OR_UNSAFE_PATH"
+            ],
+            "status": "PASS"
+          },
+          {
+            "name": "promo_dependency_in_base",
+            "expected_code": "PROMO_DEPENDENCY_IN_BASE_SCENE",
+            "observed_codes": [
+              "PROMO_DEPENDENCY_IN_BASE_SCENE"
+            ],
+            "status": "PASS"
+          },
+          {
+            "name": "unresolved_asset",
+            "expected_code": "UNRESOLVED_OR_CHANGED_ASSET",
+            "observed_codes": [
+              "UNRESOLVED_OR_CHANGED_ASSET"
+            ],
+            "status": "PASS"
+          }
+        ]
+      }
+    },
+    "portable_handoff_manifest": {
+      "status": "PASS",
+      "detail": {
+        "path": "handoff/playable-scene/mf018b/manifest.json",
+        "sha256": "b9f25ff451c503537f0b9b3565d81d954f297b85c16640b2086404b7dd9afe55"
+      }
+    },
+    "zero_game_foundry_dependency": {
+      "status": "PASS",
+      "detail": {
+        "godot": ">=4.2",
+        "game_foundry": [],
+        "external_plugins": [],
+        "heavyweight_runtime_dependencies": []
+      }
+    },
+    "ownership_boundary": {
+      "status": "PASS",
+      "detail": {
+        "media_foundry": [
+          "visual_world",
+          "scene_animation",
+          "lighting",
+          "audio_presentation",
+          "promo_driver",
+          "interaction_metadata"
+        ],
+        "game_foundry": [
+          "input",
+          "objectives",
+          "rules",
+          "score",
+          "difficulty",
+          "progression",
+          "levels",
+          "win_fail",
+          "save_data",
+          "platform_integration"
+        ]
+      }
+    },
+    "base_scene_driver_separation": {
+      "status": "PASS",
+      "detail": {
+        "path": "godot/mf018b_pulp_scene.tscn",
+        "sha256": "1e4df3528e96bf5a8db019d059b60aa57e4b337e4dad4c882f74ce176215c48b",
+        "promo_driver_separate": true,
+        "standalone_probe": "PASS"
+      }
+    },
+    "scene_load_nodes_setters_signals": {
+      "status": "PASS",
+      "detail": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nMF018B_CONTRACT_PROBE_OK nodes=4 signals=7 driver_loaded=false"
+    },
+    "interaction_inventory": {
+      "status": "PASS",
+      "detail": [
+        "coolant_dial",
+        "field_dial",
+        "containment_switch",
+        "emergency_lever"
+      ]
+    },
+    "state_variable_inventory": {
+      "status": "PASS",
+      "detail": [
+        "reactor_energy",
+        "temperature",
+        "containment",
+        "field_strength",
+        "pressure",
+        "warning_level"
+      ]
+    },
+    "signal_inventory": {
+      "status": "PASS",
+      "detail": [
+        "reactor_state_changed",
+        "reactor_energy_changed",
+        "temperature_changed",
+        "containment_changed",
+        "field_strength_changed",
+        "pressure_changed",
+        "warning_level_changed",
+        "control_activated",
+        "machine_warning",
+        "machine_critical",
+        "audio_event_requested"
+      ]
+    },
+    "audio_event_inventory": {
+      "status": "PASS",
+      "detail": [
+        {
+          "id": "machine_wake",
+          "trigger": "DORMANT_TO_STABLE",
+          "source_asset_id": "approved_music",
+          "binding": "promo_marker_or_external_call"
+        },
+        {
+          "id": "reactor_unstable",
+          "trigger": "UNSTABLE",
+          "source_asset_id": "approved_music",
+          "binding": "audio_event_requested"
+        },
+        {
+          "id": "critical_tease",
+          "trigger": "CRITICAL",
+          "source_asset_id": "approved_music",
+          "binding": "audio_event_requested"
+        },
+        {
+          "id": "steam_release",
+          "trigger": "pressure_above_0.35",
+          "source_asset_id": "approved_music",
+          "binding": "callable_hook_no_dedicated_sfx"
+        },
+        {
+          "id": "control_dial",
+          "trigger": "rotary_control",
+          "source_asset_id": "approved_music",
+          "binding": "callable_hook_no_dedicated_sfx"
+        },
+        {
+          "id": "switch_toggle",
+          "trigger": "toggle_control",
+          "source_asset_id": "approved_music",
+          "binding": "callable_hook_no_dedicated_sfx"
+        },
+        {
+          "id": "lever_clunk",
+          "trigger": "emergency_lever",
+          "source_asset_id": "approved_music",
+          "binding": "audio_event_requested_no_dedicated_sfx"
+        }
+      ]
+    },
+    "approved_audio": {
+      "status": "PASS",
+      "detail": {
+        "track_id": "cold_concrete_anatomy",
+        "qualified_id": "unknown-process:cold_concrete_anatomy",
+        "track_path": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+        "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+        "track_approval": "APPROVED",
+        "cue_id": "revelation_a",
+        "cue_approval": "APPROVED",
+        "usable_start": 5.0,
+        "usable_end": 49.0,
+        "actual_start": 5.0,
+        "actual_end": 19.0,
+        "direction": "music_led_object_event_hooks_documented_no_extra_sfx",
+        "loudness": {
+          "integrated_lufs": -16.03,
+          "true_peak_db": -2.78,
+          "loudness_range_lu": 5.0
+        },
+        "object_event_hooks": [
+          "machine_wake",
+          "reactor_unstable",
+          "critical_tease",
+          "steam_release",
+          "control_dial",
+          "switch_toggle",
+          "lever_clunk"
+        ],
+        "dedicated_sfx_embedded": false,
+        "result": "PASS"
+      }
+    },
+    "audio_levels": {
+      "status": "PASS",
+      "detail": {
+        "integrated_lufs": -16.03,
+        "true_peak_db": -2.78,
+        "loudness_range_lu": 5.0
+      }
+    },
+    "artifact_integrity": {
+      "status": "PASS",
+      "detail": {
+        "final-test.mp4": "f629364bf73ebb9a16b181ea43221530ed428f009f2e1093a572447d5ca20d42",
+        "representative-frames/contact-sheet.png": "46e27378c9591120ffafd77b3ecdf9757f42c47d2651724aec266ae6d043f4c8",
+        "interaction-diagnostic/controls-and-state.png": "56d1567ef143a279ea8378e10ffd6034e954b5f11399f555c07fe4613fe57c0e",
+        "comparison/mf018a-vs-mf018b.png": "bf60e390185152d0bba60a51834dce92b3d1bbfa50ed1be6b524f5d3e5f6e4a7",
+        "comparison/mf018a-vs-mf018b.mp4": "aa6417fc01b311a08ed62462e39dcb2c5214e8936495e49b650f46eed194b85b",
+        "representative-frames/dormant.png": "5a3f31cc27927d1bda9defcad36a7f134994d537d3248591616572c1d6cc923f",
+        "representative-frames/stable.png": "ca701a2d84ee532b5b19581f890f43b42054dfbd9dde23331a4ffac9a3d01ce9",
+        "representative-frames/console-detail.png": "41deb9d8aae7b613634e5f5ae944e10de18ee1c2e10591c967a45cfcf39fa233",
+        "representative-frames/reactor-activation.png": "0a42d63f2cbfbdeabfd5c7860915dc0fc2a7478767ca9c0acf936ed3aa0b2d83",
+        "representative-frames/unstable.png": "c062efeb39d8f497735c8817668a1fa1278093d05ff2f77c79f91b0cf232d8fe",
+        "representative-frames/critical.png": "1bb36d7f85c7f2b0a09186c1ef5a0b8b12586c75697f0cbffdbf476f089d1d92",
+        "representative-frames/final-promo-state.png": "711d9fcb6fda4545bc7f3a67d155b0317e8229269dd15958fbd43e01489b438f",
+        "static-keyframes/critical.png": "1bb36d7f85c7f2b0a09186c1ef5a0b8b12586c75697f0cbffdbf476f089d1d92",
+        "static-keyframes/dormant.png": "5a3f31cc27927d1bda9defcad36a7f134994d537d3248591616572c1d6cc923f",
+        "static-keyframes/stable.png": "ca701a2d84ee532b5b19581f890f43b42054dfbd9dde23331a4ffac9a3d01ce9",
+        "static-keyframes/unstable.png": "c062efeb39d8f497735c8817668a1fa1278093d05ff2f77c79f91b0cf232d8fe"
+      }
+    },
+    "promo_media_contract": {
+      "status": "PASS",
+      "detail": {
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 768,
+        "height": 1152,
+        "fps": "30/1",
+        "frames": 420,
+        "duration": 14.0,
+        "sample_rate": 48000
+      }
+    },
+    "full_audio_video_decode": {
+      "status": "PASS",
+      "detail": ""
+    },
+    "native_v1_refined_comparison": {
+      "status": "PASS",
+      "detail": {
+        "video_codec": "h264",
+        "audio_codec": null,
+        "width": 1536,
+        "height": 1152,
+        "fps": "30/1",
+        "frames": 120,
+        "duration": 4.0,
+        "sample_rate": 0
+      }
+    },
+    "four_static_states": {
+      "status": "PASS",
+      "detail": [
+        "dormant",
+        "stable",
+        "unstable",
+        "critical"
+      ]
+    },
+    "state_progression_visible": {
+      "status": "PASS",
+      "detail": {
+        "dormant_stable": 12.272218303915896,
+        "stable_unstable": 10.87009420512635,
+        "unstable_critical": 9.369153058087385
+      }
+    },
+    "reactor_remains_hero": {
+      "status": "PASS",
+      "detail": {
+        "dormant": 1.196866251374109,
+        "stable": 1.3609465046828082,
+        "unstable": 1.444485892953052,
+        "critical": 1.5095717210614588
+      }
+    },
+    "reactor_energy_contained": {
+      "status": "PASS",
+      "detail": {
+        "inside": 18277,
+        "adjacent": 696,
+        "ratio": 26.26
+      }
+    },
+    "lamps_attached_to_machine_regions": {
+      "status": "PASS",
+      "detail": {
+        "ring": 2462,
+        "console": 971,
+        "total": 4009
+      }
+    },
+    "diagnostic_excluded_from_promo": {
+      "status": "PASS",
+      "detail": {
+        "promo_cyan_pixels": 0
+      }
+    },
+    "measured_visual_refinement": {
+      "status": "PASS",
+      "detail": {
+        "mf018a": {
+          "edge_mean": 2.521126333897183,
+          "quantized_colors": 1008,
+          "bright_ratio": 0.07712244104456019
+        },
+        "mf018b": {
+          "edge_mean": 3.743713349791637,
+          "quantized_colors": 1292,
+          "bright_ratio": 0.11354686595775464
+        },
+        "ratios": {
+          "edge_mean": 1.485,
+          "quantized_colors": 1.282,
+          "bright_ratio": 1.472
+        }
+      }
+    },
+    "native_render_clean": {
+      "status": "PASS",
+      "detail": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nMF018B_NATIVE_SCENE_OK frames=420 signals=105 state={\"containment\":0.726580093696063,\"controls\":{\"containment_switch\":1.0,\"coolant_dial\":0.56,\"emergency_lever\":0.0,\"field_dial\":0.8},\"field_strength\":0.749119750143832,\"machine_state\":\"UNSTABLE\",\"pressure\":0.552474726719816,\"reactor_energy\":0.796839812607874,\"temperature\":0.517979781375853,\"warning_level\":0.526969672063779}"
+    },
+    "deterministic_state_control": {
+      "status": "PASS",
+      "detail": {
+        "seed": 1801958,
+        "raw_frames_retained": false
+      }
+    },
+    "performance_web_advisory": {
+      "status": "PASS",
+      "detail": {
+        "elapsed_ms": 42895,
+        "required_core_bytes": 14903,
+        "declared_asset_bytes": 4370842,
+        "web": {
+          "status": "LIKELY_COMPATIBLE",
+          "renderer": "2D_SVG_RASTER_PATH",
+          "custom_shaders": 0,
+          "external_plugins": 0,
+          "largest_asset_bytes": 4347628,
+          "export_tested": false
+        }
+      }
+    },
+    "no_publication": {
+      "status": "PASS",
+      "detail": {
+        "published": false,
+        "human": "PENDING_HUMAN"
+      }
+    }
+  },
+  "metrics": {
+    "state_motion": {
+      "dormant_stable": 12.272218303915896,
+      "stable_unstable": 10.87009420512635,
+      "unstable_critical": 9.369153058087385
+    },
+    "hierarchy": {
+      "dormant": 1.196866251374109,
+      "stable": 1.3609465046828082,
+      "unstable": 1.444485892953052,
+      "critical": 1.5095717210614588
+    },
+    "energy_binding": {
+      "inside": 18277,
+      "adjacent": 696,
+      "ratio": 26.26
+    },
+    "visual_refinement": {
+      "edge_mean": 1.485,
+      "quantized_colors": 1.282,
+      "bright_ratio": 1.472
+    },
+    "elapsed_ms": 42895
+  },
+  "published": false
+}

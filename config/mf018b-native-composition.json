@@ -1,0 +1,33 @@
+{
+  "slice": "MF-018B",
+  "version": 1,
+  "scene_id": "refined_native_pulp_machine_room",
+  "complex_scene": true,
+  "seed": 1801958,
+  "canvas": {"width": 768, "height": 1152},
+  "composition": {"required": true, "static_states": ["dormant", "stable", "unstable", "critical"]},
+  "gate": {"state": "COMPOSITION_PENDING", "human_approval_required": true},
+  "approval": {"human_status": "PENDING_HUMAN", "reviewer": null},
+  "hierarchy": {"primary": "refined_reactor", "secondary": "refined_console", "tertiary": ["rear_cylinders", "wall_pipe", "floor_deck"]},
+  "policies": {"empty_region_is_defect": false, "animation_may_rescue_composition": false, "allow_unmotivated_hero_occlusion": false, "density_metrics_are_advisory": true, "new_objects_require_declared_purpose": true},
+  "zones": [
+    {"id": "background_full", "kind": "background_zone", "x": 0.0, "y": 0.0, "width": 1.0, "height": 1.0},
+    {"id": "hero_center_right", "kind": "hero_zone", "x": 0.43, "y": 0.14, "width": 0.50, "height": 0.75},
+    {"id": "hero_protection", "kind": "no_occlusion_zone", "x": 0.43, "y": 0.14, "width": 0.50, "height": 0.75},
+    {"id": "support_left", "kind": "support_zone", "x": 0.035, "y": 0.43, "width": 0.32, "height": 0.44},
+    {"id": "foreground_bottom", "kind": "foreground_zone", "x": 0.0, "y": 0.89, "width": 1.0, "height": 0.11},
+    {"id": "negative_space_upper_left", "kind": "negative_space_zone", "x": 0.045, "y": 0.10, "width": 0.28, "height": 0.28, "preserve": true},
+    {"id": "future_text_safe", "kind": "text_safe_zone", "x": 0.08, "y": 0.035, "width": 0.84, "height": 0.055}
+  ],
+  "support_zone_capacity": {"support_left": {"recommended_major_objects": 1, "hard_maximum_major_objects": 2}},
+  "objects": [
+    {"id": "room_shell", "semantic_role": "background_structure", "purpose": ["establish_location", "support_perspective"], "visual_priority": "tertiary", "allowed_zone": "background_full", "geometry": {"kind": "rect", "x": 0.0, "y": 0.0, "width": 1.0, "height": 1.0}, "may_occlude": [], "may_not_occlude": ["refined_reactor", "future_text_safe"], "remove_if_no_visual_purpose": true, "major": false, "estimated_contrast": 0.22},
+    {"id": "refined_reactor", "semantic_role": "hero", "purpose": ["support_story", "communicate_machine_state", "provide_light", "guide_eye", "establish_scale"], "visual_priority": "primary", "allowed_zone": "hero_center_right", "geometry": {"kind": "rect", "x": 0.44, "y": 0.17, "width": 0.49, "height": 0.70}, "may_occlude": ["background_full"], "may_not_occlude": ["future_text_safe"], "remove_if_no_visual_purpose": true, "major": true, "estimated_contrast": 0.97},
+    {"id": "refined_console", "semantic_role": "machine_support", "purpose": ["communicate_machine_state", "establish_scale", "establish_depth", "support_story"], "visual_priority": "secondary", "allowed_zone": "support_left", "geometry": {"kind": "rect", "x": 0.047, "y": 0.475, "width": 0.30, "height": 0.395}, "may_occlude": ["background_full"], "may_not_occlude": ["refined_reactor", "hero_protection", "future_text_safe"], "remove_if_no_visual_purpose": true, "major": true, "estimated_contrast": 0.63},
+    {"id": "rear_cylinders", "semantic_role": "depth_element", "purpose": ["establish_depth", "establish_scale", "support_perspective"], "visual_priority": "tertiary", "allowed_zone": "background_full", "geometry": {"kind": "rect", "x": 0.34, "y": 0.20, "width": 0.08, "height": 0.65}, "may_occlude": ["background_full"], "may_not_occlude": ["refined_reactor", "hero_protection", "future_text_safe", "negative_space_upper_left"], "remove_if_no_visual_purpose": true, "major": false, "estimated_contrast": 0.25},
+    {"id": "wall_pipe", "semantic_role": "depth_element", "purpose": ["establish_location", "support_perspective"], "visual_priority": "tertiary", "allowed_zone": "background_full", "geometry": {"kind": "rect", "x": 0.015, "y": 0.38, "width": 0.03, "height": 0.48}, "may_occlude": ["background_full"], "may_not_occlude": ["refined_reactor", "hero_protection", "future_text_safe", "negative_space_upper_left"], "remove_if_no_visual_purpose": true, "major": false, "estimated_contrast": 0.3},
+    {"id": "floor_deck", "semantic_role": "foreground_frame", "purpose": ["create_foreground_depth", "frame_hero", "support_perspective"], "visual_priority": "tertiary", "allowed_zone": "foreground_bottom", "geometry": {"kind": "rect", "x": 0.0, "y": 0.91, "width": 1.0, "height": 0.09}, "may_occlude": ["background_full"], "may_not_occlude": ["refined_reactor", "hero_protection", "future_text_safe"], "remove_if_no_visual_purpose": true, "major": false, "estimated_contrast": 0.5}
+  ],
+  "advisory_metrics": ["luma_variance", "region_occupancy", "edge_density", "object_count"],
+  "future_critic_hook": ["hierarchy", "occlusion", "balance", "visual_noise", "depth", "purpose", "negative_space", "perspective", "readability"]
+}

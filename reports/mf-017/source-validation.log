@@ -1,0 +1,45 @@
+{
+  "result": "PASS",
+  "state": "PASS",
+  "configured_strategy": "HYBRID",
+  "resolved_strategy": "HYBRID",
+  "recommended_strategy": "HYBRID",
+  "recommendation_reasons": [
+    "high illustration or surface richness is required",
+    "meaningful local motion or lighting remains required"
+  ],
+  "checks": {
+    "source_strategy_required": "PASS",
+    "known_source_strategy": "PASS",
+    "quality_intent": "PASS",
+    "bounded_assessment": "PASS",
+    "human_override": "PASS",
+    "fallback_policy": "PASS",
+    "no_silent_fallback": "PASS",
+    "plate_contract": "PASS",
+    "required_plate_exists": "PASS",
+    "plate_approval_vocabulary": "PASS",
+    "plate_provenance": "PASS",
+    "plate_hash_integrity": "PASS",
+    "production_plate_approved": "NOT_REQUIRED",
+    "plate_layer_and_region_plan": "PASS",
+    "authentic_media_exists": "NOT_REQUIRED",
+    "composition_gate_bound": "PASS"
+  },
+  "warnings": [
+    {
+      "code": "PRODUCTION_PLATE_PENDING",
+      "approval": "REVIEW_REQUIRED"
+    }
+  ],
+  "errors": [],
+  "asset": {
+    "path": "/home/blanzy/projects/media-foundry/media/visual/plates/mf017/pulp-lab-development-v1.png",
+    "exists": true,
+    "declared_sha256": "5fa2143ec5a71b57307835bbfc09940adbbf48929cb90fd271e680053a924aa5",
+    "actual_sha256": "5fa2143ec5a71b57307835bbfc09940adbbf48929cb90fd271e680053a924aa5",
+    "declared_approval": "REVIEW_REQUIRED",
+    "effective_approval": "REVIEW_REQUIRED"
+  },
+  "release_ready": false
+}

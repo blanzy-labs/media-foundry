@@ -1,0 +1,819 @@
+{
+  "slice": "MF-019",
+  "result": "TECHNICAL_PASS",
+  "passed": 32,
+  "total": 32,
+  "human_backend_preference": "PENDING_HUMAN",
+  "release_ready": false,
+  "checks": {
+    "bounded_backend_vocabulary": {
+      "status": "PASS",
+      "detail": [
+        "GODOT",
+        "BLENDER",
+        "COMPARE"
+      ]
+    },
+    "godot_default_and_explicit_compare": {
+      "status": "PASS",
+      "detail": {
+        "undeclared": "GODOT",
+        "mf019": "COMPARE"
+      }
+    },
+    "portable_backend_configuration": {
+      "status": "PASS",
+      "detail": {
+        "backend": "COMPARE",
+        "required_capabilities": [
+          "semantic_ab_comparison",
+          "shared_finalization"
+        ],
+        "fallback": {
+          "allowed": false,
+          "backends": []
+        },
+        "blender": {
+          "template": "templates/blender/pulp-reactor-v1.blend",
+          "builder_script": "scripts/blender/build_and_render.py",
+          "render_engine_family": "realtime_eevee",
+          "samples": 16,
+          "output_format": "PNG",
+          "transparent": false,
+          "resume": true
+        }
+      }
+    },
+    "backend_capability_declarations": {
+      "status": "PASS",
+      "detail": {
+        "GODOT": {
+          "enabled": true,
+          "frame_sequence_render": true,
+          "capabilities": [
+            "native_interactivity",
+            "game_ready",
+            "fast_batch_render",
+            "procedural_ui",
+            "frame_sequence_render",
+            "web_game_precursor"
+          ]
+        },
+        "BLENDER": {
+          "enabled": true,
+          "frame_sequence_render": true,
+          "capabilities": [
+            "complex_materials",
+            "volumetric_lighting",
+            "character_rigging",
+            "cinematic_render",
+            "frame_sequence_render",
+            "procedural_scene_build"
+          ]
+        },
+        "COMPARE": {
+          "enabled": true,
+          "frame_sequence_render": true,
+          "capabilities": [
+            "semantic_ab_comparison",
+            "frame_sequence_render",
+            "shared_finalization"
+          ]
+        }
+      }
+    },
+    "blender_preflight": {
+      "status": "PASS",
+      "detail": {
+        "slice": "MF-019",
+        "result": "PASS",
+        "checks": {
+          "binary_exists": true,
+          "ffmpeg": true,
+          "ffprobe": true,
+          "headless_background": true,
+          "python_scripting": true,
+          "realtime_engine": true,
+          "required_font": true,
+          "output_writable": true
+        },
+        "blender": {
+          "executable": "/home/blanzy/.local/opt/blender-5.2.0/blender",
+          "version": "5.2.0 LTS",
+          "python": "3.13.13",
+          "engines": [
+            "BLENDER_EEVEE"
+          ],
+          "selected_engine": "BLENDER_EEVEE",
+          "device": "CPU_HEADLESS_DEFAULT"
+        },
+        "font": "godot/fonts/Lato-Regular.ttf",
+        "ffmpeg": "/usr/bin/ffmpeg",
+        "ffprobe": "/usr/bin/ffprobe",
+        "headless_returncode": 0,
+        "elapsed_ms": 602
+      }
+    },
+    "blender_version_engine_recorded": {
+      "status": "PASS",
+      "detail": {
+        "executable": "/home/blanzy/.local/opt/blender-5.2.0/blender",
+        "version": "5.2.0 LTS",
+        "python": "3.13.13",
+        "engines": [
+          "BLENDER_EEVEE"
+        ],
+        "selected_engine": "BLENDER_EEVEE",
+        "device": "CPU_HEADLESS_DEFAULT"
+      }
+    },
+    "template_and_builder_integrity": {
+      "status": "PASS",
+      "detail": {
+        "template_sha256": "6668c12086c36eb68e29bc6fea101139291ef2ae96b8d55867d017856c20aea2",
+        "builder_sha256": "0366d607dd146c8cbbbc839c7368252233ae625e187ac3a56f9042aa45ac5fb5"
+      }
+    },
+    "local_source_assets_resolve": {
+      "status": "PASS",
+      "detail": {
+        "font": {
+          "path": "godot/fonts/Lato-Heavy.ttf",
+          "sha256": "4ce7ec20cd9c391b271b4149ad8cf5a71301d98965403f14fc5530d017146dbb"
+        },
+        "music": {
+          "path": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+          "sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf"
+        }
+      }
+    },
+    "godot_baseline_preserved": {
+      "status": "PASS",
+      "detail": {
+        "source": "930b0f8bcf264a1ec3af5778e92cdb1958a10de826a6b7c9d670fb88ffed7d2a",
+        "copy": "930b0f8bcf264a1ec3af5778e92cdb1958a10de826a6b7c9d670fb88ffed7d2a"
+      }
+    },
+    "static_composition_gate": {
+      "status": "PASS",
+      "detail": {
+        "slice": "MF-019",
+        "gate": "BLENDER_STATIC_COMPOSITION",
+        "result": "PASS",
+        "checks": {
+          "static_keyframes_exist": {
+            "status": "PASS",
+            "detail": [
+              "artifacts/mf-019/blender/static-keyframes/dormant.png",
+              "artifacts/mf-019/blender/static-keyframes/startup.png",
+              "artifacts/mf-019/blender/static-keyframes/active.png",
+              "artifacts/mf-019/blender/static-keyframes/peak-final.png"
+            ]
+          },
+          "static_dimensions": {
+            "status": "PASS",
+            "detail": [
+              [
+                1152,
+                768,
+                3
+              ],
+              [
+                1152,
+                768,
+                3
+              ],
+              [
+                1152,
+                768,
+                3
+              ],
+              [
+                1152,
+                768,
+                3
+              ]
+            ]
+          },
+          "mf016_principles": {
+            "status": "PASS",
+            "detail": {
+              "checks": {
+                "zone_vocabulary_and_geometry": "PASS",
+                "required_zone_kinds": "PASS",
+                "unique_object_ids": "PASS",
+                "semantic_role_required": "PASS",
+                "valid_visual_purpose_required": "PASS",
+                "remove_if_unnecessary_policy": "PASS",
+                "visual_hierarchy": "PASS",
+                "objects_inside_allowed_zones": "PASS",
+                "no_unexpected_frame_clipping": "PASS",
+                "preserved_negative_space": "PASS",
+                "hero_and_no_occlusion_protection": "PASS",
+                "text_safety": "PASS",
+                "long_line_guardrail": "PASS",
+                "large_shape_guardrail": "PASS",
+                "support_zone_capacity": "PASS",
+                "negative_space_not_occupancy_scored": "PASS",
+                "animation_cannot_rescue_composition": "PASS"
+              },
+              "errors": [],
+              "advisories": [],
+              "result": "PASS"
+            }
+          },
+          "reactor_hero_visible": {
+            "status": "PASS",
+            "detail": [
+              {
+                "label": "dormant",
+                "hero_luma": 8.118,
+                "console_luma": 32.603,
+                "display_luma": 4.969,
+                "top_negative_space_luma": 0.162,
+                "bright_pixels": 28629
+              },
+              {
+                "label": "startup",
+                "hero_luma": 8.239,
+                "console_luma": 33.927,
+                "display_luma": 4.975,
+                "top_negative_space_luma": 0.162,
+                "bright_pixels": 30267
+              },
+              {
+                "label": "active",
+                "hero_luma": 12.074,
+                "console_luma": 34.389,
+                "display_luma": 5.036,
+                "top_negative_space_luma": 0.162,
+                "bright_pixels": 45732
+              },
+              {
+                "label": "peak-final",
+                "hero_luma": 17.186,
+                "console_luma": 34.701,
+                "display_luma": 18.452,
+                "top_negative_space_luma": 0.167,
+                "bright_pixels": 60140
+              }
+            ]
+          },
+          "console_readable": {
+            "status": "PASS",
+            "detail": [
+              {
+                "label": "dormant",
+                "hero_luma": 8.118,
+                "console_luma": 32.603,
+                "display_luma": 4.969,
+                "top_negative_space_luma": 0.162,
+                "bright_pixels": 28629
+              },
+              {
+                "label": "startup",
+                "hero_luma": 8.239,
+                "console_luma": 33.927,
+                "display_luma": 4.975,
+                "top_negative_space_luma": 0.162,
+                "bright_pixels": 30267
+              },
+              {
+                "label": "active",
+                "hero_luma": 12.074,
+                "console_luma": 34.389,
+                "display_luma": 5.036,
+                "top_negative_space_luma": 0.162,
+                "bright_pixels": 45732
+              },
+              {
+                "label": "peak-final",
+                "hero_luma": 17.186,
+                "console_luma": 34.701,
+                "display_luma": 18.452,
+                "top_negative_space_luma": 0.167,
+                "bright_pixels": 60140
+              }
+            ]
+          },
+          "negative_space_intentional": {
+            "status": "PASS",
+            "detail": [
+              {
+                "label": "dormant",
+                "hero_luma": 8.118,
+                "console_luma": 32.603,
+                "display_luma": 4.969,
+                "top_negative_space_luma": 0.162,
+                "bright_pixels": 28629
+              },
+              {
+                "label": "startup",
+                "hero_luma": 8.239,
+                "console_luma": 33.927,
+                "display_luma": 4.975,
+                "top_negative_space_luma": 0.162,
+                "bright_pixels": 30267
+              },
+              {
+                "label": "active",
+                "hero_luma": 12.074,
+                "console_luma": 34.389,
+                "display_luma": 5.036,
+                "top_negative_space_luma": 0.162,
+                "bright_pixels": 45732
+              },
+              {
+                "label": "peak-final",
+                "hero_luma": 17.186,
+                "console_luma": 34.701,
+                "display_luma": 18.452,
+                "top_negative_space_luma": 0.167,
+                "bright_pixels": 60140
+              }
+            ]
+          },
+          "semantic_states_visually_distinct": {
+            "status": "PASS",
+            "detail": [
+              76681,
+              182852,
+              313045
+            ]
+          },
+          "final_information_panel_readable": {
+            "status": "PASS",
+            "detail": {
+              "high_contrast_pixels": 6896
+            }
+          },
+          "physical_attachment_contract": {
+            "status": "PASS",
+            "detail": {
+              "ring_lights": true,
+              "gauge_pivots": true,
+              "lever_hinge": true,
+              "indicators_in_console": true,
+              "energy_in_chamber": true,
+              "local_reactor_light": true
+            }
+          },
+          "configured_ready_before_full_render": {
+            "status": "PASS",
+            "detail": {
+              "manifest": "config/mf018b-native-composition.json",
+              "static_seconds": [
+                0.5,
+                2.4,
+                6.6,
+                12.5
+              ],
+              "static_labels": [
+                "dormant",
+                "startup",
+                "active",
+                "peak-final"
+              ],
+              "required_state": "CONFIGURED_READY",
+              "human_review": "PENDING_HUMAN"
+            }
+          }
+        },
+        "metrics": [
+          {
+            "label": "dormant",
+            "hero_luma": 8.118,
+            "console_luma": 32.603,
+            "display_luma": 4.969,
+            "top_negative_space_luma": 0.162,
+            "bright_pixels": 28629
+          },
+          {
+            "label": "startup",
+            "hero_luma": 8.239,
+            "console_luma": 33.927,
+            "display_luma": 4.975,
+            "top_negative_space_luma": 0.162,
+            "bright_pixels": 30267
+          },
+          {
+            "label": "active",
+            "hero_luma": 12.074,
+            "console_luma": 34.389,
+            "display_luma": 5.036,
+            "top_negative_space_luma": 0.162,
+            "bright_pixels": 45732
+          },
+          {
+            "label": "peak-final",
+            "hero_luma": 17.186,
+            "console_luma": 34.701,
+            "display_luma": 18.452,
+            "top_negative_space_luma": 0.167,
+            "bright_pixels": 60140
+          }
+        ],
+        "human_review": "PENDING_HUMAN"
+      }
+    },
+    "complete_png_frame_sequence": {
+      "status": "PASS",
+      "detail": {
+        "expected": 420,
+        "actual": 420,
+        "dimensions": [
+          [
+            768,
+            1152
+          ]
+        ]
+      }
+    },
+    "deterministic_scene_contract": {
+      "status": "PASS",
+      "detail": {
+        "seed": 190019,
+        "engine": "BLENDER_EEVEE",
+        "samples": 16,
+        "resolution": [
+          768,
+          1152
+        ],
+        "fps": 30,
+        "frames": 420
+      }
+    },
+    "physically_attached_motion_contract": {
+      "status": "PASS",
+      "detail": {
+        "objects": {
+          "reactor": "GlassChamber",
+          "energy": "CoreContainment",
+          "ring_lights": 8,
+          "gauges": 3,
+          "lever": "StartupLeverHinge",
+          "indicators": 4,
+          "display": [
+            "DisplayTitle",
+            "DisplayCTA",
+            "DisplayURL"
+          ]
+        },
+        "attached": {
+          "ring_lights": true,
+          "gauge_pivots": true,
+          "lever_hinge": true,
+          "indicators_in_console": true,
+          "energy_in_chamber": true,
+          "local_reactor_light": true
+        }
+      }
+    },
+    "cross_invocation_pixel_determinism": {
+      "status": "PASS",
+      "detail": {
+        "dormant": 0,
+        "startup": 0,
+        "active": 0,
+        "peak-final": 0
+      }
+    },
+    "resume_recovery": {
+      "status": "PASS",
+      "detail": {
+        "mode": "frames",
+        "build_ms": 340,
+        "render_ms": 7,
+        "total_ms": 348,
+        "rendered": 0,
+        "resumed_frames": 420,
+        "engine": "BLENDER_EEVEE",
+        "device": "CPU_HEADLESS_DEFAULT"
+      }
+    },
+    "lever_rotates_right_on_hinge": {
+      "status": "PASS",
+      "detail": {
+        "before": [
+          206.1936274509804,
+          306.11764705882354
+        ],
+        "after": [
+          272.73703703703706,
+          370.22592592592594
+        ],
+        "delta": [
+          66.54340958605667,
+          64.1082788671024
+        ]
+      }
+    },
+    "gauge_needles_respond": {
+      "status": "PASS",
+      "detail": {
+        "mean_region_delta": 1.7094771241830065
+      }
+    },
+    "blue_green_yellow_sequence": {
+      "status": "PASS",
+      "detail": {
+        "blue": 259,
+        "green": 997,
+        "yellow": 284
+      }
+    },
+    "yellow_triggers_mounted_ring": {
+      "status": "PASS",
+      "detail": {
+        "pre": 0,
+        "post": 3564
+      }
+    },
+    "reactor_energy_intensifies_in_chamber": {
+      "status": "PASS",
+      "detail": {
+        "dormant": 14.84680701754386,
+        "active": 25.61234649122807,
+        "final": 42.51693859649123
+      }
+    },
+    "title_cta_url_reveal_sequence": {
+      "status": "PASS",
+      "detail": {
+        "before": 161,
+        "title": 3980,
+        "cta": 5045,
+        "url": 6873
+      }
+    },
+    "ab_content_identity": {
+      "status": "PASS",
+      "detail": {
+        "title": "UNKNOWN PROCESS",
+        "cta": "TRY A WEB GAME",
+        "url": "rcblanzy.com/books/unknown-process"
+      }
+    },
+    "semantic_timing_parity": {
+      "status": "PASS",
+      "detail": {
+        "tolerance_frames": 2,
+        "candidate_a": {
+          "startup_lever_start": 34,
+          "startup_lever_end": 68,
+          "gauge_wake": 52,
+          "blue_stage": 82,
+          "green_stage": 125,
+          "yellow_stage": 164,
+          "linked_ring_activation": 172,
+          "reactor_escalation": 182,
+          "title_start": 213,
+          "cta_start": 250,
+          "url_start": 286,
+          "critical_tease": 345
+        },
+        "candidate_b": {
+          "startup_lever_start": 34,
+          "startup_lever_end": 68,
+          "gauge_wake": 52,
+          "blue_stage": 82,
+          "green_stage": 125,
+          "yellow_stage": 164,
+          "linked_ring_activation": 172,
+          "reactor_escalation": 182,
+          "title_start": 213,
+          "cta_start": 250,
+          "url_start": 286,
+          "critical_tease": 345
+        },
+        "maximum_delta_frames": 0,
+        "semantic_order_equal": true,
+        "result": "PASS"
+      }
+    },
+    "ab_audio_identity": {
+      "status": "PASS",
+      "detail": {
+        "track": "unknown-process:cold_concrete_anatomy",
+        "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+        "track_approval": "APPROVED",
+        "cue": "revelation_a",
+        "cue_approval": "APPROVED",
+        "actual_start": 5.0,
+        "actual_end": 19.0,
+        "candidate_a_md5": "MD5=f7b5cbdc40dc8096de8738c04ba2491f",
+        "candidate_b_md5": "MD5=f7b5cbdc40dc8096de8738c04ba2491f",
+        "candidate_b_loudness": {
+          "integrated_lufs": -16.03,
+          "true_peak_db": -2.78,
+          "loudness_range_lu": 5.0
+        },
+        "result": "PASS"
+      }
+    },
+    "candidate_media_parity": {
+      "status": "PASS",
+      "detail": {
+        "candidate_a": {
+          "video": "h264",
+          "audio": "aac",
+          "width": 768,
+          "height": 1152,
+          "fps": "30/1",
+          "frames": 420,
+          "duration": 14.0,
+          "sample_rate": 48000
+        },
+        "candidate_b": {
+          "video": "h264",
+          "audio": "aac",
+          "width": 768,
+          "height": 1152,
+          "fps": "30/1",
+          "frames": 420,
+          "duration": 14.0,
+          "sample_rate": 48000
+        },
+        "comparison": {
+          "video": "h264",
+          "audio": "aac",
+          "width": 1536,
+          "height": 1152,
+          "fps": "30/1",
+          "frames": 420,
+          "duration": 14.0,
+          "sample_rate": 48000
+        }
+      }
+    },
+    "comparison_media_contract": {
+      "status": "PASS",
+      "detail": {
+        "video": "h264",
+        "audio": "aac",
+        "width": 1536,
+        "height": 1152,
+        "fps": "30/1",
+        "frames": 420,
+        "duration": 14.0,
+        "sample_rate": 48000
+      }
+    },
+    "full_media_decode": {
+      "status": "PASS",
+      "detail": {
+        "candidate_a": 0,
+        "candidate_b": 0,
+        "comparison": 0
+      }
+    },
+    "artifact_integrity": {
+      "status": "PASS",
+      "detail": {
+        "godot/candidate-a.mp4": "930b0f8bcf264a1ec3af5778e92cdb1958a10de826a6b7c9d670fb88ffed7d2a",
+        "blender/candidate-b.mp4": "14d2898e8ded37533d9fe47d0e81d75ecab48597f9aaee9e0aa896cdd9aeede8",
+        "comparison/side-by-side.mp4": "a622aa3bd3d0f5d5ab452697ca2a18ea1bba39115b9b209db1eb9ce82e04c58c",
+        "comparison/contact-sheet.png": "6c9eedccc222b672acfab54beb5567e366e18ff15eb3951f2bf30f4f04957ff6",
+        "comparison/matched-frames/dormant-0.5s-godot.png": "ec22f9703bd715a80792042ca66622c0dd96902cddd1ba97c8c0b5feadcb1416",
+        "comparison/matched-frames/dormant-0.5s-blender.png": "95ed6579f195c715f4efadb8f7e19bf336571d7baf067f3e144b5bf0b693fd33",
+        "comparison/matched-frames/startup-2.4s-godot.png": "7eda9bf99f966632b1a364aa4809310ffee912e5393c3c539cfc5899862164d0",
+        "comparison/matched-frames/startup-2.4s-blender.png": "becb692901f8db011afef820871f7216387685d95c62bd3b3484b9c2cf8a681c",
+        "comparison/matched-frames/yellow-5.6s-godot.png": "55a024b7ddb301837bfbb8bd8fc4f0ccc33e963b10e83e98261471e2c075ea04",
+        "comparison/matched-frames/yellow-5.6s-blender.png": "1a500d647ba30ef045fc58a5f3765cfb1e78273ee2894a32bd530370da40313b",
+        "comparison/matched-frames/linked-active-6.6s-godot.png": "a4d3be044c28aa6dec311282484540e7361ec46848a30d1590879445205a1236",
+        "comparison/matched-frames/linked-active-6.6s-blender.png": "5513e3366c9db092cde62a3d1ed2bd6cd77ec75f417ebd24de9eb04326ec1890",
+        "comparison/matched-frames/display-10.5s-godot.png": "c6967ffd648fa82cc352bfb5e2d1a33e7210eda97f3dbcc1077f6dc68efb6fef",
+        "comparison/matched-frames/display-10.5s-blender.png": "0cd2805f2e1303c98dfa9a4e537b2d26d3a92b0f4417db3ab35df26b90f60103",
+        "comparison/matched-frames/final-12.5s-godot.png": "31f5e00e49da4a1fe61231fd91bd7be8a3705dab5bba0ed255e14ac895e09b9d",
+        "comparison/matched-frames/final-12.5s-blender.png": "19ce74fd9b19b8f34d15a5a0b7cdc41acaf4fcef299dd42c506e9ad2fb8adc7f",
+        "blender/static-keyframes/dormant.png": "d202460aa0938cf3d0ea79fe6df76b5e89e4fde655bdb841feac4d144d95716d",
+        "blender/static-keyframes/startup.png": "2483c00bfa2e150dd210f2bc4a705911b28db2f9ff027a4c289faf9143a82e8b",
+        "blender/static-keyframes/active.png": "9ce70046eb5f0023dfddafd75e5a047fa0a67e8442e6a2c1bd1fc383b5a7061a",
+        "blender/static-keyframes/peak-final.png": "38898d28db8be197a154aa68a8fbcb602d621c5335e83ceaf2bc036674504b77"
+      }
+    },
+    "performance_evidence": {
+      "status": "PASS",
+      "detail": {
+        "candidate_a_godot": {
+          "recorded_total_ms": 41829,
+          "artifact_bytes": 2563750,
+          "frame_storage_bytes": 0,
+          "peak_memory_kb": null,
+          "note": "Prior approved artifact reused; stage-level timing unavailable."
+        },
+        "candidate_b_blender": {
+          "preflight_ms": 602,
+          "static_build_render_ms": 1964,
+          "scene_build_ms": 360,
+          "frame_render_ms": 97153,
+          "finalization_ms": 2744,
+          "recorded_total_ms": 102823,
+          "artifact_bytes": 991231,
+          "frame_storage_bytes": 340916063,
+          "peak_memory_kb": 859348,
+          "rendered_frames": 420,
+          "resumed_frames": 0
+        }
+      }
+    },
+    "failure_tests": {
+      "status": "PASS",
+      "detail": {
+        "slice": "MF-019",
+        "result": "PASS",
+        "passed": 13,
+        "total": 13,
+        "tests": {
+          "unknown_backend": {
+            "status": "PASS",
+            "expected": "UNKNOWN_RENDER_BACKEND",
+            "actual": "UNKNOWN_RENDER_BACKEND"
+          },
+          "blender_missing": {
+            "status": "PASS",
+            "expected": "BLENDER_NOT_AVAILABLE",
+            "actual": "BLENDER_NOT_AVAILABLE"
+          },
+          "explicit_fallback_only": {
+            "status": "PASS",
+            "expected": "GODOT",
+            "actual": "GODOT"
+          },
+          "headless_script_failure": {
+            "status": "PASS",
+            "expected": "BLENDER_SCENE_BUILD_FAILED",
+            "actual": "BLENDER_SCENE_BUILD_FAILED"
+          },
+          "missing_template": {
+            "status": "PASS",
+            "expected": "BLENDER_TEMPLATE_MISSING",
+            "actual": "BLENDER_TEMPLATE_MISSING"
+          },
+          "missing_asset": {
+            "status": "PASS",
+            "expected": "BLENDER_SCENE_BUILD_FAILED",
+            "actual": "BLENDER_SCENE_BUILD_FAILED"
+          },
+          "unsupported_engine": {
+            "status": "PASS",
+            "expected": "BLENDER_RENDER_ENGINE_UNSUPPORTED",
+            "actual": "BLENDER_RENDER_ENGINE_UNSUPPORTED"
+          },
+          "incomplete_frame_sequence": {
+            "status": "PASS",
+            "expected": "BLENDER_FRAME_SEQUENCE_INCOMPLETE",
+            "actual": "BLENDER_FRAME_SEQUENCE_INCOMPLETE"
+          },
+          "silent_fallback_forbidden": {
+            "status": "PASS",
+            "expected": "BLENDER_NOT_AVAILABLE",
+            "actual": "BLENDER_NOT_AVAILABLE"
+          },
+          "absolute_asset_path": {
+            "status": "PASS",
+            "expected": "ABSOLUTE_BACKEND_ASSET_PATH",
+            "actual": "ABSOLUTE_BACKEND_ASSET_PATH"
+          },
+          "audio_mismatch": {
+            "status": "PASS",
+            "expected": "AB_AUDIO_MISMATCH",
+            "actual": "AB_AUDIO_MISMATCH"
+          },
+          "text_cta_mismatch": {
+            "status": "PASS",
+            "expected": "AB_CONTENT_MISMATCH",
+            "actual": "AB_CONTENT_MISMATCH"
+          },
+          "unsupported_capability": {
+            "status": "PASS",
+            "expected": "BACKEND_CAPABILITY_UNSUPPORTED",
+            "actual": "BACKEND_CAPABILITY_UNSUPPORTED"
+          }
+        }
+      }
+    },
+    "actionable_backend_status_model": {
+      "status": "PASS",
+      "detail": [
+        "BACKEND_PREFLIGHT",
+        "BUILDING_SCENE",
+        "RENDERING_FRAMES",
+        "VALIDATING_FRAMES",
+        "FINALIZING",
+        "READY_FOR_REVIEW"
+      ]
+    },
+    "scope_and_human_gate": {
+      "status": "PASS",
+      "detail": {
+        "published": false,
+        "release_ready": false,
+        "human_backend_preference": "PENDING_HUMAN",
+        "blender_to_godot_export_implemented": false,
+        "gameplay_implemented": false
+      }
+    }
+  },
+  "published": false
+}

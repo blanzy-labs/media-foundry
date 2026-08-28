@@ -1,0 +1,30 @@
+{
+  "track_id": "cold_concrete_anatomy",
+  "qualified_id": "unknown-process:cold_concrete_anatomy",
+  "track_path": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+  "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+  "track_approval": "APPROVED",
+  "cue_id": "revelation_a",
+  "cue_approval": "APPROVED",
+  "usable_start": 5.0,
+  "usable_end": 49.0,
+  "actual_start": 5.0,
+  "actual_end": 19.0,
+  "direction": "music_led_object_event_hooks_documented_no_extra_sfx",
+  "loudness": {
+    "integrated_lufs": -16.03,
+    "true_peak_db": -2.78,
+    "loudness_range_lu": 5.0
+  },
+  "object_event_hooks": [
+    "machine_wake",
+    "reactor_unstable",
+    "critical_tease",
+    "steam_release",
+    "control_dial",
+    "switch_toggle",
+    "lever_clunk"
+  ],
+  "dedicated_sfx_embedded": false,
+  "result": "PASS"
+}

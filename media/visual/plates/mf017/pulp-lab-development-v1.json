@@ -1,0 +1,14 @@
+{
+  "id": "pulp_lab_development_v1",
+  "status": "REVIEW_REQUIRED",
+  "provenance": "generated",
+  "generation_method": "OpenAI built-in image generation",
+  "path": "media/visual/plates/mf017/pulp-lab-development-v1.png",
+  "sha256": "5fa2143ec5a71b57307835bbfc09940adbbf48929cb90fd271e680053a924aa5",
+  "dimensions": {"width": 1024, "height": 1536},
+  "art_direction_reference": {
+    "path": "/home/blanzy/Pictures/50s style book cover.png",
+    "sha256": "a4df3398242b6dc20ee667848cb7464658b527316700ffb278bc5ab1f1cee8d6"
+  },
+  "prompt": "Create a richly illustrated empty 1950s pulp-science-fiction machine room using the supplied book cover only as art-direction reference. Use a portrait 2:3 composition with one unobstructed reactor hero centered slightly right, one analog control bank lower left, deliberate dark negative space upper left, battered period machinery, deep teal-black shadows, aged cream and mustard highlights, worn offset-print material, no people or humanoids, no text or watermark, no cross-scene barrier, and no active energy, steam, or lightning baked into the plate so the chamber remains suitable for animated compositing."
+}

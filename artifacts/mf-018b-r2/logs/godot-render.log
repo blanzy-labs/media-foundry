@@ -1,0 +1,3 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+MF018B_R2_NATIVE_OK frames=420 state={"containment":0.5,"controls":{"coolant_dial":0.42,"field_dial":0.78,"startup_lever":1.0},"field_strength":0.9,"indicator_stage":1.0,"linked_ring_activation":1.0,"machine_state":"CRITICAL","pressure":0.86,"reactor_energy":0.895,"startup_progress":1.0,"temperature":0.85,"warning_level":0.92}

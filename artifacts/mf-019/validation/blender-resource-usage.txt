@@ -1,0 +1,23 @@
+	Command being timed: "/home/blanzy/.local/opt/blender-5.2.0/blender --background /home/blanzy/projects/media-foundry/templates/blender/pulp-reactor-v1.blend --python /home/blanzy/projects/media-foundry/scripts/blender/build_and_render.py -- --manifest config/mf019-ab-render.json --output-dir /home/blanzy/projects/media-foundry/artifacts/mf-019/blender/frames --mode frames --performance /home/blanzy/projects/media-foundry/artifacts/mf-019/validation/blender-render-performance.json --resume"
+	User time (seconds): 295.29
+	System time (seconds): 186.86
+	Percent of CPU this job got: 490%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:38.28
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 859348
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4609274
+	Voluntary context switches: 108698
+	Involuntary context switches: 12195075
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 667512
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

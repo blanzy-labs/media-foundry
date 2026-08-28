@@ -1,0 +1,60 @@
+{
+  "contract": "playable_scene_package_v1",
+  "package": {
+    "id": "unknown-process-pulp-machine-room",
+    "version": "1.0.0",
+    "source_commit": "13b264f5463066755fcbc90c42440f92e2081972",
+    "source_status": "UNCOMMITTED_CANDIDATE",
+    "scene_path": "godot/mf018b_pulp_scene.tscn",
+    "scene_hash": "1e4df3528e96bf5a8db019d059b60aa57e4b337e4dad4c882f74ce176215c48b",
+    "base_script": "godot/mf018b_pulp_scene.gd",
+    "promo_driver": "godot/mf018b_promo_driver.gd",
+    "promo_driver_optional": true
+  },
+  "visual_states": ["DORMANT", "STABLE", "UNSTABLE", "CRITICAL"],
+  "state_variables": [
+    {"id": "reactor_energy", "type": "normalized_float", "range": [0.0, 1.0], "default": 0.03, "setter": "set_reactor_energy", "signal": "reactor_energy_changed"},
+    {"id": "temperature", "type": "normalized_float", "range": [0.0, 1.0], "default": 0.12, "setter": "set_temperature", "signal": "temperature_changed"},
+    {"id": "containment", "type": "normalized_float", "range": [0.0, 1.0], "default": 0.82, "setter": "set_containment", "signal": "containment_changed"},
+    {"id": "field_strength", "type": "normalized_float", "range": [0.0, 1.0], "default": 0.08, "setter": "set_field_strength", "signal": "field_strength_changed"},
+    {"id": "pressure", "type": "normalized_float", "range": [0.0, 1.0], "default": 0.10, "setter": "set_pressure", "signal": "pressure_changed"},
+    {"id": "warning_level", "type": "normalized_float", "range": [0.0, 1.0], "default": 0.02, "setter": "set_warning_level", "signal": "warning_level_changed"}
+  ],
+  "interaction_points": [
+    {"id": "coolant_dial", "node": "Machines/Console/Controls/DialCoolant", "type": "rotary", "value_range": [0.0, 1.0], "default": 0.56, "animation_hook": "set_control_value", "audio_hook": "control_dial", "affects": ["temperature", "pressure"]},
+    {"id": "field_dial", "node": "Machines/Console/Controls/DialField", "type": "rotary", "value_range": [0.0, 1.0], "default": 0.18, "animation_hook": "set_control_value", "audio_hook": "control_dial", "affects": ["field_strength"]},
+    {"id": "containment_switch", "node": "Machines/Console/Controls/SwitchContainment", "type": "toggle", "value_range": [0.0, 1.0], "default": 0.0, "animation_hook": "set_control_value", "audio_hook": "switch_toggle", "affects": ["containment"]},
+    {"id": "emergency_lever", "node": "Machines/Console/Controls/LeverEmergency", "type": "lever", "value_range": [0.0, 1.0], "default": 0.0, "animation_hook": "set_control_value", "audio_hook": "lever_clunk", "affects": ["warning_level", "containment"]}
+  ],
+  "signals": ["reactor_state_changed", "reactor_energy_changed", "temperature_changed", "containment_changed", "field_strength_changed", "pressure_changed", "warning_level_changed", "control_activated", "machine_warning", "machine_critical", "audio_event_requested"],
+  "audio_events": [
+    {"id": "machine_wake", "trigger": "DORMANT_TO_STABLE", "source_asset_id": "approved_music", "binding": "promo_marker_or_external_call"},
+    {"id": "reactor_unstable", "trigger": "UNSTABLE", "source_asset_id": "approved_music", "binding": "audio_event_requested"},
+    {"id": "critical_tease", "trigger": "CRITICAL", "source_asset_id": "approved_music", "binding": "audio_event_requested"},
+    {"id": "steam_release", "trigger": "pressure_above_0.35", "source_asset_id": "approved_music", "binding": "callable_hook_no_dedicated_sfx"},
+    {"id": "control_dial", "trigger": "rotary_control", "source_asset_id": "approved_music", "binding": "callable_hook_no_dedicated_sfx"},
+    {"id": "switch_toggle", "trigger": "toggle_control", "source_asset_id": "approved_music", "binding": "callable_hook_no_dedicated_sfx"},
+    {"id": "lever_clunk", "trigger": "emergency_lever", "source_asset_id": "approved_music", "binding": "audio_event_requested_no_dedicated_sfx"}
+  ],
+  "animations": [
+    {"id": "machine_state_response", "owner": "base_scene", "control": "external_state_setters"},
+    {"id": "mf018b_promo_timeline", "owner": "promo_driver", "removable": true}
+  ],
+  "cameras": [{"id": "promo_camera", "node": "PromoCamera", "interactive_safe": true, "required_for_base_scene": false}],
+  "assets": [
+    {"id": "base_scene", "path": "godot/mf018b_pulp_scene.tscn", "sha256": "1e4df3528e96bf5a8db019d059b60aa57e4b337e4dad4c882f74ce176215c48b", "bytes": 1356, "required": true},
+    {"id": "base_script", "path": "godot/mf018b_pulp_scene.gd", "sha256": "dfd8874c489e49386313b28c5a02764db13db9af904eae727d26798ab3084056", "bytes": 13547, "required": true},
+    {"id": "promo_driver", "path": "godot/mf018b_promo_driver.gd", "sha256": "1dcebc2c040f9086c86ed31a998559e5a7957f1c96e5026f92c94587494357dc", "bytes": 1291, "required": false},
+    {"id": "scene_config", "path": "config/mf018b-native-pulp-scene.json", "sha256": "a4d825ba29c66fe61aac010f2d4a96bf018379266b606fb0b4dea459adc8f974", "bytes": 2153, "required": false},
+    {"id": "composition", "path": "config/mf018b-native-composition.json", "sha256": "a8ff7b8f83ece7572251ffb7438f34070e8fcc3c10c1bf4f5c52969472c74003", "bytes": 4867, "required": false},
+    {"id": "approved_music", "path": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3", "sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf", "bytes": 4347628, "required": false, "approval": "APPROVED", "cue": "revelation_a"}
+  ],
+  "dependencies": {"godot": ">=4.2", "game_foundry": [], "external_plugins": [], "heavyweight_runtime_dependencies": []},
+  "ownership": {
+    "media_foundry": ["visual_world", "scene_animation", "lighting", "audio_presentation", "promo_driver", "interaction_metadata"],
+    "game_foundry": ["input", "objectives", "rules", "score", "difficulty", "progression", "levels", "win_fail", "save_data", "platform_integration"]
+  },
+  "web_advisory": {"status": "LIKELY_COMPATIBLE", "renderer": "2D_SVG_RASTER_PATH", "custom_shaders": 0, "external_plugins": 0, "largest_asset_bytes": 4347628, "export_tested": false},
+  "gameplay_implemented": false,
+  "portable_paths": true
+}

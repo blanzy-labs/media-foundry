@@ -1,0 +1,17 @@
+{
+  "track": "unknown-process:cold_concrete_anatomy",
+  "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+  "track_approval": "APPROVED",
+  "cue": "revelation_a",
+  "cue_approval": "APPROVED",
+  "actual_start": 5.0,
+  "actual_end": 19.0,
+  "candidate_a_md5": "MD5=f7b5cbdc40dc8096de8738c04ba2491f",
+  "candidate_b_md5": "MD5=f7b5cbdc40dc8096de8738c04ba2491f",
+  "candidate_b_loudness": {
+    "integrated_lufs": -16.03,
+    "true_peak_db": -2.78,
+    "loudness_range_lu": 5.0
+  },
+  "result": "PASS"
+}

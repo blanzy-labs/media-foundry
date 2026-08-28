@@ -1,0 +1,79 @@
+{
+  "slice": "MF-019",
+  "seed": 190019,
+  "render": {
+    "backend": "COMPARE",
+    "required_capabilities": ["semantic_ab_comparison", "shared_finalization"],
+    "fallback": {"allowed": false, "backends": []},
+    "blender": {
+      "template": "templates/blender/pulp-reactor-v1.blend",
+      "builder_script": "scripts/blender/build_and_render.py",
+      "render_engine_family": "realtime_eevee",
+      "samples": 16,
+      "output_format": "PNG",
+      "transparent": false,
+      "resume": true
+    }
+  },
+  "shared": {
+    "scene_family": "unknown_process_native_pulp_reactor",
+    "production_objective": "A stylized retro pulp science-fiction machine room in which a control lever starts an analog reactor system, indicators and gauges wake in sequence, the reactor charges, and an in-world panel promotes Unknown Process and a future web game.",
+    "runtime_seconds": 14.0,
+    "fps": 30,
+    "resolution": [768, 1152],
+    "palette": {"world": "dark_teal_black", "structure": "aged_brass", "warning": "red_amber", "energy": "warm_yellow_cream"},
+    "hero_subject": "central_contained_reactor",
+    "title": "UNKNOWN PROCESS",
+    "cta": "TRY A WEB GAME",
+    "canonical_url": "https://rcblanzy.com/books/unknown-process",
+    "display_url": "rcblanzy.com/books/unknown-process",
+    "final_hold_seconds": 3.65,
+    "event_markers_seconds": {
+      "startup_lever_start": 1.15,
+      "startup_lever_end": 2.25,
+      "gauge_wake": 1.75,
+      "blue_stage": 2.75,
+      "green_stage": 4.15,
+      "yellow_stage": 5.45,
+      "linked_ring_activation": 5.72,
+      "reactor_escalation": 6.05,
+      "title_start": 7.10,
+      "cta_start": 8.35,
+      "url_start": 9.55,
+      "critical_tease": 11.50
+    },
+    "semantic_sequence": ["DORMANT", "LEVER_RIGHT", "GAUGES_WAKE", "INDICATORS_BLUE", "INDICATORS_GREEN", "INDICATORS_YELLOW", "UPPER_RING_LINKED", "REACTOR_INTENSIFIES", "CRITICAL_TEASE", "TITLE", "CTA", "URL", "FINAL_HOLD"],
+    "composition_intent": {"reactor": "primary", "console": "secondary", "information_panel": "tertiary", "negative_space": "intentional"}
+  },
+  "candidate_a": {
+    "backend": "GODOT",
+    "artifact": "artifacts/mf-018b-r4/final-test.mp4",
+    "artifact_sha256": "930b0f8bcf264a1ec3af5778e92cdb1958a10de826a6b7c9d670fb88ffed7d2a",
+    "scene": "godot/mf018b_r4_pulp_scene.tscn",
+    "scene_sha256": "90e3d617f22f4a7f173a396d0aaff26fcebd417b391089f0f3f5ef87c76a00d4",
+    "interactive_ready": true,
+    "cinematic_render_ready": true
+  },
+  "candidate_b": {"backend": "BLENDER", "interactive_ready": false, "cinematic_render_ready": true},
+  "composition_gate": {
+    "manifest": "config/mf018b-native-composition.json",
+    "static_seconds": [0.5, 2.4, 6.6, 12.5],
+    "static_labels": ["dormant", "startup", "active", "peak-final"],
+    "required_state": "CONFIGURED_READY",
+    "human_review": "PENDING_HUMAN"
+  },
+  "audio": {
+    "catalog": "config/music/catalog.json",
+    "qualified_id": "unknown-process:cold_concrete_anatomy",
+    "source": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+    "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "cue_region": "revelation_a",
+    "start_seconds": 5.0,
+    "end_seconds": 19.0,
+    "fade_in_seconds": 0.8,
+    "fade_out_seconds": 1.4,
+    "target_lufs": -16.0,
+    "true_peak_db": -1.5,
+    "post_normalization_gain_db": -1.3
+  }
+}

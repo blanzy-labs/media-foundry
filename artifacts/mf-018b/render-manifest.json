@@ -1,0 +1,140 @@
+{
+  "slice": "MF-018B",
+  "mode": "PULP_GAME_WORLD_REFINED",
+  "config": "/home/blanzy/projects/media-foundry/config/mf018b-native-pulp-scene.json",
+  "config_sha256": "a4d825ba29c66fe61aac010f2d4a96bf018379266b606fb0b4dea459adc8f974",
+  "seed": 1801958,
+  "baseline": {
+    "artifact": "artifacts/mf-018a/godot-native-pulp-scene.mp4",
+    "artifact_sha256": "a6507e574567dd2b041981ac5f51ca7123dc700636e6cd394ccbb086d19c549b",
+    "config": "config/mf018a-native-pulp-scene.json",
+    "config_sha256": "41056752e6442e1de4400a7be1b107ead9b7b4f3548a08994b2660da5b40939c",
+    "seed": 1801957,
+    "direction_approval": "HUMAN_APPROVED_IN_MF018B_BRIEF"
+  },
+  "base_scene": {
+    "path": "godot/mf018b_pulp_scene.tscn",
+    "sha256": "1e4df3528e96bf5a8db019d059b60aa57e4b337e4dad4c882f74ce176215c48b",
+    "promo_driver_separate": true,
+    "standalone_probe": "PASS"
+  },
+  "handoff": {
+    "path": "handoff/playable-scene/mf018b/manifest.json",
+    "sha256": "b9f25ff451c503537f0b9b3565d81d954f297b85c16640b2086404b7dd9afe55",
+    "validation": "PASS",
+    "game_foundry_dependencies": 0
+  },
+  "composition": {
+    "path": "config/mf018b-native-composition.json",
+    "machine_validation": "PASS",
+    "human_status": "PENDING_HUMAN"
+  },
+  "video": {
+    "width": 768,
+    "height": 1152,
+    "fps": 30,
+    "duration_seconds": 14.0,
+    "frame_count": 420
+  },
+  "audio": {
+    "track_id": "cold_concrete_anatomy",
+    "qualified_id": "unknown-process:cold_concrete_anatomy",
+    "track_path": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+    "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "track_approval": "APPROVED",
+    "cue_id": "revelation_a",
+    "cue_approval": "APPROVED",
+    "usable_start": 5.0,
+    "usable_end": 49.0,
+    "actual_start": 5.0,
+    "actual_end": 19.0,
+    "direction": "music_led_object_event_hooks_documented_no_extra_sfx",
+    "loudness": {
+      "integrated_lufs": -16.03,
+      "true_peak_db": -2.78,
+      "loudness_range_lu": 5.0
+    },
+    "object_event_hooks": [
+      "machine_wake",
+      "reactor_unstable",
+      "critical_tease",
+      "steam_release",
+      "control_dial",
+      "switch_toggle",
+      "lever_clunk"
+    ],
+    "dedicated_sfx_embedded": false,
+    "result": "PASS"
+  },
+  "outputs": {
+    "final-test.mp4": {
+      "sha256": "f629364bf73ebb9a16b181ea43221530ed428f009f2e1093a572447d5ca20d42",
+      "bytes": 4120916
+    },
+    "representative-frames/contact-sheet.png": {
+      "sha256": "46e27378c9591120ffafd77b3ecdf9757f42c47d2651724aec266ae6d043f4c8",
+      "bytes": 326180
+    },
+    "interaction-diagnostic/controls-and-state.png": {
+      "sha256": "56d1567ef143a279ea8378e10ffd6034e954b5f11399f555c07fe4613fe57c0e",
+      "bytes": 280236
+    },
+    "comparison/mf018a-vs-mf018b.png": {
+      "sha256": "bf60e390185152d0bba60a51834dce92b3d1bbfa50ed1be6b524f5d3e5f6e4a7",
+      "bytes": 262976
+    },
+    "comparison/mf018a-vs-mf018b.mp4": {
+      "sha256": "aa6417fc01b311a08ed62462e39dcb2c5214e8936495e49b650f46eed194b85b",
+      "bytes": 2270172
+    },
+    "representative-frames/dormant.png": {
+      "sha256": "5a3f31cc27927d1bda9defcad36a7f134994d537d3248591616572c1d6cc923f",
+      "bytes": 182068
+    },
+    "representative-frames/stable.png": {
+      "sha256": "ca701a2d84ee532b5b19581f890f43b42054dfbd9dde23331a4ffac9a3d01ce9",
+      "bytes": 246799
+    },
+    "representative-frames/console-detail.png": {
+      "sha256": "41deb9d8aae7b613634e5f5ae944e10de18ee1c2e10591c967a45cfcf39fa233",
+      "bytes": 244020
+    },
+    "representative-frames/reactor-activation.png": {
+      "sha256": "0a42d63f2cbfbdeabfd5c7860915dc0fc2a7478767ca9c0acf936ed3aa0b2d83",
+      "bytes": 251206
+    },
+    "representative-frames/unstable.png": {
+      "sha256": "c062efeb39d8f497735c8817668a1fa1278093d05ff2f77c79f91b0cf232d8fe",
+      "bytes": 282155
+    },
+    "representative-frames/critical.png": {
+      "sha256": "1bb36d7f85c7f2b0a09186c1ef5a0b8b12586c75697f0cbffdbf476f089d1d92",
+      "bytes": 298510
+    },
+    "representative-frames/final-promo-state.png": {
+      "sha256": "711d9fcb6fda4545bc7f3a67d155b0317e8229269dd15958fbd43e01489b438f",
+      "bytes": 298765
+    },
+    "static-keyframes/critical.png": {
+      "sha256": "1bb36d7f85c7f2b0a09186c1ef5a0b8b12586c75697f0cbffdbf476f089d1d92",
+      "bytes": 298510
+    },
+    "static-keyframes/dormant.png": {
+      "sha256": "5a3f31cc27927d1bda9defcad36a7f134994d537d3248591616572c1d6cc923f",
+      "bytes": 182068
+    },
+    "static-keyframes/stable.png": {
+      "sha256": "ca701a2d84ee532b5b19581f890f43b42054dfbd9dde23331a4ffac9a3d01ce9",
+      "bytes": 246799
+    },
+    "static-keyframes/unstable.png": {
+      "sha256": "c062efeb39d8f497735c8817668a1fa1278093d05ff2f77c79f91b0cf232d8fe",
+      "bytes": 282155
+    }
+  },
+  "raw_frames_retained": false,
+  "elapsed_ms": 42895,
+  "human_review": "PENDING_HUMAN",
+  "release_ready": false,
+  "published": false
+}

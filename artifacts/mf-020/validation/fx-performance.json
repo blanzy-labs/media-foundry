@@ -1,0 +1,11 @@
+{
+  "stage": "fx",
+  "mode": "stills",
+  "build_ms": 564,
+  "render_ms": 1810,
+  "total_ms": 2374,
+  "rendered": 3,
+  "resumed_frames": 0,
+  "engine": "BLENDER_EEVEE",
+  "device": "CPU_HEADLESS_DEFAULT"
+}

@@ -1,0 +1,52 @@
+{
+  "slice": "MF-018B",
+  "mode": "PULP_GAME_WORLD_REFINED",
+  "seed": 1801958,
+  "video": {"width": 768, "height": 1152, "fps": 30, "duration_seconds": 14.0},
+  "scene": "godot/mf018b_pulp_scene.tscn",
+  "base_script": "godot/mf018b_pulp_scene.gd",
+  "promo_driver": "godot/mf018b_promo_driver.gd",
+  "renderer": "godot/mf018b_render.gd",
+  "composition_manifest": "config/mf018b-native-composition.json",
+  "handoff_manifest": "handoff/playable-scene/mf018b/manifest.json",
+  "visual": {
+    "style": "refined_retro_low_fi_2_5d_pulp_game_scene",
+    "surface": "seeded_chipped_teal_paint_aged_brass_grime",
+    "lighting_hierarchy": ["reactor", "warning_lamps", "console", "background"],
+    "camera": "single_composition_restrained_push",
+    "human_character": false
+  },
+  "static_states": [
+    {"id": "dormant", "seconds": 0.6},
+    {"id": "stable", "seconds": 5.2},
+    {"id": "unstable", "seconds": 9.1},
+    {"id": "critical", "seconds": 12.2}
+  ],
+  "representative_frames": [
+    [0.6, "dormant"], [5.2, "stable"], [6.3, "console-detail"], [7.4, "reactor-activation"],
+    [9.1, "unstable"], [12.2, "critical"], [13.5, "final-promo-state"]
+  ],
+  "audio": {
+    "direction": "music_led_object_event_hooks_documented_no_extra_sfx",
+    "catalog": "config/music/catalog.json",
+    "qualified_id": "unknown-process:cold_concrete_anatomy",
+    "source": "media/audio/music/unknown-process/Cold_Concrete_Anatomy.mp3",
+    "source_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "cue_region": "revelation_a",
+    "start_seconds": 5.0,
+    "end_seconds": 19.0,
+    "fade_in_seconds": 0.8,
+    "fade_out_seconds": 1.4,
+    "target_lufs": -16.0,
+    "true_peak_db": -1.5,
+    "post_normalization_gain_db": -1.3
+  },
+  "baseline": {
+    "artifact": "artifacts/mf-018a/godot-native-pulp-scene.mp4",
+    "artifact_sha256": "a6507e574567dd2b041981ac5f51ca7123dc700636e6cd394ccbb086d19c549b",
+    "config": "config/mf018a-native-pulp-scene.json",
+    "config_sha256": "41056752e6442e1de4400a7be1b107ead9b7b4f3548a08994b2660da5b40939c",
+    "seed": 1801957,
+    "direction_approval": "HUMAN_APPROVED_IN_MF018B_BRIEF"
+  }
+}

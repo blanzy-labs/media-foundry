@@ -1,0 +1,182 @@
+{
+  "slice": "MF-018B-R1",
+  "config": "/home/blanzy/projects/media-foundry/config/mf018b-r1-control-cleanup.json",
+  "config_sha256": "750d4a7385e40a3345d9a446f56d00cfe5fef0ea56c84900370e1ee81893663e",
+  "seed": 1801959,
+  "baseline": {
+    "artifact": "artifacts/mf-018b/final-test.mp4",
+    "artifact_sha256": "f629364bf73ebb9a16b181ea43221530ed428f009f2e1093a572447d5ca20d42",
+    "scene": "godot/mf018b_pulp_scene.tscn",
+    "scene_sha256": "1e4df3528e96bf5a8db019d059b60aa57e4b337e4dad4c882f74ce176215c48b",
+    "config": "config/mf018b-native-pulp-scene.json",
+    "config_sha256": "a4d825ba29c66fe61aac010f2d4a96bf018379266b606fb0b4dea459adc8f974",
+    "handoff": "handoff/playable-scene/mf018b/manifest.json",
+    "handoff_sha256": "b9f25ff451c503537f0b9b3565d81d954f297b85c16640b2086404b7dd9afe55"
+  },
+  "scene": {
+    "path": "godot/mf018b_r1_pulp_scene.tscn",
+    "sha256": "9a60b061a6a51d698f97c932253914cf452eb64d2d7923cf5839a7da2376ff31",
+    "standalone_probe": "PASS",
+    "promo_driver_separate": true
+  },
+  "handoff": {
+    "path": "handoff/playable-scene/mf018b-r1/manifest.json",
+    "sha256": "dcf9670970fccc4797d0adb49a69e60162213838fff3ec43fb72f0ee163f0a94",
+    "validation": "PASS"
+  },
+  "geometry_contract": {
+    "small_ring_detail_count": 18,
+    "large_linked_indicator_count": 6,
+    "large_indicator_radius": 12.0,
+    "small_indicator_radius": 4.0,
+    "large_track_radii": [
+      137.0,
+      48.0
+    ],
+    "small_track_radii": [
+      170.0,
+      79.0
+    ],
+    "four_dot_centers_x": [
+      70.0,
+      116.0,
+      162.0,
+      208.0
+    ],
+    "four_dot_y": 921.0,
+    "four_dot_radius": 11.0,
+    "four_dot_safe_bounds": [
+      57.0,
+      225.0
+    ],
+    "startup_lever_degrees": [
+      -90.0,
+      0.0
+    ],
+    "passive_containment_switch_present": false
+  },
+  "startup_timeline": {
+    "lever_start": 1.15,
+    "lever_end": 2.25,
+    "gauge_start": 1.75,
+    "blue_start": 2.75,
+    "green_start": 4.15,
+    "yellow_start": 5.45,
+    "linked_ring_start": 5.72,
+    "reactor_escalation_start": 6.05
+  },
+  "video": {
+    "width": 768,
+    "height": 1152,
+    "fps": 30,
+    "duration_seconds": 14.0,
+    "frame_count": 420
+  },
+  "audio": {
+    "track": "unknown-process:cold_concrete_anatomy",
+    "track_sha256": "44a3b01e4039a7dab21170814cb75a6d662701182b548fab211f89e9922b8ecf",
+    "track_approval": "APPROVED",
+    "cue": "revelation_a",
+    "cue_approval": "APPROVED",
+    "actual_start": 5.0,
+    "actual_end": 19.0,
+    "loudness": {
+      "integrated_lufs": -16.03,
+      "true_peak_db": -2.78,
+      "loudness_range_lu": 5.0
+    },
+    "event_markers": {
+      "startup_lever_clunk": 1.15,
+      "gauge_wake": 1.75,
+      "blue_stage": 2.75,
+      "green_stage": 4.15,
+      "yellow_link_trigger": 5.45,
+      "linked_ring_activation": 5.72
+    },
+    "dedicated_sfx_added": false,
+    "result": "PASS"
+  },
+  "outputs": {
+    "final-test.mp4": {
+      "sha256": "1910158da2dc5190626f3db55c682d0f44f2e87b0319334844c3f4b0aed10f56",
+      "bytes": 2500206
+    },
+    "representative-frames/contact-sheet.png": {
+      "sha256": "46bad6d7bb0a48ba9030f31d25bbef90db5da03670a278cc2c9b2de8b616bceb",
+      "bytes": 428162
+    },
+    "comparison/mf018b-vs-r1.png": {
+      "sha256": "93b9024c3031b3432b4e4dc03752cc520d9097f067d7382520bfe4a38099d340",
+      "bytes": 239643
+    },
+    "comparison/mf018b-vs-r1.mp4": {
+      "sha256": "f771533e59712eb547555cd79bd28d8b9e62c6deee93eec4aea071039f322cb9",
+      "bytes": 2496242
+    },
+    "representative-frames/dormant.png": {
+      "sha256": "63c6b4264d6d43a68035d747a42313865fbe7f7fedb5cce5161d5cdcd90b659c",
+      "bytes": 166577
+    },
+    "representative-frames/startup-lever-before.png": {
+      "sha256": "531b2859f260b84af0eb13ff4604a84bdb5786e9a5541eb14739add491909cdb",
+      "bytes": 166320
+    },
+    "representative-frames/startup-lever-after.png": {
+      "sha256": "232917d96ecd1c1d254610bc51d94d39468086a36d5e5f3ad14afd5c17847c1b",
+      "bytes": 168205
+    },
+    "representative-frames/gauges-respond.png": {
+      "sha256": "9faff2fd8c382878eb5bc0a113e5d636c52c2889f86d027af3aae4dc54e26818",
+      "bytes": 167285
+    },
+    "representative-frames/four-dot-blue.png": {
+      "sha256": "dcf330f51072626dafd69dc9a11af80a318e8f696c5d7a9c408b6c53ef680f4b",
+      "bytes": 169631
+    },
+    "representative-frames/four-dot-green.png": {
+      "sha256": "644535195ee0340e69c3e78455b2fec6914eb31b65455efc3ebf056e51e54563",
+      "bytes": 170479
+    },
+    "representative-frames/four-dot-yellow-trigger.png": {
+      "sha256": "0f73d9d34ec3f4e67cbbf18111c86a81d8b5f4795dc20add916ef884d676d7ce",
+      "bytes": 172455
+    },
+    "representative-frames/linked-ring-activating.png": {
+      "sha256": "463977378a8cb76361cdd58c1d67999d0887bf7b4e90dc14291b0fe03c4b2b33",
+      "bytes": 188120
+    },
+    "representative-frames/strong-active-machine.png": {
+      "sha256": "94c6cf76ef80f3ce91b338176a128edaa1227118385751f9f94c5d60c64169cf",
+      "bytes": 236826
+    },
+    "closeups/four-dot-blue-clean.png": {
+      "sha256": "a261e6df52e92cc9b7185ff06ea68586a7b76add8b49acd7675415d79e382e9b",
+      "bytes": 85874
+    },
+    "closeups/four-dot-yellow-clean.png": {
+      "sha256": "6f02b3fccc2d01076b6b744a853e31f623614e7809cdf80e7f8ba7458b93f427",
+      "bytes": 84285
+    },
+    "closeups/lever-after.png": {
+      "sha256": "c7a9396c891e1e11d91d270e69f448740b7e80d93ac3c488733a595dd22c1b3e",
+      "bytes": 82404
+    },
+    "closeups/lever-before.png": {
+      "sha256": "e8171f1ab36457e71044ed9f8f307560f7af5fede242afe0f239c46bc15d69ea",
+      "bytes": 81267
+    },
+    "closeups/upper-ring-dormant.png": {
+      "sha256": "7105f76b1b04609830f86c0163f354c52b4387037726bf613750a52486c42b55",
+      "bytes": 203217
+    },
+    "closeups/upper-ring-linked.png": {
+      "sha256": "e04bd90ef5aebee6ee520d0322a1cf367bb47320d5d2f299e65f3ac84bd4e7e6",
+      "bytes": 217136
+    }
+  },
+  "elapsed_ms": 39974,
+  "human_review": "PENDING_HUMAN",
+  "release_ready": false,
+  "gameplay_implemented": false,
+  "published": false
+}

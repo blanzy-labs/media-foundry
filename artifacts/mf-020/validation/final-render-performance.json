@@ -1,0 +1,11 @@
+{
+  "stage": "final",
+  "mode": "frames",
+  "build_ms": 572,
+  "render_ms": 89922,
+  "total_ms": 90566,
+  "rendered": 300,
+  "resumed_frames": 0,
+  "engine": "BLENDER_EEVEE",
+  "device": "CPU_HEADLESS_DEFAULT"
+}
