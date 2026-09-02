@@ -13,17 +13,17 @@
   "publish": false,
   "command_argv": [
     "python3",
-    "/home/blanzy/projects/media-foundry/scripts/run_mf008_batch.py",
+    "/home/blanzy/projects/media/media-foundry/scripts/run_mf008_batch.py",
     "--project-root",
-    "/home/blanzy/projects/media-foundry",
+    "/home/blanzy/projects/media/media-foundry",
     "--manifest",
-    "/home/blanzy/projects/media-foundry/content/batches/mf008-unknown-process-batch-001.json",
+    "/home/blanzy/projects/media/media-foundry/content/batches/mf008-unknown-process-batch-001.json",
     "--run-id",
     "scheduled-run-001",
     "--trigger-kind",
     "scheduled"
   ],
-  "command_cwd": "/home/blanzy/projects/media-foundry",
+  "command_cwd": "/home/blanzy/projects/media/media-foundry",
   "timeout_seconds": 1800,
   "execution_files": {
     "scripts/run_mf008_batch.py": "bb669c2e7655e95d31860fd84a7a2d175ba37e91f8a4026d75922dfe0941823d",
